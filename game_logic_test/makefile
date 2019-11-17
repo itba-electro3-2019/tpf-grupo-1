@@ -12,17 +12,18 @@ CFLAGS   =
 
 STDDIR   = standard_modules
 TSTDIR   = tests
-TGTMOD   = modules/fsm_sequence_mux.v # change with ..._fancy.v for the other style
+MODDIR   = modules
 BINDIR   = bin
 
 STD_SOURCES  := $(wildcard $(STDDIR)/*.v)
 TST_SOURCES  := $(wildcard $(TSTDIR)/*.v)
+MOD_SOURCES  := $(wildcard $(MODDIR)/*.v)
 OBJECTS      := $(SOURCES:$(SRCDIR)/%.c=$(OBJDIR)/%.o)
 rm           = rm -f
 
 $(BINDIR)/$(TARGET): $(SOURCES)
 	@mkdir -p bin
-	@$(COMPILER) $(STD_SOURCES) $(TST_SOURCES) $(TGTMOD) $(CFLAGS) -o $@
+	@$(COMPILER) $(STD_SOURCES) $(TST_SOURCES) $(MOD_SOURCES) $(CFLAGS) -o $@
 	@echo "Compilation complete!"
 
 .PHONY: run
