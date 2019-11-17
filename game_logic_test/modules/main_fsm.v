@@ -6,7 +6,7 @@
 // It is a Mealy Machine.
 //--------------------------------------------------------------------------------
 
-module fsm_sequence(
+module main_fsm(
     clock,              // Clock input of the synchronous sequential design
     enter,              // Input: button pressed with the joystick
     value,              // Input: used when an extra variable is needed, like whe  the Pause Menu indicates wether to Continue or Restart
@@ -15,7 +15,7 @@ module fsm_sequence(
     enable_start,       // Output: enables Start Menu to show itself
     enable_pause,       // Output: enables Pause Menu to show itself
     enable_game,        // Output: enables Start Menu to show itself
-    reset               // Output: sends signal to reset game
+    reset               // Output: sends signal to reset game, active LOW
 );
 
     //----------------- INPUT PORTS -----------------------------
@@ -32,6 +32,8 @@ module fsm_sequence(
     output reg reset;
 
     //----------------- INTERNAL VARIABLES ----------------------
+    reg current_state;
+    reg next_state;
 
     //----------------- FSM STATES ------------------------------
     parameter START = 2'b00;
@@ -47,7 +49,7 @@ module fsm_sequence(
         enable_start = 1;
         enable_game = 0;
         enable_pause = 0;
-        reset = 1;
+        reset = 0;
     end
     
     /* Combinational part of the FSM, calculates the next state and the output */
@@ -64,7 +66,7 @@ module fsm_sequence(
                     enable_start = 0;
                     enable_game = 1;
                     enable_pause = 0;
-                    reset = 0;
+                    reset = 1;
                 end else begin
                     next_state = START;
                     tick_menu = clock;
@@ -72,7 +74,7 @@ module fsm_sequence(
                     enable_start = 1;
                     enable_game = 0;
                     enable_pause = 0;
-                    reset = 0;
+                    reset = 1;
                 end
             end
 
@@ -85,7 +87,7 @@ module fsm_sequence(
                     enable_start = 0;
                     enable_game = 0;
                     enable_pause = 1;
-                    reset = 0;
+                    reset = 1;
                 end else begin
                     next_state = GAME;
                     tick_menu = 0;
@@ -93,7 +95,7 @@ module fsm_sequence(
                     enable_start = 0;
                     enable_game = 1;
                     enable_pause = 0;
-                    reset = 0;
+                    reset = 1;
                 end
             end
 
@@ -106,7 +108,7 @@ module fsm_sequence(
                     enable_start = 1;
                     enable_game = 0;
                     enable_pause = 0;
-                    reset = 1;
+                    reset = 0;
                 end else if (enter & !value) begin
                     next_state = GAME;
                     tick_menu = 0;
@@ -114,7 +116,7 @@ module fsm_sequence(
                     enable_start = 0;
                     enable_game = 1;
                     enable_pause = 0;
-                    reset = 0;
+                    reset = 1;
                 end else begin
                     next_state = PAUSE;
                     tick_menu = clock;
@@ -122,7 +124,7 @@ module fsm_sequence(
                     enable_start = 0;
                     enable_game = 0;
                     enable_pause = 1;
-                    reset = 0;
+                    reset = 1;
                 end
             end
 
@@ -135,7 +137,7 @@ module fsm_sequence(
                 enable_start = 1;
                 enable_game = 0;
                 enable_pause = 0;
-                reset = 1;
+                reset = 0;
             end
         endcase
     end
