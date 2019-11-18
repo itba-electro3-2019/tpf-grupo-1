@@ -1,0 +1,69 @@
+----------------------------------------------------------------------
+Report for cell main.TECH
+Register bits:  71 of 5280 (1.345%)
+I/O cells:      9
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               CCU2        62          100.0
+                            FD1P3XZ        71          100.0
+                         HSOSC_CORE         1          100.0
+                                 IB         4          100.0
+                              IOL_B         2          100.0
+                               LUT4        98          100.0
+                                 OB         5          100.0
+                              PLL_B         1          100.0
+SUB MODULES
+Rectangle(START_POSX=20,START_POSY=190,COLOR=3'b010)         1
+Rectangle(START_POSX=610,START_POSY=190,COLOR=3'b100)         1
+                          VGADriver         1
+                              clock         1
+clock_ipgen_lscc_pll(DIVR="0",DIVF="66",DIVQ="5",FILTER_RANGE="1",PLLOUT_SELECT_PORTA="GENCLK",PLLOUT_SELECT_PORTB="GENCLK",FREQUENCY_PIN_REFERENCECLK="12.000000")         1
+                              TOTAL       249
+----------------------------------------------------------------------
+Report for cell VGADriver.v1
+Instance Path : vga_driver
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2        22           35.5
+                            FD1P3XZ        20           28.2
+                              IOL_B         2          100.0
+                               LUT4        58           59.2
+                              PLL_B         1          100.0
+SUB MODULES
+                              clock         1
+clock_ipgen_lscc_pll(DIVR="0",DIVF="66",DIVQ="5",FILTER_RANGE="1",PLLOUT_SELECT_PORTA="GENCLK",PLLOUT_SELECT_PORTB="GENCLK",FREQUENCY_PIN_REFERENCECLK="12.000000")         1
+                              TOTAL       105
+----------------------------------------------------------------------
+Report for cell clock.v1
+Instance Path : vga_driver.vga_clock
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              PLL_B         1          100.0
+SUB MODULES
+clock_ipgen_lscc_pll(DIVR="0",DIVF="66",DIVQ="5",FILTER_RANGE="1",PLLOUT_SELECT_PORTA="GENCLK",PLLOUT_SELECT_PORTB="GENCLK",FREQUENCY_PIN_REFERENCECLK="12.000000")         1
+                              TOTAL         2
+----------------------------------------------------------------------
+Report for cell clock_ipgen_lscc_pll(DIVR="0",DIVF="66",DIVQ="5",FILTER_RANGE="1",PLLOUT_SELECT_PORTA="GENCLK",PLLOUT_SELECT_PORTB="GENCLK",FREQUENCY_PIN_REFERENCECLK="12.000000").v1
+Instance Path : vga_driver.vga_clock.lscc_pll_inst
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              PLL_B         1          100.0
+                              TOTAL         1
+----------------------------------------------------------------------
+Report for cell Rectangle(START_POSX=610,START_POSY=190,COLOR=3'b100).v1
+Instance Path : paddle_two
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2        16           25.8
+                            FD1P3XZ        18           25.4
+                               LUT4        16           16.3
+                              TOTAL        50
+----------------------------------------------------------------------
+Report for cell Rectangle(START_POSX=20,START_POSY=190,COLOR=3'b010).v1
+Instance Path : paddle_one
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2        16           25.8
+                            FD1P3XZ        18           25.4
+                               LUT4        11           11.2
+                              TOTAL        45

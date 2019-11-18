@@ -1,0 +1,33 @@
+POSTSYN: Post Synthesis Process Radiant Software (64-bit) 1.1.0.165.1
+Command Line: postsyn -a iCE40UP -p iCE40UP5K -t SG48 -sp High-Performance_1.2V -oc Industrial -top -keeprtl -w -o pong_impl_1.udb -gui -msgset C:/Users/Lucas/Documents/Actualmente Usando/Electronica III/tpf-grupo-1/pong/promote.xml pong_impl_1.vm 
+   Architecture:     iCE40UP
+   Device:           iCE40UP5K
+   Package:          SG48
+   Performance:      High-Performance_1.2V
+Reading input file 'pong_impl_1.vm' ...
+Removing unused logic...
+INFO - Signal vga_driver/h_count[3]_2 undriven or does not drive anything - clipped
+INFO - Signal vga_driver/h_count[2]_2 undriven or does not drive anything - clipped
+INFO - Signal vga_driver/h_count[1]_2 undriven or does not drive anything - clipped
+INFO - Signal pixel_row[9] undriven or does not drive anything - clipped
+INFO - Signal pixel_row[8] undriven or does not drive anything - clipped
+INFO - Signal pixel_row[7] undriven or does not drive anything - clipped
+INFO - Signal pixel_row[6] undriven or does not drive anything - clipped
+INFO - Signal pixel_row[5] undriven or does not drive anything - clipped
+INFO - Signal pixel_row[4] undriven or does not drive anything - clipped
+INFO - Signal pixel_row[3] undriven or does not drive anything - clipped
+INFO - Signal pixel_row[2] undriven or does not drive anything - clipped
+INFO - Signal h_count[9] undriven or does not drive anything - clipped
+INFO - Signal h_count[8] undriven or does not drive anything - clipped
+INFO - Signal h_count[7] undriven or does not drive anything - clipped
+INFO - Signal h_count[6] undriven or does not drive anything - clipped
+INFO - Signal h_count[5] undriven or does not drive anything - clipped
+INFO - Signal h_count[4] undriven or does not drive anything - clipped
+INFO - Signal h_count[0] undriven or does not drive anything - clipped
+Starting design annotation....
+WARNING - The preferred point for defining clocks is top level ports and driver pins. Pad delays will not be taken into consideration if clocks are defined on nets.
+Writing output file 'pong_impl_1.udb'.
+POSTSYN finished successfully.
+Total CPU Time: 0 secs 
+Total REAL Time: 0 secs 
+Peak Memory Usage: 32 MB

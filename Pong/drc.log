@@ -1,0 +1,7 @@
+DRC: Design Rule Check Radiant Software (64-bit) 1.1.0.165.1
+Sun Nov 17 22:11:29 2019
+
+WARNING - The clock port [player_two_up] is assigned to a non clock deWARNING - The clock port [player_two_up] is assigned to a non clock dedicated pin [13], which might affect the clock performance. Use dedicated clock resources for the port.
+WARNING - The clock port [player_one_up] is assigned to a non clock dedicated pin [19], which might affect the clock performance. Use dedicated clock resources for the port.
+WARNING - The clock port [player_two_down] is assigned to a non clock dedicated pin [12], which might affect the clock performance. Use dedicated clock resources for the port.
+WARNING - The clock port [player_one_down] is assigned to a non clock dedicated pin [18], which might affect the clock performance. Use dedicated clock resources for the port.
