@@ -1,7 +1,7 @@
 |************************************************************************
 | IBIS Models Generator: Lattice Radiant Software (64-bit) 1.1.0.165.1
-| Report Generate Date: Nov 17 2019
-| Report Generate Time: 22:19:37
+| Report Generate Date: Nov 18 2019
+| Report Generate Time: 00:41:07
 |************************************************************************
 |IBIS file ice40up.ibs   
 |Lattice Semiconductor Corporation   
@@ -136,15 +136,15 @@ L_pkg          2.652nH         1.989nH         3.504nH
 C_pkg          0.2807pF        0.2236pF        0.3481pF
 |
 [Pin]  signal_name          model_name           R_pin     L_pin     C_pin
-12            player_two_down      lvc330axxxbaaaaaaain
-20            hsync                lvc330a080aaaaaaaaou
-21            vsync                lvc330a080aaaaaaaaou
-23            r                    lvc330a080aaaaaaaaou
 25            g                    lvc330a080aaaaaaaaou
 26            b                    lvc330a080aaaaaaaaou
 19            player_one_up        lvc330axxxbaaaaaaain
-13            player_two_up        lvc330axxxbaaaaaaain
 18            player_one_down      lvc330axxxbaaaaaaain
+23            r                    lvc330a080aaaaaaaaou
+13            player_two_up        lvc330axxxbaaaaaaain
+12            player_two_down      lvc330axxxbaaaaaaain
+20            hsync                lvc330a080aaaaaaaaou
+21            vsync                lvc330a080aaaaaaaaou
 |************************************************************************
 [Model] lvc330a080aaaaaaaaou
 Model_type Output

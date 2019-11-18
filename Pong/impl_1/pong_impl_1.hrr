@@ -3,25 +3,24 @@ Report for cell main
    Instance path: main
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                 IOLGC	       2.00        100.0
-                                  LUT4	        231        100.0
-                                 IOREG	          2        100.0
+                                  LUT4	        548        100.0
                                  IOBUF	          9        100.0
-                                PFUREG	         71        100.0
+                                PFUREG	        108        100.0
+                                   DSP	          1        100.0
 SUB MODULES
                                   cell	      count    LUT4 Usage(%)
-Rectangle(START_POSX=20,START_POSY=190,COLOR=3'b010)	          1        18.6
-Rectangle(START_POSX=610,START_POSY=190,COLOR=3'b100)	          1        20.8
-                             VGADriver	          1        44.2
+                            Background	          1        10.9
+ Circle(START_POSX=300,START_POSY=200)	          1        31.8
+Rectangle(START_POSX=20,START_POSY=190)	          1         9.3
+Rectangle(START_POSX=610,START_POSY=190)	          1         9.9
+                             VGADriver	          1        16.6
 ---------------------------------------------------
 Report for cell VGADriver
    Instance path: main/vga_driver
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                 IOLGC	       2.00        100.0
-                                  LUT4	        102        44.2
-                                 IOREG	          2        100.0
-                                PFUREG	         20        28.2
+                                  LUT4	         91        16.6
+                                PFUREG	         22        20.4
 SUB MODULES
                                   cell	      count    LUT4 Usage(%)
                                  clock	          1         0.0
@@ -39,16 +38,30 @@ Report for cell clock_ipgen_lscc_pll(DIVR="0",DIVF="66",DIVQ="5",FILTER_RANGE="1
                      Cell usage:
                                   cell	      count    Res Usage(%)
 ---------------------------------------------------
-Report for cell Rectangle(START_POSX=610,START_POSY=190,COLOR=3'b100)
-   Instance path: main/paddle_two
-                     Cell usage:
-                                  cell	      count    Res Usage(%)
-                                  LUT4	         48        20.8
-                                PFUREG	         18        25.4
----------------------------------------------------
-Report for cell Rectangle(START_POSX=20,START_POSY=190,COLOR=3'b010)
+Report for cell Rectangle(START_POSX=20,START_POSY=190)
    Instance path: main/paddle_one
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	         43        18.6
-                                PFUREG	         18        25.4
+                                  LUT4	         51         9.3
+                                PFUREG	         20        18.5
+---------------------------------------------------
+Report for cell Rectangle(START_POSX=610,START_POSY=190)
+   Instance path: main/paddle_two
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         54         9.9
+                                PFUREG	         22        20.4
+---------------------------------------------------
+Report for cell Background
+   Instance path: main/background
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         60        10.9
+---------------------------------------------------
+Report for cell Circle(START_POSX=300,START_POSY=200)
+   Instance path: main/ball
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        174        31.8
+                                PFUREG	         28        25.9
+                                   DSP	          1        100.0

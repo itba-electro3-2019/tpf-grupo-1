@@ -5,7 +5,7 @@ source [file join {C:/lscc/radiant/1.1} scripts tcl flow run_engine.tcl]
 # define global variables
 global para
 set para(gui_mode) 1
-set para(prj_dir) "C:/Users/Lucas/Documents/Actualmente Usando/Electronica III/tpf-grupo-1/pong"
+set para(prj_dir) "C:/Users/Lucas/Documents/Actualmente Usando/Electronica III/tpf-grupo-1/Pong"
 # synthesize IPs
 # synthesize VMs
 # synthesize top design

@@ -1,28 +1,30 @@
-//-----------------------------------------------------
+//------------------------------------------------------
 // Graphic cicle component for the VGA system.
 //
 // Every game component receives a tick clock, to know
 // when changes on the object state should be made.
-//-----------------------------------------------------
+//------------------------------------------------------
 module Circle(
 	/* UI View Ports */
-	row,				// Current pixel data row
-	col,				// Current pixel data row
-	rgb,				// Corresponding pixel data to the row/column
+	row,				// Input: Current pixel data row
+	col,				// Input: Current pixel data row
+	rgb,				// Output: Corresponding pixel data to the row/column
 	/* UI Controller Ports */
-	bounce_trigger,		// Triggers with an active HIGH, if it should bounce
-	bounce_direction,	// Tells HORIZONTAL or VERTICAL to know where it is bouncing
+	bounce_trigger,		// Input: Triggers with an active HIGH, if it should bounce
+	bounce_direction,	// Input: Tells HORIZONTAL or VERTICAL to know where it is bouncing
 	/* UI Component Ports */
-	tick,				// Tick clock of game updates
-	reset				// Reset active LOW, initial position
-	);
+	tick,				// Input: Tick clock of game updates
+	reset				// input: Reset active LOW, initial position
+);
 
+	/************************/
 	/* Declaring parameters */
+	/************************/
 	parameter START_POSX = 0;
 	parameter START_POSY = 0;
-	parameter HEIGHT = 30;
-	parameter WIDTH = 30;
-	parameter SPEED = 10;		//	Number of tick clock for changes, max 255!
+	parameter HEIGHT = 15;
+	parameter WIDTH = 15;
+	parameter SPEED = 10;
 	
 	// Direction constants, to know where it is bouncing...
 	parameter HORIZONTAL = 0;
@@ -35,7 +37,9 @@ module Circle(
 	parameter LEFT_DOWN = 3'b011;
 	parameter RIGHT_DOWN = 3'b100;
 
+	/*************************/
 	/* Declaring input ports */
+	/*************************/
 	input wire bounce_direction;
 	input wire bounce_trigger;
 	input wire [9:0] row;
@@ -43,10 +47,14 @@ module Circle(
 	input wire reset;
 	input wire tick;
 	
+	/**************************/
 	/* Declaring output ports */
+	/**************************/
 	output reg [2:0] rgb;
 	
+	/***********************/
 	/* Declaring variables */
+	/*/*********************/
 	reg [10:0] memory_address;
 	reg [2:0] memory [0:899];
 	
@@ -55,7 +63,9 @@ module Circle(
 	reg [2:0] state = IDLE;
 	reg [7:0] timer = 0;
 	
-	// Movement control when changes from the controller are done
+	/********************/
+	/* Movement control */
+	/********************/
 	always @(posedge tick) begin: MOVE_CIRCLE
 		if (reset) begin
 			timer = timer + 1;
@@ -126,7 +136,7 @@ module Circle(
 		end else begin
 			posx = START_POSX;
 			posy = START_POSY;
-			state = IDLE;
+			state = LEFT_DOWN;
 			timer = 0;
 		end
 	end
@@ -134,7 +144,7 @@ module Circle(
 	// Driving the requested pixel in the output
 	// according to a valid row and column pair
 	always @(col or row) begin: READ_MEMORY
-		if ((col - posx) < WIDTH && (row - posy) < HEIGHT) begin
+		if (col >= posx && col < (WIDTH + posx) && row >= posy && row < (HEIGHT + posy)) begin
 			memory_address = (col - posx) + (row - posy) * WIDTH;
 			rgb = memory[memory_address];
 		end else begin

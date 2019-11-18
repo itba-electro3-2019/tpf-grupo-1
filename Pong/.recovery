@@ -9,10 +9,16 @@
         <Source name="drivers/vgadriver.v" type="Verilog" type_short="Verilog">
             <Options/>
         </Source>
-        <Source name="gui/components/rectangle.v" type="Verilog" type_short="Verilog">
+        <Source name="clock/clock.ipx" type="IPX_Module" type_short="IPX">
             <Options/>
         </Source>
-        <Source name="clock/clock.ipx" type="IPX_Module" type_short="IPX">
+        <Source name="logic/game_logic.v" type="Verilog" type_short="Verilog" excluded="TRUE">
+            <Options/>
+        </Source>
+        <Source name="gui/components/ball.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="gui/components/paddle.v" type="Verilog" type_short="Verilog">
             <Options/>
         </Source>
         <Source name="impl_1/impl_1.pdc" type="Physical Constraints File" type_short="PDC">

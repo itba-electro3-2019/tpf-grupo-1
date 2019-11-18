@@ -20,15 +20,16 @@ module Rectangle(
 	/************************/
 	/* Declaring parameters */
 	/************************/
-	parameter START_POSX = 100;
-	parameter START_POSY = 100;
+	parameter START_POSX = 200;
+	parameter START_POSY = 200;
 	
 	parameter COLOR = 3'b111;
 	parameter HEIGHT = 100;
 	parameter WIDTH = 10;
 	
 	parameter SPEED = 10;
-	parameter LIMIT_Y = 480;
+	parameter LIMIT_Y_MIN = 5;
+	parameter LIMIT_Y_MAX = 475;
 	
 	/********************/
 	/* Declaring inputs */
@@ -50,20 +51,24 @@ module Rectangle(
 	/********************/
 	reg [9:0] posx = START_POSX;
 	reg [9:0] posy = START_POSY;
-	reg [7:0] timer = 0;
 	
 	/*******************************/
 	/* Movement controlling events */
 	/*******************************/
+	reg [7:0] timer = 0;
 	always @(posedge tick) begin: MOVE_RECTANGLE
 		if (reset) begin
 			timer = timer + 1;
 			if (timer == SPEED) begin
 				timer = 0;
-				if (!control_up) begin
-					if (posy) posy = posy - 1;
-				end else if (!control_down) begin
-					if (posy + HEIGHT < LIMIT_Y) posy = posy + 1;
+				if (control_up == 0) begin
+					if (posy > LIMIT_Y_MIN) begin
+						posy = posy - 1;
+					end
+				end else if (control_down == 0) begin
+					if ((posy + HEIGHT) < LIMIT_Y_MAX) begin
+						posy = posy + 1;
+					end
 				end
 			end
 		end else begin
@@ -77,8 +82,12 @@ module Rectangle(
 	/* Drawing the UI View */
 	/***********************/
 	always @(row or col) begin: DRAW_RECTANGLE
-		if ( (col >= posx && col < (posx + WIDTH) ) && (row >= posy && row < (posy + HEIGHT)) ) begin
-			rgb = COLOR;
+		if ( (col >= posx && col < (WIDTH + posx) ) ) begin 
+			if ( (row >= posy && row < (HEIGHT + posy)) ) begin
+				rgb = COLOR;
+			end else begin
+				rgb = 3'b000;
+			end
 		end else begin
 			rgb = 3'b000;
 		end
