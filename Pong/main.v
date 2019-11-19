@@ -83,7 +83,7 @@ module main(
 	wire [2:0] background_rgb;
 	wire [2:0] ball_rgb;
 	
-	reg [1:0] bounce = 0;
+	wire [1:0] bounce;
 	
 	wire [9:0] ball_pos_x;
 	wire [9:0] ball_pos_y;
@@ -95,19 +95,31 @@ module main(
 	wire [9:0] paddle_one_size_x;
 	wire [9:0] paddle_one_size_y;
 	
-	ball_fsm #(
-		.START_POSX(300),
-		.START_POSY(200)) ball (tick, pixel_row, pixel_col, reset, bounce, ball_rgb, ball_pos_x, ball_pos_y, ball_size_x, ball_size_y);
+	wire [9:0] paddle_two_pos_x;
+	wire [9:0] paddle_two_pos_y;
+	wire [9:0] paddle_two_size_x;
+	wire [9:0] paddle_two_size_y;
+	
+	ball_fsm ball (tick, pixel_row, pixel_col, reset, bounce, ball_rgb, ball_pos_x, ball_pos_y, ball_size_x, ball_size_y);
 	
 	paddle #(
-		.START_POSX(20),
-		.START_POSY(190)) paddle_one (tick, pixel_row, pixel_col, reset, player_one_up, player_one_down, paddle_one_rgb, paddle_one_pos_x, paddle_one_pos_y, paddle_one_size_x, paddle_one_size_y);
+		.START_X_POS(20),
+		.START_Y_POS(190)) paddle_one (tick, pixel_row, pixel_col, reset, player_one_up, player_one_down, paddle_one_rgb, paddle_one_pos_x, paddle_one_pos_y, paddle_one_size_x, paddle_one_size_y);
 		
 	paddle #(
-		.START_POSX(610),
-		.START_POSY(190)) paddle_two (tick, pixel_row, pixel_col, reset, player_two_up, player_two_down, paddle_two_rgb, paddle_two_pos_x, paddle_two_pos_y, paddle_two_size_x, paddle_two_size_y);
+		.START_X_POS(610),
+		.START_Y_POS(190)) paddle_two (tick, pixel_row, pixel_col, reset, player_two_up, player_two_down, paddle_two_rgb, paddle_two_pos_x, paddle_two_pos_y, paddle_two_size_x, paddle_two_size_y);
 	
 	Background background (pixel_row, pixel_col, background_rgb);
+	
+	/**********************/
+	/* Game Logic Objects */
+	/**********************/
+	
+	wire [3:0] score_player_one;
+	wire [3:0] score_player_tow;
+	
+	game_logic game (tick, ball_pos_x, ball_pos_y, ball_size_x, ball_size_y, paddle_one_pos_x, paddle_one_pos_y, paddle_one_size_x, paddle_one_size_y, paddle_two_pos_x, paddle_two_pos_y, paddle_two_size_x, paddle_two_size_y, bounce, score_player_one, score_player_two);
 	
 	/**************************/
 	/* GUI Controller Network */

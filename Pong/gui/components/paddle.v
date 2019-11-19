@@ -36,13 +36,16 @@ module paddle(
 
     //----------------- INTERNAL PARAMETERS ----------------------
 	parameter COLOR = 3'b111;
-	parameter HEIGHT = 100;
-	parameter WIDTH = 10;
     parameter SCREEN_X = 640;
     parameter SCREEN_Y = 480;
+	parameter WIDTH = 10;
+	parameter HEIGHT = 100;
     parameter PADDLE_SIZE_X = 10;
     parameter PADDLE_SIZE_Y = 100;
     parameter START_X_POS = 5;
+	parameter START_Y_POS = 100;
+	parameter LIMIT_Y_MIN = 5;
+	parameter LIMIT_Y_MAX = 475;
     parameter SPEED = 10;           // Number of tick clocks until changes should be done, MAX = 255!
 
     //----------------- INTERNAL VARIABLES ----------------------
@@ -51,7 +54,7 @@ module paddle(
 
     initial begin: INITIALIZATION
         pos_x = START_X_POS; //TODO Change this
-        pos_y = SCREEN_Y / 2 - PADDLE_SIZE_Y / 2;  //TODO Change this
+        pos_y = START_Y_POS;  //TODO Change this
         size_x = PADDLE_SIZE_X; //TODO Change this
         size_y = PADDLE_SIZE_Y; //TODO Change this
     end
@@ -61,17 +64,16 @@ module paddle(
             timer = timer + 1;
             if (timer == SPEED) begin
 				timer = 0;
-                if (control_up) begin
-                    pos_y = pos_y + 1;
-
-                end else if (control_down) begin
-                    pos_y = pos_y + 1;
+                if (control_up == 0) begin
+					if (pos_y > LIMIT_Y_MIN) pos_y = pos_y - 1;
+                end else if (control_down == 0) begin
+                    if (pos_y + HEIGHT < LIMIT_Y_MAX) pos_y = pos_y + 1;
                 end
             end
 
         end else begin
             pos_x = START_X_POS; //TODO Change this
-            pos_y = SCREEN_Y / 2 - PADDLE_SIZE_Y / 2;  //TODO Change this
+            pos_y = START_Y_POS;  //TODO Change this
             size_x = PADDLE_SIZE_X; //TODO Change this
             size_y = PADDLE_SIZE_Y; //TODO Change this
         end

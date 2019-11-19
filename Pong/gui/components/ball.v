@@ -35,42 +35,40 @@ module ball_fsm(
 
     //----------------- INTERNAL PARAMETERS ----------------------
 	parameter COLOR = 3'b111;
-	parameter START_POSX = 0;
-	parameter START_POSY = 0;
-	parameter HEIGHT = 15;
-	parameter WIDTH = 15;
     parameter SCREEN_X = 640;
     parameter SCREEN_Y = 480;
+	parameter HEIGHT = 15;
+	parameter WIDTH = 15;
     parameter SPEED = 10;           // Number of tick clocks until changes should be done, MAX = 255!
 
     //----------------- INTERNAL VARIABLES ----------------------
-    reg current_state;
-    reg next_state;
+    reg [1:0] current_state;
+    reg [1:0] next_state;
     reg [7:0] timer = 0;
 
     //----------------- FSM STATES ------------------------------
     parameter AT_45 = 2'b00;
     parameter AT_135 = 2'b01;
     parameter AT_225 = 2'b10;
-    parameter AT_315 = 2'b00;
+    parameter AT_315 = 2'b11;
 
     /* Initialization of the FSM */ 
     initial begin: INITIALIZATION
         current_state = AT_45;
         next_state = AT_45;
-        pos_x = START_POSX; //TODO Change this
-        pos_y = START_POSY;  //TODO Change this
+        pos_x = SCREEN_X / 2; //TODO Change this
+        pos_y = SCREEN_Y / 2;  //TODO Change this
         size_x = WIDTH; //TODO Change this
         size_y = HEIGHT; //TODO Change this
+		timer = 0;
     end
-    
+		
     /* Combinational part of the FSM, calculates the next state and the output */
-    always @ (bounce or reset) begin: COMBINATIONAL_CODE
-        next_state = current_state;
-
+    always @ (posedge clock) begin: COMBINATIONAL_CODE
         if (reset) begin
             timer = timer + 1;
             if (timer == SPEED) begin
+				timer = 0;
                 case(current_state)
                     /* Current state is AT_45, which is the next state?*/
                     AT_45: begin
@@ -79,7 +77,7 @@ module ball_fsm(
                                 next_state = current_state;
                             end
 
-                            1: begin
+                            2'b01: begin
                                 next_state = AT_135;
                             end
 
@@ -91,9 +89,7 @@ module ball_fsm(
                                 current_state = AT_45;
                                 next_state = AT_45;
                                 pos_x = SCREEN_X / 2; //TODO Change this
-                                pos_y = 0;  //TODO Change this
-                                size_x = 5; //TODO Change this
-                                size_y = 5; //TODO Change this
+                                pos_y = SCREEN_Y / 2;  //TODO Change this
                             end
                         endcase
                     end
@@ -117,9 +113,7 @@ module ball_fsm(
                                 current_state = AT_45;
                                 next_state = AT_45;
                                 pos_x = SCREEN_X / 2; //TODO Change this
-                                pos_y = 0;  //TODO Change this
-                                size_x = 5; //TODO Change this
-                                size_y = 5; //TODO Change this
+                                pos_y = SCREEN_Y / 2;  //TODO Change this
                             end
                         endcase
                     end
@@ -143,9 +137,7 @@ module ball_fsm(
                                 current_state = AT_45;
                                 next_state = AT_45;
                                 pos_x = SCREEN_X / 2; //TODO Change this
-                                pos_y = 0;  //TODO Change this
-                                size_x = 5; //TODO Change this
-                                size_y = 5; //TODO Change this
+                                pos_y = SCREEN_Y / 2;  //TODO Change this
                             end
                         endcase
                     end
@@ -169,9 +161,7 @@ module ball_fsm(
                                 current_state = AT_45;
                                 next_state = AT_45;
                                 pos_x = SCREEN_X / 2; //TODO Change this
-                                pos_y = 0;  //TODO Change this
-                                size_x = 5; //TODO Change this
-                                size_y = 5; //TODO Change this
+                                pos_y = SCREEN_Y / 2;  //TODO Change this
                             end
                         endcase
                     end
@@ -181,49 +171,46 @@ module ball_fsm(
                         current_state = AT_45;
                         next_state = AT_45;
                         pos_x = SCREEN_X / 2; //TODO Change this
-                        pos_y = 0;  //TODO Change this
-                        size_x = 5; //TODO Change this
-                        size_y = 5; //TODO Change this
+                        pos_y = SCREEN_Y / 2;  //TODO Change this
                     end
                 endcase
+
+				// Changing state
+				current_state = next_state;
+
+				case(current_state)
+					// Where should I move to?
+					AT_45: begin
+						pos_x = pos_x + 1;
+						pos_y = pos_y + 1;
+					end
+
+					AT_135: begin
+						pos_x = pos_x - 1;
+						pos_y = pos_y + 1;
+					end
+
+					AT_225: begin
+						pos_x = pos_x - 1;
+						pos_y = pos_y - 1;
+					end
+
+					AT_315: begin
+						pos_x = pos_x + 1;
+						pos_y = pos_y - 1;
+					end
+				endcase
             end
 
         end else begin
             current_state = AT_45;
             next_state = AT_45;
             pos_x = SCREEN_X / 2; //TODO Change this
-            pos_y = 0;  //TODO Change this
-            size_x = 5; //TODO Change this
-            size_y = 5; //TODO Change this
+            pos_y = SCREEN_Y / 2;  //TODO Change this7
+			timer = 0;
+			size_x = WIDTH; //TODO Change this
+			size_y = HEIGHT; //TODO Change this
         end
-    end
-
-    /* Sequential part of the FSM, updates the next state of the FSM */
-    always @(posedge clock) begin: SEQUENTIAL_CODE
-        current_state = next_state;
-
-        case(current_state)
-            // Where should I move to?
-            AT_45: begin
-                pos_x = pos_x + 1;
-                pos_y = pos_y + 1;
-            end
-
-            AT_135: begin
-                pos_x = pos_x - 1;
-                pos_y = pos_y + 1;
-            end
-
-            AT_225: begin
-                pos_x = pos_x - 1;
-                pos_y = pos_y - 1;
-            end
-
-            AT_315: begin
-                pos_x = pos_x + 1;
-                pos_y = pos_y - 1;
-            end
-        endcase
     end
 	
 	// Driving the requested pixel in the output
@@ -245,4 +232,5 @@ module ball_fsm(
 	initial begin: LOAD_MEMORY
 		$readmemb("circle.list", memory);
 	end
+
 endmodule
