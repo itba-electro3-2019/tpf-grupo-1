@@ -15,13 +15,13 @@
             <Task name="PARTrace" build_result="0" update_result="3" update_time="0"/>
             <Task name="IOTiming" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
-        <Milestone name="Synthesis" build_result="1" build_time="1574050963">
-            <Task name="Lattice_Synthesis" build_result="1" update_result="2" update_time="1574050963"/>
-            <Task name="LSE_Compile" build_result="0" update_result="2" update_time="1574050622"/>
+        <Milestone name="Synthesis" build_result="1" build_time="1574053492">
+            <Task name="Lattice_Synthesis" build_result="1" update_result="2" update_time="1574053492"/>
+            <Task name="LSE_Compile" build_result="2" update_result="0" update_time="1574052248"/>
             <Task name="SynTrace" build_result="0" update_result="2" update_time="1574050576"/>
             <Task name="SynVerilogSimFile" build_result="0" update_result="2" update_time="1574050576"/>
         </Milestone>
-        <Report name="pong_impl_1.lsedata" last_build_time="1574048415" last_build_size="564624"/>
+        <Report name="pong_impl_1.lsedata" last_build_time="1574051753" last_build_size="564624"/>
         <Report name="pong_impl_1.udb::log" last_build_time="1574048424" last_build_size="902648"/>
         <Report name="pong_impl_1.udb::rtl" last_build_time="1574048415" last_build_size="902648"/>
     </Strategy>

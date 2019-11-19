@@ -33,18 +33,18 @@
 
 -use_io_insertion 1
 -resolve_mixed_drivers 0
--path "C:/Users/Lucas/Documents/Actualmente Usando/Electronica III/tpf-grupo-1/Pong/clock"
--path "C:/lscc/radiant/1.1/ispfpga/ice40tp/data" "C:/Users/Lucas/Documents/Actualmente Usando/Electronica III/tpf-grupo-1/Pong/impl_1" "C:/Users/Lucas/Documents/Actualmente Usando/Electronica III/tpf-grupo-1/Pong"
+-path "C:/Users/facun/OneDrive/Desktop/ITBA/5C Electronica III/tpf-grupo-1/Pong/clock"
+-path "C:/lscc/radiant/1.1/ispfpga/ice40tp/data" "C:/Users/facun/OneDrive/Desktop/ITBA/5C Electronica III/tpf-grupo-1/Pong/impl_1" "C:/Users/facun/OneDrive/Desktop/ITBA/5C Electronica III/tpf-grupo-1/Pong"
 -ver "C:/lscc/radiant/1.1/ip/pmi/pmi_iCE40UP.v"
 -lib pmi -vhd "C:/lscc/radiant/1.1/ip/pmi/pmi_iCE40UP.vhd"
--ver "C:/Users/Lucas/Documents/Actualmente Usando/Electronica III/tpf-grupo-1/Pong/main.v"
-"C:/Users/Lucas/Documents/Actualmente Usando/Electronica III/tpf-grupo-1/Pong/drivers/vgadriver.v"
-"C:/Users/Lucas/Documents/Actualmente Usando/Electronica III/tpf-grupo-1/Pong/clock/rtl/clock.v"
-"C:/Users/Lucas/Documents/Actualmente Usando/Electronica III/tpf-grupo-1/Pong/gui/components/ball.v"
-"C:/Users/Lucas/Documents/Actualmente Usando/Electronica III/tpf-grupo-1/Pong/gui/components/paddle.v"
+-ver "C:/Users/facun/OneDrive/Desktop/ITBA/5C Electronica III/tpf-grupo-1/Pong/main.v"
+"C:/Users/facun/OneDrive/Desktop/ITBA/5C Electronica III/tpf-grupo-1/Pong/drivers/vgadriver.v"
+"C:/Users/facun/OneDrive/Desktop/ITBA/5C Electronica III/tpf-grupo-1/Pong/clock/rtl/clock.v"
+"C:/Users/facun/OneDrive/Desktop/ITBA/5C Electronica III/tpf-grupo-1/Pong/gui/components/ball.v"
+"C:/Users/facun/OneDrive/Desktop/ITBA/5C Electronica III/tpf-grupo-1/Pong/gui/components/paddle.v"
 
 
--path "C:/Users/Lucas/Documents/Actualmente Usando/Electronica III/tpf-grupo-1/Pong"
+-path "C:/Users/facun/OneDrive/Desktop/ITBA/5C Electronica III/tpf-grupo-1/Pong"
 -top main
 -udb "pong_impl_1.udb"
 -output_hdl "pong_impl_1.vm"

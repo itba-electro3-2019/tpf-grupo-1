@@ -60,7 +60,7 @@ module ball_fsm(
     end
     
     /* Combinational part of the FSM, calculates the next state and the output */
-    always @ (bounce or reset) begin: COMBINATIONAL_CODE
+    always @ (posedge clock or reset) begin: COMBINATIONAL_CODE
         if (reset) begin
             timer = timer + 1;
             if (timer == SPEED) begin
@@ -171,40 +171,38 @@ module ball_fsm(
                 endcase
             end
 
+            // Changing state
+            current_state = next_state;
+
+            case(current_state)
+                // Where should I move to?
+                AT_45: begin
+                    pos_x = pos_x + 1;
+                    pos_y = pos_y + 1;
+                end
+
+                AT_135: begin
+                    pos_x = pos_x - 1;
+                    pos_y = pos_y + 1;
+                end
+
+                AT_225: begin
+                    pos_x = pos_x - 1;
+                    pos_y = pos_y - 1;
+                end
+
+                AT_315: begin
+                    pos_x = pos_x + 1;
+                    pos_y = pos_y - 1;
+                end
+            endcase
+
         end else begin
             current_state = AT_45;
             next_state = AT_45;
             pos_x = SCREEN_X / 2; //TODO Change this
             pos_y = 0;  //TODO Change this
         end
-    end
-
-    /* Sequential part of the FSM, updates the next state of the FSM */
-    always @(posedge clock) begin: SEQUENTIAL_CODE
-        current_state = next_state;
-
-        case(current_state)
-            // Where should I move to?
-            AT_45: begin
-                pos_x = pos_x + 1;
-                pos_y = pos_y + 1;
-            end
-
-            AT_135: begin
-                pos_x = pos_x - 1;
-                pos_y = pos_y + 1;
-            end
-
-            AT_225: begin
-                pos_x = pos_x - 1;
-                pos_y = pos_y - 1;
-            end
-
-            AT_315: begin
-                pos_x = pos_x + 1;
-                pos_y = pos_y - 1;
-            end
-        endcase
     end
 
 endmodule

@@ -5,10 +5,10 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2019 Lattice Semiconductor Corporation,  All rights reserved.
-Mon Nov 18 01:22:41 2019
+Mon Nov 18 02:04:50 2019
 
 
-Command Line:  C:\lscc\radiant\1.1\ispfpga\bin\nt64\synthesis.exe -f pong_impl_1_lattice.synproj -gui -msgset C:/Users/Lucas/Documents/Actualmente Usando/Electronica III/tpf-grupo-1/Pong/promote.xml 
+Command Line:  C:\lscc\radiant\1.1\ispfpga\bin\nt64\synthesis.exe -f pong_impl_1_lattice.synproj -gui -msgset C:/Users/facun/OneDrive/Desktop/ITBA/5C Electronica III/tpf-grupo-1/Pong/promote.xml 
 
 Synthesis options:
 The -a option is iCE40UP.
@@ -67,17 +67,17 @@ ROM style = auto
 RAM style = auto
 The -comp option is FALSE.
 The -syn option is FALSE.
--path C:/Users/Lucas/Documents/Actualmente Usando/Electronica III/tpf-grupo-1/Pong (searchpath added)
--path C:/Users/Lucas/Documents/Actualmente Usando/Electronica III/tpf-grupo-1/Pong/clock (searchpath added)
--path C:/Users/Lucas/Documents/Actualmente Usando/Electronica III/tpf-grupo-1/Pong/impl_1 (searchpath added)
+-path C:/Users/facun/OneDrive/Desktop/ITBA/5C Electronica III/tpf-grupo-1/Pong (searchpath added)
+-path C:/Users/facun/OneDrive/Desktop/ITBA/5C Electronica III/tpf-grupo-1/Pong/clock (searchpath added)
+-path C:/Users/facun/OneDrive/Desktop/ITBA/5C Electronica III/tpf-grupo-1/Pong/impl_1 (searchpath added)
 -path C:/lscc/radiant/1.1/ispfpga/ice40tp/data (searchpath added)
 Mixed language design
 Verilog design file = C:/lscc/radiant/1.1/ip/pmi/pmi_iCE40UP.v
-Verilog design file = C:/Users/Lucas/Documents/Actualmente Usando/Electronica III/tpf-grupo-1/Pong/main.v
-Verilog design file = C:/Users/Lucas/Documents/Actualmente Usando/Electronica III/tpf-grupo-1/Pong/drivers/vgadriver.v
-Verilog design file = C:/Users/Lucas/Documents/Actualmente Usando/Electronica III/tpf-grupo-1/Pong/clock/rtl/clock.v
-Verilog design file = C:/Users/Lucas/Documents/Actualmente Usando/Electronica III/tpf-grupo-1/Pong/gui/components/ball.v
-Verilog design file = C:/Users/Lucas/Documents/Actualmente Usando/Electronica III/tpf-grupo-1/Pong/gui/components/paddle.v
+Verilog design file = C:/Users/facun/OneDrive/Desktop/ITBA/5C Electronica III/tpf-grupo-1/Pong/main.v
+Verilog design file = C:/Users/facun/OneDrive/Desktop/ITBA/5C Electronica III/tpf-grupo-1/Pong/drivers/vgadriver.v
+Verilog design file = C:/Users/facun/OneDrive/Desktop/ITBA/5C Electronica III/tpf-grupo-1/Pong/clock/rtl/clock.v
+Verilog design file = C:/Users/facun/OneDrive/Desktop/ITBA/5C Electronica III/tpf-grupo-1/Pong/gui/components/ball.v
+Verilog design file = C:/Users/facun/OneDrive/Desktop/ITBA/5C Electronica III/tpf-grupo-1/Pong/gui/components/paddle.v
 VHDL library = pmi
 VHDL design file = C:/lscc/radiant/1.1/ip/pmi/pmi_iCE40UP.vhd
 The -r option is OFF. [ Remove LOC Properties is OFF. ]
@@ -117,59 +117,59 @@ INFO - synthesis: c:/lscc/radiant/1.1/ip/pmi/pmi_ram_dp_be.v(49): analyzing incl
 INFO - synthesis: c:/lscc/radiant/1.1/ip/pmi/pmi_ice40up.v(16): analyzing included file c:/lscc/radiant/1.1/ip/pmi/pmi_ram_dq_be.v. VERI-1328
 INFO - synthesis: c:/lscc/radiant/1.1/ip/pmi/pmi_ram_dq_be.v(45): analyzing included file c:/lscc/radiant/1.1/ip/pmi/../common/ram_dq/rtl/lscc_ram_dq.v. VERI-1328
 INFO - synthesis: c:/lscc/radiant/1.1/ip/pmi/pmi_ice40up.v(17): analyzing included file c:/lscc/radiant/1.1/ip/pmi/pmi_dsp.v. VERI-1328
-Analyzing Verilog file c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/main.v. VERI-1482
-WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/main.v(91): second declaration of ball_size_y ignored. VERI-1329
-Analyzing Verilog file c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/drivers/vgadriver.v. VERI-1482
-Analyzing Verilog file c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/clock/rtl/clock.v. VERI-1482
-Analyzing Verilog file c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/components/ball.v. VERI-1482
-Analyzing Verilog file c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/components/paddle.v. VERI-1482
+Analyzing Verilog file c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/main.v. VERI-1482
+WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/main.v(91): second declaration of ball_size_y ignored. VERI-1329
+Analyzing Verilog file c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/drivers/vgadriver.v. VERI-1482
+Analyzing Verilog file c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/clock/rtl/clock.v. VERI-1482
+Analyzing Verilog file c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/components/ball.v. VERI-1482
+Analyzing Verilog file c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/components/paddle.v. VERI-1482
 Analyzing VHDL file c:/lscc/radiant/1.1/ip/pmi/pmi_ice40up.vhd. VHDL-1481
 INFO - synthesis: c:/lscc/radiant/1.1/ip/pmi/pmi_ice40up.vhd(4): analyzing package components. VHDL-1014
 unit main is not yet analyzed. VHDL-1485
-INFO - synthesis: The default VHDL library search path is now "C:/Users/Lucas/Documents/Actualmente Usando/Electronica III/tpf-grupo-1/Pong/impl_1". VHDL-1504
+INFO - synthesis: The default VHDL library search path is now "C:/Users/facun/OneDrive/Desktop/ITBA/5C Electronica III/tpf-grupo-1/Pong/impl_1". VHDL-1504
 Top module language type = Verilog.
 Top module name (Verilog, mixed language): main
-INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/main.v(8): compiling module main. VERI-1018
-WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/main.v(86): using initial value of bounce since it is never assigned. VERI-1220
+INFO - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/main.v(8): compiling module main. VERI-1018
+WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/main.v(86): using initial value of bounce since it is never assigned. VERI-1220
 INFO - synthesis: C:/lscc/radiant/1.1/ispfpga/../cae_library/synthesis/verilog/iCE40UP.v(756): compiling module HSOSC(CLKHF_DIV="0b10"). VERI-1018
-WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/main.v(57): expression size 32 truncated to fit in target size 14. VERI-1209
-INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/drivers/vgadriver.v(6): compiling module VGADriver. VERI-1018
-INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/clock/rtl/clock.v(10): compiling module clock. VERI-1018
-INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/clock/rtl/clock.v(73): compiling module clock_ipgen_lscc_pll(DIVR="0",DIVF="66",DIVQ="5",FILTER_RANGE="1",PLLOUT_SELECT_PORTA="GENCLK",PLLOUT_SELECT_PORTB="GENCLK",FREQUENCY_PIN_REFERENCECLK="12.000000"). VERI-1018
+WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/main.v(57): expression size 32 truncated to fit in target size 14. VERI-1209
+INFO - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/drivers/vgadriver.v(6): compiling module VGADriver. VERI-1018
+INFO - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/clock/rtl/clock.v(10): compiling module clock. VERI-1018
+INFO - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/clock/rtl/clock.v(73): compiling module clock_ipgen_lscc_pll(DIVR="0",DIVF="66",DIVQ="5",FILTER_RANGE="1",PLLOUT_SELECT_PORTA="GENCLK",PLLOUT_SELECT_PORTB="GENCLK",FREQUENCY_PIN_REFERENCECLK="12.000000"). VERI-1018
 INFO - synthesis: C:/lscc/radiant/1.1/ispfpga/../cae_library/synthesis/verilog/iCE40UP.v(428): compiling module PLL_B(PLLOUT_SELECT_PORTA="GENCLK",PLLOUT_SELECT_PORTB="GENCLK",DIVF="66",DIVQ="5",FILTER_RANGE="1",FREQUENCY_PIN_REFERENCECLK="12.000000"). VERI-1018
-WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/clock/rtl/clock.v(16): input port sclk_i is not connected on this instance. VDB-1013
-WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/clock/rtl/clock.v(16): input port sdi_i is not connected on this instance. VDB-1013
-WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/drivers/vgadriver.v(69): expression size 32 truncated to fit in target size 1. VERI-1209
-WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/drivers/vgadriver.v(71): expression size 32 truncated to fit in target size 10. VERI-1209
-WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/drivers/vgadriver.v(72): expression size 32 truncated to fit in target size 10. VERI-1209
-WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/drivers/vgadriver.v(84): expression size 32 truncated to fit in target size 10. VERI-1209
-WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/drivers/vgadriver.v(85): expression size 32 truncated to fit in target size 10. VERI-1209
-INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/components/ball.v(9): compiling module ball_fsm(START_POSX=300,START_POSY=200). VERI-1018
-WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/components/ball.v(69): current_state should be on the sensitivity list. VERI-1221
-WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/components/ball.v(72): timer should be on the sensitivity list. VERI-1221
-WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/components/ball.v(72): expression size 32 truncated to fit in target size 8. VERI-1209
-WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/components/ball.v(74): current_state should be on the sensitivity list. VERI-1221
-WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/components/ball.v(79): current_state should be on the sensitivity list. VERI-1221
-WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/components/ball.v(105): current_state should be on the sensitivity list. VERI-1221
-WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/components/ball.v(113): expression size 2 truncated to fit in target size 1. VERI-1209
-WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/components/ball.v(128): case condition never applies. VERI-1166
-WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/components/ball.v(157): current_state should be on the sensitivity list. VERI-1221
-WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/components/ball.v(161): expression size 2 truncated to fit in target size 1. VERI-1209
-WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/components/ball.v(208): expression size 32 truncated to fit in target size 10. VERI-1209
-WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/components/ball.v(209): expression size 32 truncated to fit in target size 10. VERI-1209
-WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/components/ball.v(213): expression size 32 truncated to fit in target size 10. VERI-1209
-WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/components/ball.v(214): expression size 32 truncated to fit in target size 10. VERI-1209
-WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/components/ball.v(217): case condition never applies. VERI-1166
-WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/components/ball.v(223): expression size 32 truncated to fit in target size 10. VERI-1209
-WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/components/ball.v(224): expression size 32 truncated to fit in target size 10. VERI-1209
-WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/components/ball.v(234): pos_x should be on the sensitivity list. VERI-1221
-WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/components/ball.v(234): pos_x should be on the sensitivity list. VERI-1221
-WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/components/ball.v(234): pos_y should be on the sensitivity list. VERI-1221
-WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/components/ball.v(234): pos_y should be on the sensitivity list. VERI-1221
-WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/components/ball.v(235): pos_x should be on the sensitivity list. VERI-1221
-WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/components/ball.v(235): pos_y should be on the sensitivity list. VERI-1221
-WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/components/ball.v(235): expression size 32 truncated to fit in target size 11. VERI-1209
-WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/components/ball.v(236): memory should be on the sensitivity list. VERI-1221
+WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/clock/rtl/clock.v(16): input port sclk_i is not connected on this instance. VDB-1013
+WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/clock/rtl/clock.v(16): input port sdi_i is not connected on this instance. VDB-1013
+WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/drivers/vgadriver.v(69): expression size 32 truncated to fit in target size 1. VERI-1209
+WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/drivers/vgadriver.v(71): expression size 32 truncated to fit in target size 10. VERI-1209
+WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/drivers/vgadriver.v(72): expression size 32 truncated to fit in target size 10. VERI-1209
+WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/drivers/vgadriver.v(84): expression size 32 truncated to fit in target size 10. VERI-1209
+WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/drivers/vgadriver.v(85): expression size 32 truncated to fit in target size 10. VERI-1209
+INFO - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/components/ball.v(9): compiling module ball_fsm(START_POSX=300,START_POSY=200). VERI-1018
+WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/components/ball.v(69): current_state should be on the sensitivity list. VERI-1221
+WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/components/ball.v(72): timer should be on the sensitivity list. VERI-1221
+WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/components/ball.v(72): expression size 32 truncated to fit in target size 8. VERI-1209
+WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/components/ball.v(74): current_state should be on the sensitivity list. VERI-1221
+WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/components/ball.v(79): current_state should be on the sensitivity list. VERI-1221
+WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/components/ball.v(105): current_state should be on the sensitivity list. VERI-1221
+WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/components/ball.v(113): expression size 2 truncated to fit in target size 1. VERI-1209
+WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/components/ball.v(128): case condition never applies. VERI-1166
+WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/components/ball.v(157): current_state should be on the sensitivity list. VERI-1221
+WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/components/ball.v(161): expression size 2 truncated to fit in target size 1. VERI-1209
+WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/components/ball.v(208): expression size 32 truncated to fit in target size 10. VERI-1209
+WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/components/ball.v(209): expression size 32 truncated to fit in target size 10. VERI-1209
+WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/components/ball.v(213): expression size 32 truncated to fit in target size 10. VERI-1209
+WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/components/ball.v(214): expression size 32 truncated to fit in target size 10. VERI-1209
+WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/components/ball.v(217): case condition never applies. VERI-1166
+WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/components/ball.v(223): expression size 32 truncated to fit in target size 10. VERI-1209
+WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/components/ball.v(224): expression size 32 truncated to fit in target size 10. VERI-1209
+WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/components/ball.v(234): pos_x should be on the sensitivity list. VERI-1221
+WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/components/ball.v(234): pos_x should be on the sensitivity list. VERI-1221
+WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/components/ball.v(234): pos_y should be on the sensitivity list. VERI-1221
+WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/components/ball.v(234): pos_y should be on the sensitivity list. VERI-1221
+WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/components/ball.v(235): pos_x should be on the sensitivity list. VERI-1221
+WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/components/ball.v(235): pos_y should be on the sensitivity list. VERI-1221
+WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/components/ball.v(235): expression size 32 truncated to fit in target size 11. VERI-1209
+WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/components/ball.v(236): memory should be on the sensitivity list. VERI-1221
 WARNING - synthesis: Net pos_x[9] has following drivers :
 	 instance pos_x
 
@@ -177,4 +177,4 @@ WARNING - synthesis: Net pos_x[9] has following drivers :
 
 
 
-ERROR - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/components/ball.v(199): net pos_x[9] is constantly driven from multiple places at instance dlatchrs_702, on port q[9]. VDB-1000
+ERROR - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/components/ball.v(199): net pos_x[9] is constantly driven from multiple places at instance dlatchrs_702, on port q[9]. VDB-1000

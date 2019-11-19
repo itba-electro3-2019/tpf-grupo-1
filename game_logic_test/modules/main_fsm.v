@@ -53,7 +53,7 @@ module main_fsm(
     end
     
     /* Combinational part of the FSM, calculates the next state and the output */
-    always @ (current_state or enter or value) begin: COMBINATIONAL_CODE
+    always @ (posedge clock) begin: COMBINATIONAL_CODE
         next_state = current_state;
 
         case(current_state)
@@ -140,10 +140,7 @@ module main_fsm(
                 reset = 0;
             end
         endcase
-    end
-
-    /* Sequential part of the FSM, updates the next state of the FSM */
-    always @(posedge clock) begin: SEQUENTIAL_CODE
+        
         current_state = next_state;
     end
 
