@@ -41,7 +41,7 @@ if (a)
 
 <DIV id="content" onclick="hideTocList()"><PRE>
 <A name="Par"></A>Copyright 2015 Lattice Semiconductor Corporation, All Rights Reserved
-Tue Nov 19 04:56:38 2019
+Tue Nov 19 05:17:57 2019
 
 Command Line: par -w -n 1 -t 1 -s 1 -cores 1 -exp parPathBased=ON \
 	pong_impl_1_map.udb pong_impl_1.udb 
@@ -51,16 +51,16 @@ Command Line: par -w -n 1 -t 1 -s 1 -cores 1 -exp parPathBased=ON \
 Level/       Number       Worst        Timing       Worst        Timing       Run          Run
 Cost [ncd]   Unrouted     Slack        Score        Slack(hold)  Score(hold)  Time         Status
 ----------   --------     -----        ------       -----------  -----------  ----         ------
-5_1   *      0            14.187       0            3.112        0            45           Success
+5_1   *      0            14.717       0            3.112        0            53           Success
 
 * : Design saved.
 
-Total (real) run time for 1-seed: 45 secs 
+Total (real) run time for 1-seed: 53 secs 
 
 par done!
 
 Lattice Place and Route Report for Design &quot;pong_impl_1_map.udb&quot;
-Tue Nov 19 04:56:38 2019
+Tue Nov 19 05:17:57 2019
 
 
 <A name="par_best"></A><B><U><big>Best Par Run</big></U></B>
@@ -76,22 +76,24 @@ Device:  iCE40UP5K
 Package: SG48
 Performance Grade:   High-Performance_1.2V
 WARNING - par: The preferred point for defining clocks is top level ports and driver pins. Pad delays will not be taken into consideration if clocks are defined on nets.
+WARNING - par: The preferred point for defining clocks is top level ports and driver pins. Pad delays will not be taken into consideration if clocks are defined on nets.
 
-WARNING: udb::Constraint &quot;create_generated_clock -name {vga_driver/pll_clock} -source [get_pins vga_driver.vga_clock.lscc_pll_inst.u_PLL_B/REFERENCECLK] -divide_by 32 -multiply_by 67 [get_pins vga_driver.vga_clock.lscc_pll_inst.u_PLL_B/OUTGLOBAL]&quot; does not have corresponding tmConstraint. Please check if the resource objects of the constraint are valid carefully!
+WARNING: udb::Constraint &quot;create_clock -name {vga_driver/vga_clock/lscc_pll_inst/REFERENCECLK} -period 83.3333333333333 [get_nets clk]&quot; does not have corresponding tmConstraint. Please check if the resource objects of the constraint are valid carefully!
+WARNING - par: The preferred point for defining clocks is top level ports and driver pins. Pad delays will not be taken into consideration if clocks are defined on nets.
 WARNING - par: The preferred point for defining clocks is top level ports and driver pins. Pad delays will not be taken into consideration if clocks are defined on nets.
 WARNING: not support VREF in IC1PW_VREFOBJ::collect_vref_driver_comps()
-Number of Signals: 1092
-Number of Connections: 2606
+Number of Signals: 1861
+Number of Connections: 5216
 
 <A name="par_dus"></A><B><U><big>Device utilization summary:</big></U></B>
 
-   SLICE (est.)     380/2640         14% used
-     LUT            718/5280         13% used
-     REG            130/5280          2% used
+   SLICE (est.)     747/2640         28% used
+     LUT           1428/5280         27% used
+     REG            135/5280          2% used
    PIO               10/56           17% used
                      10/36           27% bonded
    IOLOGIC            0/56            0% used
-   DSP                1/8            12% used
+   DSP                2/8            25% used
    I2C                0/2             0% used
    HFOSC              1/1           100% used
    LFOSC              0/1             0% used
@@ -109,29 +111,30 @@ Number of Connections: 2606
 
 Pin Constraint Summary:
    10 out of 10 pins locked (100% locked).
-Finished Placer Phase 0 (HIER).  CPU time: 2 secs , REAL time: 3 secs 
+Finished Placer Phase 0 (HIER).  CPU time: 6 secs , REAL time: 7 secs 
 
 
-................
-Finished Placer Phase 0 (AP).  CPU time: 5 secs , REAL time: 5 secs 
+......................
+Finished Placer Phase 0 (AP).  CPU time: 14 secs , REAL time: 15 secs 
 
-Starting Placer Phase 1. REAL time: 5 secs 
+Starting Placer Phase 1. REAL time: 15 secs 
 ..  ..
 ....................
 
-Placer score = 126408.
+Placer score = 269610.
 
 Device SLICE utilization summary after final SLICE packing:
-   SLICE            378/2640         14% used
+   SLICE            745/2640         28% used
 
 WARNING - par: The preferred point for defining clocks is top level ports and driver pins. Pad delays will not be taken into consideration if clocks are defined on nets.
-Finished Placer Phase 1.  CPU time: 34 secs , REAL time: 37 secs 
+WARNING - par: The preferred point for defining clocks is top level ports and driver pins. Pad delays will not be taken into consideration if clocks are defined on nets.
+Finished Placer Phase 1.  CPU time: 41 secs , REAL time: 42 secs 
 
 Starting Placer Phase 2.
 .
 
-Placer score =  157347
-Finished Placer Phase 2.  CPU time: 35 secs , REAL time: 37 secs 
+Placer score =  322296
+Finished Placer Phase 2.  CPU time: 42 secs , REAL time: 42 secs 
 
 
 
@@ -140,7 +143,7 @@ Finished Placer Phase 2.  CPU time: 35 secs , REAL time: 37 secs
 Global Clocks :
   PRIMARY &quot;vga_driver/pll_clock&quot; from OUTGLOBAL on comp &quot;vga_driver.vga_clock.lscc_pll_inst.u_PLL_B&quot; on site &quot;PLL_R13C32&quot;, clk load = 13, ce load = 0, sr load = 0
   PRIMARY &quot;clk&quot; from comp &quot;inst2&quot; on site &quot;HFOSC_R1C32&quot;, clk load = 10, ce load = 0, sr load = 0
-  PRIMARY &quot;tick_game&quot; from F0 on comp &quot;SLICE_500&quot; on site &quot;R13C2B&quot;, clk load = 53, ce load = 0, sr load = 0
+  PRIMARY &quot;tick_game&quot; from F0 on comp &quot;SLICE_1083&quot; on site &quot;R13C2A&quot;, clk load = 54, ce load = 0, sr load = 0
 
   PRIMARY  : 3 out of 8 (37%)
 
@@ -162,13 +165,14 @@ I/O Bank Usage Summary:
 | 2        | 0 / 8 (  0%)  | OFF        |            |            |
 +----------+---------------+------------+------------+------------+
 
-Total Placer CPU time: 35 secs , REAL time: 37 secs 
+Total Placer CPU time: 42 secs , REAL time: 42 secs 
 
 Writing design to file pong_impl_1_par.dir/5_1.udb ...
 
 WARNING - par: The preferred point for defining clocks is top level ports and driver pins. Pad delays will not be taken into consideration if clocks are defined on nets.
+WARNING - par: The preferred point for defining clocks is top level ports and driver pins. Pad delays will not be taken into consideration if clocks are defined on nets.
 
-Start NBR router at 04:57:16 11/19/19
+Start NBR router at 05:18:40 11/19/19
 
 *****************************************************************
 Info: NBR allows conflicts(one node used by more than one signal)
@@ -184,20 +188,21 @@ Note: NBR uses a different method to calculate timing slacks. The
 *****************************************************************
 
 WARNING - par: The preferred point for defining clocks is top level ports and driver pins. Pad delays will not be taken into consideration if clocks are defined on nets.
+WARNING - par: The preferred point for defining clocks is top level ports and driver pins. Pad delays will not be taken into consideration if clocks are defined on nets.
 Starting routing resource preassignment
 WARNING - par: Certain loads of primary clock signal clk could not be routed to the primary clock tree with dedicated routing resources. This clock may suffer from excessive skew or delay.
 Preassignment Summary:
 --------------------------------------------------------------------------------
-376 connections routed with dedicated routing resources
+433 connections routed with dedicated routing resources
 3 global clock signals routed
-398 connections routed (of 2561 total) (15.54%)
+455 connections routed (of 5167 total) (8.81%)
 ---------------------------------------------------------
 Clock routing summary:
 Primary clocks (3 used out of 8 available):
 #4  Signal &quot;clk&quot;
        Clock   loads: 9     out of    10 routed ( 90.00%)
 #5  Signal &quot;tick_game&quot;
-       Clock   loads: 0     out of    53 routed (  0.00%)
+       Clock   loads: 0     out of    54 routed (  0.00%)
 #7  Signal &quot;vga_driver/pll_clock&quot;
        Clock   loads: 13    out of    13 routed (100.00%)
 Other clocks:
@@ -211,32 +216,33 @@ Other clocks:
 --------------------------------------------------------------------------------
 Completed routing resource preassignment
 
-Start NBR section for initial routing at 04:57:18 11/19/19
+Start NBR section for initial routing at 05:18:43 11/19/19
 Level 4, iteration 1
-44(0.02%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack&lt;setup&gt;: 14.187ns/0.000ns; real time: 4 secs 
+105(0.04%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;setup&gt;: 14.717ns/0.000ns; real time: 7 secs 
 
 Info: Initial congestion level at 75% usage is 0
 Info: Initial congestion area  at 75% usage is 0 (0.00%)
 
-Start NBR section for normal routing at 04:57:20 11/19/19
+Start NBR section for normal routing at 05:18:47 11/19/19
 Level 4, iteration 1
-1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack&lt;setup&gt;: 14.187ns/0.000ns; real time: 5 secs 
+5(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack&lt;setup&gt;: 14.717ns/0.000ns; real time: 7 secs 
 Level 4, iteration 2
 1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack&lt;setup&gt;: 14.187ns/0.000ns; real time: 5 secs 
+Estimated worst slack/total negative slack&lt;setup&gt;: 14.717ns/0.000ns; real time: 7 secs 
 Level 4, iteration 3
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack&lt;setup&gt;: 14.187ns/0.000ns; real time: 5 secs 
+Estimated worst slack/total negative slack&lt;setup&gt;: 14.717ns/0.000ns; real time: 7 secs 
 
-Start NBR section for setup/hold timing optimization with effort level 3 at 04:57:21 11/19/19
+Start NBR section for setup/hold timing optimization with effort level 3 at 05:18:47 11/19/19
 
-Start NBR section for re-routing at 04:57:21 11/19/19
+Start NBR section for re-routing at 05:18:48 11/19/19
 Level 4, iteration 1
-0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 0 (nbr) score; real time: 5 secs 
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 0 (nbr) score; real time: 8 secs 
 
-Start NBR section for post-routing at 04:57:21 11/19/19
+Start NBR section for post-routing at 05:18:48 11/19/19
+WARNING - par: The preferred point for defining clocks is top level ports and driver pins. Pad delays will not be taken into consideration if clocks are defined on nets.
 WARNING - par: The preferred point for defining clocks is top level ports and driver pins. Pad delays will not be taken into consideration if clocks are defined on nets.
 
 End NBR router with 0 unrouted connection
@@ -246,16 +252,16 @@ End NBR router with 0 unrouted connection
 -----------
   Number of unrouted connections : 0 (0.00%)
   Number of connections with timing violations : 0 (0.00%)
-  Estimated worst slack&lt;setup&gt; : 14.187ns
+  Estimated worst slack&lt;setup&gt; : 14.717ns
   Timing score&lt;setup&gt; : 0
 -----------
 Notes: The timing info is calculated for SETUP only.
 
 
-Total CPU time 6 secs 
-Total REAL time: 7 secs 
+Total CPU time 9 secs 
+Total REAL time: 10 secs 
 Completely routed.
-End of route.  2561 routed (100.00%); 0 unrouted.
+End of route.  5167 routed (100.00%); 0 unrouted.
 
 Writing design to file pong_impl_1_par.dir/5_1.udb ...
 
@@ -265,15 +271,15 @@ All signals are completely routed.
 
 PAR_SUMMARY::Run status = Success
 PAR_SUMMARY::Number of unrouted conns = 0
-PAR_SUMMARY::Worst  slack&lt;setup/&lt;ns&gt;&gt; = 14.187
+PAR_SUMMARY::Worst  slack&lt;setup/&lt;ns&gt;&gt; = 14.717
 PAR_SUMMARY::Timing score&lt;setup/&lt;ns&gt;&gt; = 0.000
 PAR_SUMMARY::Worst  slack&lt;hold /&lt;ns&gt;&gt; = 3.112
 PAR_SUMMARY::Timing score&lt;hold /&lt;ns&gt;&gt; = 0.000
 PAR_SUMMARY::Number of errors = 0
 
-Total CPU  Time: 42 secs 
-Total REAL Time: 45 secs 
-Peak Memory Usage: 143 MB
+Total CPU  Time: 52 secs 
+Total REAL Time: 53 secs 
+Peak Memory Usage: 183 MB
 
 
 par done!

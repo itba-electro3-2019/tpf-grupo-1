@@ -5,7 +5,7 @@ Target Device:        iCE40UP5KSG48
 Target Performance:   High-Performance_1.2V
 
 Mapper:    version Radiant Software (64-bit) 1.1.0.165.1
-Mapped on: Tue Nov 19 04:56:34 2019
+Mapped on: Tue Nov 19 05:17:53 2019
 
 Design Information
 ------------------
@@ -17,18 +17,19 @@ Command line:   map pong_impl_1_syn.udb C:/Users/Lucas/Documents/Actualmente
 Design Summary
 --------------
 
-   Number of slice registers: 130 out of  5280 (2%)
+   Number of slice registers: 135 out of  5280 (3%)
    Number of I/O registers:      0 out of   117 (0%)
-   Number of LUT4s:           716 out of  5280 (14%)
-      Number of logic LUT4s:             418
-      Number of ripple logic:            149 (298 LUT4s)
+   Number of LUT4s:           1428 out of  5280 (27%)
+      Number of logic LUT4s:             1069
+      Number of replicated LUT4s:          1
+      Number of ripple logic:            179 (358 LUT4s)
    Number of IO sites used:   10 out of 39 (26%)
       Number of IO sites used for general PIOs: 10
       Number of IO sites used for I3Cs: 0 out of 2 (0%)
       Number of IO sites used for PIOs+I3Cs: 10 out of 36 (28%)
       (note: If I3C is not used, its site can be used as general PIO)
       Number of IO sites used for OD+RGB IO buffers: 0 out of 3 (0%)
-   Number of DSPs:             1 out of 8 (12%)
+   Number of DSPs:             2 out of 8 (25%)
    Number of I2Cs:             0 out of 2 (0%)
    Number of High Speed OSCs:  1 out of 1 (100%)
    Number of Low Speed OSCs:   0 out of 1 (0%)
@@ -44,22 +45,21 @@ Design Summary
       Net vga_driver/pll_clock: 18 loads, 18 rising, 0 falling (Driver: Pin
      vga_driver.vga_clock.lscc_pll_inst.u_PLL_B/OUTGLOBAL)
       Net clk: 10 loads, 10 rising, 0 falling (Driver: Pin inst2/CLKHF)
-      Net tick: 3 loads, 3 rising, 0 falling (Driver: Pin tick_c/Q)
-      Net tick_game: 73 loads, 73 rising, 0 falling (Driver: Pin
-     menu.clock_I_0_41_2_lut/OUT)
+      Net tick: 4 loads, 4 rising, 0 falling (Driver: Pin tick_c/Q)
+      Net tick_game: 77 loads, 77 rising, 0 falling (Driver: Pin i1_2_lut/OUT)
    Number of Clock Enables:  6
       Net VCC_net: 1 loads, 0 SLICEs
       Net reset: 10 loads, 10 SLICEs
-      Net paddle_two/n2618: 6 loads, 6 SLICEs
-      Net menu/flag: 1 loads, 1 SLICEs
-      Net paddle_one/n2595: 6 loads, 6 SLICEs
-      Net n538: 20 loads, 20 SLICEs
-   Number of LSRs:  7
-      Net vga_driver/n1157: 6 loads, 6 SLICEs
-      Net n2660: 8 loads, 8 SLICEs
-      Net n435: 32 loads, 32 SLICEs
-      Net paddle_two/n2674: 5 loads, 5 SLICEs
-      Net paddle_one/n2667: 5 loads, 5 SLICEs
+      Net n564: 20 loads, 20 SLICEs
+      Net flag: 1 loads, 1 SLICEs
+      Net paddle_two/n4650: 6 loads, 6 SLICEs
+      Net paddle_one/n4629: 6 loads, 6 SLICEs
+   Number of LSRs:  8
+      Net vga_driver/n1184: 6 loads, 6 SLICEs
+      Net n4702: 8 loads, 8 SLICEs
+      Net n564: 5 loads, 5 SLICEs
+      Net n1224: 1 loads, 1 SLICEs
+      Net n460: 32 loads, 32 SLICEs
 
                                     Page 1
 
@@ -69,30 +69,35 @@ Design Summary
 
 Design Summary (cont)
 ---------------------
-      Net n538: 5 loads, 5 SLICEs
-      Net n1202: 1 loads, 1 SLICEs
+      Net menu/enter_N_833: 1 loads, 1 SLICEs
+      Net paddle_two/n4721: 5 loads, 5 SLICEs
+      Net paddle_one/n4712: 5 loads, 5 SLICEs
    Top 10 highest fanout non-clock nets:
-      Net blanking: 102 loads
-      Net VCC_net: 61 loads
-      Net reset: 49 loads
-      Net n435: 32 loads
-      Net n538: 25 loads
-      Net ball/n912: 20 loads
-      Net bounce[0]: 19 loads
-      Net bounce[1]: 19 loads
-      Net n15: 14 loads
-      Net pixel_row_9__N_36[5]: 12 loads
+      Net start_menu/rgb_2__N_761[3]: 214 loads
+      Net start_menu/rgb_2__N_761[2]: 185 loads
+      Net start_menu/rgb_2__N_761[1]: 171 loads
+      Net blanking: 168 loads
+      Net start_menu/rgb_2__N_761[4]: 160 loads
+      Net start_menu/rgb_2__N_761[0]: 157 loads
+      Net start_menu/rgb_2__N_761[5]: 130 loads
+      Net VCC_net: 85 loads
+      Net start_menu/rgb_2__N_761[6]: 71 loads
+      Net reset: 53 loads
 
 
 
 
-   Number of warnings:  0
+   Number of warnings:  3
    Number of errors:    0
 
 Design Errors/Warnings
 ----------------------
 
-   No errors or warnings present.
+WARNING - map: No port matched 'clk'.
+WARNING - map: Can't resolve object 'clk' in constraint 'ldc_set_location -site
+     {35} [get_ports clk]'.
+WARNING - map: Remove invalid constraint 'ldc_set_location -site {35} [get_ports
+     clk]'.
 
 IO (PIO) Attributes
 -------------------
@@ -100,6 +105,10 @@ IO (PIO) Attributes
 +---------------------+-----------+-----------+-------+-------+-----------+
 | IO Name             | Direction | Levelmode |  IO   |  IO   | Special   |
 |                     |           |  IO_TYPE  |  REG  |  DDR  | IO Buffer |
++---------------------+-----------+-----------+-------+-------+-----------+
+| enter               | INPUT     | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| player_two_down     | INPUT     | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | player_two_up       | INPUT     | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
@@ -115,17 +124,8 @@ IO (PIO) Attributes
 +---------------------+-----------+-----------+-------+-------+-----------+
 | vsync               | OUTPUT    | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| player_two_down     | INPUT     | LVCMOS33  |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
-| enter               | INPUT     | LVCMOS33  |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
 | player_one_down     | INPUT     | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-
-Removed logic
--------------
-
-Signal GND_net undriven or does not drive anything - clipped.
 
                                     Page 2
 
@@ -133,8 +133,11 @@ Signal GND_net undriven or does not drive anything - clipped.
 
 
 
-Removed logic (cont)
---------------------
+
+Removed logic
+-------------
+
+Signal GND_net undriven or does not drive anything - clipped.
 Block i1 was optimized away.
 
 PLL/DLL Summary
@@ -189,9 +192,6 @@ ASIC Components
 ---------------
 
 Instance Name: vga_driver.vga_clock.lscc_pll_inst.u_PLL_B
-         Type: PLL
-Instance Name: inst2
-         Type: HFOSC
 
                                     Page 3
 
@@ -201,20 +201,20 @@ Instance Name: inst2
 
 ASIC Components (cont)
 ----------------------
-Instance Name: ball.mult_654
+         Type: PLL
+Instance Name: start_menu.mult_699
          Type: DSP
+Instance Name: ball.mult_696
+         Type: DSP
+Instance Name: inst2
+         Type: HFOSC
 
 Run Time and Memory Usage
 -------------------------
 
    Total CPU Time: 1 secs
    Total REAL Time: 0 secs
-   Peak Memory Usage: 75 MB
-
-
-
-
-
+   Peak Memory Usage: 87 MB
 
 
 

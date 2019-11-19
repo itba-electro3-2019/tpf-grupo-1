@@ -48,7 +48,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2019 Lattice Semiconductor Corporation,  All rights reserved.
-Tue Nov 19 04:56:19 2019
+Tue Nov 19 05:17:31 2019
 
 
 Command Line:  C:\lscc\radiant\1.1\ispfpga\bin\nt64\synthesis.exe -f pong_impl_1_lattice.synproj -gui -msgset C:/Users/Lucas/Documents/Actualmente Usando/Electronica III/tpf-grupo-1/Pong/promote.xml 
@@ -110,6 +110,7 @@ ROM style = auto
 RAM style = auto
 The -comp option is FALSE.
 The -syn option is FALSE.
+-sdc option: SDC file input is C:/Users/Lucas/Documents/Actualmente Usando/Electronica III/tpf-grupo-1/Pong/impl_1/impl_1.ldc.
 -path C:/Users/Lucas/Documents/Actualmente Usando/Electronica III/tpf-grupo-1/Pong (searchpath added)
 -path C:/Users/Lucas/Documents/Actualmente Usando/Electronica III/tpf-grupo-1/Pong/clock (searchpath added)
 -path C:/Users/Lucas/Documents/Actualmente Usando/Electronica III/tpf-grupo-1/Pong/impl_1 (searchpath added)
@@ -293,6 +294,9 @@ Loading device for application lse from file 'itpa08.nph' in environment: C:/lsc
 
 WARNING - synthesis: Initial value found on net gnd will be ignored due to unrecognized driver type
 WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/components/ball.v(219): ram memory_original_ramnet has no write-port on it. VDB-1038
+WARNING - synthesis: Initial value found on net gnd_2 will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net pwr_2 will be ignored due to unrecognized driver type
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/menus/start_menu.v(24): ram memory_original_ramnet has no write-port on it. VDB-1038
 WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/clock/rtl/clock.v(16): input port sclk_i is not connected on this instance. VDB-1013
 WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/clock/rtl/clock.v(16): input port sdi_i is not connected on this instance. VDB-1013
 WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/clock/rtl/clock.v(92): net \vga_driver/vga_clock/lscc_pll_inst/sclk_i does not have a driver. VDB-1002
@@ -323,34 +327,62 @@ original encoding -> new encoding (one-hot encoding)
 
 
 
-Mapped 1 multiplier(s)
+Mapped 2 multiplier(s)
 
 
-######## Missing driver on net \ball/rgb_2__N_235[10]. Patching with GND.
-######## Missing driver on net \ball/rgb_2__N_269[10]. Patching with GND.
-######## Missing driver on net \paddle_one/rgb_2__N_393[10]. Patching with GND.
-######## Missing driver on net \paddle_two/rgb_2__N_528[10]. Patching with GND.
+######## Missing driver on net \ball/rgb_2__N_238[10]. Patching with GND.
+######## Missing driver on net \ball/rgb_2__N_272[10]. Patching with GND.
 WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/components/ball.v(214): Register \ball/size_x_i0 is stuck at Zero. VDB-5013
-WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/components/paddle.v(80): Register \paddle_one/size_x_i0 is stuck at Zero. VDB-5013
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/components/paddle.v(80): Register \paddle_one/pos_x_i0 is stuck at Zero. VDB-5013
 WARNING - synthesis: Initial value found on instance \game/bounce_i1 will be ignored.
+WARNING - synthesis: Initial value found on instance \menu/enable_start will be ignored.
 WARNING - synthesis: Initial value found on instance \game/bounce_i0 will be ignored.
+WARNING - synthesis: Initial value found on instance \menu/reset will be ignored.
+Starting design annotation....
+WARNING - synthesis: The preferred point for defining clocks is top level ports and driver pins. Pad delays will not be taken into consideration if clocks are defined on nets.
+WARNING - synthesis: The preferred point for defining clocks is top level ports and driver pins. Pad delays will not be taken into consideration if clocks are defined on nets.
+WARNING - synthesis: The preferred point for defining clocks is top level ports and driver pins. Pad delays will not be taken into consideration if clocks are defined on nets.
+WARNING - synthesis: The preferred point for defining clocks is top level ports and driver pins. Pad delays will not be taken into consideration if clocks are defined on nets.
+
+Starting full timing analysis...
+Starting design annotation....
+WARNING - synthesis: The preferred point for defining clocks is top level ports and driver pins. Pad delays will not be taken into consideration if clocks are defined on nets.
+WARNING - synthesis: The preferred point for defining clocks is top level ports and driver pins. Pad delays will not be taken into consideration if clocks are defined on nets.
+WARNING - synthesis: The preferred point for defining clocks is top level ports and driver pins. Pad delays will not be taken into consideration if clocks are defined on nets.
+WARNING - synthesis: The preferred point for defining clocks is top level ports and driver pins. Pad delays will not be taken into consideration if clocks are defined on nets.
+
+Starting full timing analysis...
+Starting design annotation....
+WARNING - synthesis: The preferred point for defining clocks is top level ports and driver pins. Pad delays will not be taken into consideration if clocks are defined on nets.
+WARNING - synthesis: The preferred point for defining clocks is top level ports and driver pins. Pad delays will not be taken into consideration if clocks are defined on nets.
+WARNING - synthesis: The preferred point for defining clocks is top level ports and driver pins. Pad delays will not be taken into consideration if clocks are defined on nets.
+WARNING - synthesis: The preferred point for defining clocks is top level ports and driver pins. Pad delays will not be taken into consideration if clocks are defined on nets.
+
+Starting full timing analysis...
+Starting design annotation....
+WARNING - synthesis: The preferred point for defining clocks is top level ports and driver pins. Pad delays will not be taken into consideration if clocks are defined on nets.
+WARNING - synthesis: The preferred point for defining clocks is top level ports and driver pins. Pad delays will not be taken into consideration if clocks are defined on nets.
+WARNING - synthesis: The preferred point for defining clocks is top level ports and driver pins. Pad delays will not be taken into consideration if clocks are defined on nets.
+WARNING - synthesis: The preferred point for defining clocks is top level ports and driver pins. Pad delays will not be taken into consideration if clocks are defined on nets.
+
+Starting full timing analysis...
 
 
 <A name="lse_area"></A><B><U><big>Area Report</big></U></B>
 
 ################### Begin Area Report (main)######################
-Number of register bits => 130 of 5280 (2 % )
-CCU2 => 149
-FD1P3XZ => 130
+Number of register bits => 135 of 5280 (2 % )
+CCU2 => 179
+FD1P3XZ => 135
 HSOSC_CORE => 1
 IB => 5
-LUT4 => 416
-MAC16 => 1
+LUT4 => 1068
+MAC16 => 2
 OB => 5
 PLL_B => 1
 ################### End Area Report ##################
-Number of odd-length carry chains : 6
-Number of even-length carry chains : 21
+Number of odd-length carry chains : 2
+Number of even-length carry chains : 29
 
 
 <A name="lse_clock"></A><B><U><big>Clock Report</big></U></B>
@@ -359,29 +391,29 @@ Number of even-length carry chains : 21
 Clock Nets
 Number of Clocks: 3
   Net : clk, loads : 1
-  Net : menu/tick_game, loads : 0
+  Net : tick_game, loads : 0
   Net : tick, loads : 2
 Clock Enable Nets
 Number of Clock Enables: 0
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : menu/reset, loads : 52
-  Net : vga_driver/blanking, loads : 43
-  Net : paddle_two/n435, loads : 41
-  Net : n538, loads : 28
-  Net : vga_driver/vga_clock/lscc_pll_inst/pll_clock, loads : 20
-  Net : ball/n912, loads : 20
-  Net : game/bounce[1], loads : 18
-  Net : game/bounce[0], loads : 18
-  Net : n2660, loads : 15
-  Net : ball/n15, loads : 13
+  Net : start_menu/rgb_2__N_761[3], loads : 208
+  Net : start_menu/rgb_2__N_761[2], loads : 166
+  Net : start_menu/rgb_2__N_761[4], loads : 159
+  Net : start_menu/rgb_2__N_761[1], loads : 140
+  Net : vga_driver/blanking, loads : 134
+  Net : start_menu/rgb_2__N_761[5], loads : 129
+  Net : start_menu/rgb_2__N_761[0], loads : 104
+  Net : start_menu/rgb_2__N_761[6], loads : 71
+  Net : menu/reset, loads : 58
+  Net : start_menu/rgb_2__N_761[7], loads : 44
 ################### End Clock Report ##################
 
-Peak Memory Usage: 109.766  MB
+Peak Memory Usage: 924.340  MB
 
 --------------------------------------------------------------
-Total CPU time for LSE flow : 8.719  secs
-Total REAL time for LSE flow : 11.000  secs
+Total CPU time for LSE flow : 17.594  secs
+Total REAL time for LSE flow : 18.000  secs
 --------------------------------------------------------------
 
 

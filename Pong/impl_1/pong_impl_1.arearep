@@ -1,19 +1,20 @@
 ----------------------------------------------------------------------
 Report for cell main.TECH
-Register bits:  130 of 5280 (2.462%)
+Register bits:  135 of 5280 (2.557%)
 I/O cells:      10
                                   Cell usage:
                                cell     count   Res Usage(%)
-                               CCU2       149          100.0
-                            FD1P3XZ       130          100.0
+                               CCU2       179          100.0
+                            FD1P3XZ       135          100.0
                          HSOSC_CORE         1          100.0
                                  IB         5          100.0
-                               LUT4       416          100.0
-                              MAC16         1          100.0
+                               LUT4      1068          100.0
+                              MAC16         2          100.0
                                  OB         5          100.0
                               PLL_B         1          100.0
 SUB MODULES
                          Background         1
+Start_menu(START_POSX=173,START_POSY=234)         1
                           VGADriver         1
                            ball_fsm         1
                               clock         1
@@ -22,20 +23,20 @@ clock_ipgen_lscc_pll(DIVR="0",DIVF="66",DIVQ="5",FILTER_RANGE="1",PLLOUT_SELECT_
                            main_fsm         1
 paddle(START_X_POS=20,START_Y_POS=190)         1
 paddle(START_X_POS=615,START_Y_POS=190)         1
-                              TOTAL       717
+                              TOTAL      1406
 ----------------------------------------------------------------------
 Report for cell VGADriver.v1
 Instance Path : vga_driver
                                   Cell usage:
                                cell     count   Res Usage(%)
-                                FA2        22           14.8
-                            FD1P3XZ        22           16.9
-                               LUT4        46           11.1
+                                FA2        22           12.3
+                            FD1P3XZ        22           16.3
+                               LUT4        48            4.5
                               PLL_B         1          100.0
 SUB MODULES
                               clock         1
 clock_ipgen_lscc_pll(DIVR="0",DIVF="66",DIVQ="5",FILTER_RANGE="1",PLLOUT_SELECT_PORTA="GENCLK",PLLOUT_SELECT_PORTB="GENCLK",FREQUENCY_PIN_REFERENCECLK="12.000000")         1
-                              TOTAL        93
+                              TOTAL        95
 ----------------------------------------------------------------------
 Report for cell clock.v1
 Instance Path : vga_driver.vga_clock
@@ -53,55 +54,64 @@ Instance Path : vga_driver.vga_clock.lscc_pll_inst
                               PLL_B         1          100.0
                               TOTAL         1
 ----------------------------------------------------------------------
-Report for cell paddle(START_X_POS=615,START_Y_POS=190).v1
-Instance Path : paddle_two
+Report for cell Start_menu(START_POSX=173,START_POSY=234).v1
+Instance Path : start_menu
                                   Cell usage:
                                cell     count   Res Usage(%)
-                                FA2        16           10.7
-                            FD1P3XZ        27           20.8
-                               LUT4        32            7.7
-                              TOTAL        75
-----------------------------------------------------------------------
-Report for cell main_fsm.v1
-Instance Path : menu
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                            FD1P3XZ         3            2.3
-                               LUT4         3            0.7
-                              TOTAL         6
-----------------------------------------------------------------------
-Report for cell paddle(START_X_POS=20,START_Y_POS=190).v1
-Instance Path : paddle_one
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                                FA2        16           10.7
-                            FD1P3XZ        25           19.2
-                               LUT4        28            6.7
-                              TOTAL        69
+                                FA2        20           11.2
+                               LUT4       543           50.8
+                              MAC16         1           50.0
+                              TOTAL       564
 ----------------------------------------------------------------------
 Report for cell game_logic.v1
 Instance Path : game
                                   Cell usage:
                                cell     count   Res Usage(%)
-                                FA2        20           13.4
+                                FA2        22           12.3
                             FD1P3XZ         2            1.5
-                               LUT4        77           18.5
-                              TOTAL        99
+                               LUT4       107           10.0
+                              TOTAL       131
 ----------------------------------------------------------------------
 Report for cell ball_fsm.v1
 Instance Path : ball
                                   Cell usage:
                                cell     count   Res Usage(%)
-                                FA2        55           36.9
-                            FD1P3XZ        36           27.7
-                               LUT4       108           26.0
-                              MAC16         1          100.0
-                              TOTAL       200
+                                FA2        55           30.7
+                            FD1P3XZ        36           26.7
+                               LUT4       131           12.3
+                              MAC16         1           50.0
+                              TOTAL       223
 ----------------------------------------------------------------------
 Report for cell Background.v1
 Instance Path : background
                                   Cell usage:
                                cell     count   Res Usage(%)
-                                FA2        12            8.1
-                               LUT4        35            8.4
-                              TOTAL        47
+                                FA2        12            6.7
+                               LUT4        37            3.5
+                              TOTAL        49
+----------------------------------------------------------------------
+Report for cell main_fsm.v1
+Instance Path : menu
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3XZ         4            3.0
+                               LUT4         3            0.3
+                              TOTAL         7
+----------------------------------------------------------------------
+Report for cell paddle(START_X_POS=615,START_Y_POS=190).v1
+Instance Path : paddle_two
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2        23           12.8
+                            FD1P3XZ        29           21.5
+                               LUT4        39            3.7
+                              TOTAL        91
+----------------------------------------------------------------------
+Report for cell paddle(START_X_POS=20,START_Y_POS=190).v1
+Instance Path : paddle_one
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2        17            9.5
+                            FD1P3XZ        27           20.0
+                               LUT4        37            3.5
+                              TOTAL        81

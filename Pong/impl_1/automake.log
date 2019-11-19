@@ -36,7 +36,7 @@ Saving bit stream in "C:\Users\Lucas\Documents\Actualmente Usando\Electronica II
 ibisgen "pong_impl_1.udb" "C:/lscc/radiant/1.1/cae_library/ibis/iCE40UP.ibs"
 IBIS Models Generator: Lattice Radiant Software (64-bit) 1.1.0.165.1
 
-Tue Nov 19 04:57:30 2019
+Tue Nov 19 05:18:58 2019
 
 Loading pong_impl_1.udb ...
 Loading device for application udb from file 'itpa08.nph' in environment: C:/lscc/radiant/1.1/ispfpga.
@@ -75,6 +75,6 @@ Writing a verilog netlist based on the pong_impl_1 design file.
 Writing Verilog netlist to file pong_impl_1_vo.vo
 Writing SDF timing to file pong_impl_1_vo.sdf
 Backanno finished with 0 posted error messages.
-Total CPU Time: 3 secs 
-Total REAL Time: 4 secs 
-Peak Memory Usage: 109 MB
+Total CPU Time: 4 secs 
+Total REAL Time: 5 secs 
+Peak Memory Usage: 127 MB
