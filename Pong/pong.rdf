@@ -12,13 +12,25 @@
         <Source name="clock/clock.ipx" type="IPX_Module" type_short="IPX">
             <Options/>
         </Source>
-        <Source name="logic/game_logic.v" type="Verilog" type_short="Verilog" excluded="TRUE">
+        <Source name="logic/game_logic.v" type="Verilog" type_short="Verilog">
             <Options/>
         </Source>
         <Source name="gui/components/ball.v" type="Verilog" type_short="Verilog">
             <Options/>
         </Source>
         <Source name="gui/components/paddle.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="gui/trash/components/background.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="logic/main_fsm.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="gui/menus/start_menu.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="impl_1/impl_1.ldc" type="LSE Design Constraints File" type_short="LDC">
             <Options/>
         </Source>
         <Source name="impl_1/impl_1.pdc" type="Physical Constraints File" type_short="PDC">
