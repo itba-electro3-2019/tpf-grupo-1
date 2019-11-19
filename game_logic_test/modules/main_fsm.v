@@ -34,6 +34,9 @@ module main_fsm(
     //----------------- INTERNAL VARIABLES ----------------------
     reg current_state;
     reg next_state;
+    reg tick_selector = 0;
+    assign tick_menu = clock & ~tick_selector;
+    assign tick_game = clock & tick_selector;
 
     //----------------- FSM STATES ------------------------------
     parameter START = 2'b00;
@@ -44,8 +47,7 @@ module main_fsm(
     initial begin: INITIALIZATION
         current_state = START;
         next_state = START;
-        tick_menu = clock;
-        tick_game = 0;
+        tick_selector = 0;
         enable_start = 1;
         enable_game = 0;
         enable_pause = 0;
@@ -61,16 +63,14 @@ module main_fsm(
             START: begin
                 if (enter) begin
                     next_state = GAME;
-                    tick_menu = 0;
-                    tick_game = clock;
+                    tick_selector = 1;
                     enable_start = 0;
                     enable_game = 1;
                     enable_pause = 0;
                     reset = 1;
                 end else begin
                     next_state = START;
-                    tick_menu = clock;
-                    tick_game = 0;
+                    tick_selector = 0;
                     enable_start = 1;
                     enable_game = 0;
                     enable_pause = 0;
@@ -82,16 +82,14 @@ module main_fsm(
             GAME: begin
                 if (enter) begin
                     next_state = PAUSE;
-                    tick_menu = clock;
-                    tick_game = 0;
+                    tick_selector = 0;
                     enable_start = 0;
                     enable_game = 0;
                     enable_pause = 1;
                     reset = 1;
                 end else begin
                     next_state = GAME;
-                    tick_menu = 0;
-                    tick_game = clock;
+                    tick_selector = 1;
                     enable_start = 0;
                     enable_game = 1;
                     enable_pause = 0;
@@ -103,24 +101,21 @@ module main_fsm(
             PAUSE: begin
                 if (enter & value) begin
                     next_state = START;
-                    tick_menu = clock;
-                    tick_game = 0;
+                    tick_selector = 0;
                     enable_start = 1;
                     enable_game = 0;
                     enable_pause = 0;
                     reset = 0;
                 end else if (enter & !value) begin
                     next_state = GAME;
-                    tick_menu = 0;
-                    tick_game = clock;
+                    tick_selector = 1;
                     enable_start = 0;
                     enable_game = 1;
                     enable_pause = 0;
                     reset = 1;
                 end else begin
                     next_state = PAUSE;
-                    tick_menu = clock;
-                    tick_game = 0;
+                    tick_selector = 0;
                     enable_start = 0;
                     enable_game = 0;
                     enable_pause = 1;
@@ -132,8 +127,7 @@ module main_fsm(
             default: begin
                 current_state = START;
                 next_state = START;
-                tick_menu = clock;
-                tick_game = 0;
+                tick_selector = 0;
                 enable_start = 1;
                 enable_game = 0;
                 enable_pause = 0;
