@@ -46,7 +46,7 @@ module paddle(
 	parameter START_Y_POS = 100;
 	parameter LIMIT_Y_MIN = 5;
 	parameter LIMIT_Y_MAX = 475;
-    parameter SPEED = 10;           // Number of tick clocks until changes should be done, MAX = 255!
+    parameter SPEED = 15;           // Number of tick clocks until changes should be done, MAX = 255!
 
     //----------------- INTERNAL VARIABLES ----------------------
     reg [7:0] timer = 0;

@@ -37,9 +37,9 @@ module ball_fsm(
 	parameter COLOR = 3'b111;
     parameter SCREEN_X = 640;
     parameter SCREEN_Y = 480;
-	parameter HEIGHT = 15;
-	parameter WIDTH = 15;
-    parameter SPEED = 10;           // Number of tick clocks until changes should be done, MAX = 255!
+	parameter HEIGHT = 6;
+	parameter WIDTH = 6;
+    parameter SPEED = 15;           // Number of tick clocks until changes should be done, MAX = 255!
 
     //----------------- INTERNAL VARIABLES ----------------------
     reg [1:0] current_state;

@@ -1,6 +1,6 @@
 Lattice Timing Report -  Setup  and Hold, Version Radiant Software (64-bit) 1.1.0.165.1
 
-Tue Nov 19 02:14:37 2019
+Tue Nov 19 04:56:32 2019
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -119,7 +119,7 @@ Clock Domain Crossing
 
 3.1.1  Constraint Coverage
 ---------------------------
-Constraint Coverage: 9.95722%
+Constraint Coverage: 10.1749%
 
 3.1.2  Timing Errors
 ---------------------
@@ -141,7 +141,7 @@ Total Negative Slack: 0.000 ns (setup), 0.000 ns (hold)
                                         |             |             |        |             |             |                |                
 create_clock -name {vga_driver/vga_cloc                                                                                                    
 k/lscc_pll_inst/clk} -period 83.3333333                                                                                                    
-333333 [get_nets clk]                   |   83.333 ns |   71.255 ns |    5   |   20.830 ns |  48.008 MHz |       29       |        0       
+333333 [get_nets clk]                   |   83.333 ns |   68.703 ns |    6   |   20.830 ns |  48.008 MHz |       29       |        0       
                                         |             |             |        |             |             |                |                
 create_generated_clock -name {vga_drive                                                                                                    
 r/pll_clock} -source [get_pins {vga_dri                                                                                                    
@@ -157,15 +157,15 @@ _pll_inst/u_PLL_B/OUTGLOBAL }]          |   39.800 ns |   14.221 ns |   18   |  
           Listing 10 End Points          |    Slack    
 -------------------------------------------------------
 vga_driver/vga_vsync/D                   |   14.222 ns 
-vga_driver/v_count__i0/D                 |   16.774 ns 
 vga_driver/v_count__i9/D                 |   16.774 ns 
 vga_driver/v_count__i8/D                 |   16.774 ns 
 vga_driver/v_count__i7/D                 |   16.774 ns 
 vga_driver/v_count__i6/D                 |   16.774 ns 
 vga_driver/v_count__i5/D                 |   16.774 ns 
+vga_driver/v_count__i1/D                 |   16.774 ns 
 vga_driver/v_count__i4/D                 |   16.774 ns 
 vga_driver/v_count__i3/D                 |   16.774 ns 
-vga_driver/v_count__i2/D                 |   16.774 ns 
+vga_driver/v_count__i0/D                 |   16.774 ns 
 -------------------------------------------------------
                                          |             
 Setup # of endpoints with negative slack:|           0 
@@ -200,16 +200,16 @@ _pll_inst/u_PLL_B/OUTGLOBAL }]          |    0.000 ns |    4.196 ns |    2   |  
 -------------------------------------------------------
           Listing 10 End Points          |    Slack    
 -------------------------------------------------------
-vga_driver/h_count_384__i9/D             |    4.196 ns 
-vga_driver/h_count_384__i8/D             |    4.196 ns 
-vga_driver/h_count_384__i7/D             |    4.196 ns 
-vga_driver/h_count_384__i6/D             |    4.196 ns 
-vga_driver/h_count_384__i5/D             |    4.196 ns 
-vga_driver/h_count_384__i4/D             |    4.196 ns 
-vga_driver/h_count_384__i3/D             |    4.196 ns 
-vga_driver/h_count_384__i2/D             |    4.196 ns 
-vga_driver/h_count_384__i1/D             |    4.196 ns 
-vga_driver/h_count_384__i0/D             |    4.196 ns 
+vga_driver/h_count_388__i9/D             |    4.196 ns 
+vga_driver/h_count_388__i8/D             |    4.196 ns 
+vga_driver/h_count_388__i7/D             |    4.196 ns 
+vga_driver/h_count_388__i6/D             |    4.196 ns 
+vga_driver/h_count_388__i5/D             |    4.196 ns 
+vga_driver/h_count_388__i4/D             |    4.196 ns 
+vga_driver/h_count_388__i3/D             |    4.196 ns 
+vga_driver/h_count_388__i2/D             |    4.196 ns 
+vga_driver/h_count_388__i1/D             |    4.196 ns 
+vga_driver/h_count_388__i0/D             |    4.196 ns 
 -------------------------------------------------------
                                          |             
 Hold # of endpoints with negative slack: |           0 
@@ -226,20 +226,20 @@ Clocked but unconstrained timing start points
 -------------------------------------------------------------------
         Listing 10 Start Points         |           Type           
 -------------------------------------------------------------------
+ball/timer_389__i7/Q                    |    No arrival or required
+ball/timer_389__i6/Q                    |    No arrival or required
+ball/timer_389__i5/Q                    |    No arrival or required
+ball/timer_389__i4/Q                    |    No arrival or required
+ball/timer_389__i3/Q                    |    No arrival or required
+ball/timer_389__i2/Q                    |    No arrival or required
+ball/timer_389__i1/Q                    |    No arrival or required
+ball/timer_389__i0/Q                    |    No arrival or required
 ball/current_state_FSM_i3/Q             |    No arrival or required
 ball/current_state_FSM_i1/Q             |    No arrival or required
-ball/current_state_FSM_i0/Q             |    No arrival or required
-ball/timer_385__i7/Q                    |    No arrival or required
-ball/timer_385__i6/Q                    |    No arrival or required
-ball/timer_385__i5/Q                    |    No arrival or required
-ball/timer_385__i4/Q                    |    No arrival or required
-ball/timer_385__i3/Q                    |    No arrival or required
-ball/timer_385__i2/Q                    |    No arrival or required
-ball/timer_385__i1/Q                    |    No arrival or required
 -------------------------------------------------------------------
                                         |                          
 Number of unconstrained timing start po |                          
-ints                                    |                        89
+ints                                    |                        93
                                         |                          
 -------------------------------------------------------------------
 
@@ -247,20 +247,20 @@ Clocked but unconstrained timing end points
 -------------------------------------------------------------------
          Listing 10 End Points          |           Type           
 -------------------------------------------------------------------
-ball/current_state_FSM_i3/D             |    No arrival or required
-ball/current_state_FSM_i1/D             |    No arrival or required
-ball/current_state_FSM_i0/D             |    No arrival or required
-ball/pos_y_i9/D                         |    No arrival or required
-ball/pos_y_i8/D                         |    No arrival or required
-ball/pos_y_i3/D                         |    No arrival or required
-ball/pos_y_i2/D                         |    No arrival or required
-ball/pos_y_i1/D                         |    No arrival or required
-ball/pos_y_i0/D                         |    No arrival or required
 ball/pos_x_i0/D                         |    No arrival or required
+ball/timer_389__i7/D                    |    No arrival or required
+ball/timer_389__i6/D                    |    No arrival or required
+ball/timer_389__i5/D                    |    No arrival or required
+ball/timer_389__i4/D                    |    No arrival or required
+ball/timer_389__i3/D                    |    No arrival or required
+ball/timer_389__i2/D                    |    No arrival or required
+ball/timer_389__i1/D                    |    No arrival or required
+ball/timer_389__i0/D                    |    No arrival or required
+ball/pos_x_i1/D                         |    No arrival or required
 -------------------------------------------------------------------
                                         |                          
 Number of unconstrained timing end poin |                          
-ts                                      |                       210
+ts                                      |                       214
                                         |                          
 -------------------------------------------------------------------
 
@@ -278,12 +278,13 @@ create_generated_clock,
 ...
 
 -------------------------------------------------------------------
-     Listing 9 Start or End Points      |           Type           
+     Listing 10 Start or End Points     |           Type           
 -------------------------------------------------------------------
 player_one_up                           |                     input
 player_one_down                         |                     input
 player_two_up                           |                     input
 player_two_down                         |                     input
+enter                                   |                     input
 hsync                                   |                    output
 vsync                                   |                    output
 r                                       |                    output
@@ -291,22 +292,15 @@ g                                       |                    output
 b                                       |                    output
 -------------------------------------------------------------------
                                         |                          
-Number of I/O ports without constraint  |                         9
+Number of I/O ports without constraint  |                        10
                                         |                          
 -------------------------------------------------------------------
 
 Registers without clock definition
 Define the clock for these registers.
--------------------------------------------------------------------
-         Listing 1 Instance(s)          |           Type           
--------------------------------------------------------------------
-reset_c                                 |                  No Clock
--------------------------------------------------------------------
-                                        |                          
-Number of registers without clock defin |                          
-ition                                   |                         1
-                                        |                          
--------------------------------------------------------------------
+--------------------------------------------------
+There is no instance satisfying reporting criteria
+
 
 ==============================================
 4  DETAILED REPORT
@@ -333,15 +327,15 @@ Period margin    : 62.5033 ns  (Passed)
 
  ++++Path 1  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : timer_clock_383__i12/Q
+Path Begin       : timer_clock_387__i9/Q
 Path End         : tick_c/D
 Source Clock     : vga_driver/vga_clock/lscc_pll_inst/clk
 Destination Clock: vga_driver/vga_clock/lscc_pll_inst/clk
-Logic Level      : 5
-Delay Ratio      : 72.2% (route), 27.8% (logic)
+Logic Level      : 6
+Delay Ratio      : 73.8% (route), 26.2% (logic)
 Clock Skew       : 0.000 ns
 Setup Constraint : 83.333 ns 
-Path Slack       : 71.255 ns  (Passed)
+Path Slack       : 68.703 ns  (Passed)
 
   Destination Clock Arrival Time (vga_driver/vga_clock/lscc_pll_inst/clk:R#2)    83.333
 + Destination Clock Source Latency                                                0.000
@@ -354,9 +348,9 @@ End-of-path required time( ns )                                                 
   Source Clock Arrival Time (vga_driver/vga_clock/lscc_pll_inst/clk:R#1)    0.000
 + Source Clock Source Latency                                               0.000
 + Source Clock Path Delay                                                   2.075
-+ Data Path Delay                                                          11.879
++ Data Path Delay                                                          14.431
 ------------------------------------------------------------------------   ------
-End-of-path arrival time( ns )                                             13.954
+End-of-path arrival time( ns )                                             16.506
 
  
 Source Clock Path
@@ -369,17 +363,19 @@ clk                                                       NET DELAY      2.075  
 Data path
 Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
-timer_clock_383__i12/CK->timer_clock_383__i12/Q
+timer_clock_387__i9/CK->timer_clock_387__i9/Q
                                           FD1P3XZ         CK_TO_Q_DELAY  1.391         3.466  2       
-timer_clock[12]                                           NET DELAY      0.280         3.746  1       
-i7680_4_lut/B->i7680_4_lut/Z              LUT4            B_TO_Z_DELAY   0.477         4.223  1       
-n9795                                                     NET DELAY      2.075         6.298  1       
-i7684_4_lut/A->i7684_4_lut/Z              LUT4            A_TO_Z_DELAY   0.477         6.775  1       
-n9799                                                     NET DELAY      2.075         8.850  1       
-i8526_4_lut/B->i8526_4_lut/Z              LUT4            B_TO_Z_DELAY   0.477         9.327  15      
-n2656                                                     NET DELAY      2.075        11.402  1       
-i1_2_lut/B->i1_2_lut/Z                    LUT4            B_TO_Z_DELAY   0.477        11.879  1       
-n2404                                                     NET DELAY      2.075        13.954  1       
+timer_clock[9]                                            NET DELAY      0.280         3.746  1       
+i5282_4_lut/D->i5282_4_lut/Z              LUT4            D_TO_Z_DELAY   0.477         4.223  1       
+n7285                                                     NET DELAY      2.075         6.298  1       
+i4_4_lut/B->i4_4_lut/Z                    LUT4            B_TO_Z_DELAY   0.477         6.775  1       
+n6674                                                     NET DELAY      2.075         8.850  1       
+i5_4_lut/D->i5_4_lut/Z                    LUT4            D_TO_Z_DELAY   0.477         9.327  1       
+n12_adj_991                                               NET DELAY      2.075        11.402  1       
+i6_4_lut/B->i6_4_lut/Z                    LUT4            B_TO_Z_DELAY   0.477        11.879  15      
+n2660                                                     NET DELAY      2.075        13.954  1       
+i1_2_lut_adj_88/B->i1_2_lut_adj_88/Z      LUT4            B_TO_Z_DELAY   0.477        14.431  1       
+n2407                                                     NET DELAY      2.075        16.506  1       
 
 
 Destination Clock Path
@@ -393,30 +389,30 @@ clk                                                       NET DELAY      2.075  
 
  ++++Path 2  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : timer_clock_383__i0/Q
-Path End         : timer_clock_383__i13/D
+Path Begin       : timer_clock_387__i9/Q
+Path End         : timer_clock_387__i0/SR
 Source Clock     : vga_driver/vga_clock/lscc_pll_inst/clk
 Destination Clock: vga_driver/vga_clock/lscc_pll_inst/clk
-Logic Level      : 15
-Delay Ratio      : 51.9% (route), 48.1% (logic)
+Logic Level      : 5
+Delay Ratio      : 72.4% (route), 27.6% (logic)
 Clock Skew       : 0.000 ns
 Setup Constraint : 83.333 ns 
-Path Slack       : 71.591 ns  (Passed)
+Path Slack       : 70.951 ns  (Passed)
 
   Destination Clock Arrival Time (vga_driver/vga_clock/lscc_pll_inst/clk:R#2)    83.333
 + Destination Clock Source Latency                                                0.000
 - Destination Clock Uncertainty                                                   0.000
 + Destination Clock Path Delay                                                    2.075
-- Setup Time                                                                      0.199
+- Setup Time                                                                      0.530
 -----------------------------------------------------------------------------   -------
-End-of-path required time( ns )                                                  85.209
+End-of-path required time( ns )                                                  84.878
 
   Source Clock Arrival Time (vga_driver/vga_clock/lscc_pll_inst/clk:R#1)    0.000
 + Source Clock Source Latency                                               0.000
 + Source Clock Path Delay                                                   2.075
-+ Data Path Delay                                                          11.543
++ Data Path Delay                                                          11.852
 ------------------------------------------------------------------------   ------
-End-of-path arrival time( ns )                                             13.618
+End-of-path arrival time( ns )                                             13.927
 
  
 Source Clock Path
@@ -427,53 +423,19 @@ clk                                                       NET DELAY      2.075  
 
 
 Data path
-Name                                      Cell/Site Name  Delay Name        Delay  Arrival Time  Fanout  
-----------------------------------------  --------------  ----------------  -----  ------------  ------  
-timer_clock_383__i0/CK->timer_clock_383__i0/Q
-                                          FD1P3XZ         CK_TO_Q_DELAY     1.391         3.466  2       
-timer_clock[0]                                            NET DELAY         0.280         3.746  1       
-timer_clock_383_add_4_1/C1->timer_clock_383_add_4_1/CO1
-                                          FA2             C1_TO_CO1_DELAY   0.344         4.090  2       
-n6889                                                     NET DELAY         0.280         4.370  1       
-timer_clock_383_add_4_3/CI0->timer_clock_383_add_4_3/CO0
-                                          FA2             CI0_TO_CO0_DELAY  0.278         4.648  2       
-n12156                                                    NET DELAY         0.280         4.928  1       
-timer_clock_383_add_4_3/CI1->timer_clock_383_add_4_3/CO1
-                                          FA2             CI1_TO_CO1_DELAY  0.278         5.206  2       
-n6891                                                     NET DELAY         0.280         5.486  1       
-timer_clock_383_add_4_5/CI0->timer_clock_383_add_4_5/CO0
-                                          FA2             CI0_TO_CO0_DELAY  0.278         5.764  2       
-n12159                                                    NET DELAY         0.280         6.044  1       
-timer_clock_383_add_4_5/CI1->timer_clock_383_add_4_5/CO1
-                                          FA2             CI1_TO_CO1_DELAY  0.278         6.322  2       
-n6893                                                     NET DELAY         0.280         6.602  1       
-timer_clock_383_add_4_7/CI0->timer_clock_383_add_4_7/CO0
-                                          FA2             CI0_TO_CO0_DELAY  0.278         6.880  2       
-n12162                                                    NET DELAY         0.280         7.160  1       
-timer_clock_383_add_4_7/CI1->timer_clock_383_add_4_7/CO1
-                                          FA2             CI1_TO_CO1_DELAY  0.278         7.438  2       
-n6895                                                     NET DELAY         0.280         7.718  1       
-timer_clock_383_add_4_9/CI0->timer_clock_383_add_4_9/CO0
-                                          FA2             CI0_TO_CO0_DELAY  0.278         7.996  2       
-n12165                                                    NET DELAY         0.280         8.276  1       
-timer_clock_383_add_4_9/CI1->timer_clock_383_add_4_9/CO1
-                                          FA2             CI1_TO_CO1_DELAY  0.278         8.554  2       
-n6897                                                     NET DELAY         0.280         8.834  1       
-timer_clock_383_add_4_11/CI0->timer_clock_383_add_4_11/CO0
-                                          FA2             CI0_TO_CO0_DELAY  0.278         9.112  2       
-n12168                                                    NET DELAY         0.280         9.392  1       
-timer_clock_383_add_4_11/CI1->timer_clock_383_add_4_11/CO1
-                                          FA2             CI1_TO_CO1_DELAY  0.278         9.670  2       
-n6899                                                     NET DELAY         0.280         9.950  1       
-timer_clock_383_add_4_13/CI0->timer_clock_383_add_4_13/CO0
-                                          FA2             CI0_TO_CO0_DELAY  0.278        10.228  2       
-n12171                                                    NET DELAY         0.280        10.508  1       
-timer_clock_383_add_4_13/CI1->timer_clock_383_add_4_13/CO1
-                                          FA2             CI1_TO_CO1_DELAY  0.278        10.786  2       
-n6901                                                     NET DELAY         0.280        11.066  1       
-timer_clock_383_add_4_15/D0->timer_clock_383_add_4_15/S0
-                                          FA2             D0_TO_S0_DELAY    0.477        11.543  1       
-n62_2                                                     NET DELAY         2.075        13.618  1       
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+timer_clock_387__i9/CK->timer_clock_387__i9/Q
+                                          FD1P3XZ         CK_TO_Q_DELAY  1.391         3.466  2       
+timer_clock[9]                                            NET DELAY      0.280         3.746  1       
+i5282_4_lut/D->i5282_4_lut/Z              LUT4            D_TO_Z_DELAY   0.477         4.223  1       
+n7285                                                     NET DELAY      2.075         6.298  1       
+i4_4_lut/B->i4_4_lut/Z                    LUT4            B_TO_Z_DELAY   0.477         6.775  1       
+n6674                                                     NET DELAY      2.075         8.850  1       
+i5_4_lut/D->i5_4_lut/Z                    LUT4            D_TO_Z_DELAY   0.477         9.327  1       
+n12_adj_991                                               NET DELAY      2.075        11.402  1       
+i6_4_lut/B->i6_4_lut/Z                    LUT4            B_TO_Z_DELAY   0.450        11.852  15      
+n2660                                                     NET DELAY      2.075        13.927  1       
 
 
 Destination Clock Path
@@ -487,30 +449,30 @@ clk                                                       NET DELAY      2.075  
 
  ++++Path 3  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : timer_clock_383__i0/Q
-Path End         : timer_clock_383__i12/D
+Path Begin       : timer_clock_387__i9/Q
+Path End         : timer_clock_387__i13/SR
 Source Clock     : vga_driver/vga_clock/lscc_pll_inst/clk
 Destination Clock: vga_driver/vga_clock/lscc_pll_inst/clk
-Logic Level      : 14
-Delay Ratio      : 52.0% (route), 48.0% (logic)
+Logic Level      : 5
+Delay Ratio      : 72.4% (route), 27.6% (logic)
 Clock Skew       : 0.000 ns
 Setup Constraint : 83.333 ns 
-Path Slack       : 72.149 ns  (Passed)
+Path Slack       : 70.951 ns  (Passed)
 
   Destination Clock Arrival Time (vga_driver/vga_clock/lscc_pll_inst/clk:R#2)    83.333
 + Destination Clock Source Latency                                                0.000
 - Destination Clock Uncertainty                                                   0.000
 + Destination Clock Path Delay                                                    2.075
-- Setup Time                                                                      0.199
+- Setup Time                                                                      0.530
 -----------------------------------------------------------------------------   -------
-End-of-path required time( ns )                                                  85.209
+End-of-path required time( ns )                                                  84.878
 
   Source Clock Arrival Time (vga_driver/vga_clock/lscc_pll_inst/clk:R#1)    0.000
 + Source Clock Source Latency                                               0.000
 + Source Clock Path Delay                                                   2.075
-+ Data Path Delay                                                          10.985
++ Data Path Delay                                                          11.852
 ------------------------------------------------------------------------   ------
-End-of-path arrival time( ns )                                             13.060
+End-of-path arrival time( ns )                                             13.927
 
  
 Source Clock Path
@@ -521,50 +483,19 @@ clk                                                       NET DELAY      2.075  
 
 
 Data path
-Name                                      Cell/Site Name  Delay Name        Delay  Arrival Time  Fanout  
-----------------------------------------  --------------  ----------------  -----  ------------  ------  
-timer_clock_383__i0/CK->timer_clock_383__i0/Q
-                                          FD1P3XZ         CK_TO_Q_DELAY     1.391         3.466  2       
-timer_clock[0]                                            NET DELAY         0.280         3.746  1       
-timer_clock_383_add_4_1/C1->timer_clock_383_add_4_1/CO1
-                                          FA2             C1_TO_CO1_DELAY   0.344         4.090  2       
-n6889                                                     NET DELAY         0.280         4.370  1       
-timer_clock_383_add_4_3/CI0->timer_clock_383_add_4_3/CO0
-                                          FA2             CI0_TO_CO0_DELAY  0.278         4.648  2       
-n12156                                                    NET DELAY         0.280         4.928  1       
-timer_clock_383_add_4_3/CI1->timer_clock_383_add_4_3/CO1
-                                          FA2             CI1_TO_CO1_DELAY  0.278         5.206  2       
-n6891                                                     NET DELAY         0.280         5.486  1       
-timer_clock_383_add_4_5/CI0->timer_clock_383_add_4_5/CO0
-                                          FA2             CI0_TO_CO0_DELAY  0.278         5.764  2       
-n12159                                                    NET DELAY         0.280         6.044  1       
-timer_clock_383_add_4_5/CI1->timer_clock_383_add_4_5/CO1
-                                          FA2             CI1_TO_CO1_DELAY  0.278         6.322  2       
-n6893                                                     NET DELAY         0.280         6.602  1       
-timer_clock_383_add_4_7/CI0->timer_clock_383_add_4_7/CO0
-                                          FA2             CI0_TO_CO0_DELAY  0.278         6.880  2       
-n12162                                                    NET DELAY         0.280         7.160  1       
-timer_clock_383_add_4_7/CI1->timer_clock_383_add_4_7/CO1
-                                          FA2             CI1_TO_CO1_DELAY  0.278         7.438  2       
-n6895                                                     NET DELAY         0.280         7.718  1       
-timer_clock_383_add_4_9/CI0->timer_clock_383_add_4_9/CO0
-                                          FA2             CI0_TO_CO0_DELAY  0.278         7.996  2       
-n12165                                                    NET DELAY         0.280         8.276  1       
-timer_clock_383_add_4_9/CI1->timer_clock_383_add_4_9/CO1
-                                          FA2             CI1_TO_CO1_DELAY  0.278         8.554  2       
-n6897                                                     NET DELAY         0.280         8.834  1       
-timer_clock_383_add_4_11/CI0->timer_clock_383_add_4_11/CO0
-                                          FA2             CI0_TO_CO0_DELAY  0.278         9.112  2       
-n12168                                                    NET DELAY         0.280         9.392  1       
-timer_clock_383_add_4_11/CI1->timer_clock_383_add_4_11/CO1
-                                          FA2             CI1_TO_CO1_DELAY  0.278         9.670  2       
-n6899                                                     NET DELAY         0.280         9.950  1       
-timer_clock_383_add_4_13/CI0->timer_clock_383_add_4_13/CO0
-                                          FA2             CI0_TO_CO0_DELAY  0.278        10.228  2       
-n12171                                                    NET DELAY         0.280        10.508  1       
-timer_clock_383_add_4_13/D1->timer_clock_383_add_4_13/S1
-                                          FA2             D1_TO_S1_DELAY    0.477        10.985  1       
-n63                                                       NET DELAY         2.075        13.060  1       
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+timer_clock_387__i9/CK->timer_clock_387__i9/Q
+                                          FD1P3XZ         CK_TO_Q_DELAY  1.391         3.466  2       
+timer_clock[9]                                            NET DELAY      0.280         3.746  1       
+i5282_4_lut/D->i5282_4_lut/Z              LUT4            D_TO_Z_DELAY   0.477         4.223  1       
+n7285                                                     NET DELAY      2.075         6.298  1       
+i4_4_lut/B->i4_4_lut/Z                    LUT4            B_TO_Z_DELAY   0.477         6.775  1       
+n6674                                                     NET DELAY      2.075         8.850  1       
+i5_4_lut/D->i5_4_lut/Z                    LUT4            D_TO_Z_DELAY   0.477         9.327  1       
+n12_adj_991                                               NET DELAY      2.075        11.402  1       
+i6_4_lut/B->i6_4_lut/Z                    LUT4            B_TO_Z_DELAY   0.450        11.852  15      
+n2660                                                     NET DELAY      2.075        13.927  1       
 
 
 Destination Clock Path
@@ -578,30 +509,30 @@ clk                                                       NET DELAY      2.075  
 
  ++++Path 4  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : timer_clock_383__i0/Q
-Path End         : timer_clock_383__i11/D
+Path Begin       : timer_clock_387__i9/Q
+Path End         : timer_clock_387__i12/SR
 Source Clock     : vga_driver/vga_clock/lscc_pll_inst/clk
 Destination Clock: vga_driver/vga_clock/lscc_pll_inst/clk
-Logic Level      : 13
-Delay Ratio      : 52.1% (route), 47.9% (logic)
+Logic Level      : 5
+Delay Ratio      : 72.4% (route), 27.6% (logic)
 Clock Skew       : 0.000 ns
 Setup Constraint : 83.333 ns 
-Path Slack       : 72.707 ns  (Passed)
+Path Slack       : 70.951 ns  (Passed)
 
   Destination Clock Arrival Time (vga_driver/vga_clock/lscc_pll_inst/clk:R#2)    83.333
 + Destination Clock Source Latency                                                0.000
 - Destination Clock Uncertainty                                                   0.000
 + Destination Clock Path Delay                                                    2.075
-- Setup Time                                                                      0.199
+- Setup Time                                                                      0.530
 -----------------------------------------------------------------------------   -------
-End-of-path required time( ns )                                                  85.209
+End-of-path required time( ns )                                                  84.878
 
   Source Clock Arrival Time (vga_driver/vga_clock/lscc_pll_inst/clk:R#1)    0.000
 + Source Clock Source Latency                                               0.000
 + Source Clock Path Delay                                                   2.075
-+ Data Path Delay                                                          10.427
++ Data Path Delay                                                          11.852
 ------------------------------------------------------------------------   ------
-End-of-path arrival time( ns )                                             12.502
+End-of-path arrival time( ns )                                             13.927
 
  
 Source Clock Path
@@ -612,47 +543,19 @@ clk                                                       NET DELAY      2.075  
 
 
 Data path
-Name                                      Cell/Site Name  Delay Name        Delay  Arrival Time  Fanout  
-----------------------------------------  --------------  ----------------  -----  ------------  ------  
-timer_clock_383__i0/CK->timer_clock_383__i0/Q
-                                          FD1P3XZ         CK_TO_Q_DELAY     1.391         3.466  2       
-timer_clock[0]                                            NET DELAY         0.280         3.746  1       
-timer_clock_383_add_4_1/C1->timer_clock_383_add_4_1/CO1
-                                          FA2             C1_TO_CO1_DELAY   0.344         4.090  2       
-n6889                                                     NET DELAY         0.280         4.370  1       
-timer_clock_383_add_4_3/CI0->timer_clock_383_add_4_3/CO0
-                                          FA2             CI0_TO_CO0_DELAY  0.278         4.648  2       
-n12156                                                    NET DELAY         0.280         4.928  1       
-timer_clock_383_add_4_3/CI1->timer_clock_383_add_4_3/CO1
-                                          FA2             CI1_TO_CO1_DELAY  0.278         5.206  2       
-n6891                                                     NET DELAY         0.280         5.486  1       
-timer_clock_383_add_4_5/CI0->timer_clock_383_add_4_5/CO0
-                                          FA2             CI0_TO_CO0_DELAY  0.278         5.764  2       
-n12159                                                    NET DELAY         0.280         6.044  1       
-timer_clock_383_add_4_5/CI1->timer_clock_383_add_4_5/CO1
-                                          FA2             CI1_TO_CO1_DELAY  0.278         6.322  2       
-n6893                                                     NET DELAY         0.280         6.602  1       
-timer_clock_383_add_4_7/CI0->timer_clock_383_add_4_7/CO0
-                                          FA2             CI0_TO_CO0_DELAY  0.278         6.880  2       
-n12162                                                    NET DELAY         0.280         7.160  1       
-timer_clock_383_add_4_7/CI1->timer_clock_383_add_4_7/CO1
-                                          FA2             CI1_TO_CO1_DELAY  0.278         7.438  2       
-n6895                                                     NET DELAY         0.280         7.718  1       
-timer_clock_383_add_4_9/CI0->timer_clock_383_add_4_9/CO0
-                                          FA2             CI0_TO_CO0_DELAY  0.278         7.996  2       
-n12165                                                    NET DELAY         0.280         8.276  1       
-timer_clock_383_add_4_9/CI1->timer_clock_383_add_4_9/CO1
-                                          FA2             CI1_TO_CO1_DELAY  0.278         8.554  2       
-n6897                                                     NET DELAY         0.280         8.834  1       
-timer_clock_383_add_4_11/CI0->timer_clock_383_add_4_11/CO0
-                                          FA2             CI0_TO_CO0_DELAY  0.278         9.112  2       
-n12168                                                    NET DELAY         0.280         9.392  1       
-timer_clock_383_add_4_11/CI1->timer_clock_383_add_4_11/CO1
-                                          FA2             CI1_TO_CO1_DELAY  0.278         9.670  2       
-n6899                                                     NET DELAY         0.280         9.950  1       
-timer_clock_383_add_4_13/D0->timer_clock_383_add_4_13/S0
-                                          FA2             D0_TO_S0_DELAY    0.477        10.427  1       
-n64                                                       NET DELAY         2.075        12.502  1       
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+timer_clock_387__i9/CK->timer_clock_387__i9/Q
+                                          FD1P3XZ         CK_TO_Q_DELAY  1.391         3.466  2       
+timer_clock[9]                                            NET DELAY      0.280         3.746  1       
+i5282_4_lut/D->i5282_4_lut/Z              LUT4            D_TO_Z_DELAY   0.477         4.223  1       
+n7285                                                     NET DELAY      2.075         6.298  1       
+i4_4_lut/B->i4_4_lut/Z                    LUT4            B_TO_Z_DELAY   0.477         6.775  1       
+n6674                                                     NET DELAY      2.075         8.850  1       
+i5_4_lut/D->i5_4_lut/Z                    LUT4            D_TO_Z_DELAY   0.477         9.327  1       
+n12_adj_991                                               NET DELAY      2.075        11.402  1       
+i6_4_lut/B->i6_4_lut/Z                    LUT4            B_TO_Z_DELAY   0.450        11.852  15      
+n2660                                                     NET DELAY      2.075        13.927  1       
 
 
 Destination Clock Path
@@ -666,30 +569,30 @@ clk                                                       NET DELAY      2.075  
 
  ++++Path 5  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : timer_clock_383__i0/Q
-Path End         : timer_clock_383__i10/D
+Path Begin       : timer_clock_387__i9/Q
+Path End         : timer_clock_387__i11/SR
 Source Clock     : vga_driver/vga_clock/lscc_pll_inst/clk
 Destination Clock: vga_driver/vga_clock/lscc_pll_inst/clk
-Logic Level      : 12
-Delay Ratio      : 52.2% (route), 47.8% (logic)
+Logic Level      : 5
+Delay Ratio      : 72.4% (route), 27.6% (logic)
 Clock Skew       : 0.000 ns
 Setup Constraint : 83.333 ns 
-Path Slack       : 73.265 ns  (Passed)
+Path Slack       : 70.951 ns  (Passed)
 
   Destination Clock Arrival Time (vga_driver/vga_clock/lscc_pll_inst/clk:R#2)    83.333
 + Destination Clock Source Latency                                                0.000
 - Destination Clock Uncertainty                                                   0.000
 + Destination Clock Path Delay                                                    2.075
-- Setup Time                                                                      0.199
+- Setup Time                                                                      0.530
 -----------------------------------------------------------------------------   -------
-End-of-path required time( ns )                                                  85.209
+End-of-path required time( ns )                                                  84.878
 
   Source Clock Arrival Time (vga_driver/vga_clock/lscc_pll_inst/clk:R#1)    0.000
 + Source Clock Source Latency                                               0.000
 + Source Clock Path Delay                                                   2.075
-+ Data Path Delay                                                           9.869
++ Data Path Delay                                                          11.852
 ------------------------------------------------------------------------   ------
-End-of-path arrival time( ns )                                             11.944
+End-of-path arrival time( ns )                                             13.927
 
  
 Source Clock Path
@@ -700,44 +603,19 @@ clk                                                       NET DELAY      2.075  
 
 
 Data path
-Name                                      Cell/Site Name  Delay Name        Delay  Arrival Time  Fanout  
-----------------------------------------  --------------  ----------------  -----  ------------  ------  
-timer_clock_383__i0/CK->timer_clock_383__i0/Q
-                                          FD1P3XZ         CK_TO_Q_DELAY     1.391         3.466  2       
-timer_clock[0]                                            NET DELAY         0.280         3.746  1       
-timer_clock_383_add_4_1/C1->timer_clock_383_add_4_1/CO1
-                                          FA2             C1_TO_CO1_DELAY   0.344         4.090  2       
-n6889                                                     NET DELAY         0.280         4.370  1       
-timer_clock_383_add_4_3/CI0->timer_clock_383_add_4_3/CO0
-                                          FA2             CI0_TO_CO0_DELAY  0.278         4.648  2       
-n12156                                                    NET DELAY         0.280         4.928  1       
-timer_clock_383_add_4_3/CI1->timer_clock_383_add_4_3/CO1
-                                          FA2             CI1_TO_CO1_DELAY  0.278         5.206  2       
-n6891                                                     NET DELAY         0.280         5.486  1       
-timer_clock_383_add_4_5/CI0->timer_clock_383_add_4_5/CO0
-                                          FA2             CI0_TO_CO0_DELAY  0.278         5.764  2       
-n12159                                                    NET DELAY         0.280         6.044  1       
-timer_clock_383_add_4_5/CI1->timer_clock_383_add_4_5/CO1
-                                          FA2             CI1_TO_CO1_DELAY  0.278         6.322  2       
-n6893                                                     NET DELAY         0.280         6.602  1       
-timer_clock_383_add_4_7/CI0->timer_clock_383_add_4_7/CO0
-                                          FA2             CI0_TO_CO0_DELAY  0.278         6.880  2       
-n12162                                                    NET DELAY         0.280         7.160  1       
-timer_clock_383_add_4_7/CI1->timer_clock_383_add_4_7/CO1
-                                          FA2             CI1_TO_CO1_DELAY  0.278         7.438  2       
-n6895                                                     NET DELAY         0.280         7.718  1       
-timer_clock_383_add_4_9/CI0->timer_clock_383_add_4_9/CO0
-                                          FA2             CI0_TO_CO0_DELAY  0.278         7.996  2       
-n12165                                                    NET DELAY         0.280         8.276  1       
-timer_clock_383_add_4_9/CI1->timer_clock_383_add_4_9/CO1
-                                          FA2             CI1_TO_CO1_DELAY  0.278         8.554  2       
-n6897                                                     NET DELAY         0.280         8.834  1       
-timer_clock_383_add_4_11/CI0->timer_clock_383_add_4_11/CO0
-                                          FA2             CI0_TO_CO0_DELAY  0.278         9.112  2       
-n12168                                                    NET DELAY         0.280         9.392  1       
-timer_clock_383_add_4_11/D1->timer_clock_383_add_4_11/S1
-                                          FA2             D1_TO_S1_DELAY    0.477         9.869  1       
-n65                                                       NET DELAY         2.075        11.944  1       
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+timer_clock_387__i9/CK->timer_clock_387__i9/Q
+                                          FD1P3XZ         CK_TO_Q_DELAY  1.391         3.466  2       
+timer_clock[9]                                            NET DELAY      0.280         3.746  1       
+i5282_4_lut/D->i5282_4_lut/Z              LUT4            D_TO_Z_DELAY   0.477         4.223  1       
+n7285                                                     NET DELAY      2.075         6.298  1       
+i4_4_lut/B->i4_4_lut/Z                    LUT4            B_TO_Z_DELAY   0.477         6.775  1       
+n6674                                                     NET DELAY      2.075         8.850  1       
+i5_4_lut/D->i5_4_lut/Z                    LUT4            D_TO_Z_DELAY   0.477         9.327  1       
+n12_adj_991                                               NET DELAY      2.075        11.402  1       
+i6_4_lut/B->i6_4_lut/Z                    LUT4            B_TO_Z_DELAY   0.450        11.852  15      
+n2660                                                     NET DELAY      2.075        13.927  1       
 
 
 Destination Clock Path
@@ -751,15 +629,15 @@ clk                                                       NET DELAY      2.075  
 
  ++++Path 6  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : timer_clock_383__i12/Q
-Path End         : timer_clock_383__i0/SR
+Path Begin       : timer_clock_387__i9/Q
+Path End         : timer_clock_387__i10/SR
 Source Clock     : vga_driver/vga_clock/lscc_pll_inst/clk
 Destination Clock: vga_driver/vga_clock/lscc_pll_inst/clk
-Logic Level      : 4
-Delay Ratio      : 69.9% (route), 30.1% (logic)
+Logic Level      : 5
+Delay Ratio      : 72.4% (route), 27.6% (logic)
 Clock Skew       : 0.000 ns
 Setup Constraint : 83.333 ns 
-Path Slack       : 73.503 ns  (Passed)
+Path Slack       : 70.951 ns  (Passed)
 
   Destination Clock Arrival Time (vga_driver/vga_clock/lscc_pll_inst/clk:R#2)    83.333
 + Destination Clock Source Latency                                                0.000
@@ -772,9 +650,9 @@ End-of-path required time( ns )                                                 
   Source Clock Arrival Time (vga_driver/vga_clock/lscc_pll_inst/clk:R#1)    0.000
 + Source Clock Source Latency                                               0.000
 + Source Clock Path Delay                                                   2.075
-+ Data Path Delay                                                           9.300
++ Data Path Delay                                                          11.852
 ------------------------------------------------------------------------   ------
-End-of-path arrival time( ns )                                             11.375
+End-of-path arrival time( ns )                                             13.927
 
  
 Source Clock Path
@@ -787,15 +665,17 @@ clk                                                       NET DELAY      2.075  
 Data path
 Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
-timer_clock_383__i12/CK->timer_clock_383__i12/Q
+timer_clock_387__i9/CK->timer_clock_387__i9/Q
                                           FD1P3XZ         CK_TO_Q_DELAY  1.391         3.466  2       
-timer_clock[12]                                           NET DELAY      0.280         3.746  1       
-i7680_4_lut/B->i7680_4_lut/Z              LUT4            B_TO_Z_DELAY   0.477         4.223  1       
-n9795                                                     NET DELAY      2.075         6.298  1       
-i7684_4_lut/A->i7684_4_lut/Z              LUT4            A_TO_Z_DELAY   0.477         6.775  1       
-n9799                                                     NET DELAY      2.075         8.850  1       
-i8526_4_lut/B->i8526_4_lut/Z              LUT4            B_TO_Z_DELAY   0.450         9.300  15      
-n2656                                                     NET DELAY      2.075        11.375  1       
+timer_clock[9]                                            NET DELAY      0.280         3.746  1       
+i5282_4_lut/D->i5282_4_lut/Z              LUT4            D_TO_Z_DELAY   0.477         4.223  1       
+n7285                                                     NET DELAY      2.075         6.298  1       
+i4_4_lut/B->i4_4_lut/Z                    LUT4            B_TO_Z_DELAY   0.477         6.775  1       
+n6674                                                     NET DELAY      2.075         8.850  1       
+i5_4_lut/D->i5_4_lut/Z                    LUT4            D_TO_Z_DELAY   0.477         9.327  1       
+n12_adj_991                                               NET DELAY      2.075        11.402  1       
+i6_4_lut/B->i6_4_lut/Z                    LUT4            B_TO_Z_DELAY   0.450        11.852  15      
+n2660                                                     NET DELAY      2.075        13.927  1       
 
 
 Destination Clock Path
@@ -809,15 +689,15 @@ clk                                                       NET DELAY      2.075  
 
  ++++Path 7  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : timer_clock_383__i12/Q
-Path End         : timer_clock_383__i13/SR
+Path Begin       : timer_clock_387__i9/Q
+Path End         : timer_clock_387__i9/SR
 Source Clock     : vga_driver/vga_clock/lscc_pll_inst/clk
 Destination Clock: vga_driver/vga_clock/lscc_pll_inst/clk
-Logic Level      : 4
-Delay Ratio      : 69.9% (route), 30.1% (logic)
+Logic Level      : 5
+Delay Ratio      : 72.4% (route), 27.6% (logic)
 Clock Skew       : 0.000 ns
 Setup Constraint : 83.333 ns 
-Path Slack       : 73.503 ns  (Passed)
+Path Slack       : 70.951 ns  (Passed)
 
   Destination Clock Arrival Time (vga_driver/vga_clock/lscc_pll_inst/clk:R#2)    83.333
 + Destination Clock Source Latency                                                0.000
@@ -830,9 +710,9 @@ End-of-path required time( ns )                                                 
   Source Clock Arrival Time (vga_driver/vga_clock/lscc_pll_inst/clk:R#1)    0.000
 + Source Clock Source Latency                                               0.000
 + Source Clock Path Delay                                                   2.075
-+ Data Path Delay                                                           9.300
++ Data Path Delay                                                          11.852
 ------------------------------------------------------------------------   ------
-End-of-path arrival time( ns )                                             11.375
+End-of-path arrival time( ns )                                             13.927
 
  
 Source Clock Path
@@ -845,15 +725,17 @@ clk                                                       NET DELAY      2.075  
 Data path
 Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
-timer_clock_383__i12/CK->timer_clock_383__i12/Q
+timer_clock_387__i9/CK->timer_clock_387__i9/Q
                                           FD1P3XZ         CK_TO_Q_DELAY  1.391         3.466  2       
-timer_clock[12]                                           NET DELAY      0.280         3.746  1       
-i7680_4_lut/B->i7680_4_lut/Z              LUT4            B_TO_Z_DELAY   0.477         4.223  1       
-n9795                                                     NET DELAY      2.075         6.298  1       
-i7684_4_lut/A->i7684_4_lut/Z              LUT4            A_TO_Z_DELAY   0.477         6.775  1       
-n9799                                                     NET DELAY      2.075         8.850  1       
-i8526_4_lut/B->i8526_4_lut/Z              LUT4            B_TO_Z_DELAY   0.450         9.300  15      
-n2656                                                     NET DELAY      2.075        11.375  1       
+timer_clock[9]                                            NET DELAY      0.280         3.746  1       
+i5282_4_lut/D->i5282_4_lut/Z              LUT4            D_TO_Z_DELAY   0.477         4.223  1       
+n7285                                                     NET DELAY      2.075         6.298  1       
+i4_4_lut/B->i4_4_lut/Z                    LUT4            B_TO_Z_DELAY   0.477         6.775  1       
+n6674                                                     NET DELAY      2.075         8.850  1       
+i5_4_lut/D->i5_4_lut/Z                    LUT4            D_TO_Z_DELAY   0.477         9.327  1       
+n12_adj_991                                               NET DELAY      2.075        11.402  1       
+i6_4_lut/B->i6_4_lut/Z                    LUT4            B_TO_Z_DELAY   0.450        11.852  15      
+n2660                                                     NET DELAY      2.075        13.927  1       
 
 
 Destination Clock Path
@@ -867,15 +749,15 @@ clk                                                       NET DELAY      2.075  
 
  ++++Path 8  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : timer_clock_383__i12/Q
-Path End         : timer_clock_383__i12/SR
+Path Begin       : timer_clock_387__i9/Q
+Path End         : timer_clock_387__i8/SR
 Source Clock     : vga_driver/vga_clock/lscc_pll_inst/clk
 Destination Clock: vga_driver/vga_clock/lscc_pll_inst/clk
-Logic Level      : 4
-Delay Ratio      : 69.9% (route), 30.1% (logic)
+Logic Level      : 5
+Delay Ratio      : 72.4% (route), 27.6% (logic)
 Clock Skew       : 0.000 ns
 Setup Constraint : 83.333 ns 
-Path Slack       : 73.503 ns  (Passed)
+Path Slack       : 70.951 ns  (Passed)
 
   Destination Clock Arrival Time (vga_driver/vga_clock/lscc_pll_inst/clk:R#2)    83.333
 + Destination Clock Source Latency                                                0.000
@@ -888,9 +770,9 @@ End-of-path required time( ns )                                                 
   Source Clock Arrival Time (vga_driver/vga_clock/lscc_pll_inst/clk:R#1)    0.000
 + Source Clock Source Latency                                               0.000
 + Source Clock Path Delay                                                   2.075
-+ Data Path Delay                                                           9.300
++ Data Path Delay                                                          11.852
 ------------------------------------------------------------------------   ------
-End-of-path arrival time( ns )                                             11.375
+End-of-path arrival time( ns )                                             13.927
 
  
 Source Clock Path
@@ -903,15 +785,17 @@ clk                                                       NET DELAY      2.075  
 Data path
 Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
-timer_clock_383__i12/CK->timer_clock_383__i12/Q
+timer_clock_387__i9/CK->timer_clock_387__i9/Q
                                           FD1P3XZ         CK_TO_Q_DELAY  1.391         3.466  2       
-timer_clock[12]                                           NET DELAY      0.280         3.746  1       
-i7680_4_lut/B->i7680_4_lut/Z              LUT4            B_TO_Z_DELAY   0.477         4.223  1       
-n9795                                                     NET DELAY      2.075         6.298  1       
-i7684_4_lut/A->i7684_4_lut/Z              LUT4            A_TO_Z_DELAY   0.477         6.775  1       
-n9799                                                     NET DELAY      2.075         8.850  1       
-i8526_4_lut/B->i8526_4_lut/Z              LUT4            B_TO_Z_DELAY   0.450         9.300  15      
-n2656                                                     NET DELAY      2.075        11.375  1       
+timer_clock[9]                                            NET DELAY      0.280         3.746  1       
+i5282_4_lut/D->i5282_4_lut/Z              LUT4            D_TO_Z_DELAY   0.477         4.223  1       
+n7285                                                     NET DELAY      2.075         6.298  1       
+i4_4_lut/B->i4_4_lut/Z                    LUT4            B_TO_Z_DELAY   0.477         6.775  1       
+n6674                                                     NET DELAY      2.075         8.850  1       
+i5_4_lut/D->i5_4_lut/Z                    LUT4            D_TO_Z_DELAY   0.477         9.327  1       
+n12_adj_991                                               NET DELAY      2.075        11.402  1       
+i6_4_lut/B->i6_4_lut/Z                    LUT4            B_TO_Z_DELAY   0.450        11.852  15      
+n2660                                                     NET DELAY      2.075        13.927  1       
 
 
 Destination Clock Path
@@ -925,15 +809,15 @@ clk                                                       NET DELAY      2.075  
 
  ++++Path 9  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : timer_clock_383__i12/Q
-Path End         : timer_clock_383__i11/SR
+Path Begin       : timer_clock_387__i9/Q
+Path End         : timer_clock_387__i7/SR
 Source Clock     : vga_driver/vga_clock/lscc_pll_inst/clk
 Destination Clock: vga_driver/vga_clock/lscc_pll_inst/clk
-Logic Level      : 4
-Delay Ratio      : 69.9% (route), 30.1% (logic)
+Logic Level      : 5
+Delay Ratio      : 72.4% (route), 27.6% (logic)
 Clock Skew       : 0.000 ns
 Setup Constraint : 83.333 ns 
-Path Slack       : 73.503 ns  (Passed)
+Path Slack       : 70.951 ns  (Passed)
 
   Destination Clock Arrival Time (vga_driver/vga_clock/lscc_pll_inst/clk:R#2)    83.333
 + Destination Clock Source Latency                                                0.000
@@ -946,9 +830,9 @@ End-of-path required time( ns )                                                 
   Source Clock Arrival Time (vga_driver/vga_clock/lscc_pll_inst/clk:R#1)    0.000
 + Source Clock Source Latency                                               0.000
 + Source Clock Path Delay                                                   2.075
-+ Data Path Delay                                                           9.300
++ Data Path Delay                                                          11.852
 ------------------------------------------------------------------------   ------
-End-of-path arrival time( ns )                                             11.375
+End-of-path arrival time( ns )                                             13.927
 
  
 Source Clock Path
@@ -961,15 +845,17 @@ clk                                                       NET DELAY      2.075  
 Data path
 Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
-timer_clock_383__i12/CK->timer_clock_383__i12/Q
+timer_clock_387__i9/CK->timer_clock_387__i9/Q
                                           FD1P3XZ         CK_TO_Q_DELAY  1.391         3.466  2       
-timer_clock[12]                                           NET DELAY      0.280         3.746  1       
-i7680_4_lut/B->i7680_4_lut/Z              LUT4            B_TO_Z_DELAY   0.477         4.223  1       
-n9795                                                     NET DELAY      2.075         6.298  1       
-i7684_4_lut/A->i7684_4_lut/Z              LUT4            A_TO_Z_DELAY   0.477         6.775  1       
-n9799                                                     NET DELAY      2.075         8.850  1       
-i8526_4_lut/B->i8526_4_lut/Z              LUT4            B_TO_Z_DELAY   0.450         9.300  15      
-n2656                                                     NET DELAY      2.075        11.375  1       
+timer_clock[9]                                            NET DELAY      0.280         3.746  1       
+i5282_4_lut/D->i5282_4_lut/Z              LUT4            D_TO_Z_DELAY   0.477         4.223  1       
+n7285                                                     NET DELAY      2.075         6.298  1       
+i4_4_lut/B->i4_4_lut/Z                    LUT4            B_TO_Z_DELAY   0.477         6.775  1       
+n6674                                                     NET DELAY      2.075         8.850  1       
+i5_4_lut/D->i5_4_lut/Z                    LUT4            D_TO_Z_DELAY   0.477         9.327  1       
+n12_adj_991                                               NET DELAY      2.075        11.402  1       
+i6_4_lut/B->i6_4_lut/Z                    LUT4            B_TO_Z_DELAY   0.450        11.852  15      
+n2660                                                     NET DELAY      2.075        13.927  1       
 
 
 Destination Clock Path
@@ -983,15 +869,15 @@ clk                                                       NET DELAY      2.075  
 
  ++++Path 10  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : timer_clock_383__i12/Q
-Path End         : timer_clock_383__i10/SR
+Path Begin       : timer_clock_387__i9/Q
+Path End         : timer_clock_387__i6/SR
 Source Clock     : vga_driver/vga_clock/lscc_pll_inst/clk
 Destination Clock: vga_driver/vga_clock/lscc_pll_inst/clk
-Logic Level      : 4
-Delay Ratio      : 69.9% (route), 30.1% (logic)
+Logic Level      : 5
+Delay Ratio      : 72.4% (route), 27.6% (logic)
 Clock Skew       : 0.000 ns
 Setup Constraint : 83.333 ns 
-Path Slack       : 73.503 ns  (Passed)
+Path Slack       : 70.951 ns  (Passed)
 
   Destination Clock Arrival Time (vga_driver/vga_clock/lscc_pll_inst/clk:R#2)    83.333
 + Destination Clock Source Latency                                                0.000
@@ -1004,9 +890,9 @@ End-of-path required time( ns )                                                 
   Source Clock Arrival Time (vga_driver/vga_clock/lscc_pll_inst/clk:R#1)    0.000
 + Source Clock Source Latency                                               0.000
 + Source Clock Path Delay                                                   2.075
-+ Data Path Delay                                                           9.300
++ Data Path Delay                                                          11.852
 ------------------------------------------------------------------------   ------
-End-of-path arrival time( ns )                                             11.375
+End-of-path arrival time( ns )                                             13.927
 
  
 Source Clock Path
@@ -1019,15 +905,17 @@ clk                                                       NET DELAY      2.075  
 Data path
 Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
-timer_clock_383__i12/CK->timer_clock_383__i12/Q
+timer_clock_387__i9/CK->timer_clock_387__i9/Q
                                           FD1P3XZ         CK_TO_Q_DELAY  1.391         3.466  2       
-timer_clock[12]                                           NET DELAY      0.280         3.746  1       
-i7680_4_lut/B->i7680_4_lut/Z              LUT4            B_TO_Z_DELAY   0.477         4.223  1       
-n9795                                                     NET DELAY      2.075         6.298  1       
-i7684_4_lut/A->i7684_4_lut/Z              LUT4            A_TO_Z_DELAY   0.477         6.775  1       
-n9799                                                     NET DELAY      2.075         8.850  1       
-i8526_4_lut/B->i8526_4_lut/Z              LUT4            B_TO_Z_DELAY   0.450         9.300  15      
-n2656                                                     NET DELAY      2.075        11.375  1       
+timer_clock[9]                                            NET DELAY      0.280         3.746  1       
+i5282_4_lut/D->i5282_4_lut/Z              LUT4            D_TO_Z_DELAY   0.477         4.223  1       
+n7285                                                     NET DELAY      2.075         6.298  1       
+i4_4_lut/B->i4_4_lut/Z                    LUT4            B_TO_Z_DELAY   0.477         6.775  1       
+n6674                                                     NET DELAY      2.075         8.850  1       
+i5_4_lut/D->i5_4_lut/Z                    LUT4            D_TO_Z_DELAY   0.477         9.327  1       
+n12_adj_991                                               NET DELAY      2.075        11.402  1       
+i6_4_lut/B->i6_4_lut/Z                    LUT4            B_TO_Z_DELAY   0.450        11.852  15      
+n2660                                                     NET DELAY      2.075        13.927  1       
 
 
 Destination Clock Path
@@ -1052,7 +940,7 @@ clk                                                       NET DELAY      2.075  
 
  ++++Path 1  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : vga_driver/h_count_384__i3/Q
+Path Begin       : vga_driver/h_count_388__i3/Q
 Path End         : vga_driver/vga_vsync/D
 Source Clock     : vga_driver/pll_clock
 Destination Clock: vga_driver/pll_clock
@@ -1088,59 +976,59 @@ vga_driver/pll_clock                                      NET DELAY      2.075  
 Data path
 Name                                      Cell/Site Name  Delay Name        Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  ----------------  -----  ------------  ------  
-vga_driver/h_count_384__i3/CK->vga_driver/h_count_384__i3/Q
+vga_driver/h_count_388__i3/CK->vga_driver/h_count_388__i3/Q
                                           FD1P3XZ         CK_TO_Q_DELAY     1.391         5.691  6       
 h_count[3]                                                NET DELAY         0.280         5.971  1       
 vga_driver/i2_2_lut/B->vga_driver/i2_2_lut/Z
                                           LUT4            B_TO_Z_DELAY      0.477         6.448  2       
 vga_driver/n7                                             NET DELAY         2.075         8.523  1       
-vga_driver/i7688_4_lut/D->vga_driver/i7688_4_lut/Z
+vga_driver/i5284_4_lut/D->vga_driver/i5284_4_lut/Z
                                           LUT4            D_TO_Z_DELAY      0.477         9.000  1       
-vga_driver/n9803                                          NET DELAY         2.075        11.075  1       
-vga_driver/i8543_4_lut/D->vga_driver/i8543_4_lut/Z
+vga_driver/n7287                                          NET DELAY         2.075        11.075  1       
+vga_driver/i6109_4_lut/D->vga_driver/i6109_4_lut/Z
                                           LUT4            D_TO_Z_DELAY      0.477        11.552  2       
-vga_driver/vga_hsync_N_166                                NET DELAY         2.075        13.627  1       
+vga_driver/vga_hsync_N_164                                NET DELAY         2.075        13.627  1       
 vga_driver/add_48_add_5_1/C1->vga_driver/add_48_add_5_1/CO1
                                           FA2             C1_TO_CO1_DELAY   0.344        13.971  2       
-vga_driver/n7052                                          NET DELAY         0.280        14.251  1       
+vga_driver/n4547                                          NET DELAY         0.280        14.251  1       
 vga_driver/add_48_add_5_3/CI0->vga_driver/add_48_add_5_3/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        14.529  2       
-vga_driver/n12207                                         NET DELAY         0.280        14.809  1       
+vga_driver/n9608                                          NET DELAY         0.280        14.809  1       
 vga_driver/add_48_add_5_3/CI1->vga_driver/add_48_add_5_3/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        15.087  2       
-vga_driver/n7054                                          NET DELAY         0.280        15.367  1       
+vga_driver/n4549                                          NET DELAY         0.280        15.367  1       
 vga_driver/add_48_add_5_5/CI0->vga_driver/add_48_add_5_5/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        15.645  2       
-vga_driver/n12210                                         NET DELAY         0.280        15.925  1       
+vga_driver/n9611                                          NET DELAY         0.280        15.925  1       
 vga_driver/add_48_add_5_5/CI1->vga_driver/add_48_add_5_5/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        16.203  2       
-vga_driver/n7056                                          NET DELAY         0.280        16.483  1       
+vga_driver/n4551                                          NET DELAY         0.280        16.483  1       
 vga_driver/add_48_add_5_7/CI0->vga_driver/add_48_add_5_7/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        16.761  2       
-vga_driver/n12213                                         NET DELAY         0.280        17.041  1       
+vga_driver/n9614                                          NET DELAY         0.280        17.041  1       
 vga_driver/add_48_add_5_7/CI1->vga_driver/add_48_add_5_7/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        17.319  2       
-vga_driver/n7058                                          NET DELAY         0.280        17.599  1       
+vga_driver/n4553                                          NET DELAY         0.280        17.599  1       
 vga_driver/add_48_add_5_9/CI0->vga_driver/add_48_add_5_9/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        17.877  2       
-vga_driver/n12216                                         NET DELAY         0.280        18.157  1       
+vga_driver/n9617                                          NET DELAY         0.280        18.157  1       
 vga_driver/add_48_add_5_9/CI1->vga_driver/add_48_add_5_9/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        18.435  2       
-vga_driver/n7060                                          NET DELAY         0.280        18.715  1       
+vga_driver/n4555                                          NET DELAY         0.280        18.715  1       
 vga_driver/add_48_add_5_11/D0->vga_driver/add_48_add_5_11/S0
                                           FA2             D0_TO_S0_DELAY    0.477        19.192  3       
-vga_vsync_N_182[9]                                        NET DELAY         0.280        19.472  1       
+vga_vsync_N_180[9]                                        NET DELAY         0.280        19.472  1       
 vga_driver/i23_4_lut/B->vga_driver/i23_4_lut/Z
                                           LUT4            B_TO_Z_DELAY      0.477        19.949  1       
-vga_driver/n12_adj_936                                    NET DELAY         2.075        22.024  1       
+vga_driver/n12_adj_969                                    NET DELAY         2.075        22.024  1       
 vga_driver/i5_4_lut/A->vga_driver/i5_4_lut/Z
                                           LUT4            A_TO_Z_DELAY      0.477        22.501  1       
 vga_driver/n12                                            NET DELAY         2.075        24.576  1       
-vga_driver/i6_4_lut_adj_307/B->vga_driver/i6_4_lut_adj_307/Z
+vga_driver/i6_4_lut/B->vga_driver/i6_4_lut/Z
                                           LUT4            B_TO_Z_DELAY      0.477        25.053  1       
-n8225                                                     NET DELAY         2.075        27.128  1       
-i1474_4_lut/D->i1474_4_lut/Z              LUT4            D_TO_Z_DELAY      0.477        27.605  1       
-n2730                                                     NET DELAY         2.075        29.680  1       
+n5769                                                     NET DELAY         2.075        27.128  1       
+i1450_4_lut/D->i1450_4_lut/Z              LUT4            D_TO_Z_DELAY      0.477        27.605  1       
+n2717                                                     NET DELAY         2.075        29.680  1       
 
 
 Destination Clock Path
@@ -1154,106 +1042,7 @@ vga_driver/pll_clock                                      NET DELAY      2.075  
 
  ++++Path 2  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : vga_driver/h_count_384__i3/Q
-Path End         : vga_driver/v_count__i1/D
-Source Clock     : vga_driver/pll_clock
-Destination Clock: vga_driver/pll_clock
-Logic Level      : 17
-Delay Ratio      : 68.0% (route), 32.0% (logic)
-Clock Skew       : 0.000 ns
-Setup Constraint : 39.800 ns 
-Path Slack       : 16.773 ns  (Passed)
-
-  Destination Clock Arrival Time (vga_driver/pll_clock:R#2)    39.800
-+ Generated Clock Source Latency                                2.225
-- Destination Clock Uncertainty                                 0.000
-+ Destination Clock Path Delay                                  2.075
-- Setup Time                                                    0.199
------------------------------------------------------------   -------
-End-of-path required time( ns )                                43.901
-
-  Source Clock Arrival Time (vga_driver/pll_clock:R#1)    0.000
-+ Generated Clock Source Latency                          2.225
-+ Source Clock Path Delay                                 2.075
-+ Data Path Delay                                        22.828
-------------------------------------------------------   ------
-End-of-path arrival time( ns )                           27.128
-
- 
-Source Clock Path
-Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
-----------------------------------------  --------------  -------------  -----  ------------  ------  
-u_PLL_B/OUTGLOBAL                         PLL_B           CLOCK LATENCY  2.225         2.225  22      
-vga_driver/pll_clock                                      NET DELAY      2.075         4.300  1       
-
-
-Data path
-Name                                      Cell/Site Name  Delay Name        Delay  Arrival Time  Fanout  
-----------------------------------------  --------------  ----------------  -----  ------------  ------  
-vga_driver/h_count_384__i3/CK->vga_driver/h_count_384__i3/Q
-                                          FD1P3XZ         CK_TO_Q_DELAY     1.391         5.691  6       
-h_count[3]                                                NET DELAY         0.280         5.971  1       
-vga_driver/i2_2_lut/B->vga_driver/i2_2_lut/Z
-                                          LUT4            B_TO_Z_DELAY      0.477         6.448  2       
-vga_driver/n7                                             NET DELAY         2.075         8.523  1       
-vga_driver/i7688_4_lut/D->vga_driver/i7688_4_lut/Z
-                                          LUT4            D_TO_Z_DELAY      0.477         9.000  1       
-vga_driver/n9803                                          NET DELAY         2.075        11.075  1       
-vga_driver/i8543_4_lut/D->vga_driver/i8543_4_lut/Z
-                                          LUT4            D_TO_Z_DELAY      0.477        11.552  2       
-vga_driver/vga_hsync_N_166                                NET DELAY         2.075        13.627  1       
-vga_driver/add_48_add_5_1/C1->vga_driver/add_48_add_5_1/CO1
-                                          FA2             C1_TO_CO1_DELAY   0.344        13.971  2       
-vga_driver/n7052                                          NET DELAY         0.280        14.251  1       
-vga_driver/add_48_add_5_3/CI0->vga_driver/add_48_add_5_3/CO0
-                                          FA2             CI0_TO_CO0_DELAY  0.278        14.529  2       
-vga_driver/n12207                                         NET DELAY         0.280        14.809  1       
-vga_driver/add_48_add_5_3/CI1->vga_driver/add_48_add_5_3/CO1
-                                          FA2             CI1_TO_CO1_DELAY  0.278        15.087  2       
-vga_driver/n7054                                          NET DELAY         0.280        15.367  1       
-vga_driver/add_48_add_5_5/CI0->vga_driver/add_48_add_5_5/CO0
-                                          FA2             CI0_TO_CO0_DELAY  0.278        15.645  2       
-vga_driver/n12210                                         NET DELAY         0.280        15.925  1       
-vga_driver/add_48_add_5_5/CI1->vga_driver/add_48_add_5_5/CO1
-                                          FA2             CI1_TO_CO1_DELAY  0.278        16.203  2       
-vga_driver/n7056                                          NET DELAY         0.280        16.483  1       
-vga_driver/add_48_add_5_7/CI0->vga_driver/add_48_add_5_7/CO0
-                                          FA2             CI0_TO_CO0_DELAY  0.278        16.761  2       
-vga_driver/n12213                                         NET DELAY         0.280        17.041  1       
-vga_driver/add_48_add_5_7/CI1->vga_driver/add_48_add_5_7/CO1
-                                          FA2             CI1_TO_CO1_DELAY  0.278        17.319  2       
-vga_driver/n7058                                          NET DELAY         0.280        17.599  1       
-vga_driver/add_48_add_5_9/CI0->vga_driver/add_48_add_5_9/CO0
-                                          FA2             CI0_TO_CO0_DELAY  0.278        17.877  2       
-vga_driver/n12216                                         NET DELAY         0.280        18.157  1       
-vga_driver/add_48_add_5_9/CI1->vga_driver/add_48_add_5_9/CO1
-                                          FA2             CI1_TO_CO1_DELAY  0.278        18.435  2       
-vga_driver/n7060                                          NET DELAY         0.280        18.715  1       
-vga_driver/add_48_add_5_11/D0->vga_driver/add_48_add_5_11/S0
-                                          FA2             D0_TO_S0_DELAY    0.477        19.192  3       
-vga_vsync_N_182[9]                                        NET DELAY         0.280        19.472  1       
-vga_driver/i7_4_lut/C->vga_driver/i7_4_lut/Z
-                                          LUT4            C_TO_Z_DELAY      0.477        19.949  1       
-vga_driver/n17                                            NET DELAY         2.075        22.024  1       
-vga_driver/i3350_4_lut/A->vga_driver/i3350_4_lut/Z
-                                          LUT4            A_TO_Z_DELAY      0.477        22.501  10      
-n2706                                                     NET DELAY         2.075        24.576  1       
-i1451_2_lut/A->i1451_2_lut/Z              LUT4            A_TO_Z_DELAY      0.477        25.053  1       
-n2707                                                     NET DELAY         2.075        27.128  1       
-
-
-Destination Clock Path
-Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
-----------------------------------------  --------------  -------------  -----  ------------  ------  
-u_PLL_B/OUTGLOBAL                         PLL_B           CLOCK LATENCY  2.225         2.225  22      
-vga_driver/pll_clock                                      NET DELAY      2.075         4.300  1       
-
-
-
-
- ++++Path 3  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-Path Begin       : vga_driver/h_count_384__i3/Q
+Path Begin       : vga_driver/h_count_388__i3/Q
 Path End         : vga_driver/v_count__i2/D
 Source Clock     : vga_driver/pll_clock
 Destination Clock: vga_driver/pll_clock
@@ -1289,56 +1078,155 @@ vga_driver/pll_clock                                      NET DELAY      2.075  
 Data path
 Name                                      Cell/Site Name  Delay Name        Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  ----------------  -----  ------------  ------  
-vga_driver/h_count_384__i3/CK->vga_driver/h_count_384__i3/Q
+vga_driver/h_count_388__i3/CK->vga_driver/h_count_388__i3/Q
                                           FD1P3XZ         CK_TO_Q_DELAY     1.391         5.691  6       
 h_count[3]                                                NET DELAY         0.280         5.971  1       
 vga_driver/i2_2_lut/B->vga_driver/i2_2_lut/Z
                                           LUT4            B_TO_Z_DELAY      0.477         6.448  2       
 vga_driver/n7                                             NET DELAY         2.075         8.523  1       
-vga_driver/i7688_4_lut/D->vga_driver/i7688_4_lut/Z
+vga_driver/i5284_4_lut/D->vga_driver/i5284_4_lut/Z
                                           LUT4            D_TO_Z_DELAY      0.477         9.000  1       
-vga_driver/n9803                                          NET DELAY         2.075        11.075  1       
-vga_driver/i8543_4_lut/D->vga_driver/i8543_4_lut/Z
+vga_driver/n7287                                          NET DELAY         2.075        11.075  1       
+vga_driver/i6109_4_lut/D->vga_driver/i6109_4_lut/Z
                                           LUT4            D_TO_Z_DELAY      0.477        11.552  2       
-vga_driver/vga_hsync_N_166                                NET DELAY         2.075        13.627  1       
+vga_driver/vga_hsync_N_164                                NET DELAY         2.075        13.627  1       
 vga_driver/add_48_add_5_1/C1->vga_driver/add_48_add_5_1/CO1
                                           FA2             C1_TO_CO1_DELAY   0.344        13.971  2       
-vga_driver/n7052                                          NET DELAY         0.280        14.251  1       
+vga_driver/n4547                                          NET DELAY         0.280        14.251  1       
 vga_driver/add_48_add_5_3/CI0->vga_driver/add_48_add_5_3/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        14.529  2       
-vga_driver/n12207                                         NET DELAY         0.280        14.809  1       
+vga_driver/n9608                                          NET DELAY         0.280        14.809  1       
 vga_driver/add_48_add_5_3/CI1->vga_driver/add_48_add_5_3/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        15.087  2       
-vga_driver/n7054                                          NET DELAY         0.280        15.367  1       
+vga_driver/n4549                                          NET DELAY         0.280        15.367  1       
 vga_driver/add_48_add_5_5/CI0->vga_driver/add_48_add_5_5/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        15.645  2       
-vga_driver/n12210                                         NET DELAY         0.280        15.925  1       
+vga_driver/n9611                                          NET DELAY         0.280        15.925  1       
 vga_driver/add_48_add_5_5/CI1->vga_driver/add_48_add_5_5/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        16.203  2       
-vga_driver/n7056                                          NET DELAY         0.280        16.483  1       
+vga_driver/n4551                                          NET DELAY         0.280        16.483  1       
 vga_driver/add_48_add_5_7/CI0->vga_driver/add_48_add_5_7/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        16.761  2       
-vga_driver/n12213                                         NET DELAY         0.280        17.041  1       
+vga_driver/n9614                                          NET DELAY         0.280        17.041  1       
 vga_driver/add_48_add_5_7/CI1->vga_driver/add_48_add_5_7/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        17.319  2       
-vga_driver/n7058                                          NET DELAY         0.280        17.599  1       
+vga_driver/n4553                                          NET DELAY         0.280        17.599  1       
 vga_driver/add_48_add_5_9/CI0->vga_driver/add_48_add_5_9/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        17.877  2       
-vga_driver/n12216                                         NET DELAY         0.280        18.157  1       
+vga_driver/n9617                                          NET DELAY         0.280        18.157  1       
 vga_driver/add_48_add_5_9/CI1->vga_driver/add_48_add_5_9/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        18.435  2       
-vga_driver/n7060                                          NET DELAY         0.280        18.715  1       
+vga_driver/n4555                                          NET DELAY         0.280        18.715  1       
 vga_driver/add_48_add_5_11/D0->vga_driver/add_48_add_5_11/S0
                                           FA2             D0_TO_S0_DELAY    0.477        19.192  3       
-vga_vsync_N_182[9]                                        NET DELAY         0.280        19.472  1       
+vga_vsync_N_180[9]                                        NET DELAY         0.280        19.472  1       
 vga_driver/i7_4_lut/C->vga_driver/i7_4_lut/Z
                                           LUT4            C_TO_Z_DELAY      0.477        19.949  1       
 vga_driver/n17                                            NET DELAY         2.075        22.024  1       
-vga_driver/i3350_4_lut/A->vga_driver/i3350_4_lut/Z
+vga_driver/i2406_4_lut/A->vga_driver/i2406_4_lut/Z
                                           LUT4            A_TO_Z_DELAY      0.477        22.501  10      
-n2706                                                     NET DELAY         2.075        24.576  1       
-i1452_2_lut/A->i1452_2_lut/Z              LUT4            A_TO_Z_DELAY      0.477        25.053  1       
-n2708                                                     NET DELAY         2.075        27.128  1       
+n2699                                                     NET DELAY         2.075        24.576  1       
+i1433_2_lut/A->i1433_2_lut/Z              LUT4            A_TO_Z_DELAY      0.477        25.053  1       
+n2700                                                     NET DELAY         2.075        27.128  1       
+
+
+Destination Clock Path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+u_PLL_B/OUTGLOBAL                         PLL_B           CLOCK LATENCY  2.225         2.225  22      
+vga_driver/pll_clock                                      NET DELAY      2.075         4.300  1       
+
+
+
+
+ ++++Path 3  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin       : vga_driver/h_count_388__i3/Q
+Path End         : vga_driver/v_count__i0/D
+Source Clock     : vga_driver/pll_clock
+Destination Clock: vga_driver/pll_clock
+Logic Level      : 17
+Delay Ratio      : 68.0% (route), 32.0% (logic)
+Clock Skew       : 0.000 ns
+Setup Constraint : 39.800 ns 
+Path Slack       : 16.773 ns  (Passed)
+
+  Destination Clock Arrival Time (vga_driver/pll_clock:R#2)    39.800
++ Generated Clock Source Latency                                2.225
+- Destination Clock Uncertainty                                 0.000
++ Destination Clock Path Delay                                  2.075
+- Setup Time                                                    0.199
+-----------------------------------------------------------   -------
+End-of-path required time( ns )                                43.901
+
+  Source Clock Arrival Time (vga_driver/pll_clock:R#1)    0.000
++ Generated Clock Source Latency                          2.225
++ Source Clock Path Delay                                 2.075
++ Data Path Delay                                        22.828
+------------------------------------------------------   ------
+End-of-path arrival time( ns )                           27.128
+
+ 
+Source Clock Path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+u_PLL_B/OUTGLOBAL                         PLL_B           CLOCK LATENCY  2.225         2.225  22      
+vga_driver/pll_clock                                      NET DELAY      2.075         4.300  1       
+
+
+Data path
+Name                                      Cell/Site Name  Delay Name        Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  ----------------  -----  ------------  ------  
+vga_driver/h_count_388__i3/CK->vga_driver/h_count_388__i3/Q
+                                          FD1P3XZ         CK_TO_Q_DELAY     1.391         5.691  6       
+h_count[3]                                                NET DELAY         0.280         5.971  1       
+vga_driver/i2_2_lut/B->vga_driver/i2_2_lut/Z
+                                          LUT4            B_TO_Z_DELAY      0.477         6.448  2       
+vga_driver/n7                                             NET DELAY         2.075         8.523  1       
+vga_driver/i5284_4_lut/D->vga_driver/i5284_4_lut/Z
+                                          LUT4            D_TO_Z_DELAY      0.477         9.000  1       
+vga_driver/n7287                                          NET DELAY         2.075        11.075  1       
+vga_driver/i6109_4_lut/D->vga_driver/i6109_4_lut/Z
+                                          LUT4            D_TO_Z_DELAY      0.477        11.552  2       
+vga_driver/vga_hsync_N_164                                NET DELAY         2.075        13.627  1       
+vga_driver/add_48_add_5_1/C1->vga_driver/add_48_add_5_1/CO1
+                                          FA2             C1_TO_CO1_DELAY   0.344        13.971  2       
+vga_driver/n4547                                          NET DELAY         0.280        14.251  1       
+vga_driver/add_48_add_5_3/CI0->vga_driver/add_48_add_5_3/CO0
+                                          FA2             CI0_TO_CO0_DELAY  0.278        14.529  2       
+vga_driver/n9608                                          NET DELAY         0.280        14.809  1       
+vga_driver/add_48_add_5_3/CI1->vga_driver/add_48_add_5_3/CO1
+                                          FA2             CI1_TO_CO1_DELAY  0.278        15.087  2       
+vga_driver/n4549                                          NET DELAY         0.280        15.367  1       
+vga_driver/add_48_add_5_5/CI0->vga_driver/add_48_add_5_5/CO0
+                                          FA2             CI0_TO_CO0_DELAY  0.278        15.645  2       
+vga_driver/n9611                                          NET DELAY         0.280        15.925  1       
+vga_driver/add_48_add_5_5/CI1->vga_driver/add_48_add_5_5/CO1
+                                          FA2             CI1_TO_CO1_DELAY  0.278        16.203  2       
+vga_driver/n4551                                          NET DELAY         0.280        16.483  1       
+vga_driver/add_48_add_5_7/CI0->vga_driver/add_48_add_5_7/CO0
+                                          FA2             CI0_TO_CO0_DELAY  0.278        16.761  2       
+vga_driver/n9614                                          NET DELAY         0.280        17.041  1       
+vga_driver/add_48_add_5_7/CI1->vga_driver/add_48_add_5_7/CO1
+                                          FA2             CI1_TO_CO1_DELAY  0.278        17.319  2       
+vga_driver/n4553                                          NET DELAY         0.280        17.599  1       
+vga_driver/add_48_add_5_9/CI0->vga_driver/add_48_add_5_9/CO0
+                                          FA2             CI0_TO_CO0_DELAY  0.278        17.877  2       
+vga_driver/n9617                                          NET DELAY         0.280        18.157  1       
+vga_driver/add_48_add_5_9/CI1->vga_driver/add_48_add_5_9/CO1
+                                          FA2             CI1_TO_CO1_DELAY  0.278        18.435  2       
+vga_driver/n4555                                          NET DELAY         0.280        18.715  1       
+vga_driver/add_48_add_5_11/D0->vga_driver/add_48_add_5_11/S0
+                                          FA2             D0_TO_S0_DELAY    0.477        19.192  3       
+vga_vsync_N_180[9]                                        NET DELAY         0.280        19.472  1       
+vga_driver/i7_4_lut/C->vga_driver/i7_4_lut/Z
+                                          LUT4            C_TO_Z_DELAY      0.477        19.949  1       
+vga_driver/n17                                            NET DELAY         2.075        22.024  1       
+vga_driver/i2406_4_lut/A->vga_driver/i2406_4_lut/Z
+                                          LUT4            A_TO_Z_DELAY      0.477        22.501  10      
+n2699                                                     NET DELAY         2.075        24.576  1       
+i1434_2_lut/A->i1434_2_lut/Z              LUT4            A_TO_Z_DELAY      0.477        25.053  1       
+n2701                                                     NET DELAY         2.075        27.128  1       
 
 
 Destination Clock Path
@@ -1352,7 +1240,7 @@ vga_driver/pll_clock                                      NET DELAY      2.075  
 
  ++++Path 4  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : vga_driver/h_count_384__i3/Q
+Path Begin       : vga_driver/h_count_388__i3/Q
 Path End         : vga_driver/v_count__i3/D
 Source Clock     : vga_driver/pll_clock
 Destination Clock: vga_driver/pll_clock
@@ -1388,56 +1276,56 @@ vga_driver/pll_clock                                      NET DELAY      2.075  
 Data path
 Name                                      Cell/Site Name  Delay Name        Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  ----------------  -----  ------------  ------  
-vga_driver/h_count_384__i3/CK->vga_driver/h_count_384__i3/Q
+vga_driver/h_count_388__i3/CK->vga_driver/h_count_388__i3/Q
                                           FD1P3XZ         CK_TO_Q_DELAY     1.391         5.691  6       
 h_count[3]                                                NET DELAY         0.280         5.971  1       
 vga_driver/i2_2_lut/B->vga_driver/i2_2_lut/Z
                                           LUT4            B_TO_Z_DELAY      0.477         6.448  2       
 vga_driver/n7                                             NET DELAY         2.075         8.523  1       
-vga_driver/i7688_4_lut/D->vga_driver/i7688_4_lut/Z
+vga_driver/i5284_4_lut/D->vga_driver/i5284_4_lut/Z
                                           LUT4            D_TO_Z_DELAY      0.477         9.000  1       
-vga_driver/n9803                                          NET DELAY         2.075        11.075  1       
-vga_driver/i8543_4_lut/D->vga_driver/i8543_4_lut/Z
+vga_driver/n7287                                          NET DELAY         2.075        11.075  1       
+vga_driver/i6109_4_lut/D->vga_driver/i6109_4_lut/Z
                                           LUT4            D_TO_Z_DELAY      0.477        11.552  2       
-vga_driver/vga_hsync_N_166                                NET DELAY         2.075        13.627  1       
+vga_driver/vga_hsync_N_164                                NET DELAY         2.075        13.627  1       
 vga_driver/add_48_add_5_1/C1->vga_driver/add_48_add_5_1/CO1
                                           FA2             C1_TO_CO1_DELAY   0.344        13.971  2       
-vga_driver/n7052                                          NET DELAY         0.280        14.251  1       
+vga_driver/n4547                                          NET DELAY         0.280        14.251  1       
 vga_driver/add_48_add_5_3/CI0->vga_driver/add_48_add_5_3/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        14.529  2       
-vga_driver/n12207                                         NET DELAY         0.280        14.809  1       
+vga_driver/n9608                                          NET DELAY         0.280        14.809  1       
 vga_driver/add_48_add_5_3/CI1->vga_driver/add_48_add_5_3/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        15.087  2       
-vga_driver/n7054                                          NET DELAY         0.280        15.367  1       
+vga_driver/n4549                                          NET DELAY         0.280        15.367  1       
 vga_driver/add_48_add_5_5/CI0->vga_driver/add_48_add_5_5/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        15.645  2       
-vga_driver/n12210                                         NET DELAY         0.280        15.925  1       
+vga_driver/n9611                                          NET DELAY         0.280        15.925  1       
 vga_driver/add_48_add_5_5/CI1->vga_driver/add_48_add_5_5/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        16.203  2       
-vga_driver/n7056                                          NET DELAY         0.280        16.483  1       
+vga_driver/n4551                                          NET DELAY         0.280        16.483  1       
 vga_driver/add_48_add_5_7/CI0->vga_driver/add_48_add_5_7/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        16.761  2       
-vga_driver/n12213                                         NET DELAY         0.280        17.041  1       
+vga_driver/n9614                                          NET DELAY         0.280        17.041  1       
 vga_driver/add_48_add_5_7/CI1->vga_driver/add_48_add_5_7/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        17.319  2       
-vga_driver/n7058                                          NET DELAY         0.280        17.599  1       
+vga_driver/n4553                                          NET DELAY         0.280        17.599  1       
 vga_driver/add_48_add_5_9/CI0->vga_driver/add_48_add_5_9/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        17.877  2       
-vga_driver/n12216                                         NET DELAY         0.280        18.157  1       
+vga_driver/n9617                                          NET DELAY         0.280        18.157  1       
 vga_driver/add_48_add_5_9/CI1->vga_driver/add_48_add_5_9/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        18.435  2       
-vga_driver/n7060                                          NET DELAY         0.280        18.715  1       
+vga_driver/n4555                                          NET DELAY         0.280        18.715  1       
 vga_driver/add_48_add_5_11/D0->vga_driver/add_48_add_5_11/S0
                                           FA2             D0_TO_S0_DELAY    0.477        19.192  3       
-vga_vsync_N_182[9]                                        NET DELAY         0.280        19.472  1       
+vga_vsync_N_180[9]                                        NET DELAY         0.280        19.472  1       
 vga_driver/i7_4_lut/C->vga_driver/i7_4_lut/Z
                                           LUT4            C_TO_Z_DELAY      0.477        19.949  1       
 vga_driver/n17                                            NET DELAY         2.075        22.024  1       
-vga_driver/i3350_4_lut/A->vga_driver/i3350_4_lut/Z
+vga_driver/i2406_4_lut/A->vga_driver/i2406_4_lut/Z
                                           LUT4            A_TO_Z_DELAY      0.477        22.501  10      
-n2706                                                     NET DELAY         2.075        24.576  1       
-i1453_2_lut/A->i1453_2_lut/Z              LUT4            A_TO_Z_DELAY      0.477        25.053  1       
-n2709                                                     NET DELAY         2.075        27.128  1       
+n2699                                                     NET DELAY         2.075        24.576  1       
+i1441_2_lut/A->i1441_2_lut/Z              LUT4            A_TO_Z_DELAY      0.477        25.053  1       
+n2708                                                     NET DELAY         2.075        27.128  1       
 
 
 Destination Clock Path
@@ -1451,7 +1339,7 @@ vga_driver/pll_clock                                      NET DELAY      2.075  
 
  ++++Path 5  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : vga_driver/h_count_384__i3/Q
+Path Begin       : vga_driver/h_count_388__i3/Q
 Path End         : vga_driver/v_count__i4/D
 Source Clock     : vga_driver/pll_clock
 Destination Clock: vga_driver/pll_clock
@@ -1487,56 +1375,56 @@ vga_driver/pll_clock                                      NET DELAY      2.075  
 Data path
 Name                                      Cell/Site Name  Delay Name        Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  ----------------  -----  ------------  ------  
-vga_driver/h_count_384__i3/CK->vga_driver/h_count_384__i3/Q
+vga_driver/h_count_388__i3/CK->vga_driver/h_count_388__i3/Q
                                           FD1P3XZ         CK_TO_Q_DELAY     1.391         5.691  6       
 h_count[3]                                                NET DELAY         0.280         5.971  1       
 vga_driver/i2_2_lut/B->vga_driver/i2_2_lut/Z
                                           LUT4            B_TO_Z_DELAY      0.477         6.448  2       
 vga_driver/n7                                             NET DELAY         2.075         8.523  1       
-vga_driver/i7688_4_lut/D->vga_driver/i7688_4_lut/Z
+vga_driver/i5284_4_lut/D->vga_driver/i5284_4_lut/Z
                                           LUT4            D_TO_Z_DELAY      0.477         9.000  1       
-vga_driver/n9803                                          NET DELAY         2.075        11.075  1       
-vga_driver/i8543_4_lut/D->vga_driver/i8543_4_lut/Z
+vga_driver/n7287                                          NET DELAY         2.075        11.075  1       
+vga_driver/i6109_4_lut/D->vga_driver/i6109_4_lut/Z
                                           LUT4            D_TO_Z_DELAY      0.477        11.552  2       
-vga_driver/vga_hsync_N_166                                NET DELAY         2.075        13.627  1       
+vga_driver/vga_hsync_N_164                                NET DELAY         2.075        13.627  1       
 vga_driver/add_48_add_5_1/C1->vga_driver/add_48_add_5_1/CO1
                                           FA2             C1_TO_CO1_DELAY   0.344        13.971  2       
-vga_driver/n7052                                          NET DELAY         0.280        14.251  1       
+vga_driver/n4547                                          NET DELAY         0.280        14.251  1       
 vga_driver/add_48_add_5_3/CI0->vga_driver/add_48_add_5_3/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        14.529  2       
-vga_driver/n12207                                         NET DELAY         0.280        14.809  1       
+vga_driver/n9608                                          NET DELAY         0.280        14.809  1       
 vga_driver/add_48_add_5_3/CI1->vga_driver/add_48_add_5_3/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        15.087  2       
-vga_driver/n7054                                          NET DELAY         0.280        15.367  1       
+vga_driver/n4549                                          NET DELAY         0.280        15.367  1       
 vga_driver/add_48_add_5_5/CI0->vga_driver/add_48_add_5_5/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        15.645  2       
-vga_driver/n12210                                         NET DELAY         0.280        15.925  1       
+vga_driver/n9611                                          NET DELAY         0.280        15.925  1       
 vga_driver/add_48_add_5_5/CI1->vga_driver/add_48_add_5_5/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        16.203  2       
-vga_driver/n7056                                          NET DELAY         0.280        16.483  1       
+vga_driver/n4551                                          NET DELAY         0.280        16.483  1       
 vga_driver/add_48_add_5_7/CI0->vga_driver/add_48_add_5_7/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        16.761  2       
-vga_driver/n12213                                         NET DELAY         0.280        17.041  1       
+vga_driver/n9614                                          NET DELAY         0.280        17.041  1       
 vga_driver/add_48_add_5_7/CI1->vga_driver/add_48_add_5_7/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        17.319  2       
-vga_driver/n7058                                          NET DELAY         0.280        17.599  1       
+vga_driver/n4553                                          NET DELAY         0.280        17.599  1       
 vga_driver/add_48_add_5_9/CI0->vga_driver/add_48_add_5_9/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        17.877  2       
-vga_driver/n12216                                         NET DELAY         0.280        18.157  1       
+vga_driver/n9617                                          NET DELAY         0.280        18.157  1       
 vga_driver/add_48_add_5_9/CI1->vga_driver/add_48_add_5_9/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        18.435  2       
-vga_driver/n7060                                          NET DELAY         0.280        18.715  1       
+vga_driver/n4555                                          NET DELAY         0.280        18.715  1       
 vga_driver/add_48_add_5_11/D0->vga_driver/add_48_add_5_11/S0
                                           FA2             D0_TO_S0_DELAY    0.477        19.192  3       
-vga_vsync_N_182[9]                                        NET DELAY         0.280        19.472  1       
+vga_vsync_N_180[9]                                        NET DELAY         0.280        19.472  1       
 vga_driver/i7_4_lut/C->vga_driver/i7_4_lut/Z
                                           LUT4            C_TO_Z_DELAY      0.477        19.949  1       
 vga_driver/n17                                            NET DELAY         2.075        22.024  1       
-vga_driver/i3350_4_lut/A->vga_driver/i3350_4_lut/Z
+vga_driver/i2406_4_lut/A->vga_driver/i2406_4_lut/Z
                                           LUT4            A_TO_Z_DELAY      0.477        22.501  10      
-n2706                                                     NET DELAY         2.075        24.576  1       
-i1454_2_lut/A->i1454_2_lut/Z              LUT4            A_TO_Z_DELAY      0.477        25.053  1       
-n2710                                                     NET DELAY         2.075        27.128  1       
+n2699                                                     NET DELAY         2.075        24.576  1       
+i1442_2_lut/A->i1442_2_lut/Z              LUT4            A_TO_Z_DELAY      0.477        25.053  1       
+n2709                                                     NET DELAY         2.075        27.128  1       
 
 
 Destination Clock Path
@@ -1550,7 +1438,106 @@ vga_driver/pll_clock                                      NET DELAY      2.075  
 
  ++++Path 6  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : vga_driver/h_count_384__i3/Q
+Path Begin       : vga_driver/h_count_388__i3/Q
+Path End         : vga_driver/v_count__i1/D
+Source Clock     : vga_driver/pll_clock
+Destination Clock: vga_driver/pll_clock
+Logic Level      : 17
+Delay Ratio      : 68.0% (route), 32.0% (logic)
+Clock Skew       : 0.000 ns
+Setup Constraint : 39.800 ns 
+Path Slack       : 16.773 ns  (Passed)
+
+  Destination Clock Arrival Time (vga_driver/pll_clock:R#2)    39.800
++ Generated Clock Source Latency                                2.225
+- Destination Clock Uncertainty                                 0.000
++ Destination Clock Path Delay                                  2.075
+- Setup Time                                                    0.199
+-----------------------------------------------------------   -------
+End-of-path required time( ns )                                43.901
+
+  Source Clock Arrival Time (vga_driver/pll_clock:R#1)    0.000
++ Generated Clock Source Latency                          2.225
++ Source Clock Path Delay                                 2.075
++ Data Path Delay                                        22.828
+------------------------------------------------------   ------
+End-of-path arrival time( ns )                           27.128
+
+ 
+Source Clock Path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+u_PLL_B/OUTGLOBAL                         PLL_B           CLOCK LATENCY  2.225         2.225  22      
+vga_driver/pll_clock                                      NET DELAY      2.075         4.300  1       
+
+
+Data path
+Name                                      Cell/Site Name  Delay Name        Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  ----------------  -----  ------------  ------  
+vga_driver/h_count_388__i3/CK->vga_driver/h_count_388__i3/Q
+                                          FD1P3XZ         CK_TO_Q_DELAY     1.391         5.691  6       
+h_count[3]                                                NET DELAY         0.280         5.971  1       
+vga_driver/i2_2_lut/B->vga_driver/i2_2_lut/Z
+                                          LUT4            B_TO_Z_DELAY      0.477         6.448  2       
+vga_driver/n7                                             NET DELAY         2.075         8.523  1       
+vga_driver/i5284_4_lut/D->vga_driver/i5284_4_lut/Z
+                                          LUT4            D_TO_Z_DELAY      0.477         9.000  1       
+vga_driver/n7287                                          NET DELAY         2.075        11.075  1       
+vga_driver/i6109_4_lut/D->vga_driver/i6109_4_lut/Z
+                                          LUT4            D_TO_Z_DELAY      0.477        11.552  2       
+vga_driver/vga_hsync_N_164                                NET DELAY         2.075        13.627  1       
+vga_driver/add_48_add_5_1/C1->vga_driver/add_48_add_5_1/CO1
+                                          FA2             C1_TO_CO1_DELAY   0.344        13.971  2       
+vga_driver/n4547                                          NET DELAY         0.280        14.251  1       
+vga_driver/add_48_add_5_3/CI0->vga_driver/add_48_add_5_3/CO0
+                                          FA2             CI0_TO_CO0_DELAY  0.278        14.529  2       
+vga_driver/n9608                                          NET DELAY         0.280        14.809  1       
+vga_driver/add_48_add_5_3/CI1->vga_driver/add_48_add_5_3/CO1
+                                          FA2             CI1_TO_CO1_DELAY  0.278        15.087  2       
+vga_driver/n4549                                          NET DELAY         0.280        15.367  1       
+vga_driver/add_48_add_5_5/CI0->vga_driver/add_48_add_5_5/CO0
+                                          FA2             CI0_TO_CO0_DELAY  0.278        15.645  2       
+vga_driver/n9611                                          NET DELAY         0.280        15.925  1       
+vga_driver/add_48_add_5_5/CI1->vga_driver/add_48_add_5_5/CO1
+                                          FA2             CI1_TO_CO1_DELAY  0.278        16.203  2       
+vga_driver/n4551                                          NET DELAY         0.280        16.483  1       
+vga_driver/add_48_add_5_7/CI0->vga_driver/add_48_add_5_7/CO0
+                                          FA2             CI0_TO_CO0_DELAY  0.278        16.761  2       
+vga_driver/n9614                                          NET DELAY         0.280        17.041  1       
+vga_driver/add_48_add_5_7/CI1->vga_driver/add_48_add_5_7/CO1
+                                          FA2             CI1_TO_CO1_DELAY  0.278        17.319  2       
+vga_driver/n4553                                          NET DELAY         0.280        17.599  1       
+vga_driver/add_48_add_5_9/CI0->vga_driver/add_48_add_5_9/CO0
+                                          FA2             CI0_TO_CO0_DELAY  0.278        17.877  2       
+vga_driver/n9617                                          NET DELAY         0.280        18.157  1       
+vga_driver/add_48_add_5_9/CI1->vga_driver/add_48_add_5_9/CO1
+                                          FA2             CI1_TO_CO1_DELAY  0.278        18.435  2       
+vga_driver/n4555                                          NET DELAY         0.280        18.715  1       
+vga_driver/add_48_add_5_11/D0->vga_driver/add_48_add_5_11/S0
+                                          FA2             D0_TO_S0_DELAY    0.477        19.192  3       
+vga_vsync_N_180[9]                                        NET DELAY         0.280        19.472  1       
+vga_driver/i7_4_lut/C->vga_driver/i7_4_lut/Z
+                                          LUT4            C_TO_Z_DELAY      0.477        19.949  1       
+vga_driver/n17                                            NET DELAY         2.075        22.024  1       
+vga_driver/i2406_4_lut/A->vga_driver/i2406_4_lut/Z
+                                          LUT4            A_TO_Z_DELAY      0.477        22.501  10      
+n2699                                                     NET DELAY         2.075        24.576  1       
+i1443_2_lut/A->i1443_2_lut/Z              LUT4            A_TO_Z_DELAY      0.477        25.053  1       
+n2710                                                     NET DELAY         2.075        27.128  1       
+
+
+Destination Clock Path
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+u_PLL_B/OUTGLOBAL                         PLL_B           CLOCK LATENCY  2.225         2.225  22      
+vga_driver/pll_clock                                      NET DELAY      2.075         4.300  1       
+
+
+
+
+ ++++Path 7  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin       : vga_driver/h_count_388__i3/Q
 Path End         : vga_driver/v_count__i5/D
 Source Clock     : vga_driver/pll_clock
 Destination Clock: vga_driver/pll_clock
@@ -1586,55 +1573,55 @@ vga_driver/pll_clock                                      NET DELAY      2.075  
 Data path
 Name                                      Cell/Site Name  Delay Name        Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  ----------------  -----  ------------  ------  
-vga_driver/h_count_384__i3/CK->vga_driver/h_count_384__i3/Q
+vga_driver/h_count_388__i3/CK->vga_driver/h_count_388__i3/Q
                                           FD1P3XZ         CK_TO_Q_DELAY     1.391         5.691  6       
 h_count[3]                                                NET DELAY         0.280         5.971  1       
 vga_driver/i2_2_lut/B->vga_driver/i2_2_lut/Z
                                           LUT4            B_TO_Z_DELAY      0.477         6.448  2       
 vga_driver/n7                                             NET DELAY         2.075         8.523  1       
-vga_driver/i7688_4_lut/D->vga_driver/i7688_4_lut/Z
+vga_driver/i5284_4_lut/D->vga_driver/i5284_4_lut/Z
                                           LUT4            D_TO_Z_DELAY      0.477         9.000  1       
-vga_driver/n9803                                          NET DELAY         2.075        11.075  1       
-vga_driver/i8543_4_lut/D->vga_driver/i8543_4_lut/Z
+vga_driver/n7287                                          NET DELAY         2.075        11.075  1       
+vga_driver/i6109_4_lut/D->vga_driver/i6109_4_lut/Z
                                           LUT4            D_TO_Z_DELAY      0.477        11.552  2       
-vga_driver/vga_hsync_N_166                                NET DELAY         2.075        13.627  1       
+vga_driver/vga_hsync_N_164                                NET DELAY         2.075        13.627  1       
 vga_driver/add_48_add_5_1/C1->vga_driver/add_48_add_5_1/CO1
                                           FA2             C1_TO_CO1_DELAY   0.344        13.971  2       
-vga_driver/n7052                                          NET DELAY         0.280        14.251  1       
+vga_driver/n4547                                          NET DELAY         0.280        14.251  1       
 vga_driver/add_48_add_5_3/CI0->vga_driver/add_48_add_5_3/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        14.529  2       
-vga_driver/n12207                                         NET DELAY         0.280        14.809  1       
+vga_driver/n9608                                          NET DELAY         0.280        14.809  1       
 vga_driver/add_48_add_5_3/CI1->vga_driver/add_48_add_5_3/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        15.087  2       
-vga_driver/n7054                                          NET DELAY         0.280        15.367  1       
+vga_driver/n4549                                          NET DELAY         0.280        15.367  1       
 vga_driver/add_48_add_5_5/CI0->vga_driver/add_48_add_5_5/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        15.645  2       
-vga_driver/n12210                                         NET DELAY         0.280        15.925  1       
+vga_driver/n9611                                          NET DELAY         0.280        15.925  1       
 vga_driver/add_48_add_5_5/CI1->vga_driver/add_48_add_5_5/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        16.203  2       
-vga_driver/n7056                                          NET DELAY         0.280        16.483  1       
+vga_driver/n4551                                          NET DELAY         0.280        16.483  1       
 vga_driver/add_48_add_5_7/CI0->vga_driver/add_48_add_5_7/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        16.761  2       
-vga_driver/n12213                                         NET DELAY         0.280        17.041  1       
+vga_driver/n9614                                          NET DELAY         0.280        17.041  1       
 vga_driver/add_48_add_5_7/CI1->vga_driver/add_48_add_5_7/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        17.319  2       
-vga_driver/n7058                                          NET DELAY         0.280        17.599  1       
+vga_driver/n4553                                          NET DELAY         0.280        17.599  1       
 vga_driver/add_48_add_5_9/CI0->vga_driver/add_48_add_5_9/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        17.877  2       
-vga_driver/n12216                                         NET DELAY         0.280        18.157  1       
+vga_driver/n9617                                          NET DELAY         0.280        18.157  1       
 vga_driver/add_48_add_5_9/CI1->vga_driver/add_48_add_5_9/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        18.435  2       
-vga_driver/n7060                                          NET DELAY         0.280        18.715  1       
+vga_driver/n4555                                          NET DELAY         0.280        18.715  1       
 vga_driver/add_48_add_5_11/D0->vga_driver/add_48_add_5_11/S0
                                           FA2             D0_TO_S0_DELAY    0.477        19.192  3       
-vga_vsync_N_182[9]                                        NET DELAY         0.280        19.472  1       
+vga_vsync_N_180[9]                                        NET DELAY         0.280        19.472  1       
 vga_driver/i7_4_lut/C->vga_driver/i7_4_lut/Z
                                           LUT4            C_TO_Z_DELAY      0.477        19.949  1       
 vga_driver/n17                                            NET DELAY         2.075        22.024  1       
-vga_driver/i3350_4_lut/A->vga_driver/i3350_4_lut/Z
+vga_driver/i2406_4_lut/A->vga_driver/i2406_4_lut/Z
                                           LUT4            A_TO_Z_DELAY      0.477        22.501  10      
-n2706                                                     NET DELAY         2.075        24.576  1       
-i1455_2_lut/A->i1455_2_lut/Z              LUT4            A_TO_Z_DELAY      0.477        25.053  1       
+n2699                                                     NET DELAY         2.075        24.576  1       
+i1444_2_lut/A->i1444_2_lut/Z              LUT4            A_TO_Z_DELAY      0.477        25.053  1       
 n2711                                                     NET DELAY         2.075        27.128  1       
 
 
@@ -1647,9 +1634,9 @@ vga_driver/pll_clock                                      NET DELAY      2.075  
 
 
 
- ++++Path 7  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ ++++Path 8  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : vga_driver/h_count_384__i3/Q
+Path Begin       : vga_driver/h_count_388__i3/Q
 Path End         : vga_driver/v_count__i6/D
 Source Clock     : vga_driver/pll_clock
 Destination Clock: vga_driver/pll_clock
@@ -1685,55 +1672,55 @@ vga_driver/pll_clock                                      NET DELAY      2.075  
 Data path
 Name                                      Cell/Site Name  Delay Name        Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  ----------------  -----  ------------  ------  
-vga_driver/h_count_384__i3/CK->vga_driver/h_count_384__i3/Q
+vga_driver/h_count_388__i3/CK->vga_driver/h_count_388__i3/Q
                                           FD1P3XZ         CK_TO_Q_DELAY     1.391         5.691  6       
 h_count[3]                                                NET DELAY         0.280         5.971  1       
 vga_driver/i2_2_lut/B->vga_driver/i2_2_lut/Z
                                           LUT4            B_TO_Z_DELAY      0.477         6.448  2       
 vga_driver/n7                                             NET DELAY         2.075         8.523  1       
-vga_driver/i7688_4_lut/D->vga_driver/i7688_4_lut/Z
+vga_driver/i5284_4_lut/D->vga_driver/i5284_4_lut/Z
                                           LUT4            D_TO_Z_DELAY      0.477         9.000  1       
-vga_driver/n9803                                          NET DELAY         2.075        11.075  1       
-vga_driver/i8543_4_lut/D->vga_driver/i8543_4_lut/Z
+vga_driver/n7287                                          NET DELAY         2.075        11.075  1       
+vga_driver/i6109_4_lut/D->vga_driver/i6109_4_lut/Z
                                           LUT4            D_TO_Z_DELAY      0.477        11.552  2       
-vga_driver/vga_hsync_N_166                                NET DELAY         2.075        13.627  1       
+vga_driver/vga_hsync_N_164                                NET DELAY         2.075        13.627  1       
 vga_driver/add_48_add_5_1/C1->vga_driver/add_48_add_5_1/CO1
                                           FA2             C1_TO_CO1_DELAY   0.344        13.971  2       
-vga_driver/n7052                                          NET DELAY         0.280        14.251  1       
+vga_driver/n4547                                          NET DELAY         0.280        14.251  1       
 vga_driver/add_48_add_5_3/CI0->vga_driver/add_48_add_5_3/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        14.529  2       
-vga_driver/n12207                                         NET DELAY         0.280        14.809  1       
+vga_driver/n9608                                          NET DELAY         0.280        14.809  1       
 vga_driver/add_48_add_5_3/CI1->vga_driver/add_48_add_5_3/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        15.087  2       
-vga_driver/n7054                                          NET DELAY         0.280        15.367  1       
+vga_driver/n4549                                          NET DELAY         0.280        15.367  1       
 vga_driver/add_48_add_5_5/CI0->vga_driver/add_48_add_5_5/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        15.645  2       
-vga_driver/n12210                                         NET DELAY         0.280        15.925  1       
+vga_driver/n9611                                          NET DELAY         0.280        15.925  1       
 vga_driver/add_48_add_5_5/CI1->vga_driver/add_48_add_5_5/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        16.203  2       
-vga_driver/n7056                                          NET DELAY         0.280        16.483  1       
+vga_driver/n4551                                          NET DELAY         0.280        16.483  1       
 vga_driver/add_48_add_5_7/CI0->vga_driver/add_48_add_5_7/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        16.761  2       
-vga_driver/n12213                                         NET DELAY         0.280        17.041  1       
+vga_driver/n9614                                          NET DELAY         0.280        17.041  1       
 vga_driver/add_48_add_5_7/CI1->vga_driver/add_48_add_5_7/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        17.319  2       
-vga_driver/n7058                                          NET DELAY         0.280        17.599  1       
+vga_driver/n4553                                          NET DELAY         0.280        17.599  1       
 vga_driver/add_48_add_5_9/CI0->vga_driver/add_48_add_5_9/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        17.877  2       
-vga_driver/n12216                                         NET DELAY         0.280        18.157  1       
+vga_driver/n9617                                          NET DELAY         0.280        18.157  1       
 vga_driver/add_48_add_5_9/CI1->vga_driver/add_48_add_5_9/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        18.435  2       
-vga_driver/n7060                                          NET DELAY         0.280        18.715  1       
+vga_driver/n4555                                          NET DELAY         0.280        18.715  1       
 vga_driver/add_48_add_5_11/D0->vga_driver/add_48_add_5_11/S0
                                           FA2             D0_TO_S0_DELAY    0.477        19.192  3       
-vga_vsync_N_182[9]                                        NET DELAY         0.280        19.472  1       
+vga_vsync_N_180[9]                                        NET DELAY         0.280        19.472  1       
 vga_driver/i7_4_lut/C->vga_driver/i7_4_lut/Z
                                           LUT4            C_TO_Z_DELAY      0.477        19.949  1       
 vga_driver/n17                                            NET DELAY         2.075        22.024  1       
-vga_driver/i3350_4_lut/A->vga_driver/i3350_4_lut/Z
+vga_driver/i2406_4_lut/A->vga_driver/i2406_4_lut/Z
                                           LUT4            A_TO_Z_DELAY      0.477        22.501  10      
-n2706                                                     NET DELAY         2.075        24.576  1       
-i1456_2_lut/A->i1456_2_lut/Z              LUT4            A_TO_Z_DELAY      0.477        25.053  1       
+n2699                                                     NET DELAY         2.075        24.576  1       
+i1445_2_lut/A->i1445_2_lut/Z              LUT4            A_TO_Z_DELAY      0.477        25.053  1       
 n2712                                                     NET DELAY         2.075        27.128  1       
 
 
@@ -1746,9 +1733,9 @@ vga_driver/pll_clock                                      NET DELAY      2.075  
 
 
 
- ++++Path 8  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ ++++Path 9  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : vga_driver/h_count_384__i3/Q
+Path Begin       : vga_driver/h_count_388__i3/Q
 Path End         : vga_driver/v_count__i7/D
 Source Clock     : vga_driver/pll_clock
 Destination Clock: vga_driver/pll_clock
@@ -1784,55 +1771,55 @@ vga_driver/pll_clock                                      NET DELAY      2.075  
 Data path
 Name                                      Cell/Site Name  Delay Name        Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  ----------------  -----  ------------  ------  
-vga_driver/h_count_384__i3/CK->vga_driver/h_count_384__i3/Q
+vga_driver/h_count_388__i3/CK->vga_driver/h_count_388__i3/Q
                                           FD1P3XZ         CK_TO_Q_DELAY     1.391         5.691  6       
 h_count[3]                                                NET DELAY         0.280         5.971  1       
 vga_driver/i2_2_lut/B->vga_driver/i2_2_lut/Z
                                           LUT4            B_TO_Z_DELAY      0.477         6.448  2       
 vga_driver/n7                                             NET DELAY         2.075         8.523  1       
-vga_driver/i7688_4_lut/D->vga_driver/i7688_4_lut/Z
+vga_driver/i5284_4_lut/D->vga_driver/i5284_4_lut/Z
                                           LUT4            D_TO_Z_DELAY      0.477         9.000  1       
-vga_driver/n9803                                          NET DELAY         2.075        11.075  1       
-vga_driver/i8543_4_lut/D->vga_driver/i8543_4_lut/Z
+vga_driver/n7287                                          NET DELAY         2.075        11.075  1       
+vga_driver/i6109_4_lut/D->vga_driver/i6109_4_lut/Z
                                           LUT4            D_TO_Z_DELAY      0.477        11.552  2       
-vga_driver/vga_hsync_N_166                                NET DELAY         2.075        13.627  1       
+vga_driver/vga_hsync_N_164                                NET DELAY         2.075        13.627  1       
 vga_driver/add_48_add_5_1/C1->vga_driver/add_48_add_5_1/CO1
                                           FA2             C1_TO_CO1_DELAY   0.344        13.971  2       
-vga_driver/n7052                                          NET DELAY         0.280        14.251  1       
+vga_driver/n4547                                          NET DELAY         0.280        14.251  1       
 vga_driver/add_48_add_5_3/CI0->vga_driver/add_48_add_5_3/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        14.529  2       
-vga_driver/n12207                                         NET DELAY         0.280        14.809  1       
+vga_driver/n9608                                          NET DELAY         0.280        14.809  1       
 vga_driver/add_48_add_5_3/CI1->vga_driver/add_48_add_5_3/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        15.087  2       
-vga_driver/n7054                                          NET DELAY         0.280        15.367  1       
+vga_driver/n4549                                          NET DELAY         0.280        15.367  1       
 vga_driver/add_48_add_5_5/CI0->vga_driver/add_48_add_5_5/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        15.645  2       
-vga_driver/n12210                                         NET DELAY         0.280        15.925  1       
+vga_driver/n9611                                          NET DELAY         0.280        15.925  1       
 vga_driver/add_48_add_5_5/CI1->vga_driver/add_48_add_5_5/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        16.203  2       
-vga_driver/n7056                                          NET DELAY         0.280        16.483  1       
+vga_driver/n4551                                          NET DELAY         0.280        16.483  1       
 vga_driver/add_48_add_5_7/CI0->vga_driver/add_48_add_5_7/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        16.761  2       
-vga_driver/n12213                                         NET DELAY         0.280        17.041  1       
+vga_driver/n9614                                          NET DELAY         0.280        17.041  1       
 vga_driver/add_48_add_5_7/CI1->vga_driver/add_48_add_5_7/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        17.319  2       
-vga_driver/n7058                                          NET DELAY         0.280        17.599  1       
+vga_driver/n4553                                          NET DELAY         0.280        17.599  1       
 vga_driver/add_48_add_5_9/CI0->vga_driver/add_48_add_5_9/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        17.877  2       
-vga_driver/n12216                                         NET DELAY         0.280        18.157  1       
+vga_driver/n9617                                          NET DELAY         0.280        18.157  1       
 vga_driver/add_48_add_5_9/CI1->vga_driver/add_48_add_5_9/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        18.435  2       
-vga_driver/n7060                                          NET DELAY         0.280        18.715  1       
+vga_driver/n4555                                          NET DELAY         0.280        18.715  1       
 vga_driver/add_48_add_5_11/D0->vga_driver/add_48_add_5_11/S0
                                           FA2             D0_TO_S0_DELAY    0.477        19.192  3       
-vga_vsync_N_182[9]                                        NET DELAY         0.280        19.472  1       
+vga_vsync_N_180[9]                                        NET DELAY         0.280        19.472  1       
 vga_driver/i7_4_lut/C->vga_driver/i7_4_lut/Z
                                           LUT4            C_TO_Z_DELAY      0.477        19.949  1       
 vga_driver/n17                                            NET DELAY         2.075        22.024  1       
-vga_driver/i3350_4_lut/A->vga_driver/i3350_4_lut/Z
+vga_driver/i2406_4_lut/A->vga_driver/i2406_4_lut/Z
                                           LUT4            A_TO_Z_DELAY      0.477        22.501  10      
-n2706                                                     NET DELAY         2.075        24.576  1       
-i1457_2_lut/A->i1457_2_lut/Z              LUT4            A_TO_Z_DELAY      0.477        25.053  1       
+n2699                                                     NET DELAY         2.075        24.576  1       
+i1446_2_lut/A->i1446_2_lut/Z              LUT4            A_TO_Z_DELAY      0.477        25.053  1       
 n2713                                                     NET DELAY         2.075        27.128  1       
 
 
@@ -1845,9 +1832,9 @@ vga_driver/pll_clock                                      NET DELAY      2.075  
 
 
 
- ++++Path 9  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ ++++Path 10  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : vga_driver/h_count_384__i3/Q
+Path Begin       : vga_driver/h_count_388__i3/Q
 Path End         : vga_driver/v_count__i8/D
 Source Clock     : vga_driver/pll_clock
 Destination Clock: vga_driver/pll_clock
@@ -1883,155 +1870,56 @@ vga_driver/pll_clock                                      NET DELAY      2.075  
 Data path
 Name                                      Cell/Site Name  Delay Name        Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  ----------------  -----  ------------  ------  
-vga_driver/h_count_384__i3/CK->vga_driver/h_count_384__i3/Q
+vga_driver/h_count_388__i3/CK->vga_driver/h_count_388__i3/Q
                                           FD1P3XZ         CK_TO_Q_DELAY     1.391         5.691  6       
 h_count[3]                                                NET DELAY         0.280         5.971  1       
 vga_driver/i2_2_lut/B->vga_driver/i2_2_lut/Z
                                           LUT4            B_TO_Z_DELAY      0.477         6.448  2       
 vga_driver/n7                                             NET DELAY         2.075         8.523  1       
-vga_driver/i7688_4_lut/D->vga_driver/i7688_4_lut/Z
+vga_driver/i5284_4_lut/D->vga_driver/i5284_4_lut/Z
                                           LUT4            D_TO_Z_DELAY      0.477         9.000  1       
-vga_driver/n9803                                          NET DELAY         2.075        11.075  1       
-vga_driver/i8543_4_lut/D->vga_driver/i8543_4_lut/Z
+vga_driver/n7287                                          NET DELAY         2.075        11.075  1       
+vga_driver/i6109_4_lut/D->vga_driver/i6109_4_lut/Z
                                           LUT4            D_TO_Z_DELAY      0.477        11.552  2       
-vga_driver/vga_hsync_N_166                                NET DELAY         2.075        13.627  1       
+vga_driver/vga_hsync_N_164                                NET DELAY         2.075        13.627  1       
 vga_driver/add_48_add_5_1/C1->vga_driver/add_48_add_5_1/CO1
                                           FA2             C1_TO_CO1_DELAY   0.344        13.971  2       
-vga_driver/n7052                                          NET DELAY         0.280        14.251  1       
+vga_driver/n4547                                          NET DELAY         0.280        14.251  1       
 vga_driver/add_48_add_5_3/CI0->vga_driver/add_48_add_5_3/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        14.529  2       
-vga_driver/n12207                                         NET DELAY         0.280        14.809  1       
+vga_driver/n9608                                          NET DELAY         0.280        14.809  1       
 vga_driver/add_48_add_5_3/CI1->vga_driver/add_48_add_5_3/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        15.087  2       
-vga_driver/n7054                                          NET DELAY         0.280        15.367  1       
+vga_driver/n4549                                          NET DELAY         0.280        15.367  1       
 vga_driver/add_48_add_5_5/CI0->vga_driver/add_48_add_5_5/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        15.645  2       
-vga_driver/n12210                                         NET DELAY         0.280        15.925  1       
+vga_driver/n9611                                          NET DELAY         0.280        15.925  1       
 vga_driver/add_48_add_5_5/CI1->vga_driver/add_48_add_5_5/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        16.203  2       
-vga_driver/n7056                                          NET DELAY         0.280        16.483  1       
+vga_driver/n4551                                          NET DELAY         0.280        16.483  1       
 vga_driver/add_48_add_5_7/CI0->vga_driver/add_48_add_5_7/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        16.761  2       
-vga_driver/n12213                                         NET DELAY         0.280        17.041  1       
+vga_driver/n9614                                          NET DELAY         0.280        17.041  1       
 vga_driver/add_48_add_5_7/CI1->vga_driver/add_48_add_5_7/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        17.319  2       
-vga_driver/n7058                                          NET DELAY         0.280        17.599  1       
+vga_driver/n4553                                          NET DELAY         0.280        17.599  1       
 vga_driver/add_48_add_5_9/CI0->vga_driver/add_48_add_5_9/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        17.877  2       
-vga_driver/n12216                                         NET DELAY         0.280        18.157  1       
+vga_driver/n9617                                          NET DELAY         0.280        18.157  1       
 vga_driver/add_48_add_5_9/CI1->vga_driver/add_48_add_5_9/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        18.435  2       
-vga_driver/n7060                                          NET DELAY         0.280        18.715  1       
+vga_driver/n4555                                          NET DELAY         0.280        18.715  1       
 vga_driver/add_48_add_5_11/D0->vga_driver/add_48_add_5_11/S0
                                           FA2             D0_TO_S0_DELAY    0.477        19.192  3       
-vga_vsync_N_182[9]                                        NET DELAY         0.280        19.472  1       
+vga_vsync_N_180[9]                                        NET DELAY         0.280        19.472  1       
 vga_driver/i7_4_lut/C->vga_driver/i7_4_lut/Z
                                           LUT4            C_TO_Z_DELAY      0.477        19.949  1       
 vga_driver/n17                                            NET DELAY         2.075        22.024  1       
-vga_driver/i3350_4_lut/A->vga_driver/i3350_4_lut/Z
+vga_driver/i2406_4_lut/A->vga_driver/i2406_4_lut/Z
                                           LUT4            A_TO_Z_DELAY      0.477        22.501  10      
-n2706                                                     NET DELAY         2.075        24.576  1       
-i1458_2_lut/A->i1458_2_lut/Z              LUT4            A_TO_Z_DELAY      0.477        25.053  1       
+n2699                                                     NET DELAY         2.075        24.576  1       
+i1447_2_lut/A->i1447_2_lut/Z              LUT4            A_TO_Z_DELAY      0.477        25.053  1       
 n2714                                                     NET DELAY         2.075        27.128  1       
-
-
-Destination Clock Path
-Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
-----------------------------------------  --------------  -------------  -----  ------------  ------  
-u_PLL_B/OUTGLOBAL                         PLL_B           CLOCK LATENCY  2.225         2.225  22      
-vga_driver/pll_clock                                      NET DELAY      2.075         4.300  1       
-
-
-
-
- ++++Path 10  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-Path Begin       : vga_driver/h_count_384__i3/Q
-Path End         : vga_driver/v_count__i9/D
-Source Clock     : vga_driver/pll_clock
-Destination Clock: vga_driver/pll_clock
-Logic Level      : 17
-Delay Ratio      : 68.0% (route), 32.0% (logic)
-Clock Skew       : 0.000 ns
-Setup Constraint : 39.800 ns 
-Path Slack       : 16.773 ns  (Passed)
-
-  Destination Clock Arrival Time (vga_driver/pll_clock:R#2)    39.800
-+ Generated Clock Source Latency                                2.225
-- Destination Clock Uncertainty                                 0.000
-+ Destination Clock Path Delay                                  2.075
-- Setup Time                                                    0.199
------------------------------------------------------------   -------
-End-of-path required time( ns )                                43.901
-
-  Source Clock Arrival Time (vga_driver/pll_clock:R#1)    0.000
-+ Generated Clock Source Latency                          2.225
-+ Source Clock Path Delay                                 2.075
-+ Data Path Delay                                        22.828
-------------------------------------------------------   ------
-End-of-path arrival time( ns )                           27.128
-
- 
-Source Clock Path
-Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
-----------------------------------------  --------------  -------------  -----  ------------  ------  
-u_PLL_B/OUTGLOBAL                         PLL_B           CLOCK LATENCY  2.225         2.225  22      
-vga_driver/pll_clock                                      NET DELAY      2.075         4.300  1       
-
-
-Data path
-Name                                      Cell/Site Name  Delay Name        Delay  Arrival Time  Fanout  
-----------------------------------------  --------------  ----------------  -----  ------------  ------  
-vga_driver/h_count_384__i3/CK->vga_driver/h_count_384__i3/Q
-                                          FD1P3XZ         CK_TO_Q_DELAY     1.391         5.691  6       
-h_count[3]                                                NET DELAY         0.280         5.971  1       
-vga_driver/i2_2_lut/B->vga_driver/i2_2_lut/Z
-                                          LUT4            B_TO_Z_DELAY      0.477         6.448  2       
-vga_driver/n7                                             NET DELAY         2.075         8.523  1       
-vga_driver/i7688_4_lut/D->vga_driver/i7688_4_lut/Z
-                                          LUT4            D_TO_Z_DELAY      0.477         9.000  1       
-vga_driver/n9803                                          NET DELAY         2.075        11.075  1       
-vga_driver/i8543_4_lut/D->vga_driver/i8543_4_lut/Z
-                                          LUT4            D_TO_Z_DELAY      0.477        11.552  2       
-vga_driver/vga_hsync_N_166                                NET DELAY         2.075        13.627  1       
-vga_driver/add_48_add_5_1/C1->vga_driver/add_48_add_5_1/CO1
-                                          FA2             C1_TO_CO1_DELAY   0.344        13.971  2       
-vga_driver/n7052                                          NET DELAY         0.280        14.251  1       
-vga_driver/add_48_add_5_3/CI0->vga_driver/add_48_add_5_3/CO0
-                                          FA2             CI0_TO_CO0_DELAY  0.278        14.529  2       
-vga_driver/n12207                                         NET DELAY         0.280        14.809  1       
-vga_driver/add_48_add_5_3/CI1->vga_driver/add_48_add_5_3/CO1
-                                          FA2             CI1_TO_CO1_DELAY  0.278        15.087  2       
-vga_driver/n7054                                          NET DELAY         0.280        15.367  1       
-vga_driver/add_48_add_5_5/CI0->vga_driver/add_48_add_5_5/CO0
-                                          FA2             CI0_TO_CO0_DELAY  0.278        15.645  2       
-vga_driver/n12210                                         NET DELAY         0.280        15.925  1       
-vga_driver/add_48_add_5_5/CI1->vga_driver/add_48_add_5_5/CO1
-                                          FA2             CI1_TO_CO1_DELAY  0.278        16.203  2       
-vga_driver/n7056                                          NET DELAY         0.280        16.483  1       
-vga_driver/add_48_add_5_7/CI0->vga_driver/add_48_add_5_7/CO0
-                                          FA2             CI0_TO_CO0_DELAY  0.278        16.761  2       
-vga_driver/n12213                                         NET DELAY         0.280        17.041  1       
-vga_driver/add_48_add_5_7/CI1->vga_driver/add_48_add_5_7/CO1
-                                          FA2             CI1_TO_CO1_DELAY  0.278        17.319  2       
-vga_driver/n7058                                          NET DELAY         0.280        17.599  1       
-vga_driver/add_48_add_5_9/CI0->vga_driver/add_48_add_5_9/CO0
-                                          FA2             CI0_TO_CO0_DELAY  0.278        17.877  2       
-vga_driver/n12216                                         NET DELAY         0.280        18.157  1       
-vga_driver/add_48_add_5_9/CI1->vga_driver/add_48_add_5_9/CO1
-                                          FA2             CI1_TO_CO1_DELAY  0.278        18.435  2       
-vga_driver/n7060                                          NET DELAY         0.280        18.715  1       
-vga_driver/add_48_add_5_11/D0->vga_driver/add_48_add_5_11/S0
-                                          FA2             D0_TO_S0_DELAY    0.477        19.192  3       
-vga_vsync_N_182[9]                                        NET DELAY         0.280        19.472  1       
-vga_driver/i7_4_lut/C->vga_driver/i7_4_lut/Z
-                                          LUT4            C_TO_Z_DELAY      0.477        19.949  1       
-vga_driver/n17                                            NET DELAY         2.075        22.024  1       
-vga_driver/i3350_4_lut/A->vga_driver/i3350_4_lut/Z
-                                          LUT4            A_TO_Z_DELAY      0.477        22.501  10      
-n2706                                                     NET DELAY         2.075        24.576  1       
-i1459_2_lut/A->i1459_2_lut/Z              LUT4            A_TO_Z_DELAY      0.477        25.053  1       
-n2715                                                     NET DELAY         2.075        27.128  1       
 
 
 Destination Clock Path
@@ -2058,8 +1946,8 @@ vga_driver/pll_clock                                      NET DELAY      2.075  
 
  ++++Path 1  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : timer_clock_383__i0/Q
-Path End         : timer_clock_383__i0/D
+Path Begin       : timer_clock_387__i0/Q
+Path End         : timer_clock_387__i0/D
 Source Clock     : vga_driver/vga_clock/lscc_pll_inst/clk
 Destination Clock: vga_driver/vga_clock/lscc_pll_inst/clk
 Logic Level      : 2
@@ -2094,10 +1982,10 @@ clk                                                       NET DELAY      2.075  
 Data path
 Name                                      Cell/Site Name  Delay Name      Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  --------------  -----  ------------  ------  
-timer_clock_383__i0/CK->timer_clock_383__i0/Q
+timer_clock_387__i0/CK->timer_clock_387__i0/Q
                                           FD1P3XZ         CK_TO_Q_DELAY   1.391         3.466  2       
 timer_clock[0]                                            NET DELAY       0.280         3.746  1       
-timer_clock_383_add_4_1/C1->timer_clock_383_add_4_1/S1
+timer_clock_387_add_4_1/C1->timer_clock_387_add_4_1/S1
                                           FA2             C1_TO_S1_DELAY  0.450         4.196  1       
 n75                                                       NET DELAY       2.075         6.271  1       
 
@@ -2113,8 +2001,8 @@ clk                                                       NET DELAY      2.075  
 
  ++++Path 2  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : timer_clock_383__i1/Q
-Path End         : timer_clock_383__i1/D
+Path Begin       : timer_clock_387__i1/Q
+Path End         : timer_clock_387__i1/D
 Source Clock     : vga_driver/vga_clock/lscc_pll_inst/clk
 Destination Clock: vga_driver/vga_clock/lscc_pll_inst/clk
 Logic Level      : 2
@@ -2149,10 +2037,10 @@ clk                                                       NET DELAY      2.075  
 Data path
 Name                                      Cell/Site Name  Delay Name      Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  --------------  -----  ------------  ------  
-timer_clock_383__i1/CK->timer_clock_383__i1/Q
+timer_clock_387__i1/CK->timer_clock_387__i1/Q
                                           FD1P3XZ         CK_TO_Q_DELAY   1.391         3.466  2       
 timer_clock[1]                                            NET DELAY       0.280         3.746  1       
-timer_clock_383_add_4_3/C0->timer_clock_383_add_4_3/S0
+timer_clock_387_add_4_3/C0->timer_clock_387_add_4_3/S0
                                           FA2             C0_TO_S0_DELAY  0.450         4.196  1       
 n74                                                       NET DELAY       2.075         6.271  1       
 
@@ -2168,8 +2056,8 @@ clk                                                       NET DELAY      2.075  
 
  ++++Path 3  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : timer_clock_383__i2/Q
-Path End         : timer_clock_383__i2/D
+Path Begin       : timer_clock_387__i2/Q
+Path End         : timer_clock_387__i2/D
 Source Clock     : vga_driver/vga_clock/lscc_pll_inst/clk
 Destination Clock: vga_driver/vga_clock/lscc_pll_inst/clk
 Logic Level      : 2
@@ -2204,10 +2092,10 @@ clk                                                       NET DELAY      2.075  
 Data path
 Name                                      Cell/Site Name  Delay Name      Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  --------------  -----  ------------  ------  
-timer_clock_383__i2/CK->timer_clock_383__i2/Q
+timer_clock_387__i2/CK->timer_clock_387__i2/Q
                                           FD1P3XZ         CK_TO_Q_DELAY   1.391         3.466  2       
 timer_clock[2]                                            NET DELAY       0.280         3.746  1       
-timer_clock_383_add_4_3/C1->timer_clock_383_add_4_3/S1
+timer_clock_387_add_4_3/C1->timer_clock_387_add_4_3/S1
                                           FA2             C1_TO_S1_DELAY  0.450         4.196  1       
 n73                                                       NET DELAY       2.075         6.271  1       
 
@@ -2223,8 +2111,8 @@ clk                                                       NET DELAY      2.075  
 
  ++++Path 4  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : timer_clock_383__i3/Q
-Path End         : timer_clock_383__i3/D
+Path Begin       : timer_clock_387__i3/Q
+Path End         : timer_clock_387__i3/D
 Source Clock     : vga_driver/vga_clock/lscc_pll_inst/clk
 Destination Clock: vga_driver/vga_clock/lscc_pll_inst/clk
 Logic Level      : 2
@@ -2259,10 +2147,10 @@ clk                                                       NET DELAY      2.075  
 Data path
 Name                                      Cell/Site Name  Delay Name      Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  --------------  -----  ------------  ------  
-timer_clock_383__i3/CK->timer_clock_383__i3/Q
+timer_clock_387__i3/CK->timer_clock_387__i3/Q
                                           FD1P3XZ         CK_TO_Q_DELAY   1.391         3.466  2       
 timer_clock[3]                                            NET DELAY       0.280         3.746  1       
-timer_clock_383_add_4_5/C0->timer_clock_383_add_4_5/S0
+timer_clock_387_add_4_5/C0->timer_clock_387_add_4_5/S0
                                           FA2             C0_TO_S0_DELAY  0.450         4.196  1       
 n72                                                       NET DELAY       2.075         6.271  1       
 
@@ -2278,8 +2166,8 @@ clk                                                       NET DELAY      2.075  
 
  ++++Path 5  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : timer_clock_383__i4/Q
-Path End         : timer_clock_383__i4/D
+Path Begin       : timer_clock_387__i4/Q
+Path End         : timer_clock_387__i4/D
 Source Clock     : vga_driver/vga_clock/lscc_pll_inst/clk
 Destination Clock: vga_driver/vga_clock/lscc_pll_inst/clk
 Logic Level      : 2
@@ -2314,10 +2202,10 @@ clk                                                       NET DELAY      2.075  
 Data path
 Name                                      Cell/Site Name  Delay Name      Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  --------------  -----  ------------  ------  
-timer_clock_383__i4/CK->timer_clock_383__i4/Q
+timer_clock_387__i4/CK->timer_clock_387__i4/Q
                                           FD1P3XZ         CK_TO_Q_DELAY   1.391         3.466  2       
 timer_clock[4]                                            NET DELAY       0.280         3.746  1       
-timer_clock_383_add_4_5/C1->timer_clock_383_add_4_5/S1
+timer_clock_387_add_4_5/C1->timer_clock_387_add_4_5/S1
                                           FA2             C1_TO_S1_DELAY  0.450         4.196  1       
 n71                                                       NET DELAY       2.075         6.271  1       
 
@@ -2333,8 +2221,8 @@ clk                                                       NET DELAY      2.075  
 
  ++++Path 6  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : timer_clock_383__i5/Q
-Path End         : timer_clock_383__i5/D
+Path Begin       : timer_clock_387__i5/Q
+Path End         : timer_clock_387__i5/D
 Source Clock     : vga_driver/vga_clock/lscc_pll_inst/clk
 Destination Clock: vga_driver/vga_clock/lscc_pll_inst/clk
 Logic Level      : 2
@@ -2369,10 +2257,10 @@ clk                                                       NET DELAY      2.075  
 Data path
 Name                                      Cell/Site Name  Delay Name      Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  --------------  -----  ------------  ------  
-timer_clock_383__i5/CK->timer_clock_383__i5/Q
+timer_clock_387__i5/CK->timer_clock_387__i5/Q
                                           FD1P3XZ         CK_TO_Q_DELAY   1.391         3.466  2       
 timer_clock[5]                                            NET DELAY       0.280         3.746  1       
-timer_clock_383_add_4_7/C0->timer_clock_383_add_4_7/S0
+timer_clock_387_add_4_7/C0->timer_clock_387_add_4_7/S0
                                           FA2             C0_TO_S0_DELAY  0.450         4.196  1       
 n70                                                       NET DELAY       2.075         6.271  1       
 
@@ -2388,8 +2276,8 @@ clk                                                       NET DELAY      2.075  
 
  ++++Path 7  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : timer_clock_383__i6/Q
-Path End         : timer_clock_383__i6/D
+Path Begin       : timer_clock_387__i6/Q
+Path End         : timer_clock_387__i6/D
 Source Clock     : vga_driver/vga_clock/lscc_pll_inst/clk
 Destination Clock: vga_driver/vga_clock/lscc_pll_inst/clk
 Logic Level      : 2
@@ -2424,10 +2312,10 @@ clk                                                       NET DELAY      2.075  
 Data path
 Name                                      Cell/Site Name  Delay Name      Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  --------------  -----  ------------  ------  
-timer_clock_383__i6/CK->timer_clock_383__i6/Q
+timer_clock_387__i6/CK->timer_clock_387__i6/Q
                                           FD1P3XZ         CK_TO_Q_DELAY   1.391         3.466  2       
 timer_clock[6]                                            NET DELAY       0.280         3.746  1       
-timer_clock_383_add_4_7/C1->timer_clock_383_add_4_7/S1
+timer_clock_387_add_4_7/C1->timer_clock_387_add_4_7/S1
                                           FA2             C1_TO_S1_DELAY  0.450         4.196  1       
 n69                                                       NET DELAY       2.075         6.271  1       
 
@@ -2443,8 +2331,8 @@ clk                                                       NET DELAY      2.075  
 
  ++++Path 8  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : timer_clock_383__i7/Q
-Path End         : timer_clock_383__i7/D
+Path Begin       : timer_clock_387__i7/Q
+Path End         : timer_clock_387__i7/D
 Source Clock     : vga_driver/vga_clock/lscc_pll_inst/clk
 Destination Clock: vga_driver/vga_clock/lscc_pll_inst/clk
 Logic Level      : 2
@@ -2479,10 +2367,10 @@ clk                                                       NET DELAY      2.075  
 Data path
 Name                                      Cell/Site Name  Delay Name      Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  --------------  -----  ------------  ------  
-timer_clock_383__i7/CK->timer_clock_383__i7/Q
+timer_clock_387__i7/CK->timer_clock_387__i7/Q
                                           FD1P3XZ         CK_TO_Q_DELAY   1.391         3.466  2       
 timer_clock[7]                                            NET DELAY       0.280         3.746  1       
-timer_clock_383_add_4_9/C0->timer_clock_383_add_4_9/S0
+timer_clock_387_add_4_9/C0->timer_clock_387_add_4_9/S0
                                           FA2             C0_TO_S0_DELAY  0.450         4.196  1       
 n68                                                       NET DELAY       2.075         6.271  1       
 
@@ -2498,8 +2386,8 @@ clk                                                       NET DELAY      2.075  
 
  ++++Path 9  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : timer_clock_383__i8/Q
-Path End         : timer_clock_383__i8/D
+Path Begin       : timer_clock_387__i8/Q
+Path End         : timer_clock_387__i8/D
 Source Clock     : vga_driver/vga_clock/lscc_pll_inst/clk
 Destination Clock: vga_driver/vga_clock/lscc_pll_inst/clk
 Logic Level      : 2
@@ -2534,10 +2422,10 @@ clk                                                       NET DELAY      2.075  
 Data path
 Name                                      Cell/Site Name  Delay Name      Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  --------------  -----  ------------  ------  
-timer_clock_383__i8/CK->timer_clock_383__i8/Q
+timer_clock_387__i8/CK->timer_clock_387__i8/Q
                                           FD1P3XZ         CK_TO_Q_DELAY   1.391         3.466  2       
 timer_clock[8]                                            NET DELAY       0.280         3.746  1       
-timer_clock_383_add_4_9/C1->timer_clock_383_add_4_9/S1
+timer_clock_387_add_4_9/C1->timer_clock_387_add_4_9/S1
                                           FA2             C1_TO_S1_DELAY  0.450         4.196  1       
 n67_2                                                     NET DELAY       2.075         6.271  1       
 
@@ -2553,8 +2441,8 @@ clk                                                       NET DELAY      2.075  
 
  ++++Path 10  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : timer_clock_383__i9/Q
-Path End         : timer_clock_383__i9/D
+Path Begin       : timer_clock_387__i9/Q
+Path End         : timer_clock_387__i9/D
 Source Clock     : vga_driver/vga_clock/lscc_pll_inst/clk
 Destination Clock: vga_driver/vga_clock/lscc_pll_inst/clk
 Logic Level      : 2
@@ -2589,10 +2477,10 @@ clk                                                       NET DELAY      2.075  
 Data path
 Name                                      Cell/Site Name  Delay Name      Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  --------------  -----  ------------  ------  
-timer_clock_383__i9/CK->timer_clock_383__i9/Q
+timer_clock_387__i9/CK->timer_clock_387__i9/Q
                                           FD1P3XZ         CK_TO_Q_DELAY   1.391         3.466  2       
 timer_clock[9]                                            NET DELAY       0.280         3.746  1       
-timer_clock_383_add_4_11/C0->timer_clock_383_add_4_11/S0
+timer_clock_387_add_4_11/C0->timer_clock_387_add_4_11/S0
                                           FA2             C0_TO_S0_DELAY  0.450         4.196  1       
 n66                                                       NET DELAY       2.075         6.271  1       
 
@@ -2619,8 +2507,8 @@ clk                                                       NET DELAY      2.075  
 
  ++++Path 1  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : vga_driver/h_count_384__i0/Q
-Path End         : vga_driver/h_count_384__i0/D
+Path Begin       : vga_driver/h_count_388__i0/Q
+Path End         : vga_driver/h_count_388__i0/D
 Source Clock     : vga_driver/pll_clock
 Destination Clock: vga_driver/pll_clock
 Logic Level      : 2
@@ -2655,10 +2543,10 @@ vga_driver/pll_clock                                      NET DELAY      2.075  
 Data path
 Name                                      Cell/Site Name  Delay Name      Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  --------------  -----  ------------  ------  
-vga_driver/h_count_384__i0/CK->vga_driver/h_count_384__i0/Q
+vga_driver/h_count_388__i0/CK->vga_driver/h_count_388__i0/Q
                                           FD1P3XZ         CK_TO_Q_DELAY   1.391         5.691  8       
 h_count[0]                                                NET DELAY       0.280         5.971  1       
-vga_driver/h_count_384_add_4_1/C1->vga_driver/h_count_384_add_4_1/S1
+vga_driver/h_count_388_add_4_1/C1->vga_driver/h_count_388_add_4_1/S1
                                           FA2             C1_TO_S1_DELAY  0.450         6.421  1       
 vga_driver/n45[0]                                         NET DELAY       2.075         8.496  1       
 
@@ -2674,8 +2562,8 @@ vga_driver/pll_clock                                      NET DELAY      2.075  
 
  ++++Path 2  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : vga_driver/h_count_384__i1/Q
-Path End         : vga_driver/h_count_384__i1/D
+Path Begin       : vga_driver/h_count_388__i1/Q
+Path End         : vga_driver/h_count_388__i1/D
 Source Clock     : vga_driver/pll_clock
 Destination Clock: vga_driver/pll_clock
 Logic Level      : 2
@@ -2710,10 +2598,10 @@ vga_driver/pll_clock                                      NET DELAY      2.075  
 Data path
 Name                                      Cell/Site Name  Delay Name      Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  --------------  -----  ------------  ------  
-vga_driver/h_count_384__i1/CK->vga_driver/h_count_384__i1/Q
-                                          FD1P3XZ         CK_TO_Q_DELAY   1.391         5.691  8       
+vga_driver/h_count_388__i1/CK->vga_driver/h_count_388__i1/Q
+                                          FD1P3XZ         CK_TO_Q_DELAY   1.391         5.691  7       
 h_count[1]                                                NET DELAY       0.280         5.971  1       
-vga_driver/h_count_384_add_4_3/C0->vga_driver/h_count_384_add_4_3/S0
+vga_driver/h_count_388_add_4_3/C0->vga_driver/h_count_388_add_4_3/S0
                                           FA2             C0_TO_S0_DELAY  0.450         6.421  1       
 vga_driver/n45[1]                                         NET DELAY       2.075         8.496  1       
 
@@ -2729,8 +2617,8 @@ vga_driver/pll_clock                                      NET DELAY      2.075  
 
  ++++Path 3  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : vga_driver/h_count_384__i2/Q
-Path End         : vga_driver/h_count_384__i2/D
+Path Begin       : vga_driver/h_count_388__i2/Q
+Path End         : vga_driver/h_count_388__i2/D
 Source Clock     : vga_driver/pll_clock
 Destination Clock: vga_driver/pll_clock
 Logic Level      : 2
@@ -2765,10 +2653,10 @@ vga_driver/pll_clock                                      NET DELAY      2.075  
 Data path
 Name                                      Cell/Site Name  Delay Name      Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  --------------  -----  ------------  ------  
-vga_driver/h_count_384__i2/CK->vga_driver/h_count_384__i2/Q
+vga_driver/h_count_388__i2/CK->vga_driver/h_count_388__i2/Q
                                           FD1P3XZ         CK_TO_Q_DELAY   1.391         5.691  7       
 h_count[2]                                                NET DELAY       0.280         5.971  1       
-vga_driver/h_count_384_add_4_3/C1->vga_driver/h_count_384_add_4_3/S1
+vga_driver/h_count_388_add_4_3/C1->vga_driver/h_count_388_add_4_3/S1
                                           FA2             C1_TO_S1_DELAY  0.450         6.421  1       
 vga_driver/n45[2]                                         NET DELAY       2.075         8.496  1       
 
@@ -2784,8 +2672,8 @@ vga_driver/pll_clock                                      NET DELAY      2.075  
 
  ++++Path 4  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : vga_driver/h_count_384__i3/Q
-Path End         : vga_driver/h_count_384__i3/D
+Path Begin       : vga_driver/h_count_388__i3/Q
+Path End         : vga_driver/h_count_388__i3/D
 Source Clock     : vga_driver/pll_clock
 Destination Clock: vga_driver/pll_clock
 Logic Level      : 2
@@ -2820,10 +2708,10 @@ vga_driver/pll_clock                                      NET DELAY      2.075  
 Data path
 Name                                      Cell/Site Name  Delay Name      Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  --------------  -----  ------------  ------  
-vga_driver/h_count_384__i3/CK->vga_driver/h_count_384__i3/Q
+vga_driver/h_count_388__i3/CK->vga_driver/h_count_388__i3/Q
                                           FD1P3XZ         CK_TO_Q_DELAY   1.391         5.691  6       
 h_count[3]                                                NET DELAY       0.280         5.971  1       
-vga_driver/h_count_384_add_4_5/C0->vga_driver/h_count_384_add_4_5/S0
+vga_driver/h_count_388_add_4_5/C0->vga_driver/h_count_388_add_4_5/S0
                                           FA2             C0_TO_S0_DELAY  0.450         6.421  1       
 vga_driver/n45[3]                                         NET DELAY       2.075         8.496  1       
 
@@ -2839,8 +2727,8 @@ vga_driver/pll_clock                                      NET DELAY      2.075  
 
  ++++Path 5  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : vga_driver/h_count_384__i4/Q
-Path End         : vga_driver/h_count_384__i4/D
+Path Begin       : vga_driver/h_count_388__i4/Q
+Path End         : vga_driver/h_count_388__i4/D
 Source Clock     : vga_driver/pll_clock
 Destination Clock: vga_driver/pll_clock
 Logic Level      : 2
@@ -2875,10 +2763,10 @@ vga_driver/pll_clock                                      NET DELAY      2.075  
 Data path
 Name                                      Cell/Site Name  Delay Name      Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  --------------  -----  ------------  ------  
-vga_driver/h_count_384__i4/CK->vga_driver/h_count_384__i4/Q
+vga_driver/h_count_388__i4/CK->vga_driver/h_count_388__i4/Q
                                           FD1P3XZ         CK_TO_Q_DELAY   1.391         5.691  6       
-vga_driver/h_count[4]_2                                   NET DELAY       0.280         5.971  1       
-vga_driver/h_count_384_add_4_5/C1->vga_driver/h_count_384_add_4_5/S1
+vga_driver/h_count[4]                                     NET DELAY       0.280         5.971  1       
+vga_driver/h_count_388_add_4_5/C1->vga_driver/h_count_388_add_4_5/S1
                                           FA2             C1_TO_S1_DELAY  0.450         6.421  1       
 vga_driver/n45[4]                                         NET DELAY       2.075         8.496  1       
 
@@ -2894,8 +2782,8 @@ vga_driver/pll_clock                                      NET DELAY      2.075  
 
  ++++Path 6  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : vga_driver/h_count_384__i5/Q
-Path End         : vga_driver/h_count_384__i5/D
+Path Begin       : vga_driver/h_count_388__i5/Q
+Path End         : vga_driver/h_count_388__i5/D
 Source Clock     : vga_driver/pll_clock
 Destination Clock: vga_driver/pll_clock
 Logic Level      : 2
@@ -2930,10 +2818,10 @@ vga_driver/pll_clock                                      NET DELAY      2.075  
 Data path
 Name                                      Cell/Site Name  Delay Name      Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  --------------  -----  ------------  ------  
-vga_driver/h_count_384__i5/CK->vga_driver/h_count_384__i5/Q
+vga_driver/h_count_388__i5/CK->vga_driver/h_count_388__i5/Q
                                           FD1P3XZ         CK_TO_Q_DELAY   1.391         5.691  7       
-vga_driver/h_count[5]_2                                   NET DELAY       0.280         5.971  1       
-vga_driver/h_count_384_add_4_7/C0->vga_driver/h_count_384_add_4_7/S0
+vga_driver/h_count[5]                                     NET DELAY       0.280         5.971  1       
+vga_driver/h_count_388_add_4_7/C0->vga_driver/h_count_388_add_4_7/S0
                                           FA2             C0_TO_S0_DELAY  0.450         6.421  1       
 vga_driver/n45[5]                                         NET DELAY       2.075         8.496  1       
 
@@ -2949,8 +2837,8 @@ vga_driver/pll_clock                                      NET DELAY      2.075  
 
  ++++Path 7  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : vga_driver/h_count_384__i6/Q
-Path End         : vga_driver/h_count_384__i6/D
+Path Begin       : vga_driver/h_count_388__i6/Q
+Path End         : vga_driver/h_count_388__i6/D
 Source Clock     : vga_driver/pll_clock
 Destination Clock: vga_driver/pll_clock
 Logic Level      : 2
@@ -2985,10 +2873,10 @@ vga_driver/pll_clock                                      NET DELAY      2.075  
 Data path
 Name                                      Cell/Site Name  Delay Name      Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  --------------  -----  ------------  ------  
-vga_driver/h_count_384__i6/CK->vga_driver/h_count_384__i6/Q
+vga_driver/h_count_388__i6/CK->vga_driver/h_count_388__i6/Q
                                           FD1P3XZ         CK_TO_Q_DELAY   1.391         5.691  7       
-vga_driver/h_count[6]_2                                   NET DELAY       0.280         5.971  1       
-vga_driver/h_count_384_add_4_7/C1->vga_driver/h_count_384_add_4_7/S1
+vga_driver/h_count[6]                                     NET DELAY       0.280         5.971  1       
+vga_driver/h_count_388_add_4_7/C1->vga_driver/h_count_388_add_4_7/S1
                                           FA2             C1_TO_S1_DELAY  0.450         6.421  1       
 vga_driver/n45[6]                                         NET DELAY       2.075         8.496  1       
 
@@ -3004,8 +2892,8 @@ vga_driver/pll_clock                                      NET DELAY      2.075  
 
  ++++Path 8  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : vga_driver/h_count_384__i7/Q
-Path End         : vga_driver/h_count_384__i7/D
+Path Begin       : vga_driver/h_count_388__i7/Q
+Path End         : vga_driver/h_count_388__i7/D
 Source Clock     : vga_driver/pll_clock
 Destination Clock: vga_driver/pll_clock
 Logic Level      : 2
@@ -3040,10 +2928,10 @@ vga_driver/pll_clock                                      NET DELAY      2.075  
 Data path
 Name                                      Cell/Site Name  Delay Name      Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  --------------  -----  ------------  ------  
-vga_driver/h_count_384__i7/CK->vga_driver/h_count_384__i7/Q
+vga_driver/h_count_388__i7/CK->vga_driver/h_count_388__i7/Q
                                           FD1P3XZ         CK_TO_Q_DELAY   1.391         5.691  6       
-vga_driver/h_count[7]_2                                   NET DELAY       0.280         5.971  1       
-vga_driver/h_count_384_add_4_9/C0->vga_driver/h_count_384_add_4_9/S0
+vga_driver/h_count[7]                                     NET DELAY       0.280         5.971  1       
+vga_driver/h_count_388_add_4_9/C0->vga_driver/h_count_388_add_4_9/S0
                                           FA2             C0_TO_S0_DELAY  0.450         6.421  1       
 vga_driver/n45[7]                                         NET DELAY       2.075         8.496  1       
 
@@ -3059,8 +2947,8 @@ vga_driver/pll_clock                                      NET DELAY      2.075  
 
  ++++Path 9  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : vga_driver/h_count_384__i8/Q
-Path End         : vga_driver/h_count_384__i8/D
+Path Begin       : vga_driver/h_count_388__i8/Q
+Path End         : vga_driver/h_count_388__i8/D
 Source Clock     : vga_driver/pll_clock
 Destination Clock: vga_driver/pll_clock
 Logic Level      : 2
@@ -3095,10 +2983,10 @@ vga_driver/pll_clock                                      NET DELAY      2.075  
 Data path
 Name                                      Cell/Site Name  Delay Name      Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  --------------  -----  ------------  ------  
-vga_driver/h_count_384__i8/CK->vga_driver/h_count_384__i8/Q
+vga_driver/h_count_388__i8/CK->vga_driver/h_count_388__i8/Q
                                           FD1P3XZ         CK_TO_Q_DELAY   1.391         5.691  6       
-vga_driver/h_count[8]_2                                   NET DELAY       0.280         5.971  1       
-vga_driver/h_count_384_add_4_9/C1->vga_driver/h_count_384_add_4_9/S1
+vga_driver/h_count[8]                                     NET DELAY       0.280         5.971  1       
+vga_driver/h_count_388_add_4_9/C1->vga_driver/h_count_388_add_4_9/S1
                                           FA2             C1_TO_S1_DELAY  0.450         6.421  1       
 vga_driver/n45[8]                                         NET DELAY       2.075         8.496  1       
 
@@ -3114,8 +3002,8 @@ vga_driver/pll_clock                                      NET DELAY      2.075  
 
  ++++Path 10  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : vga_driver/h_count_384__i9/Q
-Path End         : vga_driver/h_count_384__i9/D
+Path Begin       : vga_driver/h_count_388__i9/Q
+Path End         : vga_driver/h_count_388__i9/D
 Source Clock     : vga_driver/pll_clock
 Destination Clock: vga_driver/pll_clock
 Logic Level      : 2
@@ -3150,10 +3038,10 @@ vga_driver/pll_clock                                      NET DELAY      2.075  
 Data path
 Name                                      Cell/Site Name  Delay Name      Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  --------------  -----  ------------  ------  
-vga_driver/h_count_384__i9/CK->vga_driver/h_count_384__i9/Q
+vga_driver/h_count_388__i9/CK->vga_driver/h_count_388__i9/Q
                                           FD1P3XZ         CK_TO_Q_DELAY   1.391         5.691  5       
-vga_driver/h_count[9]_2                                   NET DELAY       0.280         5.971  1       
-vga_driver/h_count_384_add_4_11/C0->vga_driver/h_count_384_add_4_11/S0
+vga_driver/h_count[9]                                     NET DELAY       0.280         5.971  1       
+vga_driver/h_count_388_add_4_11/C0->vga_driver/h_count_388_add_4_11/S0
                                           FA2             C0_TO_S0_DELAY  0.450         6.421  1       
 vga_driver/n45[9]                                         NET DELAY       2.075         8.496  1       
 
