@@ -87,7 +87,7 @@ module main(
 	
 	wire [9:0] ball_pos_x;
 	wire [9:0] ball_pos_y;
-	wire [9:0] ball_size_y;
+	wire [9:0] ball_size_x;
 	wire [9:0] ball_size_y;
 	
 	wire [9:0] paddle_one_pos_x;

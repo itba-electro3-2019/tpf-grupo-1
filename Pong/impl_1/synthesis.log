@@ -5,7 +5,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2019 Lattice Semiconductor Corporation,  All rights reserved.
-Tue Nov 19 02:03:29 2019
+Tue Nov 19 02:14:25 2019
 
 
 Command Line:  C:\lscc\radiant\1.1\ispfpga\bin\nt64\synthesis.exe -f pong_impl_1_lattice.synproj -gui -msgset C:/Users/Lucas/Documents/Actualmente Usando/Electronica III/tpf-grupo-1/Pong/promote.xml 
@@ -302,9 +302,9 @@ Top 10 highest fanout non-clock nets:
   Net : vga_driver/n1125, loads : 10
 ################### End Clock Report ##################
 
-Peak Memory Usage: 131.797  MB
+Peak Memory Usage: 131.957  MB
 
 --------------------------------------------------------------
-Total CPU time for LSE flow : 9.391  secs
+Total CPU time for LSE flow : 9.297  secs
 Total REAL time for LSE flow : 10.000  secs
 --------------------------------------------------------------

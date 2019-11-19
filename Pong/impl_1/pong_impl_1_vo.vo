@@ -2,8 +2,8 @@
 // Verilog netlist produced by program backanno, Version Radiant Software (64-bit) 1.1.0.165.1
 
 // backanno -o pong_impl_1_vo.vo -sp High-Performance_1.2V -w -neg -gui pong_impl_1.udb 
-// Netlist created on Tue Nov 19 02:04:35 2019
-// Netlist written on Tue Nov 19 02:04:45 2019
+// Netlist created on Tue Nov 19 02:15:29 2019
+// Netlist written on Tue Nov 19 02:15:40 2019
 // Design is for device iCE40UP5K
 // Design is for package SG48
 // Design is for performance grade High-Performance_1.2V

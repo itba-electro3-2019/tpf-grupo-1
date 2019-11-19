@@ -41,7 +41,7 @@ if (a)
 
 <DIV id="content" onclick="hideTocList()"><PRE>
 <A name="Par"></A>Copyright 2015 Lattice Semiconductor Corporation, All Rights Reserved
-Tue Nov 19 02:03:45 2019
+Tue Nov 19 02:14:42 2019
 
 Command Line: par -w -n 1 -t 1 -s 1 -cores 1 -exp parPathBased=ON \
 	pong_impl_1_map.udb pong_impl_1.udb 
@@ -51,16 +51,16 @@ Command Line: par -w -n 1 -t 1 -s 1 -cores 1 -exp parPathBased=ON \
 Level/       Number       Worst        Timing       Worst        Timing       Run          Run
 Cost [ncd]   Unrouted     Slack        Score        Slack(hold)  Score(hold)  Time         Status
 ----------   --------     -----        ------       -----------  -----------  ----         ------
-5_1   *      0            1073741.823  0            1073741.823  0            50           Success
+5_1   *      0            13.909       0            3.112        0            47           Success
 
 * : Design saved.
 
-Total (real) run time for 1-seed: 50 secs 
+Total (real) run time for 1-seed: 47 secs 
 
 par done!
 
 Lattice Place and Route Report for Design &quot;pong_impl_1_map.udb&quot;
-Tue Nov 19 02:03:46 2019
+Tue Nov 19 02:14:42 2019
 
 
 <A name="par_best"></A><B><U><big>Best Par Run</big></U></B>
@@ -109,13 +109,13 @@ Number of Connections: 2679
 
 Pin Constraint Summary:
    9 out of 9 pins locked (100% locked).
-Finished Placer Phase 0 (HIER).  CPU time: 2 secs , REAL time: 3 secs 
+Finished Placer Phase 0 (HIER).  CPU time: 2 secs , REAL time: 2 secs 
 
 
 .........................
-Finished Placer Phase 0 (AP).  CPU time: 6 secs , REAL time: 7 secs 
+Finished Placer Phase 0 (AP).  CPU time: 5 secs , REAL time: 6 secs 
 
-Starting Placer Phase 1. REAL time: 7 secs 
+Starting Placer Phase 1. REAL time: 6 secs 
 ..  ..
 ....................
 
@@ -125,13 +125,13 @@ Device SLICE utilization summary after final SLICE packing:
    SLICE            384/2640         14% used
 
 WARNING - par: The preferred point for defining clocks is top level ports and driver pins. Pad delays will not be taken into consideration if clocks are defined on nets.
-Finished Placer Phase 1.  CPU time: 40 secs , REAL time: 42 secs 
+Finished Placer Phase 1.  CPU time: 37 secs , REAL time: 38 secs 
 
 Starting Placer Phase 2.
 .
 
 Placer score =  153318
-Finished Placer Phase 2.  CPU time: 40 secs , REAL time: 42 secs 
+Finished Placer Phase 2.  CPU time: 37 secs , REAL time: 38 secs 
 
 
 
@@ -162,13 +162,13 @@ I/O Bank Usage Summary:
 | 2        | 0 / 8 (  0%)  | OFF        |            |            |
 +----------+---------------+------------+------------+------------+
 
-Total Placer CPU time: 40 secs , REAL time: 42 secs 
+Total Placer CPU time: 37 secs , REAL time: 38 secs 
 
 Writing design to file pong_impl_1_par.dir/5_1.udb ...
 
 WARNING - par: The preferred point for defining clocks is top level ports and driver pins. Pad delays will not be taken into consideration if clocks are defined on nets.
 
-Start NBR router at 02:04:28 11/19/19
+Start NBR router at 02:15:21 11/19/19
 
 *****************************************************************
 Info: NBR allows conflicts(one node used by more than one signal)
@@ -209,29 +209,29 @@ Other clocks:
 --------------------------------------------------------------------------------
 Completed routing resource preassignment
 
-Start NBR section for initial routing at 02:04:30 11/19/19
+Start NBR section for initial routing at 02:15:24 11/19/19
 Level 4, iteration 1
 37(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack&lt;setup&gt;: 13.909ns/0.000ns; real time: 4 secs 
+Estimated worst slack/total negative slack&lt;setup&gt;: 13.909ns/0.000ns; real time: 5 secs 
 
 Info: Initial congestion level at 75% usage is 0
 Info: Initial congestion area  at 75% usage is 0 (0.00%)
 
-Start NBR section for normal routing at 02:04:32 11/19/19
+Start NBR section for normal routing at 02:15:26 11/19/19
 Level 4, iteration 1
 2(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack&lt;setup&gt;: 13.909ns/0.000ns; real time: 4 secs 
+Estimated worst slack/total negative slack&lt;setup&gt;: 13.909ns/0.000ns; real time: 5 secs 
 Level 4, iteration 2
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack&lt;setup&gt;: 13.909ns/0.000ns; real time: 4 secs 
+Estimated worst slack/total negative slack&lt;setup&gt;: 13.909ns/0.000ns; real time: 5 secs 
 
-Start NBR section for setup/hold timing optimization with effort level 3 at 02:04:32 11/19/19
+Start NBR section for setup/hold timing optimization with effort level 3 at 02:15:26 11/19/19
 
-Start NBR section for re-routing at 02:04:33 11/19/19
+Start NBR section for re-routing at 02:15:27 11/19/19
 Level 4, iteration 1
-0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 0 (nbr) score; real time: 5 secs 
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 0 (nbr) score; real time: 6 secs 
 
-Start NBR section for post-routing at 02:04:33 11/19/19
+Start NBR section for post-routing at 02:15:27 11/19/19
 WARNING - par: The preferred point for defining clocks is top level ports and driver pins. Pad delays will not be taken into consideration if clocks are defined on nets.
 
 End NBR router with 0 unrouted connection
@@ -248,7 +248,7 @@ Notes: The timing info is calculated for SETUP only.
 
 
 Total CPU time 6 secs 
-Total REAL time: 6 secs 
+Total REAL time: 7 secs 
 Completely routed.
 End of route.  2634 routed (100.00%); 0 unrouted.
 
@@ -260,15 +260,15 @@ All signals are completely routed.
 
 PAR_SUMMARY::Run status = Success
 PAR_SUMMARY::Number of unrouted conns = 0
-PAR_SUMMARY::Worst  slack&lt;setup/&lt;ns&gt;&gt; = 1073741.823
+PAR_SUMMARY::Worst  slack&lt;setup/&lt;ns&gt;&gt; = 13.909
 PAR_SUMMARY::Timing score&lt;setup/&lt;ns&gt;&gt; = 0.000
-PAR_SUMMARY::Worst  slack&lt;hold /&lt;ns&gt;&gt; = 1073741.823
+PAR_SUMMARY::Worst  slack&lt;hold /&lt;ns&gt;&gt; = 3.112
 PAR_SUMMARY::Timing score&lt;hold /&lt;ns&gt;&gt; = 0.000
 PAR_SUMMARY::Number of errors = 0
 
-Total CPU  Time: 47 secs 
-Total REAL Time: 50 secs 
-Peak Memory Usage: 145 MB
+Total CPU  Time: 45 secs 
+Total REAL Time: 47 secs 
+Peak Memory Usage: 143 MB
 
 
 par done!

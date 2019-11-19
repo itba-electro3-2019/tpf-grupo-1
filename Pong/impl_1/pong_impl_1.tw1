@@ -1,6 +1,6 @@
 Lattice Timing Report -  Setup  and Hold, Version Radiant Software (64-bit) 1.1.0.165.1
 
-Tue Nov 19 02:03:44 2019
+Tue Nov 19 02:14:40 2019
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -268,16 +268,16 @@ Define the clock for these registers.
 -------------------------------------------------------------------
          Listing 10 Instance(s)         |           Type           
 -------------------------------------------------------------------
-pos_y_i5                                |                  No Clock
-pos_y_i6                                |                  No Clock
-pos_y_i9                                |                  No Clock
-pos_y_i0                                |                  No Clock
+timer_387__i0                           |                  No Clock
+timer_387__i1                           |                  No Clock
+timer_387__i2                           |                  No Clock
+timer_387__i5                           |                  No Clock
+timer_387__i6                           |                  No Clock
 timer_387__i3                           |                  No Clock
 timer_387__i4                           |                  No Clock
-pos_y_i1                                |                  No Clock
-pos_y_i2                                |                  No Clock
-timer_387__i0                           |                  No Clock
-pos_y_i3                                |                  No Clock
+pos_y_i7                                |                  No Clock
+pos_y_i8                                |                  No Clock
+pos_y_i0                                |                  No Clock
 -------------------------------------------------------------------
                                         |                          
 Number of registers without clock defin |                          

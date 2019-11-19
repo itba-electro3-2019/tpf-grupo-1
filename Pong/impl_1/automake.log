@@ -36,7 +36,7 @@ Saving bit stream in "C:\Users\Lucas\Documents\Actualmente Usando\Electronica II
 ibisgen "pong_impl_1.udb" "C:/lscc/radiant/1.1/cae_library/ibis/iCE40UP.ibs"
 IBIS Models Generator: Lattice Radiant Software (64-bit) 1.1.0.165.1
 
-Tue Nov 19 02:04:41 2019
+Tue Nov 19 02:15:36 2019
 
 Loading pong_impl_1.udb ...
 Loading device for application udb from file 'itpa08.nph' in environment: C:/lscc/radiant/1.1/ispfpga.
@@ -77,4 +77,4 @@ Writing SDF timing to file pong_impl_1_vo.sdf
 Backanno finished with 0 posted error messages.
 Total CPU Time: 2 secs 
 Total REAL Time: 3 secs 
-Peak Memory Usage: 108 MB
+Peak Memory Usage: 109 MB

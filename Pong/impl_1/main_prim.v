@@ -1,5 +1,5 @@
 // Verilog netlist produced by program LSE :  version Radiant Software (64-bit) 1.1.0.165.1
-// Netlist written on Tue Nov 19 02:03:39 2019
+// Netlist written on Tue Nov 19 02:14:35 2019
 // Source file index table: 
 // Object locations will have the form @<file_index>(<first_ line>[<left_column>],<last_line>[<right_column>])
 // file 0 "c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/clock/rtl/clock.v"
