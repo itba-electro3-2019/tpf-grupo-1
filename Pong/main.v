@@ -185,19 +185,13 @@ module main(
 	/* Ball Speed Controller */
 	/*************************/
 	wire [2:0] speed_capture;
-	reg change_in_next_tick;
 	parameter INITIAL_SPEED = 5;
 	Mux mux (paddle_two_speed, paddle_one_speed, speed_selector, speed_capture);
 
 	always @ (posedge tick) begin
-		if (change_in_next_tick) begin
-			change_in_next_tick <= 0;
+		if (bounce == 1) begin
 			speed_selector <= ~speed_selector;
 			ball_speed <= speed_capture;
-		end
-
-		if (bounce == 1) begin
-			change_in_next_tick <= 1;
 		end else if (reset == 0) begin
 			ball_speed <= INITIAL_SPEED;
 		end

@@ -68,7 +68,7 @@ module Paddle(
     always @(posedge clock) begin: SEQUENTIAL_CODE
         if (reset) begin
             timer = timer + 1;
-            if (timer == speed) begin
+            if (timer >= speed) begin
 				timer = 0;
                 if (control_up == 0) begin
 					if (pos_y > LIMIT_Y_MIN) pos_y = pos_y - 1;

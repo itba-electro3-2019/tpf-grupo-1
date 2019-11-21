@@ -47,7 +47,7 @@ Target Device:        iCE40UP5KSG48
 Target Performance:   High-Performance_1.2V
 
 Mapper:    version Radiant Software (64-bit) 1.1.0.165.1
-Mapped on: Thu Nov 21 18:49:32 2019
+Mapped on: Thu Nov 21 19:07:33 2019
 
 
 <A name="mrp_di"></A><B><U><big>Design Information</big></U></B>
@@ -56,10 +56,10 @@ Command line:   map pong_impl_1_syn.udb C:/Users/facun/OneDrive/Desktop/ITBA/5C
      Electronica III/tpf-grupo-1/Pong/impl_1/impl_1.pdc -o pong_impl_1.udb -gui
 
 <A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
-   Number of slice registers: 182 out of  5280 (3%)
+   Number of slice registers: 177 out of  5280 (3%)
    Number of I/O registers:      1 out of   117 (1%)
-   Number of LUT4s:           2779 out of  5280 (53%)
-      Number of logic LUT4s:             2347
+   Number of LUT4s:           2773 out of  5280 (53%)
+      Number of logic LUT4s:             2341
       Number of inserted feedthru LUT4s:   1
       Number of replicated LUT4s:          1
       Number of ripple logic:            215 (430 LUT4s)
@@ -83,56 +83,56 @@ Command line:   map pong_impl_1_syn.udb C:/Users/facun/OneDrive/Desktop/ITBA/5C
    Number of PLLs:             1 out of 1 (100%)
    Number of Clocks:  5
       Net clk: 22 loads, 22 rising, 0 falling (Driver: Pin inst2/CLKHF)
-      Net tick: 15 loads, 15 rising, 0 falling (Driver: Pin tick_c/Q)
-      Net tick_game: 102 loads, 102 rising, 0 falling (Driver: Pin
+      Net tick_game: 95 loads, 95 rising, 0 falling (Driver: Pin
      menu.clock_I_0_69_2_lut_3_lut/OUT)
+      Net tick: 14 loads, 14 rising, 0 falling (Driver: Pin tick_c/Q)
       Net tick_menu: 3 loads, 3 rising, 0 falling (Driver: Pin
-     menu.i1_2_lut_3_lut/OUT)
+     menu.i1_2_lut_3_lut_adj_179/OUT)
       Net vga_clock: 16 loads, 16 rising, 0 falling (Driver: Pin
      pll.lscc_pll_inst.u_PLL_B/OUTGLOBAL)
    Number of Clock Enables:  15
       Net VCC_net: 1 loads, 0 SLICEs
-      Net paddle_two/n99259: 5 loads, 5 SLICEs
-      Net paddle_two/n108446: 6 loads, 6 SLICEs
-      Net paddle_two/n108847: 3 loads, 3 SLICEs
-      Net n108468: 3 loads, 3 SLICEs
-      Net n108484: 6 loads, 6 SLICEs
-      Net n111157: 2 loads, 2 SLICEs
-      Net n99923: 10 loads, 10 SLICEs
-      Net n108843: 20 loads, 20 SLICEs
-
+      Net n108542: 6 loads, 6 SLICEs
+      Net paddle_two/n47_2: 3 loads, 3 SLICEs
+      Net n99247: 5 loads, 5 SLICEs
+      Net n99917: 10 loads, 10 SLICEs
       Net menu/n10: 1 loads, 1 SLICEs
-      Net paddle_one/n99248: 5 loads, 5 SLICEs
-      Net paddle_one/n108420: 6 loads, 6 SLICEs
-      Net paddle_one/n108846: 3 loads, 3 SLICEs
-      Net game/n119610: 3 loads, 3 SLICEs
-      Net game/score_player_1_3__N_1027: 3 loads, 3 SLICEs
+      Net n99236: 5 loads, 5 SLICEs
+      Net n110756: 2 loads, 2 SLICEs
+      Net n108494: 3 loads, 3 SLICEs
+
+      Net n108512: 6 loads, 6 SLICEs
+      Net n99226: 20 loads, 20 SLICEs
+      Net game/score_player_1_3__N_1024: 3 loads, 3 SLICEs
+      Net game/n119200: 3 loads, 3 SLICEs
+      Net paddle_one/n108560: 6 loads, 6 SLICEs
+      Net paddle_one/n108986: 3 loads, 3 SLICEs
    Number of LSRs:  14
       Net timer_clock_14__N_58: 3 loads, 3 SLICEs
-      Net paddle_two/n108739: 5 loads, 5 SLICEs
-      Net paddle_two/n122545: 2 loads, 2 SLICEs
-      Net reset_N_1074: 46 loads, 46 SLICEs
+      Net paddle_two/n113697: 5 loads, 5 SLICEs
+      Net reset_N_1071: 46 loads, 46 SLICEs
+      Net paddle_two/n108787: 2 loads, 2 SLICEs
       Net bounce_clock_7__N_88: 5 loads, 5 SLICEs
-      Net n99231: 3 loads, 3 SLICEs
-      Net n108745: 6 loads, 6 SLICEs
-      Net n99923: 6 loads, 6 SLICEs
-      Net n108736: 1 loads, 1 SLICEs
-      Net menu/n9: 1 loads, 1 SLICEs
-      Net paddle_one/n108741: 5 loads, 5 SLICEs
-      Net paddle_one/n122543: 2 loads, 2 SLICEs
-      Net game/n99902: 1 loads, 1 SLICEs
-      Net game/n107373: 1 loads, 1 SLICEs
+      Net n99917: 6 loads, 6 SLICEs
+      Net n108784: 1 loads, 1 SLICEs
+      Net menu/n108465: 1 loads, 1 SLICEs
+      Net n116437: 5 loads, 5 SLICEs
+      Net n108800: 6 loads, 6 SLICEs
+      Net n108799: 3 loads, 3 SLICEs
+      Net game/n99896: 1 loads, 1 SLICEs
+      Net game/n103669: 1 loads, 1 SLICEs
+      Net paddle_one/n10_c: 2 loads, 2 SLICEs
    Top 10 highest fanout non-clock nets:
-      Net menu_rgb_2__N_752[3]: 328 loads
-      Net menu_rgb_2__N_752[4]: 276 loads
-      Net menu_rgb_2__N_752[2]: 262 loads
-      Net menu_rgb_2__N_752[1]: 245 loads
-      Net start_menu/rgb_2__N_716[3]: 215 loads
-      Net menu_rgb_2__N_752[0]: 208 loads
-      Net start_menu/rgb_2__N_716[2]: 190 loads
-      Net menu_rgb_2__N_752[5]: 185 loads
-      Net start_menu/rgb_2__N_716[1]: 169 loads
-      Net start_menu/rgb_2__N_716[4]: 164 loads
+      Net menu_rgb_2__N_749[3]: 330 loads
+      Net menu_rgb_2__N_749[4]: 275 loads
+      Net menu_rgb_2__N_749[2]: 259 loads
+      Net menu_rgb_2__N_749[1]: 241 loads
+      Net start_menu/rgb_2__N_713[3]: 214 loads
+      Net menu_rgb_2__N_749[0]: 204 loads
+      Net menu_rgb_2__N_749[5]: 197 loads
+      Net start_menu/rgb_2__N_713[2]: 180 loads
+      Net start_menu/rgb_2__N_713[4]: 169 loads
+      Net start_menu/rgb_2__N_713[1]: 160 loads
 
 
 
@@ -255,16 +255,16 @@ OSC 1:                                 Pin/Node Value
 
 Instance Name: inst2
          Type: HFOSC
-Instance Name: paused_menu.mult_1039
+Instance Name: paused_menu.mult_1036
          Type: DSP
-Instance Name: paused_menu.marker.mult_1042
-         Type: DSP
-Instance Name: start_menu.mult_1036
-         Type: DSP
-Instance Name: score_one.num0.mult_6
+Instance Name: paused_menu.marker.mult_1039
          Type: DSP
 Instance Name: pll.lscc_pll_inst.u_PLL_B
          Type: PLL
+Instance Name: start_menu.mult_1033
+         Type: DSP
+Instance Name: score_one.num0.mult_6
+         Type: DSP
 Instance Name: buzzer_i0
          Type: IOLOGIC
 

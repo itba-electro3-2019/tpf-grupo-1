@@ -68,7 +68,7 @@ module Ball(
     always @ (posedge clock) begin: COMBINATIONAL_CODE
         if (reset) begin
             timer = timer + 1;
-            if (timer == speed) begin
+            if (timer >= speed) begin
 				timer = 0;
                 case(current_state)
                     /* Current state is AT_45, which is the next state?*/

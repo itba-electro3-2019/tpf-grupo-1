@@ -1,7 +1,0 @@
-#Start recording tcl command: 11/17/2019 20:39:03
-#Project Location: C:/Users/Lucas/Documents/Actualmente Usando/Electrónica III/tpf-grupo-1/pong; Project name: pong
-prj_create -name "pong" -impl "impl_1" -dev iCE40UP5K-SG48I -performance "High-Performance_1.2V" -synthesis "lse"
-prj_save 
-prj_add_source "C:/Users/Lucas/Documents/Actualmente Usando/Electrónica III/tpf-grupo-1/pong/main.v"
-prj_add_source "C:/Users/Lucas/Documents/Actualmente Usando/Electrónica III/tpf-grupo-1/pong/main.v"
-#Stop recording: 11/17/2019 20:40:47
