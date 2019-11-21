@@ -50,6 +50,17 @@
 "C:/Users/facun/OneDrive/Desktop/ITBA/5C Electronica III/tpf-grupo-1/Pong/gui/menus/paused_menu.v"
 "C:/Users/facun/OneDrive/Desktop/ITBA/5C Electronica III/tpf-grupo-1/Pong/gui/menus/marker.v"
 "C:/Users/facun/OneDrive/Desktop/ITBA/5C Electronica III/tpf-grupo-1/Pong/standard_modules/mux.v"
+"C:/Users/facun/OneDrive/Desktop/ITBA/5C Electronica III/tpf-grupo-1/Pong/gui/score/Number0.v"
+"C:/Users/facun/OneDrive/Desktop/ITBA/5C Electronica III/tpf-grupo-1/Pong/gui/score/Number1.v"
+"C:/Users/facun/OneDrive/Desktop/ITBA/5C Electronica III/tpf-grupo-1/Pong/gui/score/Number2.v"
+"C:/Users/facun/OneDrive/Desktop/ITBA/5C Electronica III/tpf-grupo-1/Pong/gui/score/Number3.v"
+"C:/Users/facun/OneDrive/Desktop/ITBA/5C Electronica III/tpf-grupo-1/Pong/gui/score/Number4.v"
+"C:/Users/facun/OneDrive/Desktop/ITBA/5C Electronica III/tpf-grupo-1/Pong/gui/score/Number5.v"
+"C:/Users/facun/OneDrive/Desktop/ITBA/5C Electronica III/tpf-grupo-1/Pong/gui/score/Number6.v"
+"C:/Users/facun/OneDrive/Desktop/ITBA/5C Electronica III/tpf-grupo-1/Pong/gui/score/Number7.v"
+"C:/Users/facun/OneDrive/Desktop/ITBA/5C Electronica III/tpf-grupo-1/Pong/gui/score/Number8.v"
+"C:/Users/facun/OneDrive/Desktop/ITBA/5C Electronica III/tpf-grupo-1/Pong/gui/score/Number9.v"
+"C:/Users/facun/OneDrive/Desktop/ITBA/5C Electronica III/tpf-grupo-1/Pong/gui/score/score.v"
 
 
 -path "C:/Users/facun/OneDrive/Desktop/ITBA/5C Electronica III/tpf-grupo-1/Pong"

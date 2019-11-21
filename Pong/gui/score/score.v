@@ -3,16 +3,16 @@
 // Graphical component to represent the score value
 //--------------------------------------------------
 module Score(
-    number,     // Input: Current score value
+    score,     	// Input: Current score value
     row,        // Input: Current row of the pixel
     col,        // Input: Current col of the pixel
     rgb         // Output: Pixel RGB from the score
 );
 
     /* Declaring input ports */
-    input wire [3:0] number;
-    input wire [3:0] row;
-    input wire [3:0] col;
+    input wire [3:0] score;
+    input wire [9:0] row;
+    input wire [9:0] col;
 
     /* Declaring output ports */
     output reg [2:0] rgb;
@@ -50,16 +50,16 @@ module Score(
     always @(row or col) begin: DRAW_PIXEL
         if ( col >= POSX && col < (POSX + WIDTH) && row >= POSY && row <= (POSY + HEIGHT) ) begin
             case (score)
-                0:  rgb = number_0_rgb;
-                1:  rgb = number_1_rgb;
-                2:  rgb = number_2_rgb;
-                3:  rgb = number_3_rgb;
-                4:  rgb = number_4_rgb;
-                5:  rgb = number_5_rgb;
-                6:  rgb = number_6_rgb;
-                7:  rgb = number_7_rgb;
-                8:  rgb = number_8_rgb;
-                9:  rgb = number_9_rgb;
+                0:  rgb <= number_0_rgb;
+                1:  rgb <= number_1_rgb;
+                2:  rgb <= number_2_rgb;
+                3:  rgb <= number_3_rgb;
+                4:  rgb <= number_4_rgb;
+                5:  rgb <= number_5_rgb;
+                6:  rgb <= number_6_rgb;
+                7:  rgb <= number_7_rgb;
+                8:  rgb <= number_8_rgb;
+                9:  rgb <= number_9_rgb;
             endcase
         end
     end

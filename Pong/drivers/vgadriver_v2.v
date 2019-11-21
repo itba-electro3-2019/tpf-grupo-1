@@ -39,8 +39,8 @@ module VGADriver(
 	output wire [9:0] pixel_col;
 	
 	output reg [2:0] vga_rgb;
-	output reg vga_hsync = 1;
-	output reg vga_vsync = 1;
+	output reg vga_hsync = 1'b1;
+	output reg vga_vsync = 1'b1;
 	
 	/*************************/
 	/* Declaring input ports */

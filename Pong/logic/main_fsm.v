@@ -67,7 +67,7 @@ module MainFsm(
 		
 		// Ignoring when enter=1 is held in active high
 		if (flag) begin
-			if (enter) 
+			if (enter ) 
 				flag <= 0;
 
 			case(current_state)

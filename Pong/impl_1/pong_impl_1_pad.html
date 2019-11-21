@@ -48,23 +48,23 @@ Performance Grade:      High-Performance_1.2V
 PACKAGE:          SG48
 Package Status:                     Preliminary    Version 1.5
 
-Thu Nov 21 15:47:54 2019
+Thu Nov 21 17:59:51 2019
 
 Pinout by Port Name:
 +-----------------+----------+--------------+-------+--------------------+
 | Port Name       | Pin/Bank | Buffer Type  | Site  | Properties         |
 +-----------------+----------+--------------+-------+--------------------+
-| b               | 26/0     | LVCMOS33_OUT | PR19A | DRIVE:8mA PULL:NA  |
-| button_enter    | 11/1     | LVCMOS33_IN  | PL18A | PULL:100K          |
-| buzzer          | 36/0     | LVCMOS33_OUT | PR10B | DRIVE:8mA PULL:NA  |
-| g               | 25/0     | LVCMOS33_OUT | PR20B | DRIVE:8mA PULL:NA  |
+| b               | 21/1     | LVCMOS33_OUT | PL19B | DRIVE:8mA PULL:NA  |
+| button_enter    | 2/2      | LVCMOS33_IN  | PL9A  | PULL:100K          |
+| buzzer          | 27/0     | LVCMOS33_OUT | PR19B | DRIVE:8mA PULL:NA  |
+| g               | 23/0     | LVCMOS33_OUT | PR20A | DRIVE:8mA PULL:NA  |
 | hsync           | 20/1     | LVCMOS33_OUT | PL20B | DRIVE:8mA PULL:NA  |
-| player_one_down | 18/1     | LVCMOS33_IN  | PL23B | PULL:100K          |
-| player_one_up   | 19/1     | LVCMOS33_IN  | PL22B | PULL:100K          |
-| player_two_down | 12/1     | LVCMOS33_IN  | PL19A | PULL:100K          |
-| player_two_up   | 13/1     | LVCMOS33_IN  | PL20A | PULL:100K          |
-| r               | 23/0     | LVCMOS33_OUT | PR20A | DRIVE:8mA PULL:NA  |
-| vsync           | 21/1     | LVCMOS33_OUT | PL19B | DRIVE:8mA PULL:NA  |
+| player_one_down | 9/1      | LVCMOS33_IN  | PL16A | PULL:100K          |
+| player_one_up   | 6/1      | LVCMOS33_IN  | PL14B | PULL:100K          |
+| player_two_down | 11/1     | LVCMOS33_IN  | PL18A | PULL:100K          |
+| player_two_up   | 10/1     | LVCMOS33_IN  | PL17A | PULL:100K          |
+| r               | 25/0     | LVCMOS33_OUT | PR20B | DRIVE:8mA PULL:NA  |
+| vsync           | 26/0     | LVCMOS33_OUT | PR19A | DRIVE:8mA PULL:NA  |
 +-----------------+----------+--------------+-------+--------------------+
 
 Vccio by Bank:
@@ -73,39 +73,40 @@ Vccio by Bank:
 +------+-------+
 | 0    | 3.3V  |
 | 1    | 3.3V  |
+| 2    | 3.3V  |
 +------+-------+
 
 <A name="pad_pin"></A><B><U><big>Pinout by Pin Number:</big></U></B>
 +----------+---------------------+------------+--------------+-------+------------------+
 | Pin/Bank | Pin Info            | Constraint | Buffer Type  | Site  | Dual Function    |
 +----------+---------------------+------------+--------------+-------+------------------+
-| 2/2      |     unused, PULL:UP |            |              | PL9A  |                  |
+| 2/2      | button_enter        | LOCATED    | LVCMOS33_IN  | PL9A  |                  |
 | 3/2      |     unused, PULL:UP |            |              | PL10B |                  |
 | 4/2      |     unused, PULL:UP |            |              | PL10A |                  |
-| 6/1      |     unused, PULL:UP |            |              | PL14B |                  |
-| 9/1      |     unused, PULL:UP |            |              | PL16A |                  |
-| 10/1     |     unused, PULL:UP |            |              | PL17A |                  |
-| 11/1     | button_enter        | LOCATED    | LVCMOS33_IN  | PL18A |                  |
-| 12/1     | player_two_down     | LOCATED    | LVCMOS33_IN  | PL19A |                  |
-| 13/1     | player_two_up       | LOCATED    | LVCMOS33_IN  | PL20A |                  |
+| 6/1      | player_one_up       | LOCATED    | LVCMOS33_IN  | PL14B |                  |
+| 9/1      | player_one_down     | LOCATED    | LVCMOS33_IN  | PL16A |                  |
+| 10/1     | player_two_up       | LOCATED    | LVCMOS33_IN  | PL17A |                  |
+| 11/1     | player_two_down     | LOCATED    | LVCMOS33_IN  | PL18A |                  |
+| 12/1     |     unused, PULL:UP |            |              | PL19A |                  |
+| 13/1     |     unused, PULL:UP |            |              | PL20A |                  |
 | 14/1     |     unused, PULL:UP |            |              | PL24A | SPI_SO           |
 | 15/1     |     unused, PULL:UP |            |              | PL25A | SPISCK           |
 | 16/1     |     unused, PULL:UP |            |              | PL25B | SPI_SS           |
 | 17/1     |     unused, PULL:UP |            |              | PL24B | SPI_SI           |
-| 18/1     | player_one_down     | LOCATED    | LVCMOS33_IN  | PL23B |                  |
-| 19/1     | player_one_up       | LOCATED    | LVCMOS33_IN  | PL22B |                  |
+| 18/1     |     unused, PULL:UP |            |              | PL23B |                  |
+| 19/1     |     unused, PULL:UP |            |              | PL22B |                  |
 | 20/1     | hsync               | LOCATED    | LVCMOS33_OUT | PL20B | PCLKT1_0         |
-| 21/1     | vsync               | LOCATED    | LVCMOS33_OUT | PL19B |                  |
-| 23/0     | r                   | LOCATED    | LVCMOS33_OUT | PR20A |                  |
-| 25/0     | g                   | LOCATED    | LVCMOS33_OUT | PR20B |                  |
-| 26/0     | b                   | LOCATED    | LVCMOS33_OUT | PR19A |                  |
-| 27/0     |     unused, PULL:UP |            |              | PR19B |                  |
+| 21/1     | b                   | LOCATED    | LVCMOS33_OUT | PL19B |                  |
+| 23/0     | g                   | LOCATED    | LVCMOS33_OUT | PR20A |                  |
+| 25/0     | r                   | LOCATED    | LVCMOS33_OUT | PR20B |                  |
+| 26/0     | vsync               | LOCATED    | LVCMOS33_OUT | PR19A |                  |
+| 27/0     | buzzer              | LOCATED    | LVCMOS33_OUT | PR19B |                  |
 | 28/0     |     unused, PULL:UP |            |              | PR18A |                  |
 | 31/0     |     unused, PULL:UP |            |              | PR17B |                  |
 | 32/0     |     unused, PULL:UP |            |              | PR17A |                  |
 | 34/0     |     unused, PULL:UP |            |              | PR14B |                  |
 | 35/0     |     unused, PULL:UP |            |              | PR13B | GPLL_IN/PCLKT0_1 |
-| 36/0     | buzzer              | LOCATED    | LVCMOS33_OUT | PR10B |                  |
+| 36/0     |     unused, PULL:UP |            |              | PR10B |                  |
 | 37/0     |     unused, PULL:UP |            |              | PR14A | PCLKT0_0         |
 | 38/0     |     unused, PULL:UP |            |              | PR9B  |                  |
 | 39/0     |                     |            |              | PR5A  | RGB0             |
@@ -140,24 +141,24 @@ Vccio by Bank:
 
 Locate Constraints for each Pin: 
 
-ldc_set_location -site {26} [ get_ports {b} ]
-ldc_set_location -site {11} [ get_ports {button_enter} ]
-ldc_set_location -site {36} [ get_ports {buzzer} ]
-ldc_set_location -site {25} [ get_ports {g} ]
+ldc_set_location -site {21} [ get_ports {b} ]
+ldc_set_location -site {2} [ get_ports {button_enter} ]
+ldc_set_location -site {27} [ get_ports {buzzer} ]
+ldc_set_location -site {23} [ get_ports {g} ]
 ldc_set_location -site {20} [ get_ports {hsync} ]
-ldc_set_location -site {18} [ get_ports {player_one_down} ]
-ldc_set_location -site {19} [ get_ports {player_one_up} ]
-ldc_set_location -site {12} [ get_ports {player_two_down} ]
-ldc_set_location -site {13} [ get_ports {player_two_up} ]
-ldc_set_location -site {23} [ get_ports {r} ]
-ldc_set_location -site {21} [ get_ports {vsync} ]
+ldc_set_location -site {9} [ get_ports {player_one_down} ]
+ldc_set_location -site {6} [ get_ports {player_one_up} ]
+ldc_set_location -site {11} [ get_ports {player_two_down} ]
+ldc_set_location -site {10} [ get_ports {player_two_up} ]
+ldc_set_location -site {25} [ get_ports {r} ]
+ldc_set_location -site {26} [ get_ports {vsync} ]
 
 
 
 
 
 Copyright 2015 Lattice Semiconductor Corporation, All Rights Reserved
-Thu Nov 21 15:47:54 2019
+Thu Nov 21 17:59:51 2019
 
 
 

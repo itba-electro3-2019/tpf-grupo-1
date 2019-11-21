@@ -69,6 +69,7 @@ module main(
 	/*************************/
 	/* Buzzer Bouncing Sound */
 	/*************************/
+	wire [1:0] bounce;
 	reg [9:0] buzzer_clock = 0;
 	parameter BUZZER_CLOCK = 500;
 	always @(posedge clk) begin: BUZZER_GENERATOR
@@ -88,11 +89,15 @@ module main(
 	/***************************/
 	parameter BOUNCE_CLOCK = 150;
 	reg [7:0] bounce_clock = 0;
+
+	wire fsm_enter;
+	assign fsm_enter = ~button_enter;
+
 	reg enter = 0;
 	always @(posedge tick) begin: DEBOUNCE_ENTER_BUTTON
 		if (bounce_clock >= BOUNCE_CLOCK) begin
 			bounce_clock <= 0;
-			enter <= button_enter;
+			enter <= fsm_enter;
 		end else begin
 			bounce_clock <= bounce_clock + 1;
 			enter <= 0;
@@ -123,14 +128,14 @@ module main(
 	wire [2:0] score_two_rgb;
 	wire [2:0] ball_rgb;
 	
-	wire [1:0] bounce;
-	
 	wire [9:0] ball_pos_x;
 	wire [9:0] ball_pos_y;
 	wire [9:0] ball_size_x;
 	wire [9:0] ball_size_y;
-	wire [2:0] ball_speed;
+	reg [2:0] ball_speed;
 	
+	wire [3:0] score_player_one;
+	wire [3:0] score_player_two;
 	reg speed_selector;
 	
 	wire [2:0] paddle_one_speed;
@@ -153,8 +158,6 @@ module main(
 	
 	Ball ball (tick_game, pixel_row, pixel_col, reset, bounce, ball_speed, ball_rgb, ball_pos_x, ball_pos_y, ball_size_x, ball_size_y);
 	
-	Mux mux (paddle_two_speed, paddle_one_speed, speed_selector, ball_speed);
-	
 	Paddle #(
 		.START_X_POS(20),
 		.START_Y_POS(190)) paddle_one (tick_game, pixel_row, pixel_col, reset, player_one_up, player_one_down, paddle_one_rgb, paddle_one_pos_x, paddle_one_pos_y, paddle_one_size_x, paddle_one_size_y, paddle_one_speed);
@@ -174,24 +177,32 @@ module main(
 		.START_POSY(170)) paused_menu(tick_menu, pixel_row, pixel_col, reset, pause_up, pause_down, paused_menu_rgb, pause_selection);
 
 	Score #(
-		.POSX(160),
+		.POSX(240),
 		.POSY(100)) score_one(score_player_one, pixel_row, pixel_col, score_one_rgb);
-
+		
 	Score #(
 		.POSX(480),
-		.POSY(100)) score_one(score_player_two, pixel_row, pixel_col, score_two_rgb);
+		.POSY(100)) score_two(score_player_two, pixel_row, pixel_col, score_two_rgb);
+
+	/*************************/
+	/* Ball Speed Controller */
+	/*************************/
+	wire [2:0] speed_capture;
+	parameter INITIAL_SPEED = 5;
+	Mux mux (paddle_two_speed, paddle_one_speed, speed_selector, speed_capture);
 
 	always @ (posedge tick) begin
 		if (bounce == 1) begin
 			speed_selector = ~speed_selector;
+			ball_speed = speed_capture;
+		end else if (reset == 0) begin
+			ball_speed = INITIAL_SPEED;
 		end
 	end
 
 	/**********************/
 	/* Game Logic Objects */
 	/**********************/
-	wire [3:0] score_player_one;
-	wire [3:0] score_player_two;
 	
 	wire reset;
 	wire tick_game;
@@ -199,7 +210,7 @@ module main(
 	wire enable_start;
 	wire enable_pause;
 	wire enable_game;
-	
+
 	GameLogic game (tick_game, ball_pos_x, ball_pos_y, ball_size_x, ball_size_y, paddle_one_pos_x, paddle_one_pos_y, paddle_one_size_x, paddle_one_size_y, paddle_two_pos_x, paddle_two_pos_y, paddle_two_size_x, paddle_two_size_y, bounce, score_player_one, score_player_two);
 	MainFsm menu (tick, enter, pause_selection, tick_game, tick_menu, enable_start, enable_pause, enable_game, reset);
 	
