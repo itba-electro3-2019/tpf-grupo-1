@@ -5,7 +5,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2019 Lattice Semiconductor Corporation,  All rights reserved.
-Thu Nov 21 12:09:30 2019
+Thu Nov 21 12:20:44 2019
 
 
 Command Line:  C:\lscc\radiant\1.1\ispfpga\bin\nt64\synthesis.exe -f pong_impl_1_lattice.synproj -gui -msgset C:/Users/facun/OneDrive/Desktop/ITBA/5C Electronica III/tpf-grupo-1/Pong/promote.xml 
@@ -125,9 +125,9 @@ INFO - synthesis: c:/lscc/radiant/1.1/ip/pmi/pmi_ice40up.v(16): analyzing includ
 INFO - synthesis: c:/lscc/radiant/1.1/ip/pmi/pmi_ram_dq_be.v(45): analyzing included file c:/lscc/radiant/1.1/ip/pmi/../common/ram_dq/rtl/lscc_ram_dq.v. VERI-1328
 INFO - synthesis: c:/lscc/radiant/1.1/ip/pmi/pmi_ice40up.v(17): analyzing included file c:/lscc/radiant/1.1/ip/pmi/pmi_dsp.v. VERI-1328
 Analyzing Verilog file c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/main.v. VERI-1482
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/main.v(154): reset is already implicitly declared earlier. VERI-1362
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/main.v(155): tick_game is already implicitly declared earlier. VERI-1362
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/main.v(156): tick_menu is already implicitly declared earlier. VERI-1362
+WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/main.v(153): reset is already implicitly declared earlier. VERI-1362
+WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/main.v(154): tick_game is already implicitly declared earlier. VERI-1362
+WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/main.v(155): tick_menu is already implicitly declared earlier. VERI-1362
 Analyzing Verilog file c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/drivers/vgadriver_v2.v. VERI-1482
 Analyzing Verilog file c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/clock/rtl/clock.v. VERI-1482
 Analyzing Verilog file c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/logic/main_fsm.v. VERI-1482
@@ -145,7 +145,6 @@ INFO - synthesis: The default VHDL library search path is now "C:/Users/facun/On
 Top module language type = Verilog.
 Top module name (Verilog, mixed language): main
 INFO - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/main.v(8): compiling module main. VERI-1018
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/main.v(161): using initial value of value since it is never assigned. VERI-1220
 INFO - synthesis: C:/lscc/radiant/1.1/ispfpga/../cae_library/synthesis/verilog/iCE40UP.v(756): compiling module HSOSC(CLKHF_DIV="0b10"). VERI-1018
 WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/main.v(59): expression size 32 truncated to fit in target size 15. VERI-1209
 WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/main.v(77): expression size 32 truncated to fit in target size 8. VERI-1209
@@ -235,15 +234,14 @@ WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf
 INFO - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/logic/game_logic.v(7): compiling module GameLogic. VERI-1018
 WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/logic/game_logic.v(59): expression size 32 truncated to fit in target size 4. VERI-1209
 WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/logic/game_logic.v(63): expression size 32 truncated to fit in target size 4. VERI-1209
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/main.v(163): actual bit length 10 differs from formal bit length 8 for port ball_size_x. VERI-1330
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/main.v(163): actual bit length 10 differs from formal bit length 8 for port ball_size_y. VERI-1330
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/main.v(163): actual bit length 10 differs from formal bit length 8 for port paddle_1_size_x. VERI-1330
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/main.v(163): actual bit length 10 differs from formal bit length 8 for port paddle_1_size_y. VERI-1330
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/main.v(163): actual bit length 10 differs from formal bit length 8 for port paddle_2_size_x. VERI-1330
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/main.v(163): actual bit length 10 differs from formal bit length 8 for port paddle_2_size_y. VERI-1330
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/main.v(163): actual bit length 1 differs from formal bit length 4 for port score_player_2. VERI-1330
+WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/main.v(160): actual bit length 10 differs from formal bit length 8 for port ball_size_x. VERI-1330
+WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/main.v(160): actual bit length 10 differs from formal bit length 8 for port ball_size_y. VERI-1330
+WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/main.v(160): actual bit length 10 differs from formal bit length 8 for port paddle_1_size_x. VERI-1330
+WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/main.v(160): actual bit length 10 differs from formal bit length 8 for port paddle_1_size_y. VERI-1330
+WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/main.v(160): actual bit length 10 differs from formal bit length 8 for port paddle_2_size_x. VERI-1330
+WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/main.v(160): actual bit length 10 differs from formal bit length 8 for port paddle_2_size_y. VERI-1330
+WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/main.v(160): actual bit length 1 differs from formal bit length 4 for port score_player_2. VERI-1330
 INFO - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/logic/main_fsm.v(8): compiling module MainFsm. VERI-1018
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/main.v(164): actual bit length 1 differs from formal bit length 2 for port value. VERI-1330
 Loading device for application lse from file 'itpa08.nph' in environment: C:/lscc/radiant/1.1/ispfpga.
                                                          
 
@@ -269,7 +267,6 @@ Loading device for application lse from file 'itpa08.nph' in environment: C:/lsc
                                                          
 
 
-WARNING - synthesis: Initial value found on net gnd will be ignored due to unrecognized driver type
 WARNING - synthesis: Initial value found on net vga_hsync will be ignored due to unrecognized driver type
 WARNING - synthesis: Initial value found on net vga_vsync will be ignored due to unrecognized driver type
 WARNING - synthesis: Initial value found on net gnd_2 will be ignored due to unrecognized driver type
@@ -368,7 +365,7 @@ CCU2 => 180
 FD1P3XZ => 138
 HSOSC_CORE => 1
 IB => 5
-LUT4 => 1903
+LUT4 => 1910
 MAC16 => 3
 OB => 5
 PLL_B => 1
@@ -389,20 +386,20 @@ Number of Clock Enables: 0
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
   Net : paused_menu/menu_rgb_2__N_664[3], loads : 319
-  Net : paused_menu/menu_rgb_2__N_664[4], loads : 258
-  Net : paused_menu/menu_rgb_2__N_664[2], loads : 229
+  Net : paused_menu/menu_rgb_2__N_664[4], loads : 257
+  Net : paused_menu/menu_rgb_2__N_664[2], loads : 240
   Net : start_menu/rgb_2__N_628[3], loads : 207
-  Net : paused_menu/menu_rgb_2__N_664[1], loads : 205
-  Net : paused_menu/menu_rgb_2__N_664[5], loads : 189
-  Net : start_menu/rgb_2__N_628[2], loads : 160
+  Net : paused_menu/menu_rgb_2__N_664[1], loads : 201
+  Net : paused_menu/menu_rgb_2__N_664[5], loads : 186
+  Net : start_menu/rgb_2__N_628[2], loads : 166
   Net : start_menu/rgb_2__N_628[4], loads : 158
-  Net : start_menu/rgb_2__N_628[5], loads : 140
-  Net : start_menu/rgb_2__N_628[1], loads : 129
+  Net : start_menu/rgb_2__N_628[5], loads : 143
+  Net : start_menu/rgb_2__N_628[1], loads : 135
 ################### End Clock Report ##################
 
-Peak Memory Usage: 638.820  MB
+Peak Memory Usage: 624.949  MB
 
 --------------------------------------------------------------
-Total CPU time for LSE flow : 33.688  secs
+Total CPU time for LSE flow : 33.969  secs
 Total REAL time for LSE flow : 34.000  secs
 --------------------------------------------------------------

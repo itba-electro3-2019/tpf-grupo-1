@@ -3,8 +3,8 @@
 <clocks>
     <clockitem name = "tick_game"  type = "net" />
     <clockitem name = "tick_menu"  type = "net" />
-    <clockitem name = "vga_clock"  type = "net" />
     <clockitem name = "clk"  type = "net" />
+    <clockitem name = "vga_clock"  type = "net" />
     <clockitem name = "tick"  type = "net" />
     <clockitem name = "pll/lscc_pll_inst/outcoreb_o"  type = "net" />
     <clockitem name = "pll/lscc_pll_inst/outglobalb_o"  type = "net" />
@@ -55,7 +55,7 @@
     </pins>
 
     <!--
-        Instances in netlist: 336
+        Instances in netlist: 335
     -->
 
     <instance  name = "vga_driver/h_count"  library = "work"  arch = ""  type = "reg">
@@ -11633,8 +11633,8 @@
 
         <nets>
         <nitem  name = "paused_menu/gnd_2"  />
-        <nitem  name = "paused_menu/selection[1]"  />
-        <nitem  name = "paused_menu/selection[0]"  />
+        <nitem  name = "pause_selection[1]"  />
+        <nitem  name = "pause_selection[0]"  />
         <nitem  name = "paused_menu/n31"  />
         <nitem  name = "paused_menu/marker_x_8__N_654"  />
         </nets>
@@ -11654,8 +11654,8 @@
         <nets>
         <nitem  name = "paused_menu/gnd_2"  />
         <nitem  name = "paused_menu/pwr_2"  />
-        <nitem  name = "paused_menu/selection[1]"  />
-        <nitem  name = "paused_menu/selection[0]"  />
+        <nitem  name = "pause_selection[1]"  />
+        <nitem  name = "pause_selection[0]"  />
         <nitem  name = "paused_menu/marker_x_8__N_656"  />
         </nets>
     </instance>
@@ -11673,8 +11673,8 @@
 
         <nets>
         <nitem  name = "paused_menu/pwr_2"  />
-        <nitem  name = "paused_menu/selection[1]"  />
-        <nitem  name = "paused_menu/selection[0]"  />
+        <nitem  name = "pause_selection[1]"  />
+        <nitem  name = "pause_selection[0]"  />
         <nitem  name = "paused_menu/n31"  />
         <nitem  name = "paused_menu/marker_x_8__N_655"  />
         </nets>
@@ -11694,8 +11694,8 @@
         <nets>
         <nitem  name = "paused_menu/gnd_2"  />
         <nitem  name = "paused_menu/pwr_2"  />
-        <nitem  name = "paused_menu/selection[1]"  />
-        <nitem  name = "paused_menu/selection[0]"  />
+        <nitem  name = "pause_selection[1]"  />
+        <nitem  name = "pause_selection[0]"  />
         <nitem  name = "paused_menu/n31"  />
         <nitem  name = "paused_menu/marker_y_6__N_657"  />
         </nets>
@@ -11715,8 +11715,8 @@
         <nets>
         <nitem  name = "paused_menu/gnd_2"  />
         <nitem  name = "paused_menu/pwr_2"  />
-        <nitem  name = "paused_menu/selection[1]"  />
-        <nitem  name = "paused_menu/selection[0]"  />
+        <nitem  name = "pause_selection[1]"  />
+        <nitem  name = "pause_selection[0]"  />
         <nitem  name = "paused_menu/n31"  />
         <nitem  name = "paused_menu/marker_y_6__N_658"  />
         </nets>
@@ -11736,8 +11736,8 @@
         <nets>
         <nitem  name = "paused_menu/gnd_2"  />
         <nitem  name = "paused_menu/pwr_2"  />
-        <nitem  name = "paused_menu/selection[1]"  />
-        <nitem  name = "paused_menu/selection[0]"  />
+        <nitem  name = "pause_selection[1]"  />
+        <nitem  name = "pause_selection[0]"  />
         <nitem  name = "paused_menu/n31"  />
         <nitem  name = "paused_menu/marker_y_6__N_659"  />
         </nets>
@@ -11757,8 +11757,8 @@
         <nets>
         <nitem  name = "paused_menu/gnd_2"  />
         <nitem  name = "paused_menu/pwr_2"  />
-        <nitem  name = "paused_menu/selection[1]"  />
-        <nitem  name = "paused_menu/selection[0]"  />
+        <nitem  name = "pause_selection[1]"  />
+        <nitem  name = "pause_selection[0]"  />
         <nitem  name = "paused_menu/n31"  />
         <nitem  name = "paused_menu/marker_y_6__N_660"  />
         </nets>
@@ -11778,8 +11778,8 @@
         <nets>
         <nitem  name = "paused_menu/gnd_2"  />
         <nitem  name = "paused_menu/pwr_2"  />
-        <nitem  name = "paused_menu/selection[1]"  />
-        <nitem  name = "paused_menu/selection[0]"  />
+        <nitem  name = "pause_selection[1]"  />
+        <nitem  name = "pause_selection[0]"  />
         <nitem  name = "paused_menu/n31"  />
         <nitem  name = "paused_menu/marker_y_6__N_661"  />
         </nets>
@@ -11979,8 +11979,8 @@
 
         <nets>
         <nitem  name = "paused_menu/gnd_2"  />
-        <nitem  name = "paused_menu/selection[1]"  />
-        <nitem  name = "paused_menu/selection[0]"  />
+        <nitem  name = "pause_selection[1]"  />
+        <nitem  name = "pause_selection[0]"  />
         <nitem  name = "paused_menu/n110"  />
         </nets>
     </instance>
@@ -12001,8 +12001,8 @@
         <nets>
         <nitem  name = "paused_menu/gnd_2"  />
         <nitem  name = "paused_menu/pwr_2"  />
-        <nitem  name = "paused_menu/selection[1]"  />
-        <nitem  name = "paused_menu/selection[0]"  />
+        <nitem  name = "pause_selection[1]"  />
+        <nitem  name = "pause_selection[0]"  />
         <nitem  name = "paused_menu/n112"  />
         <nitem  name = "paused_menu/n113"  />
         <nitem  name = "paused_menu/n114"  />
@@ -12082,8 +12082,8 @@
 
         <nets>
         <nitem  name = "paused_menu/gnd_2"  />
-        <nitem  name = "paused_menu/selection[1]"  />
-        <nitem  name = "paused_menu/selection[0]"  />
+        <nitem  name = "pause_selection[1]"  />
+        <nitem  name = "pause_selection[0]"  />
         <nitem  name = "paused_menu/n110"  />
         <nitem  name = "paused_menu/n112"  />
         <nitem  name = "paused_menu/n113"  />
@@ -12241,8 +12241,8 @@
         <nets>
         <nitem  name = "paused_menu/gnd_2"  />
         <nitem  name = "paused_menu/pwr_2"  />
-        <nitem  name = "paused_menu/selection[1]"  />
-        <nitem  name = "paused_menu/selection[0]"  />
+        <nitem  name = "pause_selection[1]"  />
+        <nitem  name = "pause_selection[0]"  />
         <nitem  name = "paused_menu/n149"  />
         </nets>
     </instance>
@@ -12351,8 +12351,8 @@
         <nets>
         <nitem  name = "paused_menu/gnd_2"  />
         <nitem  name = "paused_menu/pwr_2"  />
-        <nitem  name = "paused_menu/selection[1]"  />
-        <nitem  name = "paused_menu/selection[0]"  />
+        <nitem  name = "pause_selection[1]"  />
+        <nitem  name = "pause_selection[0]"  />
         <nitem  name = "paused_menu/n152"  />
         <nitem  name = "paused_menu/n153"  />
         <nitem  name = "paused_menu/n154"  />
@@ -12461,8 +12461,8 @@
 
         <nets>
         <nitem  name = "paused_menu/gnd_2"  />
-        <nitem  name = "paused_menu/selection[1]"  />
-        <nitem  name = "paused_menu/selection[0]"  />
+        <nitem  name = "pause_selection[1]"  />
+        <nitem  name = "pause_selection[0]"  />
         <nitem  name = "paused_menu/n149"  />
         <nitem  name = "paused_menu/n152"  />
         <nitem  name = "paused_menu/n153"  />
@@ -12513,8 +12513,8 @@
         </pins>
 
         <nets>
-        <nitem  name = "paused_menu/selection[1]"  />
-        <nitem  name = "paused_menu/selection[0]"  />
+        <nitem  name = "pause_selection[1]"  />
+        <nitem  name = "pause_selection[0]"  />
         <nitem  name = "paused_menu/flag_N_683"  />
         <nitem  name = "paused_menu/n215"  />
         <nitem  name = "paused_menu/n216"  />
@@ -12605,8 +12605,8 @@
         </pins>
 
         <nets>
-        <nitem  name = "paused_menu/selection[1]"  />
-        <nitem  name = "paused_menu/selection[0]"  />
+        <nitem  name = "pause_selection[1]"  />
+        <nitem  name = "pause_selection[0]"  />
         <nitem  name = "paused_menu/flag"  />
         <nitem  name = "paused_menu/n222"  />
         <nitem  name = "paused_menu/n223"  />
@@ -12668,8 +12668,8 @@
         <nets>
         <nitem  name = "paused_menu/gnd_2"  />
         <nitem  name = "tick_menu"  />
-        <nitem  name = "paused_menu/selection[1]"  />
-        <nitem  name = "paused_menu/selection[0]"  />
+        <nitem  name = "pause_selection[1]"  />
+        <nitem  name = "pause_selection[0]"  />
         <nitem  name = "paused_menu/selection_1__N_642[1]"  />
         <nitem  name = "paused_menu/selection_1__N_642[0]"  />
         </nets>
@@ -14202,74 +14202,6 @@
         </nets>
     </instance>
 
-    <instance  name = "game/add_11"  library = "work"  arch = ""  type = "comb">
-        <pins>
-        <pitem  name = "cin"  direction = "in"  />
-        <pitem  name = "b[9]"  direction = "in"  />
-        <pitem  name = "b[8]"  direction = "in"  />
-        <pitem  name = "a[9]"  direction = "in"  />
-        <pitem  name = "a[8]"  direction = "in"  />
-        <pitem  name = "a[7]"  direction = "in"  />
-        <pitem  name = "a[6]"  direction = "in"  />
-        <pitem  name = "a[5]"  direction = "in"  />
-        <pitem  name = "a[4]"  direction = "in"  />
-        <pitem  name = "a[3]"  direction = "in"  />
-        <pitem  name = "a[2]"  direction = "in"  />
-        <pitem  name = "a[1]"  direction = "in"  />
-        <pitem  name = "a[0]"  direction = "in"  />
-        <pitem  name = "b[7]"  direction = "in"  />
-        <pitem  name = "b[6]"  direction = "in"  />
-        <pitem  name = "b[5]"  direction = "in"  />
-        <pitem  name = "b[4]"  direction = "in"  />
-        <pitem  name = "b[3]"  direction = "in"  />
-        <pitem  name = "b[2]"  direction = "in"  />
-        <pitem  name = "b[1]"  direction = "in"  />
-        <pitem  name = "b[0]"  direction = "in"  />
-        <pitem  name = "o[9]"  direction = "out"  />
-        <pitem  name = "o[8]"  direction = "out"  />
-        <pitem  name = "o[7]"  direction = "out"  />
-        <pitem  name = "o[6]"  direction = "out"  />
-        <pitem  name = "o[5]"  direction = "out"  />
-        <pitem  name = "o[4]"  direction = "out"  />
-        <pitem  name = "o[3]"  direction = "out"  />
-        <pitem  name = "o[2]"  direction = "out"  />
-        <pitem  name = "o[1]"  direction = "out"  />
-        <pitem  name = "o[0]"  direction = "out"  />
-        </pins>
-
-        <nets>
-        <nitem  name = "game/gnd"  />
-        <nitem  name = "paddle_one_pos_x[9]"  />
-        <nitem  name = "paddle_one_pos_x[8]"  />
-        <nitem  name = "paddle_one_pos_x[7]"  />
-        <nitem  name = "paddle_one_pos_x[6]"  />
-        <nitem  name = "paddle_one_pos_x[5]"  />
-        <nitem  name = "paddle_one_pos_x[4]"  />
-        <nitem  name = "paddle_one_pos_x[3]"  />
-        <nitem  name = "paddle_one_pos_x[2]"  />
-        <nitem  name = "paddle_one_pos_x[1]"  />
-        <nitem  name = "paddle_one_pos_x[0]"  />
-        <nitem  name = "paddle_one_size_x[7]"  />
-        <nitem  name = "paddle_one_size_x[6]"  />
-        <nitem  name = "paddle_one_size_x[5]"  />
-        <nitem  name = "paddle_one_size_x[4]"  />
-        <nitem  name = "paddle_one_size_x[3]"  />
-        <nitem  name = "paddle_one_size_x[2]"  />
-        <nitem  name = "paddle_one_size_x[1]"  />
-        <nitem  name = "paddle_one_size_x[0]"  />
-        <nitem  name = "game/n144"  />
-        <nitem  name = "game/n145"  />
-        <nitem  name = "game/n146"  />
-        <nitem  name = "game/n147"  />
-        <nitem  name = "game/n148"  />
-        <nitem  name = "game/n149"  />
-        <nitem  name = "game/n150"  />
-        <nitem  name = "game/n151"  />
-        <nitem  name = "game/n152"  />
-        <nitem  name = "game/n153"  />
-        </nets>
-    </instance>
-
     <instance  name = "game/equal_12"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "a[9]"  direction = "in"  />
@@ -14282,6 +14214,7 @@
         <pitem  name = "a[2]"  direction = "in"  />
         <pitem  name = "a[1]"  direction = "in"  />
         <pitem  name = "a[0]"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
         <pitem  name = "b[9]"  direction = "in"  />
         <pitem  name = "b[8]"  direction = "in"  />
         <pitem  name = "b[7]"  direction = "in"  />
@@ -14292,7 +14225,6 @@
         <pitem  name = "b[2]"  direction = "in"  />
         <pitem  name = "b[1]"  direction = "in"  />
         <pitem  name = "b[0]"  direction = "in"  />
-        <pitem  name = "o"  direction = "out"  />
         </pins>
 
         <nets>
@@ -14306,17 +14238,17 @@
         <nitem  name = "ball_pos_x[2]"  />
         <nitem  name = "ball_pos_x[1]"  />
         <nitem  name = "ball_pos_x[0]"  />
-        <nitem  name = "game/n144"  />
-        <nitem  name = "game/n145"  />
-        <nitem  name = "game/n146"  />
-        <nitem  name = "game/n147"  />
-        <nitem  name = "game/n148"  />
-        <nitem  name = "game/n149"  />
-        <nitem  name = "game/n150"  />
-        <nitem  name = "game/n151"  />
-        <nitem  name = "game/n152"  />
-        <nitem  name = "game/n153"  />
         <nitem  name = "game/n154"  />
+        <nitem  name = "game/n293"  />
+        <nitem  name = "game/n294"  />
+        <nitem  name = "game/n295"  />
+        <nitem  name = "game/n296"  />
+        <nitem  name = "game/n297"  />
+        <nitem  name = "game/n298"  />
+        <nitem  name = "game/n299"  />
+        <nitem  name = "game/n300"  />
+        <nitem  name = "game/n301"  />
+        <nitem  name = "game/n302"  />
         </nets>
     </instance>
 
@@ -15183,14 +15115,14 @@
         <nitem  name = "paddle_one_pos_x[2]"  />
         <nitem  name = "paddle_one_pos_x[1]"  />
         <nitem  name = "paddle_one_pos_x[0]"  />
-        <nitem  name = "paddle_one_size_y[7]"  />
-        <nitem  name = "paddle_one_size_y[6]"  />
-        <nitem  name = "paddle_one_size_y[5]"  />
-        <nitem  name = "paddle_one_size_y[4]"  />
-        <nitem  name = "paddle_one_size_y[3]"  />
-        <nitem  name = "paddle_one_size_y[2]"  />
-        <nitem  name = "paddle_one_size_y[1]"  />
-        <nitem  name = "paddle_one_size_y[0]"  />
+        <nitem  name = "paddle_one_size_x[7]"  />
+        <nitem  name = "paddle_one_size_x[6]"  />
+        <nitem  name = "paddle_one_size_x[5]"  />
+        <nitem  name = "paddle_one_size_x[4]"  />
+        <nitem  name = "paddle_one_size_x[3]"  />
+        <nitem  name = "paddle_one_size_x[2]"  />
+        <nitem  name = "paddle_one_size_x[1]"  />
+        <nitem  name = "paddle_one_size_x[0]"  />
         <nitem  name = "game/n293"  />
         <nitem  name = "game/n294"  />
         <nitem  name = "game/n295"  />
@@ -16213,7 +16145,8 @@
         <nets>
         <nitem  name = "menu/gnd"  />
         <nitem  name = "menu/pwr"  />
-        <nitem  name = "gnd"  />
+        <nitem  name = "pause_selection[1]"  />
+        <nitem  name = "pause_selection[0]"  />
         <nitem  name = "menu/current_state[1]"  />
         <nitem  name = "menu/current_state[0]"  />
         <nitem  name = "menu/n20"  />
@@ -16234,7 +16167,8 @@
 
         <nets>
         <nitem  name = "menu/gnd"  />
-        <nitem  name = "gnd"  />
+        <nitem  name = "pause_selection[1]"  />
+        <nitem  name = "pause_selection[0]"  />
         <nitem  name = "menu/reset_N_829"  />
         <nitem  name = "menu/reset_N_833"  />
         </nets>
