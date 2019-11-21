@@ -7,14 +7,27 @@ Command Line: postsyn -a iCE40UP -p iCE40UP5K -t SG48 -sp High-Performance_1.2V 
 Reading input file 'pong_impl_1.vm' ...
 Reading constraint file 'C:/Users/facun/OneDrive/Desktop/ITBA/5C Electronica III/tpf-grupo-1/Pong/impl_1/pong_impl_1.ldc' ...
 Removing unused logic...
-INFO - Signal start_menu/rgb_2__N_610[13]_2 undriven or does not drive anything - clipped
-INFO - Signal background/auxiliar_row_9__N_589[5]_2 undriven or does not drive anything - clipped
-INFO - Signal background/auxiliar_col_9__N_512[9]_2 undriven or does not drive anything - clipped
-INFO - Signal background/auxiliar_col_9__N_512[3]_2 undriven or does not drive anything - clipped
-INFO - Signal background/auxiliar_col_9__N_578[9]_2 undriven or does not drive anything - clipped
-INFO - Signal background/auxiliar_col_9__N_578[7]_2 undriven or does not drive anything - clipped
-INFO - Signal start_menu_rgb[1] undriven or does not drive anything - clipped
-INFO - Signal start_menu_rgb[0] undriven or does not drive anything - clipped
+INFO - Signal background/auxiliar_col_9__N_530[9]_2 undriven or does not drive anything - clipped
+INFO - Signal background/auxiliar_col_9__N_530[4]_2 undriven or does not drive anything - clipped
+INFO - Signal background/auxiliar_col_9__N_530[3]_2 undriven or does not drive anything - clipped
+INFO - Signal background/auxiliar_col_9__N_596[9]_2 undriven or does not drive anything - clipped
+INFO - Signal background/auxiliar_col_9__N_596[7]_2 undriven or does not drive anything - clipped
+INFO - Signal background/auxiliar_row_9__N_607[5]_2 undriven or does not drive anything - clipped
+INFO - Signal ball/rgb_2__N_115[8]_2 undriven or does not drive anything - clipped
+INFO - Signal ball/rgb_2__N_115[7]_2 undriven or does not drive anything - clipped
+INFO - Signal ball/rgb_2__N_115[6]_2 undriven or does not drive anything - clipped
+INFO - Signal ball/rgb_2__N_115[5]_2 undriven or does not drive anything - clipped
+INFO - Signal ball/rgb_2__N_115[4]_2 undriven or does not drive anything - clipped
+INFO - Signal ball/rgb_2__N_115[3]_2 undriven or does not drive anything - clipped
+INFO - Signal start_menu/rgb_2__N_628[13]_2 undriven or does not drive anything - clipped
+INFO - Signal paused_menu/marker_y[9] undriven or does not drive anything - clipped
+INFO - Signal paused_menu/marker_y[8] undriven or does not drive anything - clipped
+INFO - Signal paused_menu/marker_y[7] undriven or does not drive anything - clipped
+INFO - Signal paused_menu/marker_y[4] undriven or does not drive anything - clipped
+INFO - Signal paused_menu/marker_y[1] undriven or does not drive anything - clipped
+INFO - Signal bounce_clock[0] undriven or does not drive anything - clipped
+INFO - Signal paused_menu_rgb[2] undriven or does not drive anything - clipped
+INFO - Signal paused_menu_rgb[0] undriven or does not drive anything - clipped
 INFO - Signal ball_size_x[9] undriven or does not drive anything - clipped
 INFO - Signal ball_size_x[8] undriven or does not drive anything - clipped
 INFO - Signal ball_size_x[7] undriven or does not drive anything - clipped
@@ -70,6 +83,19 @@ INFO - Signal paddle_two_size_y[4] undriven or does not drive anything - clipped
 INFO - Signal paddle_two_size_y[2] undriven or does not drive anything - clipped
 INFO - Signal paddle_two_size_y[1] undriven or does not drive anything - clipped
 INFO - Signal paddle_two_size_y[0] undriven or does not drive anything - clipped
+INFO - Signal menu_rgb[2] undriven or does not drive anything - clipped
+INFO - Signal menu_rgb[0] undriven or does not drive anything - clipped
+INFO - Signal marker_x[9] undriven or does not drive anything - clipped
+INFO - Signal marker_x[8] undriven or does not drive anything - clipped
+INFO - Signal marker_x[6] undriven or does not drive anything - clipped
+INFO - Signal marker_x[5] undriven or does not drive anything - clipped
+INFO - Signal marker_x[4] undriven or does not drive anything - clipped
+INFO - Signal marker_x[3] undriven or does not drive anything - clipped
+INFO - Signal marker_x[2] undriven or does not drive anything - clipped
+INFO - Signal marker_x[1] undriven or does not drive anything - clipped
+INFO - Signal marker_x[0] undriven or does not drive anything - clipped
+INFO - Signal marker_rgb[2] undriven or does not drive anything - clipped
+INFO - Signal marker_rgb[0] undriven or does not drive anything - clipped
 Starting design annotation....
 WARNING - The preferred point for defining clocks is top level ports and driver pins. Pad delays will not be taken into consideration if clocks are defined on nets.
 WARNING - The preferred point for defining clocks is top level ports and driver pins. Pad delays will not be taken into consideration if clocks are defined on nets.
@@ -77,4 +103,4 @@ Writing output file 'pong_impl_1.udb'.
 POSTSYN finished successfully.
 Total CPU Time: 0 secs 
 Total REAL Time: 0 secs 
-Peak Memory Usage: 48 MB
+Peak Memory Usage: 61 MB
