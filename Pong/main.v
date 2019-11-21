@@ -108,11 +108,13 @@ module main(
 	wire [9:0] ball_size_x;
 	wire [9:0] ball_size_y;
 	
+	wire [2:0] paddle_one_speed;
 	wire [9:0] paddle_one_pos_x;
 	wire [9:0] paddle_one_pos_y;
 	wire [9:0] paddle_one_size_x;
 	wire [9:0] paddle_one_size_y;
 	
+	wire [2:0] paddle_two_speed;
 	wire [9:0] paddle_two_pos_x;
 	wire [9:0] paddle_two_pos_y;
 	wire [9:0] paddle_two_size_x;
@@ -128,11 +130,11 @@ module main(
 	
 	Paddle #(
 		.START_X_POS(20),
-		.START_Y_POS(190)) paddle_one (tick_game, pixel_row, pixel_col, reset, player_one_up, player_one_down, paddle_one_rgb, paddle_one_pos_x, paddle_one_pos_y, paddle_one_size_x, paddle_one_size_y);
+		.START_Y_POS(190)) paddle_one (tick_game, pixel_row, pixel_col, reset, player_one_up, player_one_down, paddle_one_rgb, paddle_one_pos_x, paddle_one_pos_y, paddle_one_size_x, paddle_one_size_y, paddle_one_speed);
 		
 	Paddle #(
 		.START_X_POS(615),
-		.START_Y_POS(190)) paddle_two (tick_game, pixel_row, pixel_col, reset, player_two_up, player_two_down, paddle_two_rgb, paddle_two_pos_x, paddle_two_pos_y, paddle_two_size_x, paddle_two_size_y);
+		.START_Y_POS(190)) paddle_two (tick_game, pixel_row, pixel_col, reset, player_two_up, player_two_down, paddle_two_rgb, paddle_two_pos_x, paddle_two_pos_y, paddle_two_size_x, paddle_two_size_y, paddle_two_speed);
 	
 	Background background (pixel_row, pixel_col, background_rgb);
 	
