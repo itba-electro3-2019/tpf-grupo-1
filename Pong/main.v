@@ -12,6 +12,8 @@ module main(
 	player_two_up,			// Output: Player Two up controller
 	player_two_down,		// Output: Player Two down controller
 	button_enter,			// Input: Player Enter controller
+	/* Buzzer Port */
+	buzzer,					// Output: Buzzer Sound
 	/* Game Output Ports */
 	hsync,					// Output: Horizontal Synchronization for VGA System
 	vsync,					// Output: Vertical Synchronization for VGA System
@@ -32,6 +34,7 @@ module main(
 	/**************************/
 	/* Declaring output ports */
 	/**************************/
+	output wire buzzer;
 	output wire hsync;
 	output wire vsync;
 	output wire r;
@@ -57,16 +60,36 @@ module main(
 	parameter TIMER_VALUE = 6000;
 	always @(posedge clk) begin: TICK_GENERATOR
 		timer_clock = timer_clock + 1;
-		if (timer_clock == TIMER_VALUE) begin
+		if (timer_clock >= TIMER_VALUE) begin
 			timer_clock = 0;
 			tick = ~tick;
+		end
+	end
+
+	/*************************/
+	/* Buzzer Bouncing Sound */
+	/*************************/
+	reg [9:0] buzzer_clock = 0;
+	parameter BUZZER_CLOCK = 500;
+	always @(posedge clk) begin: BUZZER_GENERATOR
+		if (buzzer_clock == 0) begin
+			buzzer <= 0;
+		end else begin
+			buzzer_clock <= buzzer_clock - 1;
+			buzzer <= 1;
+		end
+	end
+	
+	always @* begin: BUZZER_TRIGGER
+		if (bounce == 1 || bounce == 2) begin
+			buzzer_clock = BUZZER_CLOCK;
 		end
 	end
 	
 	/***************************/
 	/* Debouncing Enter Button */
 	/***************************/
-	parameter BOUNCE_CLOCK = 200;
+	parameter BOUNCE_CLOCK = 150;
 	reg [7:0] bounce_clock = 0;
 	reg enter = 0;
 	always @(posedge tick) begin: DEBOUNCE_ENTER_BUTTON
