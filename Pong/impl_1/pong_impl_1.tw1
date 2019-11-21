@@ -1,6 +1,6 @@
 Lattice Timing Report -  Setup  and Hold, Version Radiant Software (64-bit) 1.1.0.165.1
 
-Thu Nov 21 03:43:52 2019
+Thu Nov 21 11:49:30 2019
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -119,7 +119,7 @@ Clock Domain Crossing
 
 3.1.1  Constraint Coverage
 ---------------------------
-Constraint Coverage: 4.63497%
+Constraint Coverage: 4.62853%
 
 3.1.2  Timing Errors
 ---------------------
@@ -156,13 +156,13 @@ nst/u_PLL_B/OUTGLOBAL }]                |   39.800 ns |   18.074 ns |   12   |  
 -------------------------------------------------------
 vga_driver/v_count__i9/D                 |   18.075 ns 
 vga_driver/v_count__i8/D                 |   20.428 ns 
-vga_driver/h_count_381__i9/D             |   20.641 ns 
+vga_driver/h_count_406__i9/D             |   20.641 ns 
 vga_driver/v_count__i7/D                 |   20.706 ns 
-vga_driver/h_count_381__i8/D             |   22.994 ns 
+vga_driver/h_count_406__i8/D             |   22.994 ns 
 vga_driver/v_count__i6/D                 |   23.059 ns 
-vga_driver/h_count_381__i7/D             |   23.272 ns 
+vga_driver/h_count_406__i7/D             |   23.272 ns 
 vga_driver/v_count__i5/D                 |   23.337 ns 
-vga_driver/h_count_381__i6/D             |   25.625 ns 
+vga_driver/h_count_406__i6/D             |   25.625 ns 
 vga_driver/v_count__i4/D                 |   25.690 ns 
 -------------------------------------------------------
                                          |             
@@ -196,16 +196,16 @@ nst/u_PLL_B/OUTGLOBAL }]                |    0.000 ns |    5.991 ns |    2   |  
 -------------------------------------------------------
           Listing 10 End Points          |    Slack    
 -------------------------------------------------------
-tick_c/D                                 |    5.991 ns 
-timer_clock_380__i0/D                    |    5.991 ns 
-vga_driver/v_count__i0/SP                |    5.991 ns 
-vga_driver/v_count__i9/SP                |    5.991 ns 
-vga_driver/v_count__i8/SP                |    5.991 ns 
-vga_driver/v_count__i7/SP                |    5.991 ns 
-vga_driver/v_count__i6/SP                |    5.991 ns 
-vga_driver/v_count__i5/SP                |    5.991 ns 
-vga_driver/v_count__i4/SP                |    5.991 ns 
-vga_driver/v_count__i3/SP                |    5.991 ns 
+timer_clock_405__i14/D                   |    5.991 ns 
+vga_driver/h_count_406__i9/D             |    5.991 ns 
+vga_driver/h_count_406__i7/D             |    5.991 ns 
+vga_driver/h_count_406__i8/D             |    5.991 ns 
+vga_driver/h_count_406__i5/D             |    5.991 ns 
+vga_driver/h_count_406__i6/D             |    5.991 ns 
+vga_driver/h_count_406__i3/D             |    5.991 ns 
+vga_driver/h_count_406__i4/D             |    5.991 ns 
+vga_driver/h_count_406__i1/D             |    5.991 ns 
+vga_driver/h_count_406__i2/D             |    5.991 ns 
 -------------------------------------------------------
                                          |             
 Hold # of endpoints with negative slack: |           0 
@@ -282,19 +282,19 @@ Define the clock for these registers.
          Listing 10 Instance(s)         |           Type           
 -------------------------------------------------------------------
 pos_y_i0                                |                  No Clock
+pos_y_i7                                |                  No Clock
+pos_y_i8                                |                  No Clock
+timer_409__i0                           |                  No Clock
 pos_y_i1                                |                  No Clock
 pos_y_i2                                |                  No Clock
-timer_384__i1                           |                  No Clock
-timer_384__i2                           |                  No Clock
-timer_384__i7                           |                  No Clock
 pos_y_i5                                |                  No Clock
 pos_y_i6                                |                  No Clock
-timer_384__i5                           |                  No Clock
-timer_384__i6                           |                  No Clock
+timer_409__i7                           |                  No Clock
+pos_y_i9                                |                  No Clock
 -------------------------------------------------------------------
                                         |                          
 Number of registers without clock defin |                          
-ition                                   |                       617
+ition                                   |                       618
                                         |                          
 -------------------------------------------------------------------
 
@@ -323,8 +323,8 @@ Period margin    : 62.5033 ns  (Passed)
 
  ++++Path 1  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : timer_clock_380__i0/Q
-Path End         : timer_clock_380__i14/D
+Path Begin       : timer_clock_405__i0/Q
+Path End         : timer_clock_405__i14/D
 Source Clock     : clk
 Destination Clock: clk
 Logic Level      : 16
@@ -359,52 +359,52 @@ clk                                                       NET DELAY      2.075  
 Data path
 Name                                      Cell/Site Name  Delay Name           Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------------  -----  ------------  ------  
-timer_clock_380__i0/CK->timer_clock_380__i0/Q
+timer_clock_405__i0/CK->timer_clock_405__i0/Q
                                           SLICE           CLK_TO_Q1_DELAY      1.391         3.466  2       
 timer_clock[0]                                            NET DELAY            2.075         5.541  1       
-timer_clock_380_add_4_1/C1->timer_clock_380_add_4_1/CO1
+timer_clock_405_add_4_1/C1->timer_clock_405_add_4_1/CO1
                                           SLICE           C1_TO_COUT1_DELAY    0.344         5.885  2       
-n7645                                                     NET DELAY            2.075         7.960  1       
-timer_clock_380_add_4_3/CI0->timer_clock_380_add_4_3/CO0
+n9986                                                     NET DELAY            2.075         7.960  1       
+timer_clock_405_add_4_3/CI0->timer_clock_405_add_4_3/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278         8.238  2       
-n15809                                                    NET DELAY            0.000         8.238  1       
-timer_clock_380_add_4_3/CI1->timer_clock_380_add_4_3/CO1
+n17998                                                    NET DELAY            0.000         8.238  1       
+timer_clock_405_add_4_3/CI1->timer_clock_405_add_4_3/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278         8.516  2       
-n7647                                                     NET DELAY            2.075        10.591  1       
-timer_clock_380_add_4_5/CI0->timer_clock_380_add_4_5/CO0
+n9988                                                     NET DELAY            2.075        10.591  1       
+timer_clock_405_add_4_5/CI0->timer_clock_405_add_4_5/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        10.869  2       
-n15812                                                    NET DELAY            0.000        10.869  1       
-timer_clock_380_add_4_5/CI1->timer_clock_380_add_4_5/CO1
+n18001                                                    NET DELAY            0.000        10.869  1       
+timer_clock_405_add_4_5/CI1->timer_clock_405_add_4_5/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        11.147  2       
-n7649                                                     NET DELAY            2.075        13.222  1       
-timer_clock_380_add_4_7/CI0->timer_clock_380_add_4_7/CO0
+n9990                                                     NET DELAY            2.075        13.222  1       
+timer_clock_405_add_4_7/CI0->timer_clock_405_add_4_7/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        13.500  2       
-n15815                                                    NET DELAY            0.000        13.500  1       
-timer_clock_380_add_4_7/CI1->timer_clock_380_add_4_7/CO1
+n18004                                                    NET DELAY            0.000        13.500  1       
+timer_clock_405_add_4_7/CI1->timer_clock_405_add_4_7/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        13.778  2       
-n7651                                                     NET DELAY            2.075        15.853  1       
-timer_clock_380_add_4_9/CI0->timer_clock_380_add_4_9/CO0
+n9992                                                     NET DELAY            2.075        15.853  1       
+timer_clock_405_add_4_9/CI0->timer_clock_405_add_4_9/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        16.131  2       
-n15818                                                    NET DELAY            0.000        16.131  1       
-timer_clock_380_add_4_9/CI1->timer_clock_380_add_4_9/CO1
+n18007                                                    NET DELAY            0.000        16.131  1       
+timer_clock_405_add_4_9/CI1->timer_clock_405_add_4_9/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        16.409  2       
-n7653                                                     NET DELAY            2.075        18.484  1       
-timer_clock_380_add_4_11/CI0->timer_clock_380_add_4_11/CO0
+n9994                                                     NET DELAY            2.075        18.484  1       
+timer_clock_405_add_4_11/CI0->timer_clock_405_add_4_11/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        18.762  2       
-n15821                                                    NET DELAY            0.000        18.762  1       
-timer_clock_380_add_4_11/CI1->timer_clock_380_add_4_11/CO1
+n18010                                                    NET DELAY            0.000        18.762  1       
+timer_clock_405_add_4_11/CI1->timer_clock_405_add_4_11/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        19.040  2       
-n7655                                                     NET DELAY            2.075        21.115  1       
-timer_clock_380_add_4_13/CI0->timer_clock_380_add_4_13/CO0
+n9996                                                     NET DELAY            2.075        21.115  1       
+timer_clock_405_add_4_13/CI0->timer_clock_405_add_4_13/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        21.393  2       
-n15824                                                    NET DELAY            0.000        21.393  1       
-timer_clock_380_add_4_13/CI1->timer_clock_380_add_4_13/CO1
+n18013                                                    NET DELAY            0.000        21.393  1       
+timer_clock_405_add_4_13/CI1->timer_clock_405_add_4_13/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        21.671  2       
-n7657                                                     NET DELAY            2.075        23.746  1       
-timer_clock_380_add_4_15/CI0->timer_clock_380_add_4_15/CO0
+n9998                                                     NET DELAY            2.075        23.746  1       
+timer_clock_405_add_4_15/CI0->timer_clock_405_add_4_15/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        24.024  2       
-n15827                                                    NET DELAY            0.000        24.024  1       
-timer_clock_380_add_4_15/D1->timer_clock_380_add_4_15/S1
+n18016                                                    NET DELAY            0.000        24.024  1       
+timer_clock_405_add_4_15/D1->timer_clock_405_add_4_15/S1
                                           SLICE           D1_TO_F1_DELAY       0.477        24.501  1       
 n66                                                       NET DELAY            2.075        26.576  1       
 
@@ -420,8 +420,8 @@ clk                                                       NET DELAY      2.075  
 
  ++++Path 2  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : timer_clock_380__i0/Q
-Path End         : timer_clock_380__i13/D
+Path Begin       : timer_clock_405__i0/Q
+Path End         : timer_clock_405__i13/D
 Source Clock     : clk
 Destination Clock: clk
 Logic Level      : 15
@@ -456,49 +456,49 @@ clk                                                       NET DELAY      2.075  
 Data path
 Name                                      Cell/Site Name  Delay Name           Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------------  -----  ------------  ------  
-timer_clock_380__i0/CK->timer_clock_380__i0/Q
+timer_clock_405__i0/CK->timer_clock_405__i0/Q
                                           SLICE           CLK_TO_Q1_DELAY      1.391         3.466  2       
 timer_clock[0]                                            NET DELAY            2.075         5.541  1       
-timer_clock_380_add_4_1/C1->timer_clock_380_add_4_1/CO1
+timer_clock_405_add_4_1/C1->timer_clock_405_add_4_1/CO1
                                           SLICE           C1_TO_COUT1_DELAY    0.344         5.885  2       
-n7645                                                     NET DELAY            2.075         7.960  1       
-timer_clock_380_add_4_3/CI0->timer_clock_380_add_4_3/CO0
+n9986                                                     NET DELAY            2.075         7.960  1       
+timer_clock_405_add_4_3/CI0->timer_clock_405_add_4_3/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278         8.238  2       
-n15809                                                    NET DELAY            0.000         8.238  1       
-timer_clock_380_add_4_3/CI1->timer_clock_380_add_4_3/CO1
+n17998                                                    NET DELAY            0.000         8.238  1       
+timer_clock_405_add_4_3/CI1->timer_clock_405_add_4_3/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278         8.516  2       
-n7647                                                     NET DELAY            2.075        10.591  1       
-timer_clock_380_add_4_5/CI0->timer_clock_380_add_4_5/CO0
+n9988                                                     NET DELAY            2.075        10.591  1       
+timer_clock_405_add_4_5/CI0->timer_clock_405_add_4_5/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        10.869  2       
-n15812                                                    NET DELAY            0.000        10.869  1       
-timer_clock_380_add_4_5/CI1->timer_clock_380_add_4_5/CO1
+n18001                                                    NET DELAY            0.000        10.869  1       
+timer_clock_405_add_4_5/CI1->timer_clock_405_add_4_5/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        11.147  2       
-n7649                                                     NET DELAY            2.075        13.222  1       
-timer_clock_380_add_4_7/CI0->timer_clock_380_add_4_7/CO0
+n9990                                                     NET DELAY            2.075        13.222  1       
+timer_clock_405_add_4_7/CI0->timer_clock_405_add_4_7/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        13.500  2       
-n15815                                                    NET DELAY            0.000        13.500  1       
-timer_clock_380_add_4_7/CI1->timer_clock_380_add_4_7/CO1
+n18004                                                    NET DELAY            0.000        13.500  1       
+timer_clock_405_add_4_7/CI1->timer_clock_405_add_4_7/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        13.778  2       
-n7651                                                     NET DELAY            2.075        15.853  1       
-timer_clock_380_add_4_9/CI0->timer_clock_380_add_4_9/CO0
+n9992                                                     NET DELAY            2.075        15.853  1       
+timer_clock_405_add_4_9/CI0->timer_clock_405_add_4_9/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        16.131  2       
-n15818                                                    NET DELAY            0.000        16.131  1       
-timer_clock_380_add_4_9/CI1->timer_clock_380_add_4_9/CO1
+n18007                                                    NET DELAY            0.000        16.131  1       
+timer_clock_405_add_4_9/CI1->timer_clock_405_add_4_9/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        16.409  2       
-n7653                                                     NET DELAY            2.075        18.484  1       
-timer_clock_380_add_4_11/CI0->timer_clock_380_add_4_11/CO0
+n9994                                                     NET DELAY            2.075        18.484  1       
+timer_clock_405_add_4_11/CI0->timer_clock_405_add_4_11/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        18.762  2       
-n15821                                                    NET DELAY            0.000        18.762  1       
-timer_clock_380_add_4_11/CI1->timer_clock_380_add_4_11/CO1
+n18010                                                    NET DELAY            0.000        18.762  1       
+timer_clock_405_add_4_11/CI1->timer_clock_405_add_4_11/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        19.040  2       
-n7655                                                     NET DELAY            2.075        21.115  1       
-timer_clock_380_add_4_13/CI0->timer_clock_380_add_4_13/CO0
+n9996                                                     NET DELAY            2.075        21.115  1       
+timer_clock_405_add_4_13/CI0->timer_clock_405_add_4_13/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        21.393  2       
-n15824                                                    NET DELAY            0.000        21.393  1       
-timer_clock_380_add_4_13/CI1->timer_clock_380_add_4_13/CO1
+n18013                                                    NET DELAY            0.000        21.393  1       
+timer_clock_405_add_4_13/CI1->timer_clock_405_add_4_13/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        21.671  2       
-n7657                                                     NET DELAY            2.075        23.746  1       
-timer_clock_380_add_4_15/D0->timer_clock_380_add_4_15/S0
+n9998                                                     NET DELAY            2.075        23.746  1       
+timer_clock_405_add_4_15/D0->timer_clock_405_add_4_15/S0
                                           SLICE           D0_TO_F0_DELAY       0.477        24.223  1       
 n67                                                       NET DELAY            2.075        26.298  1       
 
@@ -514,8 +514,8 @@ clk                                                       NET DELAY      2.075  
 
  ++++Path 3  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : timer_clock_380__i0/Q
-Path End         : timer_clock_380__i12/D
+Path Begin       : timer_clock_405__i0/Q
+Path End         : timer_clock_405__i12/D
 Source Clock     : clk
 Destination Clock: clk
 Logic Level      : 14
@@ -550,46 +550,46 @@ clk                                                       NET DELAY      2.075  
 Data path
 Name                                      Cell/Site Name  Delay Name           Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------------  -----  ------------  ------  
-timer_clock_380__i0/CK->timer_clock_380__i0/Q
+timer_clock_405__i0/CK->timer_clock_405__i0/Q
                                           SLICE           CLK_TO_Q1_DELAY      1.391         3.466  2       
 timer_clock[0]                                            NET DELAY            2.075         5.541  1       
-timer_clock_380_add_4_1/C1->timer_clock_380_add_4_1/CO1
+timer_clock_405_add_4_1/C1->timer_clock_405_add_4_1/CO1
                                           SLICE           C1_TO_COUT1_DELAY    0.344         5.885  2       
-n7645                                                     NET DELAY            2.075         7.960  1       
-timer_clock_380_add_4_3/CI0->timer_clock_380_add_4_3/CO0
+n9986                                                     NET DELAY            2.075         7.960  1       
+timer_clock_405_add_4_3/CI0->timer_clock_405_add_4_3/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278         8.238  2       
-n15809                                                    NET DELAY            0.000         8.238  1       
-timer_clock_380_add_4_3/CI1->timer_clock_380_add_4_3/CO1
+n17998                                                    NET DELAY            0.000         8.238  1       
+timer_clock_405_add_4_3/CI1->timer_clock_405_add_4_3/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278         8.516  2       
-n7647                                                     NET DELAY            2.075        10.591  1       
-timer_clock_380_add_4_5/CI0->timer_clock_380_add_4_5/CO0
+n9988                                                     NET DELAY            2.075        10.591  1       
+timer_clock_405_add_4_5/CI0->timer_clock_405_add_4_5/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        10.869  2       
-n15812                                                    NET DELAY            0.000        10.869  1       
-timer_clock_380_add_4_5/CI1->timer_clock_380_add_4_5/CO1
+n18001                                                    NET DELAY            0.000        10.869  1       
+timer_clock_405_add_4_5/CI1->timer_clock_405_add_4_5/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        11.147  2       
-n7649                                                     NET DELAY            2.075        13.222  1       
-timer_clock_380_add_4_7/CI0->timer_clock_380_add_4_7/CO0
+n9990                                                     NET DELAY            2.075        13.222  1       
+timer_clock_405_add_4_7/CI0->timer_clock_405_add_4_7/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        13.500  2       
-n15815                                                    NET DELAY            0.000        13.500  1       
-timer_clock_380_add_4_7/CI1->timer_clock_380_add_4_7/CO1
+n18004                                                    NET DELAY            0.000        13.500  1       
+timer_clock_405_add_4_7/CI1->timer_clock_405_add_4_7/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        13.778  2       
-n7651                                                     NET DELAY            2.075        15.853  1       
-timer_clock_380_add_4_9/CI0->timer_clock_380_add_4_9/CO0
+n9992                                                     NET DELAY            2.075        15.853  1       
+timer_clock_405_add_4_9/CI0->timer_clock_405_add_4_9/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        16.131  2       
-n15818                                                    NET DELAY            0.000        16.131  1       
-timer_clock_380_add_4_9/CI1->timer_clock_380_add_4_9/CO1
+n18007                                                    NET DELAY            0.000        16.131  1       
+timer_clock_405_add_4_9/CI1->timer_clock_405_add_4_9/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        16.409  2       
-n7653                                                     NET DELAY            2.075        18.484  1       
-timer_clock_380_add_4_11/CI0->timer_clock_380_add_4_11/CO0
+n9994                                                     NET DELAY            2.075        18.484  1       
+timer_clock_405_add_4_11/CI0->timer_clock_405_add_4_11/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        18.762  2       
-n15821                                                    NET DELAY            0.000        18.762  1       
-timer_clock_380_add_4_11/CI1->timer_clock_380_add_4_11/CO1
+n18010                                                    NET DELAY            0.000        18.762  1       
+timer_clock_405_add_4_11/CI1->timer_clock_405_add_4_11/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        19.040  2       
-n7655                                                     NET DELAY            2.075        21.115  1       
-timer_clock_380_add_4_13/CI0->timer_clock_380_add_4_13/CO0
+n9996                                                     NET DELAY            2.075        21.115  1       
+timer_clock_405_add_4_13/CI0->timer_clock_405_add_4_13/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        21.393  2       
-n15824                                                    NET DELAY            0.000        21.393  1       
-timer_clock_380_add_4_13/D1->timer_clock_380_add_4_13/S1
+n18013                                                    NET DELAY            0.000        21.393  1       
+timer_clock_405_add_4_13/D1->timer_clock_405_add_4_13/S1
                                           SLICE           D1_TO_F1_DELAY       0.477        21.870  1       
 n68                                                       NET DELAY            2.075        23.945  1       
 
@@ -605,8 +605,8 @@ clk                                                       NET DELAY      2.075  
 
  ++++Path 4  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : timer_clock_380__i0/Q
-Path End         : timer_clock_380__i11/D
+Path Begin       : timer_clock_405__i0/Q
+Path End         : timer_clock_405__i11/D
 Source Clock     : clk
 Destination Clock: clk
 Logic Level      : 13
@@ -641,43 +641,43 @@ clk                                                       NET DELAY      2.075  
 Data path
 Name                                      Cell/Site Name  Delay Name           Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------------  -----  ------------  ------  
-timer_clock_380__i0/CK->timer_clock_380__i0/Q
+timer_clock_405__i0/CK->timer_clock_405__i0/Q
                                           SLICE           CLK_TO_Q1_DELAY      1.391         3.466  2       
 timer_clock[0]                                            NET DELAY            2.075         5.541  1       
-timer_clock_380_add_4_1/C1->timer_clock_380_add_4_1/CO1
+timer_clock_405_add_4_1/C1->timer_clock_405_add_4_1/CO1
                                           SLICE           C1_TO_COUT1_DELAY    0.344         5.885  2       
-n7645                                                     NET DELAY            2.075         7.960  1       
-timer_clock_380_add_4_3/CI0->timer_clock_380_add_4_3/CO0
+n9986                                                     NET DELAY            2.075         7.960  1       
+timer_clock_405_add_4_3/CI0->timer_clock_405_add_4_3/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278         8.238  2       
-n15809                                                    NET DELAY            0.000         8.238  1       
-timer_clock_380_add_4_3/CI1->timer_clock_380_add_4_3/CO1
+n17998                                                    NET DELAY            0.000         8.238  1       
+timer_clock_405_add_4_3/CI1->timer_clock_405_add_4_3/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278         8.516  2       
-n7647                                                     NET DELAY            2.075        10.591  1       
-timer_clock_380_add_4_5/CI0->timer_clock_380_add_4_5/CO0
+n9988                                                     NET DELAY            2.075        10.591  1       
+timer_clock_405_add_4_5/CI0->timer_clock_405_add_4_5/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        10.869  2       
-n15812                                                    NET DELAY            0.000        10.869  1       
-timer_clock_380_add_4_5/CI1->timer_clock_380_add_4_5/CO1
+n18001                                                    NET DELAY            0.000        10.869  1       
+timer_clock_405_add_4_5/CI1->timer_clock_405_add_4_5/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        11.147  2       
-n7649                                                     NET DELAY            2.075        13.222  1       
-timer_clock_380_add_4_7/CI0->timer_clock_380_add_4_7/CO0
+n9990                                                     NET DELAY            2.075        13.222  1       
+timer_clock_405_add_4_7/CI0->timer_clock_405_add_4_7/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        13.500  2       
-n15815                                                    NET DELAY            0.000        13.500  1       
-timer_clock_380_add_4_7/CI1->timer_clock_380_add_4_7/CO1
+n18004                                                    NET DELAY            0.000        13.500  1       
+timer_clock_405_add_4_7/CI1->timer_clock_405_add_4_7/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        13.778  2       
-n7651                                                     NET DELAY            2.075        15.853  1       
-timer_clock_380_add_4_9/CI0->timer_clock_380_add_4_9/CO0
+n9992                                                     NET DELAY            2.075        15.853  1       
+timer_clock_405_add_4_9/CI0->timer_clock_405_add_4_9/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        16.131  2       
-n15818                                                    NET DELAY            0.000        16.131  1       
-timer_clock_380_add_4_9/CI1->timer_clock_380_add_4_9/CO1
+n18007                                                    NET DELAY            0.000        16.131  1       
+timer_clock_405_add_4_9/CI1->timer_clock_405_add_4_9/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        16.409  2       
-n7653                                                     NET DELAY            2.075        18.484  1       
-timer_clock_380_add_4_11/CI0->timer_clock_380_add_4_11/CO0
+n9994                                                     NET DELAY            2.075        18.484  1       
+timer_clock_405_add_4_11/CI0->timer_clock_405_add_4_11/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        18.762  2       
-n15821                                                    NET DELAY            0.000        18.762  1       
-timer_clock_380_add_4_11/CI1->timer_clock_380_add_4_11/CO1
+n18010                                                    NET DELAY            0.000        18.762  1       
+timer_clock_405_add_4_11/CI1->timer_clock_405_add_4_11/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        19.040  2       
-n7655                                                     NET DELAY            2.075        21.115  1       
-timer_clock_380_add_4_13/D0->timer_clock_380_add_4_13/S0
+n9996                                                     NET DELAY            2.075        21.115  1       
+timer_clock_405_add_4_13/D0->timer_clock_405_add_4_13/S0
                                           SLICE           D0_TO_F0_DELAY       0.477        21.592  1       
 n69                                                       NET DELAY            2.075        23.667  1       
 
@@ -693,8 +693,8 @@ clk                                                       NET DELAY      2.075  
 
  ++++Path 5  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : timer_clock_380__i0/Q
-Path End         : timer_clock_380__i10/D
+Path Begin       : timer_clock_405__i0/Q
+Path End         : timer_clock_405__i10/D
 Source Clock     : clk
 Destination Clock: clk
 Logic Level      : 12
@@ -729,40 +729,40 @@ clk                                                       NET DELAY      2.075  
 Data path
 Name                                      Cell/Site Name  Delay Name           Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------------  -----  ------------  ------  
-timer_clock_380__i0/CK->timer_clock_380__i0/Q
+timer_clock_405__i0/CK->timer_clock_405__i0/Q
                                           SLICE           CLK_TO_Q1_DELAY      1.391         3.466  2       
 timer_clock[0]                                            NET DELAY            2.075         5.541  1       
-timer_clock_380_add_4_1/C1->timer_clock_380_add_4_1/CO1
+timer_clock_405_add_4_1/C1->timer_clock_405_add_4_1/CO1
                                           SLICE           C1_TO_COUT1_DELAY    0.344         5.885  2       
-n7645                                                     NET DELAY            2.075         7.960  1       
-timer_clock_380_add_4_3/CI0->timer_clock_380_add_4_3/CO0
+n9986                                                     NET DELAY            2.075         7.960  1       
+timer_clock_405_add_4_3/CI0->timer_clock_405_add_4_3/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278         8.238  2       
-n15809                                                    NET DELAY            0.000         8.238  1       
-timer_clock_380_add_4_3/CI1->timer_clock_380_add_4_3/CO1
+n17998                                                    NET DELAY            0.000         8.238  1       
+timer_clock_405_add_4_3/CI1->timer_clock_405_add_4_3/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278         8.516  2       
-n7647                                                     NET DELAY            2.075        10.591  1       
-timer_clock_380_add_4_5/CI0->timer_clock_380_add_4_5/CO0
+n9988                                                     NET DELAY            2.075        10.591  1       
+timer_clock_405_add_4_5/CI0->timer_clock_405_add_4_5/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        10.869  2       
-n15812                                                    NET DELAY            0.000        10.869  1       
-timer_clock_380_add_4_5/CI1->timer_clock_380_add_4_5/CO1
+n18001                                                    NET DELAY            0.000        10.869  1       
+timer_clock_405_add_4_5/CI1->timer_clock_405_add_4_5/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        11.147  2       
-n7649                                                     NET DELAY            2.075        13.222  1       
-timer_clock_380_add_4_7/CI0->timer_clock_380_add_4_7/CO0
+n9990                                                     NET DELAY            2.075        13.222  1       
+timer_clock_405_add_4_7/CI0->timer_clock_405_add_4_7/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        13.500  2       
-n15815                                                    NET DELAY            0.000        13.500  1       
-timer_clock_380_add_4_7/CI1->timer_clock_380_add_4_7/CO1
+n18004                                                    NET DELAY            0.000        13.500  1       
+timer_clock_405_add_4_7/CI1->timer_clock_405_add_4_7/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        13.778  2       
-n7651                                                     NET DELAY            2.075        15.853  1       
-timer_clock_380_add_4_9/CI0->timer_clock_380_add_4_9/CO0
+n9992                                                     NET DELAY            2.075        15.853  1       
+timer_clock_405_add_4_9/CI0->timer_clock_405_add_4_9/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        16.131  2       
-n15818                                                    NET DELAY            0.000        16.131  1       
-timer_clock_380_add_4_9/CI1->timer_clock_380_add_4_9/CO1
+n18007                                                    NET DELAY            0.000        16.131  1       
+timer_clock_405_add_4_9/CI1->timer_clock_405_add_4_9/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        16.409  2       
-n7653                                                     NET DELAY            2.075        18.484  1       
-timer_clock_380_add_4_11/CI0->timer_clock_380_add_4_11/CO0
+n9994                                                     NET DELAY            2.075        18.484  1       
+timer_clock_405_add_4_11/CI0->timer_clock_405_add_4_11/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        18.762  2       
-n15821                                                    NET DELAY            0.000        18.762  1       
-timer_clock_380_add_4_11/D1->timer_clock_380_add_4_11/S1
+n18010                                                    NET DELAY            0.000        18.762  1       
+timer_clock_405_add_4_11/D1->timer_clock_405_add_4_11/S1
                                           SLICE           D1_TO_F1_DELAY       0.477        19.239  1       
 n70                                                       NET DELAY            2.075        21.314  1       
 
@@ -778,8 +778,8 @@ clk                                                       NET DELAY      2.075  
 
  ++++Path 6  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : timer_clock_380__i0/Q
-Path End         : timer_clock_380__i9/D
+Path Begin       : timer_clock_405__i0/Q
+Path End         : timer_clock_405__i9/D
 Source Clock     : clk
 Destination Clock: clk
 Logic Level      : 11
@@ -814,37 +814,37 @@ clk                                                       NET DELAY      2.075  
 Data path
 Name                                      Cell/Site Name  Delay Name           Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------------  -----  ------------  ------  
-timer_clock_380__i0/CK->timer_clock_380__i0/Q
+timer_clock_405__i0/CK->timer_clock_405__i0/Q
                                           SLICE           CLK_TO_Q1_DELAY      1.391         3.466  2       
 timer_clock[0]                                            NET DELAY            2.075         5.541  1       
-timer_clock_380_add_4_1/C1->timer_clock_380_add_4_1/CO1
+timer_clock_405_add_4_1/C1->timer_clock_405_add_4_1/CO1
                                           SLICE           C1_TO_COUT1_DELAY    0.344         5.885  2       
-n7645                                                     NET DELAY            2.075         7.960  1       
-timer_clock_380_add_4_3/CI0->timer_clock_380_add_4_3/CO0
+n9986                                                     NET DELAY            2.075         7.960  1       
+timer_clock_405_add_4_3/CI0->timer_clock_405_add_4_3/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278         8.238  2       
-n15809                                                    NET DELAY            0.000         8.238  1       
-timer_clock_380_add_4_3/CI1->timer_clock_380_add_4_3/CO1
+n17998                                                    NET DELAY            0.000         8.238  1       
+timer_clock_405_add_4_3/CI1->timer_clock_405_add_4_3/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278         8.516  2       
-n7647                                                     NET DELAY            2.075        10.591  1       
-timer_clock_380_add_4_5/CI0->timer_clock_380_add_4_5/CO0
+n9988                                                     NET DELAY            2.075        10.591  1       
+timer_clock_405_add_4_5/CI0->timer_clock_405_add_4_5/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        10.869  2       
-n15812                                                    NET DELAY            0.000        10.869  1       
-timer_clock_380_add_4_5/CI1->timer_clock_380_add_4_5/CO1
+n18001                                                    NET DELAY            0.000        10.869  1       
+timer_clock_405_add_4_5/CI1->timer_clock_405_add_4_5/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        11.147  2       
-n7649                                                     NET DELAY            2.075        13.222  1       
-timer_clock_380_add_4_7/CI0->timer_clock_380_add_4_7/CO0
+n9990                                                     NET DELAY            2.075        13.222  1       
+timer_clock_405_add_4_7/CI0->timer_clock_405_add_4_7/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        13.500  2       
-n15815                                                    NET DELAY            0.000        13.500  1       
-timer_clock_380_add_4_7/CI1->timer_clock_380_add_4_7/CO1
+n18004                                                    NET DELAY            0.000        13.500  1       
+timer_clock_405_add_4_7/CI1->timer_clock_405_add_4_7/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        13.778  2       
-n7651                                                     NET DELAY            2.075        15.853  1       
-timer_clock_380_add_4_9/CI0->timer_clock_380_add_4_9/CO0
+n9992                                                     NET DELAY            2.075        15.853  1       
+timer_clock_405_add_4_9/CI0->timer_clock_405_add_4_9/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        16.131  2       
-n15818                                                    NET DELAY            0.000        16.131  1       
-timer_clock_380_add_4_9/CI1->timer_clock_380_add_4_9/CO1
+n18007                                                    NET DELAY            0.000        16.131  1       
+timer_clock_405_add_4_9/CI1->timer_clock_405_add_4_9/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        16.409  2       
-n7653                                                     NET DELAY            2.075        18.484  1       
-timer_clock_380_add_4_11/D0->timer_clock_380_add_4_11/S0
+n9994                                                     NET DELAY            2.075        18.484  1       
+timer_clock_405_add_4_11/D0->timer_clock_405_add_4_11/S0
                                           SLICE           D0_TO_F0_DELAY       0.477        18.961  1       
 n71                                                       NET DELAY            2.075        21.036  1       
 
@@ -860,8 +860,8 @@ clk                                                       NET DELAY      2.075  
 
  ++++Path 7  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : timer_clock_380__i0/Q
-Path End         : timer_clock_380__i8/D
+Path Begin       : timer_clock_405__i0/Q
+Path End         : timer_clock_405__i8/D
 Source Clock     : clk
 Destination Clock: clk
 Logic Level      : 10
@@ -896,34 +896,34 @@ clk                                                       NET DELAY      2.075  
 Data path
 Name                                      Cell/Site Name  Delay Name           Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------------  -----  ------------  ------  
-timer_clock_380__i0/CK->timer_clock_380__i0/Q
+timer_clock_405__i0/CK->timer_clock_405__i0/Q
                                           SLICE           CLK_TO_Q1_DELAY      1.391         3.466  2       
 timer_clock[0]                                            NET DELAY            2.075         5.541  1       
-timer_clock_380_add_4_1/C1->timer_clock_380_add_4_1/CO1
+timer_clock_405_add_4_1/C1->timer_clock_405_add_4_1/CO1
                                           SLICE           C1_TO_COUT1_DELAY    0.344         5.885  2       
-n7645                                                     NET DELAY            2.075         7.960  1       
-timer_clock_380_add_4_3/CI0->timer_clock_380_add_4_3/CO0
+n9986                                                     NET DELAY            2.075         7.960  1       
+timer_clock_405_add_4_3/CI0->timer_clock_405_add_4_3/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278         8.238  2       
-n15809                                                    NET DELAY            0.000         8.238  1       
-timer_clock_380_add_4_3/CI1->timer_clock_380_add_4_3/CO1
+n17998                                                    NET DELAY            0.000         8.238  1       
+timer_clock_405_add_4_3/CI1->timer_clock_405_add_4_3/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278         8.516  2       
-n7647                                                     NET DELAY            2.075        10.591  1       
-timer_clock_380_add_4_5/CI0->timer_clock_380_add_4_5/CO0
+n9988                                                     NET DELAY            2.075        10.591  1       
+timer_clock_405_add_4_5/CI0->timer_clock_405_add_4_5/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        10.869  2       
-n15812                                                    NET DELAY            0.000        10.869  1       
-timer_clock_380_add_4_5/CI1->timer_clock_380_add_4_5/CO1
+n18001                                                    NET DELAY            0.000        10.869  1       
+timer_clock_405_add_4_5/CI1->timer_clock_405_add_4_5/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        11.147  2       
-n7649                                                     NET DELAY            2.075        13.222  1       
-timer_clock_380_add_4_7/CI0->timer_clock_380_add_4_7/CO0
+n9990                                                     NET DELAY            2.075        13.222  1       
+timer_clock_405_add_4_7/CI0->timer_clock_405_add_4_7/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        13.500  2       
-n15815                                                    NET DELAY            0.000        13.500  1       
-timer_clock_380_add_4_7/CI1->timer_clock_380_add_4_7/CO1
+n18004                                                    NET DELAY            0.000        13.500  1       
+timer_clock_405_add_4_7/CI1->timer_clock_405_add_4_7/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        13.778  2       
-n7651                                                     NET DELAY            2.075        15.853  1       
-timer_clock_380_add_4_9/CI0->timer_clock_380_add_4_9/CO0
+n9992                                                     NET DELAY            2.075        15.853  1       
+timer_clock_405_add_4_9/CI0->timer_clock_405_add_4_9/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        16.131  2       
-n15818                                                    NET DELAY            0.000        16.131  1       
-timer_clock_380_add_4_9/D1->timer_clock_380_add_4_9/S1
+n18007                                                    NET DELAY            0.000        16.131  1       
+timer_clock_405_add_4_9/D1->timer_clock_405_add_4_9/S1
                                           SLICE           D1_TO_F1_DELAY       0.477        16.608  1       
 n72                                                       NET DELAY            2.075        18.683  1       
 
@@ -939,8 +939,8 @@ clk                                                       NET DELAY      2.075  
 
  ++++Path 8  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : timer_clock_380__i0/Q
-Path End         : timer_clock_380__i7/D
+Path Begin       : timer_clock_405__i0/Q
+Path End         : timer_clock_405__i7/D
 Source Clock     : clk
 Destination Clock: clk
 Logic Level      : 9
@@ -975,31 +975,31 @@ clk                                                       NET DELAY      2.075  
 Data path
 Name                                      Cell/Site Name  Delay Name           Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------------  -----  ------------  ------  
-timer_clock_380__i0/CK->timer_clock_380__i0/Q
+timer_clock_405__i0/CK->timer_clock_405__i0/Q
                                           SLICE           CLK_TO_Q1_DELAY      1.391         3.466  2       
 timer_clock[0]                                            NET DELAY            2.075         5.541  1       
-timer_clock_380_add_4_1/C1->timer_clock_380_add_4_1/CO1
+timer_clock_405_add_4_1/C1->timer_clock_405_add_4_1/CO1
                                           SLICE           C1_TO_COUT1_DELAY    0.344         5.885  2       
-n7645                                                     NET DELAY            2.075         7.960  1       
-timer_clock_380_add_4_3/CI0->timer_clock_380_add_4_3/CO0
+n9986                                                     NET DELAY            2.075         7.960  1       
+timer_clock_405_add_4_3/CI0->timer_clock_405_add_4_3/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278         8.238  2       
-n15809                                                    NET DELAY            0.000         8.238  1       
-timer_clock_380_add_4_3/CI1->timer_clock_380_add_4_3/CO1
+n17998                                                    NET DELAY            0.000         8.238  1       
+timer_clock_405_add_4_3/CI1->timer_clock_405_add_4_3/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278         8.516  2       
-n7647                                                     NET DELAY            2.075        10.591  1       
-timer_clock_380_add_4_5/CI0->timer_clock_380_add_4_5/CO0
+n9988                                                     NET DELAY            2.075        10.591  1       
+timer_clock_405_add_4_5/CI0->timer_clock_405_add_4_5/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        10.869  2       
-n15812                                                    NET DELAY            0.000        10.869  1       
-timer_clock_380_add_4_5/CI1->timer_clock_380_add_4_5/CO1
+n18001                                                    NET DELAY            0.000        10.869  1       
+timer_clock_405_add_4_5/CI1->timer_clock_405_add_4_5/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        11.147  2       
-n7649                                                     NET DELAY            2.075        13.222  1       
-timer_clock_380_add_4_7/CI0->timer_clock_380_add_4_7/CO0
+n9990                                                     NET DELAY            2.075        13.222  1       
+timer_clock_405_add_4_7/CI0->timer_clock_405_add_4_7/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        13.500  2       
-n15815                                                    NET DELAY            0.000        13.500  1       
-timer_clock_380_add_4_7/CI1->timer_clock_380_add_4_7/CO1
+n18004                                                    NET DELAY            0.000        13.500  1       
+timer_clock_405_add_4_7/CI1->timer_clock_405_add_4_7/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        13.778  2       
-n7651                                                     NET DELAY            2.075        15.853  1       
-timer_clock_380_add_4_9/D0->timer_clock_380_add_4_9/S0
+n9992                                                     NET DELAY            2.075        15.853  1       
+timer_clock_405_add_4_9/D0->timer_clock_405_add_4_9/S0
                                           SLICE           D0_TO_F0_DELAY       0.477        16.330  1       
 n73                                                       NET DELAY            2.075        18.405  1       
 
@@ -1015,7 +1015,7 @@ clk                                                       NET DELAY      2.075  
 
  ++++Path 9  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : timer_clock_380__i0/Q
+Path Begin       : timer_clock_405__i11/Q
 Path End         : tick_c/D
 Source Clock     : clk
 Destination Clock: clk
@@ -1051,19 +1051,19 @@ clk                                                       NET DELAY      2.075  
 Data path
 Name                                      Cell/Site Name  Delay Name       Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  ---------------  -----  ------------  ------  
-timer_clock_380__i0/CK->timer_clock_380__i0/Q
-                                          SLICE           CLK_TO_Q1_DELAY  1.391         3.466  2       
-timer_clock[0]                                            NET DELAY        2.075         5.541  1       
-i9_4_lut/C->i9_4_lut/Z                    SLICE           C0_TO_F0_DELAY   0.477         6.018  1       
+{timer_clock_405__i11/CK   timer_clock_405__i12/CK}->timer_clock_405__i11/Q
+                                          SLICE           CLK_TO_Q0_DELAY  1.391         3.466  2       
+timer_clock[11]                                           NET DELAY        2.075         5.541  1       
+i9_4_lut/B->i9_4_lut/Z                    SLICE           B0_TO_F0_DELAY   0.477         6.018  1       
 n24                                                       NET DELAY        2.075         8.093  1       
 i12_4_lut/B->i12_4_lut/Z                  SLICE           B0_TO_F0_DELAY   0.477         8.570  1       
 n27                                                       NET DELAY        2.075        10.645  1       
 i6_4_lut/B->i6_4_lut/Z                    SLICE           B0_TO_F0_DELAY   0.477        11.122  1       
-n15_adj_995                                               NET DELAY        2.075        13.197  1       
+n15_adj_976                                               NET DELAY        2.075        13.197  1       
 i8_4_lut/A->i8_4_lut/Z                    SLICE           A0_TO_F0_DELAY   0.477        13.674  9       
-n4208                                                     NET DELAY        2.075        15.749  1       
+n4221                                                     NET DELAY        2.075        15.749  1       
 i1_2_lut/B->i1_2_lut/Z                    SLICE           B0_TO_F0_DELAY   0.477        16.226  1       
-n3877                                                     NET DELAY        2.075        18.301  1       
+n3900                                                     NET DELAY        2.075        18.301  1       
 
 
 Destination Clock Path
@@ -1077,8 +1077,8 @@ clk                                                       NET DELAY      2.075  
 
  ++++Path 10  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : timer_clock_380__i0/Q
-Path End         : {timer_clock_380__i9/SR   timer_clock_380__i10/SR}
+Path Begin       : timer_clock_405__i11/Q
+Path End         : timer_clock_405__i0/SR
 Source Clock     : clk
 Destination Clock: clk
 Logic Level      : 5
@@ -1113,17 +1113,17 @@ clk                                                       NET DELAY      2.075  
 Data path
 Name                                      Cell/Site Name  Delay Name       Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  ---------------  -----  ------------  ------  
-timer_clock_380__i0/CK->timer_clock_380__i0/Q
-                                          SLICE           CLK_TO_Q1_DELAY  1.391         3.466  2       
-timer_clock[0]                                            NET DELAY        2.075         5.541  1       
-i9_4_lut/C->i9_4_lut/Z                    SLICE           C0_TO_F0_DELAY   0.477         6.018  1       
+{timer_clock_405__i11/CK   timer_clock_405__i12/CK}->timer_clock_405__i11/Q
+                                          SLICE           CLK_TO_Q0_DELAY  1.391         3.466  2       
+timer_clock[11]                                           NET DELAY        2.075         5.541  1       
+i9_4_lut/B->i9_4_lut/Z                    SLICE           B0_TO_F0_DELAY   0.477         6.018  1       
 n24                                                       NET DELAY        2.075         8.093  1       
 i12_4_lut/B->i12_4_lut/Z                  SLICE           B0_TO_F0_DELAY   0.477         8.570  1       
 n27                                                       NET DELAY        2.075        10.645  1       
 i6_4_lut/B->i6_4_lut/Z                    SLICE           B0_TO_F0_DELAY   0.477        11.122  1       
-n15_adj_995                                               NET DELAY        2.075        13.197  1       
+n15_adj_976                                               NET DELAY        2.075        13.197  1       
 i8_4_lut/A->i8_4_lut/Z                    SLICE           A0_TO_F0_DELAY   0.450        13.647  9       
-n4208                                                     NET DELAY        2.075        15.722  1       
+n4221                                                     NET DELAY        2.075        15.722  1       
 
 
 Destination Clock Path
@@ -1194,35 +1194,35 @@ vga_driver/v_count__i0/CK->vga_driver/v_count__i0/Q
 pixel_row[0]                                              NET DELAY            2.075         7.766  1       
 vga_driver/add_28_add_5_1/B1->vga_driver/add_28_add_5_1/CO1
                                           SLICE           B1_TO_COUT1_DELAY    0.358         8.124  2       
-vga_driver/n7696                                          NET DELAY            2.075        10.199  1       
+vga_driver/n9889                                          NET DELAY            2.075        10.199  1       
 vga_driver/add_28_add_5_3/CI0->vga_driver/add_28_add_5_3/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        10.477  2       
-vga_driver/n15758                                         NET DELAY            0.000        10.477  1       
+vga_driver/n18025                                         NET DELAY            0.000        10.477  1       
 vga_driver/add_28_add_5_3/CI1->vga_driver/add_28_add_5_3/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        10.755  2       
-vga_driver/n7698                                          NET DELAY            2.075        12.830  1       
+vga_driver/n9891                                          NET DELAY            2.075        12.830  1       
 vga_driver/add_28_add_5_5/CI0->vga_driver/add_28_add_5_5/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        13.108  2       
-vga_driver/n15761                                         NET DELAY            0.000        13.108  1       
+vga_driver/n18028                                         NET DELAY            0.000        13.108  1       
 vga_driver/add_28_add_5_5/CI1->vga_driver/add_28_add_5_5/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        13.386  2       
-vga_driver/n7700                                          NET DELAY            2.075        15.461  1       
+vga_driver/n9893                                          NET DELAY            2.075        15.461  1       
 vga_driver/add_28_add_5_7/CI0->vga_driver/add_28_add_5_7/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        15.739  2       
-vga_driver/n15764                                         NET DELAY            0.000        15.739  1       
+vga_driver/n18031                                         NET DELAY            0.000        15.739  1       
 vga_driver/add_28_add_5_7/CI1->vga_driver/add_28_add_5_7/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        16.017  2       
-vga_driver/n7702                                          NET DELAY            2.075        18.092  1       
+vga_driver/n9895                                          NET DELAY            2.075        18.092  1       
 vga_driver/add_28_add_5_9/CI0->vga_driver/add_28_add_5_9/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        18.370  2       
-vga_driver/n15767                                         NET DELAY            0.000        18.370  1       
+vga_driver/n18034                                         NET DELAY            0.000        18.370  1       
 vga_driver/add_28_add_5_9/CI1->vga_driver/add_28_add_5_9/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        18.648  2       
-vga_driver/n7704                                          NET DELAY            2.075        20.723  1       
+vga_driver/n9897                                          NET DELAY            2.075        20.723  1       
 vga_driver/add_28_add_5_11/D0->vga_driver/add_28_add_5_11/S0
                                           SLICE           D0_TO_F0_DELAY       0.477        21.200  1       
 vga_driver/n57[9]                                         NET DELAY            2.075        23.275  1       
-vga_driver/i4521_2_lut/A->vga_driver/i4521_2_lut/Z
+vga_driver/i4553_2_lut/A->vga_driver/i4553_2_lut/Z
                                           SLICE           A0_TO_F0_DELAY       0.477        23.752  1       
 vga_driver/n38[9]                                         NET DELAY            2.075        25.827  1       
 
@@ -1289,32 +1289,32 @@ vga_driver/v_count__i0/CK->vga_driver/v_count__i0/Q
 pixel_row[0]                                              NET DELAY            2.075         7.766  1       
 vga_driver/add_28_add_5_1/B1->vga_driver/add_28_add_5_1/CO1
                                           SLICE           B1_TO_COUT1_DELAY    0.358         8.124  2       
-vga_driver/n7696                                          NET DELAY            2.075        10.199  1       
+vga_driver/n9889                                          NET DELAY            2.075        10.199  1       
 vga_driver/add_28_add_5_3/CI0->vga_driver/add_28_add_5_3/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        10.477  2       
-vga_driver/n15758                                         NET DELAY            0.000        10.477  1       
+vga_driver/n18025                                         NET DELAY            0.000        10.477  1       
 vga_driver/add_28_add_5_3/CI1->vga_driver/add_28_add_5_3/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        10.755  2       
-vga_driver/n7698                                          NET DELAY            2.075        12.830  1       
+vga_driver/n9891                                          NET DELAY            2.075        12.830  1       
 vga_driver/add_28_add_5_5/CI0->vga_driver/add_28_add_5_5/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        13.108  2       
-vga_driver/n15761                                         NET DELAY            0.000        13.108  1       
+vga_driver/n18028                                         NET DELAY            0.000        13.108  1       
 vga_driver/add_28_add_5_5/CI1->vga_driver/add_28_add_5_5/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        13.386  2       
-vga_driver/n7700                                          NET DELAY            2.075        15.461  1       
+vga_driver/n9893                                          NET DELAY            2.075        15.461  1       
 vga_driver/add_28_add_5_7/CI0->vga_driver/add_28_add_5_7/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        15.739  2       
-vga_driver/n15764                                         NET DELAY            0.000        15.739  1       
+vga_driver/n18031                                         NET DELAY            0.000        15.739  1       
 vga_driver/add_28_add_5_7/CI1->vga_driver/add_28_add_5_7/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        16.017  2       
-vga_driver/n7702                                          NET DELAY            2.075        18.092  1       
+vga_driver/n9895                                          NET DELAY            2.075        18.092  1       
 vga_driver/add_28_add_5_9/CI0->vga_driver/add_28_add_5_9/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        18.370  2       
-vga_driver/n15767                                         NET DELAY            0.000        18.370  1       
+vga_driver/n18034                                         NET DELAY            0.000        18.370  1       
 vga_driver/add_28_add_5_9/D1->vga_driver/add_28_add_5_9/S1
                                           SLICE           D1_TO_F1_DELAY       0.477        18.847  1       
 vga_driver/n57[8]                                         NET DELAY            2.075        20.922  1       
-vga_driver/i4523_2_lut/A->vga_driver/i4523_2_lut/Z
+vga_driver/i4555_2_lut/A->vga_driver/i4555_2_lut/Z
                                           SLICE           A0_TO_F0_DELAY       0.477        21.399  1       
 vga_driver/n38[8]                                         NET DELAY            2.075        23.474  1       
 
@@ -1335,8 +1335,8 @@ vga_clock                                                 NET DELAY      2.075  
 
  ++++Path 3  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : vga_driver/h_count_381__i0/Q
-Path End         : vga_driver/h_count_381__i9/D
+Path Begin       : vga_driver/h_count_406__i0/Q
+Path End         : vga_driver/h_count_406__i9/D
 Source Clock     : vga_clock
 Destination Clock: vga_clock
 Logic Level      : 11
@@ -1376,37 +1376,37 @@ vga_clock                                                 NET DELAY      2.075  
 Data path
 Name                                      Cell/Site Name  Delay Name           Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------------  -----  ------------  ------  
-vga_driver/h_count_381__i0/CK->vga_driver/h_count_381__i0/Q
-                                          SLICE           CLK_TO_Q1_DELAY      1.391         5.691  10      
+vga_driver/h_count_406__i0/CK->vga_driver/h_count_406__i0/Q
+                                          SLICE           CLK_TO_Q1_DELAY      1.391         5.691  11      
 pixel_col[0]                                              NET DELAY            2.075         7.766  1       
-vga_driver/h_count_381_add_4_1/C1->vga_driver/h_count_381_add_4_1/CO1
+vga_driver/h_count_406_add_4_1/C1->vga_driver/h_count_406_add_4_1/CO1
                                           SLICE           C1_TO_COUT1_DELAY    0.344         8.110  2       
-vga_driver/n7569                                          NET DELAY            2.075        10.185  1       
-vga_driver/h_count_381_add_4_3/CI0->vga_driver/h_count_381_add_4_3/CO0
+vga_driver/n9900                                          NET DELAY            2.075        10.185  1       
+vga_driver/h_count_406_add_4_3/CI0->vga_driver/h_count_406_add_4_3/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        10.463  2       
-vga_driver/n15830                                         NET DELAY            0.000        10.463  1       
-vga_driver/h_count_381_add_4_3/CI1->vga_driver/h_count_381_add_4_3/CO1
+vga_driver/n18070                                         NET DELAY            0.000        10.463  1       
+vga_driver/h_count_406_add_4_3/CI1->vga_driver/h_count_406_add_4_3/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        10.741  2       
-vga_driver/n7571                                          NET DELAY            2.075        12.816  1       
-vga_driver/h_count_381_add_4_5/CI0->vga_driver/h_count_381_add_4_5/CO0
+vga_driver/n9902                                          NET DELAY            2.075        12.816  1       
+vga_driver/h_count_406_add_4_5/CI0->vga_driver/h_count_406_add_4_5/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        13.094  2       
-vga_driver/n15833                                         NET DELAY            0.000        13.094  1       
-vga_driver/h_count_381_add_4_5/CI1->vga_driver/h_count_381_add_4_5/CO1
+vga_driver/n18073                                         NET DELAY            0.000        13.094  1       
+vga_driver/h_count_406_add_4_5/CI1->vga_driver/h_count_406_add_4_5/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        13.372  2       
-vga_driver/n7573                                          NET DELAY            2.075        15.447  1       
-vga_driver/h_count_381_add_4_7/CI0->vga_driver/h_count_381_add_4_7/CO0
+vga_driver/n9904                                          NET DELAY            2.075        15.447  1       
+vga_driver/h_count_406_add_4_7/CI0->vga_driver/h_count_406_add_4_7/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        15.725  2       
-vga_driver/n15836                                         NET DELAY            0.000        15.725  1       
-vga_driver/h_count_381_add_4_7/CI1->vga_driver/h_count_381_add_4_7/CO1
+vga_driver/n18076                                         NET DELAY            0.000        15.725  1       
+vga_driver/h_count_406_add_4_7/CI1->vga_driver/h_count_406_add_4_7/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        16.003  2       
-vga_driver/n7575                                          NET DELAY            2.075        18.078  1       
-vga_driver/h_count_381_add_4_9/CI0->vga_driver/h_count_381_add_4_9/CO0
+vga_driver/n9906                                          NET DELAY            2.075        18.078  1       
+vga_driver/h_count_406_add_4_9/CI0->vga_driver/h_count_406_add_4_9/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        18.356  2       
-vga_driver/n15839                                         NET DELAY            0.000        18.356  1       
-vga_driver/h_count_381_add_4_9/CI1->vga_driver/h_count_381_add_4_9/CO1
+vga_driver/n18079                                         NET DELAY            0.000        18.356  1       
+vga_driver/h_count_406_add_4_9/CI1->vga_driver/h_count_406_add_4_9/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        18.634  2       
-vga_driver/n7577                                          NET DELAY            2.075        20.709  1       
-vga_driver/h_count_381_add_4_11/D0->vga_driver/h_count_381_add_4_11/S0
+vga_driver/n9908                                          NET DELAY            2.075        20.709  1       
+vga_driver/h_count_406_add_4_11/D0->vga_driver/h_count_406_add_4_11/S0
                                           SLICE           D0_TO_F0_DELAY       0.477        21.186  1       
 vga_driver/n45[9]                                         NET DELAY            2.075        23.261  1       
 
@@ -1473,29 +1473,29 @@ vga_driver/v_count__i0/CK->vga_driver/v_count__i0/Q
 pixel_row[0]                                              NET DELAY            2.075         7.766  1       
 vga_driver/add_28_add_5_1/B1->vga_driver/add_28_add_5_1/CO1
                                           SLICE           B1_TO_COUT1_DELAY    0.358         8.124  2       
-vga_driver/n7696                                          NET DELAY            2.075        10.199  1       
+vga_driver/n9889                                          NET DELAY            2.075        10.199  1       
 vga_driver/add_28_add_5_3/CI0->vga_driver/add_28_add_5_3/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        10.477  2       
-vga_driver/n15758                                         NET DELAY            0.000        10.477  1       
+vga_driver/n18025                                         NET DELAY            0.000        10.477  1       
 vga_driver/add_28_add_5_3/CI1->vga_driver/add_28_add_5_3/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        10.755  2       
-vga_driver/n7698                                          NET DELAY            2.075        12.830  1       
+vga_driver/n9891                                          NET DELAY            2.075        12.830  1       
 vga_driver/add_28_add_5_5/CI0->vga_driver/add_28_add_5_5/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        13.108  2       
-vga_driver/n15761                                         NET DELAY            0.000        13.108  1       
+vga_driver/n18028                                         NET DELAY            0.000        13.108  1       
 vga_driver/add_28_add_5_5/CI1->vga_driver/add_28_add_5_5/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        13.386  2       
-vga_driver/n7700                                          NET DELAY            2.075        15.461  1       
+vga_driver/n9893                                          NET DELAY            2.075        15.461  1       
 vga_driver/add_28_add_5_7/CI0->vga_driver/add_28_add_5_7/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        15.739  2       
-vga_driver/n15764                                         NET DELAY            0.000        15.739  1       
+vga_driver/n18031                                         NET DELAY            0.000        15.739  1       
 vga_driver/add_28_add_5_7/CI1->vga_driver/add_28_add_5_7/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        16.017  2       
-vga_driver/n7702                                          NET DELAY            2.075        18.092  1       
+vga_driver/n9895                                          NET DELAY            2.075        18.092  1       
 vga_driver/add_28_add_5_9/D0->vga_driver/add_28_add_5_9/S0
                                           SLICE           D0_TO_F0_DELAY       0.477        18.569  1       
 vga_driver/n57[7]                                         NET DELAY            2.075        20.644  1       
-vga_driver/i4526_2_lut/A->vga_driver/i4526_2_lut/Z
+vga_driver/i4556_2_lut/A->vga_driver/i4556_2_lut/Z
                                           SLICE           A0_TO_F0_DELAY       0.477        21.121  1       
 vga_driver/n38[7]                                         NET DELAY            2.075        23.196  1       
 
@@ -1516,8 +1516,8 @@ vga_clock                                                 NET DELAY      2.075  
 
  ++++Path 5  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : vga_driver/h_count_381__i0/Q
-Path End         : vga_driver/h_count_381__i8/D
+Path Begin       : vga_driver/h_count_406__i0/Q
+Path End         : vga_driver/h_count_406__i8/D
 Source Clock     : vga_clock
 Destination Clock: vga_clock
 Logic Level      : 10
@@ -1557,34 +1557,34 @@ vga_clock                                                 NET DELAY      2.075  
 Data path
 Name                                      Cell/Site Name  Delay Name           Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------------  -----  ------------  ------  
-vga_driver/h_count_381__i0/CK->vga_driver/h_count_381__i0/Q
-                                          SLICE           CLK_TO_Q1_DELAY      1.391         5.691  10      
+vga_driver/h_count_406__i0/CK->vga_driver/h_count_406__i0/Q
+                                          SLICE           CLK_TO_Q1_DELAY      1.391         5.691  11      
 pixel_col[0]                                              NET DELAY            2.075         7.766  1       
-vga_driver/h_count_381_add_4_1/C1->vga_driver/h_count_381_add_4_1/CO1
+vga_driver/h_count_406_add_4_1/C1->vga_driver/h_count_406_add_4_1/CO1
                                           SLICE           C1_TO_COUT1_DELAY    0.344         8.110  2       
-vga_driver/n7569                                          NET DELAY            2.075        10.185  1       
-vga_driver/h_count_381_add_4_3/CI0->vga_driver/h_count_381_add_4_3/CO0
+vga_driver/n9900                                          NET DELAY            2.075        10.185  1       
+vga_driver/h_count_406_add_4_3/CI0->vga_driver/h_count_406_add_4_3/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        10.463  2       
-vga_driver/n15830                                         NET DELAY            0.000        10.463  1       
-vga_driver/h_count_381_add_4_3/CI1->vga_driver/h_count_381_add_4_3/CO1
+vga_driver/n18070                                         NET DELAY            0.000        10.463  1       
+vga_driver/h_count_406_add_4_3/CI1->vga_driver/h_count_406_add_4_3/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        10.741  2       
-vga_driver/n7571                                          NET DELAY            2.075        12.816  1       
-vga_driver/h_count_381_add_4_5/CI0->vga_driver/h_count_381_add_4_5/CO0
+vga_driver/n9902                                          NET DELAY            2.075        12.816  1       
+vga_driver/h_count_406_add_4_5/CI0->vga_driver/h_count_406_add_4_5/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        13.094  2       
-vga_driver/n15833                                         NET DELAY            0.000        13.094  1       
-vga_driver/h_count_381_add_4_5/CI1->vga_driver/h_count_381_add_4_5/CO1
+vga_driver/n18073                                         NET DELAY            0.000        13.094  1       
+vga_driver/h_count_406_add_4_5/CI1->vga_driver/h_count_406_add_4_5/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        13.372  2       
-vga_driver/n7573                                          NET DELAY            2.075        15.447  1       
-vga_driver/h_count_381_add_4_7/CI0->vga_driver/h_count_381_add_4_7/CO0
+vga_driver/n9904                                          NET DELAY            2.075        15.447  1       
+vga_driver/h_count_406_add_4_7/CI0->vga_driver/h_count_406_add_4_7/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        15.725  2       
-vga_driver/n15836                                         NET DELAY            0.000        15.725  1       
-vga_driver/h_count_381_add_4_7/CI1->vga_driver/h_count_381_add_4_7/CO1
+vga_driver/n18076                                         NET DELAY            0.000        15.725  1       
+vga_driver/h_count_406_add_4_7/CI1->vga_driver/h_count_406_add_4_7/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        16.003  2       
-vga_driver/n7575                                          NET DELAY            2.075        18.078  1       
-vga_driver/h_count_381_add_4_9/CI0->vga_driver/h_count_381_add_4_9/CO0
+vga_driver/n9906                                          NET DELAY            2.075        18.078  1       
+vga_driver/h_count_406_add_4_9/CI0->vga_driver/h_count_406_add_4_9/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        18.356  2       
-vga_driver/n15839                                         NET DELAY            0.000        18.356  1       
-vga_driver/h_count_381_add_4_9/D1->vga_driver/h_count_381_add_4_9/S1
+vga_driver/n18079                                         NET DELAY            0.000        18.356  1       
+vga_driver/h_count_406_add_4_9/D1->vga_driver/h_count_406_add_4_9/S1
                                           SLICE           D1_TO_F1_DELAY       0.477        18.833  1       
 vga_driver/n45[8]                                         NET DELAY            2.075        20.908  1       
 
@@ -1651,27 +1651,27 @@ vga_driver/v_count__i0/CK->vga_driver/v_count__i0/Q
 pixel_row[0]                                              NET DELAY            2.075         7.766  1       
 vga_driver/add_28_add_5_1/B1->vga_driver/add_28_add_5_1/CO1
                                           SLICE           B1_TO_COUT1_DELAY    0.358         8.124  2       
-vga_driver/n7696                                          NET DELAY            2.075        10.199  1       
+vga_driver/n9889                                          NET DELAY            2.075        10.199  1       
 vga_driver/add_28_add_5_3/CI0->vga_driver/add_28_add_5_3/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        10.477  2       
-vga_driver/n15758                                         NET DELAY            0.000        10.477  1       
+vga_driver/n18025                                         NET DELAY            0.000        10.477  1       
 vga_driver/add_28_add_5_3/CI1->vga_driver/add_28_add_5_3/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        10.755  2       
-vga_driver/n7698                                          NET DELAY            2.075        12.830  1       
+vga_driver/n9891                                          NET DELAY            2.075        12.830  1       
 vga_driver/add_28_add_5_5/CI0->vga_driver/add_28_add_5_5/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        13.108  2       
-vga_driver/n15761                                         NET DELAY            0.000        13.108  1       
+vga_driver/n18028                                         NET DELAY            0.000        13.108  1       
 vga_driver/add_28_add_5_5/CI1->vga_driver/add_28_add_5_5/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        13.386  2       
-vga_driver/n7700                                          NET DELAY            2.075        15.461  1       
+vga_driver/n9893                                          NET DELAY            2.075        15.461  1       
 vga_driver/add_28_add_5_7/CI0->vga_driver/add_28_add_5_7/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        15.739  2       
-vga_driver/n15764                                         NET DELAY            0.000        15.739  1       
+vga_driver/n18031                                         NET DELAY            0.000        15.739  1       
 vga_driver/add_28_add_5_7/D1->vga_driver/add_28_add_5_7/S1
                                           SLICE           D1_TO_F1_DELAY       0.477        16.216  1       
 vga_driver/n57[6]                                         NET DELAY            2.075        18.291  1       
-vga_driver/i1_2_lut_adj_108/B->vga_driver/i1_2_lut_adj_108/Z
-                                          SLICE           B0_TO_F0_DELAY       0.477        18.768  1       
+vga_driver/i4557_2_lut/A->vga_driver/i4557_2_lut/Z
+                                          SLICE           A0_TO_F0_DELAY       0.477        18.768  1       
 vga_driver/n38[6]                                         NET DELAY            2.075        20.843  1       
 
 
@@ -1691,8 +1691,8 @@ vga_clock                                                 NET DELAY      2.075  
 
  ++++Path 7  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : vga_driver/h_count_381__i0/Q
-Path End         : vga_driver/h_count_381__i7/D
+Path Begin       : vga_driver/h_count_406__i0/Q
+Path End         : vga_driver/h_count_406__i7/D
 Source Clock     : vga_clock
 Destination Clock: vga_clock
 Logic Level      : 9
@@ -1732,31 +1732,31 @@ vga_clock                                                 NET DELAY      2.075  
 Data path
 Name                                      Cell/Site Name  Delay Name           Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------------  -----  ------------  ------  
-vga_driver/h_count_381__i0/CK->vga_driver/h_count_381__i0/Q
-                                          SLICE           CLK_TO_Q1_DELAY      1.391         5.691  10      
+vga_driver/h_count_406__i0/CK->vga_driver/h_count_406__i0/Q
+                                          SLICE           CLK_TO_Q1_DELAY      1.391         5.691  11      
 pixel_col[0]                                              NET DELAY            2.075         7.766  1       
-vga_driver/h_count_381_add_4_1/C1->vga_driver/h_count_381_add_4_1/CO1
+vga_driver/h_count_406_add_4_1/C1->vga_driver/h_count_406_add_4_1/CO1
                                           SLICE           C1_TO_COUT1_DELAY    0.344         8.110  2       
-vga_driver/n7569                                          NET DELAY            2.075        10.185  1       
-vga_driver/h_count_381_add_4_3/CI0->vga_driver/h_count_381_add_4_3/CO0
+vga_driver/n9900                                          NET DELAY            2.075        10.185  1       
+vga_driver/h_count_406_add_4_3/CI0->vga_driver/h_count_406_add_4_3/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        10.463  2       
-vga_driver/n15830                                         NET DELAY            0.000        10.463  1       
-vga_driver/h_count_381_add_4_3/CI1->vga_driver/h_count_381_add_4_3/CO1
+vga_driver/n18070                                         NET DELAY            0.000        10.463  1       
+vga_driver/h_count_406_add_4_3/CI1->vga_driver/h_count_406_add_4_3/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        10.741  2       
-vga_driver/n7571                                          NET DELAY            2.075        12.816  1       
-vga_driver/h_count_381_add_4_5/CI0->vga_driver/h_count_381_add_4_5/CO0
+vga_driver/n9902                                          NET DELAY            2.075        12.816  1       
+vga_driver/h_count_406_add_4_5/CI0->vga_driver/h_count_406_add_4_5/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        13.094  2       
-vga_driver/n15833                                         NET DELAY            0.000        13.094  1       
-vga_driver/h_count_381_add_4_5/CI1->vga_driver/h_count_381_add_4_5/CO1
+vga_driver/n18073                                         NET DELAY            0.000        13.094  1       
+vga_driver/h_count_406_add_4_5/CI1->vga_driver/h_count_406_add_4_5/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        13.372  2       
-vga_driver/n7573                                          NET DELAY            2.075        15.447  1       
-vga_driver/h_count_381_add_4_7/CI0->vga_driver/h_count_381_add_4_7/CO0
+vga_driver/n9904                                          NET DELAY            2.075        15.447  1       
+vga_driver/h_count_406_add_4_7/CI0->vga_driver/h_count_406_add_4_7/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        15.725  2       
-vga_driver/n15836                                         NET DELAY            0.000        15.725  1       
-vga_driver/h_count_381_add_4_7/CI1->vga_driver/h_count_381_add_4_7/CO1
+vga_driver/n18076                                         NET DELAY            0.000        15.725  1       
+vga_driver/h_count_406_add_4_7/CI1->vga_driver/h_count_406_add_4_7/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        16.003  2       
-vga_driver/n7575                                          NET DELAY            2.075        18.078  1       
-vga_driver/h_count_381_add_4_9/D0->vga_driver/h_count_381_add_4_9/S0
+vga_driver/n9906                                          NET DELAY            2.075        18.078  1       
+vga_driver/h_count_406_add_4_9/D0->vga_driver/h_count_406_add_4_9/S0
                                           SLICE           D0_TO_F0_DELAY       0.477        18.555  1       
 vga_driver/n45[7]                                         NET DELAY            2.075        20.630  1       
 
@@ -1823,24 +1823,24 @@ vga_driver/v_count__i0/CK->vga_driver/v_count__i0/Q
 pixel_row[0]                                              NET DELAY            2.075         7.766  1       
 vga_driver/add_28_add_5_1/B1->vga_driver/add_28_add_5_1/CO1
                                           SLICE           B1_TO_COUT1_DELAY    0.358         8.124  2       
-vga_driver/n7696                                          NET DELAY            2.075        10.199  1       
+vga_driver/n9889                                          NET DELAY            2.075        10.199  1       
 vga_driver/add_28_add_5_3/CI0->vga_driver/add_28_add_5_3/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        10.477  2       
-vga_driver/n15758                                         NET DELAY            0.000        10.477  1       
+vga_driver/n18025                                         NET DELAY            0.000        10.477  1       
 vga_driver/add_28_add_5_3/CI1->vga_driver/add_28_add_5_3/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        10.755  2       
-vga_driver/n7698                                          NET DELAY            2.075        12.830  1       
+vga_driver/n9891                                          NET DELAY            2.075        12.830  1       
 vga_driver/add_28_add_5_5/CI0->vga_driver/add_28_add_5_5/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        13.108  2       
-vga_driver/n15761                                         NET DELAY            0.000        13.108  1       
+vga_driver/n18028                                         NET DELAY            0.000        13.108  1       
 vga_driver/add_28_add_5_5/CI1->vga_driver/add_28_add_5_5/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        13.386  2       
-vga_driver/n7700                                          NET DELAY            2.075        15.461  1       
+vga_driver/n9893                                          NET DELAY            2.075        15.461  1       
 vga_driver/add_28_add_5_7/D0->vga_driver/add_28_add_5_7/S0
                                           SLICE           D0_TO_F0_DELAY       0.477        15.938  1       
 vga_driver/n57[5]                                         NET DELAY            2.075        18.013  1       
-vga_driver/i1_2_lut_adj_109/B->vga_driver/i1_2_lut_adj_109/Z
-                                          SLICE           B0_TO_F0_DELAY       0.477        18.490  1       
+vga_driver/i4558_2_lut/A->vga_driver/i4558_2_lut/Z
+                                          SLICE           A0_TO_F0_DELAY       0.477        18.490  1       
 vga_driver/n38[5]                                         NET DELAY            2.075        20.565  1       
 
 
@@ -1860,8 +1860,8 @@ vga_clock                                                 NET DELAY      2.075  
 
  ++++Path 9  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : vga_driver/h_count_381__i0/Q
-Path End         : vga_driver/h_count_381__i6/D
+Path Begin       : vga_driver/h_count_406__i0/Q
+Path End         : vga_driver/h_count_406__i6/D
 Source Clock     : vga_clock
 Destination Clock: vga_clock
 Logic Level      : 8
@@ -1901,28 +1901,28 @@ vga_clock                                                 NET DELAY      2.075  
 Data path
 Name                                      Cell/Site Name  Delay Name           Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------------  -----  ------------  ------  
-vga_driver/h_count_381__i0/CK->vga_driver/h_count_381__i0/Q
-                                          SLICE           CLK_TO_Q1_DELAY      1.391         5.691  10      
+vga_driver/h_count_406__i0/CK->vga_driver/h_count_406__i0/Q
+                                          SLICE           CLK_TO_Q1_DELAY      1.391         5.691  11      
 pixel_col[0]                                              NET DELAY            2.075         7.766  1       
-vga_driver/h_count_381_add_4_1/C1->vga_driver/h_count_381_add_4_1/CO1
+vga_driver/h_count_406_add_4_1/C1->vga_driver/h_count_406_add_4_1/CO1
                                           SLICE           C1_TO_COUT1_DELAY    0.344         8.110  2       
-vga_driver/n7569                                          NET DELAY            2.075        10.185  1       
-vga_driver/h_count_381_add_4_3/CI0->vga_driver/h_count_381_add_4_3/CO0
+vga_driver/n9900                                          NET DELAY            2.075        10.185  1       
+vga_driver/h_count_406_add_4_3/CI0->vga_driver/h_count_406_add_4_3/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        10.463  2       
-vga_driver/n15830                                         NET DELAY            0.000        10.463  1       
-vga_driver/h_count_381_add_4_3/CI1->vga_driver/h_count_381_add_4_3/CO1
+vga_driver/n18070                                         NET DELAY            0.000        10.463  1       
+vga_driver/h_count_406_add_4_3/CI1->vga_driver/h_count_406_add_4_3/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        10.741  2       
-vga_driver/n7571                                          NET DELAY            2.075        12.816  1       
-vga_driver/h_count_381_add_4_5/CI0->vga_driver/h_count_381_add_4_5/CO0
+vga_driver/n9902                                          NET DELAY            2.075        12.816  1       
+vga_driver/h_count_406_add_4_5/CI0->vga_driver/h_count_406_add_4_5/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        13.094  2       
-vga_driver/n15833                                         NET DELAY            0.000        13.094  1       
-vga_driver/h_count_381_add_4_5/CI1->vga_driver/h_count_381_add_4_5/CO1
+vga_driver/n18073                                         NET DELAY            0.000        13.094  1       
+vga_driver/h_count_406_add_4_5/CI1->vga_driver/h_count_406_add_4_5/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        13.372  2       
-vga_driver/n7573                                          NET DELAY            2.075        15.447  1       
-vga_driver/h_count_381_add_4_7/CI0->vga_driver/h_count_381_add_4_7/CO0
+vga_driver/n9904                                          NET DELAY            2.075        15.447  1       
+vga_driver/h_count_406_add_4_7/CI0->vga_driver/h_count_406_add_4_7/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        15.725  2       
-vga_driver/n15836                                         NET DELAY            0.000        15.725  1       
-vga_driver/h_count_381_add_4_7/D1->vga_driver/h_count_381_add_4_7/S1
+vga_driver/n18076                                         NET DELAY            0.000        15.725  1       
+vga_driver/h_count_406_add_4_7/D1->vga_driver/h_count_406_add_4_7/S1
                                           SLICE           D1_TO_F1_DELAY       0.477        16.202  1       
 vga_driver/n45[6]                                         NET DELAY            2.075        18.277  1       
 
@@ -1989,21 +1989,21 @@ vga_driver/v_count__i0/CK->vga_driver/v_count__i0/Q
 pixel_row[0]                                              NET DELAY            2.075         7.766  1       
 vga_driver/add_28_add_5_1/B1->vga_driver/add_28_add_5_1/CO1
                                           SLICE           B1_TO_COUT1_DELAY    0.358         8.124  2       
-vga_driver/n7696                                          NET DELAY            2.075        10.199  1       
+vga_driver/n9889                                          NET DELAY            2.075        10.199  1       
 vga_driver/add_28_add_5_3/CI0->vga_driver/add_28_add_5_3/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        10.477  2       
-vga_driver/n15758                                         NET DELAY            0.000        10.477  1       
+vga_driver/n18025                                         NET DELAY            0.000        10.477  1       
 vga_driver/add_28_add_5_3/CI1->vga_driver/add_28_add_5_3/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        10.755  2       
-vga_driver/n7698                                          NET DELAY            2.075        12.830  1       
+vga_driver/n9891                                          NET DELAY            2.075        12.830  1       
 vga_driver/add_28_add_5_5/CI0->vga_driver/add_28_add_5_5/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        13.108  2       
-vga_driver/n15761                                         NET DELAY            0.000        13.108  1       
+vga_driver/n18028                                         NET DELAY            0.000        13.108  1       
 vga_driver/add_28_add_5_5/D1->vga_driver/add_28_add_5_5/S1
                                           SLICE           D1_TO_F1_DELAY       0.477        13.585  1       
 vga_driver/n57[4]                                         NET DELAY            2.075        15.660  1       
-vga_driver/i1_2_lut_adj_110/B->vga_driver/i1_2_lut_adj_110/Z
-                                          SLICE           B0_TO_F0_DELAY       0.477        16.137  1       
+vga_driver/i4559_2_lut/A->vga_driver/i4559_2_lut/Z
+                                          SLICE           A0_TO_F0_DELAY       0.477        16.137  1       
 vga_driver/n38[4]                                         NET DELAY            2.075        18.212  1       
 
 
@@ -2036,8 +2036,8 @@ vga_clock                                                 NET DELAY      2.075  
 
  ++++Path 1  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : timer_clock_380__i0/Q
-Path End         : timer_clock_380__i0/D
+Path Begin       : timer_clock_405__i0/Q
+Path End         : timer_clock_405__i0/D
 Source Clock     : clk
 Destination Clock: clk
 Logic Level      : 2
@@ -2072,10 +2072,10 @@ clk                                                       NET DELAY      2.075  
 Data path
 Name                                      Cell/Site Name  Delay Name       Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  ---------------  -----  ------------  ------  
-timer_clock_380__i0/CK->timer_clock_380__i0/Q
+timer_clock_405__i0/CK->timer_clock_405__i0/Q
                                           SLICE           CLK_TO_Q1_DELAY  1.391         3.466  2       
 timer_clock[0]                                            NET DELAY        2.075         5.541  1       
-timer_clock_380_add_4_1/C1->timer_clock_380_add_4_1/S1
+timer_clock_405_add_4_1/C1->timer_clock_405_add_4_1/S1
                                           SLICE           C1_TO_F1_DELAY   0.450         5.991  1       
 n80                                                       NET DELAY        2.075         8.066  1       
 
@@ -2091,8 +2091,8 @@ clk                                                       NET DELAY      2.075  
 
  ++++Path 2  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : timer_clock_380__i1/Q
-Path End         : timer_clock_380__i1/D
+Path Begin       : timer_clock_405__i1/Q
+Path End         : timer_clock_405__i1/D
 Source Clock     : clk
 Destination Clock: clk
 Logic Level      : 2
@@ -2127,10 +2127,10 @@ clk                                                       NET DELAY      2.075  
 Data path
 Name                                      Cell/Site Name  Delay Name       Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  ---------------  -----  ------------  ------  
-{timer_clock_380__i1/CK   timer_clock_380__i2/CK}->timer_clock_380__i1/Q
+{timer_clock_405__i1/CK   timer_clock_405__i2/CK}->timer_clock_405__i1/Q
                                           SLICE           CLK_TO_Q0_DELAY  1.391         3.466  2       
 timer_clock[1]                                            NET DELAY        2.075         5.541  1       
-timer_clock_380_add_4_3/C0->timer_clock_380_add_4_3/S0
+timer_clock_405_add_4_3/C0->timer_clock_405_add_4_3/S0
                                           SLICE           C0_TO_F0_DELAY   0.450         5.991  1       
 n79                                                       NET DELAY        2.075         8.066  1       
 
@@ -2146,8 +2146,8 @@ clk                                                       NET DELAY      2.075  
 
  ++++Path 3  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : timer_clock_380__i2/Q
-Path End         : timer_clock_380__i2/D
+Path Begin       : timer_clock_405__i2/Q
+Path End         : timer_clock_405__i2/D
 Source Clock     : clk
 Destination Clock: clk
 Logic Level      : 2
@@ -2182,10 +2182,10 @@ clk                                                       NET DELAY      2.075  
 Data path
 Name                                      Cell/Site Name  Delay Name       Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  ---------------  -----  ------------  ------  
-{timer_clock_380__i1/CK   timer_clock_380__i2/CK}->timer_clock_380__i2/Q
+{timer_clock_405__i1/CK   timer_clock_405__i2/CK}->timer_clock_405__i2/Q
                                           SLICE           CLK_TO_Q1_DELAY  1.391         3.466  2       
 timer_clock[2]                                            NET DELAY        2.075         5.541  1       
-timer_clock_380_add_4_3/C1->timer_clock_380_add_4_3/S1
+timer_clock_405_add_4_3/C1->timer_clock_405_add_4_3/S1
                                           SLICE           C1_TO_F1_DELAY   0.450         5.991  1       
 n78                                                       NET DELAY        2.075         8.066  1       
 
@@ -2201,8 +2201,8 @@ clk                                                       NET DELAY      2.075  
 
  ++++Path 4  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : timer_clock_380__i3/Q
-Path End         : timer_clock_380__i3/D
+Path Begin       : timer_clock_405__i3/Q
+Path End         : timer_clock_405__i3/D
 Source Clock     : clk
 Destination Clock: clk
 Logic Level      : 2
@@ -2237,10 +2237,10 @@ clk                                                       NET DELAY      2.075  
 Data path
 Name                                      Cell/Site Name  Delay Name       Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  ---------------  -----  ------------  ------  
-{timer_clock_380__i3/CK   timer_clock_380__i4/CK}->timer_clock_380__i3/Q
+{timer_clock_405__i3/CK   timer_clock_405__i4/CK}->timer_clock_405__i3/Q
                                           SLICE           CLK_TO_Q0_DELAY  1.391         3.466  2       
 timer_clock[3]                                            NET DELAY        2.075         5.541  1       
-timer_clock_380_add_4_5/C0->timer_clock_380_add_4_5/S0
+timer_clock_405_add_4_5/C0->timer_clock_405_add_4_5/S0
                                           SLICE           C0_TO_F0_DELAY   0.450         5.991  1       
 n77                                                       NET DELAY        2.075         8.066  1       
 
@@ -2256,8 +2256,8 @@ clk                                                       NET DELAY      2.075  
 
  ++++Path 5  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : timer_clock_380__i4/Q
-Path End         : timer_clock_380__i4/D
+Path Begin       : timer_clock_405__i4/Q
+Path End         : timer_clock_405__i4/D
 Source Clock     : clk
 Destination Clock: clk
 Logic Level      : 2
@@ -2292,10 +2292,10 @@ clk                                                       NET DELAY      2.075  
 Data path
 Name                                      Cell/Site Name  Delay Name       Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  ---------------  -----  ------------  ------  
-{timer_clock_380__i3/CK   timer_clock_380__i4/CK}->timer_clock_380__i4/Q
+{timer_clock_405__i3/CK   timer_clock_405__i4/CK}->timer_clock_405__i4/Q
                                           SLICE           CLK_TO_Q1_DELAY  1.391         3.466  2       
 timer_clock[4]                                            NET DELAY        2.075         5.541  1       
-timer_clock_380_add_4_5/C1->timer_clock_380_add_4_5/S1
+timer_clock_405_add_4_5/C1->timer_clock_405_add_4_5/S1
                                           SLICE           C1_TO_F1_DELAY   0.450         5.991  1       
 n76                                                       NET DELAY        2.075         8.066  1       
 
@@ -2311,8 +2311,8 @@ clk                                                       NET DELAY      2.075  
 
  ++++Path 6  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : timer_clock_380__i5/Q
-Path End         : timer_clock_380__i5/D
+Path Begin       : timer_clock_405__i5/Q
+Path End         : timer_clock_405__i5/D
 Source Clock     : clk
 Destination Clock: clk
 Logic Level      : 2
@@ -2347,10 +2347,10 @@ clk                                                       NET DELAY      2.075  
 Data path
 Name                                      Cell/Site Name  Delay Name       Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  ---------------  -----  ------------  ------  
-{timer_clock_380__i5/CK   timer_clock_380__i6/CK}->timer_clock_380__i5/Q
+{timer_clock_405__i5/CK   timer_clock_405__i6/CK}->timer_clock_405__i5/Q
                                           SLICE           CLK_TO_Q0_DELAY  1.391         3.466  2       
 timer_clock[5]                                            NET DELAY        2.075         5.541  1       
-timer_clock_380_add_4_7/C0->timer_clock_380_add_4_7/S0
+timer_clock_405_add_4_7/C0->timer_clock_405_add_4_7/S0
                                           SLICE           C0_TO_F0_DELAY   0.450         5.991  1       
 n75                                                       NET DELAY        2.075         8.066  1       
 
@@ -2366,8 +2366,8 @@ clk                                                       NET DELAY      2.075  
 
  ++++Path 7  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : timer_clock_380__i6/Q
-Path End         : timer_clock_380__i6/D
+Path Begin       : timer_clock_405__i6/Q
+Path End         : timer_clock_405__i6/D
 Source Clock     : clk
 Destination Clock: clk
 Logic Level      : 2
@@ -2402,10 +2402,10 @@ clk                                                       NET DELAY      2.075  
 Data path
 Name                                      Cell/Site Name  Delay Name       Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  ---------------  -----  ------------  ------  
-{timer_clock_380__i5/CK   timer_clock_380__i6/CK}->timer_clock_380__i6/Q
+{timer_clock_405__i5/CK   timer_clock_405__i6/CK}->timer_clock_405__i6/Q
                                           SLICE           CLK_TO_Q1_DELAY  1.391         3.466  2       
 timer_clock[6]                                            NET DELAY        2.075         5.541  1       
-timer_clock_380_add_4_7/C1->timer_clock_380_add_4_7/S1
+timer_clock_405_add_4_7/C1->timer_clock_405_add_4_7/S1
                                           SLICE           C1_TO_F1_DELAY   0.450         5.991  1       
 n74                                                       NET DELAY        2.075         8.066  1       
 
@@ -2460,7 +2460,7 @@ Name                                      Cell/Site Name  Delay Name       Delay
 tick_c/CK->tick_c/Q                       SLICE           CLK_TO_Q0_DELAY  1.391         3.466  6       
 tick                                                      NET DELAY        2.075         5.541  1       
 i1_2_lut/A->i1_2_lut/Z                    SLICE           A0_TO_F0_DELAY   0.450         5.991  1       
-n3877                                                     NET DELAY        2.075         8.066  1       
+n3900                                                     NET DELAY        2.075         8.066  1       
 
 
 Destination Clock Path
@@ -2474,8 +2474,8 @@ clk                                                       NET DELAY      2.075  
 
  ++++Path 9  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : timer_clock_380__i7/Q
-Path End         : timer_clock_380__i7/D
+Path Begin       : timer_clock_405__i7/Q
+Path End         : timer_clock_405__i7/D
 Source Clock     : clk
 Destination Clock: clk
 Logic Level      : 2
@@ -2510,10 +2510,10 @@ clk                                                       NET DELAY      2.075  
 Data path
 Name                                      Cell/Site Name  Delay Name       Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  ---------------  -----  ------------  ------  
-{timer_clock_380__i7/CK   timer_clock_380__i8/CK}->timer_clock_380__i7/Q
+{timer_clock_405__i7/CK   timer_clock_405__i8/CK}->timer_clock_405__i7/Q
                                           SLICE           CLK_TO_Q0_DELAY  1.391         3.466  2       
 timer_clock[7]                                            NET DELAY        2.075         5.541  1       
-timer_clock_380_add_4_9/C0->timer_clock_380_add_4_9/S0
+timer_clock_405_add_4_9/C0->timer_clock_405_add_4_9/S0
                                           SLICE           C0_TO_F0_DELAY   0.450         5.991  1       
 n73                                                       NET DELAY        2.075         8.066  1       
 
@@ -2529,8 +2529,8 @@ clk                                                       NET DELAY      2.075  
 
  ++++Path 10  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : timer_clock_380__i8/Q
-Path End         : timer_clock_380__i8/D
+Path Begin       : timer_clock_405__i8/Q
+Path End         : timer_clock_405__i8/D
 Source Clock     : clk
 Destination Clock: clk
 Logic Level      : 2
@@ -2565,10 +2565,10 @@ clk                                                       NET DELAY      2.075  
 Data path
 Name                                      Cell/Site Name  Delay Name       Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  ---------------  -----  ------------  ------  
-{timer_clock_380__i7/CK   timer_clock_380__i8/CK}->timer_clock_380__i8/Q
+{timer_clock_405__i7/CK   timer_clock_405__i8/CK}->timer_clock_405__i8/Q
                                           SLICE           CLK_TO_Q1_DELAY  1.391         3.466  2       
 timer_clock[8]                                            NET DELAY        2.075         5.541  1       
-timer_clock_380_add_4_9/C1->timer_clock_380_add_4_9/S1
+timer_clock_405_add_4_9/C1->timer_clock_405_add_4_9/S1
                                           SLICE           C1_TO_F1_DELAY   0.450         5.991  1       
 n72                                                       NET DELAY        2.075         8.066  1       
 
@@ -2595,8 +2595,8 @@ clk                                                       NET DELAY      2.075  
 
  ++++Path 1  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : vga_driver/h_count_381__i0/Q
-Path End         : vga_driver/h_count_381__i0/D
+Path Begin       : vga_driver/h_count_406__i0/Q
+Path End         : vga_driver/h_count_406__i0/D
 Source Clock     : vga_clock
 Destination Clock: vga_clock
 Logic Level      : 2
@@ -2636,10 +2636,10 @@ vga_clock                                                 NET DELAY      2.075  
 Data path
 Name                                      Cell/Site Name  Delay Name       Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  ---------------  -----  ------------  ------  
-vga_driver/h_count_381__i0/CK->vga_driver/h_count_381__i0/Q
-                                          SLICE           CLK_TO_Q1_DELAY  1.391         5.691  10      
+vga_driver/h_count_406__i0/CK->vga_driver/h_count_406__i0/Q
+                                          SLICE           CLK_TO_Q1_DELAY  1.391         5.691  11      
 pixel_col[0]                                              NET DELAY        2.075         7.766  1       
-vga_driver/h_count_381_add_4_1/C1->vga_driver/h_count_381_add_4_1/S1
+vga_driver/h_count_406_add_4_1/C1->vga_driver/h_count_406_add_4_1/S1
                                           SLICE           C1_TO_F1_DELAY   0.450         8.216  1       
 vga_driver/n45[0]                                         NET DELAY        2.075        10.291  1       
 
@@ -2660,8 +2660,8 @@ vga_clock                                                 NET DELAY      2.075  
 
  ++++Path 2  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : vga_driver/h_count_381__i1/Q
-Path End         : vga_driver/h_count_381__i1/D
+Path Begin       : vga_driver/h_count_406__i1/Q
+Path End         : vga_driver/h_count_406__i1/D
 Source Clock     : vga_clock
 Destination Clock: vga_clock
 Logic Level      : 2
@@ -2701,10 +2701,10 @@ vga_clock                                                 NET DELAY      2.075  
 Data path
 Name                                      Cell/Site Name  Delay Name       Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  ---------------  -----  ------------  ------  
-{vga_driver/h_count_381__i1/CK   vga_driver/h_count_381__i2/CK}->vga_driver/h_count_381__i1/Q
-                                          SLICE           CLK_TO_Q0_DELAY  1.391         5.691  10      
+{vga_driver/h_count_406__i1/CK   vga_driver/h_count_406__i2/CK}->vga_driver/h_count_406__i1/Q
+                                          SLICE           CLK_TO_Q0_DELAY  1.391         5.691  11      
 pixel_col[1]                                              NET DELAY        2.075         7.766  1       
-vga_driver/h_count_381_add_4_3/C0->vga_driver/h_count_381_add_4_3/S0
+vga_driver/h_count_406_add_4_3/C0->vga_driver/h_count_406_add_4_3/S0
                                           SLICE           C0_TO_F0_DELAY   0.450         8.216  1       
 vga_driver/n45[1]                                         NET DELAY        2.075        10.291  1       
 
@@ -2725,8 +2725,8 @@ vga_clock                                                 NET DELAY      2.075  
 
  ++++Path 3  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : vga_driver/h_count_381__i2/Q
-Path End         : vga_driver/h_count_381__i2/D
+Path Begin       : vga_driver/h_count_406__i2/Q
+Path End         : vga_driver/h_count_406__i2/D
 Source Clock     : vga_clock
 Destination Clock: vga_clock
 Logic Level      : 2
@@ -2766,10 +2766,10 @@ vga_clock                                                 NET DELAY      2.075  
 Data path
 Name                                      Cell/Site Name  Delay Name       Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  ---------------  -----  ------------  ------  
-{vga_driver/h_count_381__i1/CK   vga_driver/h_count_381__i2/CK}->vga_driver/h_count_381__i2/Q
+{vga_driver/h_count_406__i1/CK   vga_driver/h_count_406__i2/CK}->vga_driver/h_count_406__i2/Q
                                           SLICE           CLK_TO_Q1_DELAY  1.391         5.691  14      
 pixel_col[2]                                              NET DELAY        2.075         7.766  1       
-vga_driver/h_count_381_add_4_3/C1->vga_driver/h_count_381_add_4_3/S1
+vga_driver/h_count_406_add_4_3/C1->vga_driver/h_count_406_add_4_3/S1
                                           SLICE           C1_TO_F1_DELAY   0.450         8.216  1       
 vga_driver/n45[2]                                         NET DELAY        2.075        10.291  1       
 
@@ -2790,8 +2790,8 @@ vga_clock                                                 NET DELAY      2.075  
 
  ++++Path 4  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : vga_driver/h_count_381__i3/Q
-Path End         : vga_driver/h_count_381__i3/D
+Path Begin       : vga_driver/h_count_406__i3/Q
+Path End         : vga_driver/h_count_406__i3/D
 Source Clock     : vga_clock
 Destination Clock: vga_clock
 Logic Level      : 2
@@ -2831,10 +2831,10 @@ vga_clock                                                 NET DELAY      2.075  
 Data path
 Name                                      Cell/Site Name  Delay Name       Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  ---------------  -----  ------------  ------  
-{vga_driver/h_count_381__i3/CK   vga_driver/h_count_381__i4/CK}->vga_driver/h_count_381__i3/Q
-                                          SLICE           CLK_TO_Q0_DELAY  1.391         5.691  15      
+{vga_driver/h_count_406__i3/CK   vga_driver/h_count_406__i4/CK}->vga_driver/h_count_406__i3/Q
+                                          SLICE           CLK_TO_Q0_DELAY  1.391         5.691  14      
 pixel_col[3]                                              NET DELAY        2.075         7.766  1       
-vga_driver/h_count_381_add_4_5/C0->vga_driver/h_count_381_add_4_5/S0
+vga_driver/h_count_406_add_4_5/C0->vga_driver/h_count_406_add_4_5/S0
                                           SLICE           C0_TO_F0_DELAY   0.450         8.216  1       
 vga_driver/n45[3]                                         NET DELAY        2.075        10.291  1       
 
@@ -2855,8 +2855,8 @@ vga_clock                                                 NET DELAY      2.075  
 
  ++++Path 5  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : vga_driver/h_count_381__i5/Q
-Path End         : vga_driver/v_count__i1/SP
+Path Begin       : vga_driver/h_count_406__i4/Q
+Path End         : vga_driver/h_count_406__i4/D
 Source Clock     : vga_clock
 Destination Clock: vga_clock
 Logic Level      : 2
@@ -2896,12 +2896,12 @@ vga_clock                                                 NET DELAY      2.075  
 Data path
 Name                                      Cell/Site Name  Delay Name       Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  ---------------  -----  ------------  ------  
-{vga_driver/h_count_381__i5/CK   vga_driver/h_count_381__i6/CK}->vga_driver/h_count_381__i5/Q
-                                          SLICE           CLK_TO_Q0_DELAY  1.391         5.691  14      
-pixel_col[5]                                              NET DELAY        2.075         7.766  1       
-paddle_one/i1_4_lut_4_lut/B->paddle_one/i1_4_lut_4_lut/Z
-                                          SLICE           B0_TO_F0_DELAY   0.450         8.216  16      
-n661                                                      NET DELAY        2.075        10.291  1       
+{vga_driver/h_count_406__i3/CK   vga_driver/h_count_406__i4/CK}->vga_driver/h_count_406__i4/Q
+                                          SLICE           CLK_TO_Q1_DELAY  1.391         5.691  15      
+pixel_col[4]                                              NET DELAY        2.075         7.766  1       
+vga_driver/h_count_406_add_4_5/C1->vga_driver/h_count_406_add_4_5/S1
+                                          SLICE           C1_TO_F1_DELAY   0.450         8.216  1       
+vga_driver/n45[4]                                         NET DELAY        2.075        10.291  1       
 
 
 Destination Clock Path
@@ -2920,8 +2920,8 @@ vga_clock                                                 NET DELAY      2.075  
 
  ++++Path 6  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : vga_driver/h_count_381__i5/Q
-Path End         : vga_driver/v_count__i2/SP
+Path Begin       : vga_driver/h_count_406__i5/Q
+Path End         : vga_driver/h_count_406__i5/D
 Source Clock     : vga_clock
 Destination Clock: vga_clock
 Logic Level      : 2
@@ -2961,12 +2961,12 @@ vga_clock                                                 NET DELAY      2.075  
 Data path
 Name                                      Cell/Site Name  Delay Name       Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  ---------------  -----  ------------  ------  
-{vga_driver/h_count_381__i5/CK   vga_driver/h_count_381__i6/CK}->vga_driver/h_count_381__i5/Q
-                                          SLICE           CLK_TO_Q0_DELAY  1.391         5.691  14      
+{vga_driver/h_count_406__i5/CK   vga_driver/h_count_406__i6/CK}->vga_driver/h_count_406__i5/Q
+                                          SLICE           CLK_TO_Q0_DELAY  1.391         5.691  13      
 pixel_col[5]                                              NET DELAY        2.075         7.766  1       
-paddle_one/i1_4_lut_4_lut/B->paddle_one/i1_4_lut_4_lut/Z
-                                          SLICE           B0_TO_F0_DELAY   0.450         8.216  16      
-n661                                                      NET DELAY        2.075        10.291  1       
+vga_driver/h_count_406_add_4_7/C0->vga_driver/h_count_406_add_4_7/S0
+                                          SLICE           C0_TO_F0_DELAY   0.450         8.216  1       
+vga_driver/n45[5]                                         NET DELAY        2.075        10.291  1       
 
 
 Destination Clock Path
@@ -2985,8 +2985,8 @@ vga_clock                                                 NET DELAY      2.075  
 
  ++++Path 7  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : vga_driver/h_count_381__i5/Q
-Path End         : vga_driver/v_count__i3/SP
+Path Begin       : vga_driver/h_count_406__i6/Q
+Path End         : vga_driver/h_count_406__i6/D
 Source Clock     : vga_clock
 Destination Clock: vga_clock
 Logic Level      : 2
@@ -3026,12 +3026,12 @@ vga_clock                                                 NET DELAY      2.075  
 Data path
 Name                                      Cell/Site Name  Delay Name       Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  ---------------  -----  ------------  ------  
-{vga_driver/h_count_381__i5/CK   vga_driver/h_count_381__i6/CK}->vga_driver/h_count_381__i5/Q
-                                          SLICE           CLK_TO_Q0_DELAY  1.391         5.691  14      
-pixel_col[5]                                              NET DELAY        2.075         7.766  1       
-paddle_one/i1_4_lut_4_lut/B->paddle_one/i1_4_lut_4_lut/Z
-                                          SLICE           B0_TO_F0_DELAY   0.450         8.216  16      
-n661                                                      NET DELAY        2.075        10.291  1       
+{vga_driver/h_count_406__i5/CK   vga_driver/h_count_406__i6/CK}->vga_driver/h_count_406__i6/Q
+                                          SLICE           CLK_TO_Q1_DELAY  1.391         5.691  13      
+pixel_col[6]                                              NET DELAY        2.075         7.766  1       
+vga_driver/h_count_406_add_4_7/C1->vga_driver/h_count_406_add_4_7/S1
+                                          SLICE           C1_TO_F1_DELAY   0.450         8.216  1       
+vga_driver/n45[6]                                         NET DELAY        2.075        10.291  1       
 
 
 Destination Clock Path
@@ -3050,8 +3050,8 @@ vga_clock                                                 NET DELAY      2.075  
 
  ++++Path 8  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : vga_driver/h_count_381__i5/Q
-Path End         : vga_driver/v_count__i4/SP
+Path Begin       : vga_driver/h_count_406__i7/Q
+Path End         : vga_driver/h_count_406__i7/D
 Source Clock     : vga_clock
 Destination Clock: vga_clock
 Logic Level      : 2
@@ -3091,12 +3091,12 @@ vga_clock                                                 NET DELAY      2.075  
 Data path
 Name                                      Cell/Site Name  Delay Name       Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  ---------------  -----  ------------  ------  
-{vga_driver/h_count_381__i5/CK   vga_driver/h_count_381__i6/CK}->vga_driver/h_count_381__i5/Q
-                                          SLICE           CLK_TO_Q0_DELAY  1.391         5.691  14      
-pixel_col[5]                                              NET DELAY        2.075         7.766  1       
-paddle_one/i1_4_lut_4_lut/B->paddle_one/i1_4_lut_4_lut/Z
-                                          SLICE           B0_TO_F0_DELAY   0.450         8.216  16      
-n661                                                      NET DELAY        2.075        10.291  1       
+{vga_driver/h_count_406__i7/CK   vga_driver/h_count_406__i8/CK}->vga_driver/h_count_406__i7/Q
+                                          SLICE           CLK_TO_Q0_DELAY  1.391         5.691  16      
+pixel_col[7]                                              NET DELAY        2.075         7.766  1       
+vga_driver/h_count_406_add_4_9/C0->vga_driver/h_count_406_add_4_9/S0
+                                          SLICE           C0_TO_F0_DELAY   0.450         8.216  1       
+vga_driver/n45[7]                                         NET DELAY        2.075        10.291  1       
 
 
 Destination Clock Path
@@ -3115,8 +3115,8 @@ vga_clock                                                 NET DELAY      2.075  
 
  ++++Path 9  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : vga_driver/h_count_381__i5/Q
-Path End         : vga_driver/v_count__i5/SP
+Path Begin       : vga_driver/h_count_406__i8/Q
+Path End         : vga_driver/h_count_406__i8/D
 Source Clock     : vga_clock
 Destination Clock: vga_clock
 Logic Level      : 2
@@ -3156,12 +3156,12 @@ vga_clock                                                 NET DELAY      2.075  
 Data path
 Name                                      Cell/Site Name  Delay Name       Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  ---------------  -----  ------------  ------  
-{vga_driver/h_count_381__i5/CK   vga_driver/h_count_381__i6/CK}->vga_driver/h_count_381__i5/Q
-                                          SLICE           CLK_TO_Q0_DELAY  1.391         5.691  14      
-pixel_col[5]                                              NET DELAY        2.075         7.766  1       
-paddle_one/i1_4_lut_4_lut/B->paddle_one/i1_4_lut_4_lut/Z
-                                          SLICE           B0_TO_F0_DELAY   0.450         8.216  16      
-n661                                                      NET DELAY        2.075        10.291  1       
+{vga_driver/h_count_406__i7/CK   vga_driver/h_count_406__i8/CK}->vga_driver/h_count_406__i8/Q
+                                          SLICE           CLK_TO_Q1_DELAY  1.391         5.691  13      
+pixel_col[8]                                              NET DELAY        2.075         7.766  1       
+vga_driver/h_count_406_add_4_9/C1->vga_driver/h_count_406_add_4_9/S1
+                                          SLICE           C1_TO_F1_DELAY   0.450         8.216  1       
+vga_driver/n45[8]                                         NET DELAY        2.075        10.291  1       
 
 
 Destination Clock Path
@@ -3180,8 +3180,8 @@ vga_clock                                                 NET DELAY      2.075  
 
  ++++Path 10  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : vga_driver/h_count_381__i5/Q
-Path End         : vga_driver/v_count__i6/SP
+Path Begin       : vga_driver/h_count_406__i9/Q
+Path End         : vga_driver/h_count_406__i9/D
 Source Clock     : vga_clock
 Destination Clock: vga_clock
 Logic Level      : 2
@@ -3221,12 +3221,12 @@ vga_clock                                                 NET DELAY      2.075  
 Data path
 Name                                      Cell/Site Name  Delay Name       Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  ---------------  -----  ------------  ------  
-{vga_driver/h_count_381__i5/CK   vga_driver/h_count_381__i6/CK}->vga_driver/h_count_381__i5/Q
+vga_driver/h_count_406__i9/CK->vga_driver/h_count_406__i9/Q
                                           SLICE           CLK_TO_Q0_DELAY  1.391         5.691  14      
-pixel_col[5]                                              NET DELAY        2.075         7.766  1       
-paddle_one/i1_4_lut_4_lut/B->paddle_one/i1_4_lut_4_lut/Z
-                                          SLICE           B0_TO_F0_DELAY   0.450         8.216  16      
-n661                                                      NET DELAY        2.075        10.291  1       
+pixel_col[9]                                              NET DELAY        2.075         7.766  1       
+vga_driver/h_count_406_add_4_11/C0->vga_driver/h_count_406_add_4_11/S0
+                                          SLICE           C0_TO_F0_DELAY   0.450         8.216  1       
+vga_driver/n45[9]                                         NET DELAY        2.075        10.291  1       
 
 
 Destination Clock Path

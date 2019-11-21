@@ -75,16 +75,16 @@ module GameLogic(
         end else if ((ball_size_x + ball_pos_x) >= paddle_2_pos_x && (ball_pos_y + ball_size_y) >= paddle_2_pos_y && ball_pos_y <= (paddle_2_pos_y + paddle_2_size_y)) begin
             bounce = 1;
 
-        end else if ((ball_pos_y + ball_size_y) >= paddle_1_pos_y && ball_pos_x <= paddle_1_pos_y) begin
+        end else if ((ball_pos_y + ball_size_y) == paddle_1_pos_y && ball_pos_x == (paddle_1_pos_x + paddle_1_size_x)) begin
             bounce = 2;
 
-        end else if ((ball_pos_y + ball_size_y) >= paddle_2_pos_y && (ball_pos_x + ball_size_x) >= (paddle_2_pos_y + paddle_2_size_x)) begin
+        end else if ((ball_pos_y + ball_size_y) >= paddle_2_pos_y && (ball_pos_x + ball_size_x) >= paddle_2_pos_x) begin
             bounce = 2;
 
-        end else if (ball_pos_y <= (paddle_1_pos_y + paddle_1_size_y) && ball_pos_x <= paddle_1_pos_y) begin
+        end else if ((ball_pos_y + ball_size_y) >= paddle_1_pos_y && ball_pos_y <= (paddle_1_pos_y + paddle_1_size_y) && ball_pos_x == (paddle_1_pos_x + paddle_1_size_x)) begin
             bounce = 2;
 
-        end else if (ball_pos_y <= (paddle_2_pos_y + paddle_2_size_y) && (ball_pos_x + ball_size_x) >= (paddle_2_pos_y + paddle_2_size_x)) begin
+        end else if (ball_pos_y <= (paddle_2_pos_y + paddle_2_size_y) && (ball_pos_x + ball_size_x) >= paddle_2_pos_x) begin
             bounce = 2;
 
         end else begin
