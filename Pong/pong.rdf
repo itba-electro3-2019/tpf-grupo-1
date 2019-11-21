@@ -36,6 +36,9 @@
         <Source name="gui/menus/marker.v" type="Verilog" type_short="Verilog">
             <Options/>
         </Source>
+        <Source name="standard_modules/mux.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
         <Source name="impl_1/impl_1.ldc" type="LSE Design Constraints File" type_short="LDC">
             <Options/>
         </Source>
