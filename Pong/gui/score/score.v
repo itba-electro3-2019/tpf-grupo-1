@@ -35,16 +35,22 @@ module Score(
     wire [2:0] number_8_rgb;
     wire [2:0] number_9_rgb;
 
-    Number0 num0 (row, col, number_0_rgb);
-    Number1 num1 (row, col, number_1_rgb);
-    Number2 num2 (row, col, number_2_rgb);
-    Number3 num3 (row, col, number_3_rgb);
-    Number4 num4 (row, col, number_4_rgb);
-    Number5 num5 (row, col, number_5_rgb);
-    Number6 num6 (row, col, number_6_rgb);
-    Number7 num7 (row, col, number_7_rgb);
-    Number8 num8 (row, col, number_8_rgb);
-    Number9 num9 (row, col, number_9_rgb);
+    wire [9:0] number_row;
+    wire [9:0] number_col;
+
+    assign number_col = col - POSX;
+    assign number_row = row - POSY;
+
+    Number0 num0 (number_row, number_col, number_0_rgb);
+    Number1 num1 (number_row, number_col, number_1_rgb);
+    Number2 num2 (number_row, number_col, number_2_rgb);
+    Number3 num3 (number_row, number_col, number_3_rgb);
+    Number4 num4 (number_row, number_col, number_4_rgb);
+    Number5 num5 (number_row, number_col, number_5_rgb);
+    Number6 num6 (number_row, number_col, number_6_rgb);
+    Number7 num7 (number_row, number_col, number_7_rgb);
+    Number8 num8 (number_row, number_col, number_8_rgb);
+    Number9 num9 (number_row, number_col, number_9_rgb);
 
     /* RGB Pixel data */
     always @(row or col) begin: DRAW_PIXEL
