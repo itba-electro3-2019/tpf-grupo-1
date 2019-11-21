@@ -31,8 +31,9 @@ module MainFsm(
     output reg reset;
 
     //----------------- INTERNAL VARIABLES ----------------------;
+    reg [1:0] current_state;
+	
     wire tick_selector;
-    reg current_state;
 	reg flag;
 
     //----------------- FSM STATES ------------------------------
@@ -66,7 +67,8 @@ module MainFsm(
 		
 		// Ignoring when enter=1 is held in active high
 		if (flag) begin
-			if (enter) flag <= 0;
+			if (enter) 
+				flag <= 0;
 
 			case(current_state)
 				/* Current state is START, which is the next state?*/

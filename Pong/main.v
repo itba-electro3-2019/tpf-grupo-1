@@ -66,17 +66,18 @@ module main(
 	/***************************/
 	/* Debouncing Enter Button */
 	/***************************/
-	parameter BOUNCE_CLOCK = 200;
+	parameter BOUNCE_CLOCK = 250;
 	reg [7:0] bounce_clock = 0;
 	reg enter = 0;
 	always @(posedge tick) begin: DEBOUNCE_ENTER_BUTTON
-		enter <= button_enter;
-		bounce_clock <= bounce_clock + 1;
 		if (bounce_clock >= BOUNCE_CLOCK) begin
 			bounce_clock <= 0;
+			enter <= button_enter;
+		end else begin
+			bounce_clock <= bounce_clock + 1;
+			enter <= 0;
 		end
 	end
-	
 	
 	/*******************************/
 	/* VGA Driver Connection Wires */
