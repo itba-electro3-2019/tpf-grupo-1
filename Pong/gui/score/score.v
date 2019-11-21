@@ -2,7 +2,7 @@
 // Module: Score
 // Graphical component to represent the score value
 //--------------------------------------------------
-module score(
+module Score(
     number,     // Input: Current score value
     row,        // Input: Current row of the pixel
     col,        // Input: Current col of the pixel
