@@ -1,6 +1,6 @@
 
 Lattice Place and Route Report for Design "pong_impl_1_map.udb"
-Thu Nov 21 18:14:19 2019
+Thu Nov 21 18:49:36 2019
 
 PAR: Place And Route Radiant Software (64-bit) 1.1.0.165.1.
 Command Line: par -w -t 1 -cores 1 -exp parPathBased=ON pong_impl_1_map.udb \
@@ -20,13 +20,13 @@ WARNING: udb::Constraint "create_clock -name {pll/lscc_pll_inst/REFERENCECLK} -p
 WARNING - par: The preferred point for defining clocks is top level ports and driver pins. Pad delays will not be taken into consideration if clocks are defined on nets.
 WARNING - par: The preferred point for defining clocks is top level ports and driver pins. Pad delays will not be taken into consideration if clocks are defined on nets.
 WARNING: not support VREF in IC1PW_VREFOBJ::collect_vref_driver_comps()
-Number of Signals: 3162
-Number of Connections: 9615
+Number of Signals: 3337
+Number of Connections: 10159
 Device utilization summary:
 
-   SLICE (est.)    1379/2640         52% used
-     LUT           2625/5280         49% used
-     REG            183/5280          3% used
+   SLICE (est.)    1458/2640         55% used
+     LUT           2782/5280         52% used
+     REG            182/5280          3% used
    PIO               11/56           19% used
                      11/36           30% bonded
    IOLOGIC            1/56            1% used
@@ -48,30 +48,30 @@ Device utilization summary:
 
 Pin Constraint Summary:
    11 out of 11 pins locked (100% locked).
-Finished Placer Phase 0 (HIER).  CPU time: 15 secs , REAL time: 15 secs 
+Finished Placer Phase 0 (HIER).  CPU time: 35 secs , REAL time: 36 secs 
 
 
-...................
-Finished Placer Phase 0 (AP).  CPU time: 22 secs , REAL time: 22 secs 
+................
+Finished Placer Phase 0 (AP).  CPU time: 47 secs , REAL time: 47 secs 
 
-Starting Placer Phase 1. REAL time: 22 secs 
+Starting Placer Phase 1. REAL time: 47 secs 
 ..  ..
-.....................
+......................
 
-Placer score = 1006171.
+Placer score = 592382.
 
 Device SLICE utilization summary after final SLICE packing:
-   SLICE           1377/2640         52% used
+   SLICE           1456/2640         55% used
 
 WARNING - par: The preferred point for defining clocks is top level ports and driver pins. Pad delays will not be taken into consideration if clocks are defined on nets.
 WARNING - par: The preferred point for defining clocks is top level ports and driver pins. Pad delays will not be taken into consideration if clocks are defined on nets.
-Finished Placer Phase 1.  CPU time: 44 secs , REAL time: 44 secs 
+Finished Placer Phase 1.  CPU time: 1 mins 11 secs , REAL time: 1 mins 12 secs 
 
 Starting Placer Phase 2.
 .
 
-Placer score =  639629
-Finished Placer Phase 2.  CPU time: 45 secs , REAL time: 45 secs 
+Placer score =  673663
+Finished Placer Phase 2.  CPU time: 1 mins 12 secs , REAL time: 1 mins 12 secs 
 
 
 ------------------ Clock Report ------------------
@@ -79,8 +79,8 @@ Finished Placer Phase 2.  CPU time: 45 secs , REAL time: 45 secs
 Global Clocks :
   PRIMARY "clk" from comp "inst2" on site "HFOSC_R1C32", clk load = 17, ce load = 0, sr load = 0
   PRIMARY "vga_clock" from OUTGLOBAL on comp "pll.lscc_pll_inst.u_PLL_B" on site "PLL_R13C32", clk load = 11, ce load = 0, sr load = 0
-  PRIMARY "tick_game" from F0 on comp "SLICE_2130" on site "R13C2A", clk load = 68, ce load = 0, sr load = 0
-  PRIMARY "tick" from Q1 on comp "SLICE_2130" on site "R13C2A", clk load = 13, ce load = 0, sr load = 0
+  PRIMARY "tick_game" from F1 on comp "SLICE_1496" on site "R13C4A", clk load = 68, ce load = 0, sr load = 0
+  PRIMARY "tick" from Q1 on comp "SLICE_2196" on site "R17C29C", clk load = 14, ce load = 0, sr load = 0
 
   PRIMARY  : 4 out of 8 (50%)
 
@@ -102,14 +102,14 @@ I/O Bank Usage Summary:
 | 2        | 1 / 8 ( 12%)  | 3.3V       |            |            |
 +----------+---------------+------------+------------+------------+
 
-Total Placer CPU time: 45 secs , REAL time: 45 secs 
+Total Placer CPU time: 1 mins 12 secs , REAL time: 1 mins 12 secs 
 
 Writing design to file pong_impl_1_par.dir/5_1.udb ...
 
 WARNING - par: The preferred point for defining clocks is top level ports and driver pins. Pad delays will not be taken into consideration if clocks are defined on nets.
 WARNING - par: The preferred point for defining clocks is top level ports and driver pins. Pad delays will not be taken into consideration if clocks are defined on nets.
 
-Start NBR router at 18:15:05 11/21/19
+Start NBR router at 18:50:49 11/21/19
 
 *****************************************************************
 Info: NBR allows conflicts(one node used by more than one signal)
@@ -130,14 +130,14 @@ Starting routing resource preassignment
 WARNING - par: Certain loads of primary clock signal clk could not be routed to the primary clock tree with dedicated routing resources. This clock may suffer from excessive skew or delay.
 Preassignment Summary:
 --------------------------------------------------------------------------------
-522 connections routed with dedicated routing resources
+544 connections routed with dedicated routing resources
 4 global clock signals routed
-549 connections routed (of 9527 total) (5.76%)
+571 connections routed (of 10073 total) (5.67%)
 ---------------------------------------------------------
 Clock routing summary:
 Primary clocks (4 used out of 8 available):
-#0  Signal "tick"
-       Clock   loads: 0     out of    13 routed (  0.00%)
+#2  Signal "tick"
+       Clock   loads: 0     out of    14 routed (  0.00%)
        Data    loads: 0     out of     3 routed (  0.00%)
 #4  Signal "clk"
        Clock   loads: 16    out of    17 routed ( 94.12%)
@@ -155,32 +155,35 @@ Other clocks:
 --------------------------------------------------------------------------------
 Completed routing resource preassignment
 
-Start NBR section for initial routing at 18:15:08 11/21/19
+Start NBR section for initial routing at 18:50:52 11/21/19
 Level 4, iteration 1
-234(0.09%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 19.960ns/0.000ns; real time: 10 secs 
+228(0.09%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 24.688ns/0.000ns; real time: 12 secs 
 
 Info: Initial congestion level at 75% usage is 0
 Info: Initial congestion area  at 75% usage is 0 (0.00%)
 
-Start NBR section for normal routing at 18:15:15 11/21/19
+Start NBR section for normal routing at 18:51:01 11/21/19
 Level 4, iteration 1
-12(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 20.026ns/0.000ns; real time: 11 secs 
+17(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 24.688ns/0.000ns; real time: 14 secs 
 Level 4, iteration 2
 3(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 20.026ns/0.000ns; real time: 11 secs 
+Estimated worst slack/total negative slack<setup>: 24.688ns/0.000ns; real time: 14 secs 
 Level 4, iteration 3
+3(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 24.688ns/0.000ns; real time: 15 secs 
+Level 4, iteration 4
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 20.026ns/0.000ns; real time: 11 secs 
+Estimated worst slack/total negative slack<setup>: 24.688ns/0.000ns; real time: 15 secs 
 
-Start NBR section for setup/hold timing optimization with effort level 3 at 18:15:16 11/21/19
+Start NBR section for setup/hold timing optimization with effort level 3 at 18:51:04 11/21/19
 
-Start NBR section for re-routing at 18:15:17 11/21/19
+Start NBR section for re-routing at 18:51:06 11/21/19
 Level 4, iteration 1
-0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 0 (nbr) score; real time: 12 secs 
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 0 (nbr) score; real time: 17 secs 
 
-Start NBR section for post-routing at 18:15:17 11/21/19
+Start NBR section for post-routing at 18:51:06 11/21/19
 WARNING - par: The preferred point for defining clocks is top level ports and driver pins. Pad delays will not be taken into consideration if clocks are defined on nets.
 WARNING - par: The preferred point for defining clocks is top level ports and driver pins. Pad delays will not be taken into consideration if clocks are defined on nets.
 
@@ -190,16 +193,16 @@ NBR Summary
 -----------
   Number of unrouted connections : 0 (0.00%)
   Number of connections with timing violations : 0 (0.00%)
-  Estimated worst slack<setup> : 20.026ns
+  Estimated worst slack<setup> : 24.688ns
   Timing score<setup> : 0
 -----------
 Notes: The timing info is calculated for SETUP only.
 
 
-Total CPU time 14 secs 
-Total REAL time: 14 secs 
+Total CPU time 26 secs 
+Total REAL time: 28 secs 
 Completely routed.
-End of route.  9527 routed (100.00%); 0 unrouted.
+End of route.  10073 routed (100.00%); 0 unrouted.
 
 Writing design to file pong_impl_1_par.dir/5_1.udb ...
 
@@ -209,15 +212,15 @@ All signals are completely routed.
 
 PAR_SUMMARY::Run status = Success
 PAR_SUMMARY::Number of unrouted conns = 0
-PAR_SUMMARY::Worst  slack<setup/<ns>> = 64.343
+PAR_SUMMARY::Worst  slack<setup/<ns>> = 24.688
 PAR_SUMMARY::Timing score<setup/<ns>> = 0.000
-PAR_SUMMARY::Worst  slack<hold /<ns>> = 3.470
+PAR_SUMMARY::Worst  slack<hold /<ns>> = 3.417
 PAR_SUMMARY::Timing score<hold /<ns>> = 0.000
 PAR_SUMMARY::Number of errors = 0
 
-Total CPU  Time: 1 mins 1 secs 
-Total REAL Time: 1 mins 1 secs 
-Peak Memory Usage: 233 MB
+Total CPU  Time: 1 mins 42 secs 
+Total REAL Time: 1 mins 43 secs 
+Peak Memory Usage: 239 MB
 
 
 par done!

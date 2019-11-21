@@ -90,14 +90,11 @@ module main(
 	parameter BOUNCE_CLOCK = 150;
 	reg [7:0] bounce_clock = 0;
 
-	wire fsm_enter;
-	assign fsm_enter = ~button_enter;
-
 	reg enter = 0;
 	always @(posedge tick) begin: DEBOUNCE_ENTER_BUTTON
 		if (bounce_clock >= BOUNCE_CLOCK) begin
 			bounce_clock <= 0;
-			enter <= fsm_enter;
+			enter <= button_enter;
 		end else begin
 			bounce_clock <= bounce_clock + 1;
 			enter <= 0;
@@ -188,15 +185,21 @@ module main(
 	/* Ball Speed Controller */
 	/*************************/
 	wire [2:0] speed_capture;
+	reg change_in_next_tick;
 	parameter INITIAL_SPEED = 5;
 	Mux mux (paddle_two_speed, paddle_one_speed, speed_selector, speed_capture);
 
 	always @ (posedge tick) begin
+		if (change_in_next_tick) begin
+			change_in_next_tick <= 0;
+			speed_selector <= ~speed_selector;
+			ball_speed <= speed_capture;
+		end
+
 		if (bounce == 1) begin
-			speed_selector = ~speed_selector;
-			ball_speed = speed_capture;
+			change_in_next_tick <= 1;
 		end else if (reset == 0) begin
-			ball_speed = INITIAL_SPEED;
+			ball_speed <= INITIAL_SPEED;
 		end
 	end
 

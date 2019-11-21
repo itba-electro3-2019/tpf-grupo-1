@@ -1,15 +1,15 @@
 ----------------------------------------------------------------------
 Report for cell main.TECH
-Register bits:  183 of 5280 (3.466%)
+Register bits:  182 of 5280 (3.447%)
 I/O cells:      11
                                   Cell usage:
                                cell     count   Res Usage(%)
-                               CCU2       201          100.0
-                            FD1P3XZ       183          100.0
+                               CCU2       215          100.0
+                            FD1P3XZ       182          100.0
                          HSOSC_CORE         1          100.0
                                  IB         5          100.0
                               IOL_B         1          100.0
-                               LUT4      2218          100.0
+                               LUT4      2346          100.0
                               MAC16         4          100.0
                                  OB         6          100.0
                               PLL_B         1          100.0
@@ -21,6 +21,8 @@ SUB MODULES
                              Marker         1
                                 Mux         1
                             Number0         1
+                         Number0_U0         1
+                            Number1         1
                             Number2         1
 Paddle(START_X_POS=20,START_Y_POS=190)         1
 Paddle(START_X_POS=615,START_Y_POS=190)         1
@@ -31,91 +33,16 @@ StartMenu(START_POSX=225,START_POSY=214)         1
                           VGADriver         1
                               clock         1
 clock_ipgen_lscc_pll(DIVR="0",DIVF="66",DIVQ="5",FILTER_RANGE="1",PLLOUT_SELECT_PORTA="GENCLK",PLLOUT_SELECT_PORTB="GENCLK",FREQUENCY_PIN_REFERENCECLK="12.000000")         1
-                              TOTAL      2637
+                              TOTAL      2780
 ----------------------------------------------------------------------
 Report for cell Paddle(START_X_POS=615,START_Y_POS=190).v1
 Instance Path : paddle_two
                                   Cell usage:
                                cell     count   Res Usage(%)
-                                FA2        20           10.0
-                            FD1P3XZ        39           21.3
-                               LUT4        51            2.3
-                              TOTAL       110
-----------------------------------------------------------------------
-Report for cell PausedMenu(START_POSX=275,START_POSY=170).v1
-Instance Path : paused_menu
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                                FA2        40           19.9
-                            FD1P3XZ         3            1.6
-                               LUT4        62            2.8
-                              MAC16         2           50.0
-SUB MODULES
-                             Marker         1
+                                FA2        20            9.3
+                            FD1P3XZ        38           20.9
+                               LUT4        50            2.1
                               TOTAL       108
-----------------------------------------------------------------------
-Report for cell Marker.v1
-Instance Path : paused_menu.marker
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                                FA2        20           10.0
-                               LUT4        35            1.6
-                              MAC16         1           25.0
-                              TOTAL        56
-----------------------------------------------------------------------
-Report for cell GameLogic.v1
-Instance Path : game
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                                FA2        16            8.0
-                            FD1P3XZ        10            5.5
-                               LUT4       151            6.8
-                              TOTAL       177
-----------------------------------------------------------------------
-Report for cell Score(POSX=240).v1
-Instance Path : score_one
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                                FA2         5            2.5
-                               LUT4       164            7.4
-                              MAC16         1           25.0
-SUB MODULES
-                            Number0         1
-                            Number2         1
-                              TOTAL       172
-----------------------------------------------------------------------
-Report for cell Number2.v1
-Instance Path : score_one.num2
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                               LUT4       148            6.7
-                              TOTAL       148
-----------------------------------------------------------------------
-Report for cell Number0.v1
-Instance Path : score_one.num0
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                                FA2         5            2.5
-                              MAC16         1           25.0
-                              TOTAL         6
-----------------------------------------------------------------------
-Report for cell StartMenu(START_POSX=225,START_POSY=214).v1
-Instance Path : start_menu
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                                FA2        20           10.0
-                               LUT4       536           24.2
-                              MAC16         1           25.0
-                              TOTAL       557
-----------------------------------------------------------------------
-Report for cell VGADriver.v1
-Instance Path : vga_driver
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                                FA2        12            6.0
-                            FD1P3XZ        20           10.9
-                               LUT4        67            3.0
-                              TOTAL        99
 ----------------------------------------------------------------------
 Report for cell MainFsm.v1
 Instance Path : menu
@@ -125,31 +52,80 @@ Instance Path : menu
                                LUT4        13            0.6
                               TOTAL        17
 ----------------------------------------------------------------------
-Report for cell Ball.v1
-Instance Path : ball
+Report for cell PausedMenu(START_POSX=275,START_POSY=170).v1
+Instance Path : paused_menu
                                   Cell usage:
                                cell     count   Res Usage(%)
-                                FA2        37           18.4
-                            FD1P3XZ        34           18.6
-                               LUT4       110            5.0
-                              TOTAL       181
+                                FA2        40           18.6
+                            FD1P3XZ         3            1.6
+                               LUT4        57            2.4
+                              MAC16         2           50.0
+SUB MODULES
+                             Marker         1
+                              TOTAL       103
+----------------------------------------------------------------------
+Report for cell Marker.v1
+Instance Path : paused_menu.marker
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2        20            9.3
+                               LUT4        37            1.6
+                              MAC16         1           25.0
+                              TOTAL        58
+----------------------------------------------------------------------
+Report for cell VGADriver.v1
+Instance Path : vga_driver
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2        12            5.6
+                            FD1P3XZ        20           11.0
+                               LUT4        73            3.1
+                              TOTAL       105
+----------------------------------------------------------------------
+Report for cell StartMenu(START_POSX=225,START_POSY=214).v1
+Instance Path : start_menu
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2        20            9.3
+                               LUT4       533           22.7
+                              MAC16         1           25.0
+                              TOTAL       554
+----------------------------------------------------------------------
+Report for cell Score(POSX=240).v1
+Instance Path : score_one
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2        14            6.5
+                               LUT4       161            6.9
+                              MAC16         1           25.0
+SUB MODULES
+                         Number0_U0         1
+                            Number2         1
+                              TOTAL       178
+----------------------------------------------------------------------
+Report for cell Number2.v1
+Instance Path : score_one.num2
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4       125            5.3
+                              TOTAL       125
+----------------------------------------------------------------------
+Report for cell Number0_U0.v1
+Instance Path : score_one.num0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2         5            2.3
+                              MAC16         1           25.0
+                              TOTAL         6
 ----------------------------------------------------------------------
 Report for cell Paddle(START_X_POS=20,START_Y_POS=190).v1
 Instance Path : paddle_one
                                   Cell usage:
                                cell     count   Res Usage(%)
-                                FA2        20           10.0
-                            FD1P3XZ        35           19.1
-                               LUT4        47            2.1
-                              TOTAL       102
-----------------------------------------------------------------------
-Report for cell Background.v1
-Instance Path : background
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                                FA2        12            6.0
-                               LUT4        26            1.2
-                              TOTAL        38
+                                FA2        20            9.3
+                            FD1P3XZ        34           18.7
+                               LUT4        51            2.2
+                              TOTAL       105
 ----------------------------------------------------------------------
 Report for cell Mux.v1
 Instance Path : mux
@@ -174,9 +150,53 @@ Instance Path : pll.lscc_pll_inst
                               PLL_B         1          100.0
                               TOTAL         1
 ----------------------------------------------------------------------
+Report for cell GameLogic.v1
+Instance Path : game
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2        16            7.4
+                            FD1P3XZ        10            5.5
+                               LUT4       139            5.9
+                              TOTAL       165
+----------------------------------------------------------------------
+Report for cell Ball.v1
+Instance Path : ball
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2        37           17.2
+                            FD1P3XZ        34           18.7
+                               LUT4       108            4.6
+                              TOTAL       179
+----------------------------------------------------------------------
+Report for cell Background.v1
+Instance Path : background
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2        12            5.6
+                               LUT4        24            1.0
+                              TOTAL        36
+----------------------------------------------------------------------
 Report for cell Score(POSX=480).v1
 Instance Path : score_two
                                   Cell usage:
                                cell     count   Res Usage(%)
-                               LUT4        12            0.5
-                              TOTAL        12
+                                FA2         5            2.3
+                               LUT4       151            6.4
+SUB MODULES
+                            Number0         1
+                            Number1         1
+                              TOTAL       158
+----------------------------------------------------------------------
+Report for cell Number1.v1
+Instance Path : score_two.num1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4       125            5.3
+                              TOTAL       125
+----------------------------------------------------------------------
+Report for cell Number0.v1
+Instance Path : score_two.num0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2         5            2.3
+                              TOTAL         5

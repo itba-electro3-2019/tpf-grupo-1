@@ -40,9 +40,9 @@ module Paddle(
 	parameter COLOR = 3'b111;
     parameter SCREEN_X = 640;
     parameter SCREEN_Y = 480;
-	parameter WIDTH = 12;
+	parameter WIDTH = 8;
 	parameter HEIGHT = 80;
-    parameter PADDLE_SIZE_X = 12;
+    parameter PADDLE_SIZE_X = 8;
     parameter PADDLE_SIZE_Y = 80;
     parameter START_X_POS = 5;
 	parameter START_Y_POS = 100;
