@@ -5,7 +5,7 @@ Target Device:        iCE40UP5KSG48
 Target Performance:   High-Performance_1.2V
 
 Mapper:    version Radiant Software (64-bit) 1.1.0.165.1
-Mapped on: Thu Nov 21 11:49:28 2019
+Mapped on: Thu Nov 21 11:53:21 2019
 
 Design Information
 ------------------
@@ -16,20 +16,20 @@ Command line:   map pong_impl_1_syn.udb C:/Users/facun/OneDrive/Desktop/ITBA/5C
 Design Summary
 --------------
 
-   Number of slice registers: 124 out of  5280 (2%)
-   Number of I/O registers:      1 out of   117 (1%)
-   Number of LUT4s:           1247 out of  5280 (24%)
-      Number of logic LUT4s:             974
-      Number of inserted feedthru LUT4s:   2
-      Number of replicated LUT4s:          1
-      Number of ripple logic:            135 (270 LUT4s)
+   Number of slice registers: 138 out of  5280 (3%)
+   Number of I/O registers:      0 out of   117 (0%)
+   Number of LUT4s:           2255 out of  5280 (43%)
+      Number of logic LUT4s:             1891
+      Number of inserted feedthru LUT4s:   4
+      Number of replicated LUT4s:          2
+      Number of ripple logic:            179 (358 LUT4s)
    Number of IO sites used:   10 out of 39 (26%)
       Number of IO sites used for general PIOs: 10
       Number of IO sites used for I3Cs: 0 out of 2 (0%)
       Number of IO sites used for PIOs+I3Cs: 10 out of 36 (28%)
       (note: If I3C is not used, its site can be used as general PIO)
       Number of IO sites used for OD+RGB IO buffers: 0 out of 3 (0%)
-   Number of DSPs:             1 out of 8 (12%)
+   Number of DSPs:             3 out of 8 (37%)
    Number of I2Cs:             0 out of 2 (0%)
    Number of High Speed OSCs:  1 out of 1 (100%)
    Number of Low Speed OSCs:   0 out of 1 (0%)
@@ -41,25 +41,25 @@ Design Summary
    Number of SPIs:             0 out of 2 (0%)
    Number of EBRs:             0 out of 30 (0%)
    Number of PLLs:             1 out of 1 (100%)
-   Number of Clocks:  4
+   Number of Clocks:  5
+      Net tick_menu: 4 loads, 4 rising, 0 falling (Driver: Pin
+     menu.clock_I_0_2_lut_3_lut/OUT)
+      Net tick: 10 loads, 10 rising, 0 falling (Driver: Pin tick_c/Q)
       Net tick_game: 68 loads, 68 rising, 0 falling (Driver: Pin
-     menu.clock_I_0_62_2_lut/OUT)
+     menu.clock_I_0_64_2_lut_3_lut/OUT)
       Net clk: 10 loads, 10 rising, 0 falling (Driver: Pin inst2/CLKHF)
       Net vga_clock: 16 loads, 16 rising, 0 falling (Driver: Pin
      pll.lscc_pll_inst.u_PLL_B/OUTGLOBAL)
-      Net tick: 4 loads, 4 rising, 0 falling (Driver: Pin tick_c/Q)
-   Number of Clock Enables:  6
+   Number of Clock Enables:  8
       Net VCC_net: 1 loads, 0 SLICEs
+      Net n109490: 2 loads, 2 SLICEs
       Net reset: 10 loads, 10 SLICEs
-      Net paddle_two/n4173: 6 loads, 6 SLICEs
-      Net n673: 10 loads, 10 SLICEs
-      Net paddle_one/n4154: 6 loads, 6 SLICEs
-      Net ball/n676: 20 loads, 20 SLICEs
-   Number of LSRs:  9
-      Net paddle_two/n4252: 5 loads, 5 SLICEs
-      Net n1147: 42 loads, 42 SLICEs
-      Net n673: 6 loads, 6 SLICEs
-      Net n4221: 8 loads, 8 SLICEs
+      Net paddle_two/n106706: 6 loads, 6 SLICEs
+      Net n98996: 20 loads, 20 SLICEs
+      Net paddle_one/n106685: 6 loads, 6 SLICEs
+      Net menu/n117924: 1 loads, 1 SLICEs
+      Net vga_driver/n98993: 10 loads, 10 SLICEs
+   Number of LSRs:  11
 
                                     Page 1
 
@@ -69,47 +69,39 @@ Design Summary
 
 Design Summary (cont)
 ---------------------
-      Net game/n3707: 1 loads, 1 SLICEs
-      Net game/n1142: 1 loads, 1 SLICEs
-      Net paddle_one/n4259: 5 loads, 5 SLICEs
-      Net menu/reset_N_816: 1 loads, 1 SLICEs
-      Net ball/n676: 5 loads, 5 SLICEs
+      Net n98871: 45 loads, 45 SLICEs
+      Net bounce_clock_7__N_54: 5 loads, 5 SLICEs
+      Net paddle_two/n106925: 5 loads, 5 SLICEs
+      Net n106926: 1 loads, 1 SLICEs
+      Net n98996: 5 loads, 5 SLICEs
+      Net n106921: 8 loads, 8 SLICEs
+      Net game/n105958: 1 loads, 1 SLICEs
+      Net game/n99534: 1 loads, 1 SLICEs
+      Net paddle_one/n106923: 5 loads, 5 SLICEs
+      Net menu/n106712: 1 loads, 1 SLICEs
+      Net vga_driver/n98993: 6 loads, 6 SLICEs
    Top 10 highest fanout non-clock nets:
-      Net start_menu/rgb_2__N_610[3]: 218 loads
-      Net start_menu/rgb_2__N_610[2]: 195 loads
-      Net start_menu/rgb_2__N_610[1]: 172 loads
-      Net start_menu/rgb_2__N_610[4]: 159 loads
-      Net start_menu/rgb_2__N_610[0]: 144 loads
-      Net start_menu/rgb_2__N_610[5]: 128 loads
-      Net start_menu/rgb_2__N_610[6]: 73 loads
-      Net VCC_net: 59 loads
-      Net start_menu/rgb_2__N_610[7]: 43 loads
-      Net n1147: 42 loads
+      Net menu_rgb_2__N_670[3]: 327 loads
+      Net menu_rgb_2__N_670[4]: 267 loads
+      Net menu_rgb_2__N_670[2]: 253 loads
+      Net menu_rgb_2__N_670[1]: 235 loads
+      Net menu_rgb_2__N_670[5]: 209 loads
+      Net start_menu/rgb_2__N_628[3]: 207 loads
+      Net menu_rgb_2__N_670[0]: 196 loads
+      Net start_menu/rgb_2__N_628[2]: 178 loads
+      Net start_menu/rgb_2__N_628[4]: 170 loads
+      Net start_menu/rgb_2__N_628[1]: 161 loads
 
 
 
 
-   Number of warnings:  5
+   Number of warnings:  0
    Number of errors:    0
 
 Design Errors/Warnings
 ----------------------
 
-WARNING - map: The clock port [player_one_up] is assigned to a non clock
-     dedicated pin [19], which might affect the clock performance. Use dedicated
-     clock resources for the port.
-WARNING - map: The clock port [player_one_down] is assigned to a non clock
-     dedicated pin [18], which might affect the clock performance. Use dedicated
-     clock resources for the port.
-WARNING - map: The clock port [player_two_up] is assigned to a non clock
-     dedicated pin [13], which might affect the clock performance. Use dedicated
-     clock resources for the port.
-WARNING - map: The clock port [player_two_down] is assigned to a non clock
-     dedicated pin [12], which might affect the clock performance. Use dedicated
-     clock resources for the port.
-WARNING - map: The clock port [button_enter] is assigned to a non clock
-     dedicated pin [11], which might affect the clock performance. Use dedicated
-     clock resources for the port.
+   No errors or warnings present.
 
 IO (PIO) Attributes
 -------------------
@@ -118,13 +110,21 @@ IO (PIO) Attributes
 | IO Name             | Direction | Levelmode |  IO   |  IO   | Special   |
 |                     |           |  IO_TYPE  |  REG  |  DDR  | IO Buffer |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| button_enter        | INPUT     | LVCMOS33  | I     |       |           |
+| button_enter        | INPUT     | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| hsync               | OUTPUT    | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| vsync               | OUTPUT    | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | player_two_down     | INPUT     | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| player_two_up       | INPUT     | LVCMOS33  |       |       |           |
+| r                   | OUTPUT    | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| player_one_down     | INPUT     | LVCMOS33  |       |       |           |
+| g                   | OUTPUT    | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| b                   | OUTPUT    | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| player_one_up       | INPUT     | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 
                                     Page 2
@@ -135,17 +135,9 @@ IO (PIO) Attributes
 
 IO (PIO) Attributes (cont)
 --------------------------
-| hsync               | OUTPUT    | LVCMOS33  |       |       |           |
+| player_one_down     | INPUT     | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| vsync               | OUTPUT    | LVCMOS33  |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
-| r                   | OUTPUT    | LVCMOS33  |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
-| g                   | OUTPUT    | LVCMOS33  |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
-| player_one_up       | INPUT     | LVCMOS33  |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
-| b                   | OUTPUT    | LVCMOS33  |       |       |           |
+| player_two_up       | INPUT     | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 
 Removed logic
@@ -192,15 +184,6 @@ OSC Summary
 -----------
 
 OSC 1:                                 Pin/Node Value
-
-                                    Page 3
-
-
-
-
-
-OSC Summary (cont)
-------------------
   OSC Instance Name:                            inst2
   OSC Type:                                     HSOSC_CORE
   Power UP:                            NODE     VCC_net
@@ -208,24 +191,41 @@ OSC Summary (cont)
   OSC Output:                          NODE     clk
   DIV Setting:                                  0b10
 
+
+
+                                    Page 3
+
+
+
+
+
 ASIC Components
 ---------------
 
-Instance Name: enter_c
-         Type: IOLOGIC
+Instance Name: paused_menu.mult_859
+         Type: DSP
+Instance Name: paused_menu.marker.mult_862
+         Type: DSP
 Instance Name: inst2
          Type: HFOSC
+Instance Name: start_menu.mult_856
+         Type: DSP
 Instance Name: pll.lscc_pll_inst.u_PLL_B
          Type: PLL
-Instance Name: start_menu.mult_687
-         Type: DSP
 
 Run Time and Memory Usage
 -------------------------
 
    Total CPU Time: 1 secs
    Total REAL Time: 0 secs
-   Peak Memory Usage: 84 MB
+   Peak Memory Usage: 100 MB
+
+
+
+
+
+
+
 
 
 

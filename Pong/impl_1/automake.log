@@ -7,7 +7,7 @@ Family:  iCE40UP
 Device:  iCE40UP5K
 Package: SG48
 Performance Grade:   High-Performance_1.2V
-Successfully loading udb from disks and to up-layer in CPU time: 0 secs , REAL time: 0 secs 
+Successfully loading udb from disks and to up-layer in CPU time: 1 secs , REAL time: 0 secs 
 
 
 
@@ -36,7 +36,7 @@ Saving bit stream in "C:\Users\facun\OneDrive\Desktop\ITBA\5C Electronica III\tp
 ibisgen "pong_impl_1.udb" "C:/lscc/radiant/1.1/cae_library/ibis/iCE40UP.ibs"
 IBIS Models Generator: Lattice Radiant Software (64-bit) 1.1.0.165.1
 
-Thu Nov 21 11:50:08 2019
+Thu Nov 21 11:54:30 2019
 
 Loading pong_impl_1.udb ...
 Loading device for application udb from file 'itpa08.nph' in environment: C:/lscc/radiant/1.1/ispfpga.
@@ -75,6 +75,6 @@ Writing a verilog netlist based on the pong_impl_1 design file.
 Writing Verilog netlist to file pong_impl_1_vo.vo
 Writing SDF timing to file pong_impl_1_vo.sdf
 Backanno finished with 0 posted error messages.
-Total CPU Time: 3 secs 
-Total REAL Time: 3 secs 
-Peak Memory Usage: 123 MB
+Total CPU Time: 8 secs 
+Total REAL Time: 9 secs 
+Peak Memory Usage: 147 MB
