@@ -5,7 +5,7 @@ Target Device:        iCE40UP5KSG48
 Target Performance:   High-Performance_1.2V
 
 Mapper:    version Radiant Software (64-bit) 1.1.0.165.1
-Mapped on: Thu Nov 21 17:58:58 2019
+Mapped on: Thu Nov 21 18:14:15 2019
 
 Design Information
 ------------------
@@ -16,12 +16,11 @@ Command line:   map pong_impl_1_syn.udb C:/Users/facun/OneDrive/Desktop/ITBA/5C
 Design Summary
 --------------
 
-   Number of slice registers: 181 out of  5280 (3%)
+   Number of slice registers: 183 out of  5280 (3%)
    Number of I/O registers:      1 out of   117 (1%)
-   Number of LUT4s:           2592 out of  5280 (49%)
-      Number of logic LUT4s:             2184
-      Number of inserted feedthru LUT4s:   4
-      Number of replicated LUT4s:          2
+   Number of LUT4s:           2622 out of  5280 (50%)
+      Number of logic LUT4s:             2219
+      Number of replicated LUT4s:          1
       Number of ripple logic:            201 (402 LUT4s)
    Number of IO sites used:   11 out of 39 (28%)
       Number of IO sites used for general PIOs: 11
@@ -43,23 +42,24 @@ Design Summary
    Number of PLLs:             1 out of 1 (100%)
    Number of Clocks:  5
       Net clk: 22 loads, 22 rising, 0 falling (Driver: Pin inst2/CLKHF)
-      Net tick_game: 102 loads, 102 rising, 0 falling (Driver: Pin
+      Net tick_game: 104 loads, 104 rising, 0 falling (Driver: Pin
      menu.clock_I_0_69_2_lut_3_lut/OUT)
       Net tick: 14 loads, 14 rising, 0 falling (Driver: Pin tick_c/Q)
       Net tick_menu: 3 loads, 3 rising, 0 falling (Driver: Pin
-     menu.clock_I_0_2_lut_3_lut/OUT)
+     menu.i1_2_lut_3_lut/OUT)
       Net vga_clock: 16 loads, 16 rising, 0 falling (Driver: Pin
      pll.lscc_pll_inst.u_PLL_B/OUTGLOBAL)
    Number of Clock Enables:  15
       Net VCC_net: 1 loads, 0 SLICEs
-      Net n108024: 6 loads, 6 SLICEs
-      Net paddle_two/n99171: 5 loads, 5 SLICEs
-      Net paddle_two/n107984: 6 loads, 6 SLICEs
-      Net paddle_two/n108377: 3 loads, 3 SLICEs
-      Net n110675: 2 loads, 2 SLICEs
-      Net n108006: 3 loads, 3 SLICEs
-      Net n99147: 10 loads, 10 SLICEs
-      Net menu/n8: 1 loads, 1 SLICEs
+      Net n108025: 6 loads, 6 SLICEs
+      Net paddle_two/n99173: 5 loads, 5 SLICEs
+      Net paddle_two/n107985: 6 loads, 6 SLICEs
+      Net paddle_two/n108378: 3 loads, 3 SLICEs
+      Net n111884: 2 loads, 2 SLICEs
+      Net n108372: 20 loads, 20 SLICEs
+      Net n108007: 3 loads, 3 SLICEs
+      Net game/n121305: 3 loads, 3 SLICEs
+      Net game/score_player_1_3__N_1025: 3 loads, 3 SLICEs
 
                                     Page 1
 
@@ -69,38 +69,37 @@ Design Summary
 
 Design Summary (cont)
 ---------------------
-      Net n108371: 20 loads, 20 SLICEs
-      Net game/n117319: 3 loads, 3 SLICEs
-      Net game/score_player_1_3__N_1025: 3 loads, 3 SLICEs
-      Net paddle_one/n108374: 3 loads, 3 SLICEs
-      Net paddle_one/n99160: 5 loads, 5 SLICEs
-      Net paddle_one/n107958: 6 loads, 6 SLICEs
+      Net vga_driver/n99149: 10 loads, 10 SLICEs
+      Net menu/n10: 1 loads, 1 SLICEs
+      Net paddle_one/n108375: 3 loads, 3 SLICEs
+      Net paddle_one/n99162: 5 loads, 5 SLICEs
+      Net paddle_one/n107959: 6 loads, 6 SLICEs
    Number of LSRs:  14
       Net timer_clock_14__N_58: 3 loads, 3 SLICEs
-      Net n108280: 6 loads, 6 SLICEs
-      Net paddle_two/n108266: 5 loads, 5 SLICEs
-      Net paddle_two/n120130: 2 loads, 2 SLICEs
+      Net n108279: 6 loads, 6 SLICEs
+      Net paddle_two/n108271: 5 loads, 5 SLICEs
+      Net paddle_two/n124208: 2 loads, 2 SLICEs
       Net reset_N_1072: 46 loads, 46 SLICEs
       Net bounce_clock_7__N_88: 5 loads, 5 SLICEs
-      Net n108269: 1 loads, 1 SLICEs
-      Net menu/n7: 1 loads, 1 SLICEs
-      Net n99147: 6 loads, 6 SLICEs
-      Net game/n99765: 1 loads, 1 SLICEs
-      Net game/n106930: 1 loads, 1 SLICEs
-      Net n108278: 3 loads, 3 SLICEs
-      Net paddle_one/n108289: 5 loads, 5 SLICEs
-      Net paddle_one/n120128: 2 loads, 2 SLICEs
+      Net game/n99769: 1 loads, 1 SLICEs
+      Net game/n106928: 1 loads, 1 SLICEs
+      Net n108277: 3 loads, 3 SLICEs
+      Net n108263: 1 loads, 1 SLICEs
+      Net vga_driver/n99149: 6 loads, 6 SLICEs
+      Net menu/n9: 1 loads, 1 SLICEs
+      Net paddle_one/n108288: 5 loads, 5 SLICEs
+      Net paddle_one/n124202: 2 loads, 2 SLICEs
    Top 10 highest fanout non-clock nets:
-      Net menu_rgb_2__N_750[3]: 334 loads
-      Net menu_rgb_2__N_750[4]: 267 loads
-      Net menu_rgb_2__N_750[2]: 257 loads
-      Net menu_rgb_2__N_750[1]: 235 loads
-      Net start_menu/rgb_2__N_714[3]: 210 loads
-      Net menu_rgb_2__N_750[5]: 205 loads
-      Net menu_rgb_2__N_750[0]: 203 loads
-      Net start_menu/rgb_2__N_714[2]: 187 loads
-      Net start_menu/rgb_2__N_714[1]: 170 loads
-      Net start_menu/rgb_2__N_714[4]: 164 loads
+      Net menu_rgb_2__N_750[3]: 324 loads
+      Net menu_rgb_2__N_750[4]: 268 loads
+      Net menu_rgb_2__N_750[2]: 253 loads
+      Net menu_rgb_2__N_750[1]: 240 loads
+      Net start_menu/rgb_2__N_714[3]: 212 loads
+      Net menu_rgb_2__N_750[0]: 207 loads
+      Net menu_rgb_2__N_750[5]: 204 loads
+      Net start_menu/rgb_2__N_714[2]: 180 loads
+      Net start_menu/rgb_2__N_714[4]: 171 loads
+      Net start_menu/rgb_2__N_714[1]: 167 loads
 
 
 
@@ -127,8 +126,8 @@ WARNING - map: The clock port [button_enter] is assigned to a non clock
      dedicated pin [2], which might affect the clock performance. Use dedicated
      clock resources for the port.
 
-                                    Page 2
 
+                                    Page 2
 
 
 
@@ -192,6 +191,7 @@ PLL 1:                                 Pin/Node Value
   VCO Divider:                                  5
   ENABLE_ICEGATE_PORTA:                         0
   ENABLE_ICEGATE_PORTB:                         0
+  PLLOUT_SELECT_PORTA:                          GENCLK
 
                                     Page 3
 
@@ -201,7 +201,6 @@ PLL 1:                                 Pin/Node Value
 
 PLL/DLL Summary (cont)
 ----------------------
-  PLLOUT_SELECT_PORTA:                          GENCLK
   PLLOUT_SELECT_PORTB:                          GENCLK
   SHIFTREG_DIV_MODE:                            0
   DELAY_ADJUSTMENT_MODE_RELATIVE:               FIXED
@@ -229,25 +228,26 @@ ASIC Components
 
 Instance Name: inst2
          Type: HFOSC
+Instance Name: paused_menu.mult_964
+         Type: DSP
+Instance Name: paused_menu.marker.mult_967
+         Type: DSP
 Instance Name: score_one.num0.mult_6
          Type: DSP
-Instance Name: paused_menu.mult_960
+Instance Name: start_menu.mult_961
          Type: DSP
-Instance Name: paused_menu.marker.mult_963
-         Type: DSP
-Instance Name: start_menu.mult_957
-         Type: DSP
-Instance Name: pll.lscc_pll_inst.u_PLL_B
-         Type: PLL
 Instance Name: buzzer_i0
          Type: IOLOGIC
+Instance Name: pll.lscc_pll_inst.u_PLL_B
+         Type: PLL
 
 Run Time and Memory Usage
 -------------------------
 
    Total CPU Time: 1 secs
    Total REAL Time: 2 secs
-   Peak Memory Usage: 108 MB
+   Peak Memory Usage: 109 MB
+
 
 
 

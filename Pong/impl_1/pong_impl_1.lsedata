@@ -1,13 +1,13 @@
 <top name = "main"  library = "work"  arch = ""  entry = "Verilog">
 
 <clocks>
-    <clockitem name = "tick_menu"  type = "net" />
-    <clockitem name = "tick_game"  type = "net" />
     <clockitem name = "clk"  type = "net" />
     <clockitem name = "vga_clock"  type = "net" />
     <clockitem name = "tick"  type = "net" />
-    <clockitem name = "pll/lscc_pll_inst/outcoreb_o"  type = "net" />
+    <clockitem name = "tick_game"  type = "net" />
+    <clockitem name = "tick_menu"  type = "net" />
     <clockitem name = "pll/lscc_pll_inst/outglobalb_o"  type = "net" />
+    <clockitem name = "pll/lscc_pll_inst/outcoreb_o"  type = "net" />
     <clockitem name = "pll/outcore_o"  type = "net" />
 </clocks>
 
@@ -514,7 +514,7 @@
         <nets>
         <nitem  name = "speed_selector"  />
         <nitem  name = "ball_speed_2__N_92"  />
-        <nitem  name = "speed_selector_N_102"  />
+        <nitem  name = "speed_selector_N_103"  />
         </nets>
     </instance>
 
@@ -1143,6 +1143,18 @@
         </nets>
     </instance>
 
+    <instance  name = "button_enter_I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "i"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "button_enter"  />
+        <nitem  name = "button_enter_N_101"  />
+        </nets>
+    </instance>
+
     <instance  name = "bounce_clock_7__I_0"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "cin"  direction = "in"  />
@@ -1180,7 +1192,7 @@
         </nets>
     </instance>
 
-    <instance  name = "add_21"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "add_22"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "cin"  direction = "in"  />
         <pitem  name = "a[31]"  direction = "in"  />
@@ -1330,7 +1342,7 @@
         </nets>
     </instance>
 
-    <instance  name = "button_enter_I_0"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "button_enter_N_101_I_0"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "a0"  direction = "in"  />
         <pitem  name = "a1"  direction = "in"  />
@@ -1340,9 +1352,9 @@
 
         <nets>
         <nitem  name = "gnd"  />
-        <nitem  name = "button_enter"  />
+        <nitem  name = "button_enter_N_101"  />
         <nitem  name = "bounce_clock_7__N_88"  />
-        <nitem  name = "enter_N_101"  />
+        <nitem  name = "enter_N_102"  />
         </nets>
     </instance>
 
@@ -1356,7 +1368,7 @@
         </pins>
 
         <nets>
-        <nitem  name = "enter_N_101"  />
+        <nitem  name = "enter_N_102"  />
         <nitem  name = "tick"  />
         <nitem  name = "gnd"  />
         <nitem  name = "enter"  />
@@ -1373,7 +1385,7 @@
         </pins>
 
         <nets>
-        <nitem  name = "speed_selector_N_102"  />
+        <nitem  name = "speed_selector_N_103"  />
         <nitem  name = "tick"  />
         <nitem  name = "gnd"  />
         <nitem  name = "speed_selector"  />
@@ -1420,7 +1432,7 @@
         </nets>
     </instance>
 
-    <instance  name = "equal_30"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "equal_31"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "a[31]"  direction = "in"  />
         <pitem  name = "a[30]"  direction = "in"  />
@@ -1492,11 +1504,11 @@
         <nets>
         <nitem  name = "gnd"  />
         <nitem  name = "reset"  />
-        <nitem  name = "n353"  />
+        <nitem  name = "n354"  />
         </nets>
     </instance>
 
-    <instance  name = "mux_31"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "mux_32"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "d0[2]"  direction = "in"  />
         <pitem  name = "d0[1]"  direction = "in"  />
@@ -1516,7 +1528,7 @@
         <nitem  name = "ball_speed[0]"  />
         <nitem  name = "pwr"  />
         <nitem  name = "gnd"  />
-        <nitem  name = "n353"  />
+        <nitem  name = "n354"  />
         <nitem  name = "ball_speed_2__N_89[2]"  />
         <nitem  name = "ball_speed_2__N_89[1]"  />
         <nitem  name = "ball_speed_2__N_89[0]"  />
@@ -1689,18 +1701,6 @@
         <nitem  name = "n405"  />
         <nitem  name = "n395"  />
         <nitem  name = "n385"  />
-        </nets>
-    </instance>
-
-    <instance  name = "enter_I_23"  library = "work"  arch = ""  type = "comb">
-        <pins>
-        <pitem  name = "i"  direction = "in"  />
-        <pitem  name = "o"  direction = "out"  />
-        </pins>
-
-        <nets>
-        <nitem  name = "enter"  />
-        <nitem  name = "enter_N_103"  />
         </nets>
     </instance>
 
@@ -2062,7 +2062,7 @@
         </nets>
     </instance>
 
-    <instance  name = "vga_driver/vga_vsync_I_25"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "vga_driver/vga_vsync_I_28"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "a0"  direction = "in"  />
         <pitem  name = "a1"  direction = "in"  />
@@ -2174,7 +2174,7 @@
         </nets>
     </instance>
 
-    <instance  name = "vga_driver/vga_hsync_I_24"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "vga_driver/vga_hsync_I_27"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "a0"  direction = "in"  />
         <pitem  name = "a1"  direction = "in"  />
@@ -4397,7 +4397,7 @@
         </nets>
     </instance>
 
-    <instance  name = "ball/pos_x_9__I_29"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "ball/pos_x_9__I_32"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "d0[9]"  direction = "in"  />
         <pitem  name = "d0[7]"  direction = "in"  />
@@ -4459,7 +4459,7 @@
         </nets>
     </instance>
 
-    <instance  name = "ball/pos_y_9__I_30"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "ball/pos_y_9__I_33"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "d0[9]"  direction = "in"  />
         <pitem  name = "d0[8]"  direction = "in"  />
@@ -5227,7 +5227,7 @@
         </nets>
     </instance>
 
-    <instance  name = "ball/rgb_2__I_28"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "ball/rgb_2__I_31"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "a0"  direction = "in"  />
         <pitem  name = "a1"  direction = "in"  />
@@ -5293,7 +5293,7 @@
         </nets>
     </instance>
 
-    <instance  name = "ball/rgb_2__I_27"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "ball/rgb_2__I_30"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "a0"  direction = "in"  />
         <pitem  name = "a1"  direction = "in"  />
@@ -5574,7 +5574,7 @@
         </nets>
     </instance>
 
-    <instance  name = "ball/rgb_2__I_26"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "ball/rgb_2__I_29"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "a0"  direction = "in"  />
         <pitem  name = "a1"  direction = "in"  />
@@ -6185,13 +6185,13 @@
         <pitem  name = "b[9]"  direction = "in"  />
         <pitem  name = "b[8]"  direction = "in"  />
         <pitem  name = "b[7]"  direction = "in"  />
-        <pitem  name = "b[6]"  direction = "in"  />
-        <pitem  name = "b[4]"  direction = "in"  />
+        <pitem  name = "b[5]"  direction = "in"  />
+        <pitem  name = "b[3]"  direction = "in"  />
         <pitem  name = "b[2]"  direction = "in"  />
         <pitem  name = "b[1]"  direction = "in"  />
         <pitem  name = "b[0]"  direction = "in"  />
-        <pitem  name = "b[5]"  direction = "in"  />
-        <pitem  name = "b[3]"  direction = "in"  />
+        <pitem  name = "b[6]"  direction = "in"  />
+        <pitem  name = "b[4]"  direction = "in"  />
         <pitem  name = "a[9]"  direction = "in"  />
         <pitem  name = "a[8]"  direction = "in"  />
         <pitem  name = "a[7]"  direction = "in"  />
@@ -7691,9 +7691,9 @@
         <pitem  name = "d0[6]"  direction = "in"  />
         <pitem  name = "d0[5]"  direction = "in"  />
         <pitem  name = "d0[4]"  direction = "in"  />
-        <pitem  name = "d0[3]"  direction = "in"  />
         <pitem  name = "d0[1]"  direction = "in"  />
         <pitem  name = "d0[0]"  direction = "in"  />
+        <pitem  name = "d0[3]"  direction = "in"  />
         <pitem  name = "d0[2]"  direction = "in"  />
         <pitem  name = "cond"  direction = "in"  />
         <pitem  name = "d1[7]"  direction = "in"  />
@@ -7740,13 +7740,13 @@
     <instance  name = "paddle_one/size_y_7__I_0"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "d0[7]"  direction = "in"  />
-        <pitem  name = "d0[6]"  direction = "in"  />
-        <pitem  name = "d0[4]"  direction = "in"  />
+        <pitem  name = "d0[5]"  direction = "in"  />
+        <pitem  name = "d0[3]"  direction = "in"  />
         <pitem  name = "d0[2]"  direction = "in"  />
         <pitem  name = "d0[1]"  direction = "in"  />
         <pitem  name = "d0[0]"  direction = "in"  />
-        <pitem  name = "d0[5]"  direction = "in"  />
-        <pitem  name = "d0[3]"  direction = "in"  />
+        <pitem  name = "d0[6]"  direction = "in"  />
+        <pitem  name = "d0[4]"  direction = "in"  />
         <pitem  name = "cond"  direction = "in"  />
         <pitem  name = "d1[7]"  direction = "in"  />
         <pitem  name = "d1[6]"  direction = "in"  />
@@ -8220,7 +8220,6 @@
         <pitem  name = "a[6]"  direction = "in"  />
         <pitem  name = "a[5]"  direction = "in"  />
         <pitem  name = "a[4]"  direction = "in"  />
-        <pitem  name = "a[3]"  direction = "in"  />
         <pitem  name = "a[1]"  direction = "in"  />
         <pitem  name = "a[0]"  direction = "in"  />
         <pitem  name = "b[31]"  direction = "in"  />
@@ -8245,6 +8244,7 @@
         <pitem  name = "b[12]"  direction = "in"  />
         <pitem  name = "b[11]"  direction = "in"  />
         <pitem  name = "b[10]"  direction = "in"  />
+        <pitem  name = "a[3]"  direction = "in"  />
         <pitem  name = "a[2]"  direction = "in"  />
         <pitem  name = "b[9]"  direction = "in"  />
         <pitem  name = "b[8]"  direction = "in"  />
@@ -8456,7 +8456,7 @@
         </nets>
     </instance>
 
-    <instance  name = "paddle_one/rgb_2__I_31"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "paddle_one/rgb_2__I_34"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "a0"  direction = "in"  />
         <pitem  name = "a1"  direction = "in"  />
@@ -8550,8 +8550,8 @@
         <pitem  name = "a[9]"  direction = "in"  />
         <pitem  name = "a[8]"  direction = "in"  />
         <pitem  name = "a[7]"  direction = "in"  />
-        <pitem  name = "a[6]"  direction = "in"  />
-        <pitem  name = "a[4]"  direction = "in"  />
+        <pitem  name = "a[5]"  direction = "in"  />
+        <pitem  name = "a[3]"  direction = "in"  />
         <pitem  name = "a[2]"  direction = "in"  />
         <pitem  name = "a[1]"  direction = "in"  />
         <pitem  name = "a[0]"  direction = "in"  />
@@ -8577,8 +8577,8 @@
         <pitem  name = "b[12]"  direction = "in"  />
         <pitem  name = "b[11]"  direction = "in"  />
         <pitem  name = "b[10]"  direction = "in"  />
-        <pitem  name = "a[5]"  direction = "in"  />
-        <pitem  name = "a[3]"  direction = "in"  />
+        <pitem  name = "a[6]"  direction = "in"  />
+        <pitem  name = "a[4]"  direction = "in"  />
         <pitem  name = "b[9]"  direction = "in"  />
         <pitem  name = "b[8]"  direction = "in"  />
         <pitem  name = "b[7]"  direction = "in"  />
@@ -8789,7 +8789,7 @@
         </nets>
     </instance>
 
-    <instance  name = "paddle_one/rgb_2__I_33"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "paddle_one/rgb_2__I_36"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "a0"  direction = "in"  />
         <pitem  name = "a1"  direction = "in"  />
@@ -8803,7 +8803,7 @@
         </nets>
     </instance>
 
-    <instance  name = "paddle_one/rgb_2__I_32"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "paddle_one/rgb_2__I_35"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "d0[2]"  direction = "in"  />
         <pitem  name = "d0[1]"  direction = "in"  />
@@ -9426,13 +9426,13 @@
         <pitem  name = "b[9]"  direction = "in"  />
         <pitem  name = "b[8]"  direction = "in"  />
         <pitem  name = "b[7]"  direction = "in"  />
-        <pitem  name = "b[6]"  direction = "in"  />
-        <pitem  name = "b[4]"  direction = "in"  />
+        <pitem  name = "b[5]"  direction = "in"  />
+        <pitem  name = "b[3]"  direction = "in"  />
         <pitem  name = "b[2]"  direction = "in"  />
         <pitem  name = "b[1]"  direction = "in"  />
         <pitem  name = "b[0]"  direction = "in"  />
-        <pitem  name = "b[5]"  direction = "in"  />
-        <pitem  name = "b[3]"  direction = "in"  />
+        <pitem  name = "b[6]"  direction = "in"  />
+        <pitem  name = "b[4]"  direction = "in"  />
         <pitem  name = "a[9]"  direction = "in"  />
         <pitem  name = "a[8]"  direction = "in"  />
         <pitem  name = "a[7]"  direction = "in"  />
@@ -10932,9 +10932,9 @@
         <pitem  name = "d0[6]"  direction = "in"  />
         <pitem  name = "d0[5]"  direction = "in"  />
         <pitem  name = "d0[4]"  direction = "in"  />
-        <pitem  name = "d0[3]"  direction = "in"  />
         <pitem  name = "d0[1]"  direction = "in"  />
         <pitem  name = "d0[0]"  direction = "in"  />
+        <pitem  name = "d0[3]"  direction = "in"  />
         <pitem  name = "d0[2]"  direction = "in"  />
         <pitem  name = "cond"  direction = "in"  />
         <pitem  name = "d1[7]"  direction = "in"  />
@@ -10981,13 +10981,13 @@
     <instance  name = "paddle_two/size_y_7__I_0"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "d0[7]"  direction = "in"  />
-        <pitem  name = "d0[6]"  direction = "in"  />
-        <pitem  name = "d0[4]"  direction = "in"  />
+        <pitem  name = "d0[5]"  direction = "in"  />
+        <pitem  name = "d0[3]"  direction = "in"  />
         <pitem  name = "d0[2]"  direction = "in"  />
         <pitem  name = "d0[1]"  direction = "in"  />
         <pitem  name = "d0[0]"  direction = "in"  />
-        <pitem  name = "d0[5]"  direction = "in"  />
-        <pitem  name = "d0[3]"  direction = "in"  />
+        <pitem  name = "d0[6]"  direction = "in"  />
+        <pitem  name = "d0[4]"  direction = "in"  />
         <pitem  name = "cond"  direction = "in"  />
         <pitem  name = "d1[7]"  direction = "in"  />
         <pitem  name = "d1[6]"  direction = "in"  />
@@ -11461,7 +11461,6 @@
         <pitem  name = "a[6]"  direction = "in"  />
         <pitem  name = "a[5]"  direction = "in"  />
         <pitem  name = "a[4]"  direction = "in"  />
-        <pitem  name = "a[3]"  direction = "in"  />
         <pitem  name = "a[1]"  direction = "in"  />
         <pitem  name = "a[0]"  direction = "in"  />
         <pitem  name = "b[31]"  direction = "in"  />
@@ -11486,6 +11485,7 @@
         <pitem  name = "b[12]"  direction = "in"  />
         <pitem  name = "b[11]"  direction = "in"  />
         <pitem  name = "b[10]"  direction = "in"  />
+        <pitem  name = "a[3]"  direction = "in"  />
         <pitem  name = "a[2]"  direction = "in"  />
         <pitem  name = "b[9]"  direction = "in"  />
         <pitem  name = "b[8]"  direction = "in"  />
@@ -11697,7 +11697,7 @@
         </nets>
     </instance>
 
-    <instance  name = "paddle_two/rgb_2__I_34"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "paddle_two/rgb_2__I_37"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "a0"  direction = "in"  />
         <pitem  name = "a1"  direction = "in"  />
@@ -11791,8 +11791,8 @@
         <pitem  name = "a[9]"  direction = "in"  />
         <pitem  name = "a[8]"  direction = "in"  />
         <pitem  name = "a[7]"  direction = "in"  />
-        <pitem  name = "a[6]"  direction = "in"  />
-        <pitem  name = "a[4]"  direction = "in"  />
+        <pitem  name = "a[5]"  direction = "in"  />
+        <pitem  name = "a[3]"  direction = "in"  />
         <pitem  name = "a[2]"  direction = "in"  />
         <pitem  name = "a[1]"  direction = "in"  />
         <pitem  name = "a[0]"  direction = "in"  />
@@ -11818,8 +11818,8 @@
         <pitem  name = "b[12]"  direction = "in"  />
         <pitem  name = "b[11]"  direction = "in"  />
         <pitem  name = "b[10]"  direction = "in"  />
-        <pitem  name = "a[5]"  direction = "in"  />
-        <pitem  name = "a[3]"  direction = "in"  />
+        <pitem  name = "a[6]"  direction = "in"  />
+        <pitem  name = "a[4]"  direction = "in"  />
         <pitem  name = "b[9]"  direction = "in"  />
         <pitem  name = "b[8]"  direction = "in"  />
         <pitem  name = "b[7]"  direction = "in"  />
@@ -12030,7 +12030,7 @@
         </nets>
     </instance>
 
-    <instance  name = "paddle_two/rgb_2__I_36"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "paddle_two/rgb_2__I_39"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "a0"  direction = "in"  />
         <pitem  name = "a1"  direction = "in"  />
@@ -12044,7 +12044,7 @@
         </nets>
     </instance>
 
-    <instance  name = "paddle_two/rgb_2__I_35"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "paddle_two/rgb_2__I_38"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "d0[2]"  direction = "in"  />
         <pitem  name = "d0[1]"  direction = "in"  />
@@ -12260,7 +12260,7 @@
         </nets>
     </instance>
 
-    <instance  name = "background/auxiliar_col_9__I_38"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "background/auxiliar_col_9__I_41"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "cin"  direction = "in"  />
         <pitem  name = "b[31]"  direction = "in"  />
@@ -12654,7 +12654,7 @@
         </nets>
     </instance>
 
-    <instance  name = "background/auxiliar_row_9__I_39"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "background/auxiliar_row_9__I_42"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "cin"  direction = "in"  />
         <pitem  name = "b[31]"  direction = "in"  />
@@ -13027,7 +13027,7 @@
         </nets>
     </instance>
 
-    <instance  name = "background/rgb_2__I_37"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "background/rgb_2__I_40"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "a0"  direction = "in"  />
         <pitem  name = "a1"  direction = "in"  />
@@ -13151,7 +13151,7 @@
         </nets>
     </instance>
 
-    <instance  name = "start_menu/rgb_2__I_42"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "start_menu/rgb_2__I_45"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "a0"  direction = "in"  />
         <pitem  name = "a1"  direction = "in"  />
@@ -13208,7 +13208,7 @@
         </nets>
     </instance>
 
-    <instance  name = "start_menu/rgb_2__I_41"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "start_menu/rgb_2__I_44"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "a0"  direction = "in"  />
         <pitem  name = "a1"  direction = "in"  />
@@ -13265,7 +13265,7 @@
         </nets>
     </instance>
 
-    <instance  name = "start_menu/rgb_2__I_40"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "start_menu/rgb_2__I_43"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "a0"  direction = "in"  />
         <pitem  name = "a1"  direction = "in"  />
@@ -13677,7 +13677,7 @@
         </nets>
     </instance>
 
-    <instance  name = "start_menu/rgb_2__I_43"  library = "work"  arch = ""  type = "seq">
+    <instance  name = "start_menu/rgb_2__I_46"  library = "work"  arch = ""  type = "seq">
         <pins>
         <pitem  name = "read_enable"  direction = "in"  />
         <pitem  name = "Ram"  direction = "in"  />
@@ -13986,7 +13986,7 @@
         </nets>
     </instance>
 
-    <instance  name = "paused_menu/flag_I_53"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "paused_menu/flag_I_56"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "a1"  direction = "in"  />
         <pitem  name = "a0"  direction = "in"  />
@@ -14693,7 +14693,7 @@
         </nets>
     </instance>
 
-    <instance  name = "paused_menu/flag_I_52"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "paused_menu/flag_I_55"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "a1"  direction = "in"  />
         <pitem  name = "a0"  direction = "in"  />
@@ -14731,7 +14731,7 @@
         </nets>
     </instance>
 
-    <instance  name = "paused_menu/flag_I_51"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "paused_menu/flag_I_54"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "a1"  direction = "in"  />
         <pitem  name = "c"  direction = "in"  />
@@ -14747,7 +14747,7 @@
         </nets>
     </instance>
 
-    <instance  name = "paused_menu/flag_I_50"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "paused_menu/flag_I_53"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "c"  direction = "in"  />
         <pitem  name = "a1"  direction = "in"  />
@@ -14801,7 +14801,7 @@
         </nets>
     </instance>
 
-    <instance  name = "paused_menu/selection_1__I_48"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "paused_menu/selection_1__I_51"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "d0[1]"  direction = "in"  />
         <pitem  name = "d0[0]"  direction = "in"  />
@@ -14957,7 +14957,7 @@
         </nets>
     </instance>
 
-    <instance  name = "paused_menu/menu_rgb_2__I_47"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "paused_menu/menu_rgb_2__I_50"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "a0"  direction = "in"  />
         <pitem  name = "a1"  direction = "in"  />
@@ -15014,7 +15014,7 @@
         </nets>
     </instance>
 
-    <instance  name = "paused_menu/menu_rgb_2__I_46"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "paused_menu/menu_rgb_2__I_49"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "a0"  direction = "in"  />
         <pitem  name = "a1"  direction = "in"  />
@@ -15071,7 +15071,7 @@
         </nets>
     </instance>
 
-    <instance  name = "paused_menu/menu_rgb_2__I_45"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "paused_menu/menu_rgb_2__I_48"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "a0"  direction = "in"  />
         <pitem  name = "a1"  direction = "in"  />
@@ -15485,7 +15485,7 @@
         </nets>
     </instance>
 
-    <instance  name = "paused_menu/menu_rgb_2__I_49"  library = "work"  arch = ""  type = "seq">
+    <instance  name = "paused_menu/menu_rgb_2__I_52"  library = "work"  arch = ""  type = "seq">
         <pins>
         <pitem  name = "read_enable"  direction = "in"  />
         <pitem  name = "Ram"  direction = "in"  />
@@ -15533,7 +15533,7 @@
         </nets>
     </instance>
 
-    <instance  name = "paused_menu/menu_rgb_2__I_44"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "paused_menu/menu_rgb_2__I_47"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "d0[2]"  direction = "in"  />
         <pitem  name = "d0[1]"  direction = "in"  />
@@ -16643,7 +16643,7 @@
         </nets>
     </instance>
 
-    <instance  name = "game/score_player_1_3__I_79"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "game/score_player_1_3__I_82"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "a[31]"  direction = "in"  />
         <pitem  name = "a[30]"  direction = "in"  />
@@ -19033,7 +19033,7 @@
         </nets>
     </instance>
 
-    <instance  name = "menu/reset_I_83"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "menu/reset_I_86"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "a[31]"  direction = "in"  />
         <pitem  name = "a[30]"  direction = "in"  />
@@ -19109,7 +19109,7 @@
         </nets>
     </instance>
 
-    <instance  name = "menu/reset_I_82"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "menu/reset_I_85"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "a1"  direction = "in"  />
         <pitem  name = "a0"  direction = "in"  />
@@ -19125,7 +19125,7 @@
         </nets>
     </instance>
 
-    <instance  name = "menu/flag_I_86"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "menu/flag_I_89"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "a1"  direction = "in"  />
         <pitem  name = "c"  direction = "in"  />
@@ -19135,7 +19135,7 @@
 
         <nets>
         <nitem  name = "menu/gnd"  />
-        <nitem  name = "enter_N_103"  />
+        <nitem  name = "enter"  />
         <nitem  name = "menu/flag"  />
         <nitem  name = "menu/flag_N_1080"  />
         </nets>
@@ -19155,7 +19155,7 @@
         <nets>
         <nitem  name = "menu/gnd"  />
         <nitem  name = "menu/pwr"  />
-        <nitem  name = "enter_N_103"  />
+        <nitem  name = "enter"  />
         <nitem  name = "menu/current_state[1]"  />
         <nitem  name = "menu/current_state[0]"  />
         <nitem  name = "menu/n13"  />
@@ -19173,7 +19173,7 @@
 
         <nets>
         <nitem  name = "menu/gnd"  />
-        <nitem  name = "enter_N_103"  />
+        <nitem  name = "enter"  />
         <nitem  name = "menu/reset_N_1071"  />
         <nitem  name = "menu/reset_N_1076"  />
         </nets>
@@ -19193,7 +19193,7 @@
         <nets>
         <nitem  name = "menu/gnd"  />
         <nitem  name = "menu/pwr"  />
-        <nitem  name = "enter_N_103"  />
+        <nitem  name = "enter"  />
         <nitem  name = "menu/current_state[1]"  />
         <nitem  name = "menu/current_state[0]"  />
         <nitem  name = "menu/n17"  />
@@ -19261,7 +19261,7 @@
         </pins>
 
         <nets>
-        <nitem  name = "enter_N_103"  />
+        <nitem  name = "enter"  />
         <nitem  name = "menu/current_state[1]"  />
         <nitem  name = "menu/current_state[0]"  />
         <nitem  name = "menu/n20"  />
@@ -19280,7 +19280,7 @@
         </pins>
 
         <nets>
-        <nitem  name = "enter_N_103"  />
+        <nitem  name = "enter"  />
         <nitem  name = "menu/reset_N_1071"  />
         <nitem  name = "menu/reset_N_1075"  />
         <nitem  name = "menu/reset_N_1074"  />
@@ -19411,12 +19411,12 @@
 
         <nets>
         <nitem  name = "menu/gnd"  />
-        <nitem  name = "enter_N_103"  />
+        <nitem  name = "enter"  />
         <nitem  name = "menu/flag_N_1079"  />
         </nets>
     </instance>
 
-    <instance  name = "menu/flag_I_85"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "menu/flag_I_88"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "a1"  direction = "in"  />
         <pitem  name = "a0"  direction = "in"  />
@@ -19846,7 +19846,7 @@
         </nets>
     </instance>
 
-    <instance  name = "paused_menu/marker/rgb_2__I_57"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "paused_menu/marker/rgb_2__I_60"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "a0"  direction = "in"  />
         <pitem  name = "a1"  direction = "in"  />
@@ -19909,7 +19909,7 @@
         </nets>
     </instance>
 
-    <instance  name = "paused_menu/marker/rgb_2__I_56"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "paused_menu/marker/rgb_2__I_59"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "a0"  direction = "in"  />
         <pitem  name = "a1"  direction = "in"  />
@@ -20187,7 +20187,7 @@
         </nets>
     </instance>
 
-    <instance  name = "paused_menu/marker/rgb_2__I_55"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "paused_menu/marker/rgb_2__I_58"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "a0"  direction = "in"  />
         <pitem  name = "a1"  direction = "in"  />
@@ -20591,7 +20591,7 @@
         </nets>
     </instance>
 
-    <instance  name = "paused_menu/marker/rgb_2__I_58"  library = "work"  arch = ""  type = "seq">
+    <instance  name = "paused_menu/marker/rgb_2__I_61"  library = "work"  arch = ""  type = "seq">
         <pins>
         <pitem  name = "read_enable"  direction = "in"  />
         <pitem  name = "Ram"  direction = "in"  />
@@ -20737,7 +20737,7 @@
         </nets>
     </instance>
 
-    <instance  name = "score_one/num0/rgb_2__I_59"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "score_one/num0/rgb_2__I_62"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "a0"  direction = "in"  />
         <pitem  name = "a1"  direction = "in"  />
@@ -20871,7 +20871,7 @@
         </nets>
     </instance>
 
-    <instance  name = "score_one/num0/rgb_2__I_60"  library = "work"  arch = ""  type = "seq">
+    <instance  name = "score_one/num0/rgb_2__I_63"  library = "work"  arch = ""  type = "seq">
         <pins>
         <pitem  name = "read_enable"  direction = "in"  />
         <pitem  name = "Ram"  direction = "in"  />
@@ -21017,7 +21017,7 @@
         </nets>
     </instance>
 
-    <instance  name = "score_one/num1/rgb_2__I_61"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "score_one/num1/rgb_2__I_64"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "a0"  direction = "in"  />
         <pitem  name = "a1"  direction = "in"  />
@@ -21151,7 +21151,7 @@
         </nets>
     </instance>
 
-    <instance  name = "score_one/num1/rgb_2__I_62"  library = "work"  arch = ""  type = "seq">
+    <instance  name = "score_one/num1/rgb_2__I_65"  library = "work"  arch = ""  type = "seq">
         <pins>
         <pitem  name = "read_enable"  direction = "in"  />
         <pitem  name = "Ram"  direction = "in"  />
@@ -21297,7 +21297,7 @@
         </nets>
     </instance>
 
-    <instance  name = "score_one/num2/rgb_2__I_63"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "score_one/num2/rgb_2__I_66"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "a0"  direction = "in"  />
         <pitem  name = "a1"  direction = "in"  />
@@ -21431,7 +21431,7 @@
         </nets>
     </instance>
 
-    <instance  name = "score_one/num2/rgb_2__I_64"  library = "work"  arch = ""  type = "seq">
+    <instance  name = "score_one/num2/rgb_2__I_67"  library = "work"  arch = ""  type = "seq">
         <pins>
         <pitem  name = "read_enable"  direction = "in"  />
         <pitem  name = "Ram"  direction = "in"  />
@@ -21577,7 +21577,7 @@
         </nets>
     </instance>
 
-    <instance  name = "score_one/num3/rgb_2__I_65"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "score_one/num3/rgb_2__I_68"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "a0"  direction = "in"  />
         <pitem  name = "a1"  direction = "in"  />
@@ -21711,7 +21711,7 @@
         </nets>
     </instance>
 
-    <instance  name = "score_one/num3/rgb_2__I_66"  library = "work"  arch = ""  type = "seq">
+    <instance  name = "score_one/num3/rgb_2__I_69"  library = "work"  arch = ""  type = "seq">
         <pins>
         <pitem  name = "read_enable"  direction = "in"  />
         <pitem  name = "Ram"  direction = "in"  />
@@ -21857,7 +21857,7 @@
         </nets>
     </instance>
 
-    <instance  name = "score_one/num4/rgb_2__I_67"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "score_one/num4/rgb_2__I_70"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "a0"  direction = "in"  />
         <pitem  name = "a1"  direction = "in"  />
@@ -21991,7 +21991,7 @@
         </nets>
     </instance>
 
-    <instance  name = "score_one/num4/rgb_2__I_68"  library = "work"  arch = ""  type = "seq">
+    <instance  name = "score_one/num4/rgb_2__I_71"  library = "work"  arch = ""  type = "seq">
         <pins>
         <pitem  name = "read_enable"  direction = "in"  />
         <pitem  name = "Ram"  direction = "in"  />
@@ -22137,7 +22137,7 @@
         </nets>
     </instance>
 
-    <instance  name = "score_one/num5/rgb_2__I_69"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "score_one/num5/rgb_2__I_72"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "a0"  direction = "in"  />
         <pitem  name = "a1"  direction = "in"  />
@@ -22271,7 +22271,7 @@
         </nets>
     </instance>
 
-    <instance  name = "score_one/num5/rgb_2__I_70"  library = "work"  arch = ""  type = "seq">
+    <instance  name = "score_one/num5/rgb_2__I_73"  library = "work"  arch = ""  type = "seq">
         <pins>
         <pitem  name = "read_enable"  direction = "in"  />
         <pitem  name = "Ram"  direction = "in"  />
@@ -22417,7 +22417,7 @@
         </nets>
     </instance>
 
-    <instance  name = "score_one/num6/rgb_2__I_71"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "score_one/num6/rgb_2__I_74"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "a0"  direction = "in"  />
         <pitem  name = "a1"  direction = "in"  />
@@ -22551,7 +22551,7 @@
         </nets>
     </instance>
 
-    <instance  name = "score_one/num6/rgb_2__I_72"  library = "work"  arch = ""  type = "seq">
+    <instance  name = "score_one/num6/rgb_2__I_75"  library = "work"  arch = ""  type = "seq">
         <pins>
         <pitem  name = "read_enable"  direction = "in"  />
         <pitem  name = "Ram"  direction = "in"  />
@@ -22697,7 +22697,7 @@
         </nets>
     </instance>
 
-    <instance  name = "score_one/num7/rgb_2__I_73"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "score_one/num7/rgb_2__I_76"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "a0"  direction = "in"  />
         <pitem  name = "a1"  direction = "in"  />
@@ -22831,7 +22831,7 @@
         </nets>
     </instance>
 
-    <instance  name = "score_one/num7/rgb_2__I_74"  library = "work"  arch = ""  type = "seq">
+    <instance  name = "score_one/num7/rgb_2__I_77"  library = "work"  arch = ""  type = "seq">
         <pins>
         <pitem  name = "read_enable"  direction = "in"  />
         <pitem  name = "Ram"  direction = "in"  />
@@ -22977,7 +22977,7 @@
         </nets>
     </instance>
 
-    <instance  name = "score_one/num8/rgb_2__I_75"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "score_one/num8/rgb_2__I_78"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "a0"  direction = "in"  />
         <pitem  name = "a1"  direction = "in"  />
@@ -23111,7 +23111,7 @@
         </nets>
     </instance>
 
-    <instance  name = "score_one/num8/rgb_2__I_76"  library = "work"  arch = ""  type = "seq">
+    <instance  name = "score_one/num8/rgb_2__I_79"  library = "work"  arch = ""  type = "seq">
         <pins>
         <pitem  name = "read_enable"  direction = "in"  />
         <pitem  name = "Ram"  direction = "in"  />
@@ -23257,7 +23257,7 @@
         </nets>
     </instance>
 
-    <instance  name = "score_one/num9/rgb_2__I_77"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "score_one/num9/rgb_2__I_80"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "a0"  direction = "in"  />
         <pitem  name = "a1"  direction = "in"  />
@@ -23391,7 +23391,7 @@
         </nets>
     </instance>
 
-    <instance  name = "score_one/num9/rgb_2__I_78"  library = "work"  arch = ""  type = "seq">
+    <instance  name = "score_one/num9/rgb_2__I_81"  library = "work"  arch = ""  type = "seq">
         <pins>
         <pitem  name = "read_enable"  direction = "in"  />
         <pitem  name = "Ram"  direction = "in"  />
@@ -23537,7 +23537,7 @@
         </nets>
     </instance>
 
-    <instance  name = "score_two/num0/rgb_2__I_59"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "score_two/num0/rgb_2__I_62"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "a0"  direction = "in"  />
         <pitem  name = "a1"  direction = "in"  />
@@ -23671,7 +23671,7 @@
         </nets>
     </instance>
 
-    <instance  name = "score_two/num0/rgb_2__I_60"  library = "work"  arch = ""  type = "seq">
+    <instance  name = "score_two/num0/rgb_2__I_63"  library = "work"  arch = ""  type = "seq">
         <pins>
         <pitem  name = "read_enable"  direction = "in"  />
         <pitem  name = "Ram"  direction = "in"  />
@@ -23817,7 +23817,7 @@
         </nets>
     </instance>
 
-    <instance  name = "score_two/num1/rgb_2__I_61"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "score_two/num1/rgb_2__I_64"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "a0"  direction = "in"  />
         <pitem  name = "a1"  direction = "in"  />
@@ -23951,7 +23951,7 @@
         </nets>
     </instance>
 
-    <instance  name = "score_two/num1/rgb_2__I_62"  library = "work"  arch = ""  type = "seq">
+    <instance  name = "score_two/num1/rgb_2__I_65"  library = "work"  arch = ""  type = "seq">
         <pins>
         <pitem  name = "read_enable"  direction = "in"  />
         <pitem  name = "Ram"  direction = "in"  />
@@ -24097,7 +24097,7 @@
         </nets>
     </instance>
 
-    <instance  name = "score_two/num2/rgb_2__I_63"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "score_two/num2/rgb_2__I_66"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "a0"  direction = "in"  />
         <pitem  name = "a1"  direction = "in"  />
@@ -24231,7 +24231,7 @@
         </nets>
     </instance>
 
-    <instance  name = "score_two/num2/rgb_2__I_64"  library = "work"  arch = ""  type = "seq">
+    <instance  name = "score_two/num2/rgb_2__I_67"  library = "work"  arch = ""  type = "seq">
         <pins>
         <pitem  name = "read_enable"  direction = "in"  />
         <pitem  name = "Ram"  direction = "in"  />
@@ -24377,7 +24377,7 @@
         </nets>
     </instance>
 
-    <instance  name = "score_two/num3/rgb_2__I_65"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "score_two/num3/rgb_2__I_68"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "a0"  direction = "in"  />
         <pitem  name = "a1"  direction = "in"  />
@@ -24511,7 +24511,7 @@
         </nets>
     </instance>
 
-    <instance  name = "score_two/num3/rgb_2__I_66"  library = "work"  arch = ""  type = "seq">
+    <instance  name = "score_two/num3/rgb_2__I_69"  library = "work"  arch = ""  type = "seq">
         <pins>
         <pitem  name = "read_enable"  direction = "in"  />
         <pitem  name = "Ram"  direction = "in"  />
@@ -24657,7 +24657,7 @@
         </nets>
     </instance>
 
-    <instance  name = "score_two/num4/rgb_2__I_67"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "score_two/num4/rgb_2__I_70"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "a0"  direction = "in"  />
         <pitem  name = "a1"  direction = "in"  />
@@ -24791,7 +24791,7 @@
         </nets>
     </instance>
 
-    <instance  name = "score_two/num4/rgb_2__I_68"  library = "work"  arch = ""  type = "seq">
+    <instance  name = "score_two/num4/rgb_2__I_71"  library = "work"  arch = ""  type = "seq">
         <pins>
         <pitem  name = "read_enable"  direction = "in"  />
         <pitem  name = "Ram"  direction = "in"  />
@@ -24937,7 +24937,7 @@
         </nets>
     </instance>
 
-    <instance  name = "score_two/num5/rgb_2__I_69"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "score_two/num5/rgb_2__I_72"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "a0"  direction = "in"  />
         <pitem  name = "a1"  direction = "in"  />
@@ -25071,7 +25071,7 @@
         </nets>
     </instance>
 
-    <instance  name = "score_two/num5/rgb_2__I_70"  library = "work"  arch = ""  type = "seq">
+    <instance  name = "score_two/num5/rgb_2__I_73"  library = "work"  arch = ""  type = "seq">
         <pins>
         <pitem  name = "read_enable"  direction = "in"  />
         <pitem  name = "Ram"  direction = "in"  />
@@ -25217,7 +25217,7 @@
         </nets>
     </instance>
 
-    <instance  name = "score_two/num6/rgb_2__I_71"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "score_two/num6/rgb_2__I_74"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "a0"  direction = "in"  />
         <pitem  name = "a1"  direction = "in"  />
@@ -25351,7 +25351,7 @@
         </nets>
     </instance>
 
-    <instance  name = "score_two/num6/rgb_2__I_72"  library = "work"  arch = ""  type = "seq">
+    <instance  name = "score_two/num6/rgb_2__I_75"  library = "work"  arch = ""  type = "seq">
         <pins>
         <pitem  name = "read_enable"  direction = "in"  />
         <pitem  name = "Ram"  direction = "in"  />
@@ -25497,7 +25497,7 @@
         </nets>
     </instance>
 
-    <instance  name = "score_two/num7/rgb_2__I_73"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "score_two/num7/rgb_2__I_76"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "a0"  direction = "in"  />
         <pitem  name = "a1"  direction = "in"  />
@@ -25631,7 +25631,7 @@
         </nets>
     </instance>
 
-    <instance  name = "score_two/num7/rgb_2__I_74"  library = "work"  arch = ""  type = "seq">
+    <instance  name = "score_two/num7/rgb_2__I_77"  library = "work"  arch = ""  type = "seq">
         <pins>
         <pitem  name = "read_enable"  direction = "in"  />
         <pitem  name = "Ram"  direction = "in"  />
@@ -25777,7 +25777,7 @@
         </nets>
     </instance>
 
-    <instance  name = "score_two/num8/rgb_2__I_75"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "score_two/num8/rgb_2__I_78"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "a0"  direction = "in"  />
         <pitem  name = "a1"  direction = "in"  />
@@ -25911,7 +25911,7 @@
         </nets>
     </instance>
 
-    <instance  name = "score_two/num8/rgb_2__I_76"  library = "work"  arch = ""  type = "seq">
+    <instance  name = "score_two/num8/rgb_2__I_79"  library = "work"  arch = ""  type = "seq">
         <pins>
         <pitem  name = "read_enable"  direction = "in"  />
         <pitem  name = "Ram"  direction = "in"  />
@@ -26057,7 +26057,7 @@
         </nets>
     </instance>
 
-    <instance  name = "score_two/num9/rgb_2__I_77"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "score_two/num9/rgb_2__I_80"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "a0"  direction = "in"  />
         <pitem  name = "a1"  direction = "in"  />
@@ -26191,7 +26191,7 @@
         </nets>
     </instance>
 
-    <instance  name = "score_two/num9/rgb_2__I_78"  library = "work"  arch = ""  type = "seq">
+    <instance  name = "score_two/num9/rgb_2__I_81"  library = "work"  arch = ""  type = "seq">
         <pins>
         <pitem  name = "read_enable"  direction = "in"  />
         <pitem  name = "Ram"  direction = "in"  />
