@@ -119,6 +119,8 @@ module main(
 	wire [2:0] paddle_one_rgb;
 	wire [2:0] paddle_two_rgb;
 	wire [2:0] background_rgb;
+	wire [2:0] score_one_rgb;
+	wire [2:0] score_two_rgb;
 	wire [2:0] ball_rgb;
 	
 	wire [1:0] bounce;
@@ -171,6 +173,14 @@ module main(
 		.START_POSX(275),
 		.START_POSY(170)) paused_menu(tick_menu, pixel_row, pixel_col, reset, pause_up, pause_down, paused_menu_rgb, pause_selection);
 
+	Score #(
+		.POSX(160),
+		.POSY(100)) score_one(score_player_one, pixel_row, pixel_col, score_one_rgb);
+
+	Score #(
+		.POSX(480),
+		.POSY(100)) score_one(score_player_two, pixel_row, pixel_col, score_two_rgb);
+
 	always @ (posedge tick) begin
 		if (bounce == 1) begin
 			speed_selector = ~speed_selector;
@@ -181,7 +191,7 @@ module main(
 	/* Game Logic Objects */
 	/**********************/
 	wire [3:0] score_player_one;
-	wire [3:0] score_player_tow;
+	wire [3:0] score_player_two;
 	
 	wire reset;
 	wire tick_game;
@@ -199,8 +209,8 @@ module main(
 	wire [2:0] bus_rgb;
 	assign pixel_rgb = bus_rgb;
 	
-	assign bus_rgb[0] = ((paddle_one_rgb[0] | paddle_two_rgb[0] | background_rgb[0] | ball_rgb[0]) & enable_game) | (start_menu_rgb[0] & enable_start) | (paused_menu_rgb[0] & enable_pause);
-	assign bus_rgb[1] = ((paddle_one_rgb[1] | paddle_two_rgb[1] | background_rgb[1] | ball_rgb[1]) & enable_game) | (start_menu_rgb[1] & enable_start) | (paused_menu_rgb[1] & enable_pause);
-	assign bus_rgb[2] = ((paddle_one_rgb[2] | paddle_two_rgb[2] | background_rgb[2] | ball_rgb[2]) & enable_game) | (start_menu_rgb[2] & enable_start) | (paused_menu_rgb[2] & enable_pause);
+	assign bus_rgb[0] = ((paddle_one_rgb[0] | paddle_two_rgb[0] | background_rgb[0] | ball_rgb[0] | score_one_rgb[0] | score_two_rgb[0]) & enable_game) | (start_menu_rgb[0] & enable_start) | (paused_menu_rgb[0] & enable_pause);
+	assign bus_rgb[1] = ((paddle_one_rgb[1] | paddle_two_rgb[1] | background_rgb[1] | ball_rgb[1] | score_one_rgb[1] | score_two_rgb[1]) & enable_game) | (start_menu_rgb[1] & enable_start) | (paused_menu_rgb[1] & enable_pause);
+	assign bus_rgb[2] = ((paddle_one_rgb[2] | paddle_two_rgb[2] | background_rgb[2] | ball_rgb[2] | score_one_rgb[2] | score_two_rgb[2]) & enable_game) | (start_menu_rgb[2] & enable_start) | (paused_menu_rgb[2] & enable_pause);
 
 endmodule
