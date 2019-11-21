@@ -34,7 +34,7 @@ module main(
 	/**************************/
 	/* Declaring output ports */
 	/**************************/
-	output wire buzzer;
+	output reg buzzer;
 	output wire hsync;
 	output wire vsync;
 	output wire r;
@@ -73,16 +73,13 @@ module main(
 	parameter BUZZER_CLOCK = 500;
 	always @(posedge clk) begin: BUZZER_GENERATOR
 		if (buzzer_clock == 0) begin
+			if (bounce == 1 || bounce == 2) begin
+				buzzer_clock <= BUZZER_CLOCK;
+			end
 			buzzer <= 0;
 		end else begin
 			buzzer_clock <= buzzer_clock - 1;
 			buzzer <= 1;
-		end
-	end
-	
-	always @* begin: BUZZER_TRIGGER
-		if (bounce == 1 || bounce == 2) begin
-			buzzer_clock = BUZZER_CLOCK;
 		end
 	end
 	

@@ -49,9 +49,12 @@ module Paddle(
 	parameter LIMIT_Y_MIN = 5;
 	parameter LIMIT_Y_MAX = 475;
     parameter SPEED_GROUND = 5;           // Number of tick clocks until changes should be done, MAX = 255!
+    parameter MAX_SPEED = 2;
+    parameter ACCELERATOR_STEP = 40;
 
     //----------------- INTERNAL VARIABLES ----------------------
     reg [7:0] timer;
+    reg [7:0] accelerator_timer;
 
     initial begin: INITIALIZATION
         pos_x = START_X_POS; //TODO Change this
@@ -65,14 +68,22 @@ module Paddle(
     always @(posedge clock) begin: SEQUENTIAL_CODE
         if (reset) begin
             timer = timer + 1;
-            if (timer == SPEED) begin
+            if (timer == speed) begin
 				timer = 0;
                 if (control_up == 0) begin
 					if (pos_y > LIMIT_Y_MIN) pos_y = pos_y - 1;
-                    if (speed > 1) speed -= 1;
+                    accelerator_timer = accelerator_timer + 1;
+                    if (accelerator_timer == ACCELERATOR_STEP) begin
+                        accelerator_timer = 0;
+                        if (speed > MAX_SPEED) speed = speed - 1;
+                    end
                 end else if (control_down == 0) begin
                     if (pos_y + HEIGHT < LIMIT_Y_MAX) pos_y = pos_y + 1;
-                    if (speed > 1) speed -= 1;
+                    accelerator_timer = accelerator_timer + 1;
+                    if (accelerator_timer == ACCELERATOR_STEP) begin
+                        accelerator_timer = 0;
+                        if (speed > MAX_SPEED) speed = speed - 1;
+                    end
                 end else begin
                     speed = SPEED_GROUND;
                 end

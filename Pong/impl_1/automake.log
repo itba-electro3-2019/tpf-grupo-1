@@ -1,101 +1,80 @@
 
-synthesis -comp -f "pong_impl_1_lattice.synproj"
-synthesis:  version Radiant Software (64-bit) 1.1.0.165.1
+bitgen -w "pong_impl_1.udb" -f "pong_impl_1.t2b" 
+Loading pong_impl_1.udb ...
+Loading device for application udb from file 'itpa08.nph' in environment: C:/lscc/radiant/1.1/ispfpga.
+Design:  main
+Family:  iCE40UP
+Device:  iCE40UP5K
+Package: SG48
+Performance Grade:   High-Performance_1.2V
+Successfully loading udb from disks and to up-layer in CPU time: 0 secs , REAL time: 0 secs 
 
+
+
+BITGEN: Bitstream Generator Radiant Software (64-bit) 1.1.0.165.1
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2019 Lattice Semiconductor Corporation,  All rights reserved.
-Thu Nov 21 14:00:57 2019
 
 
-Command Line:  synthesis -comp -f pong_impl_1_lattice.synproj -gui 
+Running DRC.
+DRC detected 0 errors and 0 warnings.
 
-INFO - synthesis: Lattice Synthesis Engine Launched.
-Synthesis options:
-The -a option is iCE40UP.
-The -t option is SG48.
-The -sp option is High-Performance_1.2V.
-The -p option is iCE40UP5K.
-                                                          
-
-
-##########################################################
+Preference Summary:
++---------------------------------+---------------------------------+
+|  Preference                     |  Current Setting                |
++---------------------------------+---------------------------------+
+ *  Default setting.
+ ** The specified setting matches the default setting.
 
 
-### Lattice Family     : iCE40UP
+Creating bit map...
+Saving bit stream in "C:\Users\facun\OneDrive\Desktop\ITBA\5C Electronica III\tpf-grupo-1\Pong\impl_1\pong_impl_1.bin".
+
+ibisgen "pong_impl_1.udb" "C:/lscc/radiant/1.1/cae_library/ibis/iCE40UP.ibs"
+IBIS Models Generator: Lattice Radiant Software (64-bit) 1.1.0.165.1
+
+Thu Nov 21 15:16:52 2019
+
+Loading pong_impl_1.udb ...
+Loading device for application udb from file 'itpa08.nph' in environment: C:/lscc/radiant/1.1/ispfpga.
+Design:  main
+Family:  iCE40UP
+Device:  iCE40UP5K
+Package: SG48
+Performance Grade:   High-Performance_1.2V
+Successfully loading udb from disks and to up-layer in CPU time: 0 secs , REAL time: 0 secs 
+
+Created design models.
 
 
-### Device             : iCE40UP5K
+Generating: C:\Users\facun\OneDrive\Desktop\ITBA\5C Electronica III\tpf-grupo-1\Pong\impl_1\IBIS\pong_impl_1.ibs
 
 
-### Package            : SG48
+    <postMsg mid="1191031" type="Info" dynamic="0" navigation="0"  />
 
+backanno "pong_impl_1.udb"  -o "pong_impl_1_vo.vo"      -sp "High-Performance_1.2V"  -w -neg
+backanno: version Radiant Software (64-bit) 1.1.0.165.1
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2019 Lattice Semiconductor Corporation,  All rights reserved.
 
-### Performance Grade  : High-Performance_1.2V
+Loading pong_impl_1.udb ...
+Loading device for application udb from file 'itpa08.nph' in environment: C:/lscc/radiant/1.1/ispfpga.
+Design:  main
+Family:  iCE40UP
+Device:  iCE40UP5K
+Package: SG48
+Performance Grade:   High-Performance_1.2V
+Writing a verilog netlist based on the pong_impl_1 design file.
 
-
-                                                         
-
-
-INFO - User-Selected Strategy SettingsOptimization goal = Area
-Top-level module name = main.
-Target frequency = 1.000000 MHz.
-Maximum fanout = 1000.
-Timing path count = 3
-RWCheckOnRam = 0
-
-BRAM utilization = 100.000000 %
-DSP usage = true
-DSP utilization = 100.000000 %
-fsm_encoding_style = auto
-resolve_mixed_drivers = 0
-fix_gated_clocks = 1
-
-
-Mux style = auto (Default)
-Use Carry Chain = true
-carry_chain_length = 0
-Loop Limit = 1950.
-Use IO Insertion = TRUE
-Use IO Reg = AUTO
-
-Resource Sharing = TRUE
-Propagate Constants = TRUE
-Remove Duplicate Registers = TRUE
-Output HDL file name = pong_impl_1.vm.
-ROM style = auto
-RAM style = auto
-The -comp option is TRUE.
-The -syn option is FALSE.
--path C:/Users/facun/OneDrive/Desktop/ITBA/5C Electronica III/tpf-grupo-1/Pong (searchpath added)
--path C:/Users/facun/OneDrive/Desktop/ITBA/5C Electronica III/tpf-grupo-1/Pong/clock (searchpath added)
--path C:/Users/facun/OneDrive/Desktop/ITBA/5C Electronica III/tpf-grupo-1/Pong/impl_1 (searchpath added)
--path C:/lscc/radiant/1.1/ispfpga/ice40tp/data (searchpath added)
-Mixed language design
-Verilog design file = C:/lscc/radiant/1.1/ip/pmi/pmi_iCE40UP.v
-Verilog design file = C:/Users/facun/OneDrive/Desktop/ITBA/5C Electronica III/tpf-grupo-1/Pong/main.v
-Verilog design file = C:/Users/facun/OneDrive/Desktop/ITBA/5C Electronica III/tpf-grupo-1/Pong/drivers/vgadriver_v2.v
-Verilog design file = C:/Users/facun/OneDrive/Desktop/ITBA/5C Electronica III/tpf-grupo-1/Pong/clock/rtl/clock.v
-Verilog design file = C:/Users/facun/OneDrive/Desktop/ITBA/5C Electronica III/tpf-grupo-1/Pong/logic/main_fsm.v
-Verilog design file = C:/Users/facun/OneDrive/Desktop/ITBA/5C Electronica III/tpf-grupo-1/Pong/logic/game_logic.v
-Verilog design file = C:/Users/facun/OneDrive/Desktop/ITBA/5C Electronica III/tpf-grupo-1/Pong/gui/components/ball.v
-Verilog design file = C:/Users/facun/OneDrive/Desktop/ITBA/5C Electronica III/tpf-grupo-1/Pong/gui/components/paddle.v
-Verilog design file = C:/Users/facun/OneDrive/Desktop/ITBA/5C Electronica III/tpf-grupo-1/Pong/gui/trash/components/background.v
-Verilog design file = C:/Users/facun/OneDrive/Desktop/ITBA/5C Electronica III/tpf-grupo-1/Pong/gui/menus/start_menu.v
-Verilog design file = C:/Users/facun/OneDrive/Desktop/ITBA/5C Electronica III/tpf-grupo-1/Pong/gui/menus/paused_menu.v
-Verilog design file = C:/Users/facun/OneDrive/Desktop/ITBA/5C Electronica III/tpf-grupo-1/Pong/gui/menus/marker.v
-VHDL library = pmi
-VHDL design file = C:/lscc/radiant/1.1/ip/pmi/pmi_iCE40UP.vhd
-The -r option is OFF. [ Remove LOC Properties is OFF. ]
-Compile design.
-Compile Design Begin
-Analyzing Verilog file c:/lscc/radiant/1.1/ip/pmi/pmi_ice40up.v. VERI-1482
-INFO - "c:/lscc/radiant/1.1/ip/pmi/pmi_ice40up.v(1):analyzing included file . VERI-1328INFO - "c:/lscc/radiant/1.1/ip/pmi/pmi_addsub.v(40):analyzing included file . VERI-1328INFO - "c:/lscc/radiant/1.1/ip/pmi/pmi_ice40up.v(2):analyzing included file . VERI-1328INFO - "c:/lscc/radiant/1.1/ip/pmi/pmi_add.v(50):analyzing included file . VERI-1328INFO - "c:/lscc/radiant/1.1/ip/pmi/pmi_ice40up.v(3):analyzing included file . VERI-1328INFO - "c:/lscc/radiant/1.1/ip/pmi/pmi_complex_mult.v(52):analyzing included file . VERI-1328INFO - "c:/lscc/radiant/1.1/ip/pmi/pmi_ice40up.v(4):analyzing included file . VERI-1328INFO - "c:/lscc/radiant/1.1/ip/pmi/pmi_counter.v(39):analyzing included file . VERI-1328INFO - "c:/lscc/radiant/1.1/ip/pmi/pmi_ice40up.v(5):analyzing included file . VERI-1328INFO - "c:/lscc/radiant/1.1/ip/pmi/pmi_fifo.v(44):analyzing included file . VERI-1328INFO - "c:/lscc/radiant/1.1/ip/pmi/pmi_ice40up.v(6):analyzing included file . VERI-1328INFO - "c:/lscc/radiant/1.1/ip/pmi/pmi_fifo_dc.v(47):analyzing included file . VERI-1328INFO - "c:/lscc/radiant/1.1/ip/pmi/pmi_ice40up.v(7):analyzing included file . VERI-1328INFO - "c:/lscc/radiant/1.1/ip/pmi/pmi_mac.v(52):analyzing included file . VERI-1328INFO - "c:/lscc/radiant/1.1/ip/pmi/pmi_ice40up.v(8):analyzing included file . VERI-1328INFO - "c:/lscc/radiant/1.1/ip/pmi/pmi_multaddsubsum.v(53):analyzing included file . VERI-1328INFO - "c:/lscc/radiant/1.1/ip/pmi/pmi_ice40up.v(9):analyzing included file . VERI-1328INFO - "c:/lscc/radiant/1.1/ip/pmi/pmi_multaddsub.v(52):analyzing included file . VERI-1328INFO - "c:/lscc/radiant/1.1/ip/pmi/pmi_ice40up.v(10):analyzing included file . VERI-1328INFO - "c:/lscc/radiant/1.1/ip/pmi/pmi_mult.v(51):analyzing included file . VERI-1328INFO - "c:/lscc/radiant/1.1/ip/pmi/pmi_ice40up.v(11):analyzing included file . VERI-1328INFO - "c:/lscc/radiant/1.1/ip/pmi/pmi_ram_dp.v(48):analyzing included file . VERI-1328INFO - "c:/lscc/radiant/1.1/ip/pmi/pmi_ice40up.v(12):analyzing included file . VERI-1328INFO - "c:/lscc/radiant/1.1/ip/pmi/pmi_ram_dq.v(45):analyzing included file . VERI-1328INFO - "c:/lscc/radiant/1.1/ip/pmi/pmi_ice40up.v(13):analyzing included file . VERI-1328INFO - "c:/lscc/radiant/1.1/ip/pmi/pmi_rom.v(45):analyzing included file . VERI-1328INFO - "c:/lscc/radiant/1.1/ip/pmi/pmi_ice40up.v(14):analyzing included file . VERI-1328INFO - "c:/lscc/radiant/1.1/ip/pmi/pmi_sub.v(50):analyzing included file . VERI-1328INFO - "c:/lscc/radiant/1.1/ip/pmi/pmi_ice40up.v(15):analyzing included file . VERI-1328INFO - "c:/lscc/radiant/1.1/ip/pmi/pmi_ram_dp_be.v(49):analyzing included file . VERI-1328INFO - "c:/lscc/radiant/1.1/ip/pmi/pmi_ice40up.v(16):analyzing included file . VERI-1328INFO - "c:/lscc/radiant/1.1/ip/pmi/pmi_ram_dq_be.v(45):analyzing included file . VERI-1328INFO - "c:/lscc/radiant/1.1/ip/pmi/pmi_ice40up.v(17):analyzing included file . VERI-1328Analyzing Verilog file c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/main.v. VERI-1482
-WARNING - "c:/users/facun/onedrive/desktop/itba/5c is already implicitly declared earlier. VERI-1362WARNING - "c:/users/facun/onedrive/desktop/itba/5c is already implicitly declared earlier. VERI-1362WARNING - "c:/users/facun/onedrive/desktop/itba/5c is already implicitly declared earlier. VERI-1362Analyzing Verilog file c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/drivers/vgadriver_v2.v. VERI-1482
-Analyzing Verilog file c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/clock/rtl/clock.v. VERI-1482
-Analyzing Verilog file c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/logic/main_fsm.v. VERI-1482
-Analyzing Verilog file c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/logic/game_logic.v. VERI-1482
-Analyzing Verilog file c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/components/ball.v. VERI-1482
-Analyzing Verilog file c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/components/paddle.v. VERI-1482
+Writing Verilog netlist to file pong_impl_1_vo.vo
+Writing SDF timing to file pong_impl_1_vo.sdf
+Backanno finished with 0 posted error messages.
+Total CPU Time: 7 secs 
+Total REAL Time: 7 secs 
+Peak Memory Usage: 152 MB

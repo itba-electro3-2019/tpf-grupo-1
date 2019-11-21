@@ -6,7 +6,7 @@ Performance Grade:      High-Performance_1.2V
 PACKAGE:          SG48
 Package Status:                     Preliminary    Version 1.5
 
-Thu Nov 21 12:22:07 2019
+Thu Nov 21 15:16:29 2019
 
 Pinout by Port Name:
 +-----------------+----------+--------------+-------+--------------------+
@@ -14,6 +14,7 @@ Pinout by Port Name:
 +-----------------+----------+--------------+-------+--------------------+
 | b               | 26/0     | LVCMOS33_OUT | PR19A | DRIVE:8mA PULL:NA  |
 | button_enter    | 11/1     | LVCMOS33_IN  | PL18A | PULL:100K          |
+| buzzer          | 36/0     | LVCMOS33_OUT | PR10B | DRIVE:8mA PULL:NA  |
 | g               | 25/0     | LVCMOS33_OUT | PR20B | DRIVE:8mA PULL:NA  |
 | hsync           | 20/1     | LVCMOS33_OUT | PL20B | DRIVE:8mA PULL:NA  |
 | player_one_down | 18/1     | LVCMOS33_IN  | PL23B | PULL:100K          |
@@ -62,7 +63,7 @@ Pinout by Pin Number:
 | 32/0     |     unused, PULL:UP |            |              | PR17A |                  |
 | 34/0     |     unused, PULL:UP |            |              | PR14B |                  |
 | 35/0     |     unused, PULL:UP |            |              | PR13B | GPLL_IN/PCLKT0_1 |
-| 36/0     |     unused, PULL:UP |            |              | PR10B |                  |
+| 36/0     | buzzer              | LOCATED    | LVCMOS33_OUT | PR10B |                  |
 | 37/0     |     unused, PULL:UP |            |              | PR14A | PCLKT0_0         |
 | 38/0     |     unused, PULL:UP |            |              | PR9B  |                  |
 | 39/0     |                     |            |              | PR5A  | RGB0             |
@@ -99,6 +100,7 @@ Locate Constraints for each Pin:
 
 ldc_set_location -site {26} [ get_ports {b} ]
 ldc_set_location -site {11} [ get_ports {button_enter} ]
+ldc_set_location -site {36} [ get_ports {buzzer} ]
 ldc_set_location -site {25} [ get_ports {g} ]
 ldc_set_location -site {20} [ get_ports {hsync} ]
 ldc_set_location -site {18} [ get_ports {player_one_down} ]
@@ -113,5 +115,5 @@ ldc_set_location -site {21} [ get_ports {vsync} ]
 
 
 Copyright 2015 Lattice Semiconductor Corporation, All Rights Reserved
-Thu Nov 21 12:22:07 2019
+Thu Nov 21 15:16:29 2019
 

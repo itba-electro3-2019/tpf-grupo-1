@@ -47,7 +47,7 @@ Target Device:        iCE40UP5KSG48
 Target Performance:   High-Performance_1.2V
 
 Mapper:    version Radiant Software (64-bit) 1.1.0.165.1
-Mapped on: Thu Nov 21 12:21:20 2019
+Mapped on: Thu Nov 21 15:15:41 2019
 
 
 <A name="mrp_di"></A><B><U><big>Design Information</big></U></B>
@@ -56,17 +56,16 @@ Command line:   map pong_impl_1_syn.udb C:/Users/facun/OneDrive/Desktop/ITBA/5C
      Electronica III/tpf-grupo-1/Pong/impl_1/impl_1.pdc -o pong_impl_1.udb -gui
 
 <A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
-   Number of slice registers: 138 out of  5280 (3%)
-   Number of I/O registers:      0 out of   117 (0%)
-   Number of LUT4s:           2276 out of  5280 (43%)
-      Number of logic LUT4s:             1911
+   Number of slice registers: 169 out of  5280 (3%)
+   Number of I/O registers:      1 out of   117 (1%)
+   Number of LUT4s:           2389 out of  5280 (45%)
+      Number of logic LUT4s:             1994
       Number of inserted feedthru LUT4s:   3
-      Number of replicated LUT4s:          2
-      Number of ripple logic:            180 (360 LUT4s)
-   Number of IO sites used:   10 out of 39 (26%)
-      Number of IO sites used for general PIOs: 10
+      Number of ripple logic:            196 (392 LUT4s)
+   Number of IO sites used:   11 out of 39 (28%)
+      Number of IO sites used for general PIOs: 11
       Number of IO sites used for I3Cs: 0 out of 2 (0%)
-      Number of IO sites used for PIOs+I3Cs: 10 out of 36 (28%)
+      Number of IO sites used for PIOs+I3Cs: 11 out of 36 (31%)
       (note: If I3C is not used, its site can be used as general PIO)
       Number of IO sites used for OD+RGB IO buffers: 0 out of 3 (0%)
    Number of DSPs:             3 out of 8 (37%)
@@ -84,50 +83,57 @@ Command line:   map pong_impl_1_syn.udb C:/Users/facun/OneDrive/Desktop/ITBA/5C
    Number of Clocks:  5
       Net tick_menu: 3 loads, 3 rising, 0 falling (Driver: Pin
      menu.clock_I_0_2_lut_3_lut/OUT)
+      Net clk: 22 loads, 22 rising, 0 falling (Driver: Pin inst2/CLKHF)
       Net tick: 10 loads, 10 rising, 0 falling (Driver: Pin tick_c/Q)
-      Net tick_game: 69 loads, 69 rising, 0 falling (Driver: Pin
-     menu.clock_I_0_62_2_lut_3_lut/OUT)
-      Net clk: 10 loads, 10 rising, 0 falling (Driver: Pin inst2/CLKHF)
+      Net tick_game: 91 loads, 91 rising, 0 falling (Driver: Pin
+     menu.clock_I_0_68_2_lut_3_lut/OUT)
       Net vga_clock: 16 loads, 16 rising, 0 falling (Driver: Pin
      pll.lscc_pll_inst.u_PLL_B/OUTGLOBAL)
-   Number of Clock Enables:  8
+   Number of Clock Enables:  12
       Net VCC_net: 1 loads, 0 SLICEs
-      Net n109457: 2 loads, 2 SLICEs
-      Net reset: 10 loads, 10 SLICEs
-      Net paddle_two/n106800: 6 loads, 6 SLICEs
-      Net n98996: 20 loads, 20 SLICEs
-      Net vga_driver/n98993: 10 loads, 10 SLICEs
+      Net n107760: 2 loads, 2 SLICEs
+      Net paddle_two/n107379: 3 loads, 3 SLICEs
+      Net n110530: 5 loads, 5 SLICEs
+      Net n107024: 6 loads, 6 SLICEs
+      Net n99093: 20 loads, 20 SLICEs
+      Net n107060: 6 loads, 6 SLICEs
+      Net paddle_one/n23: 3 loads, 3 SLICEs
+      Net n99103: 5 loads, 5 SLICEs
+      Net paddle_one/n107000: 6 loads, 6 SLICEs
+
+      Net n99090: 10 loads, 10 SLICEs
       Net menu/n10: 1 loads, 1 SLICEs
-      Net paddle_one/n106779: 6 loads, 6 SLICEs
-   Number of LSRs:  11
-
-      Net n98870: 44 loads, 44 SLICEs
-      Net bounce_clock_7__N_54: 5 loads, 5 SLICEs
-      Net paddle_two/n107018: 5 loads, 5 SLICEs
-      Net n98996: 5 loads, 5 SLICEs
-      Net n107021: 1 loads, 1 SLICEs
-      Net n107016: 8 loads, 8 SLICEs
-      Net game/n102986: 1 loads, 1 SLICEs
-      Net game/n99511: 1 loads, 1 SLICEs
-      Net vga_driver/n98993: 6 loads, 6 SLICEs
+   Number of LSRs:  14
+      Net n98958: 46 loads, 46 SLICEs
+      Net timer_clock_14__N_55: 3 loads, 3 SLICEs
+      Net bounce_clock_7__N_85: 5 loads, 5 SLICEs
+      Net paddle_two/n110524: 5 loads, 5 SLICEs
+      Net paddle_two/n121292: 2 loads, 2 SLICEs
+      Net n99093: 5 loads, 5 SLICEs
+      Net n107280: 6 loads, 6 SLICEs
+      Net n107273: 1 loads, 1 SLICEs
+      Net n115713: 5 loads, 5 SLICEs
+      Net paddle_one/n115735: 2 loads, 2 SLICEs
+      Net n99090: 6 loads, 6 SLICEs
+      Net game/n106187: 1 loads, 1 SLICEs
+      Net game/n99653: 1 loads, 1 SLICEs
       Net menu/n9: 1 loads, 1 SLICEs
-      Net paddle_one/n107020: 5 loads, 5 SLICEs
    Top 10 highest fanout non-clock nets:
-      Net menu_rgb_2__N_664[3]: 331 loads
-      Net menu_rgb_2__N_664[4]: 272 loads
-      Net menu_rgb_2__N_664[2]: 258 loads
-      Net menu_rgb_2__N_664[1]: 235 loads
-      Net start_menu/rgb_2__N_628[3]: 210 loads
-      Net menu_rgb_2__N_664[5]: 202 loads
-      Net menu_rgb_2__N_664[0]: 192 loads
-      Net start_menu/rgb_2__N_628[2]: 183 loads
-      Net start_menu/rgb_2__N_628[1]: 166 loads
-      Net start_menu/rgb_2__N_628[4]: 158 loads
+      Net menu_rgb_2__N_741[3]: 326 loads
+      Net menu_rgb_2__N_741[4]: 269 loads
+      Net menu_rgb_2__N_741[2]: 256 loads
+      Net menu_rgb_2__N_741[1]: 240 loads
+      Net start_menu/rgb_2__N_705[3]: 208 loads
+      Net menu_rgb_2__N_741[0]: 206 loads
+      Net menu_rgb_2__N_741[5]: 192 loads
+      Net start_menu/rgb_2__N_705[2]: 184 loads
+      Net start_menu/rgb_2__N_705[4]: 166 loads
+      Net start_menu/rgb_2__N_705[1]: 165 loads
 
 
 
 
-   Number of warnings:  0
+   Number of warnings:  5
    Number of errors:    0
 
 
@@ -135,7 +141,25 @@ Command line:   map pong_impl_1_syn.udb C:/Users/facun/OneDrive/Desktop/ITBA/5C
 
 <A name="mrp_dwe"></A><B><U><big>Design Errors/Warnings</big></U></B>
 
-   No errors or warnings present.
+WARNING - map: The clock port [player_one_up] is assigned to a non clock
+     dedicated pin [19], which might affect the clock performance. Use dedicated
+     clock resources for the port.
+WARNING - map: The clock port [player_one_down] is assigned to a non clock
+     dedicated pin [18], which might affect the clock performance. Use dedicated
+     clock resources for the port.
+WARNING - map: The clock port [player_two_up] is assigned to a non clock
+     dedicated pin [13], which might affect the clock performance. Use dedicated
+     clock resources for the port.
+WARNING - map: The clock port [player_two_down] is assigned to a non clock
+     dedicated pin [12], which might affect the clock performance. Use dedicated
+     clock resources for the port.
+WARNING - map: The clock port [button_enter] is assigned to a non clock
+     dedicated pin [11], which might affect the clock performance. Use dedicated
+     clock resources for the port.
+
+
+
+
 
 
 
@@ -145,15 +169,15 @@ Command line:   map pong_impl_1_syn.udb C:/Users/facun/OneDrive/Desktop/ITBA/5C
 | IO Name             | Direction | Levelmode |  IO   |  IO   | Special   |
 |                     |           |  IO_TYPE  |  REG  |  DDR  | IO Buffer |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| button_enter        | INPUT     | LVCMOS33  |       |       |           |
+| buzzer              | OUTPUT    | LVCMOS33  | O     |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | hsync               | OUTPUT    | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | vsync               | OUTPUT    | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| player_two_down     | INPUT     | LVCMOS33  |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
 | r                   | OUTPUT    | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| button_enter        | INPUT     | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | g                   | OUTPUT    | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
@@ -161,10 +185,11 @@ Command line:   map pong_impl_1_syn.udb C:/Users/facun/OneDrive/Desktop/ITBA/5C
 +---------------------+-----------+-----------+-------+-------+-----------+
 | player_one_up       | INPUT     | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-
 | player_one_down     | INPUT     | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | player_two_up       | INPUT     | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| player_two_down     | INPUT     | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 
 
@@ -199,6 +224,7 @@ PLL 1:                                 Pin/Node Value
   ENABLE_ICEGATE_PORTA:                         0
   ENABLE_ICEGATE_PORTB:                         0
   PLLOUT_SELECT_PORTA:                          GENCLK
+
   PLLOUT_SELECT_PORTB:                          GENCLK
   SHIFTREG_DIV_MODE:                            0
   DELAY_ADJUSTMENT_MODE_RELATIVE:               FIXED
@@ -223,21 +249,21 @@ OSC 1:                                 Pin/Node Value
 
 
 
-
-
 <A name="mrp_asic"></A><B><U><big>ASIC Components</big></U></B>
 ---------------
 
-Instance Name: paused_menu.mult_796
+Instance Name: paused_menu.mult_893
          Type: DSP
-Instance Name: paused_menu.marker.mult_799
+Instance Name: paused_menu.marker.mult_896
          Type: DSP
-Instance Name: pll.lscc_pll_inst.u_PLL_B
-         Type: PLL
 Instance Name: inst2
          Type: HFOSC
-Instance Name: start_menu.mult_793
+Instance Name: start_menu.mult_890
          Type: DSP
+Instance Name: buzzer_i0
+         Type: IOLOGIC
+Instance Name: pll.lscc_pll_inst.u_PLL_B
+         Type: PLL
 
 
 
@@ -245,34 +271,8 @@ Instance Name: start_menu.mult_793
 -------------------------
 
    Total CPU Time: 1 secs
-   Total REAL Time: 0 secs
-   Peak Memory Usage: 101 MB
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+   Total REAL Time: 2 secs
+   Peak Memory Usage: 104 MB
 
 
 
