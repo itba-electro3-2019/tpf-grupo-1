@@ -28,7 +28,7 @@ module PausedMenu(
 	
 	/* Declaring output ports */
 	output wire [2:0] rgb;
-	output reg [2:0] selection;
+	output reg [1:0] selection;
 	
 	/* Declaring variables */
 	reg [2:0] menu_rgb;

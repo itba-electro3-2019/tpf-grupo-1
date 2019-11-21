@@ -66,7 +66,7 @@ module main(
 	/***************************/
 	/* Debouncing Enter Button */
 	/***************************/
-	parameter BOUNCE_CLOCK = 250;
+	parameter BOUNCE_CLOCK = 100;
 	reg [7:0] bounce_clock = 0;
 	reg enter = 0;
 	always @(posedge tick) begin: DEBOUNCE_ENTER_BUTTON
@@ -120,7 +120,7 @@ module main(
 	
 	wire pause_up;
 	wire pause_down;
-	wire pause_selection;
+	wire [1:0] pause_selection;
 	assign pause_up = player_one_up & player_two_up;
 	assign pause_down = player_one_down & player_two_down;
 	
