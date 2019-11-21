@@ -5,7 +5,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2019 Lattice Semiconductor Corporation,  All rights reserved.
-Thu Nov 21 11:52:42 2019
+Thu Nov 21 12:09:30 2019
 
 
 Command Line:  C:\lscc\radiant\1.1\ispfpga\bin\nt64\synthesis.exe -f pong_impl_1_lattice.synproj -gui -msgset C:/Users/facun/OneDrive/Desktop/ITBA/5C Electronica III/tpf-grupo-1/Pong/promote.xml 
@@ -221,8 +221,8 @@ WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf
 WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/menus/marker.v(34): expression size 32 truncated to fit in target size 8. VERI-1209
 WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/menus/marker.v(35): memory should be on the sensitivity list. VERI-1221
 WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/menus/marker.v(26): net memory does not have a driver. VDB-1002
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/menus/paused_menu.v(81): expression size 32 truncated to fit in target size 3. VERI-1209
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/menus/paused_menu.v(84): expression size 32 truncated to fit in target size 3. VERI-1209
+WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/menus/paused_menu.v(81): expression size 32 truncated to fit in target size 2. VERI-1209
+WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/menus/paused_menu.v(84): expression size 32 truncated to fit in target size 2. VERI-1209
 WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/menus/paused_menu.v(100): posx should be on the sensitivity list. VERI-1221
 WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/menus/paused_menu.v(100): posx should be on the sensitivity list. VERI-1221
 WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/menus/paused_menu.v(100): posy should be on the sensitivity list. VERI-1221
@@ -232,7 +232,6 @@ WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf
 WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/menus/paused_menu.v(101): expression size 32 truncated to fit in target size 16. VERI-1209
 WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/menus/paused_menu.v(102): memory should be on the sensitivity list. VERI-1221
 WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/menus/paused_menu.v(35): net memory does not have a driver. VDB-1002
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/main.v(145): actual bit length 1 differs from formal bit length 3 for port selection. VERI-1330
 INFO - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/logic/game_logic.v(7): compiling module GameLogic. VERI-1018
 WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/logic/game_logic.v(59): expression size 32 truncated to fit in target size 4. VERI-1209
 WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/logic/game_logic.v(63): expression size 32 truncated to fit in target size 4. VERI-1209
@@ -310,8 +309,6 @@ original encoding -> new encoding (one-hot encoding)
 
 
 
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/menus/paused_menu.v(66): Latch \paused_menu/marker_x_8__I_0_i2 input is stuck at Zero
-
 Mapped 3 multiplier(s)
 
 
@@ -319,6 +316,8 @@ Mapped 3 multiplier(s)
 ######## Missing driver on net \ball/rgb_2__N_149[10]. Patching with GND.
 ######## Missing driver on net \paddle_one/rgb_2__N_263[10]. Patching with GND.
 ######## Missing driver on net \paddle_two/rgb_2__N_398[10]. Patching with GND.
+WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/menus/paused_menu.v(66): Latch \paused_menu/marker_x_8__I_0_i2 input is stuck at Zero
+
 WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/components/ball.v(214): Register \ball/size_x_i0 is stuck at Zero. VDB-5013
 WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/components/paddle.v(80): Register \paddle_one/size_x_i0 is stuck at Zero. VDB-5013
 WARNING - synthesis: Initial value found on instance \game/bounce_i0 will be ignored.
@@ -365,11 +364,11 @@ Starting full timing analysis...
 
 ################### Begin Area Report (main)######################
 Number of register bits => 138 of 5280 (2 % )
-CCU2 => 179
+CCU2 => 180
 FD1P3XZ => 138
 HSOSC_CORE => 1
 IB => 5
-LUT4 => 1890
+LUT4 => 1903
 MAC16 => 3
 OB => 5
 PLL_B => 1
@@ -389,21 +388,21 @@ Clock Enable Nets
 Number of Clock Enables: 0
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : paused_menu/menu_rgb_2__N_670[3], loads : 315
-  Net : paused_menu/menu_rgb_2__N_670[4], loads : 251
-  Net : paused_menu/menu_rgb_2__N_670[2], loads : 235
-  Net : start_menu/rgb_2__N_628[3], loads : 204
-  Net : paused_menu/menu_rgb_2__N_670[1], loads : 201
-  Net : paused_menu/menu_rgb_2__N_670[5], loads : 191
-  Net : start_menu/rgb_2__N_628[4], loads : 169
-  Net : start_menu/rgb_2__N_628[2], loads : 162
-  Net : start_menu/rgb_2__N_628[1], loads : 133
-  Net : start_menu/rgb_2__N_628[5], loads : 122
+  Net : paused_menu/menu_rgb_2__N_664[3], loads : 319
+  Net : paused_menu/menu_rgb_2__N_664[4], loads : 258
+  Net : paused_menu/menu_rgb_2__N_664[2], loads : 229
+  Net : start_menu/rgb_2__N_628[3], loads : 207
+  Net : paused_menu/menu_rgb_2__N_664[1], loads : 205
+  Net : paused_menu/menu_rgb_2__N_664[5], loads : 189
+  Net : start_menu/rgb_2__N_628[2], loads : 160
+  Net : start_menu/rgb_2__N_628[4], loads : 158
+  Net : start_menu/rgb_2__N_628[5], loads : 140
+  Net : start_menu/rgb_2__N_628[1], loads : 129
 ################### End Clock Report ##################
 
-Peak Memory Usage: 1014.727  MB
+Peak Memory Usage: 638.820  MB
 
 --------------------------------------------------------------
-Total CPU time for LSE flow : 36.188  secs
-Total REAL time for LSE flow : 37.000  secs
+Total CPU time for LSE flow : 33.688  secs
+Total REAL time for LSE flow : 34.000  secs
 --------------------------------------------------------------

@@ -1,39 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <BuildStatus>
     <Strategy name="Strategy1">
-        <Milestone name="Export" build_result="2" build_time="1574348070">
-            <Task name="Bitgen" build_result="2" update_result="0" update_time="1574348070"/>
-            <Task name="IBIS" build_result="2" update_result="0" update_time="1574348071"/>
-            <Task name="TimingSimFileVlg" build_result="2" update_result="0" update_time="1574348080"/>
+        <Milestone name="Export" build_result="2" build_time="1574349071">
+            <Task name="Bitgen" build_result="2" update_result="0" update_time="1574349071"/>
+            <Task name="IBIS" build_result="2" update_result="0" update_time="1574349072"/>
+            <Task name="TimingSimFileVlg" build_result="2" update_result="0" update_time="1574349079"/>
         </Milestone>
-        <Milestone name="Map" build_result="2" build_time="1574348004">
-            <Task name="Map" build_result="2" update_result="0" update_time="1574348004"/>
-            <Task name="MapTrace" build_result="2" update_result="0" update_time="1574348004"/>
+        <Milestone name="Map" build_result="2" build_time="1574349009">
+            <Task name="Map" build_result="2" update_result="0" update_time="1574349009"/>
+            <Task name="MapTrace" build_result="2" update_result="0" update_time="1574349009"/>
         </Milestone>
-        <Milestone name="PAR" build_result="2" build_time="1574348059">
-            <Task name="PAR" build_result="2" update_result="0" update_time="1574348059"/>
-            <Task name="PARTrace" build_result="2" update_result="0" update_time="1574348067"/>
+        <Milestone name="PAR" build_result="2" build_time="1574349062">
+            <Task name="PAR" build_result="2" update_result="0" update_time="1574349062"/>
+            <Task name="PARTrace" build_result="2" update_result="0" update_time="1574349069"/>
             <Task name="IOTiming" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
-        <Milestone name="Synthesis" build_result="2" build_time="1574347999">
-            <Task name="Lattice_Synthesis" build_result="2" update_result="0" update_time="1574347999"/>
-            <Task name="LSE_Compile" build_result="2" update_result="0" update_time="1574348001"/>
-            <Task name="SynTrace" build_result="2" update_result="0" update_time="1574348001"/>
+        <Milestone name="Synthesis" build_result="2" build_time="1574349005">
+            <Task name="Lattice_Synthesis" build_result="2" update_result="0" update_time="1574349005"/>
+            <Task name="LSE_Compile" build_result="2" update_result="0" update_time="1574349006"/>
+            <Task name="SynTrace" build_result="2" update_result="0" update_time="1574349006"/>
             <Task name="SynVerilogSimFile" build_result="0" update_result="2" update_time="1574311960"/>
         </Milestone>
-        <Report name="IBIS/pong_impl_1.ibs" last_build_time="1574348071" last_build_size="54300"/>
-        <Report name="pong_impl_1.bgn" last_build_time="1574348070" last_build_size="950"/>
-        <Report name="pong_impl_1.bin" last_build_time="1574348070" last_build_size="104156"/>
-        <Report name="pong_impl_1.lsedata" last_build_time="1574347964" last_build_size="840230"/>
-        <Report name="pong_impl_1.tw1.html" last_build_time="1574348004" last_build_size="451573"/>
-        <Report name="pong_impl_1.twr.html" last_build_time="1574348067" last_build_size="348126"/>
-        <Report name="pong_impl_1.tws.html" last_build_time="1574348000" last_build_size="370580"/>
-        <Report name="pong_impl_1.udb::log" last_build_time="1574347999" last_build_size="1368935"/>
-        <Report name="pong_impl_1.udb::phy_par" last_build_time="1574348059" last_build_size="2625131"/>
-        <Report name="pong_impl_1.udb::rtl" last_build_time="1574347964" last_build_size="1368935"/>
-        <Report name="pong_impl_1_map.udb" last_build_time="1574348004" last_build_size="2404278"/>
-        <Report name="pong_impl_1_vo.sdf" last_build_time="1574348079" last_build_size="1267385"/>
-        <Report name="pong_impl_1_vo.vo" last_build_time="1574348079" last_build_size="1246335"/>
+        <Report name="IBIS/pong_impl_1.ibs" last_build_time="1574349072" last_build_size="54300"/>
+        <Report name="pong_impl_1.bgn" last_build_time="1574349071" last_build_size="950"/>
+        <Report name="pong_impl_1.bin" last_build_time="1574349071" last_build_size="104156"/>
+        <Report name="pong_impl_1.lsedata" last_build_time="1574348971" last_build_size="847299"/>
+        <Report name="pong_impl_1.tw1.html" last_build_time="1574349009" last_build_size="447598"/>
+        <Report name="pong_impl_1.twr.html" last_build_time="1574349069" last_build_size="342787"/>
+        <Report name="pong_impl_1.tws.html" last_build_time="1574349006" last_build_size="312887"/>
+        <Report name="pong_impl_1.udb::log" last_build_time="1574349005" last_build_size="1376032"/>
+        <Report name="pong_impl_1.udb::phy_par" last_build_time="1574349062" last_build_size="2643540"/>
+        <Report name="pong_impl_1.udb::rtl" last_build_time="1574348971" last_build_size="1376032"/>
+        <Report name="pong_impl_1_map.udb" last_build_time="1574349009" last_build_size="2419323"/>
+        <Report name="pong_impl_1_vo.sdf" last_build_time="1574349079" last_build_size="1275599"/>
+        <Report name="pong_impl_1_vo.vo" last_build_time="1574349079" last_build_size="1253073"/>
     </Strategy>
 </BuildStatus>
-          
+                              

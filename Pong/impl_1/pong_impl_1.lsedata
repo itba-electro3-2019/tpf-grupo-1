@@ -3,9 +3,9 @@
 <clocks>
     <clockitem name = "tick_game"  type = "net" />
     <clockitem name = "tick_menu"  type = "net" />
-    <clockitem name = "tick"  type = "net" />
-    <clockitem name = "clk"  type = "net" />
     <clockitem name = "vga_clock"  type = "net" />
+    <clockitem name = "clk"  type = "net" />
+    <clockitem name = "tick"  type = "net" />
     <clockitem name = "pll/lscc_pll_inst/outcoreb_o"  type = "net" />
     <clockitem name = "pll/lscc_pll_inst/outglobalb_o"  type = "net" />
     <clockitem name = "pll/outcore_o"  type = "net" />
@@ -55,7 +55,7 @@
     </pins>
 
     <!--
-        Instances in netlist: 335
+        Instances in netlist: 336
     -->
 
     <instance  name = "vga_driver/h_count"  library = "work"  arch = ""  type = "reg">
@@ -755,9 +755,9 @@
         <nitem  name = "paddle_two_rgb[2]"  />
         <nitem  name = "paddle_two_rgb[1]"  />
         <nitem  name = "paddle_two_rgb[0]"  />
-        <nitem  name = "n318"  />
-        <nitem  name = "n310"  />
-        <nitem  name = "n302"  />
+        <nitem  name = "n317"  />
+        <nitem  name = "n309"  />
+        <nitem  name = "n301"  />
         </nets>
     </instance>
 
@@ -2035,15 +2035,15 @@
         </pins>
 
         <nets>
-        <nitem  name = "n318"  />
-        <nitem  name = "n310"  />
-        <nitem  name = "n302"  />
+        <nitem  name = "n317"  />
+        <nitem  name = "n309"  />
+        <nitem  name = "n301"  />
         <nitem  name = "background_rgb[2]"  />
         <nitem  name = "background_rgb[1]"  />
         <nitem  name = "background_rgb[0]"  />
-        <nitem  name = "n319"  />
-        <nitem  name = "n311"  />
-        <nitem  name = "n303"  />
+        <nitem  name = "n318"  />
+        <nitem  name = "n310"  />
+        <nitem  name = "n302"  />
         </nets>
     </instance>
 
@@ -2061,15 +2061,15 @@
         </pins>
 
         <nets>
-        <nitem  name = "n319"  />
-        <nitem  name = "n311"  />
-        <nitem  name = "n303"  />
+        <nitem  name = "n318"  />
+        <nitem  name = "n310"  />
+        <nitem  name = "n302"  />
         <nitem  name = "ball_rgb[2]"  />
         <nitem  name = "ball_rgb[1]"  />
         <nitem  name = "ball_rgb[0]"  />
-        <nitem  name = "n320"  />
-        <nitem  name = "n312"  />
-        <nitem  name = "n304"  />
+        <nitem  name = "n319"  />
+        <nitem  name = "n311"  />
+        <nitem  name = "n303"  />
         </nets>
     </instance>
 
@@ -2087,9 +2087,9 @@
         </pins>
 
         <nets>
-        <nitem  name = "n320"  />
-        <nitem  name = "n312"  />
-        <nitem  name = "n304"  />
+        <nitem  name = "n319"  />
+        <nitem  name = "n311"  />
+        <nitem  name = "n303"  />
         <nitem  name = "enable_game"  />
         <nitem  name = "pixel_rgb_2__N_55[2]"  />
         <nitem  name = "pixel_rgb_2__N_55[1]"  />
@@ -11579,84 +11579,6 @@
         </nets>
     </instance>
 
-    <instance  name = "paused_menu/selection_2__I_0_53"  library = "work"  arch = ""  type = "comb">
-        <pins>
-        <pitem  name = "b[2]"  direction = "in"  />
-        <pitem  name = "b[1]"  direction = "in"  />
-        <pitem  name = "b[0]"  direction = "in"  />
-        <pitem  name = "a[2]"  direction = "in"  />
-        <pitem  name = "a[1]"  direction = "in"  />
-        <pitem  name = "a[0]"  direction = "in"  />
-        <pitem  name = "o"  direction = "out"  />
-        </pins>
-
-        <nets>
-        <nitem  name = "paused_menu/gnd_2"  />
-        <nitem  name = "paused_menu/selection[2]"  />
-        <nitem  name = "paused_menu/selection[1]"  />
-        <nitem  name = "paused_menu/selection[0]"  />
-        <nitem  name = "paused_menu/marker_x_8__N_656"  />
-        </nets>
-    </instance>
-
-    <instance  name = "paused_menu/selection_2__I_0_54"  library = "work"  arch = ""  type = "comb">
-        <pins>
-        <pitem  name = "b[2]"  direction = "in"  />
-        <pitem  name = "b[1]"  direction = "in"  />
-        <pitem  name = "b[0]"  direction = "in"  />
-        <pitem  name = "a[2]"  direction = "in"  />
-        <pitem  name = "a[1]"  direction = "in"  />
-        <pitem  name = "a[0]"  direction = "in"  />
-        <pitem  name = "o"  direction = "out"  />
-        </pins>
-
-        <nets>
-        <nitem  name = "paused_menu/gnd_2"  />
-        <nitem  name = "paused_menu/pwr_2"  />
-        <nitem  name = "paused_menu/selection[2]"  />
-        <nitem  name = "paused_menu/selection[1]"  />
-        <nitem  name = "paused_menu/selection[0]"  />
-        <nitem  name = "paused_menu/marker_x_8__N_657"  />
-        </nets>
-    </instance>
-
-    <instance  name = "paused_menu/selection_2__I_0"  library = "work"  arch = ""  type = "comb">
-        <pins>
-        <pitem  name = "b[2]"  direction = "in"  />
-        <pitem  name = "b[0]"  direction = "in"  />
-        <pitem  name = "b[1]"  direction = "in"  />
-        <pitem  name = "a[2]"  direction = "in"  />
-        <pitem  name = "a[1]"  direction = "in"  />
-        <pitem  name = "a[0]"  direction = "in"  />
-        <pitem  name = "o"  direction = "out"  />
-        </pins>
-
-        <nets>
-        <nitem  name = "paused_menu/gnd_2"  />
-        <nitem  name = "paused_menu/pwr_2"  />
-        <nitem  name = "paused_menu/selection[2]"  />
-        <nitem  name = "paused_menu/selection[1]"  />
-        <nitem  name = "paused_menu/selection[0]"  />
-        <nitem  name = "paused_menu/marker_x_8__N_658"  />
-        </nets>
-    </instance>
-
-    <instance  name = "paused_menu/marker_x_8__N_656_I_0_55"  library = "work"  arch = ""  type = "comb">
-        <pins>
-        <pitem  name = "a[2]"  direction = "in"  />
-        <pitem  name = "a[1]"  direction = "in"  />
-        <pitem  name = "a[0]"  direction = "in"  />
-        <pitem  name = "o"  direction = "out"  />
-        </pins>
-
-        <nets>
-        <nitem  name = "paused_menu/marker_x_8__N_656"  />
-        <nitem  name = "paused_menu/marker_x_8__N_657"  />
-        <nitem  name = "paused_menu/marker_x_8__N_658"  />
-        <nitem  name = "paused_menu/marker_x_8__N_659"  />
-        </nets>
-    </instance>
-
     <instance  name = "paused_menu/marker_y_6__I_0"  library = "work"  arch = ""  type = "seq">
         <pins>
         <pitem  name = "set[4]"  direction = "in"  />
@@ -11689,209 +11611,177 @@
         <nitem  name = "paused_menu/marker_y[3]"  />
         <nitem  name = "paused_menu/marker_y[2]"  />
         <nitem  name = "paused_menu/marker_y[0]"  />
-        <nitem  name = "paused_menu/marker_x_8__N_661"  />
-        <nitem  name = "paused_menu/marker_y_6__N_662"  />
-        <nitem  name = "paused_menu/marker_y_6__N_663"  />
-        <nitem  name = "paused_menu/marker_y_6__N_664"  />
-        <nitem  name = "paused_menu/marker_y_6__N_665"  />
-        <nitem  name = "paused_menu/marker_y_6__N_666"  />
+        <nitem  name = "paused_menu/marker_x_8__N_656"  />
+        <nitem  name = "paused_menu/marker_y_6__N_657"  />
+        <nitem  name = "paused_menu/marker_y_6__N_658"  />
+        <nitem  name = "paused_menu/marker_y_6__N_659"  />
+        <nitem  name = "paused_menu/marker_y_6__N_660"  />
+        <nitem  name = "paused_menu/marker_y_6__N_661"  />
         </nets>
     </instance>
 
-    <instance  name = "paused_menu/marker_x_8__I_43"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "paused_menu/selection_1__I_0_53"  library = "work"  arch = ""  type = "comb">
         <pins>
-        <pitem  name = "data[3]"  direction = "in"  />
         <pitem  name = "data[2]"  direction = "in"  />
         <pitem  name = "data[1]"  direction = "in"  />
-        <pitem  name = "sel[3]"  direction = "in"  />
-        <pitem  name = "sel[2]"  direction = "in"  />
+        <pitem  name = "data[0]"  direction = "in"  />
         <pitem  name = "sel[1]"  direction = "in"  />
         <pitem  name = "sel[0]"  direction = "in"  />
-        <pitem  name = "data[0]"  direction = "in"  />
+        <pitem  name = "data[3]"  direction = "in"  />
         <pitem  name = "o"  direction = "out"  />
         </pins>
 
         <nets>
         <nitem  name = "paused_menu/gnd_2"  />
+        <nitem  name = "paused_menu/selection[1]"  />
+        <nitem  name = "paused_menu/selection[0]"  />
+        <nitem  name = "paused_menu/n31"  />
+        <nitem  name = "paused_menu/marker_x_8__N_654"  />
+        </nets>
+    </instance>
+
+    <instance  name = "paused_menu/Mux_15"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "data[3]"  direction = "in"  />
+        <pitem  name = "data[0]"  direction = "in"  />
+        <pitem  name = "data[1]"  direction = "in"  />
+        <pitem  name = "data[2]"  direction = "in"  />
+        <pitem  name = "sel[1]"  direction = "in"  />
+        <pitem  name = "sel[0]"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "paused_menu/gnd_2"  />
+        <nitem  name = "paused_menu/pwr_2"  />
+        <nitem  name = "paused_menu/selection[1]"  />
+        <nitem  name = "paused_menu/selection[0]"  />
         <nitem  name = "paused_menu/marker_x_8__N_656"  />
-        <nitem  name = "paused_menu/marker_x_8__N_657"  />
-        <nitem  name = "paused_menu/marker_x_8__N_658"  />
-        <nitem  name = "paused_menu/marker_x_8__N_659"  />
-        <nitem  name = "paused_menu/n35"  />
+        </nets>
+    </instance>
+
+    <instance  name = "paused_menu/selection_1__I_0_54"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "data[2]"  direction = "in"  />
+        <pitem  name = "data[1]"  direction = "in"  />
+        <pitem  name = "data[0]"  direction = "in"  />
+        <pitem  name = "sel[1]"  direction = "in"  />
+        <pitem  name = "sel[0]"  direction = "in"  />
+        <pitem  name = "data[3]"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "paused_menu/pwr_2"  />
+        <nitem  name = "paused_menu/selection[1]"  />
+        <nitem  name = "paused_menu/selection[0]"  />
+        <nitem  name = "paused_menu/n31"  />
         <nitem  name = "paused_menu/marker_x_8__N_655"  />
         </nets>
     </instance>
 
-    <instance  name = "paused_menu/Select_19"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "paused_menu/selection_1__I_0_55"  library = "work"  arch = ""  type = "comb">
         <pins>
-        <pitem  name = "data[0]"  direction = "in"  />
         <pitem  name = "data[1]"  direction = "in"  />
+        <pitem  name = "data[0]"  direction = "in"  />
         <pitem  name = "data[2]"  direction = "in"  />
-        <pitem  name = "data[3]"  direction = "in"  />
-        <pitem  name = "sel[3]"  direction = "in"  />
-        <pitem  name = "sel[2]"  direction = "in"  />
         <pitem  name = "sel[1]"  direction = "in"  />
         <pitem  name = "sel[0]"  direction = "in"  />
+        <pitem  name = "data[3]"  direction = "in"  />
         <pitem  name = "o"  direction = "out"  />
         </pins>
 
         <nets>
         <nitem  name = "paused_menu/gnd_2"  />
         <nitem  name = "paused_menu/pwr_2"  />
-        <nitem  name = "paused_menu/marker_x_8__N_656"  />
-        <nitem  name = "paused_menu/marker_x_8__N_657"  />
-        <nitem  name = "paused_menu/marker_x_8__N_658"  />
-        <nitem  name = "paused_menu/marker_x_8__N_659"  />
-        <nitem  name = "paused_menu/marker_x_8__N_661"  />
+        <nitem  name = "paused_menu/selection[1]"  />
+        <nitem  name = "paused_menu/selection[0]"  />
+        <nitem  name = "paused_menu/n31"  />
+        <nitem  name = "paused_menu/marker_y_6__N_657"  />
         </nets>
     </instance>
 
-    <instance  name = "paused_menu/marker_x_8__N_656_I_0_56"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "paused_menu/selection_1__I_0_56"  library = "work"  arch = ""  type = "comb">
         <pins>
-        <pitem  name = "data[3]"  direction = "in"  />
         <pitem  name = "data[2]"  direction = "in"  />
+        <pitem  name = "data[0]"  direction = "in"  />
         <pitem  name = "data[1]"  direction = "in"  />
-        <pitem  name = "sel[3]"  direction = "in"  />
-        <pitem  name = "sel[2]"  direction = "in"  />
         <pitem  name = "sel[1]"  direction = "in"  />
         <pitem  name = "sel[0]"  direction = "in"  />
-        <pitem  name = "data[0]"  direction = "in"  />
-        <pitem  name = "o"  direction = "out"  />
-        </pins>
-
-        <nets>
-        <nitem  name = "paused_menu/pwr_2"  />
-        <nitem  name = "paused_menu/marker_x_8__N_656"  />
-        <nitem  name = "paused_menu/marker_x_8__N_657"  />
-        <nitem  name = "paused_menu/marker_x_8__N_658"  />
-        <nitem  name = "paused_menu/marker_x_8__N_659"  />
-        <nitem  name = "paused_menu/n35"  />
-        <nitem  name = "paused_menu/marker_x_8__N_660"  />
-        </nets>
-    </instance>
-
-    <instance  name = "paused_menu/marker_x_8__N_656_I_0_57"  library = "work"  arch = ""  type = "comb">
-        <pins>
         <pitem  name = "data[3]"  direction = "in"  />
-        <pitem  name = "data[2]"  direction = "in"  />
-        <pitem  name = "data[1]"  direction = "in"  />
-        <pitem  name = "sel[3]"  direction = "in"  />
-        <pitem  name = "sel[2]"  direction = "in"  />
-        <pitem  name = "sel[1]"  direction = "in"  />
-        <pitem  name = "sel[0]"  direction = "in"  />
-        <pitem  name = "data[0]"  direction = "in"  />
         <pitem  name = "o"  direction = "out"  />
         </pins>
 
         <nets>
         <nitem  name = "paused_menu/gnd_2"  />
         <nitem  name = "paused_menu/pwr_2"  />
-        <nitem  name = "paused_menu/marker_x_8__N_656"  />
-        <nitem  name = "paused_menu/marker_x_8__N_657"  />
-        <nitem  name = "paused_menu/marker_x_8__N_658"  />
-        <nitem  name = "paused_menu/marker_x_8__N_659"  />
-        <nitem  name = "paused_menu/n35"  />
-        <nitem  name = "paused_menu/marker_y_6__N_662"  />
+        <nitem  name = "paused_menu/selection[1]"  />
+        <nitem  name = "paused_menu/selection[0]"  />
+        <nitem  name = "paused_menu/n31"  />
+        <nitem  name = "paused_menu/marker_y_6__N_658"  />
         </nets>
     </instance>
 
-    <instance  name = "paused_menu/marker_x_8__N_656_I_0_58"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "paused_menu/selection_1__I_0_57"  library = "work"  arch = ""  type = "comb">
         <pins>
-        <pitem  name = "data[3]"  direction = "in"  />
-        <pitem  name = "data[1]"  direction = "in"  />
         <pitem  name = "data[2]"  direction = "in"  />
-        <pitem  name = "sel[3]"  direction = "in"  />
-        <pitem  name = "sel[2]"  direction = "in"  />
+        <pitem  name = "data[1]"  direction = "in"  />
+        <pitem  name = "data[0]"  direction = "in"  />
         <pitem  name = "sel[1]"  direction = "in"  />
         <pitem  name = "sel[0]"  direction = "in"  />
-        <pitem  name = "data[0]"  direction = "in"  />
+        <pitem  name = "data[3]"  direction = "in"  />
         <pitem  name = "o"  direction = "out"  />
         </pins>
 
         <nets>
         <nitem  name = "paused_menu/gnd_2"  />
         <nitem  name = "paused_menu/pwr_2"  />
-        <nitem  name = "paused_menu/marker_x_8__N_656"  />
-        <nitem  name = "paused_menu/marker_x_8__N_657"  />
-        <nitem  name = "paused_menu/marker_x_8__N_658"  />
-        <nitem  name = "paused_menu/marker_x_8__N_659"  />
-        <nitem  name = "paused_menu/n35"  />
-        <nitem  name = "paused_menu/marker_y_6__N_663"  />
+        <nitem  name = "paused_menu/selection[1]"  />
+        <nitem  name = "paused_menu/selection[0]"  />
+        <nitem  name = "paused_menu/n31"  />
+        <nitem  name = "paused_menu/marker_y_6__N_659"  />
         </nets>
     </instance>
 
-    <instance  name = "paused_menu/marker_x_8__N_656_I_0_59"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "paused_menu/selection_1__I_0_58"  library = "work"  arch = ""  type = "comb">
         <pins>
-        <pitem  name = "data[1]"  direction = "in"  />
-        <pitem  name = "data[3]"  direction = "in"  />
+        <pitem  name = "data[0]"  direction = "in"  />
         <pitem  name = "data[2]"  direction = "in"  />
-        <pitem  name = "sel[3]"  direction = "in"  />
-        <pitem  name = "sel[2]"  direction = "in"  />
+        <pitem  name = "data[1]"  direction = "in"  />
         <pitem  name = "sel[1]"  direction = "in"  />
         <pitem  name = "sel[0]"  direction = "in"  />
-        <pitem  name = "data[0]"  direction = "in"  />
+        <pitem  name = "data[3]"  direction = "in"  />
         <pitem  name = "o"  direction = "out"  />
         </pins>
 
         <nets>
         <nitem  name = "paused_menu/gnd_2"  />
         <nitem  name = "paused_menu/pwr_2"  />
-        <nitem  name = "paused_menu/marker_x_8__N_656"  />
-        <nitem  name = "paused_menu/marker_x_8__N_657"  />
-        <nitem  name = "paused_menu/marker_x_8__N_658"  />
-        <nitem  name = "paused_menu/marker_x_8__N_659"  />
-        <nitem  name = "paused_menu/n35"  />
-        <nitem  name = "paused_menu/marker_y_6__N_664"  />
+        <nitem  name = "paused_menu/selection[1]"  />
+        <nitem  name = "paused_menu/selection[0]"  />
+        <nitem  name = "paused_menu/n31"  />
+        <nitem  name = "paused_menu/marker_y_6__N_660"  />
         </nets>
     </instance>
 
-    <instance  name = "paused_menu/marker_x_8__N_656_I_0_60"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "paused_menu/selection_1__I_0"  library = "work"  arch = ""  type = "comb">
         <pins>
-        <pitem  name = "data[3]"  direction = "in"  />
         <pitem  name = "data[2]"  direction = "in"  />
         <pitem  name = "data[1]"  direction = "in"  />
-        <pitem  name = "sel[3]"  direction = "in"  />
-        <pitem  name = "sel[2]"  direction = "in"  />
+        <pitem  name = "data[0]"  direction = "in"  />
         <pitem  name = "sel[1]"  direction = "in"  />
         <pitem  name = "sel[0]"  direction = "in"  />
-        <pitem  name = "data[0]"  direction = "in"  />
+        <pitem  name = "data[3]"  direction = "in"  />
         <pitem  name = "o"  direction = "out"  />
         </pins>
 
         <nets>
         <nitem  name = "paused_menu/gnd_2"  />
         <nitem  name = "paused_menu/pwr_2"  />
-        <nitem  name = "paused_menu/marker_x_8__N_656"  />
-        <nitem  name = "paused_menu/marker_x_8__N_657"  />
-        <nitem  name = "paused_menu/marker_x_8__N_658"  />
-        <nitem  name = "paused_menu/marker_x_8__N_659"  />
-        <nitem  name = "paused_menu/n35"  />
-        <nitem  name = "paused_menu/marker_y_6__N_665"  />
-        </nets>
-    </instance>
-
-    <instance  name = "paused_menu/marker_x_8__N_656_I_0"  library = "work"  arch = ""  type = "comb">
-        <pins>
-        <pitem  name = "data[2]"  direction = "in"  />
-        <pitem  name = "data[1]"  direction = "in"  />
-        <pitem  name = "data[3]"  direction = "in"  />
-        <pitem  name = "sel[3]"  direction = "in"  />
-        <pitem  name = "sel[2]"  direction = "in"  />
-        <pitem  name = "sel[1]"  direction = "in"  />
-        <pitem  name = "sel[0]"  direction = "in"  />
-        <pitem  name = "data[0]"  direction = "in"  />
-        <pitem  name = "o"  direction = "out"  />
-        </pins>
-
-        <nets>
-        <nitem  name = "paused_menu/gnd_2"  />
-        <nitem  name = "paused_menu/pwr_2"  />
-        <nitem  name = "paused_menu/marker_x_8__N_656"  />
-        <nitem  name = "paused_menu/marker_x_8__N_657"  />
-        <nitem  name = "paused_menu/marker_x_8__N_658"  />
-        <nitem  name = "paused_menu/marker_x_8__N_659"  />
-        <nitem  name = "paused_menu/n35"  />
-        <nitem  name = "paused_menu/marker_y_6__N_666"  />
+        <nitem  name = "paused_menu/selection[1]"  />
+        <nitem  name = "paused_menu/selection[0]"  />
+        <nitem  name = "paused_menu/n31"  />
+        <nitem  name = "paused_menu/marker_y_6__N_661"  />
         </nets>
     </instance>
 
@@ -11908,7 +11798,7 @@
         <nitem  name = "paused_menu/gnd_2"  />
         <nitem  name = "tick_menu"  />
         <nitem  name = "paused_menu/flag"  />
-        <nitem  name = "paused_menu/flag_N_685"  />
+        <nitem  name = "paused_menu/flag_N_679"  />
         </nets>
     </instance>
 
@@ -11922,11 +11812,11 @@
         <nets>
         <nitem  name = "pause_up"  />
         <nitem  name = "pause_down"  />
-        <nitem  name = "paused_menu/flag_N_692"  />
+        <nitem  name = "paused_menu/flag_N_686"  />
         </nets>
     </instance>
 
-    <instance  name = "paused_menu/flag_I_49"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "paused_menu/flag_I_48"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "a1"  direction = "in"  />
         <pitem  name = "a0"  direction = "in"  />
@@ -11937,12 +11827,12 @@
         <nets>
         <nitem  name = "paused_menu/gnd_2"  />
         <nitem  name = "paused_menu/flag"  />
-        <nitem  name = "paused_menu/flag_N_692"  />
-        <nitem  name = "paused_menu/flag_N_691"  />
+        <nitem  name = "paused_menu/flag_N_686"  />
+        <nitem  name = "paused_menu/flag_N_685"  />
         </nets>
     </instance>
 
-    <instance  name = "paused_menu/control_up_I_0_61"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "paused_menu/control_up_I_0_59"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "a[31]"  direction = "in"  />
         <pitem  name = "a[30]"  direction = "in"  />
@@ -12014,11 +11904,11 @@
         <nets>
         <nitem  name = "paused_menu/gnd_2"  />
         <nitem  name = "pause_up"  />
-        <nitem  name = "paused_menu/flag_N_690"  />
+        <nitem  name = "paused_menu/flag_N_684"  />
         </nets>
     </instance>
 
-    <instance  name = "paused_menu/equal_132"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "paused_menu/equal_128"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "a[31]"  direction = "in"  />
         <pitem  name = "a[30]"  direction = "in"  />
@@ -12049,6 +11939,7 @@
         <pitem  name = "a[5]"  direction = "in"  />
         <pitem  name = "a[4]"  direction = "in"  />
         <pitem  name = "a[3]"  direction = "in"  />
+        <pitem  name = "a[2]"  direction = "in"  />
         <pitem  name = "b[31]"  direction = "in"  />
         <pitem  name = "b[30]"  direction = "in"  />
         <pitem  name = "b[29]"  direction = "in"  />
@@ -12081,7 +11972,6 @@
         <pitem  name = "b[2]"  direction = "in"  />
         <pitem  name = "b[1]"  direction = "in"  />
         <pitem  name = "b[0]"  direction = "in"  />
-        <pitem  name = "a[2]"  direction = "in"  />
         <pitem  name = "a[1]"  direction = "in"  />
         <pitem  name = "a[0]"  direction = "in"  />
         <pitem  name = "o"  direction = "out"  />
@@ -12089,24 +11979,20 @@
 
         <nets>
         <nitem  name = "paused_menu/gnd_2"  />
-        <nitem  name = "paused_menu/selection[2]"  />
         <nitem  name = "paused_menu/selection[1]"  />
         <nitem  name = "paused_menu/selection[0]"  />
-        <nitem  name = "paused_menu/n114"  />
+        <nitem  name = "paused_menu/n110"  />
         </nets>
     </instance>
 
-    <instance  name = "paused_menu/sub_133"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "paused_menu/sub_129"  library = "work"  arch = ""  type = "comb">
         <pins>
-        <pitem  name = "a[3]"  direction = "in"  />
-        <pitem  name = "b[3]"  direction = "in"  />
+        <pitem  name = "a[2]"  direction = "in"  />
         <pitem  name = "b[2]"  direction = "in"  />
         <pitem  name = "b[1]"  direction = "in"  />
         <pitem  name = "b[0]"  direction = "in"  />
-        <pitem  name = "a[2]"  direction = "in"  />
         <pitem  name = "a[1]"  direction = "in"  />
         <pitem  name = "a[0]"  direction = "in"  />
-        <pitem  name = "o[3]"  direction = "out"  />
         <pitem  name = "o[2]"  direction = "out"  />
         <pitem  name = "o[1]"  direction = "out"  />
         <pitem  name = "o[0]"  direction = "out"  />
@@ -12115,17 +12001,15 @@
         <nets>
         <nitem  name = "paused_menu/gnd_2"  />
         <nitem  name = "paused_menu/pwr_2"  />
-        <nitem  name = "paused_menu/selection[2]"  />
         <nitem  name = "paused_menu/selection[1]"  />
         <nitem  name = "paused_menu/selection[0]"  />
-        <nitem  name = "paused_menu/n116"  />
-        <nitem  name = "paused_menu/n117"  />
-        <nitem  name = "paused_menu/n118"  />
-        <nitem  name = "paused_menu/n119"  />
+        <nitem  name = "paused_menu/n112"  />
+        <nitem  name = "paused_menu/n113"  />
+        <nitem  name = "paused_menu/n114"  />
         </nets>
     </instance>
 
-    <instance  name = "paused_menu/mux_134"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "paused_menu/mux_130"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "d1[31]"  direction = "in"  />
         <pitem  name = "d1[30]"  direction = "in"  />
@@ -12192,24 +12076,20 @@
         <pitem  name = "d0[2]"  direction = "in"  />
         <pitem  name = "d0[1]"  direction = "in"  />
         <pitem  name = "d0[0]"  direction = "in"  />
-        <pitem  name = "o[2]"  direction = "out"  />
         <pitem  name = "o[1]"  direction = "out"  />
         <pitem  name = "o[0]"  direction = "out"  />
         </pins>
 
         <nets>
         <nitem  name = "paused_menu/gnd_2"  />
-        <nitem  name = "paused_menu/selection[2]"  />
         <nitem  name = "paused_menu/selection[1]"  />
         <nitem  name = "paused_menu/selection[0]"  />
+        <nitem  name = "paused_menu/n110"  />
+        <nitem  name = "paused_menu/n112"  />
+        <nitem  name = "paused_menu/n113"  />
         <nitem  name = "paused_menu/n114"  />
-        <nitem  name = "paused_menu/n116"  />
-        <nitem  name = "paused_menu/n117"  />
-        <nitem  name = "paused_menu/n118"  />
-        <nitem  name = "paused_menu/n119"  />
-        <nitem  name = "paused_menu/n150"  />
-        <nitem  name = "paused_menu/n151"  />
-        <nitem  name = "paused_menu/n152"  />
+        <nitem  name = "paused_menu/n146"  />
+        <nitem  name = "paused_menu/n147"  />
         </nets>
     </instance>
 
@@ -12285,11 +12165,11 @@
         <nets>
         <nitem  name = "paused_menu/gnd_2"  />
         <nitem  name = "pause_down"  />
-        <nitem  name = "paused_menu/flag_N_689"  />
+        <nitem  name = "paused_menu/flag_N_683"  />
         </nets>
     </instance>
 
-    <instance  name = "paused_menu/equal_136"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "paused_menu/equal_132"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "a[31]"  direction = "in"  />
         <pitem  name = "a[30]"  direction = "in"  />
@@ -12320,6 +12200,7 @@
         <pitem  name = "a[5]"  direction = "in"  />
         <pitem  name = "a[4]"  direction = "in"  />
         <pitem  name = "a[3]"  direction = "in"  />
+        <pitem  name = "a[2]"  direction = "in"  />
         <pitem  name = "b[31]"  direction = "in"  />
         <pitem  name = "b[30]"  direction = "in"  />
         <pitem  name = "b[29]"  direction = "in"  />
@@ -12352,7 +12233,6 @@
         <pitem  name = "b[2]"  direction = "in"  />
         <pitem  name = "b[0]"  direction = "in"  />
         <pitem  name = "b[1]"  direction = "in"  />
-        <pitem  name = "a[2]"  direction = "in"  />
         <pitem  name = "a[1]"  direction = "in"  />
         <pitem  name = "a[0]"  direction = "in"  />
         <pitem  name = "o"  direction = "out"  />
@@ -12361,14 +12241,13 @@
         <nets>
         <nitem  name = "paused_menu/gnd_2"  />
         <nitem  name = "paused_menu/pwr_2"  />
-        <nitem  name = "paused_menu/selection[2]"  />
         <nitem  name = "paused_menu/selection[1]"  />
         <nitem  name = "paused_menu/selection[0]"  />
-        <nitem  name = "paused_menu/n154"  />
+        <nitem  name = "paused_menu/n149"  />
         </nets>
     </instance>
 
-    <instance  name = "paused_menu/add_137"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "paused_menu/add_133"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "cin"  direction = "in"  />
         <pitem  name = "a[31]"  direction = "in"  />
@@ -12400,6 +12279,7 @@
         <pitem  name = "a[5]"  direction = "in"  />
         <pitem  name = "a[4]"  direction = "in"  />
         <pitem  name = "a[3]"  direction = "in"  />
+        <pitem  name = "a[2]"  direction = "in"  />
         <pitem  name = "b[31]"  direction = "in"  />
         <pitem  name = "b[30]"  direction = "in"  />
         <pitem  name = "b[29]"  direction = "in"  />
@@ -12432,7 +12312,6 @@
         <pitem  name = "b[2]"  direction = "in"  />
         <pitem  name = "b[1]"  direction = "in"  />
         <pitem  name = "b[0]"  direction = "in"  />
-        <pitem  name = "a[2]"  direction = "in"  />
         <pitem  name = "a[1]"  direction = "in"  />
         <pitem  name = "a[0]"  direction = "in"  />
         <pitem  name = "o[31]"  direction = "out"  />
@@ -12472,9 +12351,13 @@
         <nets>
         <nitem  name = "paused_menu/gnd_2"  />
         <nitem  name = "paused_menu/pwr_2"  />
-        <nitem  name = "paused_menu/selection[2]"  />
         <nitem  name = "paused_menu/selection[1]"  />
         <nitem  name = "paused_menu/selection[0]"  />
+        <nitem  name = "paused_menu/n152"  />
+        <nitem  name = "paused_menu/n153"  />
+        <nitem  name = "paused_menu/n154"  />
+        <nitem  name = "paused_menu/n155"  />
+        <nitem  name = "paused_menu/n156"  />
         <nitem  name = "paused_menu/n157"  />
         <nitem  name = "paused_menu/n158"  />
         <nitem  name = "paused_menu/n159"  />
@@ -12502,15 +12385,10 @@
         <nitem  name = "paused_menu/n181"  />
         <nitem  name = "paused_menu/n182"  />
         <nitem  name = "paused_menu/n183"  />
-        <nitem  name = "paused_menu/n184"  />
-        <nitem  name = "paused_menu/n185"  />
-        <nitem  name = "paused_menu/n186"  />
-        <nitem  name = "paused_menu/n187"  />
-        <nitem  name = "paused_menu/n188"  />
         </nets>
     </instance>
 
-    <instance  name = "paused_menu/mux_138"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "paused_menu/mux_134"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "d1[31]"  direction = "in"  />
         <pitem  name = "d1[30]"  direction = "in"  />
@@ -12577,17 +12455,20 @@
         <pitem  name = "d0[2]"  direction = "in"  />
         <pitem  name = "d0[1]"  direction = "in"  />
         <pitem  name = "d0[0]"  direction = "in"  />
-        <pitem  name = "o[2]"  direction = "out"  />
         <pitem  name = "o[1]"  direction = "out"  />
         <pitem  name = "o[0]"  direction = "out"  />
         </pins>
 
         <nets>
         <nitem  name = "paused_menu/gnd_2"  />
-        <nitem  name = "paused_menu/selection[2]"  />
         <nitem  name = "paused_menu/selection[1]"  />
         <nitem  name = "paused_menu/selection[0]"  />
+        <nitem  name = "paused_menu/n149"  />
+        <nitem  name = "paused_menu/n152"  />
+        <nitem  name = "paused_menu/n153"  />
         <nitem  name = "paused_menu/n154"  />
+        <nitem  name = "paused_menu/n155"  />
+        <nitem  name = "paused_menu/n156"  />
         <nitem  name = "paused_menu/n157"  />
         <nitem  name = "paused_menu/n158"  />
         <nitem  name = "paused_menu/n159"  />
@@ -12615,92 +12496,74 @@
         <nitem  name = "paused_menu/n181"  />
         <nitem  name = "paused_menu/n182"  />
         <nitem  name = "paused_menu/n183"  />
-        <nitem  name = "paused_menu/n184"  />
-        <nitem  name = "paused_menu/n185"  />
-        <nitem  name = "paused_menu/n186"  />
-        <nitem  name = "paused_menu/n187"  />
-        <nitem  name = "paused_menu/n188"  />
-        <nitem  name = "paused_menu/n219"  />
-        <nitem  name = "paused_menu/n220"  />
-        <nitem  name = "paused_menu/n221"  />
+        <nitem  name = "paused_menu/n215"  />
+        <nitem  name = "paused_menu/n216"  />
         </nets>
     </instance>
 
-    <instance  name = "paused_menu/mux_139"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "paused_menu/mux_135"  library = "work"  arch = ""  type = "comb">
         <pins>
-        <pitem  name = "d0[2]"  direction = "in"  />
         <pitem  name = "d0[1]"  direction = "in"  />
         <pitem  name = "d0[0]"  direction = "in"  />
         <pitem  name = "cond"  direction = "in"  />
-        <pitem  name = "d1[2]"  direction = "in"  />
         <pitem  name = "d1[1]"  direction = "in"  />
         <pitem  name = "d1[0]"  direction = "in"  />
-        <pitem  name = "o[2]"  direction = "out"  />
         <pitem  name = "o[1]"  direction = "out"  />
         <pitem  name = "o[0]"  direction = "out"  />
         </pins>
 
         <nets>
-        <nitem  name = "paused_menu/selection[2]"  />
         <nitem  name = "paused_menu/selection[1]"  />
         <nitem  name = "paused_menu/selection[0]"  />
-        <nitem  name = "paused_menu/flag_N_689"  />
+        <nitem  name = "paused_menu/flag_N_683"  />
+        <nitem  name = "paused_menu/n215"  />
+        <nitem  name = "paused_menu/n216"  />
+        <nitem  name = "paused_menu/n218"  />
         <nitem  name = "paused_menu/n219"  />
-        <nitem  name = "paused_menu/n220"  />
-        <nitem  name = "paused_menu/n221"  />
-        <nitem  name = "paused_menu/n223"  />
-        <nitem  name = "paused_menu/n224"  />
-        <nitem  name = "paused_menu/n225"  />
-        </nets>
-    </instance>
-
-    <instance  name = "paused_menu/flag_I_48"  library = "work"  arch = ""  type = "comb">
-        <pins>
-        <pitem  name = "a1"  direction = "in"  />
-        <pitem  name = "a0"  direction = "in"  />
-        <pitem  name = "c"  direction = "in"  />
-        <pitem  name = "o"  direction = "out"  />
-        </pins>
-
-        <nets>
-        <nitem  name = "paused_menu/pwr_2"  />
-        <nitem  name = "paused_menu/flag"  />
-        <nitem  name = "paused_menu/flag_N_689"  />
-        <nitem  name = "paused_menu/flag_N_688"  />
-        </nets>
-    </instance>
-
-    <instance  name = "paused_menu/mux_141"  library = "work"  arch = ""  type = "comb">
-        <pins>
-        <pitem  name = "cond"  direction = "in"  />
-        <pitem  name = "d1[2]"  direction = "in"  />
-        <pitem  name = "d1[1]"  direction = "in"  />
-        <pitem  name = "d1[0]"  direction = "in"  />
-        <pitem  name = "d0[2]"  direction = "in"  />
-        <pitem  name = "d0[1]"  direction = "in"  />
-        <pitem  name = "d0[0]"  direction = "in"  />
-        <pitem  name = "o[2]"  direction = "out"  />
-        <pitem  name = "o[1]"  direction = "out"  />
-        <pitem  name = "o[0]"  direction = "out"  />
-        </pins>
-
-        <nets>
-        <nitem  name = "paused_menu/flag_N_690"  />
-        <nitem  name = "paused_menu/n150"  />
-        <nitem  name = "paused_menu/n151"  />
-        <nitem  name = "paused_menu/n152"  />
-        <nitem  name = "paused_menu/n223"  />
-        <nitem  name = "paused_menu/n224"  />
-        <nitem  name = "paused_menu/n225"  />
-        <nitem  name = "paused_menu/n228"  />
-        <nitem  name = "paused_menu/n229"  />
-        <nitem  name = "paused_menu/n230"  />
         </nets>
     </instance>
 
     <instance  name = "paused_menu/flag_I_47"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "c"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "paused_menu/pwr_2"  />
+        <nitem  name = "paused_menu/flag"  />
+        <nitem  name = "paused_menu/flag_N_683"  />
+        <nitem  name = "paused_menu/flag_N_682"  />
+        </nets>
+    </instance>
+
+    <instance  name = "paused_menu/mux_137"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "cond"  direction = "in"  />
+        <pitem  name = "d1[1]"  direction = "in"  />
+        <pitem  name = "d1[0]"  direction = "in"  />
+        <pitem  name = "d0[1]"  direction = "in"  />
+        <pitem  name = "d0[0]"  direction = "in"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "paused_menu/flag_N_684"  />
+        <nitem  name = "paused_menu/n146"  />
+        <nitem  name = "paused_menu/n147"  />
+        <nitem  name = "paused_menu/n218"  />
+        <nitem  name = "paused_menu/n219"  />
+        <nitem  name = "paused_menu/n222"  />
+        <nitem  name = "paused_menu/n223"  />
+        </nets>
+    </instance>
+
+    <instance  name = "paused_menu/flag_I_46"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a1"  direction = "in"  />
         <pitem  name = "c"  direction = "in"  />
         <pitem  name = "a0"  direction = "in"  />
         <pitem  name = "o"  direction = "out"  />
@@ -12708,13 +12571,13 @@
 
         <nets>
         <nitem  name = "paused_menu/pwr_2"  />
-        <nitem  name = "paused_menu/flag_N_690"  />
-        <nitem  name = "paused_menu/flag_N_688"  />
-        <nitem  name = "paused_menu/flag_N_687"  />
+        <nitem  name = "paused_menu/flag_N_684"  />
+        <nitem  name = "paused_menu/flag_N_682"  />
+        <nitem  name = "paused_menu/flag_N_681"  />
         </nets>
     </instance>
 
-    <instance  name = "paused_menu/flag_I_46"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "paused_menu/flag_I_45"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "c"  direction = "in"  />
         <pitem  name = "a1"  direction = "in"  />
@@ -12724,37 +12587,31 @@
 
         <nets>
         <nitem  name = "paused_menu/flag"  />
-        <nitem  name = "paused_menu/flag_N_691"  />
-        <nitem  name = "paused_menu/flag_N_687"  />
-        <nitem  name = "paused_menu/flag_N_686"  />
+        <nitem  name = "paused_menu/flag_N_685"  />
+        <nitem  name = "paused_menu/flag_N_681"  />
+        <nitem  name = "paused_menu/flag_N_680"  />
         </nets>
     </instance>
 
-    <instance  name = "paused_menu/mux_144"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "paused_menu/mux_140"  library = "work"  arch = ""  type = "comb">
         <pins>
-        <pitem  name = "d1[2]"  direction = "in"  />
         <pitem  name = "d1[1]"  direction = "in"  />
         <pitem  name = "d1[0]"  direction = "in"  />
         <pitem  name = "cond"  direction = "in"  />
-        <pitem  name = "d0[2]"  direction = "in"  />
         <pitem  name = "d0[1]"  direction = "in"  />
         <pitem  name = "d0[0]"  direction = "in"  />
-        <pitem  name = "o[2]"  direction = "out"  />
         <pitem  name = "o[1]"  direction = "out"  />
         <pitem  name = "o[0]"  direction = "out"  />
         </pins>
 
         <nets>
-        <nitem  name = "paused_menu/selection[2]"  />
         <nitem  name = "paused_menu/selection[1]"  />
         <nitem  name = "paused_menu/selection[0]"  />
         <nitem  name = "paused_menu/flag"  />
-        <nitem  name = "paused_menu/n228"  />
-        <nitem  name = "paused_menu/n229"  />
-        <nitem  name = "paused_menu/n230"  />
-        <nitem  name = "paused_menu/selection_2__N_667[2]"  />
-        <nitem  name = "paused_menu/selection_2__N_667[1]"  />
-        <nitem  name = "paused_menu/selection_2__N_667[0]"  />
+        <nitem  name = "paused_menu/n222"  />
+        <nitem  name = "paused_menu/n223"  />
+        <nitem  name = "paused_menu/selection_1__N_662[1]"  />
+        <nitem  name = "paused_menu/selection_1__N_662[0]"  />
         </nets>
     </instance>
 
@@ -12769,21 +12626,18 @@
         <nets>
         <nitem  name = "paused_menu/gnd_2"  />
         <nitem  name = "reset"  />
-        <nitem  name = "paused_menu/flag_N_686"  />
-        <nitem  name = "paused_menu/flag_N_685"  />
+        <nitem  name = "paused_menu/flag_N_680"  />
+        <nitem  name = "paused_menu/flag_N_679"  />
         </nets>
     </instance>
 
-    <instance  name = "paused_menu/selection_2__I_44"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "paused_menu/selection_1__I_43"  library = "work"  arch = ""  type = "comb">
         <pins>
-        <pitem  name = "d0[2]"  direction = "in"  />
         <pitem  name = "d0[1]"  direction = "in"  />
         <pitem  name = "d0[0]"  direction = "in"  />
         <pitem  name = "cond"  direction = "in"  />
-        <pitem  name = "d1[2]"  direction = "in"  />
         <pitem  name = "d1[1]"  direction = "in"  />
         <pitem  name = "d1[0]"  direction = "in"  />
-        <pitem  name = "o[2]"  direction = "out"  />
         <pitem  name = "o[1]"  direction = "out"  />
         <pitem  name = "o[0]"  direction = "out"  />
         </pins>
@@ -12791,28 +12645,22 @@
         <nets>
         <nitem  name = "paused_menu/gnd_2"  />
         <nitem  name = "reset"  />
-        <nitem  name = "paused_menu/selection_2__N_667[2]"  />
-        <nitem  name = "paused_menu/selection_2__N_667[1]"  />
-        <nitem  name = "paused_menu/selection_2__N_667[0]"  />
-        <nitem  name = "paused_menu/selection_2__N_642[2]"  />
-        <nitem  name = "paused_menu/selection_2__N_642[1]"  />
-        <nitem  name = "paused_menu/selection_2__N_642[0]"  />
+        <nitem  name = "paused_menu/selection_1__N_662[1]"  />
+        <nitem  name = "paused_menu/selection_1__N_662[0]"  />
+        <nitem  name = "paused_menu/selection_1__N_642[1]"  />
+        <nitem  name = "paused_menu/selection_1__N_642[0]"  />
         </nets>
     </instance>
 
     <instance  name = "paused_menu/selection"  library = "work"  arch = ""  type = "reg">
         <pins>
-        <pitem  name = "set[2]"  direction = "in"  />
         <pitem  name = "set[1]"  direction = "in"  />
         <pitem  name = "set[0]"  direction = "in"  />
-        <pitem  name = "reset[2]"  direction = "in"  />
         <pitem  name = "reset[1]"  direction = "in"  />
         <pitem  name = "reset[0]"  direction = "in"  />
         <pitem  name = "clock"  direction = "in"  />
-        <pitem  name = "q[2]"  direction = "out"  />
         <pitem  name = "q[1]"  direction = "out"  />
         <pitem  name = "q[0]"  direction = "out"  />
-        <pitem  name = "d[2]"  direction = "in"  />
         <pitem  name = "d[1]"  direction = "in"  />
         <pitem  name = "d[0]"  direction = "in"  />
         </pins>
@@ -12820,12 +12668,10 @@
         <nets>
         <nitem  name = "paused_menu/gnd_2"  />
         <nitem  name = "tick_menu"  />
-        <nitem  name = "paused_menu/selection[2]"  />
         <nitem  name = "paused_menu/selection[1]"  />
         <nitem  name = "paused_menu/selection[0]"  />
-        <nitem  name = "paused_menu/selection_2__N_642[2]"  />
-        <nitem  name = "paused_menu/selection_2__N_642[1]"  />
-        <nitem  name = "paused_menu/selection_2__N_642[0]"  />
+        <nitem  name = "paused_menu/selection_1__N_642[1]"  />
+        <nitem  name = "paused_menu/selection_1__N_642[0]"  />
         </nets>
     </instance>
 
@@ -12894,7 +12740,7 @@
         <nitem  name = "pixel_col[2]"  />
         <nitem  name = "pixel_col[1]"  />
         <nitem  name = "pixel_col[0]"  />
-        <nitem  name = "paused_menu/menu_rgb_2__N_651"  />
+        <nitem  name = "paused_menu/menu_rgb_2__N_650"  />
         </nets>
     </instance>
 
@@ -12937,7 +12783,7 @@
         <nitem  name = "pixel_col[2]"  />
         <nitem  name = "pixel_col[1]"  />
         <nitem  name = "pixel_col[0]"  />
-        <nitem  name = "paused_menu/menu_rgb_2__N_652"  />
+        <nitem  name = "paused_menu/menu_rgb_2__N_651"  />
         </nets>
     </instance>
 
@@ -12949,9 +12795,9 @@
         </pins>
 
         <nets>
-        <nitem  name = "paused_menu/menu_rgb_2__N_651"  />
-        <nitem  name = "paused_menu/menu_rgb_2__N_652"  />
         <nitem  name = "paused_menu/menu_rgb_2__N_650"  />
+        <nitem  name = "paused_menu/menu_rgb_2__N_651"  />
+        <nitem  name = "paused_menu/menu_rgb_2__N_649"  />
         </nets>
     </instance>
 
@@ -12994,7 +12840,7 @@
         <nitem  name = "pixel_row[2]"  />
         <nitem  name = "pixel_row[1]"  />
         <nitem  name = "pixel_row[0]"  />
-        <nitem  name = "paused_menu/menu_rgb_2__N_653"  />
+        <nitem  name = "paused_menu/menu_rgb_2__N_652"  />
         </nets>
     </instance>
 
@@ -13006,9 +12852,9 @@
         </pins>
 
         <nets>
-        <nitem  name = "paused_menu/menu_rgb_2__N_650"  />
-        <nitem  name = "paused_menu/menu_rgb_2__N_653"  />
         <nitem  name = "paused_menu/menu_rgb_2__N_649"  />
+        <nitem  name = "paused_menu/menu_rgb_2__N_652"  />
+        <nitem  name = "paused_menu/menu_rgb_2__N_648"  />
         </nets>
     </instance>
 
@@ -13051,7 +12897,7 @@
         <nitem  name = "pixel_row[2]"  />
         <nitem  name = "pixel_row[1]"  />
         <nitem  name = "pixel_row[0]"  />
-        <nitem  name = "paused_menu/menu_rgb_2__N_654"  />
+        <nitem  name = "paused_menu/menu_rgb_2__N_653"  />
         </nets>
     </instance>
 
@@ -13063,13 +12909,13 @@
         </pins>
 
         <nets>
-        <nitem  name = "paused_menu/menu_rgb_2__N_649"  />
-        <nitem  name = "paused_menu/menu_rgb_2__N_654"  />
         <nitem  name = "paused_menu/menu_rgb_2__N_648"  />
+        <nitem  name = "paused_menu/menu_rgb_2__N_653"  />
+        <nitem  name = "paused_menu/menu_rgb_2__N_647"  />
         </nets>
     </instance>
 
-    <instance  name = "paused_menu/sub_157"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "paused_menu/sub_153"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "a[10]"  direction = "in"  />
         <pitem  name = "b[10]"  direction = "in"  />
@@ -13119,21 +12965,21 @@
         <nitem  name = "pixel_col[2]"  />
         <nitem  name = "pixel_col[1]"  />
         <nitem  name = "pixel_col[0]"  />
+        <nitem  name = "paused_menu/n249"  />
+        <nitem  name = "paused_menu/n250"  />
+        <nitem  name = "paused_menu/n251"  />
+        <nitem  name = "paused_menu/n252"  />
+        <nitem  name = "paused_menu/n253"  />
+        <nitem  name = "paused_menu/n254"  />
+        <nitem  name = "paused_menu/n255"  />
+        <nitem  name = "paused_menu/n256"  />
+        <nitem  name = "paused_menu/n257"  />
+        <nitem  name = "paused_menu/n258"  />
         <nitem  name = "paused_menu/n259"  />
-        <nitem  name = "paused_menu/n260"  />
-        <nitem  name = "paused_menu/n261"  />
-        <nitem  name = "paused_menu/n262"  />
-        <nitem  name = "paused_menu/n263"  />
-        <nitem  name = "paused_menu/n264"  />
-        <nitem  name = "paused_menu/n265"  />
-        <nitem  name = "paused_menu/n266"  />
-        <nitem  name = "paused_menu/n267"  />
-        <nitem  name = "paused_menu/n268"  />
-        <nitem  name = "paused_menu/n269"  />
         </nets>
     </instance>
 
-    <instance  name = "paused_menu/sub_158"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "paused_menu/sub_154"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "a[10]"  direction = "in"  />
         <pitem  name = "b[10]"  direction = "in"  />
@@ -13183,21 +13029,21 @@
         <nitem  name = "pixel_row[2]"  />
         <nitem  name = "pixel_row[1]"  />
         <nitem  name = "pixel_row[0]"  />
+        <nitem  name = "paused_menu/n261"  />
+        <nitem  name = "paused_menu/n262"  />
+        <nitem  name = "paused_menu/n263"  />
+        <nitem  name = "paused_menu/n264"  />
+        <nitem  name = "paused_menu/n265"  />
+        <nitem  name = "paused_menu/n266"  />
+        <nitem  name = "paused_menu/n267"  />
+        <nitem  name = "paused_menu/n268"  />
+        <nitem  name = "paused_menu/n269"  />
+        <nitem  name = "paused_menu/n270"  />
         <nitem  name = "paused_menu/n271"  />
-        <nitem  name = "paused_menu/n272"  />
-        <nitem  name = "paused_menu/n273"  />
-        <nitem  name = "paused_menu/n274"  />
-        <nitem  name = "paused_menu/n275"  />
-        <nitem  name = "paused_menu/n276"  />
-        <nitem  name = "paused_menu/n277"  />
-        <nitem  name = "paused_menu/n278"  />
-        <nitem  name = "paused_menu/n279"  />
-        <nitem  name = "paused_menu/n280"  />
-        <nitem  name = "paused_menu/n281"  />
         </nets>
     </instance>
 
-    <instance  name = "paused_menu/mult_159"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "paused_menu/mult_155"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "b[6]"  direction = "in"  />
         <pitem  name = "b[5]"  direction = "in"  />
@@ -13276,17 +13122,27 @@
         <nets>
         <nitem  name = "paused_menu/gnd_2"  />
         <nitem  name = "paused_menu/pwr_2"  />
+        <nitem  name = "paused_menu/n261"  />
+        <nitem  name = "paused_menu/n262"  />
+        <nitem  name = "paused_menu/n263"  />
+        <nitem  name = "paused_menu/n264"  />
+        <nitem  name = "paused_menu/n265"  />
+        <nitem  name = "paused_menu/n266"  />
+        <nitem  name = "paused_menu/n267"  />
+        <nitem  name = "paused_menu/n268"  />
+        <nitem  name = "paused_menu/n269"  />
+        <nitem  name = "paused_menu/n270"  />
         <nitem  name = "paused_menu/n271"  />
-        <nitem  name = "paused_menu/n272"  />
-        <nitem  name = "paused_menu/n273"  />
-        <nitem  name = "paused_menu/n274"  />
-        <nitem  name = "paused_menu/n275"  />
-        <nitem  name = "paused_menu/n276"  />
-        <nitem  name = "paused_menu/n277"  />
-        <nitem  name = "paused_menu/n278"  />
-        <nitem  name = "paused_menu/n279"  />
-        <nitem  name = "paused_menu/n280"  />
         <nitem  name = "paused_menu/n281"  />
+        <nitem  name = "paused_menu/n282"  />
+        <nitem  name = "paused_menu/n283"  />
+        <nitem  name = "paused_menu/n284"  />
+        <nitem  name = "paused_menu/n285"  />
+        <nitem  name = "paused_menu/n286"  />
+        <nitem  name = "paused_menu/n287"  />
+        <nitem  name = "paused_menu/n288"  />
+        <nitem  name = "paused_menu/n289"  />
+        <nitem  name = "paused_menu/n290"  />
         <nitem  name = "paused_menu/n291"  />
         <nitem  name = "paused_menu/n292"  />
         <nitem  name = "paused_menu/n293"  />
@@ -13309,20 +13165,10 @@
         <nitem  name = "paused_menu/n310"  />
         <nitem  name = "paused_menu/n311"  />
         <nitem  name = "paused_menu/n312"  />
-        <nitem  name = "paused_menu/n313"  />
-        <nitem  name = "paused_menu/n314"  />
-        <nitem  name = "paused_menu/n315"  />
-        <nitem  name = "paused_menu/n316"  />
-        <nitem  name = "paused_menu/n317"  />
-        <nitem  name = "paused_menu/n318"  />
-        <nitem  name = "paused_menu/n319"  />
-        <nitem  name = "paused_menu/n320"  />
-        <nitem  name = "paused_menu/n321"  />
-        <nitem  name = "paused_menu/n322"  />
         </nets>
     </instance>
 
-    <instance  name = "paused_menu/add_160"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "paused_menu/add_156"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "cin"  direction = "in"  />
         <pitem  name = "a[31]"  direction = "in"  />
@@ -13408,17 +13254,27 @@
 
         <nets>
         <nitem  name = "paused_menu/gnd_2"  />
+        <nitem  name = "paused_menu/n249"  />
+        <nitem  name = "paused_menu/n250"  />
+        <nitem  name = "paused_menu/n251"  />
+        <nitem  name = "paused_menu/n252"  />
+        <nitem  name = "paused_menu/n253"  />
+        <nitem  name = "paused_menu/n254"  />
+        <nitem  name = "paused_menu/n255"  />
+        <nitem  name = "paused_menu/n256"  />
+        <nitem  name = "paused_menu/n257"  />
+        <nitem  name = "paused_menu/n258"  />
         <nitem  name = "paused_menu/n259"  />
-        <nitem  name = "paused_menu/n260"  />
-        <nitem  name = "paused_menu/n261"  />
-        <nitem  name = "paused_menu/n262"  />
-        <nitem  name = "paused_menu/n263"  />
-        <nitem  name = "paused_menu/n264"  />
-        <nitem  name = "paused_menu/n265"  />
-        <nitem  name = "paused_menu/n266"  />
-        <nitem  name = "paused_menu/n267"  />
-        <nitem  name = "paused_menu/n268"  />
-        <nitem  name = "paused_menu/n269"  />
+        <nitem  name = "paused_menu/n281"  />
+        <nitem  name = "paused_menu/n282"  />
+        <nitem  name = "paused_menu/n283"  />
+        <nitem  name = "paused_menu/n284"  />
+        <nitem  name = "paused_menu/n285"  />
+        <nitem  name = "paused_menu/n286"  />
+        <nitem  name = "paused_menu/n287"  />
+        <nitem  name = "paused_menu/n288"  />
+        <nitem  name = "paused_menu/n289"  />
+        <nitem  name = "paused_menu/n290"  />
         <nitem  name = "paused_menu/n291"  />
         <nitem  name = "paused_menu/n292"  />
         <nitem  name = "paused_menu/n293"  />
@@ -13441,35 +13297,25 @@
         <nitem  name = "paused_menu/n310"  />
         <nitem  name = "paused_menu/n311"  />
         <nitem  name = "paused_menu/n312"  />
-        <nitem  name = "paused_menu/n313"  />
-        <nitem  name = "paused_menu/n314"  />
-        <nitem  name = "paused_menu/n315"  />
-        <nitem  name = "paused_menu/n316"  />
-        <nitem  name = "paused_menu/n317"  />
-        <nitem  name = "paused_menu/n318"  />
-        <nitem  name = "paused_menu/n319"  />
-        <nitem  name = "paused_menu/n320"  />
-        <nitem  name = "paused_menu/n321"  />
-        <nitem  name = "paused_menu/n322"  />
-        <nitem  name = "paused_menu/menu_rgb_2__N_670[14]"  />
-        <nitem  name = "paused_menu/menu_rgb_2__N_670[13]"  />
-        <nitem  name = "paused_menu/menu_rgb_2__N_670[12]"  />
-        <nitem  name = "paused_menu/menu_rgb_2__N_670[11]"  />
-        <nitem  name = "paused_menu/menu_rgb_2__N_670[10]"  />
-        <nitem  name = "paused_menu/menu_rgb_2__N_670[9]"  />
-        <nitem  name = "paused_menu/menu_rgb_2__N_670[8]"  />
-        <nitem  name = "paused_menu/menu_rgb_2__N_670[7]"  />
-        <nitem  name = "paused_menu/menu_rgb_2__N_670[6]"  />
-        <nitem  name = "paused_menu/menu_rgb_2__N_670[5]"  />
-        <nitem  name = "paused_menu/menu_rgb_2__N_670[4]"  />
-        <nitem  name = "paused_menu/menu_rgb_2__N_670[3]"  />
-        <nitem  name = "paused_menu/menu_rgb_2__N_670[2]"  />
-        <nitem  name = "paused_menu/menu_rgb_2__N_670[1]"  />
-        <nitem  name = "paused_menu/menu_rgb_2__N_670[0]"  />
+        <nitem  name = "paused_menu/menu_rgb_2__N_664[14]"  />
+        <nitem  name = "paused_menu/menu_rgb_2__N_664[13]"  />
+        <nitem  name = "paused_menu/menu_rgb_2__N_664[12]"  />
+        <nitem  name = "paused_menu/menu_rgb_2__N_664[11]"  />
+        <nitem  name = "paused_menu/menu_rgb_2__N_664[10]"  />
+        <nitem  name = "paused_menu/menu_rgb_2__N_664[9]"  />
+        <nitem  name = "paused_menu/menu_rgb_2__N_664[8]"  />
+        <nitem  name = "paused_menu/menu_rgb_2__N_664[7]"  />
+        <nitem  name = "paused_menu/menu_rgb_2__N_664[6]"  />
+        <nitem  name = "paused_menu/menu_rgb_2__N_664[5]"  />
+        <nitem  name = "paused_menu/menu_rgb_2__N_664[4]"  />
+        <nitem  name = "paused_menu/menu_rgb_2__N_664[3]"  />
+        <nitem  name = "paused_menu/menu_rgb_2__N_664[2]"  />
+        <nitem  name = "paused_menu/menu_rgb_2__N_664[1]"  />
+        <nitem  name = "paused_menu/menu_rgb_2__N_664[0]"  />
         </nets>
     </instance>
 
-    <instance  name = "paused_menu/menu_rgb_2__I_45"  library = "work"  arch = ""  type = "seq">
+    <instance  name = "paused_menu/menu_rgb_2__I_44"  library = "work"  arch = ""  type = "seq">
         <pins>
         <pitem  name = "read_enable"  direction = "in"  />
         <pitem  name = "Ram"  direction = "in"  />
@@ -13496,24 +13342,24 @@
         <nets>
         <nitem  name = "paused_menu/pwr_2"  />
         <nitem  name = "paused_menu/memory"  />
-        <nitem  name = "paused_menu/menu_rgb_2__N_670[14]"  />
-        <nitem  name = "paused_menu/menu_rgb_2__N_670[13]"  />
-        <nitem  name = "paused_menu/menu_rgb_2__N_670[12]"  />
-        <nitem  name = "paused_menu/menu_rgb_2__N_670[11]"  />
-        <nitem  name = "paused_menu/menu_rgb_2__N_670[10]"  />
-        <nitem  name = "paused_menu/menu_rgb_2__N_670[9]"  />
-        <nitem  name = "paused_menu/menu_rgb_2__N_670[8]"  />
-        <nitem  name = "paused_menu/menu_rgb_2__N_670[7]"  />
-        <nitem  name = "paused_menu/menu_rgb_2__N_670[6]"  />
-        <nitem  name = "paused_menu/menu_rgb_2__N_670[5]"  />
-        <nitem  name = "paused_menu/menu_rgb_2__N_670[4]"  />
-        <nitem  name = "paused_menu/menu_rgb_2__N_670[3]"  />
-        <nitem  name = "paused_menu/menu_rgb_2__N_670[2]"  />
-        <nitem  name = "paused_menu/menu_rgb_2__N_670[1]"  />
-        <nitem  name = "paused_menu/menu_rgb_2__N_670[0]"  />
-        <nitem  name = "paused_menu/menu_rgb_2__N_645[2]"  />
-        <nitem  name = "paused_menu/menu_rgb_2__N_645[1]"  />
-        <nitem  name = "paused_menu/menu_rgb_2__N_645[0]"  />
+        <nitem  name = "paused_menu/menu_rgb_2__N_664[14]"  />
+        <nitem  name = "paused_menu/menu_rgb_2__N_664[13]"  />
+        <nitem  name = "paused_menu/menu_rgb_2__N_664[12]"  />
+        <nitem  name = "paused_menu/menu_rgb_2__N_664[11]"  />
+        <nitem  name = "paused_menu/menu_rgb_2__N_664[10]"  />
+        <nitem  name = "paused_menu/menu_rgb_2__N_664[9]"  />
+        <nitem  name = "paused_menu/menu_rgb_2__N_664[8]"  />
+        <nitem  name = "paused_menu/menu_rgb_2__N_664[7]"  />
+        <nitem  name = "paused_menu/menu_rgb_2__N_664[6]"  />
+        <nitem  name = "paused_menu/menu_rgb_2__N_664[5]"  />
+        <nitem  name = "paused_menu/menu_rgb_2__N_664[4]"  />
+        <nitem  name = "paused_menu/menu_rgb_2__N_664[3]"  />
+        <nitem  name = "paused_menu/menu_rgb_2__N_664[2]"  />
+        <nitem  name = "paused_menu/menu_rgb_2__N_664[1]"  />
+        <nitem  name = "paused_menu/menu_rgb_2__N_664[0]"  />
+        <nitem  name = "paused_menu/menu_rgb_2__N_644[2]"  />
+        <nitem  name = "paused_menu/menu_rgb_2__N_644[1]"  />
+        <nitem  name = "paused_menu/menu_rgb_2__N_644[0]"  />
         </nets>
     </instance>
 
@@ -13536,10 +13382,10 @@
         <nitem  name = "paused_menu/menu_rgb[2]"  />
         <nitem  name = "paused_menu/menu_rgb[1]"  />
         <nitem  name = "paused_menu/menu_rgb[0]"  />
-        <nitem  name = "paused_menu/menu_rgb_2__N_648"  />
-        <nitem  name = "paused_menu/menu_rgb_2__N_645[2]"  />
-        <nitem  name = "paused_menu/menu_rgb_2__N_645[1]"  />
-        <nitem  name = "paused_menu/menu_rgb_2__N_645[0]"  />
+        <nitem  name = "paused_menu/menu_rgb_2__N_647"  />
+        <nitem  name = "paused_menu/menu_rgb_2__N_644[2]"  />
+        <nitem  name = "paused_menu/menu_rgb_2__N_644[1]"  />
+        <nitem  name = "paused_menu/menu_rgb_2__N_644[0]"  />
         </nets>
     </instance>
 
@@ -13560,9 +13406,9 @@
         <nitem  name = "paused_menu/gnd_2"  />
         <nitem  name = "paused_menu/marker_x[8]"  />
         <nitem  name = "paused_menu/marker_x[7]"  />
+        <nitem  name = "paused_menu/marker_x_8__N_654"  />
+        <nitem  name = "paused_menu/marker_x_8__N_656"  />
         <nitem  name = "paused_menu/marker_x_8__N_655"  />
-        <nitem  name = "paused_menu/marker_x_8__N_661"  />
-        <nitem  name = "paused_menu/marker_x_8__N_660"  />
         </nets>
     </instance>
 
@@ -13687,42 +13533,42 @@
         <nitem  name = "ball_size_x[2]"  />
         <nitem  name = "ball_size_x[1]"  />
         <nitem  name = "ball_size_x[0]"  />
-        <nitem  name = "game/score_player_1_3__N_790[31]"  />
-        <nitem  name = "game/score_player_1_3__N_790[30]"  />
-        <nitem  name = "game/score_player_1_3__N_790[29]"  />
-        <nitem  name = "game/score_player_1_3__N_790[28]"  />
-        <nitem  name = "game/score_player_1_3__N_790[27]"  />
-        <nitem  name = "game/score_player_1_3__N_790[26]"  />
-        <nitem  name = "game/score_player_1_3__N_790[25]"  />
-        <nitem  name = "game/score_player_1_3__N_790[24]"  />
-        <nitem  name = "game/score_player_1_3__N_790[23]"  />
-        <nitem  name = "game/score_player_1_3__N_790[22]"  />
-        <nitem  name = "game/score_player_1_3__N_790[21]"  />
-        <nitem  name = "game/score_player_1_3__N_790[20]"  />
-        <nitem  name = "game/score_player_1_3__N_790[19]"  />
-        <nitem  name = "game/score_player_1_3__N_790[18]"  />
-        <nitem  name = "game/score_player_1_3__N_790[17]"  />
-        <nitem  name = "game/score_player_1_3__N_790[16]"  />
-        <nitem  name = "game/score_player_1_3__N_790[15]"  />
-        <nitem  name = "game/score_player_1_3__N_790[14]"  />
-        <nitem  name = "game/score_player_1_3__N_790[13]"  />
-        <nitem  name = "game/score_player_1_3__N_790[12]"  />
-        <nitem  name = "game/score_player_1_3__N_790[11]"  />
-        <nitem  name = "game/score_player_1_3__N_790[10]"  />
-        <nitem  name = "game/score_player_1_3__N_790[9]"  />
-        <nitem  name = "game/score_player_1_3__N_790[8]"  />
-        <nitem  name = "game/score_player_1_3__N_790[7]"  />
-        <nitem  name = "game/score_player_1_3__N_790[6]"  />
-        <nitem  name = "game/score_player_1_3__N_790[5]"  />
-        <nitem  name = "game/score_player_1_3__N_790[4]"  />
-        <nitem  name = "game/score_player_1_3__N_790[3]"  />
-        <nitem  name = "game/score_player_1_3__N_790[2]"  />
-        <nitem  name = "game/score_player_1_3__N_790[1]"  />
-        <nitem  name = "game/score_player_1_3__N_790[0]"  />
+        <nitem  name = "game/score_player_1_3__N_784[31]"  />
+        <nitem  name = "game/score_player_1_3__N_784[30]"  />
+        <nitem  name = "game/score_player_1_3__N_784[29]"  />
+        <nitem  name = "game/score_player_1_3__N_784[28]"  />
+        <nitem  name = "game/score_player_1_3__N_784[27]"  />
+        <nitem  name = "game/score_player_1_3__N_784[26]"  />
+        <nitem  name = "game/score_player_1_3__N_784[25]"  />
+        <nitem  name = "game/score_player_1_3__N_784[24]"  />
+        <nitem  name = "game/score_player_1_3__N_784[23]"  />
+        <nitem  name = "game/score_player_1_3__N_784[22]"  />
+        <nitem  name = "game/score_player_1_3__N_784[21]"  />
+        <nitem  name = "game/score_player_1_3__N_784[20]"  />
+        <nitem  name = "game/score_player_1_3__N_784[19]"  />
+        <nitem  name = "game/score_player_1_3__N_784[18]"  />
+        <nitem  name = "game/score_player_1_3__N_784[17]"  />
+        <nitem  name = "game/score_player_1_3__N_784[16]"  />
+        <nitem  name = "game/score_player_1_3__N_784[15]"  />
+        <nitem  name = "game/score_player_1_3__N_784[14]"  />
+        <nitem  name = "game/score_player_1_3__N_784[13]"  />
+        <nitem  name = "game/score_player_1_3__N_784[12]"  />
+        <nitem  name = "game/score_player_1_3__N_784[11]"  />
+        <nitem  name = "game/score_player_1_3__N_784[10]"  />
+        <nitem  name = "game/score_player_1_3__N_784[9]"  />
+        <nitem  name = "game/score_player_1_3__N_784[8]"  />
+        <nitem  name = "game/score_player_1_3__N_784[7]"  />
+        <nitem  name = "game/score_player_1_3__N_784[6]"  />
+        <nitem  name = "game/score_player_1_3__N_784[5]"  />
+        <nitem  name = "game/score_player_1_3__N_784[4]"  />
+        <nitem  name = "game/score_player_1_3__N_784[3]"  />
+        <nitem  name = "game/score_player_1_3__N_784[2]"  />
+        <nitem  name = "game/score_player_1_3__N_784[1]"  />
+        <nitem  name = "game/score_player_1_3__N_784[0]"  />
         </nets>
     </instance>
 
-    <instance  name = "game/score_player_1_3__I_55"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "game/score_player_1_3__I_54"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "a[31]"  direction = "in"  />
         <pitem  name = "a[30]"  direction = "in"  />
@@ -13795,39 +13641,39 @@
         <nets>
         <nitem  name = "game/gnd"  />
         <nitem  name = "game/pwr"  />
-        <nitem  name = "game/score_player_1_3__N_790[31]"  />
-        <nitem  name = "game/score_player_1_3__N_790[30]"  />
-        <nitem  name = "game/score_player_1_3__N_790[29]"  />
-        <nitem  name = "game/score_player_1_3__N_790[28]"  />
-        <nitem  name = "game/score_player_1_3__N_790[27]"  />
-        <nitem  name = "game/score_player_1_3__N_790[26]"  />
-        <nitem  name = "game/score_player_1_3__N_790[25]"  />
-        <nitem  name = "game/score_player_1_3__N_790[24]"  />
-        <nitem  name = "game/score_player_1_3__N_790[23]"  />
-        <nitem  name = "game/score_player_1_3__N_790[22]"  />
-        <nitem  name = "game/score_player_1_3__N_790[21]"  />
-        <nitem  name = "game/score_player_1_3__N_790[20]"  />
-        <nitem  name = "game/score_player_1_3__N_790[19]"  />
-        <nitem  name = "game/score_player_1_3__N_790[18]"  />
-        <nitem  name = "game/score_player_1_3__N_790[17]"  />
-        <nitem  name = "game/score_player_1_3__N_790[16]"  />
-        <nitem  name = "game/score_player_1_3__N_790[15]"  />
-        <nitem  name = "game/score_player_1_3__N_790[14]"  />
-        <nitem  name = "game/score_player_1_3__N_790[13]"  />
-        <nitem  name = "game/score_player_1_3__N_790[12]"  />
-        <nitem  name = "game/score_player_1_3__N_790[11]"  />
-        <nitem  name = "game/score_player_1_3__N_790[10]"  />
-        <nitem  name = "game/score_player_1_3__N_790[9]"  />
-        <nitem  name = "game/score_player_1_3__N_790[8]"  />
-        <nitem  name = "game/score_player_1_3__N_790[7]"  />
-        <nitem  name = "game/score_player_1_3__N_790[6]"  />
-        <nitem  name = "game/score_player_1_3__N_790[5]"  />
-        <nitem  name = "game/score_player_1_3__N_790[4]"  />
-        <nitem  name = "game/score_player_1_3__N_790[3]"  />
-        <nitem  name = "game/score_player_1_3__N_790[2]"  />
-        <nitem  name = "game/score_player_1_3__N_790[1]"  />
-        <nitem  name = "game/score_player_1_3__N_790[0]"  />
-        <nitem  name = "game/score_player_1_3__N_789"  />
+        <nitem  name = "game/score_player_1_3__N_784[31]"  />
+        <nitem  name = "game/score_player_1_3__N_784[30]"  />
+        <nitem  name = "game/score_player_1_3__N_784[29]"  />
+        <nitem  name = "game/score_player_1_3__N_784[28]"  />
+        <nitem  name = "game/score_player_1_3__N_784[27]"  />
+        <nitem  name = "game/score_player_1_3__N_784[26]"  />
+        <nitem  name = "game/score_player_1_3__N_784[25]"  />
+        <nitem  name = "game/score_player_1_3__N_784[24]"  />
+        <nitem  name = "game/score_player_1_3__N_784[23]"  />
+        <nitem  name = "game/score_player_1_3__N_784[22]"  />
+        <nitem  name = "game/score_player_1_3__N_784[21]"  />
+        <nitem  name = "game/score_player_1_3__N_784[20]"  />
+        <nitem  name = "game/score_player_1_3__N_784[19]"  />
+        <nitem  name = "game/score_player_1_3__N_784[18]"  />
+        <nitem  name = "game/score_player_1_3__N_784[17]"  />
+        <nitem  name = "game/score_player_1_3__N_784[16]"  />
+        <nitem  name = "game/score_player_1_3__N_784[15]"  />
+        <nitem  name = "game/score_player_1_3__N_784[14]"  />
+        <nitem  name = "game/score_player_1_3__N_784[13]"  />
+        <nitem  name = "game/score_player_1_3__N_784[12]"  />
+        <nitem  name = "game/score_player_1_3__N_784[11]"  />
+        <nitem  name = "game/score_player_1_3__N_784[10]"  />
+        <nitem  name = "game/score_player_1_3__N_784[9]"  />
+        <nitem  name = "game/score_player_1_3__N_784[8]"  />
+        <nitem  name = "game/score_player_1_3__N_784[7]"  />
+        <nitem  name = "game/score_player_1_3__N_784[6]"  />
+        <nitem  name = "game/score_player_1_3__N_784[5]"  />
+        <nitem  name = "game/score_player_1_3__N_784[4]"  />
+        <nitem  name = "game/score_player_1_3__N_784[3]"  />
+        <nitem  name = "game/score_player_1_3__N_784[2]"  />
+        <nitem  name = "game/score_player_1_3__N_784[1]"  />
+        <nitem  name = "game/score_player_1_3__N_784[0]"  />
+        <nitem  name = "game/score_player_1_3__N_783"  />
         </nets>
     </instance>
 
@@ -13911,10 +13757,10 @@
         <nitem  name = "game/score_player_1[2]"  />
         <nitem  name = "game/score_player_1[1]"  />
         <nitem  name = "game/score_player_1[0]"  />
-        <nitem  name = "game/score_player_1_3__N_785[3]"  />
-        <nitem  name = "game/score_player_1_3__N_785[2]"  />
-        <nitem  name = "game/score_player_1_3__N_785[1]"  />
-        <nitem  name = "game/score_player_1_3__N_785[0]"  />
+        <nitem  name = "game/score_player_1_3__N_779[3]"  />
+        <nitem  name = "game/score_player_1_3__N_779[2]"  />
+        <nitem  name = "game/score_player_1_3__N_779[1]"  />
+        <nitem  name = "game/score_player_1_3__N_779[0]"  />
         </nets>
     </instance>
 
@@ -14356,7 +14202,125 @@
         </nets>
     </instance>
 
-    <instance  name = "game/LessThan_12"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "game/add_11"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "cin"  direction = "in"  />
+        <pitem  name = "b[9]"  direction = "in"  />
+        <pitem  name = "b[8]"  direction = "in"  />
+        <pitem  name = "a[9]"  direction = "in"  />
+        <pitem  name = "a[8]"  direction = "in"  />
+        <pitem  name = "a[7]"  direction = "in"  />
+        <pitem  name = "a[6]"  direction = "in"  />
+        <pitem  name = "a[5]"  direction = "in"  />
+        <pitem  name = "a[4]"  direction = "in"  />
+        <pitem  name = "a[3]"  direction = "in"  />
+        <pitem  name = "a[2]"  direction = "in"  />
+        <pitem  name = "a[1]"  direction = "in"  />
+        <pitem  name = "a[0]"  direction = "in"  />
+        <pitem  name = "b[7]"  direction = "in"  />
+        <pitem  name = "b[6]"  direction = "in"  />
+        <pitem  name = "b[5]"  direction = "in"  />
+        <pitem  name = "b[4]"  direction = "in"  />
+        <pitem  name = "b[3]"  direction = "in"  />
+        <pitem  name = "b[2]"  direction = "in"  />
+        <pitem  name = "b[1]"  direction = "in"  />
+        <pitem  name = "b[0]"  direction = "in"  />
+        <pitem  name = "o[9]"  direction = "out"  />
+        <pitem  name = "o[8]"  direction = "out"  />
+        <pitem  name = "o[7]"  direction = "out"  />
+        <pitem  name = "o[6]"  direction = "out"  />
+        <pitem  name = "o[5]"  direction = "out"  />
+        <pitem  name = "o[4]"  direction = "out"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "game/gnd"  />
+        <nitem  name = "paddle_one_pos_x[9]"  />
+        <nitem  name = "paddle_one_pos_x[8]"  />
+        <nitem  name = "paddle_one_pos_x[7]"  />
+        <nitem  name = "paddle_one_pos_x[6]"  />
+        <nitem  name = "paddle_one_pos_x[5]"  />
+        <nitem  name = "paddle_one_pos_x[4]"  />
+        <nitem  name = "paddle_one_pos_x[3]"  />
+        <nitem  name = "paddle_one_pos_x[2]"  />
+        <nitem  name = "paddle_one_pos_x[1]"  />
+        <nitem  name = "paddle_one_pos_x[0]"  />
+        <nitem  name = "paddle_one_size_x[7]"  />
+        <nitem  name = "paddle_one_size_x[6]"  />
+        <nitem  name = "paddle_one_size_x[5]"  />
+        <nitem  name = "paddle_one_size_x[4]"  />
+        <nitem  name = "paddle_one_size_x[3]"  />
+        <nitem  name = "paddle_one_size_x[2]"  />
+        <nitem  name = "paddle_one_size_x[1]"  />
+        <nitem  name = "paddle_one_size_x[0]"  />
+        <nitem  name = "game/n144"  />
+        <nitem  name = "game/n145"  />
+        <nitem  name = "game/n146"  />
+        <nitem  name = "game/n147"  />
+        <nitem  name = "game/n148"  />
+        <nitem  name = "game/n149"  />
+        <nitem  name = "game/n150"  />
+        <nitem  name = "game/n151"  />
+        <nitem  name = "game/n152"  />
+        <nitem  name = "game/n153"  />
+        </nets>
+    </instance>
+
+    <instance  name = "game/equal_12"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a[9]"  direction = "in"  />
+        <pitem  name = "a[8]"  direction = "in"  />
+        <pitem  name = "a[7]"  direction = "in"  />
+        <pitem  name = "a[6]"  direction = "in"  />
+        <pitem  name = "a[5]"  direction = "in"  />
+        <pitem  name = "a[4]"  direction = "in"  />
+        <pitem  name = "a[3]"  direction = "in"  />
+        <pitem  name = "a[2]"  direction = "in"  />
+        <pitem  name = "a[1]"  direction = "in"  />
+        <pitem  name = "a[0]"  direction = "in"  />
+        <pitem  name = "b[9]"  direction = "in"  />
+        <pitem  name = "b[8]"  direction = "in"  />
+        <pitem  name = "b[7]"  direction = "in"  />
+        <pitem  name = "b[6]"  direction = "in"  />
+        <pitem  name = "b[5]"  direction = "in"  />
+        <pitem  name = "b[4]"  direction = "in"  />
+        <pitem  name = "b[3]"  direction = "in"  />
+        <pitem  name = "b[2]"  direction = "in"  />
+        <pitem  name = "b[1]"  direction = "in"  />
+        <pitem  name = "b[0]"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "ball_pos_x[9]"  />
+        <nitem  name = "ball_pos_x[8]"  />
+        <nitem  name = "ball_pos_x[7]"  />
+        <nitem  name = "ball_pos_x[6]"  />
+        <nitem  name = "ball_pos_x[5]"  />
+        <nitem  name = "ball_pos_x[4]"  />
+        <nitem  name = "ball_pos_x[3]"  />
+        <nitem  name = "ball_pos_x[2]"  />
+        <nitem  name = "ball_pos_x[1]"  />
+        <nitem  name = "ball_pos_x[0]"  />
+        <nitem  name = "game/n144"  />
+        <nitem  name = "game/n145"  />
+        <nitem  name = "game/n146"  />
+        <nitem  name = "game/n147"  />
+        <nitem  name = "game/n148"  />
+        <nitem  name = "game/n149"  />
+        <nitem  name = "game/n150"  />
+        <nitem  name = "game/n151"  />
+        <nitem  name = "game/n152"  />
+        <nitem  name = "game/n153"  />
+        <nitem  name = "game/n154"  />
+        </nets>
+    </instance>
+
+    <instance  name = "game/LessThan_14"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "cin"  direction = "in"  />
         <pitem  name = "a[9]"  direction = "in"  />
@@ -14384,55 +14348,107 @@
 
         <nets>
         <nitem  name = "game/pwr"  />
-        <nitem  name = "ball_pos_x[9]"  />
-        <nitem  name = "ball_pos_x[8]"  />
-        <nitem  name = "ball_pos_x[7]"  />
-        <nitem  name = "ball_pos_x[6]"  />
-        <nitem  name = "ball_pos_x[5]"  />
-        <nitem  name = "ball_pos_x[4]"  />
-        <nitem  name = "ball_pos_x[3]"  />
-        <nitem  name = "ball_pos_x[2]"  />
-        <nitem  name = "ball_pos_x[1]"  />
-        <nitem  name = "ball_pos_x[0]"  />
-        <nitem  name = "game/n154"  />
-        <nitem  name = "game/n307"  />
-        <nitem  name = "game/n308"  />
-        <nitem  name = "game/n309"  />
-        <nitem  name = "game/n310"  />
-        <nitem  name = "game/n311"  />
-        <nitem  name = "game/n312"  />
-        <nitem  name = "game/n313"  />
-        <nitem  name = "game/n314"  />
-        <nitem  name = "game/n315"  />
-        <nitem  name = "game/n316"  />
+        <nitem  name = "paddle_one_pos_y[9]"  />
+        <nitem  name = "paddle_one_pos_y[8]"  />
+        <nitem  name = "paddle_one_pos_y[7]"  />
+        <nitem  name = "paddle_one_pos_y[6]"  />
+        <nitem  name = "paddle_one_pos_y[5]"  />
+        <nitem  name = "paddle_one_pos_y[4]"  />
+        <nitem  name = "paddle_one_pos_y[3]"  />
+        <nitem  name = "paddle_one_pos_y[2]"  />
+        <nitem  name = "paddle_one_pos_y[1]"  />
+        <nitem  name = "paddle_one_pos_y[0]"  />
+        <nitem  name = "game/n167"  />
+        <nitem  name = "game/n253"  />
+        <nitem  name = "game/n254"  />
+        <nitem  name = "game/n255"  />
+        <nitem  name = "game/n256"  />
+        <nitem  name = "game/n257"  />
+        <nitem  name = "game/n258"  />
+        <nitem  name = "game/n259"  />
+        <nitem  name = "game/n260"  />
+        <nitem  name = "game/n261"  />
+        <nitem  name = "game/n262"  />
         </nets>
     </instance>
 
     <instance  name = "game/i16"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "a0"  direction = "in"  />
-        <pitem  name = "o"  direction = "out"  />
         <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
         </pins>
 
         <nets>
         <nitem  name = "game/n154"  />
+        <nitem  name = "game/n167"  />
         <nitem  name = "game/n168"  />
-        <nitem  name = "game/n290"  />
+        </nets>
+    </instance>
+
+    <instance  name = "game/LessThan_17"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "cin"  direction = "in"  />
+        <pitem  name = "a[9]"  direction = "in"  />
+        <pitem  name = "a[8]"  direction = "in"  />
+        <pitem  name = "a[7]"  direction = "in"  />
+        <pitem  name = "a[6]"  direction = "in"  />
+        <pitem  name = "a[5]"  direction = "in"  />
+        <pitem  name = "a[4]"  direction = "in"  />
+        <pitem  name = "a[3]"  direction = "in"  />
+        <pitem  name = "a[2]"  direction = "in"  />
+        <pitem  name = "a[1]"  direction = "in"  />
+        <pitem  name = "a[0]"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        <pitem  name = "b[9]"  direction = "in"  />
+        <pitem  name = "b[8]"  direction = "in"  />
+        <pitem  name = "b[7]"  direction = "in"  />
+        <pitem  name = "b[6]"  direction = "in"  />
+        <pitem  name = "b[5]"  direction = "in"  />
+        <pitem  name = "b[4]"  direction = "in"  />
+        <pitem  name = "b[3]"  direction = "in"  />
+        <pitem  name = "b[2]"  direction = "in"  />
+        <pitem  name = "b[1]"  direction = "in"  />
+        <pitem  name = "b[0]"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "game/pwr"  />
+        <nitem  name = "ball_pos_y[9]"  />
+        <nitem  name = "ball_pos_y[8]"  />
+        <nitem  name = "ball_pos_y[7]"  />
+        <nitem  name = "ball_pos_y[6]"  />
+        <nitem  name = "ball_pos_y[5]"  />
+        <nitem  name = "ball_pos_y[4]"  />
+        <nitem  name = "ball_pos_y[3]"  />
+        <nitem  name = "ball_pos_y[2]"  />
+        <nitem  name = "ball_pos_y[1]"  />
+        <nitem  name = "ball_pos_y[0]"  />
+        <nitem  name = "game/n181"  />
+        <nitem  name = "game/n280"  />
+        <nitem  name = "game/n281"  />
+        <nitem  name = "game/n282"  />
+        <nitem  name = "game/n283"  />
+        <nitem  name = "game/n284"  />
+        <nitem  name = "game/n285"  />
+        <nitem  name = "game/n286"  />
+        <nitem  name = "game/n287"  />
+        <nitem  name = "game/n288"  />
+        <nitem  name = "game/n289"  />
         </nets>
     </instance>
 
     <instance  name = "game/i19"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "a0"  direction = "in"  />
-        <pitem  name = "o"  direction = "out"  />
         <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
         </pins>
 
         <nets>
         <nitem  name = "game/n168"  />
+        <nitem  name = "game/n181"  />
         <nitem  name = "game/n182"  />
-        <nitem  name = "game/n303"  />
         </nets>
     </instance>
 
@@ -14504,19 +14520,8 @@
         </nets>
     </instance>
 
-    <instance  name = "game/LessThan_20"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "game/equal_20"  library = "work"  arch = ""  type = "comb">
         <pins>
-        <pitem  name = "cin"  direction = "in"  />
-        <pitem  name = "a[9]"  direction = "in"  />
-        <pitem  name = "a[8]"  direction = "in"  />
-        <pitem  name = "a[7]"  direction = "in"  />
-        <pitem  name = "a[6]"  direction = "in"  />
-        <pitem  name = "a[5]"  direction = "in"  />
-        <pitem  name = "a[4]"  direction = "in"  />
-        <pitem  name = "a[3]"  direction = "in"  />
-        <pitem  name = "a[2]"  direction = "in"  />
-        <pitem  name = "a[1]"  direction = "in"  />
-        <pitem  name = "a[0]"  direction = "in"  />
         <pitem  name = "b[9]"  direction = "in"  />
         <pitem  name = "b[8]"  direction = "in"  />
         <pitem  name = "b[7]"  direction = "in"  />
@@ -14527,11 +14532,20 @@
         <pitem  name = "b[2]"  direction = "in"  />
         <pitem  name = "b[1]"  direction = "in"  />
         <pitem  name = "b[0]"  direction = "in"  />
+        <pitem  name = "a[9]"  direction = "in"  />
+        <pitem  name = "a[8]"  direction = "in"  />
+        <pitem  name = "a[7]"  direction = "in"  />
+        <pitem  name = "a[6]"  direction = "in"  />
+        <pitem  name = "a[5]"  direction = "in"  />
+        <pitem  name = "a[4]"  direction = "in"  />
+        <pitem  name = "a[3]"  direction = "in"  />
+        <pitem  name = "a[2]"  direction = "in"  />
+        <pitem  name = "a[1]"  direction = "in"  />
+        <pitem  name = "a[0]"  direction = "in"  />
         <pitem  name = "o"  direction = "out"  />
         </pins>
 
         <nets>
-        <nitem  name = "game/pwr"  />
         <nitem  name = "paddle_two_pos_x[9]"  />
         <nitem  name = "paddle_two_pos_x[8]"  />
         <nitem  name = "paddle_two_pos_x[7]"  />
@@ -14556,31 +14570,135 @@
         </nets>
     </instance>
 
+    <instance  name = "game/LessThan_22"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "cin"  direction = "in"  />
+        <pitem  name = "a[9]"  direction = "in"  />
+        <pitem  name = "a[8]"  direction = "in"  />
+        <pitem  name = "a[7]"  direction = "in"  />
+        <pitem  name = "a[6]"  direction = "in"  />
+        <pitem  name = "a[5]"  direction = "in"  />
+        <pitem  name = "a[4]"  direction = "in"  />
+        <pitem  name = "a[3]"  direction = "in"  />
+        <pitem  name = "a[2]"  direction = "in"  />
+        <pitem  name = "a[1]"  direction = "in"  />
+        <pitem  name = "a[0]"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        <pitem  name = "b[9]"  direction = "in"  />
+        <pitem  name = "b[8]"  direction = "in"  />
+        <pitem  name = "b[7]"  direction = "in"  />
+        <pitem  name = "b[6]"  direction = "in"  />
+        <pitem  name = "b[5]"  direction = "in"  />
+        <pitem  name = "b[4]"  direction = "in"  />
+        <pitem  name = "b[3]"  direction = "in"  />
+        <pitem  name = "b[2]"  direction = "in"  />
+        <pitem  name = "b[1]"  direction = "in"  />
+        <pitem  name = "b[0]"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "game/pwr"  />
+        <nitem  name = "paddle_two_pos_y[9]"  />
+        <nitem  name = "paddle_two_pos_y[8]"  />
+        <nitem  name = "paddle_two_pos_y[7]"  />
+        <nitem  name = "paddle_two_pos_y[6]"  />
+        <nitem  name = "paddle_two_pos_y[5]"  />
+        <nitem  name = "paddle_two_pos_y[4]"  />
+        <nitem  name = "paddle_two_pos_y[3]"  />
+        <nitem  name = "paddle_two_pos_y[2]"  />
+        <nitem  name = "paddle_two_pos_y[1]"  />
+        <nitem  name = "paddle_two_pos_y[0]"  />
+        <nitem  name = "game/n208"  />
+        <nitem  name = "game/n253"  />
+        <nitem  name = "game/n254"  />
+        <nitem  name = "game/n255"  />
+        <nitem  name = "game/n256"  />
+        <nitem  name = "game/n257"  />
+        <nitem  name = "game/n258"  />
+        <nitem  name = "game/n259"  />
+        <nitem  name = "game/n260"  />
+        <nitem  name = "game/n261"  />
+        <nitem  name = "game/n262"  />
+        </nets>
+    </instance>
+
     <instance  name = "game/i24"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "a0"  direction = "in"  />
-        <pitem  name = "o"  direction = "out"  />
         <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
         </pins>
 
         <nets>
         <nitem  name = "game/n195"  />
+        <nitem  name = "game/n208"  />
         <nitem  name = "game/n209"  />
-        <nitem  name = "game/n263"  />
+        </nets>
+    </instance>
+
+    <instance  name = "game/LessThan_25"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "cin"  direction = "in"  />
+        <pitem  name = "a[9]"  direction = "in"  />
+        <pitem  name = "a[8]"  direction = "in"  />
+        <pitem  name = "a[7]"  direction = "in"  />
+        <pitem  name = "a[6]"  direction = "in"  />
+        <pitem  name = "a[5]"  direction = "in"  />
+        <pitem  name = "a[4]"  direction = "in"  />
+        <pitem  name = "a[3]"  direction = "in"  />
+        <pitem  name = "a[2]"  direction = "in"  />
+        <pitem  name = "a[1]"  direction = "in"  />
+        <pitem  name = "a[0]"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        <pitem  name = "b[9]"  direction = "in"  />
+        <pitem  name = "b[8]"  direction = "in"  />
+        <pitem  name = "b[7]"  direction = "in"  />
+        <pitem  name = "b[6]"  direction = "in"  />
+        <pitem  name = "b[5]"  direction = "in"  />
+        <pitem  name = "b[4]"  direction = "in"  />
+        <pitem  name = "b[3]"  direction = "in"  />
+        <pitem  name = "b[2]"  direction = "in"  />
+        <pitem  name = "b[1]"  direction = "in"  />
+        <pitem  name = "b[0]"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "game/pwr"  />
+        <nitem  name = "ball_pos_y[9]"  />
+        <nitem  name = "ball_pos_y[8]"  />
+        <nitem  name = "ball_pos_y[7]"  />
+        <nitem  name = "ball_pos_y[6]"  />
+        <nitem  name = "ball_pos_y[5]"  />
+        <nitem  name = "ball_pos_y[4]"  />
+        <nitem  name = "ball_pos_y[3]"  />
+        <nitem  name = "ball_pos_y[2]"  />
+        <nitem  name = "ball_pos_y[1]"  />
+        <nitem  name = "ball_pos_y[0]"  />
+        <nitem  name = "game/n222"  />
+        <nitem  name = "game/n307"  />
+        <nitem  name = "game/n308"  />
+        <nitem  name = "game/n309"  />
+        <nitem  name = "game/n310"  />
+        <nitem  name = "game/n311"  />
+        <nitem  name = "game/n312"  />
+        <nitem  name = "game/n313"  />
+        <nitem  name = "game/n314"  />
+        <nitem  name = "game/n315"  />
+        <nitem  name = "game/n316"  />
         </nets>
     </instance>
 
     <instance  name = "game/i27"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "a0"  direction = "in"  />
-        <pitem  name = "o"  direction = "out"  />
         <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
         </pins>
 
         <nets>
         <nitem  name = "game/n209"  />
+        <nitem  name = "game/n222"  />
         <nitem  name = "game/n223"  />
-        <nitem  name = "game/n331"  />
         </nets>
     </instance>
 
@@ -14621,16 +14739,16 @@
         <nitem  name = "paddle_one_pos_y[1]"  />
         <nitem  name = "paddle_one_pos_y[0]"  />
         <nitem  name = "game/n236"  />
-        <nitem  name = "game/n280"  />
-        <nitem  name = "game/n281"  />
-        <nitem  name = "game/n282"  />
-        <nitem  name = "game/n283"  />
-        <nitem  name = "game/n284"  />
-        <nitem  name = "game/n285"  />
-        <nitem  name = "game/n286"  />
-        <nitem  name = "game/n287"  />
-        <nitem  name = "game/n288"  />
-        <nitem  name = "game/n289"  />
+        <nitem  name = "game/n253"  />
+        <nitem  name = "game/n254"  />
+        <nitem  name = "game/n255"  />
+        <nitem  name = "game/n256"  />
+        <nitem  name = "game/n257"  />
+        <nitem  name = "game/n258"  />
+        <nitem  name = "game/n259"  />
+        <nitem  name = "game/n260"  />
+        <nitem  name = "game/n261"  />
+        <nitem  name = "game/n262"  />
         </nets>
     </instance>
 
@@ -14644,77 +14762,11 @@
         <nets>
         <nitem  name = "game/n236"  />
         <nitem  name = "game/n250"  />
-        <nitem  name = "game/n317"  />
+        <nitem  name = "game/n303"  />
         </nets>
     </instance>
 
-    <instance  name = "game/LessThan_33"  library = "work"  arch = ""  type = "comb">
-        <pins>
-        <pitem  name = "cin"  direction = "in"  />
-        <pitem  name = "a[9]"  direction = "in"  />
-        <pitem  name = "a[8]"  direction = "in"  />
-        <pitem  name = "a[7]"  direction = "in"  />
-        <pitem  name = "a[6]"  direction = "in"  />
-        <pitem  name = "a[5]"  direction = "in"  />
-        <pitem  name = "a[4]"  direction = "in"  />
-        <pitem  name = "a[3]"  direction = "in"  />
-        <pitem  name = "a[2]"  direction = "in"  />
-        <pitem  name = "a[1]"  direction = "in"  />
-        <pitem  name = "a[0]"  direction = "in"  />
-        <pitem  name = "o"  direction = "out"  />
-        <pitem  name = "b[9]"  direction = "in"  />
-        <pitem  name = "b[8]"  direction = "in"  />
-        <pitem  name = "b[7]"  direction = "in"  />
-        <pitem  name = "b[6]"  direction = "in"  />
-        <pitem  name = "b[5]"  direction = "in"  />
-        <pitem  name = "b[4]"  direction = "in"  />
-        <pitem  name = "b[3]"  direction = "in"  />
-        <pitem  name = "b[2]"  direction = "in"  />
-        <pitem  name = "b[1]"  direction = "in"  />
-        <pitem  name = "b[0]"  direction = "in"  />
-        </pins>
-
-        <nets>
-        <nitem  name = "game/pwr"  />
-        <nitem  name = "paddle_two_pos_y[9]"  />
-        <nitem  name = "paddle_two_pos_y[8]"  />
-        <nitem  name = "paddle_two_pos_y[7]"  />
-        <nitem  name = "paddle_two_pos_y[6]"  />
-        <nitem  name = "paddle_two_pos_y[5]"  />
-        <nitem  name = "paddle_two_pos_y[4]"  />
-        <nitem  name = "paddle_two_pos_y[3]"  />
-        <nitem  name = "paddle_two_pos_y[2]"  />
-        <nitem  name = "paddle_two_pos_y[1]"  />
-        <nitem  name = "paddle_two_pos_y[0]"  />
-        <nitem  name = "game/n263"  />
-        <nitem  name = "game/n280"  />
-        <nitem  name = "game/n281"  />
-        <nitem  name = "game/n282"  />
-        <nitem  name = "game/n283"  />
-        <nitem  name = "game/n284"  />
-        <nitem  name = "game/n285"  />
-        <nitem  name = "game/n286"  />
-        <nitem  name = "game/n287"  />
-        <nitem  name = "game/n288"  />
-        <nitem  name = "game/n289"  />
-        </nets>
-    </instance>
-
-    <instance  name = "game/i37"  library = "work"  arch = ""  type = "comb">
-        <pins>
-        <pitem  name = "a0"  direction = "in"  />
-        <pitem  name = "o"  direction = "out"  />
-        <pitem  name = "a1"  direction = "in"  />
-        </pins>
-
-        <nets>
-        <nitem  name = "game/n263"  />
-        <nitem  name = "game/n277"  />
-        <nitem  name = "game/n344"  />
-        </nets>
-    </instance>
-
-    <instance  name = "game/add_37"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "game/add_32"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "cin"  direction = "in"  />
         <pitem  name = "b[9]"  direction = "in"  />
@@ -14769,20 +14821,138 @@
         <nitem  name = "ball_size_y[2]"  />
         <nitem  name = "ball_size_y[1]"  />
         <nitem  name = "ball_size_y[0]"  />
-        <nitem  name = "game/n280"  />
-        <nitem  name = "game/n281"  />
-        <nitem  name = "game/n282"  />
-        <nitem  name = "game/n283"  />
-        <nitem  name = "game/n284"  />
-        <nitem  name = "game/n285"  />
-        <nitem  name = "game/n286"  />
-        <nitem  name = "game/n287"  />
-        <nitem  name = "game/n288"  />
-        <nitem  name = "game/n289"  />
+        <nitem  name = "game/n253"  />
+        <nitem  name = "game/n254"  />
+        <nitem  name = "game/n255"  />
+        <nitem  name = "game/n256"  />
+        <nitem  name = "game/n257"  />
+        <nitem  name = "game/n258"  />
+        <nitem  name = "game/n259"  />
+        <nitem  name = "game/n260"  />
+        <nitem  name = "game/n261"  />
+        <nitem  name = "game/n262"  />
         </nets>
     </instance>
 
-    <instance  name = "game/LessThan_38"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "game/equal_33"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "b[9]"  direction = "in"  />
+        <pitem  name = "b[8]"  direction = "in"  />
+        <pitem  name = "b[7]"  direction = "in"  />
+        <pitem  name = "b[6]"  direction = "in"  />
+        <pitem  name = "b[5]"  direction = "in"  />
+        <pitem  name = "b[4]"  direction = "in"  />
+        <pitem  name = "b[3]"  direction = "in"  />
+        <pitem  name = "b[2]"  direction = "in"  />
+        <pitem  name = "b[1]"  direction = "in"  />
+        <pitem  name = "b[0]"  direction = "in"  />
+        <pitem  name = "a[9]"  direction = "in"  />
+        <pitem  name = "a[8]"  direction = "in"  />
+        <pitem  name = "a[7]"  direction = "in"  />
+        <pitem  name = "a[6]"  direction = "in"  />
+        <pitem  name = "a[5]"  direction = "in"  />
+        <pitem  name = "a[4]"  direction = "in"  />
+        <pitem  name = "a[3]"  direction = "in"  />
+        <pitem  name = "a[2]"  direction = "in"  />
+        <pitem  name = "a[1]"  direction = "in"  />
+        <pitem  name = "a[0]"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "paddle_two_pos_y[9]"  />
+        <nitem  name = "paddle_two_pos_y[8]"  />
+        <nitem  name = "paddle_two_pos_y[7]"  />
+        <nitem  name = "paddle_two_pos_y[6]"  />
+        <nitem  name = "paddle_two_pos_y[5]"  />
+        <nitem  name = "paddle_two_pos_y[4]"  />
+        <nitem  name = "paddle_two_pos_y[3]"  />
+        <nitem  name = "paddle_two_pos_y[2]"  />
+        <nitem  name = "paddle_two_pos_y[1]"  />
+        <nitem  name = "paddle_two_pos_y[0]"  />
+        <nitem  name = "game/n253"  />
+        <nitem  name = "game/n254"  />
+        <nitem  name = "game/n255"  />
+        <nitem  name = "game/n256"  />
+        <nitem  name = "game/n257"  />
+        <nitem  name = "game/n258"  />
+        <nitem  name = "game/n259"  />
+        <nitem  name = "game/n260"  />
+        <nitem  name = "game/n261"  />
+        <nitem  name = "game/n262"  />
+        <nitem  name = "game/n263"  />
+        </nets>
+    </instance>
+
+    <instance  name = "game/add_34"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "cin"  direction = "in"  />
+        <pitem  name = "b[9]"  direction = "in"  />
+        <pitem  name = "b[8]"  direction = "in"  />
+        <pitem  name = "a[9]"  direction = "in"  />
+        <pitem  name = "a[8]"  direction = "in"  />
+        <pitem  name = "a[7]"  direction = "in"  />
+        <pitem  name = "a[6]"  direction = "in"  />
+        <pitem  name = "a[5]"  direction = "in"  />
+        <pitem  name = "a[4]"  direction = "in"  />
+        <pitem  name = "a[3]"  direction = "in"  />
+        <pitem  name = "a[2]"  direction = "in"  />
+        <pitem  name = "a[1]"  direction = "in"  />
+        <pitem  name = "a[0]"  direction = "in"  />
+        <pitem  name = "b[7]"  direction = "in"  />
+        <pitem  name = "b[6]"  direction = "in"  />
+        <pitem  name = "b[5]"  direction = "in"  />
+        <pitem  name = "b[4]"  direction = "in"  />
+        <pitem  name = "b[3]"  direction = "in"  />
+        <pitem  name = "b[2]"  direction = "in"  />
+        <pitem  name = "b[1]"  direction = "in"  />
+        <pitem  name = "b[0]"  direction = "in"  />
+        <pitem  name = "o[9]"  direction = "out"  />
+        <pitem  name = "o[8]"  direction = "out"  />
+        <pitem  name = "o[7]"  direction = "out"  />
+        <pitem  name = "o[6]"  direction = "out"  />
+        <pitem  name = "o[5]"  direction = "out"  />
+        <pitem  name = "o[4]"  direction = "out"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "game/gnd"  />
+        <nitem  name = "ball_pos_x[9]"  />
+        <nitem  name = "ball_pos_x[8]"  />
+        <nitem  name = "ball_pos_x[7]"  />
+        <nitem  name = "ball_pos_x[6]"  />
+        <nitem  name = "ball_pos_x[5]"  />
+        <nitem  name = "ball_pos_x[4]"  />
+        <nitem  name = "ball_pos_x[3]"  />
+        <nitem  name = "ball_pos_x[2]"  />
+        <nitem  name = "ball_pos_x[1]"  />
+        <nitem  name = "ball_pos_x[0]"  />
+        <nitem  name = "ball_size_x[7]"  />
+        <nitem  name = "ball_size_x[6]"  />
+        <nitem  name = "ball_size_x[5]"  />
+        <nitem  name = "ball_size_x[4]"  />
+        <nitem  name = "ball_size_x[3]"  />
+        <nitem  name = "ball_size_x[2]"  />
+        <nitem  name = "ball_size_x[1]"  />
+        <nitem  name = "ball_size_x[0]"  />
+        <nitem  name = "game/n266"  />
+        <nitem  name = "game/n267"  />
+        <nitem  name = "game/n268"  />
+        <nitem  name = "game/n269"  />
+        <nitem  name = "game/n270"  />
+        <nitem  name = "game/n271"  />
+        <nitem  name = "game/n272"  />
+        <nitem  name = "game/n273"  />
+        <nitem  name = "game/n274"  />
+        <nitem  name = "game/n275"  />
+        </nets>
+    </instance>
+
+    <instance  name = "game/LessThan_35"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "cin"  direction = "in"  />
         <pitem  name = "a[9]"  direction = "in"  />
@@ -14810,31 +14980,45 @@
 
         <nets>
         <nitem  name = "game/pwr"  />
-        <nitem  name = "paddle_one_pos_y[9]"  />
-        <nitem  name = "paddle_one_pos_y[8]"  />
-        <nitem  name = "paddle_one_pos_y[7]"  />
-        <nitem  name = "paddle_one_pos_y[6]"  />
-        <nitem  name = "paddle_one_pos_y[5]"  />
-        <nitem  name = "paddle_one_pos_y[4]"  />
-        <nitem  name = "paddle_one_pos_y[3]"  />
-        <nitem  name = "paddle_one_pos_y[2]"  />
-        <nitem  name = "paddle_one_pos_y[1]"  />
-        <nitem  name = "paddle_one_pos_y[0]"  />
-        <nitem  name = "game/n280"  />
-        <nitem  name = "game/n281"  />
-        <nitem  name = "game/n282"  />
-        <nitem  name = "game/n283"  />
-        <nitem  name = "game/n284"  />
-        <nitem  name = "game/n285"  />
-        <nitem  name = "game/n286"  />
-        <nitem  name = "game/n287"  />
-        <nitem  name = "game/n288"  />
-        <nitem  name = "game/n289"  />
-        <nitem  name = "game/n290"  />
+        <nitem  name = "paddle_two_pos_x[9]"  />
+        <nitem  name = "paddle_two_pos_x[8]"  />
+        <nitem  name = "paddle_two_pos_x[7]"  />
+        <nitem  name = "paddle_two_pos_x[6]"  />
+        <nitem  name = "paddle_two_pos_x[5]"  />
+        <nitem  name = "paddle_two_pos_x[4]"  />
+        <nitem  name = "paddle_two_pos_x[3]"  />
+        <nitem  name = "paddle_two_pos_x[2]"  />
+        <nitem  name = "paddle_two_pos_x[1]"  />
+        <nitem  name = "paddle_two_pos_x[0]"  />
+        <nitem  name = "game/n266"  />
+        <nitem  name = "game/n267"  />
+        <nitem  name = "game/n268"  />
+        <nitem  name = "game/n269"  />
+        <nitem  name = "game/n270"  />
+        <nitem  name = "game/n271"  />
+        <nitem  name = "game/n272"  />
+        <nitem  name = "game/n273"  />
+        <nitem  name = "game/n274"  />
+        <nitem  name = "game/n275"  />
+        <nitem  name = "game/n276"  />
         </nets>
     </instance>
 
-    <instance  name = "game/add_39"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "game/i37"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "game/n263"  />
+        <nitem  name = "game/n276"  />
+        <nitem  name = "game/n277"  />
+        </nets>
+    </instance>
+
+    <instance  name = "game/add_37"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "cin"  direction = "in"  />
         <pitem  name = "b[9]"  direction = "in"  />
@@ -14889,6 +15073,124 @@
         <nitem  name = "paddle_one_size_y[2]"  />
         <nitem  name = "paddle_one_size_y[1]"  />
         <nitem  name = "paddle_one_size_y[0]"  />
+        <nitem  name = "game/n280"  />
+        <nitem  name = "game/n281"  />
+        <nitem  name = "game/n282"  />
+        <nitem  name = "game/n283"  />
+        <nitem  name = "game/n284"  />
+        <nitem  name = "game/n285"  />
+        <nitem  name = "game/n286"  />
+        <nitem  name = "game/n287"  />
+        <nitem  name = "game/n288"  />
+        <nitem  name = "game/n289"  />
+        </nets>
+    </instance>
+
+    <instance  name = "game/equal_38"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a[9]"  direction = "in"  />
+        <pitem  name = "a[8]"  direction = "in"  />
+        <pitem  name = "a[7]"  direction = "in"  />
+        <pitem  name = "a[6]"  direction = "in"  />
+        <pitem  name = "a[5]"  direction = "in"  />
+        <pitem  name = "a[4]"  direction = "in"  />
+        <pitem  name = "a[3]"  direction = "in"  />
+        <pitem  name = "a[2]"  direction = "in"  />
+        <pitem  name = "a[1]"  direction = "in"  />
+        <pitem  name = "a[0]"  direction = "in"  />
+        <pitem  name = "b[9]"  direction = "in"  />
+        <pitem  name = "b[8]"  direction = "in"  />
+        <pitem  name = "b[7]"  direction = "in"  />
+        <pitem  name = "b[6]"  direction = "in"  />
+        <pitem  name = "b[5]"  direction = "in"  />
+        <pitem  name = "b[4]"  direction = "in"  />
+        <pitem  name = "b[3]"  direction = "in"  />
+        <pitem  name = "b[2]"  direction = "in"  />
+        <pitem  name = "b[1]"  direction = "in"  />
+        <pitem  name = "b[0]"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "ball_pos_y[9]"  />
+        <nitem  name = "ball_pos_y[8]"  />
+        <nitem  name = "ball_pos_y[7]"  />
+        <nitem  name = "ball_pos_y[6]"  />
+        <nitem  name = "ball_pos_y[5]"  />
+        <nitem  name = "ball_pos_y[4]"  />
+        <nitem  name = "ball_pos_y[3]"  />
+        <nitem  name = "ball_pos_y[2]"  />
+        <nitem  name = "ball_pos_y[1]"  />
+        <nitem  name = "ball_pos_y[0]"  />
+        <nitem  name = "game/n280"  />
+        <nitem  name = "game/n281"  />
+        <nitem  name = "game/n282"  />
+        <nitem  name = "game/n283"  />
+        <nitem  name = "game/n284"  />
+        <nitem  name = "game/n285"  />
+        <nitem  name = "game/n286"  />
+        <nitem  name = "game/n287"  />
+        <nitem  name = "game/n288"  />
+        <nitem  name = "game/n289"  />
+        <nitem  name = "game/n290"  />
+        </nets>
+    </instance>
+
+    <instance  name = "game/add_39"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "cin"  direction = "in"  />
+        <pitem  name = "b[9]"  direction = "in"  />
+        <pitem  name = "b[8]"  direction = "in"  />
+        <pitem  name = "a[9]"  direction = "in"  />
+        <pitem  name = "a[8]"  direction = "in"  />
+        <pitem  name = "a[7]"  direction = "in"  />
+        <pitem  name = "a[6]"  direction = "in"  />
+        <pitem  name = "a[5]"  direction = "in"  />
+        <pitem  name = "a[4]"  direction = "in"  />
+        <pitem  name = "a[3]"  direction = "in"  />
+        <pitem  name = "a[2]"  direction = "in"  />
+        <pitem  name = "a[1]"  direction = "in"  />
+        <pitem  name = "a[0]"  direction = "in"  />
+        <pitem  name = "b[7]"  direction = "in"  />
+        <pitem  name = "b[6]"  direction = "in"  />
+        <pitem  name = "b[5]"  direction = "in"  />
+        <pitem  name = "b[4]"  direction = "in"  />
+        <pitem  name = "b[3]"  direction = "in"  />
+        <pitem  name = "b[2]"  direction = "in"  />
+        <pitem  name = "b[1]"  direction = "in"  />
+        <pitem  name = "b[0]"  direction = "in"  />
+        <pitem  name = "o[9]"  direction = "out"  />
+        <pitem  name = "o[8]"  direction = "out"  />
+        <pitem  name = "o[7]"  direction = "out"  />
+        <pitem  name = "o[6]"  direction = "out"  />
+        <pitem  name = "o[5]"  direction = "out"  />
+        <pitem  name = "o[4]"  direction = "out"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "game/gnd"  />
+        <nitem  name = "paddle_one_pos_x[9]"  />
+        <nitem  name = "paddle_one_pos_x[8]"  />
+        <nitem  name = "paddle_one_pos_x[7]"  />
+        <nitem  name = "paddle_one_pos_x[6]"  />
+        <nitem  name = "paddle_one_pos_x[5]"  />
+        <nitem  name = "paddle_one_pos_x[4]"  />
+        <nitem  name = "paddle_one_pos_x[3]"  />
+        <nitem  name = "paddle_one_pos_x[2]"  />
+        <nitem  name = "paddle_one_pos_x[1]"  />
+        <nitem  name = "paddle_one_pos_x[0]"  />
+        <nitem  name = "paddle_one_size_y[7]"  />
+        <nitem  name = "paddle_one_size_y[6]"  />
+        <nitem  name = "paddle_one_size_y[5]"  />
+        <nitem  name = "paddle_one_size_y[4]"  />
+        <nitem  name = "paddle_one_size_y[3]"  />
+        <nitem  name = "paddle_one_size_y[2]"  />
+        <nitem  name = "paddle_one_size_y[1]"  />
+        <nitem  name = "paddle_one_size_y[0]"  />
         <nitem  name = "game/n293"  />
         <nitem  name = "game/n294"  />
         <nitem  name = "game/n295"  />
@@ -14930,16 +15232,16 @@
 
         <nets>
         <nitem  name = "game/pwr"  />
-        <nitem  name = "ball_pos_y[9]"  />
-        <nitem  name = "ball_pos_y[8]"  />
-        <nitem  name = "ball_pos_y[7]"  />
-        <nitem  name = "ball_pos_y[6]"  />
-        <nitem  name = "ball_pos_y[5]"  />
-        <nitem  name = "ball_pos_y[4]"  />
-        <nitem  name = "ball_pos_y[3]"  />
-        <nitem  name = "ball_pos_y[2]"  />
-        <nitem  name = "ball_pos_y[1]"  />
-        <nitem  name = "ball_pos_y[0]"  />
+        <nitem  name = "ball_pos_x[9]"  />
+        <nitem  name = "ball_pos_x[8]"  />
+        <nitem  name = "ball_pos_x[7]"  />
+        <nitem  name = "ball_pos_x[6]"  />
+        <nitem  name = "ball_pos_x[5]"  />
+        <nitem  name = "ball_pos_x[4]"  />
+        <nitem  name = "ball_pos_x[3]"  />
+        <nitem  name = "ball_pos_x[2]"  />
+        <nitem  name = "ball_pos_x[1]"  />
+        <nitem  name = "ball_pos_x[0]"  />
         <nitem  name = "game/n293"  />
         <nitem  name = "game/n294"  />
         <nitem  name = "game/n295"  />
@@ -15005,24 +15307,24 @@
 
         <nets>
         <nitem  name = "game/gnd"  />
-        <nitem  name = "paddle_one_pos_x[9]"  />
-        <nitem  name = "paddle_one_pos_x[8]"  />
-        <nitem  name = "paddle_one_pos_x[7]"  />
-        <nitem  name = "paddle_one_pos_x[6]"  />
-        <nitem  name = "paddle_one_pos_x[5]"  />
-        <nitem  name = "paddle_one_pos_x[4]"  />
-        <nitem  name = "paddle_one_pos_x[3]"  />
-        <nitem  name = "paddle_one_pos_x[2]"  />
-        <nitem  name = "paddle_one_pos_x[1]"  />
-        <nitem  name = "paddle_one_pos_x[0]"  />
-        <nitem  name = "paddle_one_size_x[7]"  />
-        <nitem  name = "paddle_one_size_x[6]"  />
-        <nitem  name = "paddle_one_size_x[5]"  />
-        <nitem  name = "paddle_one_size_x[4]"  />
-        <nitem  name = "paddle_one_size_x[3]"  />
-        <nitem  name = "paddle_one_size_x[2]"  />
-        <nitem  name = "paddle_one_size_x[1]"  />
-        <nitem  name = "paddle_one_size_x[0]"  />
+        <nitem  name = "paddle_two_pos_y[9]"  />
+        <nitem  name = "paddle_two_pos_y[8]"  />
+        <nitem  name = "paddle_two_pos_y[7]"  />
+        <nitem  name = "paddle_two_pos_y[6]"  />
+        <nitem  name = "paddle_two_pos_y[5]"  />
+        <nitem  name = "paddle_two_pos_y[4]"  />
+        <nitem  name = "paddle_two_pos_y[3]"  />
+        <nitem  name = "paddle_two_pos_y[2]"  />
+        <nitem  name = "paddle_two_pos_y[1]"  />
+        <nitem  name = "paddle_two_pos_y[0]"  />
+        <nitem  name = "paddle_two_size_y[7]"  />
+        <nitem  name = "paddle_two_size_y[6]"  />
+        <nitem  name = "paddle_two_size_y[5]"  />
+        <nitem  name = "paddle_two_size_y[4]"  />
+        <nitem  name = "paddle_two_size_y[3]"  />
+        <nitem  name = "paddle_two_size_y[2]"  />
+        <nitem  name = "paddle_two_size_y[1]"  />
+        <nitem  name = "paddle_two_size_y[0]"  />
         <nitem  name = "game/n307"  />
         <nitem  name = "game/n308"  />
         <nitem  name = "game/n309"  />
@@ -15062,16 +15364,16 @@
         </pins>
 
         <nets>
-        <nitem  name = "ball_pos_x[9]"  />
-        <nitem  name = "ball_pos_x[8]"  />
-        <nitem  name = "ball_pos_x[7]"  />
-        <nitem  name = "ball_pos_x[6]"  />
-        <nitem  name = "ball_pos_x[5]"  />
-        <nitem  name = "ball_pos_x[4]"  />
-        <nitem  name = "ball_pos_x[3]"  />
-        <nitem  name = "ball_pos_x[2]"  />
-        <nitem  name = "ball_pos_x[1]"  />
-        <nitem  name = "ball_pos_x[0]"  />
+        <nitem  name = "ball_pos_y[9]"  />
+        <nitem  name = "ball_pos_y[8]"  />
+        <nitem  name = "ball_pos_y[7]"  />
+        <nitem  name = "ball_pos_y[6]"  />
+        <nitem  name = "ball_pos_y[5]"  />
+        <nitem  name = "ball_pos_y[4]"  />
+        <nitem  name = "ball_pos_y[3]"  />
+        <nitem  name = "ball_pos_y[2]"  />
+        <nitem  name = "ball_pos_y[1]"  />
+        <nitem  name = "ball_pos_y[0]"  />
         <nitem  name = "game/n307"  />
         <nitem  name = "game/n308"  />
         <nitem  name = "game/n309"  />
@@ -15086,21 +15388,7 @@
         </nets>
     </instance>
 
-    <instance  name = "game/i45"  library = "work"  arch = ""  type = "comb">
-        <pins>
-        <pitem  name = "a0"  direction = "in"  />
-        <pitem  name = "a1"  direction = "in"  />
-        <pitem  name = "o"  direction = "out"  />
-        </pins>
-
-        <nets>
-        <nitem  name = "game/n304"  />
-        <nitem  name = "game/n317"  />
-        <nitem  name = "game/n318"  />
-        </nets>
-    </instance>
-
-    <instance  name = "game/add_45"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "game/add_44"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "cin"  direction = "in"  />
         <pitem  name = "b[9]"  direction = "in"  />
@@ -15137,185 +15425,6 @@
 
         <nets>
         <nitem  name = "game/gnd"  />
-        <nitem  name = "paddle_two_pos_y[9]"  />
-        <nitem  name = "paddle_two_pos_y[8]"  />
-        <nitem  name = "paddle_two_pos_y[7]"  />
-        <nitem  name = "paddle_two_pos_y[6]"  />
-        <nitem  name = "paddle_two_pos_y[5]"  />
-        <nitem  name = "paddle_two_pos_y[4]"  />
-        <nitem  name = "paddle_two_pos_y[3]"  />
-        <nitem  name = "paddle_two_pos_y[2]"  />
-        <nitem  name = "paddle_two_pos_y[1]"  />
-        <nitem  name = "paddle_two_pos_y[0]"  />
-        <nitem  name = "paddle_two_size_y[7]"  />
-        <nitem  name = "paddle_two_size_y[6]"  />
-        <nitem  name = "paddle_two_size_y[5]"  />
-        <nitem  name = "paddle_two_size_y[4]"  />
-        <nitem  name = "paddle_two_size_y[3]"  />
-        <nitem  name = "paddle_two_size_y[2]"  />
-        <nitem  name = "paddle_two_size_y[1]"  />
-        <nitem  name = "paddle_two_size_y[0]"  />
-        <nitem  name = "game/n321"  />
-        <nitem  name = "game/n322"  />
-        <nitem  name = "game/n323"  />
-        <nitem  name = "game/n324"  />
-        <nitem  name = "game/n325"  />
-        <nitem  name = "game/n326"  />
-        <nitem  name = "game/n327"  />
-        <nitem  name = "game/n328"  />
-        <nitem  name = "game/n329"  />
-        <nitem  name = "game/n330"  />
-        </nets>
-    </instance>
-
-    <instance  name = "game/LessThan_46"  library = "work"  arch = ""  type = "comb">
-        <pins>
-        <pitem  name = "cin"  direction = "in"  />
-        <pitem  name = "a[9]"  direction = "in"  />
-        <pitem  name = "a[8]"  direction = "in"  />
-        <pitem  name = "a[7]"  direction = "in"  />
-        <pitem  name = "a[6]"  direction = "in"  />
-        <pitem  name = "a[5]"  direction = "in"  />
-        <pitem  name = "a[4]"  direction = "in"  />
-        <pitem  name = "a[3]"  direction = "in"  />
-        <pitem  name = "a[2]"  direction = "in"  />
-        <pitem  name = "a[1]"  direction = "in"  />
-        <pitem  name = "a[0]"  direction = "in"  />
-        <pitem  name = "b[9]"  direction = "in"  />
-        <pitem  name = "b[8]"  direction = "in"  />
-        <pitem  name = "b[7]"  direction = "in"  />
-        <pitem  name = "b[6]"  direction = "in"  />
-        <pitem  name = "b[5]"  direction = "in"  />
-        <pitem  name = "b[4]"  direction = "in"  />
-        <pitem  name = "b[3]"  direction = "in"  />
-        <pitem  name = "b[2]"  direction = "in"  />
-        <pitem  name = "b[1]"  direction = "in"  />
-        <pitem  name = "b[0]"  direction = "in"  />
-        <pitem  name = "o"  direction = "out"  />
-        </pins>
-
-        <nets>
-        <nitem  name = "game/pwr"  />
-        <nitem  name = "ball_pos_y[9]"  />
-        <nitem  name = "ball_pos_y[8]"  />
-        <nitem  name = "ball_pos_y[7]"  />
-        <nitem  name = "ball_pos_y[6]"  />
-        <nitem  name = "ball_pos_y[5]"  />
-        <nitem  name = "ball_pos_y[4]"  />
-        <nitem  name = "ball_pos_y[3]"  />
-        <nitem  name = "ball_pos_y[2]"  />
-        <nitem  name = "ball_pos_y[1]"  />
-        <nitem  name = "ball_pos_y[0]"  />
-        <nitem  name = "game/n321"  />
-        <nitem  name = "game/n322"  />
-        <nitem  name = "game/n323"  />
-        <nitem  name = "game/n324"  />
-        <nitem  name = "game/n325"  />
-        <nitem  name = "game/n326"  />
-        <nitem  name = "game/n327"  />
-        <nitem  name = "game/n328"  />
-        <nitem  name = "game/n329"  />
-        <nitem  name = "game/n330"  />
-        <nitem  name = "game/n331"  />
-        </nets>
-    </instance>
-
-    <instance  name = "game/add_47"  library = "work"  arch = ""  type = "comb">
-        <pins>
-        <pitem  name = "cin"  direction = "in"  />
-        <pitem  name = "b[9]"  direction = "in"  />
-        <pitem  name = "b[8]"  direction = "in"  />
-        <pitem  name = "a[9]"  direction = "in"  />
-        <pitem  name = "a[8]"  direction = "in"  />
-        <pitem  name = "a[7]"  direction = "in"  />
-        <pitem  name = "a[6]"  direction = "in"  />
-        <pitem  name = "a[5]"  direction = "in"  />
-        <pitem  name = "a[4]"  direction = "in"  />
-        <pitem  name = "a[3]"  direction = "in"  />
-        <pitem  name = "a[2]"  direction = "in"  />
-        <pitem  name = "a[1]"  direction = "in"  />
-        <pitem  name = "a[0]"  direction = "in"  />
-        <pitem  name = "b[7]"  direction = "in"  />
-        <pitem  name = "b[6]"  direction = "in"  />
-        <pitem  name = "b[5]"  direction = "in"  />
-        <pitem  name = "b[4]"  direction = "in"  />
-        <pitem  name = "b[3]"  direction = "in"  />
-        <pitem  name = "b[2]"  direction = "in"  />
-        <pitem  name = "b[1]"  direction = "in"  />
-        <pitem  name = "b[0]"  direction = "in"  />
-        <pitem  name = "o[9]"  direction = "out"  />
-        <pitem  name = "o[8]"  direction = "out"  />
-        <pitem  name = "o[7]"  direction = "out"  />
-        <pitem  name = "o[6]"  direction = "out"  />
-        <pitem  name = "o[5]"  direction = "out"  />
-        <pitem  name = "o[4]"  direction = "out"  />
-        <pitem  name = "o[3]"  direction = "out"  />
-        <pitem  name = "o[2]"  direction = "out"  />
-        <pitem  name = "o[1]"  direction = "out"  />
-        <pitem  name = "o[0]"  direction = "out"  />
-        </pins>
-
-        <nets>
-        <nitem  name = "game/gnd"  />
-        <nitem  name = "ball_pos_x[9]"  />
-        <nitem  name = "ball_pos_x[8]"  />
-        <nitem  name = "ball_pos_x[7]"  />
-        <nitem  name = "ball_pos_x[6]"  />
-        <nitem  name = "ball_pos_x[5]"  />
-        <nitem  name = "ball_pos_x[4]"  />
-        <nitem  name = "ball_pos_x[3]"  />
-        <nitem  name = "ball_pos_x[2]"  />
-        <nitem  name = "ball_pos_x[1]"  />
-        <nitem  name = "ball_pos_x[0]"  />
-        <nitem  name = "ball_size_x[7]"  />
-        <nitem  name = "ball_size_x[6]"  />
-        <nitem  name = "ball_size_x[5]"  />
-        <nitem  name = "ball_size_x[4]"  />
-        <nitem  name = "ball_size_x[3]"  />
-        <nitem  name = "ball_size_x[2]"  />
-        <nitem  name = "ball_size_x[1]"  />
-        <nitem  name = "ball_size_x[0]"  />
-        <nitem  name = "game/n334"  />
-        <nitem  name = "game/n335"  />
-        <nitem  name = "game/n336"  />
-        <nitem  name = "game/n337"  />
-        <nitem  name = "game/n338"  />
-        <nitem  name = "game/n339"  />
-        <nitem  name = "game/n340"  />
-        <nitem  name = "game/n341"  />
-        <nitem  name = "game/n342"  />
-        <nitem  name = "game/n343"  />
-        </nets>
-    </instance>
-
-    <instance  name = "game/LessThan_48"  library = "work"  arch = ""  type = "comb">
-        <pins>
-        <pitem  name = "cin"  direction = "in"  />
-        <pitem  name = "a[9]"  direction = "in"  />
-        <pitem  name = "a[8]"  direction = "in"  />
-        <pitem  name = "a[7]"  direction = "in"  />
-        <pitem  name = "a[6]"  direction = "in"  />
-        <pitem  name = "a[5]"  direction = "in"  />
-        <pitem  name = "a[4]"  direction = "in"  />
-        <pitem  name = "a[3]"  direction = "in"  />
-        <pitem  name = "a[2]"  direction = "in"  />
-        <pitem  name = "a[1]"  direction = "in"  />
-        <pitem  name = "a[0]"  direction = "in"  />
-        <pitem  name = "b[9]"  direction = "in"  />
-        <pitem  name = "b[8]"  direction = "in"  />
-        <pitem  name = "b[7]"  direction = "in"  />
-        <pitem  name = "b[6]"  direction = "in"  />
-        <pitem  name = "b[5]"  direction = "in"  />
-        <pitem  name = "b[4]"  direction = "in"  />
-        <pitem  name = "b[3]"  direction = "in"  />
-        <pitem  name = "b[2]"  direction = "in"  />
-        <pitem  name = "b[1]"  direction = "in"  />
-        <pitem  name = "b[0]"  direction = "in"  />
-        <pitem  name = "o"  direction = "out"  />
-        </pins>
-
-        <nets>
-        <nitem  name = "game/pwr"  />
         <nitem  name = "paddle_two_pos_x[9]"  />
         <nitem  name = "paddle_two_pos_x[8]"  />
         <nitem  name = "paddle_two_pos_x[7]"  />
@@ -15326,21 +15435,80 @@
         <nitem  name = "paddle_two_pos_x[2]"  />
         <nitem  name = "paddle_two_pos_x[1]"  />
         <nitem  name = "paddle_two_pos_x[0]"  />
-        <nitem  name = "game/n334"  />
-        <nitem  name = "game/n335"  />
-        <nitem  name = "game/n336"  />
-        <nitem  name = "game/n337"  />
-        <nitem  name = "game/n338"  />
-        <nitem  name = "game/n339"  />
-        <nitem  name = "game/n340"  />
-        <nitem  name = "game/n341"  />
-        <nitem  name = "game/n342"  />
-        <nitem  name = "game/n343"  />
-        <nitem  name = "game/n344"  />
+        <nitem  name = "paddle_two_size_x[7]"  />
+        <nitem  name = "paddle_two_size_x[6]"  />
+        <nitem  name = "paddle_two_size_x[5]"  />
+        <nitem  name = "paddle_two_size_x[4]"  />
+        <nitem  name = "paddle_two_size_x[3]"  />
+        <nitem  name = "paddle_two_size_x[2]"  />
+        <nitem  name = "paddle_two_size_x[1]"  />
+        <nitem  name = "paddle_two_size_x[0]"  />
+        <nitem  name = "game/n320"  />
+        <nitem  name = "game/n321"  />
+        <nitem  name = "game/n322"  />
+        <nitem  name = "game/n323"  />
+        <nitem  name = "game/n324"  />
+        <nitem  name = "game/n325"  />
+        <nitem  name = "game/n326"  />
+        <nitem  name = "game/n327"  />
+        <nitem  name = "game/n328"  />
+        <nitem  name = "game/n329"  />
         </nets>
     </instance>
 
-    <instance  name = "game/i50"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "game/LessThan_45"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "cin"  direction = "in"  />
+        <pitem  name = "b[9]"  direction = "in"  />
+        <pitem  name = "b[8]"  direction = "in"  />
+        <pitem  name = "b[7]"  direction = "in"  />
+        <pitem  name = "b[6]"  direction = "in"  />
+        <pitem  name = "b[5]"  direction = "in"  />
+        <pitem  name = "b[4]"  direction = "in"  />
+        <pitem  name = "b[3]"  direction = "in"  />
+        <pitem  name = "b[2]"  direction = "in"  />
+        <pitem  name = "b[1]"  direction = "in"  />
+        <pitem  name = "b[0]"  direction = "in"  />
+        <pitem  name = "a[9]"  direction = "in"  />
+        <pitem  name = "a[8]"  direction = "in"  />
+        <pitem  name = "a[7]"  direction = "in"  />
+        <pitem  name = "a[6]"  direction = "in"  />
+        <pitem  name = "a[5]"  direction = "in"  />
+        <pitem  name = "a[4]"  direction = "in"  />
+        <pitem  name = "a[3]"  direction = "in"  />
+        <pitem  name = "a[2]"  direction = "in"  />
+        <pitem  name = "a[1]"  direction = "in"  />
+        <pitem  name = "a[0]"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "game/pwr"  />
+        <nitem  name = "ball_pos_x[9]"  />
+        <nitem  name = "ball_pos_x[8]"  />
+        <nitem  name = "ball_pos_x[7]"  />
+        <nitem  name = "ball_pos_x[6]"  />
+        <nitem  name = "ball_pos_x[5]"  />
+        <nitem  name = "ball_pos_x[4]"  />
+        <nitem  name = "ball_pos_x[3]"  />
+        <nitem  name = "ball_pos_x[2]"  />
+        <nitem  name = "ball_pos_x[1]"  />
+        <nitem  name = "ball_pos_x[0]"  />
+        <nitem  name = "game/n320"  />
+        <nitem  name = "game/n321"  />
+        <nitem  name = "game/n322"  />
+        <nitem  name = "game/n323"  />
+        <nitem  name = "game/n324"  />
+        <nitem  name = "game/n325"  />
+        <nitem  name = "game/n326"  />
+        <nitem  name = "game/n327"  />
+        <nitem  name = "game/n328"  />
+        <nitem  name = "game/n329"  />
+        <nitem  name = "game/n330"  />
+        </nets>
+    </instance>
+
+    <instance  name = "game/i47"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "a0"  direction = "in"  />
         <pitem  name = "a1"  direction = "in"  />
@@ -15348,13 +15516,13 @@
         </pins>
 
         <nets>
+        <nitem  name = "game/n317"  />
+        <nitem  name = "game/n330"  />
         <nitem  name = "game/n331"  />
-        <nitem  name = "game/n344"  />
-        <nitem  name = "game/n345"  />
         </nets>
     </instance>
 
-    <instance  name = "game/mux_50"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "game/mux_47"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "d0[1]"  direction = "in"  />
         <pitem  name = "d0[0]"  direction = "in"  />
@@ -15368,13 +15536,13 @@
         <nets>
         <nitem  name = "game/gnd"  />
         <nitem  name = "game/pwr"  />
-        <nitem  name = "game/n345"  />
-        <nitem  name = "game/n347"  />
-        <nitem  name = "game/n348"  />
+        <nitem  name = "game/n331"  />
+        <nitem  name = "game/n333"  />
+        <nitem  name = "game/n334"  />
         </nets>
     </instance>
 
-    <instance  name = "game/mux_51"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "game/mux_48"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "d1[0]"  direction = "in"  />
         <pitem  name = "d1[1]"  direction = "in"  />
@@ -15388,15 +15556,15 @@
         <nets>
         <nitem  name = "game/gnd"  />
         <nitem  name = "game/pwr"  />
-        <nitem  name = "game/n318"  />
-        <nitem  name = "game/n347"  />
-        <nitem  name = "game/n348"  />
-        <nitem  name = "game/n350"  />
-        <nitem  name = "game/n351"  />
+        <nitem  name = "game/n304"  />
+        <nitem  name = "game/n333"  />
+        <nitem  name = "game/n334"  />
+        <nitem  name = "game/n336"  />
+        <nitem  name = "game/n337"  />
         </nets>
     </instance>
 
-    <instance  name = "game/mux_52"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "game/mux_49"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "d1[0]"  direction = "in"  />
         <pitem  name = "d1[1]"  direction = "in"  />
@@ -15411,10 +15579,76 @@
         <nitem  name = "game/gnd"  />
         <nitem  name = "game/pwr"  />
         <nitem  name = "game/n277"  />
-        <nitem  name = "game/n350"  />
-        <nitem  name = "game/n351"  />
-        <nitem  name = "game/n353"  />
-        <nitem  name = "game/n354"  />
+        <nitem  name = "game/n336"  />
+        <nitem  name = "game/n337"  />
+        <nitem  name = "game/n339"  />
+        <nitem  name = "game/n340"  />
+        </nets>
+    </instance>
+
+    <instance  name = "game/mux_50"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "d1[0]"  direction = "in"  />
+        <pitem  name = "d1[1]"  direction = "in"  />
+        <pitem  name = "cond"  direction = "in"  />
+        <pitem  name = "d0[1]"  direction = "in"  />
+        <pitem  name = "d0[0]"  direction = "in"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "game/gnd"  />
+        <nitem  name = "game/pwr"  />
+        <nitem  name = "game/n250"  />
+        <nitem  name = "game/n339"  />
+        <nitem  name = "game/n340"  />
+        <nitem  name = "game/n342"  />
+        <nitem  name = "game/n343"  />
+        </nets>
+    </instance>
+
+    <instance  name = "game/mux_51"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "d1[1]"  direction = "in"  />
+        <pitem  name = "d1[0]"  direction = "in"  />
+        <pitem  name = "cond"  direction = "in"  />
+        <pitem  name = "d0[1]"  direction = "in"  />
+        <pitem  name = "d0[0]"  direction = "in"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "game/gnd"  />
+        <nitem  name = "game/pwr"  />
+        <nitem  name = "game/n223"  />
+        <nitem  name = "game/n342"  />
+        <nitem  name = "game/n343"  />
+        <nitem  name = "game/n345"  />
+        <nitem  name = "game/n346"  />
+        </nets>
+    </instance>
+
+    <instance  name = "game/mux_52"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "d1[1]"  direction = "in"  />
+        <pitem  name = "d1[0]"  direction = "in"  />
+        <pitem  name = "cond"  direction = "in"  />
+        <pitem  name = "d0[1]"  direction = "in"  />
+        <pitem  name = "d0[0]"  direction = "in"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "game/gnd"  />
+        <nitem  name = "game/pwr"  />
+        <nitem  name = "game/n182"  />
+        <nitem  name = "game/n345"  />
+        <nitem  name = "game/n346"  />
+        <nitem  name = "game/n348"  />
+        <nitem  name = "game/n349"  />
         </nets>
     </instance>
 
@@ -15432,81 +15666,15 @@
         <nets>
         <nitem  name = "game/gnd"  />
         <nitem  name = "game/pwr"  />
-        <nitem  name = "game/n250"  />
-        <nitem  name = "game/n353"  />
-        <nitem  name = "game/n354"  />
-        <nitem  name = "game/n356"  />
-        <nitem  name = "game/n357"  />
+        <nitem  name = "game/n141"  />
+        <nitem  name = "game/n348"  />
+        <nitem  name = "game/n349"  />
+        <nitem  name = "game/n351"  />
+        <nitem  name = "game/n352"  />
         </nets>
     </instance>
 
     <instance  name = "game/mux_54"  library = "work"  arch = ""  type = "comb">
-        <pins>
-        <pitem  name = "d1[1]"  direction = "in"  />
-        <pitem  name = "d1[0]"  direction = "in"  />
-        <pitem  name = "cond"  direction = "in"  />
-        <pitem  name = "d0[1]"  direction = "in"  />
-        <pitem  name = "d0[0]"  direction = "in"  />
-        <pitem  name = "o[1]"  direction = "out"  />
-        <pitem  name = "o[0]"  direction = "out"  />
-        </pins>
-
-        <nets>
-        <nitem  name = "game/gnd"  />
-        <nitem  name = "game/pwr"  />
-        <nitem  name = "game/n223"  />
-        <nitem  name = "game/n356"  />
-        <nitem  name = "game/n357"  />
-        <nitem  name = "game/n359"  />
-        <nitem  name = "game/n360"  />
-        </nets>
-    </instance>
-
-    <instance  name = "game/mux_55"  library = "work"  arch = ""  type = "comb">
-        <pins>
-        <pitem  name = "d1[1]"  direction = "in"  />
-        <pitem  name = "d1[0]"  direction = "in"  />
-        <pitem  name = "cond"  direction = "in"  />
-        <pitem  name = "d0[1]"  direction = "in"  />
-        <pitem  name = "d0[0]"  direction = "in"  />
-        <pitem  name = "o[1]"  direction = "out"  />
-        <pitem  name = "o[0]"  direction = "out"  />
-        </pins>
-
-        <nets>
-        <nitem  name = "game/gnd"  />
-        <nitem  name = "game/pwr"  />
-        <nitem  name = "game/n182"  />
-        <nitem  name = "game/n359"  />
-        <nitem  name = "game/n360"  />
-        <nitem  name = "game/n362"  />
-        <nitem  name = "game/n363"  />
-        </nets>
-    </instance>
-
-    <instance  name = "game/mux_56"  library = "work"  arch = ""  type = "comb">
-        <pins>
-        <pitem  name = "d1[0]"  direction = "in"  />
-        <pitem  name = "d1[1]"  direction = "in"  />
-        <pitem  name = "cond"  direction = "in"  />
-        <pitem  name = "d0[1]"  direction = "in"  />
-        <pitem  name = "d0[0]"  direction = "in"  />
-        <pitem  name = "o[1]"  direction = "out"  />
-        <pitem  name = "o[0]"  direction = "out"  />
-        </pins>
-
-        <nets>
-        <nitem  name = "game/gnd"  />
-        <nitem  name = "game/pwr"  />
-        <nitem  name = "game/n141"  />
-        <nitem  name = "game/n362"  />
-        <nitem  name = "game/n363"  />
-        <nitem  name = "game/n365"  />
-        <nitem  name = "game/n366"  />
-        </nets>
-    </instance>
-
-    <instance  name = "game/mux_57"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "d1[0]"  direction = "in"  />
         <pitem  name = "d1[1]"  direction = "in"  />
@@ -15521,14 +15689,14 @@
         <nitem  name = "game/gnd"  />
         <nitem  name = "game/pwr"  />
         <nitem  name = "game/n140"  />
-        <nitem  name = "game/n365"  />
-        <nitem  name = "game/n366"  />
-        <nitem  name = "game/n368"  />
-        <nitem  name = "game/n369"  />
+        <nitem  name = "game/n351"  />
+        <nitem  name = "game/n352"  />
+        <nitem  name = "game/n354"  />
+        <nitem  name = "game/n355"  />
         </nets>
     </instance>
 
-    <instance  name = "game/mux_58"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "game/mux_55"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "d0[3]"  direction = "in"  />
         <pitem  name = "d0[2]"  direction = "in"  />
@@ -15555,14 +15723,14 @@
         <nitem  name = "game/n103"  />
         <nitem  name = "game/n104"  />
         <nitem  name = "game/n105"  />
-        <nitem  name = "game/score_player_2_3__N_824[3]"  />
-        <nitem  name = "game/score_player_2_3__N_824[2]"  />
-        <nitem  name = "game/score_player_2_3__N_824[1]"  />
-        <nitem  name = "game/score_player_2_3__N_824[0]"  />
+        <nitem  name = "game/score_player_2_3__N_818[3]"  />
+        <nitem  name = "game/score_player_2_3__N_818[2]"  />
+        <nitem  name = "game/score_player_2_3__N_818[1]"  />
+        <nitem  name = "game/score_player_2_3__N_818[0]"  />
         </nets>
     </instance>
 
-    <instance  name = "game/mux_59"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "game/mux_56"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "d1[1]"  direction = "in"  />
         <pitem  name = "d1[0]"  direction = "in"  />
@@ -15576,10 +15744,10 @@
         <nets>
         <nitem  name = "game/pwr"  />
         <nitem  name = "game/n71"  />
-        <nitem  name = "game/n368"  />
-        <nitem  name = "game/n369"  />
-        <nitem  name = "game/bounce_1__N_822[1]"  />
-        <nitem  name = "game/bounce_1__N_822[0]"  />
+        <nitem  name = "game/n354"  />
+        <nitem  name = "game/n355"  />
+        <nitem  name = "game/bounce_1__N_816[1]"  />
+        <nitem  name = "game/bounce_1__N_816[0]"  />
         </nets>
     </instance>
 
@@ -15605,15 +15773,15 @@
         <nitem  name = "game/score_player_1[2]"  />
         <nitem  name = "game/score_player_1[1]"  />
         <nitem  name = "game/score_player_1[0]"  />
-        <nitem  name = "game/score_player_1_3__N_789"  />
-        <nitem  name = "game/score_player_1_3__N_785[3]"  />
-        <nitem  name = "game/score_player_1_3__N_785[2]"  />
-        <nitem  name = "game/score_player_1_3__N_785[1]"  />
-        <nitem  name = "game/score_player_1_3__N_785[0]"  />
-        <nitem  name = "game/score_player_1_3__N_777[3]"  />
-        <nitem  name = "game/score_player_1_3__N_777[2]"  />
-        <nitem  name = "game/score_player_1_3__N_777[1]"  />
-        <nitem  name = "game/score_player_1_3__N_777[0]"  />
+        <nitem  name = "game/score_player_1_3__N_783"  />
+        <nitem  name = "game/score_player_1_3__N_779[3]"  />
+        <nitem  name = "game/score_player_1_3__N_779[2]"  />
+        <nitem  name = "game/score_player_1_3__N_779[1]"  />
+        <nitem  name = "game/score_player_1_3__N_779[0]"  />
+        <nitem  name = "game/score_player_1_3__N_771[3]"  />
+        <nitem  name = "game/score_player_1_3__N_771[2]"  />
+        <nitem  name = "game/score_player_1_3__N_771[1]"  />
+        <nitem  name = "game/score_player_1_3__N_771[0]"  />
         </nets>
     </instance>
 
@@ -15630,11 +15798,11 @@
 
         <nets>
         <nitem  name = "game/pwr"  />
-        <nitem  name = "game/score_player_1_3__N_789"  />
-        <nitem  name = "game/bounce_1__N_822[1]"  />
-        <nitem  name = "game/bounce_1__N_822[0]"  />
-        <nitem  name = "game/bounce_1__N_775[1]"  />
-        <nitem  name = "game/bounce_1__N_775[0]"  />
+        <nitem  name = "game/score_player_1_3__N_783"  />
+        <nitem  name = "game/bounce_1__N_816[1]"  />
+        <nitem  name = "game/bounce_1__N_816[0]"  />
+        <nitem  name = "game/bounce_1__N_769[1]"  />
+        <nitem  name = "game/bounce_1__N_769[0]"  />
         </nets>
     </instance>
 
@@ -15660,15 +15828,15 @@
         <nitem  name = "game/score_player_2[2]"  />
         <nitem  name = "game/score_player_2[1]"  />
         <nitem  name = "game/score_player_2[0]"  />
-        <nitem  name = "game/score_player_1_3__N_789"  />
-        <nitem  name = "game/score_player_2_3__N_824[3]"  />
-        <nitem  name = "game/score_player_2_3__N_824[2]"  />
-        <nitem  name = "game/score_player_2_3__N_824[1]"  />
-        <nitem  name = "game/score_player_2_3__N_824[0]"  />
-        <nitem  name = "game/score_player_2_3__N_781[3]"  />
-        <nitem  name = "game/score_player_2_3__N_781[2]"  />
-        <nitem  name = "game/score_player_2_3__N_781[1]"  />
-        <nitem  name = "game/score_player_2_3__N_781[0]"  />
+        <nitem  name = "game/score_player_1_3__N_783"  />
+        <nitem  name = "game/score_player_2_3__N_818[3]"  />
+        <nitem  name = "game/score_player_2_3__N_818[2]"  />
+        <nitem  name = "game/score_player_2_3__N_818[1]"  />
+        <nitem  name = "game/score_player_2_3__N_818[0]"  />
+        <nitem  name = "game/score_player_2_3__N_775[3]"  />
+        <nitem  name = "game/score_player_2_3__N_775[2]"  />
+        <nitem  name = "game/score_player_2_3__N_775[1]"  />
+        <nitem  name = "game/score_player_2_3__N_775[0]"  />
         </nets>
     </instance>
 
@@ -15690,8 +15858,8 @@
         <nitem  name = "tick_game"  />
         <nitem  name = "bounce[1]"  />
         <nitem  name = "bounce[0]"  />
-        <nitem  name = "game/bounce_1__N_775[1]"  />
-        <nitem  name = "game/bounce_1__N_775[0]"  />
+        <nitem  name = "game/bounce_1__N_769[1]"  />
+        <nitem  name = "game/bounce_1__N_769[0]"  />
         </nets>
     </instance>
 
@@ -15723,10 +15891,10 @@
         <nitem  name = "game/score_player_2[2]"  />
         <nitem  name = "game/score_player_2[1]"  />
         <nitem  name = "game/score_player_2[0]"  />
-        <nitem  name = "game/score_player_2_3__N_781[3]"  />
-        <nitem  name = "game/score_player_2_3__N_781[2]"  />
-        <nitem  name = "game/score_player_2_3__N_781[1]"  />
-        <nitem  name = "game/score_player_2_3__N_781[0]"  />
+        <nitem  name = "game/score_player_2_3__N_775[3]"  />
+        <nitem  name = "game/score_player_2_3__N_775[2]"  />
+        <nitem  name = "game/score_player_2_3__N_775[1]"  />
+        <nitem  name = "game/score_player_2_3__N_775[0]"  />
         </nets>
     </instance>
 
@@ -15758,14 +15926,14 @@
         <nitem  name = "game/score_player_1[2]"  />
         <nitem  name = "game/score_player_1[1]"  />
         <nitem  name = "game/score_player_1[0]"  />
-        <nitem  name = "game/score_player_1_3__N_777[3]"  />
-        <nitem  name = "game/score_player_1_3__N_777[2]"  />
-        <nitem  name = "game/score_player_1_3__N_777[1]"  />
-        <nitem  name = "game/score_player_1_3__N_777[0]"  />
+        <nitem  name = "game/score_player_1_3__N_771[3]"  />
+        <nitem  name = "game/score_player_1_3__N_771[2]"  />
+        <nitem  name = "game/score_player_1_3__N_771[1]"  />
+        <nitem  name = "game/score_player_1_3__N_771[0]"  />
         </nets>
     </instance>
 
-    <instance  name = "menu/current_state_1__I_0_66"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "menu/current_state_1__I_0_64"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "b[1]"  direction = "in"  />
         <pitem  name = "b[0]"  direction = "in"  />
@@ -15791,7 +15959,7 @@
 
         <nets>
         <nitem  name = "enable_game"  />
-        <nitem  name = "menu/tick_selector_N_833"  />
+        <nitem  name = "menu/tick_selector_N_827"  />
         </nets>
     </instance>
 
@@ -15805,11 +15973,11 @@
         <nets>
         <nitem  name = "tick"  />
         <nitem  name = "tick_menu"  />
-        <nitem  name = "menu/tick_selector_N_833"  />
+        <nitem  name = "menu/tick_selector_N_827"  />
         </nets>
     </instance>
 
-    <instance  name = "menu/clock_I_0_64"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "menu/clock_I_0_62"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "a0"  direction = "in"  />
         <pitem  name = "o"  direction = "out"  />
@@ -15823,7 +15991,7 @@
         </nets>
     </instance>
 
-    <instance  name = "menu/current_state_1__I_0_67"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "menu/current_state_1__I_0_65"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "b[1]"  direction = "in"  />
         <pitem  name = "b[0]"  direction = "in"  />
@@ -15840,7 +16008,7 @@
         </nets>
     </instance>
 
-    <instance  name = "menu/current_state_1__I_0_68"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "menu/current_state_1__I_0_66"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "b[0]"  direction = "in"  />
         <pitem  name = "b[1]"  direction = "in"  />
@@ -15858,7 +16026,7 @@
         </nets>
     </instance>
 
-    <instance  name = "menu/reset_I_59"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "menu/reset_I_58"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "a[31]"  direction = "in"  />
         <pitem  name = "a[30]"  direction = "in"  />
@@ -15930,11 +16098,11 @@
         <nets>
         <nitem  name = "menu/gnd"  />
         <nitem  name = "reset"  />
-        <nitem  name = "menu/reset_N_836"  />
+        <nitem  name = "menu/reset_N_830"  />
         </nets>
     </instance>
 
-    <instance  name = "menu/reset_I_58"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "menu/reset_I_57"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "a1"  direction = "in"  />
         <pitem  name = "a0"  direction = "in"  />
@@ -15945,12 +16113,12 @@
         <nets>
         <nitem  name = "menu/pwr"  />
         <nitem  name = "reset"  />
-        <nitem  name = "menu/reset_N_836"  />
-        <nitem  name = "menu/reset_N_835"  />
+        <nitem  name = "menu/reset_N_830"  />
+        <nitem  name = "menu/reset_N_829"  />
         </nets>
     </instance>
 
-    <instance  name = "menu/flag_I_62"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "menu/flag_I_61"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "a1"  direction = "in"  />
         <pitem  name = "c"  direction = "in"  />
@@ -15962,7 +16130,7 @@
         <nitem  name = "menu/gnd"  />
         <nitem  name = "enter"  />
         <nitem  name = "menu/flag"  />
-        <nitem  name = "menu/flag_N_844"  />
+        <nitem  name = "menu/flag_N_838"  />
         </nets>
     </instance>
 
@@ -15988,7 +16156,7 @@
         </nets>
     </instance>
 
-    <instance  name = "menu/reset_N_835_I_0"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "menu/reset_N_829_I_0"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "a1"  direction = "in"  />
         <pitem  name = "c"  direction = "in"  />
@@ -15999,8 +16167,8 @@
         <nets>
         <nitem  name = "menu/gnd"  />
         <nitem  name = "enter"  />
-        <nitem  name = "menu/reset_N_835"  />
-        <nitem  name = "menu/reset_N_840"  />
+        <nitem  name = "menu/reset_N_829"  />
+        <nitem  name = "menu/reset_N_834"  />
         </nets>
     </instance>
 
@@ -16067,8 +16235,8 @@
         <nets>
         <nitem  name = "menu/gnd"  />
         <nitem  name = "gnd"  />
-        <nitem  name = "menu/reset_N_835"  />
-        <nitem  name = "menu/reset_N_839"  />
+        <nitem  name = "menu/reset_N_829"  />
+        <nitem  name = "menu/reset_N_833"  />
         </nets>
     </instance>
 
@@ -16094,7 +16262,7 @@
         </nets>
     </instance>
 
-    <instance  name = "menu/reset_N_835_I_0_69"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "menu/reset_N_829_I_0_67"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "c"  direction = "in"  />
         <pitem  name = "a0"  direction = "in"  />
@@ -16104,9 +16272,9 @@
 
         <nets>
         <nitem  name = "enter"  />
-        <nitem  name = "menu/reset_N_835"  />
-        <nitem  name = "menu/reset_N_839"  />
-        <nitem  name = "menu/reset_N_838"  />
+        <nitem  name = "menu/reset_N_829"  />
+        <nitem  name = "menu/reset_N_833"  />
+        <nitem  name = "menu/reset_N_832"  />
         </nets>
     </instance>
 
@@ -16136,8 +16304,8 @@
         <nitem  name = "menu/n18"  />
         <nitem  name = "menu/n24"  />
         <nitem  name = "menu/n25"  />
-        <nitem  name = "menu/current_state_1__N_830[1]"  />
-        <nitem  name = "menu/current_state_1__N_830[0]"  />
+        <nitem  name = "menu/current_state_1__N_824[1]"  />
+        <nitem  name = "menu/current_state_1__N_824[0]"  />
         </nets>
     </instance>
 
@@ -16156,10 +16324,10 @@
         <nitem  name = "menu/gnd"  />
         <nitem  name = "menu/current_state[1]"  />
         <nitem  name = "menu/current_state[0]"  />
-        <nitem  name = "menu/reset_N_835"  />
-        <nitem  name = "menu/reset_N_840"  />
-        <nitem  name = "menu/reset_N_838"  />
-        <nitem  name = "menu/reset_N_837"  />
+        <nitem  name = "menu/reset_N_829"  />
+        <nitem  name = "menu/reset_N_834"  />
+        <nitem  name = "menu/reset_N_832"  />
+        <nitem  name = "menu/reset_N_831"  />
         </nets>
     </instance>
 
@@ -16235,11 +16403,11 @@
         <nets>
         <nitem  name = "menu/gnd"  />
         <nitem  name = "enter"  />
-        <nitem  name = "menu/flag_N_843"  />
+        <nitem  name = "menu/flag_N_837"  />
         </nets>
     </instance>
 
-    <instance  name = "menu/flag_I_61"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "menu/flag_I_60"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "a1"  direction = "in"  />
         <pitem  name = "a0"  direction = "in"  />
@@ -16250,8 +16418,8 @@
         <nets>
         <nitem  name = "menu/pwr"  />
         <nitem  name = "menu/flag"  />
-        <nitem  name = "menu/flag_N_843"  />
-        <nitem  name = "menu/flag_N_842"  />
+        <nitem  name = "menu/flag_N_837"  />
+        <nitem  name = "menu/flag_N_836"  />
         </nets>
     </instance>
 
@@ -16265,13 +16433,13 @@
 
         <nets>
         <nitem  name = "menu/flag"  />
-        <nitem  name = "menu/flag_N_844"  />
-        <nitem  name = "menu/flag_N_842"  />
-        <nitem  name = "menu/flag_N_841"  />
+        <nitem  name = "menu/flag_N_838"  />
+        <nitem  name = "menu/flag_N_836"  />
+        <nitem  name = "menu/flag_N_835"  />
         </nets>
     </instance>
 
-    <instance  name = "menu/current_state_1__I_0_65"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "menu/current_state_1__I_0_63"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "d0[1]"  direction = "in"  />
         <pitem  name = "d0[0]"  direction = "in"  />
@@ -16286,10 +16454,10 @@
         <nitem  name = "menu/current_state[1]"  />
         <nitem  name = "menu/current_state[0]"  />
         <nitem  name = "menu/flag"  />
-        <nitem  name = "menu/current_state_1__N_830[1]"  />
-        <nitem  name = "menu/current_state_1__N_830[0]"  />
-        <nitem  name = "menu/current_state_1__N_828[1]"  />
-        <nitem  name = "menu/current_state_1__N_828[0]"  />
+        <nitem  name = "menu/current_state_1__N_824[1]"  />
+        <nitem  name = "menu/current_state_1__N_824[0]"  />
+        <nitem  name = "menu/current_state_1__N_822[1]"  />
+        <nitem  name = "menu/current_state_1__N_822[0]"  />
         </nets>
     </instance>
 
@@ -16303,9 +16471,9 @@
 
         <nets>
         <nitem  name = "menu/flag"  />
-        <nitem  name = "menu/reset_N_835"  />
-        <nitem  name = "menu/reset_N_837"  />
-        <nitem  name = "menu/reset_N_834"  />
+        <nitem  name = "menu/reset_N_829"  />
+        <nitem  name = "menu/reset_N_831"  />
+        <nitem  name = "menu/reset_N_828"  />
         </nets>
     </instance>
 
@@ -16322,7 +16490,7 @@
         <nitem  name = "menu/gnd"  />
         <nitem  name = "tick"  />
         <nitem  name = "menu/flag"  />
-        <nitem  name = "menu/flag_N_841"  />
+        <nitem  name = "menu/flag_N_835"  />
         </nets>
     </instance>
 
@@ -16344,8 +16512,8 @@
         <nitem  name = "tick"  />
         <nitem  name = "menu/current_state[1]"  />
         <nitem  name = "menu/current_state[0]"  />
-        <nitem  name = "menu/current_state_1__N_828[1]"  />
-        <nitem  name = "menu/current_state_1__N_828[0]"  />
+        <nitem  name = "menu/current_state_1__N_822[1]"  />
+        <nitem  name = "menu/current_state_1__N_822[0]"  />
         </nets>
     </instance>
 
@@ -16362,11 +16530,11 @@
         <nitem  name = "menu/gnd"  />
         <nitem  name = "tick"  />
         <nitem  name = "reset"  />
-        <nitem  name = "menu/reset_N_834"  />
+        <nitem  name = "menu/reset_N_828"  />
         </nets>
     </instance>
 
-    <instance  name = "paused_menu/marker/posx_9__I_0_62"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "paused_menu/marker/posx_9__I_0_60"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "cin"  direction = "in"  />
         <pitem  name = "b[9]"  direction = "in"  />
@@ -16406,7 +16574,7 @@
         <nitem  name = "pixel_col[0]"  />
         <nitem  name = "paused_menu/marker_x[8]"  />
         <nitem  name = "paused_menu/marker_x[7]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_699"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_693"  />
         </nets>
     </instance>
 
@@ -16516,38 +16684,38 @@
         <nitem  name = "paused_menu/marker/pwr"  />
         <nitem  name = "paused_menu/marker_x[8]"  />
         <nitem  name = "paused_menu/marker_x[7]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_701[31]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_701[30]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_701[29]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_701[28]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_701[27]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_701[26]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_701[25]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_701[24]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_701[23]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_701[22]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_701[21]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_701[20]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_701[19]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_701[18]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_701[17]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_701[16]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_701[15]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_701[14]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_701[13]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_701[12]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_701[11]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_701[10]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_701[9]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_701[8]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_701[7]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_701[6]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_701[5]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_701[4]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_701[3]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_701[2]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_701[1]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_701[0]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_695[31]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_695[30]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_695[29]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_695[28]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_695[27]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_695[26]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_695[25]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_695[24]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_695[23]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_695[22]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_695[21]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_695[20]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_695[19]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_695[18]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_695[17]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_695[16]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_695[15]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_695[14]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_695[13]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_695[12]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_695[11]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_695[10]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_695[9]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_695[8]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_695[7]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_695[6]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_695[5]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_695[4]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_695[3]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_695[2]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_695[1]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_695[0]"  />
         </nets>
     </instance>
 
@@ -16633,43 +16801,43 @@
         <nitem  name = "pixel_col[2]"  />
         <nitem  name = "pixel_col[1]"  />
         <nitem  name = "pixel_col[0]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_701[31]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_701[30]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_701[29]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_701[28]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_701[27]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_701[26]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_701[25]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_701[24]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_701[23]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_701[22]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_701[21]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_701[20]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_701[19]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_701[18]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_701[17]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_701[16]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_701[15]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_701[14]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_701[13]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_701[12]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_701[11]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_701[10]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_701[9]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_701[8]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_701[7]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_701[6]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_701[5]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_701[4]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_701[3]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_701[2]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_701[1]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_701[0]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_700"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_695[31]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_695[30]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_695[29]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_695[28]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_695[27]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_695[26]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_695[25]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_695[24]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_695[23]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_695[22]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_695[21]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_695[20]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_695[19]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_695[18]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_695[17]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_695[16]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_695[15]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_695[14]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_695[13]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_695[12]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_695[11]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_695[10]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_695[9]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_695[8]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_695[7]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_695[6]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_695[5]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_695[4]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_695[3]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_695[2]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_695[1]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_695[0]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_694"  />
         </nets>
     </instance>
 
-    <instance  name = "paused_menu/marker/rgb_2__I_53"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "paused_menu/marker/rgb_2__I_52"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "a0"  direction = "in"  />
         <pitem  name = "a1"  direction = "in"  />
@@ -16677,13 +16845,13 @@
         </pins>
 
         <nets>
-        <nitem  name = "paused_menu/marker/rgb_2__N_699"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_700"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_698"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_693"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_694"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_692"  />
         </nets>
     </instance>
 
-    <instance  name = "paused_menu/marker/posy_9__I_0_63"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "paused_menu/marker/posy_9__I_0_61"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "cin"  direction = "in"  />
         <pitem  name = "b[9]"  direction = "in"  />
@@ -16728,11 +16896,11 @@
         <nitem  name = "paused_menu/marker_y[3]"  />
         <nitem  name = "paused_menu/marker_y[2]"  />
         <nitem  name = "paused_menu/marker_y[0]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_733"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_727"  />
         </nets>
     </instance>
 
-    <instance  name = "paused_menu/marker/rgb_2__I_52"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "paused_menu/marker/rgb_2__I_51"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "a0"  direction = "in"  />
         <pitem  name = "a1"  direction = "in"  />
@@ -16740,9 +16908,9 @@
         </pins>
 
         <nets>
-        <nitem  name = "paused_menu/marker/rgb_2__N_698"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_733"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_697"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_692"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_727"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_691"  />
         </nets>
     </instance>
 
@@ -16857,38 +17025,38 @@
         <nitem  name = "paused_menu/marker_y[3]"  />
         <nitem  name = "paused_menu/marker_y[2]"  />
         <nitem  name = "paused_menu/marker_y[0]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_735[31]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_735[30]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_735[29]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_735[28]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_735[27]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_735[26]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_735[25]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_735[24]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_735[23]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_735[22]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_735[21]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_735[20]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_735[19]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_735[18]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_735[17]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_735[16]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_735[15]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_735[14]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_735[13]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_735[12]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_735[11]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_735[10]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_735[9]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_735[8]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_735[7]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_735[6]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_735[5]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_735[4]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_735[3]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_735[2]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_735[1]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_735[0]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_729[31]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_729[30]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_729[29]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_729[28]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_729[27]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_729[26]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_729[25]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_729[24]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_729[23]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_729[22]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_729[21]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_729[20]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_729[19]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_729[18]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_729[17]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_729[16]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_729[15]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_729[14]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_729[13]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_729[12]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_729[11]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_729[10]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_729[9]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_729[8]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_729[7]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_729[6]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_729[5]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_729[4]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_729[3]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_729[2]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_729[1]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_729[0]"  />
         </nets>
     </instance>
 
@@ -16974,43 +17142,43 @@
         <nitem  name = "pixel_row[2]"  />
         <nitem  name = "pixel_row[1]"  />
         <nitem  name = "pixel_row[0]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_735[31]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_735[30]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_735[29]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_735[28]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_735[27]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_735[26]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_735[25]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_735[24]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_735[23]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_735[22]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_735[21]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_735[20]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_735[19]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_735[18]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_735[17]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_735[16]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_735[15]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_735[14]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_735[13]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_735[12]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_735[11]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_735[10]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_735[9]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_735[8]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_735[7]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_735[6]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_735[5]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_735[4]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_735[3]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_735[2]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_735[1]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_735[0]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_734"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_729[31]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_729[30]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_729[29]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_729[28]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_729[27]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_729[26]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_729[25]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_729[24]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_729[23]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_729[22]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_729[21]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_729[20]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_729[19]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_729[18]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_729[17]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_729[16]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_729[15]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_729[14]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_729[13]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_729[12]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_729[11]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_729[10]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_729[9]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_729[8]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_729[7]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_729[6]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_729[5]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_729[4]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_729[3]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_729[2]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_729[1]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_729[0]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_728"  />
         </nets>
     </instance>
 
-    <instance  name = "paused_menu/marker/rgb_2__I_51"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "paused_menu/marker/rgb_2__I_50"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "a0"  direction = "in"  />
         <pitem  name = "a1"  direction = "in"  />
@@ -17018,9 +17186,9 @@
         </pins>
 
         <nets>
-        <nitem  name = "paused_menu/marker/rgb_2__N_697"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_734"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_696"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_691"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_728"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_690"  />
         </nets>
     </instance>
 
@@ -17403,18 +17571,18 @@
         <nitem  name = "paused_menu/marker/n136"  />
         <nitem  name = "paused_menu/marker/n137"  />
         <nitem  name = "paused_menu/marker/n138"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_767[7]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_767[6]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_767[5]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_767[4]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_767[3]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_767[2]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_767[1]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_767[0]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_761[7]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_761[6]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_761[5]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_761[4]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_761[3]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_761[2]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_761[1]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_761[0]"  />
         </nets>
     </instance>
 
-    <instance  name = "paused_menu/marker/rgb_2__I_54"  library = "work"  arch = ""  type = "seq">
+    <instance  name = "paused_menu/marker/rgb_2__I_53"  library = "work"  arch = ""  type = "seq">
         <pins>
         <pitem  name = "read_enable"  direction = "in"  />
         <pitem  name = "Ram"  direction = "in"  />
@@ -17434,17 +17602,17 @@
         <nets>
         <nitem  name = "paused_menu/marker/pwr"  />
         <nitem  name = "paused_menu/marker/memory"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_767[7]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_767[6]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_767[5]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_767[4]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_767[3]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_767[2]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_767[1]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_767[0]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_693[2]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_693[1]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_693[0]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_761[7]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_761[6]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_761[5]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_761[4]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_761[3]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_761[2]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_761[1]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_761[0]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_687[2]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_687[1]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_687[0]"  />
         </nets>
     </instance>
 
@@ -17467,10 +17635,10 @@
         <nitem  name = "paused_menu/marker_rgb[2]"  />
         <nitem  name = "paused_menu/marker_rgb[1]"  />
         <nitem  name = "paused_menu/marker_rgb[0]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_696"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_693[2]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_693[1]"  />
-        <nitem  name = "paused_menu/marker/rgb_2__N_693[0]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_690"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_687[2]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_687[1]"  />
+        <nitem  name = "paused_menu/marker/rgb_2__N_687[0]"  />
         </nets>
     </instance>
 
@@ -17536,7 +17704,7 @@
 
     <mults>
         <mult  name = "start_menu/mult_12"  />
-        <mult  name = "paused_menu/mult_159"  />
+        <mult  name = "paused_menu/mult_155"  />
         <mult  name = "paused_menu/marker/mult_14"  />
     </mults>
 
