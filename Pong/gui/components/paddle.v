@@ -17,7 +17,7 @@ module Paddle(
     pos_y,              // Output: position y of the ball
     size_x,             // Output: size x in pixels of the ball
     size_y,             // Output: size y in pixels of the ball
-    SPEED               // Output: speed of the paddle
+    speed               // Output: speed of the paddle
 );
 
     //----------------- INPUT PORTS -----------------------------
@@ -51,8 +51,7 @@ module Paddle(
     parameter SPEED_GROUND = 5;           // Number of tick clocks until changes should be done, MAX = 255!
 
     //----------------- INTERNAL VARIABLES ----------------------
-    reg [7:0] timer = 0;
-
+    reg [7:0] timer;
 
     initial begin: INITIALIZATION
         pos_x = START_X_POS; //TODO Change this
@@ -60,6 +59,7 @@ module Paddle(
         size_x = PADDLE_SIZE_X; //TODO Change this
         size_y = PADDLE_SIZE_Y; //TODO Change this
         speed = SPEED_GROUND;
+        timer = 0;
     end
 
     always @(posedge clock) begin: SEQUENTIAL_CODE
@@ -74,7 +74,7 @@ module Paddle(
                     if (pos_y + HEIGHT < LIMIT_Y_MAX) pos_y = pos_y + 1;
                     if (speed > 1) speed -= 1;
                 end else begin
-                    speed = SPEED_GROUND,
+                    speed = SPEED_GROUND;
                 end
             end
 
@@ -83,6 +83,8 @@ module Paddle(
             pos_y = START_Y_POS;  //TODO Change this
             size_x = PADDLE_SIZE_X; //TODO Change this
             size_y = PADDLE_SIZE_Y; //TODO Change this
+            speed = SPEED_GROUND;
+            timer = 0;
         end
     end
 	
