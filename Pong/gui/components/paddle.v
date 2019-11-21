@@ -1,4 +1,4 @@
-//--------------------------------------------------------------------------------
+ //--------------------------------------------------------------------------------
 // Module: Paddle
 //
 // Implements the logic of the paddle for a Pong game.
@@ -16,7 +16,8 @@ module Paddle(
     pos_x,              // Output: position x of the ball
     pos_y,              // Output: position y of the ball
     size_x,             // Output: size x in pixels of the ball
-    size_y              // Output: size y in pixels of the ball
+    size_y,             // Output: size y in pixels of the ball
+    SPEED               // Output: speed of the paddle
 );
 
     //----------------- INPUT PORTS -----------------------------
@@ -33,6 +34,7 @@ module Paddle(
     output reg [9:0] pos_y;
     output reg [7:0] size_x;
     output reg [7:0] size_y;
+    output reg [2:0] speed;
 
     //----------------- INTERNAL PARAMETERS ----------------------
 	parameter COLOR = 3'b111;
@@ -46,7 +48,7 @@ module Paddle(
 	parameter START_Y_POS = 100;
 	parameter LIMIT_Y_MIN = 5;
 	parameter LIMIT_Y_MAX = 475;
-    parameter SPEED = 5;           // Number of tick clocks until changes should be done, MAX = 255!
+    parameter SPEED_GROUND = 5;           // Number of tick clocks until changes should be done, MAX = 255!
 
     //----------------- INTERNAL VARIABLES ----------------------
     reg [7:0] timer = 0;
@@ -57,6 +59,7 @@ module Paddle(
         pos_y = START_Y_POS;  //TODO Change this
         size_x = PADDLE_SIZE_X; //TODO Change this
         size_y = PADDLE_SIZE_Y; //TODO Change this
+        speed = SPEED_GROUND;
     end
 
     always @(posedge clock) begin: SEQUENTIAL_CODE
@@ -66,8 +69,12 @@ module Paddle(
 				timer = 0;
                 if (control_up == 0) begin
 					if (pos_y > LIMIT_Y_MIN) pos_y = pos_y - 1;
+                    if (speed > 1) speed -= 1;
                 end else if (control_down == 0) begin
                     if (pos_y + HEIGHT < LIMIT_Y_MAX) pos_y = pos_y + 1;
+                    if (speed > 1) speed -= 1;
+                end else begin
+                    speed = SPEED_GROUND,
                 end
             end
 

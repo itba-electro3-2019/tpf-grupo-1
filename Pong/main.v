@@ -170,5 +170,4 @@ module main(
 	assign bus_rgb[1] = ((paddle_one_rgb[1] | paddle_two_rgb[1] | background_rgb[1] | ball_rgb[1]) & enable_game) | (start_menu_rgb[1] & enable_start) | (paused_menu_rgb[1] & enable_pause);
 	assign bus_rgb[2] = ((paddle_one_rgb[2] | paddle_two_rgb[2] | background_rgb[2] | ball_rgb[2]) & enable_game) | (start_menu_rgb[2] & enable_start) | (paused_menu_rgb[2] & enable_pause);
 
-
 endmodule
