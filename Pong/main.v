@@ -34,7 +34,7 @@ module main(
 	/**************************/
 	/* Declaring output ports */
 	/**************************/
-	output wire buzzer;
+	output reg buzzer;
 	output wire hsync;
 	output wire vsync;
 	output wire r;
@@ -73,16 +73,13 @@ module main(
 	parameter BUZZER_CLOCK = 500;
 	always @(posedge clk) begin: BUZZER_GENERATOR
 		if (buzzer_clock == 0) begin
+			if (bounce == 1 || bounce == 2) begin
+				buzzer_clock <= BUZZER_CLOCK;
+			end
 			buzzer <= 0;
 		end else begin
 			buzzer_clock <= buzzer_clock - 1;
 			buzzer <= 1;
-		end
-	end
-	
-	always @* begin: BUZZER_TRIGGER
-		if (bounce == 1 || bounce == 2) begin
-			buzzer_clock = BUZZER_CLOCK;
 		end
 	end
 	
@@ -130,6 +127,9 @@ module main(
 	wire [9:0] ball_pos_y;
 	wire [9:0] ball_size_x;
 	wire [9:0] ball_size_y;
+	wire [2:0] ball_speed;
+	
+	reg speed_selector;
 	
 	wire [2:0] paddle_one_speed;
 	wire [9:0] paddle_one_pos_x;
@@ -149,7 +149,9 @@ module main(
 	assign pause_up = player_one_up & player_two_up;
 	assign pause_down = player_one_down & player_two_down;
 	
-	Ball ball (tick_game, pixel_row, pixel_col, reset, bounce, ball_rgb, ball_pos_x, ball_pos_y, ball_size_x, ball_size_y);
+	Ball ball (tick_game, pixel_row, pixel_col, reset, bounce, ball_speed, ball_rgb, ball_pos_x, ball_pos_y, ball_size_x, ball_size_y);
+	
+	Mux mux (paddle_two_speed, paddle_one_speed, speed_selector, ball_speed);
 	
 	Paddle #(
 		.START_X_POS(20),
@@ -168,6 +170,12 @@ module main(
 	PausedMenu #(
 		.START_POSX(275),
 		.START_POSY(170)) paused_menu(tick_menu, pixel_row, pixel_col, reset, pause_up, pause_down, paused_menu_rgb, pause_selection);
+
+	always @ (posedge tick) begin
+		if (bounce == 1) begin
+			speed_selector = ~speed_selector;
+		end
+	end
 
 	/**********************/
 	/* Game Logic Objects */

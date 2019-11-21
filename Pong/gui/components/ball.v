@@ -12,6 +12,7 @@ module Ball(
     col,                // Input: column of the pixel when asked if this module should draw something for that pixel
     reset,              // Input: reset active LOW
     bounce,             // Input: 00 is 'don't bounce', 01 is 'bounce with paddle', 10 is 'bounce with wall', 11 is 'throw ball again, someone scored'
+    speed,              // Input: speed of the ball determined by the paddles
     rgb,                // Output: rgb of the pixel to draw when asked
     pos_x,              // Output: position x of the ball
     pos_y,              // Output: position y of the ball
@@ -25,6 +26,7 @@ module Ball(
     input wire [9:0] col;
     input wire reset;
     input wire [1:0] bounce;
+	input wire [2:0] speed;
 
     //----------------- OUTPUT PORTS ----------------------------
     output reg [2:0] rgb;
@@ -39,7 +41,6 @@ module Ball(
     parameter SCREEN_Y = 480;
 	parameter HEIGHT = 8;
 	parameter WIDTH = 8;
-    parameter SPEED = 5;           // Number of tick clocks until changes should be done, MAX = 255!
 
     //----------------- INTERNAL VARIABLES ----------------------
     reg [1:0] current_state;
@@ -67,7 +68,7 @@ module Ball(
     always @ (posedge clock) begin: COMBINATIONAL_CODE
         if (reset) begin
             timer = timer + 1;
-            if (timer == SPEED) begin
+            if (timer == speed) begin
 				timer = 0;
                 case(current_state)
                     /* Current state is AT_45, which is the next state?*/

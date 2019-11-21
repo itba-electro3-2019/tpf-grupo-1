@@ -33,6 +33,7 @@
 
 -use_io_insertion 1
 -resolve_mixed_drivers 0
+-sdc "C:/Users/facun/OneDrive/Desktop/ITBA/5C Electronica III/tpf-grupo-1/Pong/impl_1/impl_1.ldc"
 -path "C:/Users/facun/OneDrive/Desktop/ITBA/5C Electronica III/tpf-grupo-1/Pong/clock"
 -path "C:/lscc/radiant/1.1/ispfpga/ice40tp/data" "C:/Users/facun/OneDrive/Desktop/ITBA/5C Electronica III/tpf-grupo-1/Pong/impl_1" "C:/Users/facun/OneDrive/Desktop/ITBA/5C Electronica III/tpf-grupo-1/Pong"
 -ver "C:/lscc/radiant/1.1/ip/pmi/pmi_iCE40UP.v"
@@ -48,6 +49,7 @@
 "C:/Users/facun/OneDrive/Desktop/ITBA/5C Electronica III/tpf-grupo-1/Pong/gui/menus/start_menu.v"
 "C:/Users/facun/OneDrive/Desktop/ITBA/5C Electronica III/tpf-grupo-1/Pong/gui/menus/paused_menu.v"
 "C:/Users/facun/OneDrive/Desktop/ITBA/5C Electronica III/tpf-grupo-1/Pong/gui/menus/marker.v"
+"C:/Users/facun/OneDrive/Desktop/ITBA/5C Electronica III/tpf-grupo-1/Pong/standard_modules/mux.v"
 
 
 -path "C:/Users/facun/OneDrive/Desktop/ITBA/5C Electronica III/tpf-grupo-1/Pong"

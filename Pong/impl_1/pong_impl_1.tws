@@ -1,6 +1,6 @@
 Lattice Timing Report -  Setup  and Hold, Version Radiant Software (64-bit) 1.1.0.165.1
 
-Thu Nov 21 12:21:19 2019
+Thu Nov 21 15:47:00 2019
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -69,22 +69,22 @@ create_generated_clock -name {vga_clock} -source [get_pins {pll/lscc_pll_inst/u_
 Combinational Loops
 -------------------
 ++++ Loop1
-paused_menu/i10268_2_lut_3_lut/Z	->	paused_menu/i10268_2_lut_3_lut/A
-
-++++ Loop2
-paused_menu/i7124_3_lut_3_lut/A	->	paused_menu/i7124_3_lut_3_lut/Z
-
-++++ Loop3
-paused_menu/i7120_3_lut_4_lut_3_lut/C	->	paused_menu/i7120_3_lut_4_lut_3_lut/Z
-
-++++ Loop4
 paused_menu/i1_3_lut/B	->	paused_menu/i1_3_lut/Z
 
+++++ Loop2
+paused_menu/i1_3_lut_adj_144/B	->	paused_menu/i1_3_lut_adj_144/Z
+
+++++ Loop3
+paused_menu/i1_3_lut_adj_145/C	->	paused_menu/i1_3_lut_adj_145/Z
+
+++++ Loop4
+paused_menu/i14_3_lut/B	->	paused_menu/i14_3_lut/Z
+
 ++++ Loop5
-paused_menu/i1_3_lut_adj_114/B	->	paused_menu/i1_3_lut_adj_114/Z
+menu/i1_2_lut_3_lut/C	->	menu/i1_2_lut_3_lut/Z
 
 ++++ Loop6
-paused_menu/i10267_3_lut/C	->	paused_menu/i10267_3_lut/Z
+menu/i7344_4_lut_3_lut/C	->	menu/i7344_4_lut_3_lut/Z
 
 ==============================================
 2  CLOCK SUMMARY
@@ -99,7 +99,7 @@ Single Clock Domain
                Clock clk                |                    |       Period       |     Frequency      
 -------------------------------------------------------------------------------------------------------
  From clk                               |             Target |          83.333 ns |         12.000 MHz 
-                                        | Actual (all paths) |          20.830 ns |         48.008 MHz 
+                                        | Actual (all paths) |          21.765 ns |         45.945 MHz 
 -------------------------------------------------------------------------------------------------------
 
 Clock Domain Crossing
@@ -137,7 +137,7 @@ Clock Domain Crossing
 
 3.1.1  Constraint Coverage
 ---------------------------
-Constraint Coverage: 3.09342%
+Constraint Coverage: 3.77666%
 
 3.1.2  Timing Errors
 ---------------------
@@ -164,7 +164,7 @@ u_PLL_B/REFERENCECLK}] -multiply_by 67
 nst/u_PLL_B/OUTGLOBAL }]                |   39.800 ns |   27.724 ns |   12   |   12.076 ns |  82.809 MHz |       40       |        0       
                                         |             |             |        |             |             |                |                
 create_clock -name {clk} -period 83.333                                                                                                    
-3333333333 [get_nets clk]               |   83.333 ns |   68.703 ns |    6   |   20.830 ns |  48.008 MHz |       31       |        0       
+3333333333 [get_nets clk]               |   83.333 ns |   61.568 ns |   19   |   21.765 ns |  45.945 MHz |       49       |        0       
 -------------------------------------------------------------------------------------------------------------------------------------------
 
 3.2.2  Setup Critical Endpoint Summary 
@@ -177,11 +177,11 @@ vga_driver/v_count__i8/D                 |   28.283 ns
 vga_driver/v_count__i7/D                 |   28.841 ns 
 vga_driver/v_count__i6/D                 |   29.399 ns 
 vga_driver/v_count__i5/D                 |   29.957 ns 
-vga_driver/h_count_447__i0/SR            |   29.971 ns 
-vga_driver/h_count_447__i9/SR            |   29.971 ns 
-vga_driver/h_count_447__i8/SR            |   29.971 ns 
-vga_driver/h_count_447__i7/SR            |   29.971 ns 
-vga_driver/h_count_447__i6/SR            |   29.971 ns 
+vga_driver/h_count_522__i0/SR            |   29.971 ns 
+vga_driver/h_count_522__i9/SR            |   29.971 ns 
+vga_driver/h_count_522__i8/SR            |   29.971 ns 
+vga_driver/h_count_522__i7/SR            |   29.971 ns 
+vga_driver/h_count_522__i6/SR            |   29.971 ns 
 -------------------------------------------------------
                                          |             
 Setup # of endpoints with negative slack:|           0 
@@ -205,7 +205,7 @@ u_PLL_B/REFERENCECLK}] -multiply_by 67
 nst/u_PLL_B/OUTGLOBAL }]                |    0.000 ns |    4.196 ns |    2   |        ---- |        ---- |       40       |        0       
                                         |             |             |        |             |             |                |                
 create_clock -name {clk} -period 83.333                                                                                                    
-3333333333 [get_nets clk]               |    0.000 ns |    4.196 ns |    2   |        ---- |        ---- |       31       |        0       
+3333333333 [get_nets clk]               |    0.000 ns |    4.196 ns |    2   |        ---- |        ---- |       49       |        0       
 -------------------------------------------------------------------------------------------------------------------------------------------
 
 3.3.2  Hold Critical Endpoint Summary 
@@ -214,16 +214,16 @@ create_clock -name {clk} -period 83.333
 -------------------------------------------------------
           Listing 10 End Points          |    Slack    
 -------------------------------------------------------
-vga_driver/v_count__i9/D                 |    4.196 ns 
-vga_driver/v_count__i8/D                 |    4.196 ns 
-vga_driver/v_count__i7/D                 |    4.196 ns 
-vga_driver/v_count__i6/D                 |    4.196 ns 
-vga_driver/v_count__i5/D                 |    4.196 ns 
-vga_driver/v_count__i4/D                 |    4.196 ns 
-vga_driver/v_count__i3/D                 |    4.196 ns 
-vga_driver/v_count__i2/D                 |    4.196 ns 
-vga_driver/v_count__i1/D                 |    4.196 ns 
 vga_driver/v_count__i0/D                 |    4.196 ns 
+vga_driver/h_count_522__i9/D             |    4.196 ns 
+vga_driver/h_count_522__i8/D             |    4.196 ns 
+vga_driver/h_count_522__i7/D             |    4.196 ns 
+vga_driver/h_count_522__i6/D             |    4.196 ns 
+vga_driver/h_count_522__i5/D             |    4.196 ns 
+vga_driver/h_count_522__i4/D             |    4.196 ns 
+vga_driver/h_count_522__i3/D             |    4.196 ns 
+vga_driver/h_count_522__i2/D             |    4.196 ns 
+vga_driver/h_count_522__i1/D             |    4.196 ns 
 -------------------------------------------------------
                                          |             
 Hold # of endpoints with negative slack: |           0 
@@ -240,20 +240,20 @@ Clocked but unconstrained timing start points
 -------------------------------------------------------------------
         Listing 10 Start Points         |           Type           
 -------------------------------------------------------------------
-paddle_one/timer_449__i7/Q              |    No arrival or required
-paddle_one/timer_449__i6/Q              |    No arrival or required
-paddle_one/timer_449__i5/Q              |    No arrival or required
-paddle_one/timer_449__i4/Q              |    No arrival or required
-paddle_one/timer_449__i3/Q              |    No arrival or required
-paddle_one/timer_449__i2/Q              |    No arrival or required
-paddle_one/timer_449__i1/Q              |    No arrival or required
-paddle_one/timer_449__i0/Q              |    No arrival or required
-menu/flag_c/Q                           |    No arrival or required
-ball/timer_448__i7/Q                    |    No arrival or required
+paddle_one/accelerator_timer_523__i7/Q  |    No arrival or required
+paddle_one/accelerator_timer_523__i6/Q  |    No arrival or required
+paddle_one/accelerator_timer_523__i5/Q  |    No arrival or required
+paddle_one/accelerator_timer_523__i4/Q  |    No arrival or required
+paddle_one/accelerator_timer_523__i3/Q  |    No arrival or required
+paddle_one/accelerator_timer_523__i2/Q  |    No arrival or required
+paddle_one/accelerator_timer_523__i1/Q  |    No arrival or required
+paddle_one/accelerator_timer_523__i0/Q  |    No arrival or required
+ball/current_state_FSM_i3/Q             |    No arrival or required
+ball/current_state_FSM_i1/Q             |    No arrival or required
 -------------------------------------------------------------------
                                         |                          
 Number of unconstrained timing start po |                          
-ints                                    |                        93
+ints                                    |                       116
                                         |                          
 -------------------------------------------------------------------
 
@@ -261,20 +261,20 @@ Clocked but unconstrained timing end points
 -------------------------------------------------------------------
          Listing 10 End Points          |           Type           
 -------------------------------------------------------------------
-paddle_one/timer_449__i7/D              |    No arrival or required
-paddle_one/timer_449__i6/D              |    No arrival or required
-paddle_one/timer_449__i5/D              |    No arrival or required
-paddle_one/timer_449__i4/D              |    No arrival or required
-paddle_one/timer_449__i3/D              |    No arrival or required
-paddle_one/timer_449__i2/D              |    No arrival or required
-paddle_one/timer_449__i1/D              |    No arrival or required
-paddle_one/timer_449__i0/D              |    No arrival or required
-paddle_one/timer_449__i2/SR             |    No arrival or required
-paddle_one/timer_449__i3/SR             |    No arrival or required
+paddle_one/speed_i2_i1/D                |    No arrival or required
+paddle_one/timer__ret0_i0/D             |    No arrival or required
+paddle_one/timer__ret0_i1/D             |    No arrival or required
+paddle_one/timer__ret0_i2/D             |    No arrival or required
+paddle_one/timer__ret0_i3/D             |    No arrival or required
+paddle_one/timer__ret0_i4/D             |    No arrival or required
+paddle_one/timer__ret0_i5/D             |    No arrival or required
+paddle_one/timer__ret0_i6/D             |    No arrival or required
+paddle_one/timer__ret0_i7/D             |    No arrival or required
+paddle_one/speed_i2_i2/D                |    No arrival or required
 -------------------------------------------------------------------
                                         |                          
 Number of unconstrained timing end poin |                          
-ts                                      |                       231
+ts                                      |                       257
                                         |                          
 -------------------------------------------------------------------
 
@@ -299,35 +299,36 @@ player_one_down                         |                     input
 player_two_up                           |                     input
 player_two_down                         |                     input
 button_enter                            |                     input
+buzzer                                  |                    output
 hsync                                   |                    output
 vsync                                   |                    output
 r                                       |                    output
 g                                       |                    output
-b                                       |                    output
 -------------------------------------------------------------------
                                         |                          
-Number of I/O ports without constraint  |                        10
+Number of I/O ports without constraint  |                        11
                                         |                          
 -------------------------------------------------------------------
 
 Registers without clock definition
 Define the clock for these registers.
 -------------------------------------------------------------------
-         Listing 9 Instance(s)          |           Type           
+         Listing 10 Instance(s)         |           Type           
 -------------------------------------------------------------------
-bounce_clock_445__i1                    |                  No Clock
-bounce_clock_445__i8                    |                  No Clock
+bounce_clock_520__i1                    |                  No Clock
+speed_selector_c                        |                  No Clock
+bounce_clock_520__i7                    |                  No Clock
+bounce_clock_520__i5                    |                  No Clock
+bounce_clock_520__i2                    |                  No Clock
+bounce_clock_520__i8                    |                  No Clock
+bounce_clock_520__i4                    |                  No Clock
+bounce_clock_520__i3                    |                  No Clock
+bounce_clock_520__i6                    |                  No Clock
 enter_c                                 |                  No Clock
-bounce_clock_445__i4                    |                  No Clock
-bounce_clock_445__i6                    |                  No Clock
-bounce_clock_445__i3                    |                  No Clock
-bounce_clock_445__i5                    |                  No Clock
-bounce_clock_445__i2                    |                  No Clock
-bounce_clock_445__i7                    |                  No Clock
 -------------------------------------------------------------------
                                         |                          
 Number of registers without clock defin |                          
-ition                                   |                         9
+ition                                   |                        10
                                         |                          
 -------------------------------------------------------------------
 
@@ -388,35 +389,35 @@ vga_driver/v_count__i0/CK->vga_driver/v_count__i0/Q
 pixel_row[0]                                              NET DELAY         0.280         5.971  1       
 vga_driver/add_28_add_5_1/B1->vga_driver/add_28_add_5_1/CO1
                                           FA2             B1_TO_CO1_DELAY   0.358         6.329  2       
-vga_driver/n114458                                        NET DELAY         0.280         6.609  1       
+vga_driver/n117434                                        NET DELAY         0.280         6.609  1       
 vga_driver/add_28_add_5_3/CI0->vga_driver/add_28_add_5_3/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278         6.887  2       
-vga_driver/n127158                                        NET DELAY         0.280         7.167  1       
+vga_driver/n130897                                        NET DELAY         0.280         7.167  1       
 vga_driver/add_28_add_5_3/CI1->vga_driver/add_28_add_5_3/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278         7.445  2       
-vga_driver/n114460                                        NET DELAY         0.280         7.725  1       
+vga_driver/n117436                                        NET DELAY         0.280         7.725  1       
 vga_driver/add_28_add_5_5/CI0->vga_driver/add_28_add_5_5/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278         8.003  2       
-vga_driver/n127164                                        NET DELAY         0.280         8.283  1       
+vga_driver/n130900                                        NET DELAY         0.280         8.283  1       
 vga_driver/add_28_add_5_5/CI1->vga_driver/add_28_add_5_5/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278         8.561  2       
-vga_driver/n114462                                        NET DELAY         0.280         8.841  1       
+vga_driver/n117438                                        NET DELAY         0.280         8.841  1       
 vga_driver/add_28_add_5_7/CI0->vga_driver/add_28_add_5_7/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278         9.119  2       
-vga_driver/n127623                                        NET DELAY         0.280         9.399  1       
+vga_driver/n130903                                        NET DELAY         0.280         9.399  1       
 vga_driver/add_28_add_5_7/CI1->vga_driver/add_28_add_5_7/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278         9.677  2       
-vga_driver/n114464                                        NET DELAY         0.280         9.957  1       
+vga_driver/n117440                                        NET DELAY         0.280         9.957  1       
 vga_driver/add_28_add_5_9/CI0->vga_driver/add_28_add_5_9/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        10.235  2       
-vga_driver/n127626                                        NET DELAY         0.280        10.515  1       
+vga_driver/n130906                                        NET DELAY         0.280        10.515  1       
 vga_driver/add_28_add_5_9/CI1->vga_driver/add_28_add_5_9/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        10.793  2       
-vga_driver/n114466                                        NET DELAY         0.280        11.073  1       
+vga_driver/n117442                                        NET DELAY         0.280        11.073  1       
 vga_driver/add_28_add_5_11/D0->vga_driver/add_28_add_5_11/S0
                                           FA2             D0_TO_S0_DELAY    0.477        11.550  1       
 vga_driver/n57[9]                                         NET DELAY         2.075        13.625  1       
-vga_driver/i9941_2_lut_4_lut/D->vga_driver/i9941_2_lut_4_lut/Z
+vga_driver/i9647_2_lut_4_lut/D->vga_driver/i9647_2_lut_4_lut/Z
                                           LUT4            D_TO_Z_DELAY      0.477        14.102  1       
 vga_driver/n38[9]                                         NET DELAY         2.075        16.177  1       
 
@@ -473,32 +474,32 @@ vga_driver/v_count__i0/CK->vga_driver/v_count__i0/Q
 pixel_row[0]                                              NET DELAY         0.280         5.971  1       
 vga_driver/add_28_add_5_1/B1->vga_driver/add_28_add_5_1/CO1
                                           FA2             B1_TO_CO1_DELAY   0.358         6.329  2       
-vga_driver/n114458                                        NET DELAY         0.280         6.609  1       
+vga_driver/n117434                                        NET DELAY         0.280         6.609  1       
 vga_driver/add_28_add_5_3/CI0->vga_driver/add_28_add_5_3/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278         6.887  2       
-vga_driver/n127158                                        NET DELAY         0.280         7.167  1       
+vga_driver/n130897                                        NET DELAY         0.280         7.167  1       
 vga_driver/add_28_add_5_3/CI1->vga_driver/add_28_add_5_3/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278         7.445  2       
-vga_driver/n114460                                        NET DELAY         0.280         7.725  1       
+vga_driver/n117436                                        NET DELAY         0.280         7.725  1       
 vga_driver/add_28_add_5_5/CI0->vga_driver/add_28_add_5_5/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278         8.003  2       
-vga_driver/n127164                                        NET DELAY         0.280         8.283  1       
+vga_driver/n130900                                        NET DELAY         0.280         8.283  1       
 vga_driver/add_28_add_5_5/CI1->vga_driver/add_28_add_5_5/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278         8.561  2       
-vga_driver/n114462                                        NET DELAY         0.280         8.841  1       
+vga_driver/n117438                                        NET DELAY         0.280         8.841  1       
 vga_driver/add_28_add_5_7/CI0->vga_driver/add_28_add_5_7/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278         9.119  2       
-vga_driver/n127623                                        NET DELAY         0.280         9.399  1       
+vga_driver/n130903                                        NET DELAY         0.280         9.399  1       
 vga_driver/add_28_add_5_7/CI1->vga_driver/add_28_add_5_7/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278         9.677  2       
-vga_driver/n114464                                        NET DELAY         0.280         9.957  1       
+vga_driver/n117440                                        NET DELAY         0.280         9.957  1       
 vga_driver/add_28_add_5_9/CI0->vga_driver/add_28_add_5_9/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        10.235  2       
-vga_driver/n127626                                        NET DELAY         0.280        10.515  1       
+vga_driver/n130906                                        NET DELAY         0.280        10.515  1       
 vga_driver/add_28_add_5_9/D1->vga_driver/add_28_add_5_9/S1
                                           FA2             D1_TO_S1_DELAY    0.477        10.992  1       
 vga_driver/n57[8]                                         NET DELAY         2.075        13.067  1       
-vga_driver/i9942_2_lut_4_lut/D->vga_driver/i9942_2_lut_4_lut/Z
+vga_driver/i9648_2_lut_4_lut/D->vga_driver/i9648_2_lut_4_lut/Z
                                           LUT4            D_TO_Z_DELAY      0.477        13.544  1       
 vga_driver/n38[8]                                         NET DELAY         2.075        15.619  1       
 
@@ -555,29 +556,29 @@ vga_driver/v_count__i0/CK->vga_driver/v_count__i0/Q
 pixel_row[0]                                              NET DELAY         0.280         5.971  1       
 vga_driver/add_28_add_5_1/B1->vga_driver/add_28_add_5_1/CO1
                                           FA2             B1_TO_CO1_DELAY   0.358         6.329  2       
-vga_driver/n114458                                        NET DELAY         0.280         6.609  1       
+vga_driver/n117434                                        NET DELAY         0.280         6.609  1       
 vga_driver/add_28_add_5_3/CI0->vga_driver/add_28_add_5_3/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278         6.887  2       
-vga_driver/n127158                                        NET DELAY         0.280         7.167  1       
+vga_driver/n130897                                        NET DELAY         0.280         7.167  1       
 vga_driver/add_28_add_5_3/CI1->vga_driver/add_28_add_5_3/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278         7.445  2       
-vga_driver/n114460                                        NET DELAY         0.280         7.725  1       
+vga_driver/n117436                                        NET DELAY         0.280         7.725  1       
 vga_driver/add_28_add_5_5/CI0->vga_driver/add_28_add_5_5/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278         8.003  2       
-vga_driver/n127164                                        NET DELAY         0.280         8.283  1       
+vga_driver/n130900                                        NET DELAY         0.280         8.283  1       
 vga_driver/add_28_add_5_5/CI1->vga_driver/add_28_add_5_5/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278         8.561  2       
-vga_driver/n114462                                        NET DELAY         0.280         8.841  1       
+vga_driver/n117438                                        NET DELAY         0.280         8.841  1       
 vga_driver/add_28_add_5_7/CI0->vga_driver/add_28_add_5_7/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278         9.119  2       
-vga_driver/n127623                                        NET DELAY         0.280         9.399  1       
+vga_driver/n130903                                        NET DELAY         0.280         9.399  1       
 vga_driver/add_28_add_5_7/CI1->vga_driver/add_28_add_5_7/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278         9.677  2       
-vga_driver/n114464                                        NET DELAY         0.280         9.957  1       
+vga_driver/n117440                                        NET DELAY         0.280         9.957  1       
 vga_driver/add_28_add_5_9/D0->vga_driver/add_28_add_5_9/S0
                                           FA2             D0_TO_S0_DELAY    0.477        10.434  1       
 vga_driver/n57[7]                                         NET DELAY         2.075        12.509  1       
-vga_driver/i9943_2_lut_4_lut/D->vga_driver/i9943_2_lut_4_lut/Z
+vga_driver/i9649_2_lut_4_lut/D->vga_driver/i9649_2_lut_4_lut/Z
                                           LUT4            D_TO_Z_DELAY      0.477        12.986  1       
 vga_driver/n38[7]                                         NET DELAY         2.075        15.061  1       
 
@@ -634,26 +635,26 @@ vga_driver/v_count__i0/CK->vga_driver/v_count__i0/Q
 pixel_row[0]                                              NET DELAY         0.280         5.971  1       
 vga_driver/add_28_add_5_1/B1->vga_driver/add_28_add_5_1/CO1
                                           FA2             B1_TO_CO1_DELAY   0.358         6.329  2       
-vga_driver/n114458                                        NET DELAY         0.280         6.609  1       
+vga_driver/n117434                                        NET DELAY         0.280         6.609  1       
 vga_driver/add_28_add_5_3/CI0->vga_driver/add_28_add_5_3/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278         6.887  2       
-vga_driver/n127158                                        NET DELAY         0.280         7.167  1       
+vga_driver/n130897                                        NET DELAY         0.280         7.167  1       
 vga_driver/add_28_add_5_3/CI1->vga_driver/add_28_add_5_3/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278         7.445  2       
-vga_driver/n114460                                        NET DELAY         0.280         7.725  1       
+vga_driver/n117436                                        NET DELAY         0.280         7.725  1       
 vga_driver/add_28_add_5_5/CI0->vga_driver/add_28_add_5_5/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278         8.003  2       
-vga_driver/n127164                                        NET DELAY         0.280         8.283  1       
+vga_driver/n130900                                        NET DELAY         0.280         8.283  1       
 vga_driver/add_28_add_5_5/CI1->vga_driver/add_28_add_5_5/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278         8.561  2       
-vga_driver/n114462                                        NET DELAY         0.280         8.841  1       
+vga_driver/n117438                                        NET DELAY         0.280         8.841  1       
 vga_driver/add_28_add_5_7/CI0->vga_driver/add_28_add_5_7/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278         9.119  2       
-vga_driver/n127623                                        NET DELAY         0.280         9.399  1       
+vga_driver/n130903                                        NET DELAY         0.280         9.399  1       
 vga_driver/add_28_add_5_7/D1->vga_driver/add_28_add_5_7/S1
                                           FA2             D1_TO_S1_DELAY    0.477         9.876  1       
 vga_driver/n57[6]                                         NET DELAY         2.075        11.951  1       
-vga_driver/i9944_2_lut_4_lut/D->vga_driver/i9944_2_lut_4_lut/Z
+vga_driver/i9650_2_lut_4_lut/D->vga_driver/i9650_2_lut_4_lut/Z
                                           LUT4            D_TO_Z_DELAY      0.477        12.428  1       
 vga_driver/n38[6]                                         NET DELAY         2.075        14.503  1       
 
@@ -710,23 +711,23 @@ vga_driver/v_count__i0/CK->vga_driver/v_count__i0/Q
 pixel_row[0]                                              NET DELAY         0.280         5.971  1       
 vga_driver/add_28_add_5_1/B1->vga_driver/add_28_add_5_1/CO1
                                           FA2             B1_TO_CO1_DELAY   0.358         6.329  2       
-vga_driver/n114458                                        NET DELAY         0.280         6.609  1       
+vga_driver/n117434                                        NET DELAY         0.280         6.609  1       
 vga_driver/add_28_add_5_3/CI0->vga_driver/add_28_add_5_3/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278         6.887  2       
-vga_driver/n127158                                        NET DELAY         0.280         7.167  1       
+vga_driver/n130897                                        NET DELAY         0.280         7.167  1       
 vga_driver/add_28_add_5_3/CI1->vga_driver/add_28_add_5_3/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278         7.445  2       
-vga_driver/n114460                                        NET DELAY         0.280         7.725  1       
+vga_driver/n117436                                        NET DELAY         0.280         7.725  1       
 vga_driver/add_28_add_5_5/CI0->vga_driver/add_28_add_5_5/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278         8.003  2       
-vga_driver/n127164                                        NET DELAY         0.280         8.283  1       
+vga_driver/n130900                                        NET DELAY         0.280         8.283  1       
 vga_driver/add_28_add_5_5/CI1->vga_driver/add_28_add_5_5/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278         8.561  2       
-vga_driver/n114462                                        NET DELAY         0.280         8.841  1       
+vga_driver/n117438                                        NET DELAY         0.280         8.841  1       
 vga_driver/add_28_add_5_7/D0->vga_driver/add_28_add_5_7/S0
                                           FA2             D0_TO_S0_DELAY    0.477         9.318  1       
 vga_driver/n57[5]                                         NET DELAY         2.075        11.393  1       
-vga_driver/i9945_2_lut_4_lut/D->vga_driver/i9945_2_lut_4_lut/Z
+vga_driver/i9651_2_lut_4_lut/D->vga_driver/i9651_2_lut_4_lut/Z
                                           LUT4            D_TO_Z_DELAY      0.477        11.870  1       
 vga_driver/n38[5]                                         NET DELAY         2.075        13.945  1       
 
@@ -742,8 +743,8 @@ vga_clock                                                 NET DELAY      2.075  
 
  ++++Path 6  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : vga_driver/h_count_447__i7/Q
-Path End         : vga_driver/h_count_447__i1/SR
+Path Begin       : vga_driver/h_count_522__i3/Q
+Path End         : vga_driver/h_count_522__i1/SR
 Source Clock     : vga_clock
 Destination Clock: vga_clock
 Logic Level      : 4
@@ -778,18 +779,18 @@ vga_clock                                                 NET DELAY      2.075  
 Data path
 Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
-vga_driver/h_count_447__i7/CK->vga_driver/h_count_447__i7/Q
-                                          FD1P3XZ         CK_TO_Q_DELAY  1.391         5.691  20      
-pixel_col[7]                                              NET DELAY      0.280         5.971  1       
-vga_driver/i1_2_lut_3_lut/A->vga_driver/i1_2_lut_3_lut/Z
-                                          LUT4            A_TO_Z_DELAY   0.477         6.448  4       
-n106547                                                   NET DELAY      2.075         8.523  1       
-vga_driver/i5_4_lut_adj_88/D->vga_driver/i5_4_lut_adj_88/Z
-                                          LUT4            D_TO_Z_DELAY   0.477         9.000  1       
-vga_driver/n13                                            NET DELAY      2.075        11.075  1       
-vga_driver/i22409_3_lut/A->vga_driver/i22409_3_lut/Z
-                                          LUT4            A_TO_Z_DELAY   0.450        11.525  20      
-vga_driver/n98993                                         NET DELAY      2.075        13.600  1       
+vga_driver/h_count_522__i3/CK->vga_driver/h_count_522__i3/Q
+                                          FD1P3XZ         CK_TO_Q_DELAY  1.391         5.691  19      
+pixel_col[3]                                              NET DELAY      0.280         5.971  1       
+vga_driver/i1_2_lut_3_lut_adj_126/A->vga_driver/i1_2_lut_3_lut_adj_126/Z
+                                          LUT4            A_TO_Z_DELAY   0.477         6.448  2       
+vga_driver/n103                                           NET DELAY      2.075         8.523  1       
+vga_driver/i5_4_lut/C->vga_driver/i5_4_lut/Z
+                                          LUT4            C_TO_Z_DELAY   0.477         9.000  1       
+n12_adj_1174                                              NET DELAY      2.075        11.075  1       
+paddle_two/i1_4_lut_adj_132/C->paddle_two/i1_4_lut_adj_132/Z
+                                          LUT4            C_TO_Z_DELAY   0.450        11.525  20      
+n99102                                                    NET DELAY      2.075        13.600  1       
 
 
 Destination Clock Path
@@ -803,8 +804,8 @@ vga_clock                                                 NET DELAY      2.075  
 
  ++++Path 7  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : vga_driver/h_count_447__i7/Q
-Path End         : vga_driver/h_count_447__i2/SR
+Path Begin       : vga_driver/h_count_522__i3/Q
+Path End         : vga_driver/h_count_522__i2/SR
 Source Clock     : vga_clock
 Destination Clock: vga_clock
 Logic Level      : 4
@@ -839,18 +840,18 @@ vga_clock                                                 NET DELAY      2.075  
 Data path
 Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
-vga_driver/h_count_447__i7/CK->vga_driver/h_count_447__i7/Q
-                                          FD1P3XZ         CK_TO_Q_DELAY  1.391         5.691  20      
-pixel_col[7]                                              NET DELAY      0.280         5.971  1       
-vga_driver/i1_2_lut_3_lut/A->vga_driver/i1_2_lut_3_lut/Z
-                                          LUT4            A_TO_Z_DELAY   0.477         6.448  4       
-n106547                                                   NET DELAY      2.075         8.523  1       
-vga_driver/i5_4_lut_adj_88/D->vga_driver/i5_4_lut_adj_88/Z
-                                          LUT4            D_TO_Z_DELAY   0.477         9.000  1       
-vga_driver/n13                                            NET DELAY      2.075        11.075  1       
-vga_driver/i22409_3_lut/A->vga_driver/i22409_3_lut/Z
-                                          LUT4            A_TO_Z_DELAY   0.450        11.525  20      
-vga_driver/n98993                                         NET DELAY      2.075        13.600  1       
+vga_driver/h_count_522__i3/CK->vga_driver/h_count_522__i3/Q
+                                          FD1P3XZ         CK_TO_Q_DELAY  1.391         5.691  19      
+pixel_col[3]                                              NET DELAY      0.280         5.971  1       
+vga_driver/i1_2_lut_3_lut_adj_126/A->vga_driver/i1_2_lut_3_lut_adj_126/Z
+                                          LUT4            A_TO_Z_DELAY   0.477         6.448  2       
+vga_driver/n103                                           NET DELAY      2.075         8.523  1       
+vga_driver/i5_4_lut/C->vga_driver/i5_4_lut/Z
+                                          LUT4            C_TO_Z_DELAY   0.477         9.000  1       
+n12_adj_1174                                              NET DELAY      2.075        11.075  1       
+paddle_two/i1_4_lut_adj_132/C->paddle_two/i1_4_lut_adj_132/Z
+                                          LUT4            C_TO_Z_DELAY   0.450        11.525  20      
+n99102                                                    NET DELAY      2.075        13.600  1       
 
 
 Destination Clock Path
@@ -864,8 +865,8 @@ vga_clock                                                 NET DELAY      2.075  
 
  ++++Path 8  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : vga_driver/h_count_447__i7/Q
-Path End         : vga_driver/h_count_447__i3/SR
+Path Begin       : vga_driver/h_count_522__i3/Q
+Path End         : vga_driver/h_count_522__i3/SR
 Source Clock     : vga_clock
 Destination Clock: vga_clock
 Logic Level      : 4
@@ -900,18 +901,18 @@ vga_clock                                                 NET DELAY      2.075  
 Data path
 Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
-vga_driver/h_count_447__i7/CK->vga_driver/h_count_447__i7/Q
-                                          FD1P3XZ         CK_TO_Q_DELAY  1.391         5.691  20      
-pixel_col[7]                                              NET DELAY      0.280         5.971  1       
-vga_driver/i1_2_lut_3_lut/A->vga_driver/i1_2_lut_3_lut/Z
-                                          LUT4            A_TO_Z_DELAY   0.477         6.448  4       
-n106547                                                   NET DELAY      2.075         8.523  1       
-vga_driver/i5_4_lut_adj_88/D->vga_driver/i5_4_lut_adj_88/Z
-                                          LUT4            D_TO_Z_DELAY   0.477         9.000  1       
-vga_driver/n13                                            NET DELAY      2.075        11.075  1       
-vga_driver/i22409_3_lut/A->vga_driver/i22409_3_lut/Z
-                                          LUT4            A_TO_Z_DELAY   0.450        11.525  20      
-vga_driver/n98993                                         NET DELAY      2.075        13.600  1       
+vga_driver/h_count_522__i3/CK->vga_driver/h_count_522__i3/Q
+                                          FD1P3XZ         CK_TO_Q_DELAY  1.391         5.691  19      
+pixel_col[3]                                              NET DELAY      0.280         5.971  1       
+vga_driver/i1_2_lut_3_lut_adj_126/A->vga_driver/i1_2_lut_3_lut_adj_126/Z
+                                          LUT4            A_TO_Z_DELAY   0.477         6.448  2       
+vga_driver/n103                                           NET DELAY      2.075         8.523  1       
+vga_driver/i5_4_lut/C->vga_driver/i5_4_lut/Z
+                                          LUT4            C_TO_Z_DELAY   0.477         9.000  1       
+n12_adj_1174                                              NET DELAY      2.075        11.075  1       
+paddle_two/i1_4_lut_adj_132/C->paddle_two/i1_4_lut_adj_132/Z
+                                          LUT4            C_TO_Z_DELAY   0.450        11.525  20      
+n99102                                                    NET DELAY      2.075        13.600  1       
 
 
 Destination Clock Path
@@ -925,8 +926,8 @@ vga_clock                                                 NET DELAY      2.075  
 
  ++++Path 9  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : vga_driver/h_count_447__i7/Q
-Path End         : vga_driver/h_count_447__i4/SR
+Path Begin       : vga_driver/h_count_522__i3/Q
+Path End         : vga_driver/h_count_522__i4/SR
 Source Clock     : vga_clock
 Destination Clock: vga_clock
 Logic Level      : 4
@@ -961,18 +962,18 @@ vga_clock                                                 NET DELAY      2.075  
 Data path
 Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
-vga_driver/h_count_447__i7/CK->vga_driver/h_count_447__i7/Q
-                                          FD1P3XZ         CK_TO_Q_DELAY  1.391         5.691  20      
-pixel_col[7]                                              NET DELAY      0.280         5.971  1       
-vga_driver/i1_2_lut_3_lut/A->vga_driver/i1_2_lut_3_lut/Z
-                                          LUT4            A_TO_Z_DELAY   0.477         6.448  4       
-n106547                                                   NET DELAY      2.075         8.523  1       
-vga_driver/i5_4_lut_adj_88/D->vga_driver/i5_4_lut_adj_88/Z
-                                          LUT4            D_TO_Z_DELAY   0.477         9.000  1       
-vga_driver/n13                                            NET DELAY      2.075        11.075  1       
-vga_driver/i22409_3_lut/A->vga_driver/i22409_3_lut/Z
-                                          LUT4            A_TO_Z_DELAY   0.450        11.525  20      
-vga_driver/n98993                                         NET DELAY      2.075        13.600  1       
+vga_driver/h_count_522__i3/CK->vga_driver/h_count_522__i3/Q
+                                          FD1P3XZ         CK_TO_Q_DELAY  1.391         5.691  19      
+pixel_col[3]                                              NET DELAY      0.280         5.971  1       
+vga_driver/i1_2_lut_3_lut_adj_126/A->vga_driver/i1_2_lut_3_lut_adj_126/Z
+                                          LUT4            A_TO_Z_DELAY   0.477         6.448  2       
+vga_driver/n103                                           NET DELAY      2.075         8.523  1       
+vga_driver/i5_4_lut/C->vga_driver/i5_4_lut/Z
+                                          LUT4            C_TO_Z_DELAY   0.477         9.000  1       
+n12_adj_1174                                              NET DELAY      2.075        11.075  1       
+paddle_two/i1_4_lut_adj_132/C->paddle_two/i1_4_lut_adj_132/Z
+                                          LUT4            C_TO_Z_DELAY   0.450        11.525  20      
+n99102                                                    NET DELAY      2.075        13.600  1       
 
 
 Destination Clock Path
@@ -986,8 +987,8 @@ vga_clock                                                 NET DELAY      2.075  
 
  ++++Path 10  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : vga_driver/h_count_447__i7/Q
-Path End         : vga_driver/h_count_447__i5/SR
+Path Begin       : vga_driver/h_count_522__i3/Q
+Path End         : vga_driver/h_count_522__i5/SR
 Source Clock     : vga_clock
 Destination Clock: vga_clock
 Logic Level      : 4
@@ -1022,18 +1023,18 @@ vga_clock                                                 NET DELAY      2.075  
 Data path
 Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
-vga_driver/h_count_447__i7/CK->vga_driver/h_count_447__i7/Q
-                                          FD1P3XZ         CK_TO_Q_DELAY  1.391         5.691  20      
-pixel_col[7]                                              NET DELAY      0.280         5.971  1       
-vga_driver/i1_2_lut_3_lut/A->vga_driver/i1_2_lut_3_lut/Z
-                                          LUT4            A_TO_Z_DELAY   0.477         6.448  4       
-n106547                                                   NET DELAY      2.075         8.523  1       
-vga_driver/i5_4_lut_adj_88/D->vga_driver/i5_4_lut_adj_88/Z
-                                          LUT4            D_TO_Z_DELAY   0.477         9.000  1       
-vga_driver/n13                                            NET DELAY      2.075        11.075  1       
-vga_driver/i22409_3_lut/A->vga_driver/i22409_3_lut/Z
-                                          LUT4            A_TO_Z_DELAY   0.450        11.525  20      
-vga_driver/n98993                                         NET DELAY      2.075        13.600  1       
+vga_driver/h_count_522__i3/CK->vga_driver/h_count_522__i3/Q
+                                          FD1P3XZ         CK_TO_Q_DELAY  1.391         5.691  19      
+pixel_col[3]                                              NET DELAY      0.280         5.971  1       
+vga_driver/i1_2_lut_3_lut_adj_126/A->vga_driver/i1_2_lut_3_lut_adj_126/Z
+                                          LUT4            A_TO_Z_DELAY   0.477         6.448  2       
+vga_driver/n103                                           NET DELAY      2.075         8.523  1       
+vga_driver/i5_4_lut/C->vga_driver/i5_4_lut/Z
+                                          LUT4            C_TO_Z_DELAY   0.477         9.000  1       
+n12_adj_1174                                              NET DELAY      2.075        11.075  1       
+paddle_two/i1_4_lut_adj_132/C->paddle_two/i1_4_lut_adj_132/Z
+                                          LUT4            C_TO_Z_DELAY   0.450        11.525  20      
+n99102                                                    NET DELAY      2.075        13.600  1       
 
 
 Destination Clock Path
@@ -1050,7 +1051,7 @@ vga_clock                                                 NET DELAY      2.075  
 
 4.1.2  Setup path details for constraint: create_clock -name {clk} -period 83.3333333333333 [get_nets clk]
 ----------------------------------------------------------------------
-31 endpoints scored, 0 timing errors detected.
+49 endpoints scored, 0 timing errors detected.
 
 Minimum Pulse Width Report
 --------------------------
@@ -1067,15 +1068,15 @@ Period margin    : 62.5033 ns  (Passed)
 
  ++++Path 1  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : timer_clock_446__i11/Q
-Path End         : tick_c/D
+Path Begin       : timer_clock__i0/Q
+Path End         : timer_clock__i4/D
 Source Clock     : clk
 Destination Clock: clk
-Logic Level      : 6
-Delay Ratio      : 73.8% (route), 26.2% (logic)
+Logic Level      : 19
+Delay Ratio      : 66.3% (route), 33.7% (logic)
 Clock Skew       : 0.000 ns
 Setup Constraint : 83.333 ns 
-Path Slack       : 68.703 ns  (Passed)
+Path Slack       : 61.568 ns  (Passed)
 
   Destination Clock Arrival Time (clk:R#2)    83.333
 + Destination Clock Source Latency             0.000
@@ -1088,40 +1089,65 @@ End-of-path required time( ns )               85.209
   Source Clock Arrival Time (clk:R#1)    0.000
 + Source Clock Source Latency            0.000
 + Source Clock Path Delay                2.075
-+ Data Path Delay                       14.431
++ Data Path Delay                       21.566
 -------------------------------------   ------
-End-of-path arrival time( ns )          16.506
+End-of-path arrival time( ns )          23.641
 
  
 Source Clock Path
 Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
-inst2/CLKHF                               HSOSC_CORE      CLOCK LATENCY  0.000         0.000  17      
+inst2/CLKHF                               HSOSC_CORE      CLOCK LATENCY  0.000         0.000  27      
 clk                                                       NET DELAY      2.075         2.075  1       
 
 
 Data path
-Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
-----------------------------------------  --------------  -------------  -----  ------------  ------  
-timer_clock_446__i11/CK->timer_clock_446__i11/Q
-                                          FD1P3XZ         CK_TO_Q_DELAY  1.391         3.466  2       
-timer_clock[11]                                           NET DELAY      0.280         3.746  1       
-i9_4_lut/B->i9_4_lut/Z                    LUT4            B_TO_Z_DELAY   0.477         4.223  1       
-n24                                                       NET DELAY      2.075         6.298  1       
-i12_4_lut/B->i12_4_lut/Z                  LUT4            B_TO_Z_DELAY   0.477         6.775  1       
-n27                                                       NET DELAY      2.075         8.850  1       
-i6_4_lut/B->i6_4_lut/Z                    LUT4            B_TO_Z_DELAY   0.477         9.327  1       
-n15                                                       NET DELAY      2.075        11.402  1       
-i8_4_lut/A->i8_4_lut/Z                    LUT4            A_TO_Z_DELAY   0.477        11.879  16      
-n107016                                                   NET DELAY      2.075        13.954  1       
-i1_2_lut_adj_125/B->i1_2_lut_adj_125/Z    LUT4            B_TO_Z_DELAY   0.477        14.431  1       
-n106402                                                   NET DELAY      2.075        16.506  1       
+Name                                      Cell/Site Name  Delay Name        Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  ----------------  -----  ------------  ------  
+timer_clock__i0/CK->timer_clock__i0/Q     FD1P3XZ         CK_TO_Q_DELAY     1.391         3.466  1       
+timer_clock[0]                                            NET DELAY         2.075         5.541  1       
+add_72_add_5_1/B1->add_72_add_5_1/CO1     FA2             B1_TO_CO1_DELAY   0.358         5.899  2       
+n117499                                                   NET DELAY         0.280         6.179  1       
+add_72_add_5_3/CI0->add_72_add_5_3/CO0    FA2             CI0_TO_CO0_DELAY  0.278         6.457  2       
+n130435                                                   NET DELAY         0.280         6.737  1       
+add_72_add_5_3/CI1->add_72_add_5_3/CO1    FA2             CI1_TO_CO1_DELAY  0.278         7.015  2       
+n117501                                                   NET DELAY         0.280         7.295  1       
+add_72_add_5_5/CI0->add_72_add_5_5/CO0    FA2             CI0_TO_CO0_DELAY  0.278         7.573  2       
+n130438                                                   NET DELAY         0.280         7.853  1       
+add_72_add_5_5/CI1->add_72_add_5_5/CO1    FA2             CI1_TO_CO1_DELAY  0.278         8.131  2       
+n117503                                                   NET DELAY         0.280         8.411  1       
+add_72_add_5_7/CI0->add_72_add_5_7/CO0    FA2             CI0_TO_CO0_DELAY  0.278         8.689  2       
+n130441                                                   NET DELAY         0.280         8.969  1       
+add_72_add_5_7/CI1->add_72_add_5_7/CO1    FA2             CI1_TO_CO1_DELAY  0.278         9.247  2       
+n117505                                                   NET DELAY         0.280         9.527  1       
+add_72_add_5_9/CI0->add_72_add_5_9/CO0    FA2             CI0_TO_CO0_DELAY  0.278         9.805  2       
+n130444                                                   NET DELAY         0.280        10.085  1       
+add_72_add_5_9/CI1->add_72_add_5_9/CO1    FA2             CI1_TO_CO1_DELAY  0.278        10.363  2       
+n117507                                                   NET DELAY         0.280        10.643  1       
+add_72_add_5_11/CI0->add_72_add_5_11/CO0  FA2             CI0_TO_CO0_DELAY  0.278        10.921  2       
+n130447                                                   NET DELAY         0.280        11.201  1       
+add_72_add_5_11/CI1->add_72_add_5_11/CO1  FA2             CI1_TO_CO1_DELAY  0.278        11.479  2       
+n117509                                                   NET DELAY         0.280        11.759  1       
+add_72_add_5_13/CI0->add_72_add_5_13/CO0  FA2             CI0_TO_CO0_DELAY  0.278        12.037  2       
+n130450                                                   NET DELAY         0.280        12.317  1       
+add_72_add_5_13/CI1->add_72_add_5_13/CO1  FA2             CI1_TO_CO1_DELAY  0.278        12.595  2       
+n117511                                                   NET DELAY         0.280        12.875  1       
+add_72_add_5_15/CI0->add_72_add_5_15/CO0  FA2             CI0_TO_CO0_DELAY  0.278        13.153  2       
+n130453                                                   NET DELAY         0.280        13.433  1       
+add_72_add_5_15/D1->add_72_add_5_15/S1    FA2             D1_TO_S1_DELAY    0.477        13.910  1       
+timer_clock_14__N_40[14]                                  NET DELAY         2.075        15.985  1       
+i1_2_lut/A->i1_2_lut/Z                    LUT4            A_TO_Z_DELAY      0.477        16.462  1       
+n4_adj_1189                                               NET DELAY         2.075        18.537  1       
+i2_4_lut/B->i2_4_lut/Z                    LUT4            B_TO_Z_DELAY      0.477        19.014  14      
+timer_clock_14__N_55                                      NET DELAY         2.075        21.089  1       
+i7224_2_lut/A->i7224_2_lut/Z              LUT4            A_TO_Z_DELAY      0.477        21.566  1       
+n107426                                                   NET DELAY         2.075        23.641  1       
 
 
 Destination Clock Path
 Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
-inst2/CLKHF                               HSOSC_CORE      CLOCK LATENCY  0.000         0.000  17      
+inst2/CLKHF                               HSOSC_CORE      CLOCK LATENCY  0.000         0.000  27      
 clk                                                       NET DELAY      2.075         2.075  1       
 
 
@@ -1129,59 +1155,86 @@ clk                                                       NET DELAY      2.075  
 
  ++++Path 2  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : timer_clock_446__i11/Q
-Path End         : timer_clock_446__i1/SR
+Path Begin       : timer_clock__i0/Q
+Path End         : timer_clock__i5/D
 Source Clock     : clk
 Destination Clock: clk
-Logic Level      : 5
-Delay Ratio      : 72.4% (route), 27.6% (logic)
+Logic Level      : 19
+Delay Ratio      : 66.3% (route), 33.7% (logic)
 Clock Skew       : 0.000 ns
 Setup Constraint : 83.333 ns 
-Path Slack       : 70.951 ns  (Passed)
+Path Slack       : 61.568 ns  (Passed)
 
   Destination Clock Arrival Time (clk:R#2)    83.333
 + Destination Clock Source Latency             0.000
 - Destination Clock Uncertainty                0.000
 + Destination Clock Path Delay                 2.075
-- Setup Time                                   0.530
+- Setup Time                                   0.199
 ------------------------------------------   -------
-End-of-path required time( ns )               84.878
+End-of-path required time( ns )               85.209
 
   Source Clock Arrival Time (clk:R#1)    0.000
 + Source Clock Source Latency            0.000
 + Source Clock Path Delay                2.075
-+ Data Path Delay                       11.852
++ Data Path Delay                       21.566
 -------------------------------------   ------
-End-of-path arrival time( ns )          13.927
+End-of-path arrival time( ns )          23.641
 
  
 Source Clock Path
 Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
-inst2/CLKHF                               HSOSC_CORE      CLOCK LATENCY  0.000         0.000  17      
+inst2/CLKHF                               HSOSC_CORE      CLOCK LATENCY  0.000         0.000  27      
 clk                                                       NET DELAY      2.075         2.075  1       
 
 
 Data path
-Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
-----------------------------------------  --------------  -------------  -----  ------------  ------  
-timer_clock_446__i11/CK->timer_clock_446__i11/Q
-                                          FD1P3XZ         CK_TO_Q_DELAY  1.391         3.466  2       
-timer_clock[11]                                           NET DELAY      0.280         3.746  1       
-i9_4_lut/B->i9_4_lut/Z                    LUT4            B_TO_Z_DELAY   0.477         4.223  1       
-n24                                                       NET DELAY      2.075         6.298  1       
-i12_4_lut/B->i12_4_lut/Z                  LUT4            B_TO_Z_DELAY   0.477         6.775  1       
-n27                                                       NET DELAY      2.075         8.850  1       
-i6_4_lut/B->i6_4_lut/Z                    LUT4            B_TO_Z_DELAY   0.477         9.327  1       
-n15                                                       NET DELAY      2.075        11.402  1       
-i8_4_lut/A->i8_4_lut/Z                    LUT4            A_TO_Z_DELAY   0.450        11.852  16      
-n107016                                                   NET DELAY      2.075        13.927  1       
+Name                                      Cell/Site Name  Delay Name        Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  ----------------  -----  ------------  ------  
+timer_clock__i0/CK->timer_clock__i0/Q     FD1P3XZ         CK_TO_Q_DELAY     1.391         3.466  1       
+timer_clock[0]                                            NET DELAY         2.075         5.541  1       
+add_72_add_5_1/B1->add_72_add_5_1/CO1     FA2             B1_TO_CO1_DELAY   0.358         5.899  2       
+n117499                                                   NET DELAY         0.280         6.179  1       
+add_72_add_5_3/CI0->add_72_add_5_3/CO0    FA2             CI0_TO_CO0_DELAY  0.278         6.457  2       
+n130435                                                   NET DELAY         0.280         6.737  1       
+add_72_add_5_3/CI1->add_72_add_5_3/CO1    FA2             CI1_TO_CO1_DELAY  0.278         7.015  2       
+n117501                                                   NET DELAY         0.280         7.295  1       
+add_72_add_5_5/CI0->add_72_add_5_5/CO0    FA2             CI0_TO_CO0_DELAY  0.278         7.573  2       
+n130438                                                   NET DELAY         0.280         7.853  1       
+add_72_add_5_5/CI1->add_72_add_5_5/CO1    FA2             CI1_TO_CO1_DELAY  0.278         8.131  2       
+n117503                                                   NET DELAY         0.280         8.411  1       
+add_72_add_5_7/CI0->add_72_add_5_7/CO0    FA2             CI0_TO_CO0_DELAY  0.278         8.689  2       
+n130441                                                   NET DELAY         0.280         8.969  1       
+add_72_add_5_7/CI1->add_72_add_5_7/CO1    FA2             CI1_TO_CO1_DELAY  0.278         9.247  2       
+n117505                                                   NET DELAY         0.280         9.527  1       
+add_72_add_5_9/CI0->add_72_add_5_9/CO0    FA2             CI0_TO_CO0_DELAY  0.278         9.805  2       
+n130444                                                   NET DELAY         0.280        10.085  1       
+add_72_add_5_9/CI1->add_72_add_5_9/CO1    FA2             CI1_TO_CO1_DELAY  0.278        10.363  2       
+n117507                                                   NET DELAY         0.280        10.643  1       
+add_72_add_5_11/CI0->add_72_add_5_11/CO0  FA2             CI0_TO_CO0_DELAY  0.278        10.921  2       
+n130447                                                   NET DELAY         0.280        11.201  1       
+add_72_add_5_11/CI1->add_72_add_5_11/CO1  FA2             CI1_TO_CO1_DELAY  0.278        11.479  2       
+n117509                                                   NET DELAY         0.280        11.759  1       
+add_72_add_5_13/CI0->add_72_add_5_13/CO0  FA2             CI0_TO_CO0_DELAY  0.278        12.037  2       
+n130450                                                   NET DELAY         0.280        12.317  1       
+add_72_add_5_13/CI1->add_72_add_5_13/CO1  FA2             CI1_TO_CO1_DELAY  0.278        12.595  2       
+n117511                                                   NET DELAY         0.280        12.875  1       
+add_72_add_5_15/CI0->add_72_add_5_15/CO0  FA2             CI0_TO_CO0_DELAY  0.278        13.153  2       
+n130453                                                   NET DELAY         0.280        13.433  1       
+add_72_add_5_15/D1->add_72_add_5_15/S1    FA2             D1_TO_S1_DELAY    0.477        13.910  1       
+timer_clock_14__N_40[14]                                  NET DELAY         2.075        15.985  1       
+i1_2_lut/A->i1_2_lut/Z                    LUT4            A_TO_Z_DELAY      0.477        16.462  1       
+n4_adj_1189                                               NET DELAY         2.075        18.537  1       
+i2_4_lut/B->i2_4_lut/Z                    LUT4            B_TO_Z_DELAY      0.477        19.014  14      
+timer_clock_14__N_55                                      NET DELAY         2.075        21.089  1       
+i7225_2_lut/A->i7225_2_lut/Z              LUT4            A_TO_Z_DELAY      0.477        21.566  1       
+n107427                                                   NET DELAY         2.075        23.641  1       
 
 
 Destination Clock Path
 Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
-inst2/CLKHF                               HSOSC_CORE      CLOCK LATENCY  0.000         0.000  17      
+inst2/CLKHF                               HSOSC_CORE      CLOCK LATENCY  0.000         0.000  27      
 clk                                                       NET DELAY      2.075         2.075  1       
 
 
@@ -1189,59 +1242,86 @@ clk                                                       NET DELAY      2.075  
 
  ++++Path 3  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : timer_clock_446__i11/Q
-Path End         : timer_clock_446__i2/SR
+Path Begin       : timer_clock__i0/Q
+Path End         : timer_clock__i6/D
 Source Clock     : clk
 Destination Clock: clk
-Logic Level      : 5
-Delay Ratio      : 72.4% (route), 27.6% (logic)
+Logic Level      : 19
+Delay Ratio      : 66.3% (route), 33.7% (logic)
 Clock Skew       : 0.000 ns
 Setup Constraint : 83.333 ns 
-Path Slack       : 70.951 ns  (Passed)
+Path Slack       : 61.568 ns  (Passed)
 
   Destination Clock Arrival Time (clk:R#2)    83.333
 + Destination Clock Source Latency             0.000
 - Destination Clock Uncertainty                0.000
 + Destination Clock Path Delay                 2.075
-- Setup Time                                   0.530
+- Setup Time                                   0.199
 ------------------------------------------   -------
-End-of-path required time( ns )               84.878
+End-of-path required time( ns )               85.209
 
   Source Clock Arrival Time (clk:R#1)    0.000
 + Source Clock Source Latency            0.000
 + Source Clock Path Delay                2.075
-+ Data Path Delay                       11.852
++ Data Path Delay                       21.566
 -------------------------------------   ------
-End-of-path arrival time( ns )          13.927
+End-of-path arrival time( ns )          23.641
 
  
 Source Clock Path
 Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
-inst2/CLKHF                               HSOSC_CORE      CLOCK LATENCY  0.000         0.000  17      
+inst2/CLKHF                               HSOSC_CORE      CLOCK LATENCY  0.000         0.000  27      
 clk                                                       NET DELAY      2.075         2.075  1       
 
 
 Data path
-Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
-----------------------------------------  --------------  -------------  -----  ------------  ------  
-timer_clock_446__i11/CK->timer_clock_446__i11/Q
-                                          FD1P3XZ         CK_TO_Q_DELAY  1.391         3.466  2       
-timer_clock[11]                                           NET DELAY      0.280         3.746  1       
-i9_4_lut/B->i9_4_lut/Z                    LUT4            B_TO_Z_DELAY   0.477         4.223  1       
-n24                                                       NET DELAY      2.075         6.298  1       
-i12_4_lut/B->i12_4_lut/Z                  LUT4            B_TO_Z_DELAY   0.477         6.775  1       
-n27                                                       NET DELAY      2.075         8.850  1       
-i6_4_lut/B->i6_4_lut/Z                    LUT4            B_TO_Z_DELAY   0.477         9.327  1       
-n15                                                       NET DELAY      2.075        11.402  1       
-i8_4_lut/A->i8_4_lut/Z                    LUT4            A_TO_Z_DELAY   0.450        11.852  16      
-n107016                                                   NET DELAY      2.075        13.927  1       
+Name                                      Cell/Site Name  Delay Name        Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  ----------------  -----  ------------  ------  
+timer_clock__i0/CK->timer_clock__i0/Q     FD1P3XZ         CK_TO_Q_DELAY     1.391         3.466  1       
+timer_clock[0]                                            NET DELAY         2.075         5.541  1       
+add_72_add_5_1/B1->add_72_add_5_1/CO1     FA2             B1_TO_CO1_DELAY   0.358         5.899  2       
+n117499                                                   NET DELAY         0.280         6.179  1       
+add_72_add_5_3/CI0->add_72_add_5_3/CO0    FA2             CI0_TO_CO0_DELAY  0.278         6.457  2       
+n130435                                                   NET DELAY         0.280         6.737  1       
+add_72_add_5_3/CI1->add_72_add_5_3/CO1    FA2             CI1_TO_CO1_DELAY  0.278         7.015  2       
+n117501                                                   NET DELAY         0.280         7.295  1       
+add_72_add_5_5/CI0->add_72_add_5_5/CO0    FA2             CI0_TO_CO0_DELAY  0.278         7.573  2       
+n130438                                                   NET DELAY         0.280         7.853  1       
+add_72_add_5_5/CI1->add_72_add_5_5/CO1    FA2             CI1_TO_CO1_DELAY  0.278         8.131  2       
+n117503                                                   NET DELAY         0.280         8.411  1       
+add_72_add_5_7/CI0->add_72_add_5_7/CO0    FA2             CI0_TO_CO0_DELAY  0.278         8.689  2       
+n130441                                                   NET DELAY         0.280         8.969  1       
+add_72_add_5_7/CI1->add_72_add_5_7/CO1    FA2             CI1_TO_CO1_DELAY  0.278         9.247  2       
+n117505                                                   NET DELAY         0.280         9.527  1       
+add_72_add_5_9/CI0->add_72_add_5_9/CO0    FA2             CI0_TO_CO0_DELAY  0.278         9.805  2       
+n130444                                                   NET DELAY         0.280        10.085  1       
+add_72_add_5_9/CI1->add_72_add_5_9/CO1    FA2             CI1_TO_CO1_DELAY  0.278        10.363  2       
+n117507                                                   NET DELAY         0.280        10.643  1       
+add_72_add_5_11/CI0->add_72_add_5_11/CO0  FA2             CI0_TO_CO0_DELAY  0.278        10.921  2       
+n130447                                                   NET DELAY         0.280        11.201  1       
+add_72_add_5_11/CI1->add_72_add_5_11/CO1  FA2             CI1_TO_CO1_DELAY  0.278        11.479  2       
+n117509                                                   NET DELAY         0.280        11.759  1       
+add_72_add_5_13/CI0->add_72_add_5_13/CO0  FA2             CI0_TO_CO0_DELAY  0.278        12.037  2       
+n130450                                                   NET DELAY         0.280        12.317  1       
+add_72_add_5_13/CI1->add_72_add_5_13/CO1  FA2             CI1_TO_CO1_DELAY  0.278        12.595  2       
+n117511                                                   NET DELAY         0.280        12.875  1       
+add_72_add_5_15/CI0->add_72_add_5_15/CO0  FA2             CI0_TO_CO0_DELAY  0.278        13.153  2       
+n130453                                                   NET DELAY         0.280        13.433  1       
+add_72_add_5_15/D1->add_72_add_5_15/S1    FA2             D1_TO_S1_DELAY    0.477        13.910  1       
+timer_clock_14__N_40[14]                                  NET DELAY         2.075        15.985  1       
+i1_2_lut/A->i1_2_lut/Z                    LUT4            A_TO_Z_DELAY      0.477        16.462  1       
+n4_adj_1189                                               NET DELAY         2.075        18.537  1       
+i2_4_lut/B->i2_4_lut/Z                    LUT4            B_TO_Z_DELAY      0.477        19.014  14      
+timer_clock_14__N_55                                      NET DELAY         2.075        21.089  1       
+i7226_2_lut/A->i7226_2_lut/Z              LUT4            A_TO_Z_DELAY      0.477        21.566  1       
+n107428                                                   NET DELAY         2.075        23.641  1       
 
 
 Destination Clock Path
 Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
-inst2/CLKHF                               HSOSC_CORE      CLOCK LATENCY  0.000         0.000  17      
+inst2/CLKHF                               HSOSC_CORE      CLOCK LATENCY  0.000         0.000  27      
 clk                                                       NET DELAY      2.075         2.075  1       
 
 
@@ -1249,59 +1329,86 @@ clk                                                       NET DELAY      2.075  
 
  ++++Path 4  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : timer_clock_446__i11/Q
-Path End         : timer_clock_446__i3/SR
+Path Begin       : timer_clock__i0/Q
+Path End         : timer_clock__i7/D
 Source Clock     : clk
 Destination Clock: clk
-Logic Level      : 5
-Delay Ratio      : 72.4% (route), 27.6% (logic)
+Logic Level      : 19
+Delay Ratio      : 66.3% (route), 33.7% (logic)
 Clock Skew       : 0.000 ns
 Setup Constraint : 83.333 ns 
-Path Slack       : 70.951 ns  (Passed)
+Path Slack       : 61.568 ns  (Passed)
 
   Destination Clock Arrival Time (clk:R#2)    83.333
 + Destination Clock Source Latency             0.000
 - Destination Clock Uncertainty                0.000
 + Destination Clock Path Delay                 2.075
-- Setup Time                                   0.530
+- Setup Time                                   0.199
 ------------------------------------------   -------
-End-of-path required time( ns )               84.878
+End-of-path required time( ns )               85.209
 
   Source Clock Arrival Time (clk:R#1)    0.000
 + Source Clock Source Latency            0.000
 + Source Clock Path Delay                2.075
-+ Data Path Delay                       11.852
++ Data Path Delay                       21.566
 -------------------------------------   ------
-End-of-path arrival time( ns )          13.927
+End-of-path arrival time( ns )          23.641
 
  
 Source Clock Path
 Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
-inst2/CLKHF                               HSOSC_CORE      CLOCK LATENCY  0.000         0.000  17      
+inst2/CLKHF                               HSOSC_CORE      CLOCK LATENCY  0.000         0.000  27      
 clk                                                       NET DELAY      2.075         2.075  1       
 
 
 Data path
-Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
-----------------------------------------  --------------  -------------  -----  ------------  ------  
-timer_clock_446__i11/CK->timer_clock_446__i11/Q
-                                          FD1P3XZ         CK_TO_Q_DELAY  1.391         3.466  2       
-timer_clock[11]                                           NET DELAY      0.280         3.746  1       
-i9_4_lut/B->i9_4_lut/Z                    LUT4            B_TO_Z_DELAY   0.477         4.223  1       
-n24                                                       NET DELAY      2.075         6.298  1       
-i12_4_lut/B->i12_4_lut/Z                  LUT4            B_TO_Z_DELAY   0.477         6.775  1       
-n27                                                       NET DELAY      2.075         8.850  1       
-i6_4_lut/B->i6_4_lut/Z                    LUT4            B_TO_Z_DELAY   0.477         9.327  1       
-n15                                                       NET DELAY      2.075        11.402  1       
-i8_4_lut/A->i8_4_lut/Z                    LUT4            A_TO_Z_DELAY   0.450        11.852  16      
-n107016                                                   NET DELAY      2.075        13.927  1       
+Name                                      Cell/Site Name  Delay Name        Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  ----------------  -----  ------------  ------  
+timer_clock__i0/CK->timer_clock__i0/Q     FD1P3XZ         CK_TO_Q_DELAY     1.391         3.466  1       
+timer_clock[0]                                            NET DELAY         2.075         5.541  1       
+add_72_add_5_1/B1->add_72_add_5_1/CO1     FA2             B1_TO_CO1_DELAY   0.358         5.899  2       
+n117499                                                   NET DELAY         0.280         6.179  1       
+add_72_add_5_3/CI0->add_72_add_5_3/CO0    FA2             CI0_TO_CO0_DELAY  0.278         6.457  2       
+n130435                                                   NET DELAY         0.280         6.737  1       
+add_72_add_5_3/CI1->add_72_add_5_3/CO1    FA2             CI1_TO_CO1_DELAY  0.278         7.015  2       
+n117501                                                   NET DELAY         0.280         7.295  1       
+add_72_add_5_5/CI0->add_72_add_5_5/CO0    FA2             CI0_TO_CO0_DELAY  0.278         7.573  2       
+n130438                                                   NET DELAY         0.280         7.853  1       
+add_72_add_5_5/CI1->add_72_add_5_5/CO1    FA2             CI1_TO_CO1_DELAY  0.278         8.131  2       
+n117503                                                   NET DELAY         0.280         8.411  1       
+add_72_add_5_7/CI0->add_72_add_5_7/CO0    FA2             CI0_TO_CO0_DELAY  0.278         8.689  2       
+n130441                                                   NET DELAY         0.280         8.969  1       
+add_72_add_5_7/CI1->add_72_add_5_7/CO1    FA2             CI1_TO_CO1_DELAY  0.278         9.247  2       
+n117505                                                   NET DELAY         0.280         9.527  1       
+add_72_add_5_9/CI0->add_72_add_5_9/CO0    FA2             CI0_TO_CO0_DELAY  0.278         9.805  2       
+n130444                                                   NET DELAY         0.280        10.085  1       
+add_72_add_5_9/CI1->add_72_add_5_9/CO1    FA2             CI1_TO_CO1_DELAY  0.278        10.363  2       
+n117507                                                   NET DELAY         0.280        10.643  1       
+add_72_add_5_11/CI0->add_72_add_5_11/CO0  FA2             CI0_TO_CO0_DELAY  0.278        10.921  2       
+n130447                                                   NET DELAY         0.280        11.201  1       
+add_72_add_5_11/CI1->add_72_add_5_11/CO1  FA2             CI1_TO_CO1_DELAY  0.278        11.479  2       
+n117509                                                   NET DELAY         0.280        11.759  1       
+add_72_add_5_13/CI0->add_72_add_5_13/CO0  FA2             CI0_TO_CO0_DELAY  0.278        12.037  2       
+n130450                                                   NET DELAY         0.280        12.317  1       
+add_72_add_5_13/CI1->add_72_add_5_13/CO1  FA2             CI1_TO_CO1_DELAY  0.278        12.595  2       
+n117511                                                   NET DELAY         0.280        12.875  1       
+add_72_add_5_15/CI0->add_72_add_5_15/CO0  FA2             CI0_TO_CO0_DELAY  0.278        13.153  2       
+n130453                                                   NET DELAY         0.280        13.433  1       
+add_72_add_5_15/D1->add_72_add_5_15/S1    FA2             D1_TO_S1_DELAY    0.477        13.910  1       
+timer_clock_14__N_40[14]                                  NET DELAY         2.075        15.985  1       
+i1_2_lut/A->i1_2_lut/Z                    LUT4            A_TO_Z_DELAY      0.477        16.462  1       
+n4_adj_1189                                               NET DELAY         2.075        18.537  1       
+i2_4_lut/B->i2_4_lut/Z                    LUT4            B_TO_Z_DELAY      0.477        19.014  14      
+timer_clock_14__N_55                                      NET DELAY         2.075        21.089  1       
+i7227_2_lut/A->i7227_2_lut/Z              LUT4            A_TO_Z_DELAY      0.477        21.566  1       
+n107429                                                   NET DELAY         2.075        23.641  1       
 
 
 Destination Clock Path
 Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
-inst2/CLKHF                               HSOSC_CORE      CLOCK LATENCY  0.000         0.000  17      
+inst2/CLKHF                               HSOSC_CORE      CLOCK LATENCY  0.000         0.000  27      
 clk                                                       NET DELAY      2.075         2.075  1       
 
 
@@ -1309,59 +1416,86 @@ clk                                                       NET DELAY      2.075  
 
  ++++Path 5  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : timer_clock_446__i11/Q
-Path End         : timer_clock_446__i4/SR
+Path Begin       : timer_clock__i0/Q
+Path End         : timer_clock__i8/D
 Source Clock     : clk
 Destination Clock: clk
-Logic Level      : 5
-Delay Ratio      : 72.4% (route), 27.6% (logic)
+Logic Level      : 19
+Delay Ratio      : 66.3% (route), 33.7% (logic)
 Clock Skew       : 0.000 ns
 Setup Constraint : 83.333 ns 
-Path Slack       : 70.951 ns  (Passed)
+Path Slack       : 61.568 ns  (Passed)
 
   Destination Clock Arrival Time (clk:R#2)    83.333
 + Destination Clock Source Latency             0.000
 - Destination Clock Uncertainty                0.000
 + Destination Clock Path Delay                 2.075
-- Setup Time                                   0.530
+- Setup Time                                   0.199
 ------------------------------------------   -------
-End-of-path required time( ns )               84.878
+End-of-path required time( ns )               85.209
 
   Source Clock Arrival Time (clk:R#1)    0.000
 + Source Clock Source Latency            0.000
 + Source Clock Path Delay                2.075
-+ Data Path Delay                       11.852
++ Data Path Delay                       21.566
 -------------------------------------   ------
-End-of-path arrival time( ns )          13.927
+End-of-path arrival time( ns )          23.641
 
  
 Source Clock Path
 Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
-inst2/CLKHF                               HSOSC_CORE      CLOCK LATENCY  0.000         0.000  17      
+inst2/CLKHF                               HSOSC_CORE      CLOCK LATENCY  0.000         0.000  27      
 clk                                                       NET DELAY      2.075         2.075  1       
 
 
 Data path
-Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
-----------------------------------------  --------------  -------------  -----  ------------  ------  
-timer_clock_446__i11/CK->timer_clock_446__i11/Q
-                                          FD1P3XZ         CK_TO_Q_DELAY  1.391         3.466  2       
-timer_clock[11]                                           NET DELAY      0.280         3.746  1       
-i9_4_lut/B->i9_4_lut/Z                    LUT4            B_TO_Z_DELAY   0.477         4.223  1       
-n24                                                       NET DELAY      2.075         6.298  1       
-i12_4_lut/B->i12_4_lut/Z                  LUT4            B_TO_Z_DELAY   0.477         6.775  1       
-n27                                                       NET DELAY      2.075         8.850  1       
-i6_4_lut/B->i6_4_lut/Z                    LUT4            B_TO_Z_DELAY   0.477         9.327  1       
-n15                                                       NET DELAY      2.075        11.402  1       
-i8_4_lut/A->i8_4_lut/Z                    LUT4            A_TO_Z_DELAY   0.450        11.852  16      
-n107016                                                   NET DELAY      2.075        13.927  1       
+Name                                      Cell/Site Name  Delay Name        Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  ----------------  -----  ------------  ------  
+timer_clock__i0/CK->timer_clock__i0/Q     FD1P3XZ         CK_TO_Q_DELAY     1.391         3.466  1       
+timer_clock[0]                                            NET DELAY         2.075         5.541  1       
+add_72_add_5_1/B1->add_72_add_5_1/CO1     FA2             B1_TO_CO1_DELAY   0.358         5.899  2       
+n117499                                                   NET DELAY         0.280         6.179  1       
+add_72_add_5_3/CI0->add_72_add_5_3/CO0    FA2             CI0_TO_CO0_DELAY  0.278         6.457  2       
+n130435                                                   NET DELAY         0.280         6.737  1       
+add_72_add_5_3/CI1->add_72_add_5_3/CO1    FA2             CI1_TO_CO1_DELAY  0.278         7.015  2       
+n117501                                                   NET DELAY         0.280         7.295  1       
+add_72_add_5_5/CI0->add_72_add_5_5/CO0    FA2             CI0_TO_CO0_DELAY  0.278         7.573  2       
+n130438                                                   NET DELAY         0.280         7.853  1       
+add_72_add_5_5/CI1->add_72_add_5_5/CO1    FA2             CI1_TO_CO1_DELAY  0.278         8.131  2       
+n117503                                                   NET DELAY         0.280         8.411  1       
+add_72_add_5_7/CI0->add_72_add_5_7/CO0    FA2             CI0_TO_CO0_DELAY  0.278         8.689  2       
+n130441                                                   NET DELAY         0.280         8.969  1       
+add_72_add_5_7/CI1->add_72_add_5_7/CO1    FA2             CI1_TO_CO1_DELAY  0.278         9.247  2       
+n117505                                                   NET DELAY         0.280         9.527  1       
+add_72_add_5_9/CI0->add_72_add_5_9/CO0    FA2             CI0_TO_CO0_DELAY  0.278         9.805  2       
+n130444                                                   NET DELAY         0.280        10.085  1       
+add_72_add_5_9/CI1->add_72_add_5_9/CO1    FA2             CI1_TO_CO1_DELAY  0.278        10.363  2       
+n117507                                                   NET DELAY         0.280        10.643  1       
+add_72_add_5_11/CI0->add_72_add_5_11/CO0  FA2             CI0_TO_CO0_DELAY  0.278        10.921  2       
+n130447                                                   NET DELAY         0.280        11.201  1       
+add_72_add_5_11/CI1->add_72_add_5_11/CO1  FA2             CI1_TO_CO1_DELAY  0.278        11.479  2       
+n117509                                                   NET DELAY         0.280        11.759  1       
+add_72_add_5_13/CI0->add_72_add_5_13/CO0  FA2             CI0_TO_CO0_DELAY  0.278        12.037  2       
+n130450                                                   NET DELAY         0.280        12.317  1       
+add_72_add_5_13/CI1->add_72_add_5_13/CO1  FA2             CI1_TO_CO1_DELAY  0.278        12.595  2       
+n117511                                                   NET DELAY         0.280        12.875  1       
+add_72_add_5_15/CI0->add_72_add_5_15/CO0  FA2             CI0_TO_CO0_DELAY  0.278        13.153  2       
+n130453                                                   NET DELAY         0.280        13.433  1       
+add_72_add_5_15/D1->add_72_add_5_15/S1    FA2             D1_TO_S1_DELAY    0.477        13.910  1       
+timer_clock_14__N_40[14]                                  NET DELAY         2.075        15.985  1       
+i1_2_lut/A->i1_2_lut/Z                    LUT4            A_TO_Z_DELAY      0.477        16.462  1       
+n4_adj_1189                                               NET DELAY         2.075        18.537  1       
+i2_4_lut/B->i2_4_lut/Z                    LUT4            B_TO_Z_DELAY      0.477        19.014  14      
+timer_clock_14__N_55                                      NET DELAY         2.075        21.089  1       
+i7228_2_lut/A->i7228_2_lut/Z              LUT4            A_TO_Z_DELAY      0.477        21.566  1       
+n107430                                                   NET DELAY         2.075        23.641  1       
 
 
 Destination Clock Path
 Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
-inst2/CLKHF                               HSOSC_CORE      CLOCK LATENCY  0.000         0.000  17      
+inst2/CLKHF                               HSOSC_CORE      CLOCK LATENCY  0.000         0.000  27      
 clk                                                       NET DELAY      2.075         2.075  1       
 
 
@@ -1369,59 +1503,86 @@ clk                                                       NET DELAY      2.075  
 
  ++++Path 6  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : timer_clock_446__i11/Q
-Path End         : timer_clock_446__i5/SR
+Path Begin       : timer_clock__i0/Q
+Path End         : timer_clock__i12/D
 Source Clock     : clk
 Destination Clock: clk
-Logic Level      : 5
-Delay Ratio      : 72.4% (route), 27.6% (logic)
+Logic Level      : 19
+Delay Ratio      : 66.3% (route), 33.7% (logic)
 Clock Skew       : 0.000 ns
 Setup Constraint : 83.333 ns 
-Path Slack       : 70.951 ns  (Passed)
+Path Slack       : 61.568 ns  (Passed)
 
   Destination Clock Arrival Time (clk:R#2)    83.333
 + Destination Clock Source Latency             0.000
 - Destination Clock Uncertainty                0.000
 + Destination Clock Path Delay                 2.075
-- Setup Time                                   0.530
+- Setup Time                                   0.199
 ------------------------------------------   -------
-End-of-path required time( ns )               84.878
+End-of-path required time( ns )               85.209
 
   Source Clock Arrival Time (clk:R#1)    0.000
 + Source Clock Source Latency            0.000
 + Source Clock Path Delay                2.075
-+ Data Path Delay                       11.852
++ Data Path Delay                       21.566
 -------------------------------------   ------
-End-of-path arrival time( ns )          13.927
+End-of-path arrival time( ns )          23.641
 
  
 Source Clock Path
 Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
-inst2/CLKHF                               HSOSC_CORE      CLOCK LATENCY  0.000         0.000  17      
+inst2/CLKHF                               HSOSC_CORE      CLOCK LATENCY  0.000         0.000  27      
 clk                                                       NET DELAY      2.075         2.075  1       
 
 
 Data path
-Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
-----------------------------------------  --------------  -------------  -----  ------------  ------  
-timer_clock_446__i11/CK->timer_clock_446__i11/Q
-                                          FD1P3XZ         CK_TO_Q_DELAY  1.391         3.466  2       
-timer_clock[11]                                           NET DELAY      0.280         3.746  1       
-i9_4_lut/B->i9_4_lut/Z                    LUT4            B_TO_Z_DELAY   0.477         4.223  1       
-n24                                                       NET DELAY      2.075         6.298  1       
-i12_4_lut/B->i12_4_lut/Z                  LUT4            B_TO_Z_DELAY   0.477         6.775  1       
-n27                                                       NET DELAY      2.075         8.850  1       
-i6_4_lut/B->i6_4_lut/Z                    LUT4            B_TO_Z_DELAY   0.477         9.327  1       
-n15                                                       NET DELAY      2.075        11.402  1       
-i8_4_lut/A->i8_4_lut/Z                    LUT4            A_TO_Z_DELAY   0.450        11.852  16      
-n107016                                                   NET DELAY      2.075        13.927  1       
+Name                                      Cell/Site Name  Delay Name        Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  ----------------  -----  ------------  ------  
+timer_clock__i0/CK->timer_clock__i0/Q     FD1P3XZ         CK_TO_Q_DELAY     1.391         3.466  1       
+timer_clock[0]                                            NET DELAY         2.075         5.541  1       
+add_72_add_5_1/B1->add_72_add_5_1/CO1     FA2             B1_TO_CO1_DELAY   0.358         5.899  2       
+n117499                                                   NET DELAY         0.280         6.179  1       
+add_72_add_5_3/CI0->add_72_add_5_3/CO0    FA2             CI0_TO_CO0_DELAY  0.278         6.457  2       
+n130435                                                   NET DELAY         0.280         6.737  1       
+add_72_add_5_3/CI1->add_72_add_5_3/CO1    FA2             CI1_TO_CO1_DELAY  0.278         7.015  2       
+n117501                                                   NET DELAY         0.280         7.295  1       
+add_72_add_5_5/CI0->add_72_add_5_5/CO0    FA2             CI0_TO_CO0_DELAY  0.278         7.573  2       
+n130438                                                   NET DELAY         0.280         7.853  1       
+add_72_add_5_5/CI1->add_72_add_5_5/CO1    FA2             CI1_TO_CO1_DELAY  0.278         8.131  2       
+n117503                                                   NET DELAY         0.280         8.411  1       
+add_72_add_5_7/CI0->add_72_add_5_7/CO0    FA2             CI0_TO_CO0_DELAY  0.278         8.689  2       
+n130441                                                   NET DELAY         0.280         8.969  1       
+add_72_add_5_7/CI1->add_72_add_5_7/CO1    FA2             CI1_TO_CO1_DELAY  0.278         9.247  2       
+n117505                                                   NET DELAY         0.280         9.527  1       
+add_72_add_5_9/CI0->add_72_add_5_9/CO0    FA2             CI0_TO_CO0_DELAY  0.278         9.805  2       
+n130444                                                   NET DELAY         0.280        10.085  1       
+add_72_add_5_9/CI1->add_72_add_5_9/CO1    FA2             CI1_TO_CO1_DELAY  0.278        10.363  2       
+n117507                                                   NET DELAY         0.280        10.643  1       
+add_72_add_5_11/CI0->add_72_add_5_11/CO0  FA2             CI0_TO_CO0_DELAY  0.278        10.921  2       
+n130447                                                   NET DELAY         0.280        11.201  1       
+add_72_add_5_11/CI1->add_72_add_5_11/CO1  FA2             CI1_TO_CO1_DELAY  0.278        11.479  2       
+n117509                                                   NET DELAY         0.280        11.759  1       
+add_72_add_5_13/CI0->add_72_add_5_13/CO0  FA2             CI0_TO_CO0_DELAY  0.278        12.037  2       
+n130450                                                   NET DELAY         0.280        12.317  1       
+add_72_add_5_13/CI1->add_72_add_5_13/CO1  FA2             CI1_TO_CO1_DELAY  0.278        12.595  2       
+n117511                                                   NET DELAY         0.280        12.875  1       
+add_72_add_5_15/CI0->add_72_add_5_15/CO0  FA2             CI0_TO_CO0_DELAY  0.278        13.153  2       
+n130453                                                   NET DELAY         0.280        13.433  1       
+add_72_add_5_15/D1->add_72_add_5_15/S1    FA2             D1_TO_S1_DELAY    0.477        13.910  1       
+timer_clock_14__N_40[14]                                  NET DELAY         2.075        15.985  1       
+i1_2_lut/A->i1_2_lut/Z                    LUT4            A_TO_Z_DELAY      0.477        16.462  1       
+n4_adj_1189                                               NET DELAY         2.075        18.537  1       
+i2_4_lut/B->i2_4_lut/Z                    LUT4            B_TO_Z_DELAY      0.477        19.014  14      
+timer_clock_14__N_55                                      NET DELAY         2.075        21.089  1       
+i7231_2_lut/A->i7231_2_lut/Z              LUT4            A_TO_Z_DELAY      0.477        21.566  1       
+n107433                                                   NET DELAY         2.075        23.641  1       
 
 
 Destination Clock Path
 Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
-inst2/CLKHF                               HSOSC_CORE      CLOCK LATENCY  0.000         0.000  17      
+inst2/CLKHF                               HSOSC_CORE      CLOCK LATENCY  0.000         0.000  27      
 clk                                                       NET DELAY      2.075         2.075  1       
 
 
@@ -1429,59 +1590,86 @@ clk                                                       NET DELAY      2.075  
 
  ++++Path 7  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : timer_clock_446__i11/Q
-Path End         : timer_clock_446__i6/SR
+Path Begin       : timer_clock__i0/Q
+Path End         : timer_clock__i11/D
 Source Clock     : clk
 Destination Clock: clk
-Logic Level      : 5
-Delay Ratio      : 72.4% (route), 27.6% (logic)
+Logic Level      : 19
+Delay Ratio      : 66.3% (route), 33.7% (logic)
 Clock Skew       : 0.000 ns
 Setup Constraint : 83.333 ns 
-Path Slack       : 70.951 ns  (Passed)
+Path Slack       : 61.568 ns  (Passed)
 
   Destination Clock Arrival Time (clk:R#2)    83.333
 + Destination Clock Source Latency             0.000
 - Destination Clock Uncertainty                0.000
 + Destination Clock Path Delay                 2.075
-- Setup Time                                   0.530
+- Setup Time                                   0.199
 ------------------------------------------   -------
-End-of-path required time( ns )               84.878
+End-of-path required time( ns )               85.209
 
   Source Clock Arrival Time (clk:R#1)    0.000
 + Source Clock Source Latency            0.000
 + Source Clock Path Delay                2.075
-+ Data Path Delay                       11.852
++ Data Path Delay                       21.566
 -------------------------------------   ------
-End-of-path arrival time( ns )          13.927
+End-of-path arrival time( ns )          23.641
 
  
 Source Clock Path
 Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
-inst2/CLKHF                               HSOSC_CORE      CLOCK LATENCY  0.000         0.000  17      
+inst2/CLKHF                               HSOSC_CORE      CLOCK LATENCY  0.000         0.000  27      
 clk                                                       NET DELAY      2.075         2.075  1       
 
 
 Data path
-Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
-----------------------------------------  --------------  -------------  -----  ------------  ------  
-timer_clock_446__i11/CK->timer_clock_446__i11/Q
-                                          FD1P3XZ         CK_TO_Q_DELAY  1.391         3.466  2       
-timer_clock[11]                                           NET DELAY      0.280         3.746  1       
-i9_4_lut/B->i9_4_lut/Z                    LUT4            B_TO_Z_DELAY   0.477         4.223  1       
-n24                                                       NET DELAY      2.075         6.298  1       
-i12_4_lut/B->i12_4_lut/Z                  LUT4            B_TO_Z_DELAY   0.477         6.775  1       
-n27                                                       NET DELAY      2.075         8.850  1       
-i6_4_lut/B->i6_4_lut/Z                    LUT4            B_TO_Z_DELAY   0.477         9.327  1       
-n15                                                       NET DELAY      2.075        11.402  1       
-i8_4_lut/A->i8_4_lut/Z                    LUT4            A_TO_Z_DELAY   0.450        11.852  16      
-n107016                                                   NET DELAY      2.075        13.927  1       
+Name                                      Cell/Site Name  Delay Name        Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  ----------------  -----  ------------  ------  
+timer_clock__i0/CK->timer_clock__i0/Q     FD1P3XZ         CK_TO_Q_DELAY     1.391         3.466  1       
+timer_clock[0]                                            NET DELAY         2.075         5.541  1       
+add_72_add_5_1/B1->add_72_add_5_1/CO1     FA2             B1_TO_CO1_DELAY   0.358         5.899  2       
+n117499                                                   NET DELAY         0.280         6.179  1       
+add_72_add_5_3/CI0->add_72_add_5_3/CO0    FA2             CI0_TO_CO0_DELAY  0.278         6.457  2       
+n130435                                                   NET DELAY         0.280         6.737  1       
+add_72_add_5_3/CI1->add_72_add_5_3/CO1    FA2             CI1_TO_CO1_DELAY  0.278         7.015  2       
+n117501                                                   NET DELAY         0.280         7.295  1       
+add_72_add_5_5/CI0->add_72_add_5_5/CO0    FA2             CI0_TO_CO0_DELAY  0.278         7.573  2       
+n130438                                                   NET DELAY         0.280         7.853  1       
+add_72_add_5_5/CI1->add_72_add_5_5/CO1    FA2             CI1_TO_CO1_DELAY  0.278         8.131  2       
+n117503                                                   NET DELAY         0.280         8.411  1       
+add_72_add_5_7/CI0->add_72_add_5_7/CO0    FA2             CI0_TO_CO0_DELAY  0.278         8.689  2       
+n130441                                                   NET DELAY         0.280         8.969  1       
+add_72_add_5_7/CI1->add_72_add_5_7/CO1    FA2             CI1_TO_CO1_DELAY  0.278         9.247  2       
+n117505                                                   NET DELAY         0.280         9.527  1       
+add_72_add_5_9/CI0->add_72_add_5_9/CO0    FA2             CI0_TO_CO0_DELAY  0.278         9.805  2       
+n130444                                                   NET DELAY         0.280        10.085  1       
+add_72_add_5_9/CI1->add_72_add_5_9/CO1    FA2             CI1_TO_CO1_DELAY  0.278        10.363  2       
+n117507                                                   NET DELAY         0.280        10.643  1       
+add_72_add_5_11/CI0->add_72_add_5_11/CO0  FA2             CI0_TO_CO0_DELAY  0.278        10.921  2       
+n130447                                                   NET DELAY         0.280        11.201  1       
+add_72_add_5_11/CI1->add_72_add_5_11/CO1  FA2             CI1_TO_CO1_DELAY  0.278        11.479  2       
+n117509                                                   NET DELAY         0.280        11.759  1       
+add_72_add_5_13/CI0->add_72_add_5_13/CO0  FA2             CI0_TO_CO0_DELAY  0.278        12.037  2       
+n130450                                                   NET DELAY         0.280        12.317  1       
+add_72_add_5_13/CI1->add_72_add_5_13/CO1  FA2             CI1_TO_CO1_DELAY  0.278        12.595  2       
+n117511                                                   NET DELAY         0.280        12.875  1       
+add_72_add_5_15/CI0->add_72_add_5_15/CO0  FA2             CI0_TO_CO0_DELAY  0.278        13.153  2       
+n130453                                                   NET DELAY         0.280        13.433  1       
+add_72_add_5_15/D1->add_72_add_5_15/S1    FA2             D1_TO_S1_DELAY    0.477        13.910  1       
+timer_clock_14__N_40[14]                                  NET DELAY         2.075        15.985  1       
+i1_2_lut/A->i1_2_lut/Z                    LUT4            A_TO_Z_DELAY      0.477        16.462  1       
+n4_adj_1189                                               NET DELAY         2.075        18.537  1       
+i2_4_lut/B->i2_4_lut/Z                    LUT4            B_TO_Z_DELAY      0.477        19.014  14      
+timer_clock_14__N_55                                      NET DELAY         2.075        21.089  1       
+i7232_2_lut/A->i7232_2_lut/Z              LUT4            A_TO_Z_DELAY      0.477        21.566  1       
+n107434                                                   NET DELAY         2.075        23.641  1       
 
 
 Destination Clock Path
 Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
-inst2/CLKHF                               HSOSC_CORE      CLOCK LATENCY  0.000         0.000  17      
+inst2/CLKHF                               HSOSC_CORE      CLOCK LATENCY  0.000         0.000  27      
 clk                                                       NET DELAY      2.075         2.075  1       
 
 
@@ -1489,59 +1677,86 @@ clk                                                       NET DELAY      2.075  
 
  ++++Path 8  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : timer_clock_446__i11/Q
-Path End         : timer_clock_446__i7/SR
+Path Begin       : timer_clock__i0/Q
+Path End         : timer_clock__i10/D
 Source Clock     : clk
 Destination Clock: clk
-Logic Level      : 5
-Delay Ratio      : 72.4% (route), 27.6% (logic)
+Logic Level      : 19
+Delay Ratio      : 66.3% (route), 33.7% (logic)
 Clock Skew       : 0.000 ns
 Setup Constraint : 83.333 ns 
-Path Slack       : 70.951 ns  (Passed)
+Path Slack       : 61.568 ns  (Passed)
 
   Destination Clock Arrival Time (clk:R#2)    83.333
 + Destination Clock Source Latency             0.000
 - Destination Clock Uncertainty                0.000
 + Destination Clock Path Delay                 2.075
-- Setup Time                                   0.530
+- Setup Time                                   0.199
 ------------------------------------------   -------
-End-of-path required time( ns )               84.878
+End-of-path required time( ns )               85.209
 
   Source Clock Arrival Time (clk:R#1)    0.000
 + Source Clock Source Latency            0.000
 + Source Clock Path Delay                2.075
-+ Data Path Delay                       11.852
++ Data Path Delay                       21.566
 -------------------------------------   ------
-End-of-path arrival time( ns )          13.927
+End-of-path arrival time( ns )          23.641
 
  
 Source Clock Path
 Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
-inst2/CLKHF                               HSOSC_CORE      CLOCK LATENCY  0.000         0.000  17      
+inst2/CLKHF                               HSOSC_CORE      CLOCK LATENCY  0.000         0.000  27      
 clk                                                       NET DELAY      2.075         2.075  1       
 
 
 Data path
-Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
-----------------------------------------  --------------  -------------  -----  ------------  ------  
-timer_clock_446__i11/CK->timer_clock_446__i11/Q
-                                          FD1P3XZ         CK_TO_Q_DELAY  1.391         3.466  2       
-timer_clock[11]                                           NET DELAY      0.280         3.746  1       
-i9_4_lut/B->i9_4_lut/Z                    LUT4            B_TO_Z_DELAY   0.477         4.223  1       
-n24                                                       NET DELAY      2.075         6.298  1       
-i12_4_lut/B->i12_4_lut/Z                  LUT4            B_TO_Z_DELAY   0.477         6.775  1       
-n27                                                       NET DELAY      2.075         8.850  1       
-i6_4_lut/B->i6_4_lut/Z                    LUT4            B_TO_Z_DELAY   0.477         9.327  1       
-n15                                                       NET DELAY      2.075        11.402  1       
-i8_4_lut/A->i8_4_lut/Z                    LUT4            A_TO_Z_DELAY   0.450        11.852  16      
-n107016                                                   NET DELAY      2.075        13.927  1       
+Name                                      Cell/Site Name  Delay Name        Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  ----------------  -----  ------------  ------  
+timer_clock__i0/CK->timer_clock__i0/Q     FD1P3XZ         CK_TO_Q_DELAY     1.391         3.466  1       
+timer_clock[0]                                            NET DELAY         2.075         5.541  1       
+add_72_add_5_1/B1->add_72_add_5_1/CO1     FA2             B1_TO_CO1_DELAY   0.358         5.899  2       
+n117499                                                   NET DELAY         0.280         6.179  1       
+add_72_add_5_3/CI0->add_72_add_5_3/CO0    FA2             CI0_TO_CO0_DELAY  0.278         6.457  2       
+n130435                                                   NET DELAY         0.280         6.737  1       
+add_72_add_5_3/CI1->add_72_add_5_3/CO1    FA2             CI1_TO_CO1_DELAY  0.278         7.015  2       
+n117501                                                   NET DELAY         0.280         7.295  1       
+add_72_add_5_5/CI0->add_72_add_5_5/CO0    FA2             CI0_TO_CO0_DELAY  0.278         7.573  2       
+n130438                                                   NET DELAY         0.280         7.853  1       
+add_72_add_5_5/CI1->add_72_add_5_5/CO1    FA2             CI1_TO_CO1_DELAY  0.278         8.131  2       
+n117503                                                   NET DELAY         0.280         8.411  1       
+add_72_add_5_7/CI0->add_72_add_5_7/CO0    FA2             CI0_TO_CO0_DELAY  0.278         8.689  2       
+n130441                                                   NET DELAY         0.280         8.969  1       
+add_72_add_5_7/CI1->add_72_add_5_7/CO1    FA2             CI1_TO_CO1_DELAY  0.278         9.247  2       
+n117505                                                   NET DELAY         0.280         9.527  1       
+add_72_add_5_9/CI0->add_72_add_5_9/CO0    FA2             CI0_TO_CO0_DELAY  0.278         9.805  2       
+n130444                                                   NET DELAY         0.280        10.085  1       
+add_72_add_5_9/CI1->add_72_add_5_9/CO1    FA2             CI1_TO_CO1_DELAY  0.278        10.363  2       
+n117507                                                   NET DELAY         0.280        10.643  1       
+add_72_add_5_11/CI0->add_72_add_5_11/CO0  FA2             CI0_TO_CO0_DELAY  0.278        10.921  2       
+n130447                                                   NET DELAY         0.280        11.201  1       
+add_72_add_5_11/CI1->add_72_add_5_11/CO1  FA2             CI1_TO_CO1_DELAY  0.278        11.479  2       
+n117509                                                   NET DELAY         0.280        11.759  1       
+add_72_add_5_13/CI0->add_72_add_5_13/CO0  FA2             CI0_TO_CO0_DELAY  0.278        12.037  2       
+n130450                                                   NET DELAY         0.280        12.317  1       
+add_72_add_5_13/CI1->add_72_add_5_13/CO1  FA2             CI1_TO_CO1_DELAY  0.278        12.595  2       
+n117511                                                   NET DELAY         0.280        12.875  1       
+add_72_add_5_15/CI0->add_72_add_5_15/CO0  FA2             CI0_TO_CO0_DELAY  0.278        13.153  2       
+n130453                                                   NET DELAY         0.280        13.433  1       
+add_72_add_5_15/D1->add_72_add_5_15/S1    FA2             D1_TO_S1_DELAY    0.477        13.910  1       
+timer_clock_14__N_40[14]                                  NET DELAY         2.075        15.985  1       
+i1_2_lut/A->i1_2_lut/Z                    LUT4            A_TO_Z_DELAY      0.477        16.462  1       
+n4_adj_1189                                               NET DELAY         2.075        18.537  1       
+i2_4_lut/B->i2_4_lut/Z                    LUT4            B_TO_Z_DELAY      0.477        19.014  14      
+timer_clock_14__N_55                                      NET DELAY         2.075        21.089  1       
+i7233_2_lut/A->i7233_2_lut/Z              LUT4            A_TO_Z_DELAY      0.477        21.566  1       
+n107435                                                   NET DELAY         2.075        23.641  1       
 
 
 Destination Clock Path
 Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
-inst2/CLKHF                               HSOSC_CORE      CLOCK LATENCY  0.000         0.000  17      
+inst2/CLKHF                               HSOSC_CORE      CLOCK LATENCY  0.000         0.000  27      
 clk                                                       NET DELAY      2.075         2.075  1       
 
 
@@ -1549,59 +1764,86 @@ clk                                                       NET DELAY      2.075  
 
  ++++Path 9  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : timer_clock_446__i11/Q
-Path End         : timer_clock_446__i8/SR
+Path Begin       : timer_clock__i0/Q
+Path End         : timer_clock__i9/D
 Source Clock     : clk
 Destination Clock: clk
-Logic Level      : 5
-Delay Ratio      : 72.4% (route), 27.6% (logic)
+Logic Level      : 19
+Delay Ratio      : 66.3% (route), 33.7% (logic)
 Clock Skew       : 0.000 ns
 Setup Constraint : 83.333 ns 
-Path Slack       : 70.951 ns  (Passed)
+Path Slack       : 61.568 ns  (Passed)
 
   Destination Clock Arrival Time (clk:R#2)    83.333
 + Destination Clock Source Latency             0.000
 - Destination Clock Uncertainty                0.000
 + Destination Clock Path Delay                 2.075
-- Setup Time                                   0.530
+- Setup Time                                   0.199
 ------------------------------------------   -------
-End-of-path required time( ns )               84.878
+End-of-path required time( ns )               85.209
 
   Source Clock Arrival Time (clk:R#1)    0.000
 + Source Clock Source Latency            0.000
 + Source Clock Path Delay                2.075
-+ Data Path Delay                       11.852
++ Data Path Delay                       21.566
 -------------------------------------   ------
-End-of-path arrival time( ns )          13.927
+End-of-path arrival time( ns )          23.641
 
  
 Source Clock Path
 Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
-inst2/CLKHF                               HSOSC_CORE      CLOCK LATENCY  0.000         0.000  17      
+inst2/CLKHF                               HSOSC_CORE      CLOCK LATENCY  0.000         0.000  27      
 clk                                                       NET DELAY      2.075         2.075  1       
 
 
 Data path
-Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
-----------------------------------------  --------------  -------------  -----  ------------  ------  
-timer_clock_446__i11/CK->timer_clock_446__i11/Q
-                                          FD1P3XZ         CK_TO_Q_DELAY  1.391         3.466  2       
-timer_clock[11]                                           NET DELAY      0.280         3.746  1       
-i9_4_lut/B->i9_4_lut/Z                    LUT4            B_TO_Z_DELAY   0.477         4.223  1       
-n24                                                       NET DELAY      2.075         6.298  1       
-i12_4_lut/B->i12_4_lut/Z                  LUT4            B_TO_Z_DELAY   0.477         6.775  1       
-n27                                                       NET DELAY      2.075         8.850  1       
-i6_4_lut/B->i6_4_lut/Z                    LUT4            B_TO_Z_DELAY   0.477         9.327  1       
-n15                                                       NET DELAY      2.075        11.402  1       
-i8_4_lut/A->i8_4_lut/Z                    LUT4            A_TO_Z_DELAY   0.450        11.852  16      
-n107016                                                   NET DELAY      2.075        13.927  1       
+Name                                      Cell/Site Name  Delay Name        Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  ----------------  -----  ------------  ------  
+timer_clock__i0/CK->timer_clock__i0/Q     FD1P3XZ         CK_TO_Q_DELAY     1.391         3.466  1       
+timer_clock[0]                                            NET DELAY         2.075         5.541  1       
+add_72_add_5_1/B1->add_72_add_5_1/CO1     FA2             B1_TO_CO1_DELAY   0.358         5.899  2       
+n117499                                                   NET DELAY         0.280         6.179  1       
+add_72_add_5_3/CI0->add_72_add_5_3/CO0    FA2             CI0_TO_CO0_DELAY  0.278         6.457  2       
+n130435                                                   NET DELAY         0.280         6.737  1       
+add_72_add_5_3/CI1->add_72_add_5_3/CO1    FA2             CI1_TO_CO1_DELAY  0.278         7.015  2       
+n117501                                                   NET DELAY         0.280         7.295  1       
+add_72_add_5_5/CI0->add_72_add_5_5/CO0    FA2             CI0_TO_CO0_DELAY  0.278         7.573  2       
+n130438                                                   NET DELAY         0.280         7.853  1       
+add_72_add_5_5/CI1->add_72_add_5_5/CO1    FA2             CI1_TO_CO1_DELAY  0.278         8.131  2       
+n117503                                                   NET DELAY         0.280         8.411  1       
+add_72_add_5_7/CI0->add_72_add_5_7/CO0    FA2             CI0_TO_CO0_DELAY  0.278         8.689  2       
+n130441                                                   NET DELAY         0.280         8.969  1       
+add_72_add_5_7/CI1->add_72_add_5_7/CO1    FA2             CI1_TO_CO1_DELAY  0.278         9.247  2       
+n117505                                                   NET DELAY         0.280         9.527  1       
+add_72_add_5_9/CI0->add_72_add_5_9/CO0    FA2             CI0_TO_CO0_DELAY  0.278         9.805  2       
+n130444                                                   NET DELAY         0.280        10.085  1       
+add_72_add_5_9/CI1->add_72_add_5_9/CO1    FA2             CI1_TO_CO1_DELAY  0.278        10.363  2       
+n117507                                                   NET DELAY         0.280        10.643  1       
+add_72_add_5_11/CI0->add_72_add_5_11/CO0  FA2             CI0_TO_CO0_DELAY  0.278        10.921  2       
+n130447                                                   NET DELAY         0.280        11.201  1       
+add_72_add_5_11/CI1->add_72_add_5_11/CO1  FA2             CI1_TO_CO1_DELAY  0.278        11.479  2       
+n117509                                                   NET DELAY         0.280        11.759  1       
+add_72_add_5_13/CI0->add_72_add_5_13/CO0  FA2             CI0_TO_CO0_DELAY  0.278        12.037  2       
+n130450                                                   NET DELAY         0.280        12.317  1       
+add_72_add_5_13/CI1->add_72_add_5_13/CO1  FA2             CI1_TO_CO1_DELAY  0.278        12.595  2       
+n117511                                                   NET DELAY         0.280        12.875  1       
+add_72_add_5_15/CI0->add_72_add_5_15/CO0  FA2             CI0_TO_CO0_DELAY  0.278        13.153  2       
+n130453                                                   NET DELAY         0.280        13.433  1       
+add_72_add_5_15/D1->add_72_add_5_15/S1    FA2             D1_TO_S1_DELAY    0.477        13.910  1       
+timer_clock_14__N_40[14]                                  NET DELAY         2.075        15.985  1       
+i1_2_lut/A->i1_2_lut/Z                    LUT4            A_TO_Z_DELAY      0.477        16.462  1       
+n4_adj_1189                                               NET DELAY         2.075        18.537  1       
+i2_4_lut/B->i2_4_lut/Z                    LUT4            B_TO_Z_DELAY      0.477        19.014  14      
+timer_clock_14__N_55                                      NET DELAY         2.075        21.089  1       
+i7234_2_lut/A->i7234_2_lut/Z              LUT4            A_TO_Z_DELAY      0.477        21.566  1       
+n107436                                                   NET DELAY         2.075        23.641  1       
 
 
 Destination Clock Path
 Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
-inst2/CLKHF                               HSOSC_CORE      CLOCK LATENCY  0.000         0.000  17      
+inst2/CLKHF                               HSOSC_CORE      CLOCK LATENCY  0.000         0.000  27      
 clk                                                       NET DELAY      2.075         2.075  1       
 
 
@@ -1609,59 +1851,86 @@ clk                                                       NET DELAY      2.075  
 
  ++++Path 10  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : timer_clock_446__i11/Q
-Path End         : timer_clock_446__i9/SR
+Path Begin       : timer_clock__i0/Q
+Path End         : tick_c/D
 Source Clock     : clk
 Destination Clock: clk
-Logic Level      : 5
-Delay Ratio      : 72.4% (route), 27.6% (logic)
+Logic Level      : 19
+Delay Ratio      : 66.3% (route), 33.7% (logic)
 Clock Skew       : 0.000 ns
 Setup Constraint : 83.333 ns 
-Path Slack       : 70.951 ns  (Passed)
+Path Slack       : 61.568 ns  (Passed)
 
   Destination Clock Arrival Time (clk:R#2)    83.333
 + Destination Clock Source Latency             0.000
 - Destination Clock Uncertainty                0.000
 + Destination Clock Path Delay                 2.075
-- Setup Time                                   0.530
+- Setup Time                                   0.199
 ------------------------------------------   -------
-End-of-path required time( ns )               84.878
+End-of-path required time( ns )               85.209
 
   Source Clock Arrival Time (clk:R#1)    0.000
 + Source Clock Source Latency            0.000
 + Source Clock Path Delay                2.075
-+ Data Path Delay                       11.852
++ Data Path Delay                       21.566
 -------------------------------------   ------
-End-of-path arrival time( ns )          13.927
+End-of-path arrival time( ns )          23.641
 
  
 Source Clock Path
 Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
-inst2/CLKHF                               HSOSC_CORE      CLOCK LATENCY  0.000         0.000  17      
+inst2/CLKHF                               HSOSC_CORE      CLOCK LATENCY  0.000         0.000  27      
 clk                                                       NET DELAY      2.075         2.075  1       
 
 
 Data path
-Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
-----------------------------------------  --------------  -------------  -----  ------------  ------  
-timer_clock_446__i11/CK->timer_clock_446__i11/Q
-                                          FD1P3XZ         CK_TO_Q_DELAY  1.391         3.466  2       
-timer_clock[11]                                           NET DELAY      0.280         3.746  1       
-i9_4_lut/B->i9_4_lut/Z                    LUT4            B_TO_Z_DELAY   0.477         4.223  1       
-n24                                                       NET DELAY      2.075         6.298  1       
-i12_4_lut/B->i12_4_lut/Z                  LUT4            B_TO_Z_DELAY   0.477         6.775  1       
-n27                                                       NET DELAY      2.075         8.850  1       
-i6_4_lut/B->i6_4_lut/Z                    LUT4            B_TO_Z_DELAY   0.477         9.327  1       
-n15                                                       NET DELAY      2.075        11.402  1       
-i8_4_lut/A->i8_4_lut/Z                    LUT4            A_TO_Z_DELAY   0.450        11.852  16      
-n107016                                                   NET DELAY      2.075        13.927  1       
+Name                                      Cell/Site Name  Delay Name        Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  ----------------  -----  ------------  ------  
+timer_clock__i0/CK->timer_clock__i0/Q     FD1P3XZ         CK_TO_Q_DELAY     1.391         3.466  1       
+timer_clock[0]                                            NET DELAY         2.075         5.541  1       
+add_72_add_5_1/B1->add_72_add_5_1/CO1     FA2             B1_TO_CO1_DELAY   0.358         5.899  2       
+n117499                                                   NET DELAY         0.280         6.179  1       
+add_72_add_5_3/CI0->add_72_add_5_3/CO0    FA2             CI0_TO_CO0_DELAY  0.278         6.457  2       
+n130435                                                   NET DELAY         0.280         6.737  1       
+add_72_add_5_3/CI1->add_72_add_5_3/CO1    FA2             CI1_TO_CO1_DELAY  0.278         7.015  2       
+n117501                                                   NET DELAY         0.280         7.295  1       
+add_72_add_5_5/CI0->add_72_add_5_5/CO0    FA2             CI0_TO_CO0_DELAY  0.278         7.573  2       
+n130438                                                   NET DELAY         0.280         7.853  1       
+add_72_add_5_5/CI1->add_72_add_5_5/CO1    FA2             CI1_TO_CO1_DELAY  0.278         8.131  2       
+n117503                                                   NET DELAY         0.280         8.411  1       
+add_72_add_5_7/CI0->add_72_add_5_7/CO0    FA2             CI0_TO_CO0_DELAY  0.278         8.689  2       
+n130441                                                   NET DELAY         0.280         8.969  1       
+add_72_add_5_7/CI1->add_72_add_5_7/CO1    FA2             CI1_TO_CO1_DELAY  0.278         9.247  2       
+n117505                                                   NET DELAY         0.280         9.527  1       
+add_72_add_5_9/CI0->add_72_add_5_9/CO0    FA2             CI0_TO_CO0_DELAY  0.278         9.805  2       
+n130444                                                   NET DELAY         0.280        10.085  1       
+add_72_add_5_9/CI1->add_72_add_5_9/CO1    FA2             CI1_TO_CO1_DELAY  0.278        10.363  2       
+n117507                                                   NET DELAY         0.280        10.643  1       
+add_72_add_5_11/CI0->add_72_add_5_11/CO0  FA2             CI0_TO_CO0_DELAY  0.278        10.921  2       
+n130447                                                   NET DELAY         0.280        11.201  1       
+add_72_add_5_11/CI1->add_72_add_5_11/CO1  FA2             CI1_TO_CO1_DELAY  0.278        11.479  2       
+n117509                                                   NET DELAY         0.280        11.759  1       
+add_72_add_5_13/CI0->add_72_add_5_13/CO0  FA2             CI0_TO_CO0_DELAY  0.278        12.037  2       
+n130450                                                   NET DELAY         0.280        12.317  1       
+add_72_add_5_13/CI1->add_72_add_5_13/CO1  FA2             CI1_TO_CO1_DELAY  0.278        12.595  2       
+n117511                                                   NET DELAY         0.280        12.875  1       
+add_72_add_5_15/CI0->add_72_add_5_15/CO0  FA2             CI0_TO_CO0_DELAY  0.278        13.153  2       
+n130453                                                   NET DELAY         0.280        13.433  1       
+add_72_add_5_15/D1->add_72_add_5_15/S1    FA2             D1_TO_S1_DELAY    0.477        13.910  1       
+timer_clock_14__N_40[14]                                  NET DELAY         2.075        15.985  1       
+i1_2_lut/A->i1_2_lut/Z                    LUT4            A_TO_Z_DELAY      0.477        16.462  1       
+n4_adj_1189                                               NET DELAY         2.075        18.537  1       
+i2_4_lut/B->i2_4_lut/Z                    LUT4            B_TO_Z_DELAY      0.477        19.014  14      
+timer_clock_14__N_55                                      NET DELAY         2.075        21.089  1       
+i69_2_lut/B->i69_2_lut/Z                  LUT4            B_TO_Z_DELAY      0.477        21.566  1       
+n55                                                       NET DELAY         2.075        23.641  1       
 
 
 Destination Clock Path
 Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
-inst2/CLKHF                               HSOSC_CORE      CLOCK LATENCY  0.000         0.000  17      
+inst2/CLKHF                               HSOSC_CORE      CLOCK LATENCY  0.000         0.000  27      
 clk                                                       NET DELAY      2.075         2.075  1       
 
 
@@ -1682,8 +1951,8 @@ clk                                                       NET DELAY      2.075  
 
  ++++Path 1  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : vga_driver/h_count_447__i0/Q
-Path End         : vga_driver/h_count_447__i0/D
+Path Begin       : vga_driver/h_count_522__i0/Q
+Path End         : vga_driver/h_count_522__i0/D
 Source Clock     : vga_clock
 Destination Clock: vga_clock
 Logic Level      : 2
@@ -1718,10 +1987,10 @@ vga_clock                                                 NET DELAY      2.075  
 Data path
 Name                                      Cell/Site Name  Delay Name      Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  --------------  -----  ------------  ------  
-vga_driver/h_count_447__i0/CK->vga_driver/h_count_447__i0/Q
-                                          FD1P3XZ         CK_TO_Q_DELAY   1.391         5.691  15      
+vga_driver/h_count_522__i0/CK->vga_driver/h_count_522__i0/Q
+                                          FD1P3XZ         CK_TO_Q_DELAY   1.391         5.691  14      
 pixel_col[0]                                              NET DELAY       0.280         5.971  1       
-vga_driver/h_count_447_add_4_1/C1->vga_driver/h_count_447_add_4_1/S1
+vga_driver/h_count_522_add_4_1/C1->vga_driver/h_count_522_add_4_1/S1
                                           FA2             C1_TO_S1_DELAY  0.450         6.421  1       
 vga_driver/n45[0]                                         NET DELAY       2.075         8.496  1       
 
@@ -1737,8 +2006,8 @@ vga_clock                                                 NET DELAY      2.075  
 
  ++++Path 2  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : vga_driver/h_count_447__i1/Q
-Path End         : vga_driver/h_count_447__i1/D
+Path Begin       : vga_driver/h_count_522__i1/Q
+Path End         : vga_driver/h_count_522__i1/D
 Source Clock     : vga_clock
 Destination Clock: vga_clock
 Logic Level      : 2
@@ -1773,10 +2042,10 @@ vga_clock                                                 NET DELAY      2.075  
 Data path
 Name                                      Cell/Site Name  Delay Name      Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  --------------  -----  ------------  ------  
-vga_driver/h_count_447__i1/CK->vga_driver/h_count_447__i1/Q
-                                          FD1P3XZ         CK_TO_Q_DELAY   1.391         5.691  16      
+vga_driver/h_count_522__i1/CK->vga_driver/h_count_522__i1/Q
+                                          FD1P3XZ         CK_TO_Q_DELAY   1.391         5.691  14      
 pixel_col[1]                                              NET DELAY       0.280         5.971  1       
-vga_driver/h_count_447_add_4_3/C0->vga_driver/h_count_447_add_4_3/S0
+vga_driver/h_count_522_add_4_3/C0->vga_driver/h_count_522_add_4_3/S0
                                           FA2             C0_TO_S0_DELAY  0.450         6.421  1       
 vga_driver/n45[1]                                         NET DELAY       2.075         8.496  1       
 
@@ -1792,8 +2061,8 @@ vga_clock                                                 NET DELAY      2.075  
 
  ++++Path 3  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : vga_driver/h_count_447__i2/Q
-Path End         : vga_driver/h_count_447__i2/D
+Path Begin       : vga_driver/h_count_522__i2/Q
+Path End         : vga_driver/h_count_522__i2/D
 Source Clock     : vga_clock
 Destination Clock: vga_clock
 Logic Level      : 2
@@ -1828,10 +2097,10 @@ vga_clock                                                 NET DELAY      2.075  
 Data path
 Name                                      Cell/Site Name  Delay Name      Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  --------------  -----  ------------  ------  
-vga_driver/h_count_447__i2/CK->vga_driver/h_count_447__i2/Q
+vga_driver/h_count_522__i2/CK->vga_driver/h_count_522__i2/Q
                                           FD1P3XZ         CK_TO_Q_DELAY   1.391         5.691  18      
 pixel_col[2]                                              NET DELAY       0.280         5.971  1       
-vga_driver/h_count_447_add_4_3/C1->vga_driver/h_count_447_add_4_3/S1
+vga_driver/h_count_522_add_4_3/C1->vga_driver/h_count_522_add_4_3/S1
                                           FA2             C1_TO_S1_DELAY  0.450         6.421  1       
 vga_driver/n45[2]                                         NET DELAY       2.075         8.496  1       
 
@@ -1847,8 +2116,8 @@ vga_clock                                                 NET DELAY      2.075  
 
  ++++Path 4  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : vga_driver/h_count_447__i3/Q
-Path End         : vga_driver/h_count_447__i3/D
+Path Begin       : vga_driver/h_count_522__i3/Q
+Path End         : vga_driver/h_count_522__i3/D
 Source Clock     : vga_clock
 Destination Clock: vga_clock
 Logic Level      : 2
@@ -1883,10 +2152,10 @@ vga_clock                                                 NET DELAY      2.075  
 Data path
 Name                                      Cell/Site Name  Delay Name      Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  --------------  -----  ------------  ------  
-vga_driver/h_count_447__i3/CK->vga_driver/h_count_447__i3/Q
+vga_driver/h_count_522__i3/CK->vga_driver/h_count_522__i3/Q
                                           FD1P3XZ         CK_TO_Q_DELAY   1.391         5.691  19      
 pixel_col[3]                                              NET DELAY       0.280         5.971  1       
-vga_driver/h_count_447_add_4_5/C0->vga_driver/h_count_447_add_4_5/S0
+vga_driver/h_count_522_add_4_5/C0->vga_driver/h_count_522_add_4_5/S0
                                           FA2             C0_TO_S0_DELAY  0.450         6.421  1       
 vga_driver/n45[3]                                         NET DELAY       2.075         8.496  1       
 
@@ -1902,8 +2171,8 @@ vga_clock                                                 NET DELAY      2.075  
 
  ++++Path 5  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : vga_driver/h_count_447__i4/Q
-Path End         : vga_driver/h_count_447__i4/D
+Path Begin       : vga_driver/h_count_522__i4/Q
+Path End         : vga_driver/h_count_522__i4/D
 Source Clock     : vga_clock
 Destination Clock: vga_clock
 Logic Level      : 2
@@ -1938,10 +2207,10 @@ vga_clock                                                 NET DELAY      2.075  
 Data path
 Name                                      Cell/Site Name  Delay Name      Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  --------------  -----  ------------  ------  
-vga_driver/h_count_447__i4/CK->vga_driver/h_count_447__i4/Q
+vga_driver/h_count_522__i4/CK->vga_driver/h_count_522__i4/Q
                                           FD1P3XZ         CK_TO_Q_DELAY   1.391         5.691  23      
 pixel_col[4]                                              NET DELAY       0.280         5.971  1       
-vga_driver/h_count_447_add_4_5/C1->vga_driver/h_count_447_add_4_5/S1
+vga_driver/h_count_522_add_4_5/C1->vga_driver/h_count_522_add_4_5/S1
                                           FA2             C1_TO_S1_DELAY  0.450         6.421  1       
 vga_driver/n45[4]                                         NET DELAY       2.075         8.496  1       
 
@@ -1957,8 +2226,8 @@ vga_clock                                                 NET DELAY      2.075  
 
  ++++Path 6  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : vga_driver/h_count_447__i5/Q
-Path End         : vga_driver/h_count_447__i5/D
+Path Begin       : vga_driver/h_count_522__i5/Q
+Path End         : vga_driver/h_count_522__i5/D
 Source Clock     : vga_clock
 Destination Clock: vga_clock
 Logic Level      : 2
@@ -1993,10 +2262,10 @@ vga_clock                                                 NET DELAY      2.075  
 Data path
 Name                                      Cell/Site Name  Delay Name      Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  --------------  -----  ------------  ------  
-vga_driver/h_count_447__i5/CK->vga_driver/h_count_447__i5/Q
-                                          FD1P3XZ         CK_TO_Q_DELAY   1.391         5.691  19      
+vga_driver/h_count_522__i5/CK->vga_driver/h_count_522__i5/Q
+                                          FD1P3XZ         CK_TO_Q_DELAY   1.391         5.691  21      
 pixel_col[5]                                              NET DELAY       0.280         5.971  1       
-vga_driver/h_count_447_add_4_7/C0->vga_driver/h_count_447_add_4_7/S0
+vga_driver/h_count_522_add_4_7/C0->vga_driver/h_count_522_add_4_7/S0
                                           FA2             C0_TO_S0_DELAY  0.450         6.421  1       
 vga_driver/n45[5]                                         NET DELAY       2.075         8.496  1       
 
@@ -2012,8 +2281,8 @@ vga_clock                                                 NET DELAY      2.075  
 
  ++++Path 7  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : vga_driver/h_count_447__i6/Q
-Path End         : vga_driver/h_count_447__i6/D
+Path Begin       : vga_driver/h_count_522__i6/Q
+Path End         : vga_driver/h_count_522__i6/D
 Source Clock     : vga_clock
 Destination Clock: vga_clock
 Logic Level      : 2
@@ -2048,10 +2317,10 @@ vga_clock                                                 NET DELAY      2.075  
 Data path
 Name                                      Cell/Site Name  Delay Name      Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  --------------  -----  ------------  ------  
-vga_driver/h_count_447__i6/CK->vga_driver/h_count_447__i6/Q
-                                          FD1P3XZ         CK_TO_Q_DELAY   1.391         5.691  19      
+vga_driver/h_count_522__i6/CK->vga_driver/h_count_522__i6/Q
+                                          FD1P3XZ         CK_TO_Q_DELAY   1.391         5.691  21      
 pixel_col[6]                                              NET DELAY       0.280         5.971  1       
-vga_driver/h_count_447_add_4_7/C1->vga_driver/h_count_447_add_4_7/S1
+vga_driver/h_count_522_add_4_7/C1->vga_driver/h_count_522_add_4_7/S1
                                           FA2             C1_TO_S1_DELAY  0.450         6.421  1       
 vga_driver/n45[6]                                         NET DELAY       2.075         8.496  1       
 
@@ -2067,8 +2336,8 @@ vga_clock                                                 NET DELAY      2.075  
 
  ++++Path 8  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : vga_driver/h_count_447__i7/Q
-Path End         : vga_driver/h_count_447__i7/D
+Path Begin       : vga_driver/h_count_522__i7/Q
+Path End         : vga_driver/h_count_522__i7/D
 Source Clock     : vga_clock
 Destination Clock: vga_clock
 Logic Level      : 2
@@ -2103,10 +2372,10 @@ vga_clock                                                 NET DELAY      2.075  
 Data path
 Name                                      Cell/Site Name  Delay Name      Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  --------------  -----  ------------  ------  
-vga_driver/h_count_447__i7/CK->vga_driver/h_count_447__i7/Q
-                                          FD1P3XZ         CK_TO_Q_DELAY   1.391         5.691  20      
+vga_driver/h_count_522__i7/CK->vga_driver/h_count_522__i7/Q
+                                          FD1P3XZ         CK_TO_Q_DELAY   1.391         5.691  21      
 pixel_col[7]                                              NET DELAY       0.280         5.971  1       
-vga_driver/h_count_447_add_4_9/C0->vga_driver/h_count_447_add_4_9/S0
+vga_driver/h_count_522_add_4_9/C0->vga_driver/h_count_522_add_4_9/S0
                                           FA2             C0_TO_S0_DELAY  0.450         6.421  1       
 vga_driver/n45[7]                                         NET DELAY       2.075         8.496  1       
 
@@ -2122,8 +2391,8 @@ vga_clock                                                 NET DELAY      2.075  
 
  ++++Path 9  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : vga_driver/h_count_447__i8/Q
-Path End         : vga_driver/h_count_447__i8/D
+Path Begin       : vga_driver/h_count_522__i8/Q
+Path End         : vga_driver/h_count_522__i8/D
 Source Clock     : vga_clock
 Destination Clock: vga_clock
 Logic Level      : 2
@@ -2158,10 +2427,10 @@ vga_clock                                                 NET DELAY      2.075  
 Data path
 Name                                      Cell/Site Name  Delay Name      Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  --------------  -----  ------------  ------  
-vga_driver/h_count_447__i8/CK->vga_driver/h_count_447__i8/Q
+vga_driver/h_count_522__i8/CK->vga_driver/h_count_522__i8/Q
                                           FD1P3XZ         CK_TO_Q_DELAY   1.391         5.691  16      
 pixel_col[8]                                              NET DELAY       0.280         5.971  1       
-vga_driver/h_count_447_add_4_9/C1->vga_driver/h_count_447_add_4_9/S1
+vga_driver/h_count_522_add_4_9/C1->vga_driver/h_count_522_add_4_9/S1
                                           FA2             C1_TO_S1_DELAY  0.450         6.421  1       
 vga_driver/n45[8]                                         NET DELAY       2.075         8.496  1       
 
@@ -2177,8 +2446,8 @@ vga_clock                                                 NET DELAY      2.075  
 
  ++++Path 10  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : vga_driver/h_count_447__i9/Q
-Path End         : vga_driver/h_count_447__i9/D
+Path Begin       : vga_driver/h_count_522__i9/Q
+Path End         : vga_driver/h_count_522__i9/D
 Source Clock     : vga_clock
 Destination Clock: vga_clock
 Logic Level      : 2
@@ -2213,10 +2482,10 @@ vga_clock                                                 NET DELAY      2.075  
 Data path
 Name                                      Cell/Site Name  Delay Name      Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  --------------  -----  ------------  ------  
-vga_driver/h_count_447__i9/CK->vga_driver/h_count_447__i9/Q
-                                          FD1P3XZ         CK_TO_Q_DELAY   1.391         5.691  16      
+vga_driver/h_count_522__i9/CK->vga_driver/h_count_522__i9/Q
+                                          FD1P3XZ         CK_TO_Q_DELAY   1.391         5.691  17      
 pixel_col[9]                                              NET DELAY       0.280         5.971  1       
-vga_driver/h_count_447_add_4_11/C0->vga_driver/h_count_447_add_4_11/S0
+vga_driver/h_count_522_add_4_11/C0->vga_driver/h_count_522_add_4_11/S0
                                           FA2             C0_TO_S0_DELAY  0.450         6.421  1       
 vga_driver/n45[9]                                         NET DELAY       2.075         8.496  1       
 
@@ -2235,7 +2504,7 @@ vga_clock                                                 NET DELAY      2.075  
 
 4.2.2  Hold path details for constraint: create_clock -name {clk} -period 83.3333333333333 [get_nets clk]
 ----------------------------------------------------------------------
-31 endpoints scored, 0 timing errors detected.
+49 endpoints scored, 0 timing errors detected.
 
  +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
                     Detailed Report for timing paths 
@@ -2243,8 +2512,8 @@ vga_clock                                                 NET DELAY      2.075  
 
  ++++Path 1  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : timer_clock_446__i0/Q
-Path End         : timer_clock_446__i0/D
+Path Begin       : buzzer_clock_521__i0/Q
+Path End         : buzzer_clock_521__i0/D
 Source Clock     : clk
 Destination Clock: clk
 Logic Level      : 2
@@ -2272,25 +2541,25 @@ End-of-path arrival time( ns )          6.271
 Source Clock Path
 Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
-inst2/CLKHF                               HSOSC_CORE      CLOCK LATENCY  0.000         0.000  17      
+inst2/CLKHF                               HSOSC_CORE      CLOCK LATENCY  0.000         0.000  27      
 clk                                                       NET DELAY      2.075         2.075  1       
 
 
 Data path
 Name                                      Cell/Site Name  Delay Name      Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  --------------  -----  ------------  ------  
-timer_clock_446__i0/CK->timer_clock_446__i0/Q
+buzzer_clock_521__i0/CK->buzzer_clock_521__i0/Q
                                           FD1P3XZ         CK_TO_Q_DELAY   1.391         3.466  2       
-timer_clock[0]                                            NET DELAY       0.280         3.746  1       
-timer_clock_446_add_4_1/C1->timer_clock_446_add_4_1/S1
+buzzer_clock[0]                                           NET DELAY       0.280         3.746  1       
+buzzer_clock_521_add_4_1/C1->buzzer_clock_521_add_4_1/S1
                                           FA2             C1_TO_S1_DELAY  0.450         4.196  1       
-n80                                                       NET DELAY       2.075         6.271  1       
+n55_adj_1148                                              NET DELAY       2.075         6.271  1       
 
 
 Destination Clock Path
 Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
-inst2/CLKHF                               HSOSC_CORE      CLOCK LATENCY  0.000         0.000  17      
+inst2/CLKHF                               HSOSC_CORE      CLOCK LATENCY  0.000         0.000  27      
 clk                                                       NET DELAY      2.075         2.075  1       
 
 
@@ -2298,8 +2567,8 @@ clk                                                       NET DELAY      2.075  
 
  ++++Path 2  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : timer_clock_446__i1/Q
-Path End         : timer_clock_446__i1/D
+Path Begin       : buzzer_clock_521__i1/Q
+Path End         : buzzer_clock_521__i1/D
 Source Clock     : clk
 Destination Clock: clk
 Logic Level      : 2
@@ -2327,25 +2596,25 @@ End-of-path arrival time( ns )          6.271
 Source Clock Path
 Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
-inst2/CLKHF                               HSOSC_CORE      CLOCK LATENCY  0.000         0.000  17      
+inst2/CLKHF                               HSOSC_CORE      CLOCK LATENCY  0.000         0.000  27      
 clk                                                       NET DELAY      2.075         2.075  1       
 
 
 Data path
 Name                                      Cell/Site Name  Delay Name      Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  --------------  -----  ------------  ------  
-timer_clock_446__i1/CK->timer_clock_446__i1/Q
+buzzer_clock_521__i1/CK->buzzer_clock_521__i1/Q
                                           FD1P3XZ         CK_TO_Q_DELAY   1.391         3.466  2       
-timer_clock[1]                                            NET DELAY       0.280         3.746  1       
-timer_clock_446_add_4_3/C0->timer_clock_446_add_4_3/S0
+buzzer_clock[1]                                           NET DELAY       0.280         3.746  1       
+buzzer_clock_521_add_4_3/C0->buzzer_clock_521_add_4_3/S0
                                           FA2             C0_TO_S0_DELAY  0.450         4.196  1       
-n79                                                       NET DELAY       2.075         6.271  1       
+n54                                                       NET DELAY       2.075         6.271  1       
 
 
 Destination Clock Path
 Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
-inst2/CLKHF                               HSOSC_CORE      CLOCK LATENCY  0.000         0.000  17      
+inst2/CLKHF                               HSOSC_CORE      CLOCK LATENCY  0.000         0.000  27      
 clk                                                       NET DELAY      2.075         2.075  1       
 
 
@@ -2353,8 +2622,8 @@ clk                                                       NET DELAY      2.075  
 
  ++++Path 3  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : timer_clock_446__i2/Q
-Path End         : timer_clock_446__i2/D
+Path Begin       : buzzer_clock_521__i2/Q
+Path End         : buzzer_clock_521__i2/D
 Source Clock     : clk
 Destination Clock: clk
 Logic Level      : 2
@@ -2382,25 +2651,25 @@ End-of-path arrival time( ns )          6.271
 Source Clock Path
 Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
-inst2/CLKHF                               HSOSC_CORE      CLOCK LATENCY  0.000         0.000  17      
+inst2/CLKHF                               HSOSC_CORE      CLOCK LATENCY  0.000         0.000  27      
 clk                                                       NET DELAY      2.075         2.075  1       
 
 
 Data path
 Name                                      Cell/Site Name  Delay Name      Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  --------------  -----  ------------  ------  
-timer_clock_446__i2/CK->timer_clock_446__i2/Q
+buzzer_clock_521__i2/CK->buzzer_clock_521__i2/Q
                                           FD1P3XZ         CK_TO_Q_DELAY   1.391         3.466  2       
-timer_clock[2]                                            NET DELAY       0.280         3.746  1       
-timer_clock_446_add_4_3/C1->timer_clock_446_add_4_3/S1
+buzzer_clock[2]                                           NET DELAY       0.280         3.746  1       
+buzzer_clock_521_add_4_3/C1->buzzer_clock_521_add_4_3/S1
                                           FA2             C1_TO_S1_DELAY  0.450         4.196  1       
-n78                                                       NET DELAY       2.075         6.271  1       
+n53                                                       NET DELAY       2.075         6.271  1       
 
 
 Destination Clock Path
 Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
-inst2/CLKHF                               HSOSC_CORE      CLOCK LATENCY  0.000         0.000  17      
+inst2/CLKHF                               HSOSC_CORE      CLOCK LATENCY  0.000         0.000  27      
 clk                                                       NET DELAY      2.075         2.075  1       
 
 
@@ -2408,8 +2677,8 @@ clk                                                       NET DELAY      2.075  
 
  ++++Path 4  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : timer_clock_446__i3/Q
-Path End         : timer_clock_446__i3/D
+Path Begin       : buzzer_clock_521__i3/Q
+Path End         : buzzer_clock_521__i3/D
 Source Clock     : clk
 Destination Clock: clk
 Logic Level      : 2
@@ -2437,25 +2706,25 @@ End-of-path arrival time( ns )          6.271
 Source Clock Path
 Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
-inst2/CLKHF                               HSOSC_CORE      CLOCK LATENCY  0.000         0.000  17      
+inst2/CLKHF                               HSOSC_CORE      CLOCK LATENCY  0.000         0.000  27      
 clk                                                       NET DELAY      2.075         2.075  1       
 
 
 Data path
 Name                                      Cell/Site Name  Delay Name      Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  --------------  -----  ------------  ------  
-timer_clock_446__i3/CK->timer_clock_446__i3/Q
+buzzer_clock_521__i3/CK->buzzer_clock_521__i3/Q
                                           FD1P3XZ         CK_TO_Q_DELAY   1.391         3.466  2       
-timer_clock[3]                                            NET DELAY       0.280         3.746  1       
-timer_clock_446_add_4_5/C0->timer_clock_446_add_4_5/S0
+buzzer_clock[3]                                           NET DELAY       0.280         3.746  1       
+buzzer_clock_521_add_4_5/C0->buzzer_clock_521_add_4_5/S0
                                           FA2             C0_TO_S0_DELAY  0.450         4.196  1       
-n77                                                       NET DELAY       2.075         6.271  1       
+n52                                                       NET DELAY       2.075         6.271  1       
 
 
 Destination Clock Path
 Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
-inst2/CLKHF                               HSOSC_CORE      CLOCK LATENCY  0.000         0.000  17      
+inst2/CLKHF                               HSOSC_CORE      CLOCK LATENCY  0.000         0.000  27      
 clk                                                       NET DELAY      2.075         2.075  1       
 
 
@@ -2463,8 +2732,8 @@ clk                                                       NET DELAY      2.075  
 
  ++++Path 5  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : timer_clock_446__i4/Q
-Path End         : timer_clock_446__i4/D
+Path Begin       : buzzer_clock_521__i4/Q
+Path End         : buzzer_clock_521__i4/D
 Source Clock     : clk
 Destination Clock: clk
 Logic Level      : 2
@@ -2492,25 +2761,25 @@ End-of-path arrival time( ns )          6.271
 Source Clock Path
 Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
-inst2/CLKHF                               HSOSC_CORE      CLOCK LATENCY  0.000         0.000  17      
+inst2/CLKHF                               HSOSC_CORE      CLOCK LATENCY  0.000         0.000  27      
 clk                                                       NET DELAY      2.075         2.075  1       
 
 
 Data path
 Name                                      Cell/Site Name  Delay Name      Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  --------------  -----  ------------  ------  
-timer_clock_446__i4/CK->timer_clock_446__i4/Q
+buzzer_clock_521__i4/CK->buzzer_clock_521__i4/Q
                                           FD1P3XZ         CK_TO_Q_DELAY   1.391         3.466  2       
-timer_clock[4]                                            NET DELAY       0.280         3.746  1       
-timer_clock_446_add_4_5/C1->timer_clock_446_add_4_5/S1
+buzzer_clock[4]                                           NET DELAY       0.280         3.746  1       
+buzzer_clock_521_add_4_5/C1->buzzer_clock_521_add_4_5/S1
                                           FA2             C1_TO_S1_DELAY  0.450         4.196  1       
-n76                                                       NET DELAY       2.075         6.271  1       
+n51                                                       NET DELAY       2.075         6.271  1       
 
 
 Destination Clock Path
 Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
-inst2/CLKHF                               HSOSC_CORE      CLOCK LATENCY  0.000         0.000  17      
+inst2/CLKHF                               HSOSC_CORE      CLOCK LATENCY  0.000         0.000  27      
 clk                                                       NET DELAY      2.075         2.075  1       
 
 
@@ -2518,8 +2787,8 @@ clk                                                       NET DELAY      2.075  
 
  ++++Path 6  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : timer_clock_446__i5/Q
-Path End         : timer_clock_446__i5/D
+Path Begin       : buzzer_clock_521__i9/Q
+Path End         : buzzer_i0/DO0
 Source Clock     : clk
 Destination Clock: clk
 Logic Level      : 2
@@ -2547,25 +2816,24 @@ End-of-path arrival time( ns )          6.271
 Source Clock Path
 Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
-inst2/CLKHF                               HSOSC_CORE      CLOCK LATENCY  0.000         0.000  17      
+inst2/CLKHF                               HSOSC_CORE      CLOCK LATENCY  0.000         0.000  27      
 clk                                                       NET DELAY      2.075         2.075  1       
 
 
 Data path
-Name                                      Cell/Site Name  Delay Name      Delay  Arrival Time  Fanout  
-----------------------------------------  --------------  --------------  -----  ------------  ------  
-timer_clock_446__i5/CK->timer_clock_446__i5/Q
-                                          FD1P3XZ         CK_TO_Q_DELAY   1.391         3.466  2       
-timer_clock[5]                                            NET DELAY       0.280         3.746  1       
-timer_clock_446_add_4_7/C0->timer_clock_446_add_4_7/S0
-                                          FA2             C0_TO_S0_DELAY  0.450         4.196  1       
-n75                                                       NET DELAY       2.075         6.271  1       
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+buzzer_clock_521__i9/CK->buzzer_clock_521__i9/Q
+                                          FD1P3XZ         CK_TO_Q_DELAY  1.391         3.466  2       
+buzzer_clock[9]                                           NET DELAY      0.280         3.746  1       
+i9_4_lut/D->i9_4_lut/Z                    LUT4            D_TO_Z_DELAY   0.450         4.196  3       
+buzzer_clock_9__N_93                                      NET DELAY      2.075         6.271  1       
 
 
 Destination Clock Path
 Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
-inst2/CLKHF                               HSOSC_CORE      CLOCK LATENCY  0.000         0.000  17      
+inst2/CLKHF                               HSOSC_CORE      CLOCK LATENCY  0.000         0.000  27      
 clk                                                       NET DELAY      2.075         2.075  1       
 
 
@@ -2573,8 +2841,8 @@ clk                                                       NET DELAY      2.075  
 
  ++++Path 7  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : timer_clock_446__i6/Q
-Path End         : timer_clock_446__i6/D
+Path Begin       : buzzer_clock_521__i5/Q
+Path End         : buzzer_clock_521__i5/D
 Source Clock     : clk
 Destination Clock: clk
 Logic Level      : 2
@@ -2602,25 +2870,25 @@ End-of-path arrival time( ns )          6.271
 Source Clock Path
 Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
-inst2/CLKHF                               HSOSC_CORE      CLOCK LATENCY  0.000         0.000  17      
+inst2/CLKHF                               HSOSC_CORE      CLOCK LATENCY  0.000         0.000  27      
 clk                                                       NET DELAY      2.075         2.075  1       
 
 
 Data path
 Name                                      Cell/Site Name  Delay Name      Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  --------------  -----  ------------  ------  
-timer_clock_446__i6/CK->timer_clock_446__i6/Q
+buzzer_clock_521__i5/CK->buzzer_clock_521__i5/Q
                                           FD1P3XZ         CK_TO_Q_DELAY   1.391         3.466  2       
-timer_clock[6]                                            NET DELAY       0.280         3.746  1       
-timer_clock_446_add_4_7/C1->timer_clock_446_add_4_7/S1
-                                          FA2             C1_TO_S1_DELAY  0.450         4.196  1       
-n74                                                       NET DELAY       2.075         6.271  1       
+buzzer_clock[5]                                           NET DELAY       0.280         3.746  1       
+buzzer_clock_521_add_4_7/C0->buzzer_clock_521_add_4_7/S0
+                                          FA2             C0_TO_S0_DELAY  0.450         4.196  1       
+n50                                                       NET DELAY       2.075         6.271  1       
 
 
 Destination Clock Path
 Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
-inst2/CLKHF                               HSOSC_CORE      CLOCK LATENCY  0.000         0.000  17      
+inst2/CLKHF                               HSOSC_CORE      CLOCK LATENCY  0.000         0.000  27      
 clk                                                       NET DELAY      2.075         2.075  1       
 
 
@@ -2628,8 +2896,8 @@ clk                                                       NET DELAY      2.075  
 
  ++++Path 8  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : timer_clock_446__i7/Q
-Path End         : timer_clock_446__i7/D
+Path Begin       : buzzer_clock_521__i6/Q
+Path End         : buzzer_clock_521__i6/D
 Source Clock     : clk
 Destination Clock: clk
 Logic Level      : 2
@@ -2657,25 +2925,25 @@ End-of-path arrival time( ns )          6.271
 Source Clock Path
 Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
-inst2/CLKHF                               HSOSC_CORE      CLOCK LATENCY  0.000         0.000  17      
+inst2/CLKHF                               HSOSC_CORE      CLOCK LATENCY  0.000         0.000  27      
 clk                                                       NET DELAY      2.075         2.075  1       
 
 
 Data path
 Name                                      Cell/Site Name  Delay Name      Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  --------------  -----  ------------  ------  
-timer_clock_446__i7/CK->timer_clock_446__i7/Q
+buzzer_clock_521__i6/CK->buzzer_clock_521__i6/Q
                                           FD1P3XZ         CK_TO_Q_DELAY   1.391         3.466  2       
-timer_clock[7]                                            NET DELAY       0.280         3.746  1       
-timer_clock_446_add_4_9/C0->timer_clock_446_add_4_9/S0
-                                          FA2             C0_TO_S0_DELAY  0.450         4.196  1       
-n73                                                       NET DELAY       2.075         6.271  1       
+buzzer_clock[6]                                           NET DELAY       0.280         3.746  1       
+buzzer_clock_521_add_4_7/C1->buzzer_clock_521_add_4_7/S1
+                                          FA2             C1_TO_S1_DELAY  0.450         4.196  1       
+n49                                                       NET DELAY       2.075         6.271  1       
 
 
 Destination Clock Path
 Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
-inst2/CLKHF                               HSOSC_CORE      CLOCK LATENCY  0.000         0.000  17      
+inst2/CLKHF                               HSOSC_CORE      CLOCK LATENCY  0.000         0.000  27      
 clk                                                       NET DELAY      2.075         2.075  1       
 
 
@@ -2683,8 +2951,8 @@ clk                                                       NET DELAY      2.075  
 
  ++++Path 9  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : timer_clock_446__i8/Q
-Path End         : timer_clock_446__i8/D
+Path Begin       : buzzer_clock_521__i7/Q
+Path End         : buzzer_clock_521__i7/D
 Source Clock     : clk
 Destination Clock: clk
 Logic Level      : 2
@@ -2712,25 +2980,25 @@ End-of-path arrival time( ns )          6.271
 Source Clock Path
 Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
-inst2/CLKHF                               HSOSC_CORE      CLOCK LATENCY  0.000         0.000  17      
+inst2/CLKHF                               HSOSC_CORE      CLOCK LATENCY  0.000         0.000  27      
 clk                                                       NET DELAY      2.075         2.075  1       
 
 
 Data path
 Name                                      Cell/Site Name  Delay Name      Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  --------------  -----  ------------  ------  
-timer_clock_446__i8/CK->timer_clock_446__i8/Q
+buzzer_clock_521__i7/CK->buzzer_clock_521__i7/Q
                                           FD1P3XZ         CK_TO_Q_DELAY   1.391         3.466  2       
-timer_clock[8]                                            NET DELAY       0.280         3.746  1       
-timer_clock_446_add_4_9/C1->timer_clock_446_add_4_9/S1
-                                          FA2             C1_TO_S1_DELAY  0.450         4.196  1       
-n72                                                       NET DELAY       2.075         6.271  1       
+buzzer_clock[7]                                           NET DELAY       0.280         3.746  1       
+buzzer_clock_521_add_4_9/C0->buzzer_clock_521_add_4_9/S0
+                                          FA2             C0_TO_S0_DELAY  0.450         4.196  1       
+n48                                                       NET DELAY       2.075         6.271  1       
 
 
 Destination Clock Path
 Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
-inst2/CLKHF                               HSOSC_CORE      CLOCK LATENCY  0.000         0.000  17      
+inst2/CLKHF                               HSOSC_CORE      CLOCK LATENCY  0.000         0.000  27      
 clk                                                       NET DELAY      2.075         2.075  1       
 
 
@@ -2738,8 +3006,8 @@ clk                                                       NET DELAY      2.075  
 
  ++++Path 10  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin       : timer_clock_446__i9/Q
-Path End         : timer_clock_446__i9/D
+Path Begin       : buzzer_clock_521__i8/Q
+Path End         : buzzer_clock_521__i8/D
 Source Clock     : clk
 Destination Clock: clk
 Logic Level      : 2
@@ -2767,25 +3035,25 @@ End-of-path arrival time( ns )          6.271
 Source Clock Path
 Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
-inst2/CLKHF                               HSOSC_CORE      CLOCK LATENCY  0.000         0.000  17      
+inst2/CLKHF                               HSOSC_CORE      CLOCK LATENCY  0.000         0.000  27      
 clk                                                       NET DELAY      2.075         2.075  1       
 
 
 Data path
 Name                                      Cell/Site Name  Delay Name      Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  --------------  -----  ------------  ------  
-timer_clock_446__i9/CK->timer_clock_446__i9/Q
+buzzer_clock_521__i8/CK->buzzer_clock_521__i8/Q
                                           FD1P3XZ         CK_TO_Q_DELAY   1.391         3.466  2       
-timer_clock[9]                                            NET DELAY       0.280         3.746  1       
-timer_clock_446_add_4_11/C0->timer_clock_446_add_4_11/S0
-                                          FA2             C0_TO_S0_DELAY  0.450         4.196  1       
-n71                                                       NET DELAY       2.075         6.271  1       
+buzzer_clock[8]                                           NET DELAY       0.280         3.746  1       
+buzzer_clock_521_add_4_9/C1->buzzer_clock_521_add_4_9/S1
+                                          FA2             C1_TO_S1_DELAY  0.450         4.196  1       
+n47_2                                                     NET DELAY       2.075         6.271  1       
 
 
 Destination Clock Path
 Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
-inst2/CLKHF                               HSOSC_CORE      CLOCK LATENCY  0.000         0.000  17      
+inst2/CLKHF                               HSOSC_CORE      CLOCK LATENCY  0.000         0.000  27      
 clk                                                       NET DELAY      2.075         2.075  1       
 
 
