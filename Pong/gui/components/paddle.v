@@ -1,11 +1,11 @@
 //--------------------------------------------------------------------------------
-// Module: paddle
+// Module: Paddle
 //
 // Implements the logic of the paddle for a Pong game.
 // This module uses a behavioral pattern/style for the module's code.
 //--------------------------------------------------------------------------------
 
-module paddle(
+module Paddle(
     clock,              // Clock input of the synchronous sequential design
     row,                // Input: row of the pixel when asked if this module should draw something for that pixel
     col,                // Input: column of the pixel when asked if this module should draw something for that pixel
@@ -38,15 +38,15 @@ module paddle(
 	parameter COLOR = 3'b111;
     parameter SCREEN_X = 640;
     parameter SCREEN_Y = 480;
-	parameter WIDTH = 5;
-	parameter HEIGHT = 55;
-    parameter PADDLE_SIZE_X = 5;
-    parameter PADDLE_SIZE_Y = 55;
+	parameter WIDTH = 4;
+	parameter HEIGHT = 40;
+    parameter PADDLE_SIZE_X = 4;
+    parameter PADDLE_SIZE_Y = 40;
     parameter START_X_POS = 5;
 	parameter START_Y_POS = 100;
 	parameter LIMIT_Y_MIN = 5;
 	parameter LIMIT_Y_MAX = 475;
-    parameter SPEED = 15;           // Number of tick clocks until changes should be done, MAX = 255!
+    parameter SPEED = 5;           // Number of tick clocks until changes should be done, MAX = 255!
 
     //----------------- INTERNAL VARIABLES ----------------------
     reg [7:0] timer = 0;

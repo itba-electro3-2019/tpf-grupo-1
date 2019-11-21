@@ -12,7 +12,7 @@ module Background(
 	parameter WIDTH = 640;
 	parameter HEIGHT = 480;
 	parameter LINE = 5;
-	parameter COLOR = 3'b111;
+	parameter COLOR = 3'b101;
 	
 	/********************/
 	/* Declaring inputs */

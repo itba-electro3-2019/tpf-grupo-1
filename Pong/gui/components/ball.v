@@ -1,12 +1,12 @@
 //--------------------------------------------------------------------------------
-// Module: ball_fsm
+// Module: Ball
 //
 // Implementation for an fsm that rules the behaviour of a Pong ball.
 // This module uses a behavioral pattern/style for the module's code.
 // It is a Mealy Machine.
 //--------------------------------------------------------------------------------
 
-module ball_fsm(
+module Ball(
     clock,              // Clock input of the synchronous sequential design
     row,                // Input: row of the pixel when asked if this module should draw something for that pixel
     col,                // Input: column of the pixel when asked if this module should draw something for that pixel
@@ -37,9 +37,9 @@ module ball_fsm(
 	parameter COLOR = 3'b111;
     parameter SCREEN_X = 640;
     parameter SCREEN_Y = 480;
-	parameter HEIGHT = 12;
-	parameter WIDTH = 12;
-    parameter SPEED = 20;           // Number of tick clocks until changes should be done, MAX = 255!
+	parameter HEIGHT = 8;
+	parameter WIDTH = 8;
+    parameter SPEED = 5;           // Number of tick clocks until changes should be done, MAX = 255!
 
     //----------------- INTERNAL VARIABLES ----------------------
     reg [1:0] current_state;
@@ -215,22 +215,12 @@ module ball_fsm(
 	
 	// Driving the requested pixel in the output
 	// according to a valid row and column pair
-	reg [10:0] memory_address;
-	reg [2:0] memory [0:899];
-	always @(col or row) begin: READ_MEMORY
+	always @(col or row) begin: DRAW_SQUARE_BALL
 		if (col >= pos_x && col < (WIDTH + pos_x) && row >= pos_y && row < (HEIGHT + pos_y)) begin
-			memory_address = (col - pos_x) + (row - pos_y) * WIDTH;
-			rgb = memory[memory_address];
+			rgb = COLOR;
 		end else begin
 			rgb = 3'b000;
 		end
-	end
-	
-	// Initial procedural block, to load the memory
-	// with the given content of the .list file! Expected the same
-	// name as the module...
-	initial begin: LOAD_MEMORY
-		$readmemb("circle.list", memory);
 	end
 
 endmodule

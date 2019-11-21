@@ -1,11 +1,10 @@
 //--------------------------------------------------------------------------------
-// Module: game_logic
+// Module: GameLogic
 //
 // Comparing positions of paddles and ball determines bouncing events for the ball.
 // This module uses a behavioral pattern/style for the module's code.
 //--------------------------------------------------------------------------------
-
-module game_logic(
+module GameLogic(
     clock,                  // Clock input of the synchronous sequential design
     ball_pos_x,             // Input: postion x of the ball
     ball_pos_y,             // Input: postion y of the ball

@@ -1,11 +1,11 @@
 <?xml version="1.0" ?>
-<RadiantModule date="2019 11 14 03:16:50" generator="ipgen" library="module" module="pll" name="clock" source_format="Verilog" vendor="latticesemi.com" version="1.0.1">
+<RadiantModule date="2019 11 21 01:14:17" generator="ipgen" library="module" module="pll" name="clock" source_format="Verilog" vendor="latticesemi.com" version="1.0.1">
  <Package>
-  <File modified="2019 11 14 03:16:43" name="rtl/clock.v" type="top_level_verilog"/>
-  <File modified="2019 11 14 03:16:43" name="rtl/clock_bb.v" type="black_box_verilog"/>
-  <File modified="2019 11 14 03:16:43" name="misc/clock_tmpl.vhd" type="template_vhdl"/>
-  <File modified="2019 11 14 03:16:50" name="component.xml" type="IP-XACT_output_file"/>
-  <File modified="2019 11 14 03:16:43" name="clock.cfg" type="cfg"/>
-  <File modified="2019 11 14 03:16:44" name="misc/clock_tmpl.v" type="template_verilog"/>
+  <File modified="2019 11 21 01:14:15" name="rtl/clock.v" type="top_level_verilog"/>
+  <File modified="2019 11 21 01:14:15" name="rtl/clock_bb.v" type="black_box_verilog"/>
+  <File modified="2019 11 21 01:14:15" name="misc/clock_tmpl.vhd" type="template_vhdl"/>
+  <File modified="2019 11 21 01:14:17" name="component.xml" type="IP-XACT_output_file"/>
+  <File modified="2019 11 21 01:14:15" name="clock.cfg" type="cfg"/>
+  <File modified="2019 11 21 01:14:15" name="misc/clock_tmpl.v" type="template_verilog"/>
  </Package>
 </RadiantModule>

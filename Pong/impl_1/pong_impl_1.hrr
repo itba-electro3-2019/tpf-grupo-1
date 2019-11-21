@@ -3,33 +3,54 @@ Report for cell main
    Instance path: main
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	       1428        100.0
+                                 IOLGC	       1.00        100.0
+                                  LUT4	       1231        100.0
+                                 IOREG	          1        100.0
                                  IOBUF	         10        100.0
-                                PFUREG	        135        100.0
-                                   DSP	          2        100.0
+                                PFUREG	        124        100.0
+                                   DSP	          1        100.0
 SUB MODULES
                                   cell	      count    LUT4 Usage(%)
                             Background	          1         4.2
-Start_menu(START_POSX=173,START_POSY=234)	          1        36.3
+                                  Ball	          1        14.0
+                             GameLogic	          1         8.6
+                               MainFsm	          1         0.3
+Paddle(START_X_POS=20,START_Y_POS=190)	          1         4.5
+Paddle(START_X_POS=615,START_Y_POS=190)	          1         4.4
+StartMenu(START_POSX=225,START_POSY=214)	          1        40.9
                              VGADriver	          1         6.4
-                              ball_fsm	          1        16.1
-                            game_logic	          1         9.5
-                              main_fsm	          1         0.2
-paddle(START_X_POS=20,START_Y_POS=190)	          1         4.7
-paddle(START_X_POS=615,START_Y_POS=190)	          1         5.7
+                                 clock	          1         0.0
+---------------------------------------------------
+Report for cell Paddle(START_X_POS=615,START_Y_POS=190)
+   Instance path: main/paddle_two
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         54         4.4
+                                PFUREG	         26        21.0
 ---------------------------------------------------
 Report for cell VGADriver
    Instance path: main/vga_driver
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	         92         6.4
-                                PFUREG	         22        16.3
-SUB MODULES
-                                  cell	      count    LUT4 Usage(%)
-                                 clock	          1         0.0
+                                  LUT4	         79         6.4
+                                PFUREG	         20        16.1
+---------------------------------------------------
+Report for cell GameLogic
+   Instance path: main/game
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        106         8.6
+                                PFUREG	          2         1.6
+---------------------------------------------------
+Report for cell Ball
+   Instance path: main/ball
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        172        14.0
+                                PFUREG	         34        27.4
 ---------------------------------------------------
 Report for cell clock
-   Instance path: main/vga_driver/vga_clock
+   Instance path: main/pll
                      Cell usage:
                                   cell	      count    Res Usage(%)
 SUB MODULES
@@ -37,55 +58,33 @@ SUB MODULES
 clock_ipgen_lscc_pll(DIVR="0",DIVF="66",DIVQ="5",FILTER_RANGE="1",PLLOUT_SELECT_PORTA="GENCLK",PLLOUT_SELECT_PORTB="GENCLK",FREQUENCY_PIN_REFERENCECLK="12.000000")	          1         0.0
 ---------------------------------------------------
 Report for cell clock_ipgen_lscc_pll(DIVR="0",DIVF="66",DIVQ="5",FILTER_RANGE="1",PLLOUT_SELECT_PORTA="GENCLK",PLLOUT_SELECT_PORTB="GENCLK",FREQUENCY_PIN_REFERENCECLK="12.000000")
-   Instance path: main/vga_driver/vga_clock/lscc_pll_inst
+   Instance path: main/pll/lscc_pll_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
 ---------------------------------------------------
-Report for cell Start_menu(START_POSX=173,START_POSY=234)
+Report for cell StartMenu(START_POSX=225,START_POSY=214)
    Instance path: main/start_menu
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	        518        36.3
-                                   DSP	          1        50.0
+                                  LUT4	        503        40.9
+                                   DSP	          1        100.0
 ---------------------------------------------------
-Report for cell game_logic
-   Instance path: main/game
+Report for cell MainFsm
+   Instance path: main/menu
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	        135         9.5
-                                PFUREG	          2         1.5
+                                  LUT4	          4         0.3
+                                PFUREG	          3         2.4
 ---------------------------------------------------
-Report for cell ball_fsm
-   Instance path: main/ball
+Report for cell Paddle(START_X_POS=20,START_Y_POS=190)
+   Instance path: main/paddle_one
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	        230        16.1
-                                PFUREG	         36        26.7
-                                   DSP	          1        50.0
+                                  LUT4	         56         4.5
+                                PFUREG	         23        18.5
 ---------------------------------------------------
 Report for cell Background
    Instance path: main/background
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	         60         4.2
----------------------------------------------------
-Report for cell main_fsm
-   Instance path: main/menu
-                     Cell usage:
-                                  cell	      count    Res Usage(%)
-                                  LUT4	          3         0.2
-                                PFUREG	          4         3.0
----------------------------------------------------
-Report for cell paddle(START_X_POS=615,START_Y_POS=190)
-   Instance path: main/paddle_two
-                     Cell usage:
-                                  cell	      count    Res Usage(%)
-                                  LUT4	         81         5.7
-                                PFUREG	         29        21.5
----------------------------------------------------
-Report for cell paddle(START_X_POS=20,START_Y_POS=190)
-   Instance path: main/paddle_one
-                     Cell usage:
-                                  cell	      count    Res Usage(%)
-                                  LUT4	         67         4.7
-                                PFUREG	         27        20.0
+                                  LUT4	         52         4.2

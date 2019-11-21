@@ -6,14 +6,14 @@ Performance Grade:      High-Performance_1.2V
 PACKAGE:          SG48
 Package Status:                     Preliminary    Version 1.5
 
-Tue Nov 19 05:18:40 2019
+Thu Nov 21 03:44:32 2019
 
 Pinout by Port Name:
 +-----------------+----------+--------------+-------+--------------------+
 | Port Name       | Pin/Bank | Buffer Type  | Site  | Properties         |
 +-----------------+----------+--------------+-------+--------------------+
 | b               | 26/0     | LVCMOS33_OUT | PR19A | DRIVE:8mA PULL:NA  |
-| enter           | 11/1     | LVCMOS33_IN  | PL18A | PULL:100K          |
+| button_enter    | 11/1     | LVCMOS33_IN  | PL18A | PULL:100K          |
 | g               | 25/0     | LVCMOS33_OUT | PR20B | DRIVE:8mA PULL:NA  |
 | hsync           | 20/1     | LVCMOS33_OUT | PL20B | DRIVE:8mA PULL:NA  |
 | player_one_down | 18/1     | LVCMOS33_IN  | PL23B | PULL:100K          |
@@ -42,7 +42,7 @@ Pinout by Pin Number:
 | 6/1      |     unused, PULL:UP |            |              | PL14B |                  |
 | 9/1      |     unused, PULL:UP |            |              | PL16A |                  |
 | 10/1     |     unused, PULL:UP |            |              | PL17A |                  |
-| 11/1     | enter               | LOCATED    | LVCMOS33_IN  | PL18A |                  |
+| 11/1     | button_enter        | LOCATED    | LVCMOS33_IN  | PL18A |                  |
 | 12/1     | player_two_down     | LOCATED    | LVCMOS33_IN  | PL19A |                  |
 | 13/1     | player_two_up       | LOCATED    | LVCMOS33_IN  | PL20A |                  |
 | 14/1     |     unused, PULL:UP |            |              | PL24A | SPI_SO           |
@@ -98,7 +98,7 @@ Pinout by Pin Number:
 Locate Constraints for each Pin: 
 
 ldc_set_location -site {26} [ get_ports {b} ]
-ldc_set_location -site {11} [ get_ports {enter} ]
+ldc_set_location -site {11} [ get_ports {button_enter} ]
 ldc_set_location -site {25} [ get_ports {g} ]
 ldc_set_location -site {20} [ get_ports {hsync} ]
 ldc_set_location -site {18} [ get_ports {player_one_down} ]
@@ -113,5 +113,5 @@ ldc_set_location -site {21} [ get_ports {vsync} ]
 
 
 Copyright 2015 Lattice Semiconductor Corporation, All Rights Reserved
-Tue Nov 19 05:18:40 2019
+Thu Nov 21 03:44:32 2019
 

@@ -1,35 +1,31 @@
-//-----------------------------------------
-// Module: StartMenu
-// Graphic representation of the main menu
-//-----------------------------------------
-module StartMenu(
+module Marker(
 	/* Memory Inputs */
-	row,		// Current pixel data row
-	col,		// Current pixel data row
+	row,		// Input: Current pixel data row
+	col,		// Input: Current pixel data row
+	posx,		// Input: Current position x
+	posy,		// Input: Current position y
 	/* Memory Outputs */
 	rgb			// Corresponding pixel data to the row/column
 );
 
 	/* Declaring parameters */
-	parameter START_POSX = 0;
-	parameter START_POSY = 0;
-	parameter HEIGHT = 52;
-	parameter WIDTH = 173;
+	parameter HEIGHT = 7;
+	parameter WIDTH = 20;
 
 	/* Declaring input ports */
 	input wire [9:0] row;
 	input wire [9:0] col;
 	
+	input wire [9:0] posx;
+	input wire [9:0] posy;
+	
 	/* Declaring output ports */
 	output reg [2:0] rgb;
 	
 	/* Declaring variables */
-	reg [2:0] memory [0:8995];
+	reg [2:0] memory [0:139];
 	
-	reg [9:0] posx = START_POSX;
-	reg [9:0] posy = START_POSY;
-	
-	reg [13:0] memory_address;
+	reg [7:0] memory_address;
 	
 	// Driving the requested pixel in the output
 	// according to a valid row and column pair
@@ -46,7 +42,7 @@ module StartMenu(
 	// with the given content of the .list file! Expected the same
 	// name as the module...
 	initial begin: LOAD_MEMORY
-		$readmemb("start_menu.list", memory);
+		$readmemb("marker.list", memory);
 	end
 
 endmodule

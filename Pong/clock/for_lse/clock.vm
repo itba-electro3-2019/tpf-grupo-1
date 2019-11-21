@@ -1,8 +1,8 @@
 // Verilog netlist produced by program LSE :  version Radiant Software (64-bit) 1.1.0.165.1
-// Netlist written on Thu Nov 14 03:16:49 2019
+// Netlist written on Thu Nov 21 01:14:17 2019
 // Source file index table: 
 // Object locations will have the form @<file_index>(<first_ line>[<left_column>],<last_line>[<right_column>])
-// file 0 "c:/users/lucas/source/repos/verilog-tests/vga_driver/clock/rtl/clock.v"
+// file 0 "c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/clock/rtl/clock.v"
 // file 1 "c:/lscc/radiant/1.1/cae_library/simulation/verilog/ice40up/ccu2_b.v"
 // file 2 "c:/lscc/radiant/1.1/cae_library/simulation/verilog/ice40up/fd1p3bz.v"
 // file 3 "c:/lscc/radiant/1.1/cae_library/simulation/verilog/ice40up/fd1p3dz.v"

@@ -20,14 +20,14 @@ module VGADriver(
 	/************************/
 	/* Declaring parameters */
 	/************************/
-	parameter H_SYNC_BACK_PORCH = 128;
+	parameter H_SYNC_BACK_PORCH = 96;
 	parameter H_SYNC_PIXEL_DATA = 144;
 	parameter H_SYNC_FRONT_PORCH = 784;
-	parameter H_SYNC_RESET = 799;
+	parameter H_SYNC_RESET = 800;
 	
 	parameter V_SYNC_BACK_PORCH = 2;
-	parameter V_SYNC_LINES_DATA = 35;
-	parameter V_SYNC_FRONT_PORCH = 515;
+	parameter V_SYNC_LINES_DATA = 33;
+	parameter V_SYNC_FRONT_PORCH = 513;
 	parameter V_SYNC_RESET = 524;
 	
 	parameter H_OFFSET = 0;

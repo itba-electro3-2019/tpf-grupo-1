@@ -24,7 +24,7 @@
 -sethld
 -use_io_insertion 1
 -resolve_mixed_drivers 0
--ver "C:\Users\Lucas\source\repos\verilog-tests\vga_driver\clock\rtl\clock.v"
+-ver "C:\Users\Lucas\Documents\Actualmente Usando\Electronica III\tpf-grupo-1\Pong\clock\rtl\clock.v"
 -top clock
 -udb "clock.udb"
 -output_hdl "clock.vm"
