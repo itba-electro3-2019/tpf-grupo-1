@@ -5,7 +5,7 @@ Target Device:        iCE40UP5KSG48
 Target Performance:   High-Performance_1.2V
 
 Mapper:    version Radiant Software (64-bit) 1.1.0.165.1
-Mapped on: Thu Nov 21 12:10:06 2019
+Mapped on: Thu Nov 21 12:21:20 2019
 
 Design Information
 ------------------
@@ -18,10 +18,10 @@ Design Summary
 
    Number of slice registers: 138 out of  5280 (3%)
    Number of I/O registers:      0 out of   117 (0%)
-   Number of LUT4s:           2267 out of  5280 (43%)
-      Number of logic LUT4s:             1903
+   Number of LUT4s:           2276 out of  5280 (43%)
+      Number of logic LUT4s:             1911
       Number of inserted feedthru LUT4s:   3
-      Number of replicated LUT4s:          1
+      Number of replicated LUT4s:          2
       Number of ripple logic:            180 (360 LUT4s)
    Number of IO sites used:   10 out of 39 (26%)
       Number of IO sites used for general PIOs: 10
@@ -52,13 +52,13 @@ Design Summary
      pll.lscc_pll_inst.u_PLL_B/OUTGLOBAL)
    Number of Clock Enables:  8
       Net VCC_net: 1 loads, 0 SLICEs
-      Net n109250: 2 loads, 2 SLICEs
+      Net n109457: 2 loads, 2 SLICEs
       Net reset: 10 loads, 10 SLICEs
-      Net paddle_two/n106794: 6 loads, 6 SLICEs
+      Net paddle_two/n106800: 6 loads, 6 SLICEs
       Net n98996: 20 loads, 20 SLICEs
-      Net n98993: 10 loads, 10 SLICEs
-      Net paddle_one/n106773: 6 loads, 6 SLICEs
-      Net menu/n118064: 1 loads, 1 SLICEs
+      Net vga_driver/n98993: 10 loads, 10 SLICEs
+      Net menu/n10: 1 loads, 1 SLICEs
+      Net paddle_one/n106779: 6 loads, 6 SLICEs
    Number of LSRs:  11
 
                                     Page 1
@@ -71,25 +71,25 @@ Design Summary (cont)
 ---------------------
       Net n98870: 44 loads, 44 SLICEs
       Net bounce_clock_7__N_54: 5 loads, 5 SLICEs
-      Net paddle_two/n107007: 5 loads, 5 SLICEs
+      Net paddle_two/n107018: 5 loads, 5 SLICEs
       Net n98996: 5 loads, 5 SLICEs
-      Net n107008: 1 loads, 1 SLICEs
-      Net n107003: 8 loads, 8 SLICEs
-      Net n98993: 6 loads, 6 SLICEs
-      Net game/n102982: 1 loads, 1 SLICEs
+      Net n107021: 1 loads, 1 SLICEs
+      Net n107016: 8 loads, 8 SLICEs
+      Net game/n102986: 1 loads, 1 SLICEs
       Net game/n99511: 1 loads, 1 SLICEs
-      Net paddle_one/n114146: 5 loads, 5 SLICEs
-      Net menu/n106800: 1 loads, 1 SLICEs
+      Net vga_driver/n98993: 6 loads, 6 SLICEs
+      Net menu/n9: 1 loads, 1 SLICEs
+      Net paddle_one/n107020: 5 loads, 5 SLICEs
    Top 10 highest fanout non-clock nets:
-      Net menu_rgb_2__N_664[3]: 330 loads
-      Net menu_rgb_2__N_664[4]: 271 loads
-      Net menu_rgb_2__N_664[2]: 250 loads
-      Net menu_rgb_2__N_664[1]: 236 loads
-      Net start_menu/rgb_2__N_628[3]: 213 loads
-      Net menu_rgb_2__N_664[5]: 203 loads
-      Net menu_rgb_2__N_664[0]: 190 loads
-      Net start_menu/rgb_2__N_628[2]: 180 loads
-      Net start_menu/rgb_2__N_628[1]: 163 loads
+      Net menu_rgb_2__N_664[3]: 331 loads
+      Net menu_rgb_2__N_664[4]: 272 loads
+      Net menu_rgb_2__N_664[2]: 258 loads
+      Net menu_rgb_2__N_664[1]: 235 loads
+      Net start_menu/rgb_2__N_628[3]: 210 loads
+      Net menu_rgb_2__N_664[5]: 202 loads
+      Net menu_rgb_2__N_664[0]: 192 loads
+      Net start_menu/rgb_2__N_628[2]: 183 loads
+      Net start_menu/rgb_2__N_628[1]: 166 loads
       Net start_menu/rgb_2__N_628[4]: 158 loads
 
 
@@ -206,12 +206,12 @@ Instance Name: paused_menu.mult_796
          Type: DSP
 Instance Name: paused_menu.marker.mult_799
          Type: DSP
+Instance Name: pll.lscc_pll_inst.u_PLL_B
+         Type: PLL
 Instance Name: inst2
          Type: HFOSC
 Instance Name: start_menu.mult_793
          Type: DSP
-Instance Name: pll.lscc_pll_inst.u_PLL_B
-         Type: PLL
 
 Run Time and Memory Usage
 -------------------------
