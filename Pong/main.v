@@ -66,7 +66,7 @@ module main(
 	/***************************/
 	/* Debouncing Enter Button */
 	/***************************/
-	parameter BOUNCE_CLOCK = 100;
+	parameter BOUNCE_CLOCK = 200;
 	reg [7:0] bounce_clock = 0;
 	reg enter = 0;
 	always @(posedge tick) begin: DEBOUNCE_ENTER_BUTTON
@@ -147,7 +147,6 @@ module main(
 	/**********************/
 	/* Game Logic Objects */
 	/**********************/
-	
 	wire [3:0] score_player_one;
 	wire [3:0] score_player_tow;
 	
@@ -158,10 +157,8 @@ module main(
 	wire enable_pause;
 	wire enable_game;
 	
-	reg value = 0;
-	
 	GameLogic game (tick_game, ball_pos_x, ball_pos_y, ball_size_x, ball_size_y, paddle_one_pos_x, paddle_one_pos_y, paddle_one_size_x, paddle_one_size_y, paddle_two_pos_x, paddle_two_pos_y, paddle_two_size_x, paddle_two_size_y, bounce, score_player_one, score_player_two);
-	MainFsm menu (tick, enter, value, tick_game, tick_menu, enable_start, enable_pause, enable_game, reset);
+	MainFsm menu (tick, enter, pause_selection, tick_game, tick_menu, enable_start, enable_pause, enable_game, reset);
 	
 	/**************************/
 	/* GUI Controller Network */
