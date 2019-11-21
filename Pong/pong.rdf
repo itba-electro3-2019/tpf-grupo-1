@@ -6,10 +6,13 @@
         <Source name="main.v" type="Verilog" type_short="Verilog">
             <Options top_module="main"/>
         </Source>
-        <Source name="drivers/vgadriver.v" type="Verilog" type_short="Verilog">
+        <Source name="drivers/vgadriver_v2.v" type="Verilog" type_short="Verilog">
             <Options/>
         </Source>
         <Source name="clock/clock.ipx" type="IPX_Module" type_short="IPX">
+            <Options/>
+        </Source>
+        <Source name="logic/main_fsm.v" type="Verilog" type_short="Verilog">
             <Options/>
         </Source>
         <Source name="logic/game_logic.v" type="Verilog" type_short="Verilog">
@@ -24,10 +27,13 @@
         <Source name="gui/trash/components/background.v" type="Verilog" type_short="Verilog">
             <Options/>
         </Source>
-        <Source name="logic/main_fsm.v" type="Verilog" type_short="Verilog">
+        <Source name="gui/menus/start_menu.v" type="Verilog" type_short="Verilog">
             <Options/>
         </Source>
-        <Source name="gui/menus/start_menu.v" type="Verilog" type_short="Verilog">
+        <Source name="gui/menus/paused_menu.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="gui/menus/marker.v" type="Verilog" type_short="Verilog">
             <Options/>
         </Source>
         <Source name="impl_1/impl_1.ldc" type="LSE Design Constraints File" type_short="LDC">
