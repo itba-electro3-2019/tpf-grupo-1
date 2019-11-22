@@ -12,7 +12,7 @@ module Background(
 	parameter WIDTH = 640;
 	parameter HEIGHT = 480;
 	parameter LINE = 5;
-	parameter COLOR = 3'b101;
+	parameter COLOR = 3'b001;
 	
 	/********************/
 	/* Declaring inputs */
@@ -34,13 +34,13 @@ module Background(
 	/********************************/
 	/* Drawing Background Component */
 	/********************************/
-	always @(row or col) begin: DRAW_BACKGROUND
-		auxiliar_col = (col >= (WIDTH - LINE)) ? col - WIDTH + LINE : col ;
-		auxiliar_row = (row >= (HEIGHT - LINE)) ? row - HEIGHT + LINE : row ;
+	always @* begin: DRAW_BACKGROUND
+		auxiliar_col <= (col >= (WIDTH - LINE)) ? col - WIDTH + LINE : col ;
+		auxiliar_row <= (row >= (HEIGHT - LINE)) ? row - HEIGHT + LINE : row ;
 		if ( (auxiliar_row >= 0 && auxiliar_row < LINE) || (auxiliar_col >= 0 && auxiliar_col < LINE) ) begin
-			rgb = COLOR;
+			rgb <= COLOR;
 		end else begin
-			rgb = 3'b000;
+			rgb <= 3'b000;
 		end
 	end
 	

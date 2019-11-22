@@ -19,7 +19,8 @@ module main(
 	vsync,					// Output: Vertical Synchronization for VGA System
 	r,						// Output: Red RGB Component for VGA System
 	g,						// Output: Green RGB Component for VGA System
-	b						// Output: Blue RGB Component for VGA System
+	b,						// Output: Blue RGB Component for VGA System
+	clk_in					// Input: External clock of 12MHz
 );
 
 	/*************************/
@@ -44,20 +45,29 @@ module main(
 	/****************************/
 	/* Clock Generation f=12MHz */
 	/****************************/
+	input wire clk_in;
 	wire clk;
-	HSOSC inst2(
-		.CLKHFPU(1'b1),
-		.CLKHFEN(1'b1),
-		.CLKHF(clk)
-		);
-	defparam inst2.CLKHF_DIV = "0b10";
+	clock pll(
+			.ref_clk_i(clk_in) ,
+			.rst_n_i(1'b1),
+			.outcore_o(),
+			.outglobal_o(clk));
+	
+	/*******************************/
+	/* VGA Driver Connection Wires */
+	/*******************************/
+	wire [9:0] pixel_row;
+	wire [9:0] pixel_col;
+	reg [2:0] pixel_rgb;
+	
+	VGADriver vga_driver(pixel_row, pixel_col, pixel_rgb, hsync, vsync, {r, g, b}, 1'b1, clk);
 	
 	/*************************/
 	/* Tick clock generation */
 	/*************************/
 	reg [14:0] timer_clock = 0;
 	reg tick = 0;
-	parameter TIMER_VALUE = 6000;
+	parameter TIMER_VALUE = 12500;
 	always @(posedge clk) begin: TICK_GENERATOR
 		timer_clock = timer_clock + 1;
 		if (timer_clock >= TIMER_VALUE) begin
@@ -101,18 +111,6 @@ module main(
 		end
 	end
 	
-	/*******************************/
-	/* VGA Driver Connection Wires */
-	/*******************************/
-	wire [9:0] pixel_row;
-	wire [9:0] pixel_col;
-	wire [2:0] pixel_rgb;
-	
-	wire vga_clock;
-	
-	clock pll(clk, reset, ,vga_clock);
-	VGADriver vga_driver(pixel_row, pixel_col, pixel_rgb, hsync, vsync, {r, g, b}, reset, vga_clock);
-	
 	/********************************/
 	/* GUI Components Instantiation */
 	/********************************/
@@ -125,15 +123,14 @@ module main(
 	wire [2:0] score_two_rgb;
 	wire [2:0] ball_rgb;
 	
+	reg [2:0] ball_speed;
 	wire [9:0] ball_pos_x;
 	wire [9:0] ball_pos_y;
 	wire [9:0] ball_size_x;
 	wire [9:0] ball_size_y;
-	reg [2:0] ball_speed;
-	
+
 	wire [3:0] score_player_one;
 	wire [3:0] score_player_two;
-	reg speed_selector;
 	
 	wire [2:0] paddle_one_speed;
 	wire [9:0] paddle_one_pos_x;
@@ -146,6 +143,18 @@ module main(
 	wire [9:0] paddle_two_pos_y;
 	wire [9:0] paddle_two_size_x;
 	wire [9:0] paddle_two_size_y;
+
+	wire [9:0] winner_pos_x;
+	wire [9:0] winner_pos_y;
+	wire [9:0] looser_pos_x;
+	wire [9:0] looser_pos_y;
+	wire [2:0] winner_rgb;
+	wire [2:0] looser_rgb;
+	
+	assign winner_pos_x = (score_player_one > score_player_two) ? 150 : 350 ;
+	assign winner_pos_y = 200;
+	assign looser_pos_x = (score_player_one < score_player_two) ? 150 : 350 ;
+	assign looser_pos_y = 200;
 	
 	wire pause_up;
 	wire pause_down;
@@ -153,46 +162,51 @@ module main(
 	assign pause_up = player_one_up & player_two_up;
 	assign pause_down = player_one_down & player_two_down;
 	
-	Ball ball (tick_game, pixel_row, pixel_col, reset, bounce, ball_speed, ball_rgb, ball_pos_x, ball_pos_y, ball_size_x, ball_size_y);
+	Ball ball (tick, enable_game, pixel_row, pixel_col, reset, bounce, ball_speed, ball_rgb, ball_pos_x, ball_pos_y, ball_size_x, ball_size_y);
 	
 	Paddle #(
 		.START_X_POS(20),
-		.START_Y_POS(190)) paddle_one (tick_game, pixel_row, pixel_col, reset, player_one_up, player_one_down, paddle_one_rgb, paddle_one_pos_x, paddle_one_pos_y, paddle_one_size_x, paddle_one_size_y, paddle_one_speed);
+		.START_Y_POS(190)) paddle_one (tick, enable_game, pixel_row, pixel_col, reset, player_one_up, player_one_down, paddle_one_rgb, paddle_one_pos_x, paddle_one_pos_y, paddle_one_size_x, paddle_one_size_y, paddle_one_speed);
 		
 	Paddle #(
 		.START_X_POS(615),
-		.START_Y_POS(190)) paddle_two (tick_game, pixel_row, pixel_col, reset, player_two_up, player_two_down, paddle_two_rgb, paddle_two_pos_x, paddle_two_pos_y, paddle_two_size_x, paddle_two_size_y, paddle_two_speed);
+		.START_Y_POS(190)) paddle_two (tick, enable_game, pixel_row, pixel_col, reset, player_two_up, player_two_down, paddle_two_rgb, paddle_two_pos_x, paddle_two_pos_y, paddle_two_size_x, paddle_two_size_y, paddle_two_speed);
 	
 	Background background (pixel_row, pixel_col, background_rgb);
 	
 	StartMenu #(
-		.START_POSX(225),
+		.START_POSX(230),
 		.START_POSY(214)) start_menu (pixel_row, pixel_col, start_menu_rgb);
 	
 	PausedMenu #(
-		.START_POSX(275),
-		.START_POSY(170)) paused_menu(tick_menu, pixel_row, pixel_col, reset, pause_up, pause_down, paused_menu_rgb, pause_selection);
+		.START_POSX(265),
+		.START_POSY(170)) paused_menu(tick, enable_pause, pixel_row, pixel_col, reset, pause_up, pause_down, paused_menu_rgb, pause_selection);
 
-	Score #(
-		.POSX(240),
-		.POSY(100)) score_one(score_player_one, pixel_row, pixel_col, score_one_rgb);
-		
-	Score #(
-		.POSX(480),
-		.POSY(100)) score_two(score_player_two, pixel_row, pixel_col, score_two_rgb);
+	NumericDisplay #(
+		.POSX(260),
+		.POSY(50)) score_one(score_player_one, pixel_row, pixel_col, score_one_rgb);
 
+	NumericDisplay #(
+		.POSX(340),
+		.POSY(50)) score_two(score_player_two, pixel_row, pixel_col, score_two_rgb);
+
+	Looser looser (pixel_row, pixel_col, looser_rgb, looser_pos_x, looser_pos_y);
+	Winner winner (pixel_row, pixel_col, winner_rgb, winner_pos_x, winner_pos_y);
+	
 	/*************************/
 	/* Ball Speed Controller */
 	/*************************/
-	wire [2:0] speed_capture;
 	parameter INITIAL_SPEED = 5;
+	wire [2:0] speed_capture;
+	reg speed_selector;
+	
 	Mux mux (paddle_two_speed, paddle_one_speed, speed_selector, speed_capture);
 
 	always @ (posedge tick) begin
 		if (bounce == 1) begin
 			speed_selector <= ~speed_selector;
 			ball_speed <= speed_capture;
-		end else if (reset == 0) begin
+		end else if (reset == 0 || bounce == 3) begin
 			ball_speed <= INITIAL_SPEED;
 		end
 	end
@@ -202,23 +216,36 @@ module main(
 	/**********************/
 	
 	wire reset;
-	wire tick_game;
-	wire tick_menu;
 	wire enable_start;
 	wire enable_pause;
 	wire enable_game;
+	wire enable_end;
 
-	GameLogic game (tick_game, ball_pos_x, ball_pos_y, ball_size_x, ball_size_y, paddle_one_pos_x, paddle_one_pos_y, paddle_one_size_x, paddle_one_size_y, paddle_two_pos_x, paddle_two_pos_y, paddle_two_size_x, paddle_two_size_y, bounce, score_player_one, score_player_two);
-	MainFsm menu (tick, enter, pause_selection, tick_game, tick_menu, enable_start, enable_pause, enable_game, reset);
-	
+	BounceController game (tick, enable_game, ball_pos_x, ball_pos_y, ball_size_x, ball_size_y, paddle_one_pos_x, paddle_one_pos_y, paddle_one_size_x, paddle_one_size_y, paddle_two_pos_x, paddle_two_pos_y, paddle_two_size_x, paddle_two_size_y, bounce);
+	MainFsm menu (tick, enter, pause_selection, enable_start, enable_pause, enable_game, enable_end, reset, score_player_one, score_player_two);
+	ScoreCounter score(tick, ball_pos_x, ball_size_x, reset, score_player_one, score_player_two);
+
 	/**************************/
 	/* GUI Controller Network */
 	/**************************/
-	wire [2:0] bus_rgb;
-	assign pixel_rgb = bus_rgb;
 	
-	assign bus_rgb[0] = ((paddle_one_rgb[0] | paddle_two_rgb[0] | background_rgb[0] | ball_rgb[0] | score_one_rgb[0] | score_two_rgb[0]) & enable_game) | (start_menu_rgb[0] & enable_start) | (paused_menu_rgb[0] & enable_pause);
-	assign bus_rgb[1] = ((paddle_one_rgb[1] | paddle_two_rgb[1] | background_rgb[1] | ball_rgb[1] | score_one_rgb[1] | score_two_rgb[1]) & enable_game) | (start_menu_rgb[1] & enable_start) | (paused_menu_rgb[1] & enable_pause);
-	assign bus_rgb[2] = ((paddle_one_rgb[2] | paddle_two_rgb[2] | background_rgb[2] | ball_rgb[2] | score_one_rgb[2] | score_two_rgb[2]) & enable_game) | (start_menu_rgb[2] & enable_start) | (paused_menu_rgb[2] & enable_pause);
-
+	always @* begin: MIX_RGB_PIXELS
+		if (enable_pause) begin
+			pixel_rgb[0] <= paused_menu_rgb[0];
+			pixel_rgb[1] <= paused_menu_rgb[1];
+			pixel_rgb[2] <= paused_menu_rgb[2];
+		end else if (enable_game) begin
+			pixel_rgb[0] <= paddle_one_rgb[0] | paddle_two_rgb[0] | background_rgb[0] | ball_rgb[0] | score_one_rgb[0] | score_two_rgb[0];
+			pixel_rgb[1] <= paddle_one_rgb[1] | paddle_two_rgb[1] | background_rgb[1] | ball_rgb[1] | score_one_rgb[1] | score_two_rgb[1];
+			pixel_rgb[2] <= paddle_one_rgb[2] | paddle_two_rgb[2] | background_rgb[2] | ball_rgb[2] | score_one_rgb[2] | score_two_rgb[2];
+		end else if (enable_start) begin
+			pixel_rgb[0] <= start_menu_rgb[0];
+			pixel_rgb[1] <= start_menu_rgb[1];
+			pixel_rgb[2] <= start_menu_rgb[2];
+		end else if (enable_end) begin
+			pixel_rgb[0] <= looser_rgb[0] | winner_rgb[0];
+			pixel_rgb[1] <= looser_rgb[1] | winner_rgb[1];
+			pixel_rgb[2] <= looser_rgb[2] | winner_rgb[2];
+		end
+	end
 endmodule

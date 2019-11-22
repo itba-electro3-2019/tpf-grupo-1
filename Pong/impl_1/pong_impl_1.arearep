@@ -1,86 +1,252 @@
 ----------------------------------------------------------------------
 Report for cell main.TECH
-Register bits:  177 of 5280 (3.352%)
-I/O cells:      11
+Register bits:  188 of 5280 (3.561%)
+I/O cells:      12
                                   Cell usage:
                                cell     count   Res Usage(%)
-                               CCU2       215          100.0
-                            FD1P3XZ       177          100.0
-                         HSOSC_CORE         1          100.0
-                                 IB         5          100.0
+                               CCU2       227          100.0
+                            FD1P3XZ       188          100.0
+                                 IB         6          100.0
+                                INV         1          100.0
                               IOL_B         1          100.0
-                               LUT4      2339          100.0
+                               LUT4      3039          100.0
                               MAC16         4          100.0
                                  OB         6          100.0
                               PLL_B         1          100.0
 SUB MODULES
                          Background         1
                                Ball         1
-                          GameLogic         1
+                   BounceController         1
+              Dot(POSX=260,POSY=70)         1
+              Dot(POSX=260,POSY=95)         1
+              Dot(POSX=265,POSY=50)         1
+              Dot(POSX=270,POSY=50)         1
+              Dot(POSX=275,POSY=55)         1
+              Dot(POSX=280,POSY=50)         1
+              Dot(POSX=280,POSY=75)         1
+              Dot(POSX=285,POSY=50)         1
+              Dot(POSX=290,POSY=50)         1
+              Dot(POSX=290,POSY=55)         1
+              Dot(POSX=290,POSY=75)         1
+              Dot(POSX=290,POSY=90)         1
+              Dot(POSX=345,POSY=50)         1
+              Dot(POSX=345,POSY=65)         1
+              Dot(POSX=350,POSY=50)         1
+              Dot(POSX=350,POSY=55)         1
+              Dot(POSX=355,POSY=50)         1
+              Dot(POSX=360,POSY=50)         1
+              Dot(POSX=365,POSY=55)         1
+              Dot(POSX=365,POSY=75)         1
+              Dot(POSX=365,POSY=95)         1
+              Dot(POSX=370,POSY=70)         1
+              Dot(POSX=370,POSY=85)         1
+       DotDisplay(POSX=260,POSY=50)         1
+       DotDisplay(POSX=340,POSY=50)         1
+                             Looser         1
                             MainFsm         1
                              Marker         1
                                 Mux         1
-                            Number0         1
-                         Number0_U0         1
-                            Number1         1
-                            Number2         1
+   NumericDisplay(POSX=260,POSY=50)         1
+   NumericDisplay(POSX=340,POSY=50)         1
 Paddle(START_X_POS=20,START_Y_POS=190)         1
 Paddle(START_X_POS=615,START_Y_POS=190)         1
-PausedMenu(START_POSX=275,START_POSY=170)         1
-                    Score(POSX=240)         1
-                    Score(POSX=480)         1
-StartMenu(START_POSX=225,START_POSY=214)         1
+PausedMenu(START_POSX=265,START_POSY=170)         1
+                       ScoreCounter         1
+StartMenu(START_POSX=230,START_POSY=214)         1
                           VGADriver         1
+                             Winner         1
                               clock         1
 clock_ipgen_lscc_pll(DIVR="0",DIVF="66",DIVQ="5",FILTER_RANGE="1",PLLOUT_SELECT_PORTA="GENCLK",PLLOUT_SELECT_PORTB="GENCLK",FREQUENCY_PIN_REFERENCECLK="12.000000")         1
-                              TOTAL      2768
+                              TOTAL      3516
 ----------------------------------------------------------------------
 Report for cell Paddle(START_X_POS=615,START_Y_POS=190).v1
 Instance Path : paddle_two
                                   Cell usage:
                                cell     count   Res Usage(%)
-                                FA2        20            9.3
-                            FD1P3XZ        38           21.5
-                               LUT4        48            2.1
-                              TOTAL       106
+                                FA2        22            9.7
+                            FD1P3XZ        37           19.7
+                               LUT4        52            1.7
+                              TOTAL       111
 ----------------------------------------------------------------------
 Report for cell MainFsm.v1
 Instance Path : menu
                                   Cell usage:
                                cell     count   Res Usage(%)
-                            FD1P3XZ         4            2.3
-                               LUT4        28            1.2
-                              TOTAL        32
+                            FD1P3XZ         8            4.3
+                               LUT4        36            1.2
+                              TOTAL        44
 ----------------------------------------------------------------------
-Report for cell PausedMenu(START_POSX=275,START_POSY=170).v1
+Report for cell ScoreCounter.v1
+Instance Path : score
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3XZ         9            4.8
+                               LUT4        25            0.8
+                              TOTAL        34
+----------------------------------------------------------------------
+Report for cell PausedMenu(START_POSX=265,START_POSY=170).v1
 Instance Path : paused_menu
                                   Cell usage:
                                cell     count   Res Usage(%)
-                                FA2        40           18.6
-                            FD1P3XZ         3            1.7
-                               LUT4        59            2.5
+                                FA2        40           17.6
+                            FD1P3XZ         3            1.6
+                               LUT4        58            1.9
                               MAC16         2           50.0
 SUB MODULES
                              Marker         1
-                              TOTAL       105
+                              TOTAL       104
 ----------------------------------------------------------------------
 Report for cell Marker.v1
 Instance Path : paused_menu.marker
                                   Cell usage:
                                cell     count   Res Usage(%)
-                                FA2        20            9.3
-                               LUT4        36            1.5
+                                FA2        20            8.8
+                               LUT4        32            1.1
                               MAC16         1           25.0
-                              TOTAL        57
+                              TOTAL        53
 ----------------------------------------------------------------------
-Report for cell VGADriver.v1
-Instance Path : vga_driver
+Report for cell NumericDisplay(POSX=260,POSY=50).v1
+Instance Path : score_one
                                   Cell usage:
                                cell     count   Res Usage(%)
-                                FA2        12            5.6
-                            FD1P3XZ        20           11.3
-                               LUT4        52            2.2
-                              TOTAL        84
+                               LUT4        77            2.5
+SUB MODULES
+              Dot(POSX=260,POSY=70)         1
+              Dot(POSX=260,POSY=95)         1
+              Dot(POSX=265,POSY=50)         1
+              Dot(POSX=270,POSY=50)         1
+              Dot(POSX=275,POSY=55)         1
+              Dot(POSX=280,POSY=50)         1
+              Dot(POSX=280,POSY=75)         1
+              Dot(POSX=285,POSY=50)         1
+              Dot(POSX=290,POSY=50)         1
+              Dot(POSX=290,POSY=55)         1
+              Dot(POSX=290,POSY=75)         1
+              Dot(POSX=290,POSY=90)         1
+       DotDisplay(POSX=260,POSY=50)         1
+                              TOTAL        90
+----------------------------------------------------------------------
+Report for cell DotDisplay(POSX=260,POSY=50).v1
+Instance Path : score_one.dot_display
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4        42            1.4
+SUB MODULES
+              Dot(POSX=260,POSY=70)         1
+              Dot(POSX=260,POSY=95)         1
+              Dot(POSX=265,POSY=50)         1
+              Dot(POSX=270,POSY=50)         1
+              Dot(POSX=275,POSY=55)         1
+              Dot(POSX=280,POSY=50)         1
+              Dot(POSX=280,POSY=75)         1
+              Dot(POSX=285,POSY=50)         1
+              Dot(POSX=290,POSY=50)         1
+              Dot(POSX=290,POSY=55)         1
+              Dot(POSX=290,POSY=75)         1
+              Dot(POSX=290,POSY=90)         1
+                              TOTAL        54
+----------------------------------------------------------------------
+Report for cell Dot(POSX=260,POSY=95).v1
+Instance Path : score_one.dot_display.dot72
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         3            0.1
+                              TOTAL         3
+----------------------------------------------------------------------
+Report for cell Dot(POSX=290,POSY=90).v1
+Instance Path : score_one.dot_display.dot70
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         1            0.0
+                              TOTAL         1
+----------------------------------------------------------------------
+Report for cell Dot(POSX=290,POSY=50).v1
+Instance Path : score_one.dot_display.dot6
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         3            0.1
+                              TOTAL         3
+----------------------------------------------------------------------
+Report for cell Dot(POSX=285,POSY=50).v1
+Instance Path : score_one.dot_display.dot5
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         4            0.1
+                              TOTAL         4
+----------------------------------------------------------------------
+Report for cell Dot(POSX=280,POSY=50).v1
+Instance Path : score_one.dot_display.dot4
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         2            0.1
+                              TOTAL         2
+----------------------------------------------------------------------
+Report for cell Dot(POSX=290,POSY=75).v1
+Instance Path : score_one.dot_display.dot46
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         1            0.0
+                              TOTAL         1
+----------------------------------------------------------------------
+Report for cell Dot(POSX=280,POSY=75).v1
+Instance Path : score_one.dot_display.dot44
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         1            0.0
+                              TOTAL         1
+----------------------------------------------------------------------
+Report for cell Dot(POSX=260,POSY=70).v1
+Instance Path : score_one.dot_display.dot32
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4        19            0.6
+                              TOTAL        19
+----------------------------------------------------------------------
+Report for cell Dot(POSX=270,POSY=50).v1
+Instance Path : score_one.dot_display.dot2
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         1            0.0
+                              TOTAL         1
+----------------------------------------------------------------------
+Report for cell Dot(POSX=265,POSY=50).v1
+Instance Path : score_one.dot_display.dot1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         4            0.1
+                              TOTAL         4
+----------------------------------------------------------------------
+Report for cell Dot(POSX=290,POSY=55).v1
+Instance Path : score_one.dot_display.dot14
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         1            0.0
+                              TOTAL         1
+----------------------------------------------------------------------
+Report for cell Dot(POSX=275,POSY=55).v1
+Instance Path : score_one.dot_display.dot11
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         2            0.1
+                              TOTAL         2
+----------------------------------------------------------------------
+Report for cell Ball.v1
+Instance Path : ball
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2        27           11.9
+                            FD1P3XZ        36           19.1
+                               LUT4        76            2.5
+                              TOTAL       139
+----------------------------------------------------------------------
+Report for cell StartMenu(START_POSX=230,START_POSY=214).v1
+Instance Path : start_menu
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2        20            8.8
+                               LUT4       527           17.3
+                              MAC16         1           25.0
+                              TOTAL       548
 ----------------------------------------------------------------------
 Report for cell clock.v1
 Instance Path : pll
@@ -98,33 +264,6 @@ Instance Path : pll.lscc_pll_inst
                               PLL_B         1          100.0
                               TOTAL         1
 ----------------------------------------------------------------------
-Report for cell GameLogic.v1
-Instance Path : game
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                                FA2        16            7.4
-                            FD1P3XZ        10            5.6
-                               LUT4       133            5.7
-                              TOTAL       159
-----------------------------------------------------------------------
-Report for cell StartMenu(START_POSX=225,START_POSY=214).v1
-Instance Path : start_menu
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                                FA2        20            9.3
-                               LUT4       534           22.8
-                              MAC16         1           25.0
-                              TOTAL       555
-----------------------------------------------------------------------
-Report for cell Ball.v1
-Instance Path : ball
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                                FA2        37           17.2
-                            FD1P3XZ        34           19.2
-                               LUT4       123            5.3
-                              TOTAL       194
-----------------------------------------------------------------------
 Report for cell Mux.v1
 Instance Path : mux
                                   Cell usage:
@@ -136,67 +275,166 @@ Report for cell Background.v1
 Instance Path : background
                                   Cell usage:
                                cell     count   Res Usage(%)
-                                FA2        12            5.6
-                               LUT4        27            1.2
+                                FA2        12            5.3
+                               LUT4        27            0.9
                               TOTAL        39
 ----------------------------------------------------------------------
-Report for cell Score(POSX=240).v1
-Instance Path : score_one
+Report for cell Winner.v1
+Instance Path : winner
                                   Cell usage:
                                cell     count   Res Usage(%)
-                                FA2        14            6.5
-                               LUT4       164            7.0
-                              MAC16         1           25.0
-SUB MODULES
-                         Number0_U0         1
-                            Number2         1
-                              TOTAL       181
+                                FA2        13            5.7
+                               LUT4       341           11.2
+                              TOTAL       354
 ----------------------------------------------------------------------
-Report for cell Number2.v1
-Instance Path : score_one.num2
+Report for cell VGADriver.v1
+Instance Path : vga_driver
                                   Cell usage:
                                cell     count   Res Usage(%)
-                               LUT4       126            5.4
-                              TOTAL       126
+                                FA2        12            5.3
+                            FD1P3XZ        20           10.6
+                               LUT4        74            2.4
+                              TOTAL       106
 ----------------------------------------------------------------------
-Report for cell Number0_U0.v1
-Instance Path : score_one.num0
+Report for cell BounceController.v1
+Instance Path : game
                                   Cell usage:
                                cell     count   Res Usage(%)
-                                FA2         5            2.3
-                              MAC16         1           25.0
-                              TOTAL         6
+                                FA2        22            9.7
+                            FD1P3XZ         2            1.1
+                               LUT4       133            4.4
+                              TOTAL       157
 ----------------------------------------------------------------------
-Report for cell Score(POSX=480).v1
+Report for cell NumericDisplay(POSX=340,POSY=50).v1
 Instance Path : score_two
                                   Cell usage:
                                cell     count   Res Usage(%)
-                                FA2         5            2.3
-                               LUT4       157            6.7
+                               LUT4        45            1.5
 SUB MODULES
-                            Number0         1
-                            Number1         1
-                              TOTAL       164
+              Dot(POSX=345,POSY=50)         1
+              Dot(POSX=345,POSY=65)         1
+              Dot(POSX=350,POSY=50)         1
+              Dot(POSX=350,POSY=55)         1
+              Dot(POSX=355,POSY=50)         1
+              Dot(POSX=360,POSY=50)         1
+              Dot(POSX=365,POSY=55)         1
+              Dot(POSX=365,POSY=75)         1
+              Dot(POSX=365,POSY=95)         1
+              Dot(POSX=370,POSY=70)         1
+              Dot(POSX=370,POSY=85)         1
+       DotDisplay(POSX=340,POSY=50)         1
+                              TOTAL        57
 ----------------------------------------------------------------------
-Report for cell Number1.v1
-Instance Path : score_two.num1
+Report for cell DotDisplay(POSX=340,POSY=50).v1
+Instance Path : score_two.dot_display
                                   Cell usage:
                                cell     count   Res Usage(%)
-                               LUT4       126            5.4
-                              TOTAL       126
+                               LUT4        19            0.6
+SUB MODULES
+              Dot(POSX=345,POSY=50)         1
+              Dot(POSX=345,POSY=65)         1
+              Dot(POSX=350,POSY=50)         1
+              Dot(POSX=350,POSY=55)         1
+              Dot(POSX=355,POSY=50)         1
+              Dot(POSX=360,POSY=50)         1
+              Dot(POSX=365,POSY=55)         1
+              Dot(POSX=365,POSY=75)         1
+              Dot(POSX=365,POSY=95)         1
+              Dot(POSX=370,POSY=70)         1
+              Dot(POSX=370,POSY=85)         1
+                              TOTAL        30
 ----------------------------------------------------------------------
-Report for cell Number0.v1
-Instance Path : score_two.num0
+Report for cell Dot(POSX=365,POSY=95).v1
+Instance Path : score_two.dot_display.dot77
                                   Cell usage:
                                cell     count   Res Usage(%)
-                                FA2         5            2.3
-                              TOTAL         5
+                               LUT4         1            0.0
+                              TOTAL         1
+----------------------------------------------------------------------
+Report for cell Dot(POSX=370,POSY=85).v1
+Instance Path : score_two.dot_display.dot62
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         1            0.0
+                              TOTAL         1
+----------------------------------------------------------------------
+Report for cell Dot(POSX=360,POSY=50).v1
+Instance Path : score_two.dot_display.dot4
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         3            0.1
+                              TOTAL         3
+----------------------------------------------------------------------
+Report for cell Dot(POSX=365,POSY=75).v1
+Instance Path : score_two.dot_display.dot45
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         1            0.0
+                              TOTAL         1
+----------------------------------------------------------------------
+Report for cell Dot(POSX=355,POSY=50).v1
+Instance Path : score_two.dot_display.dot3
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         1            0.0
+                              TOTAL         1
+----------------------------------------------------------------------
+Report for cell Dot(POSX=370,POSY=70).v1
+Instance Path : score_two.dot_display.dot38
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         1            0.0
+                              TOTAL         1
+----------------------------------------------------------------------
+Report for cell Dot(POSX=350,POSY=50).v1
+Instance Path : score_two.dot_display.dot2
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         3            0.1
+                              TOTAL         3
+----------------------------------------------------------------------
+Report for cell Dot(POSX=345,POSY=65).v1
+Instance Path : score_two.dot_display.dot25
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         1            0.0
+                              TOTAL         1
+----------------------------------------------------------------------
+Report for cell Dot(POSX=345,POSY=50).v1
+Instance Path : score_two.dot_display.dot1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         4            0.1
+                              TOTAL         4
+----------------------------------------------------------------------
+Report for cell Dot(POSX=365,POSY=55).v1
+Instance Path : score_two.dot_display.dot13
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         1            0.0
+                              TOTAL         1
+----------------------------------------------------------------------
+Report for cell Dot(POSX=350,POSY=55).v1
+Instance Path : score_two.dot_display.dot10
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         2            0.1
+                              TOTAL         2
 ----------------------------------------------------------------------
 Report for cell Paddle(START_X_POS=20,START_Y_POS=190).v1
 Instance Path : paddle_one
                                   Cell usage:
                                cell     count   Res Usage(%)
-                                FA2        20            9.3
-                            FD1P3XZ        30           16.9
-                               LUT4        35            1.5
-                              TOTAL        85
+                                FA2        22            9.7
+                            FD1P3XZ        34           18.1
+                               LUT4        35            1.2
+                              TOTAL        91
+----------------------------------------------------------------------
+Report for cell Looser.v1
+Instance Path : looser
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2        18            7.9
+                               LUT4       476           15.7
+                              MAC16         1           25.0
+                              TOTAL       495

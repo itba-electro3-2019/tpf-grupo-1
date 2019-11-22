@@ -1,6 +1,7 @@
 module PausedMenu(
 	/* Memory Inputs */
 	clock,			// Input: Tick clock
+	enable,			// Input: Enable clock
 	row,			// Input: Current pixel data row
 	col,			// Input: Current pixel data row
 	reset,			// Input: Reset active low
@@ -22,6 +23,7 @@ module PausedMenu(
 	input wire [9:0] row;
 	input wire [9:0] col;
 	input wire clock;
+	input wire enable;
 	input wire reset;
 	input wire control_up;
 	input wire control_down;
@@ -71,23 +73,25 @@ module PausedMenu(
 	reg flag = 0;
 	
 	always @(posedge clock) begin: RESPONSIVE
-		if (reset) begin
-			if (flag) begin
-				if (control_up && control_down ) begin
-					flag <= 0;
+		if (enable) begin
+			if (reset) begin
+				if (flag) begin
+					if (control_up && control_down ) begin
+						flag <= 0;
+					end
+				end else begin
+					if (control_up == 0) begin
+						selection <= (selection == 0) ? selection : selection - 1;
+						flag <= 1;
+					end else if (control_down == 0) begin
+						selection <= (selection == MAX_SELECTION) ? selection : selection + 1;
+						flag <= 1;
+					end
 				end
 			end else begin
-				if (control_up == 0) begin
-					selection <= (selection == 0) ? selection : selection - 1;
-					flag <= 1;
-				end else if (control_down == 0) begin
-					selection <= (selection == MAX_SELECTION) ? selection : selection + 1;
-					flag <= 1;
-				end
+				selection <= 0;
+				flag <= 0;
 			end
-		end else begin
-			selection <= 0;
-			flag <= 0;
 		end
 	end
 	
@@ -96,12 +100,11 @@ module PausedMenu(
 	/**************************/
 	assign rgb = menu_rgb | marker_rgb;
 	
-	always @(col or row) begin: READ_MEMORY
+	always @* begin: READ_MEMORY
 		if (col >= posx && col < posx + WIDTH && row >= posy && row < posy + HEIGHT) begin
-			memory_address = (col - posx) + (row - posy) * WIDTH;
-			menu_rgb = memory[memory_address];
+			menu_rgb <= memory[(col - posx) + (row - posy) * WIDTH];
 		end else begin
-			menu_rgb = 3'b000;
+			menu_rgb <= 3'b000;
 		end
 	end
 	

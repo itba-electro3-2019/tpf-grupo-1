@@ -5,10 +5,10 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2019 Lattice Semiconductor Corporation,  All rights reserved.
-Thu Nov 21 19:06:50 2019
+Fri Nov 22 05:18:45 2019
 
 
-Command Line:  C:\lscc\radiant\1.1\ispfpga\bin\nt64\synthesis.exe -f pong_impl_1_lattice.synproj -gui -msgset C:/Users/facun/OneDrive/Desktop/ITBA/5C Electronica III/tpf-grupo-1/Pong/promote.xml 
+Command Line:  C:\lscc\radiant\1.1\ispfpga\bin\nt64\synthesis.exe -f pong_impl_1_lattice.synproj -gui -msgset C:/Users/Lucas/Documents/Actualmente Usando/Electronica III/tpf-grupo-1/Pong/promote.xml 
 
 Synthesis options:
 The -a option is iCE40UP.
@@ -67,36 +67,31 @@ ROM style = auto
 RAM style = auto
 The -comp option is FALSE.
 The -syn option is FALSE.
--sdc option: SDC file input is C:/Users/facun/OneDrive/Desktop/ITBA/5C Electronica III/tpf-grupo-1/Pong/impl_1/impl_1.ldc.
--path C:/Users/facun/OneDrive/Desktop/ITBA/5C Electronica III/tpf-grupo-1/Pong (searchpath added)
--path C:/Users/facun/OneDrive/Desktop/ITBA/5C Electronica III/tpf-grupo-1/Pong/clock (searchpath added)
--path C:/Users/facun/OneDrive/Desktop/ITBA/5C Electronica III/tpf-grupo-1/Pong/impl_1 (searchpath added)
+-sdc option: SDC file input is C:/Users/Lucas/Documents/Actualmente Usando/Electronica III/tpf-grupo-1/Pong/impl_1/impl_1.ldc.
+-path C:/Users/Lucas/Documents/Actualmente Usando/Electronica III/tpf-grupo-1/Pong (searchpath added)
+-path C:/Users/Lucas/Documents/Actualmente Usando/Electronica III/tpf-grupo-1/Pong/clock (searchpath added)
+-path C:/Users/Lucas/Documents/Actualmente Usando/Electronica III/tpf-grupo-1/Pong/impl_1 (searchpath added)
 -path C:/lscc/radiant/1.1/ispfpga/ice40tp/data (searchpath added)
 Mixed language design
 Verilog design file = C:/lscc/radiant/1.1/ip/pmi/pmi_iCE40UP.v
-Verilog design file = C:/Users/facun/OneDrive/Desktop/ITBA/5C Electronica III/tpf-grupo-1/Pong/main.v
-Verilog design file = C:/Users/facun/OneDrive/Desktop/ITBA/5C Electronica III/tpf-grupo-1/Pong/drivers/vgadriver_v2.v
-Verilog design file = C:/Users/facun/OneDrive/Desktop/ITBA/5C Electronica III/tpf-grupo-1/Pong/clock/rtl/clock.v
-Verilog design file = C:/Users/facun/OneDrive/Desktop/ITBA/5C Electronica III/tpf-grupo-1/Pong/logic/main_fsm.v
-Verilog design file = C:/Users/facun/OneDrive/Desktop/ITBA/5C Electronica III/tpf-grupo-1/Pong/logic/game_logic.v
-Verilog design file = C:/Users/facun/OneDrive/Desktop/ITBA/5C Electronica III/tpf-grupo-1/Pong/gui/components/ball.v
-Verilog design file = C:/Users/facun/OneDrive/Desktop/ITBA/5C Electronica III/tpf-grupo-1/Pong/gui/components/paddle.v
-Verilog design file = C:/Users/facun/OneDrive/Desktop/ITBA/5C Electronica III/tpf-grupo-1/Pong/gui/trash/components/background.v
-Verilog design file = C:/Users/facun/OneDrive/Desktop/ITBA/5C Electronica III/tpf-grupo-1/Pong/gui/menus/start_menu.v
-Verilog design file = C:/Users/facun/OneDrive/Desktop/ITBA/5C Electronica III/tpf-grupo-1/Pong/gui/menus/paused_menu.v
-Verilog design file = C:/Users/facun/OneDrive/Desktop/ITBA/5C Electronica III/tpf-grupo-1/Pong/gui/menus/marker.v
-Verilog design file = C:/Users/facun/OneDrive/Desktop/ITBA/5C Electronica III/tpf-grupo-1/Pong/standard_modules/mux.v
-Verilog design file = C:/Users/facun/OneDrive/Desktop/ITBA/5C Electronica III/tpf-grupo-1/Pong/gui/score/Number0.v
-Verilog design file = C:/Users/facun/OneDrive/Desktop/ITBA/5C Electronica III/tpf-grupo-1/Pong/gui/score/Number1.v
-Verilog design file = C:/Users/facun/OneDrive/Desktop/ITBA/5C Electronica III/tpf-grupo-1/Pong/gui/score/Number2.v
-Verilog design file = C:/Users/facun/OneDrive/Desktop/ITBA/5C Electronica III/tpf-grupo-1/Pong/gui/score/Number3.v
-Verilog design file = C:/Users/facun/OneDrive/Desktop/ITBA/5C Electronica III/tpf-grupo-1/Pong/gui/score/Number4.v
-Verilog design file = C:/Users/facun/OneDrive/Desktop/ITBA/5C Electronica III/tpf-grupo-1/Pong/gui/score/Number5.v
-Verilog design file = C:/Users/facun/OneDrive/Desktop/ITBA/5C Electronica III/tpf-grupo-1/Pong/gui/score/Number6.v
-Verilog design file = C:/Users/facun/OneDrive/Desktop/ITBA/5C Electronica III/tpf-grupo-1/Pong/gui/score/Number7.v
-Verilog design file = C:/Users/facun/OneDrive/Desktop/ITBA/5C Electronica III/tpf-grupo-1/Pong/gui/score/Number8.v
-Verilog design file = C:/Users/facun/OneDrive/Desktop/ITBA/5C Electronica III/tpf-grupo-1/Pong/gui/score/Number9.v
-Verilog design file = C:/Users/facun/OneDrive/Desktop/ITBA/5C Electronica III/tpf-grupo-1/Pong/gui/score/score.v
+Verilog design file = C:/Users/Lucas/Documents/Actualmente Usando/Electronica III/tpf-grupo-1/Pong/main.v
+Verilog design file = C:/Users/Lucas/Documents/Actualmente Usando/Electronica III/tpf-grupo-1/Pong/drivers/vgadriver_v2.v
+Verilog design file = C:/Users/Lucas/Documents/Actualmente Usando/Electronica III/tpf-grupo-1/Pong/clock/rtl/clock.v
+Verilog design file = C:/Users/Lucas/Documents/Actualmente Usando/Electronica III/tpf-grupo-1/Pong/logic/main_fsm.v
+Verilog design file = C:/Users/Lucas/Documents/Actualmente Usando/Electronica III/tpf-grupo-1/Pong/gui/components/ball.v
+Verilog design file = C:/Users/Lucas/Documents/Actualmente Usando/Electronica III/tpf-grupo-1/Pong/gui/components/paddle.v
+Verilog design file = C:/Users/Lucas/Documents/Actualmente Usando/Electronica III/tpf-grupo-1/Pong/gui/menus/start_menu.v
+Verilog design file = C:/Users/Lucas/Documents/Actualmente Usando/Electronica III/tpf-grupo-1/Pong/gui/menus/paused_menu.v
+Verilog design file = C:/Users/Lucas/Documents/Actualmente Usando/Electronica III/tpf-grupo-1/Pong/gui/menus/marker.v
+Verilog design file = C:/Users/Lucas/Documents/Actualmente Usando/Electronica III/tpf-grupo-1/Pong/standard_modules/mux.v
+Verilog design file = C:/Users/Lucas/Documents/Actualmente Usando/Electronica III/tpf-grupo-1/Pong/gui/score/dot.v
+Verilog design file = C:/Users/Lucas/Documents/Actualmente Usando/Electronica III/tpf-grupo-1/Pong/gui/score/dotdisplay.v
+Verilog design file = C:/Users/Lucas/Documents/Actualmente Usando/Electronica III/tpf-grupo-1/Pong/gui/score/numericdisplay.v
+Verilog design file = C:/Users/Lucas/Documents/Actualmente Usando/Electronica III/tpf-grupo-1/Pong/logic/bounce_controller.v
+Verilog design file = C:/Users/Lucas/Documents/Actualmente Usando/Electronica III/tpf-grupo-1/Pong/gui/components/background.v
+Verilog design file = C:/Users/Lucas/Documents/Actualmente Usando/Electronica III/tpf-grupo-1/Pong/logic/score_counter.v
+Verilog design file = C:/Users/Lucas/Documents/Actualmente Usando/Electronica III/tpf-grupo-1/Pong/gui/components/looser.v
+Verilog design file = C:/Users/Lucas/Documents/Actualmente Usando/Electronica III/tpf-grupo-1/Pong/gui/components/winner.v
 VHDL library = pmi
 VHDL design file = C:/lscc/radiant/1.1/ip/pmi/pmi_iCE40UP.vhd
 The -r option is OFF. [ Remove LOC Properties is OFF. ]
@@ -136,263 +131,309 @@ INFO - synthesis: c:/lscc/radiant/1.1/ip/pmi/pmi_ram_dp_be.v(49): analyzing incl
 INFO - synthesis: c:/lscc/radiant/1.1/ip/pmi/pmi_ice40up.v(16): analyzing included file c:/lscc/radiant/1.1/ip/pmi/pmi_ram_dq_be.v. VERI-1328
 INFO - synthesis: c:/lscc/radiant/1.1/ip/pmi/pmi_ram_dq_be.v(45): analyzing included file c:/lscc/radiant/1.1/ip/pmi/../common/ram_dq/rtl/lscc_ram_dq.v. VERI-1328
 INFO - synthesis: c:/lscc/radiant/1.1/ip/pmi/pmi_ice40up.v(17): analyzing included file c:/lscc/radiant/1.1/ip/pmi/pmi_dsp.v. VERI-1328
-Analyzing Verilog file c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/main.v. VERI-1482
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/main.v(204): reset is already implicitly declared earlier. VERI-1362
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/main.v(205): tick_game is already implicitly declared earlier. VERI-1362
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/main.v(206): tick_menu is already implicitly declared earlier. VERI-1362
-Analyzing Verilog file c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/drivers/vgadriver_v2.v. VERI-1482
-Analyzing Verilog file c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/clock/rtl/clock.v. VERI-1482
-Analyzing Verilog file c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/logic/main_fsm.v. VERI-1482
-Analyzing Verilog file c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/logic/game_logic.v. VERI-1482
-Analyzing Verilog file c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/components/ball.v. VERI-1482
-Analyzing Verilog file c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/components/paddle.v. VERI-1482
-Analyzing Verilog file c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/trash/components/background.v. VERI-1482
-Analyzing Verilog file c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/menus/start_menu.v. VERI-1482
-Analyzing Verilog file c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/menus/paused_menu.v. VERI-1482
-Analyzing Verilog file c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/menus/marker.v. VERI-1482
-Analyzing Verilog file c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/standard_modules/mux.v. VERI-1482
-Analyzing Verilog file c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number0.v. VERI-1482
-Analyzing Verilog file c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number1.v. VERI-1482
-Analyzing Verilog file c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number2.v. VERI-1482
-Analyzing Verilog file c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number3.v. VERI-1482
-Analyzing Verilog file c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number4.v. VERI-1482
-Analyzing Verilog file c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number5.v. VERI-1482
-Analyzing Verilog file c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number6.v. VERI-1482
-Analyzing Verilog file c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number7.v. VERI-1482
-Analyzing Verilog file c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number8.v. VERI-1482
-Analyzing Verilog file c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number9.v. VERI-1482
-Analyzing Verilog file c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/score.v. VERI-1482
+Analyzing Verilog file c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/main.v. VERI-1482
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/main.v(218): reset is already implicitly declared earlier. VERI-1362
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/main.v(220): enable_pause is already implicitly declared earlier. VERI-1362
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/main.v(221): enable_game is already implicitly declared earlier. VERI-1362
+Analyzing Verilog file c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/drivers/vgadriver_v2.v. VERI-1482
+Analyzing Verilog file c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/clock/rtl/clock.v. VERI-1482
+Analyzing Verilog file c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/logic/main_fsm.v. VERI-1482
+Analyzing Verilog file c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/components/ball.v. VERI-1482
+Analyzing Verilog file c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/components/paddle.v. VERI-1482
+Analyzing Verilog file c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/menus/start_menu.v. VERI-1482
+Analyzing Verilog file c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/menus/paused_menu.v. VERI-1482
+Analyzing Verilog file c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/menus/marker.v. VERI-1482
+Analyzing Verilog file c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/standard_modules/mux.v. VERI-1482
+Analyzing Verilog file c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v. VERI-1482
+Analyzing Verilog file c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dotdisplay.v. VERI-1482
+Analyzing Verilog file c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v. VERI-1482
+Analyzing Verilog file c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/logic/bounce_controller.v. VERI-1482
+Analyzing Verilog file c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/components/background.v. VERI-1482
+Analyzing Verilog file c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/logic/score_counter.v. VERI-1482
+Analyzing Verilog file c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/components/looser.v. VERI-1482
+Analyzing Verilog file c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/components/winner.v. VERI-1482
 Analyzing VHDL file c:/lscc/radiant/1.1/ip/pmi/pmi_ice40up.vhd. VHDL-1481
 INFO - synthesis: c:/lscc/radiant/1.1/ip/pmi/pmi_ice40up.vhd(4): analyzing package components. VHDL-1014
 unit main is not yet analyzed. VHDL-1485
-INFO - synthesis: The default VHDL library search path is now "C:/Users/facun/OneDrive/Desktop/ITBA/5C Electronica III/tpf-grupo-1/Pong/impl_1". VHDL-1504
+INFO - synthesis: The default VHDL library search path is now "C:/Users/Lucas/Documents/Actualmente Usando/Electronica III/tpf-grupo-1/Pong/impl_1". VHDL-1504
 Top module language type = Verilog.
 Top module name (Verilog, mixed language): main
-INFO - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/main.v(8): compiling module main. VERI-1018
-INFO - synthesis: C:/lscc/radiant/1.1/ispfpga/../cae_library/synthesis/verilog/iCE40UP.v(756): compiling module HSOSC(CLKHF_DIV="0b10"). VERI-1018
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/main.v(62): expression size 32 truncated to fit in target size 15. VERI-1209
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/main.v(82): expression size 32 truncated to fit in target size 10. VERI-1209
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/main.v(99): expression size 32 truncated to fit in target size 8. VERI-1209
-INFO - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/clock/rtl/clock.v(10): compiling module clock. VERI-1018
-INFO - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/clock/rtl/clock.v(73): compiling module clock_ipgen_lscc_pll(DIVR="0",DIVF="66",DIVQ="5",FILTER_RANGE="1",PLLOUT_SELECT_PORTA="GENCLK",PLLOUT_SELECT_PORTB="GENCLK",FREQUENCY_PIN_REFERENCECLK="12.000000"). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/main.v(8): compiling module main. VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/clock/rtl/clock.v(10): compiling module clock. VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/clock/rtl/clock.v(73): compiling module clock_ipgen_lscc_pll(DIVR="0",DIVF="66",DIVQ="5",FILTER_RANGE="1",PLLOUT_SELECT_PORTA="GENCLK",PLLOUT_SELECT_PORTB="GENCLK",FREQUENCY_PIN_REFERENCECLK="12.000000"). VERI-1018
 INFO - synthesis: C:/lscc/radiant/1.1/ispfpga/../cae_library/synthesis/verilog/iCE40UP.v(428): compiling module PLL_B(PLLOUT_SELECT_PORTA="GENCLK",PLLOUT_SELECT_PORTB="GENCLK",DIVF="66",DIVQ="5",FILTER_RANGE="1",FREQUENCY_PIN_REFERENCECLK="12.000000"). VERI-1018
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/clock/rtl/clock.v(16): input port sclk_i is not connected on this instance. VDB-1013
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/clock/rtl/clock.v(16): input port sdi_i is not connected on this instance. VDB-1013
-INFO - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/drivers/vgadriver_v2.v(6): compiling module VGADriver. VERI-1018
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/drivers/vgadriver_v2.v(69): expression size 32 truncated to fit in target size 10. VERI-1209
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/drivers/vgadriver_v2.v(72): expression size 32 truncated to fit in target size 10. VERI-1209
-INFO - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/components/ball.v(9): compiling module Ball. VERI-1018
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/components/ball.v(70): expression size 32 truncated to fit in target size 8. VERI-1209
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/components/ball.v(185): expression size 32 truncated to fit in target size 10. VERI-1209
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/components/ball.v(186): expression size 32 truncated to fit in target size 10. VERI-1209
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/components/ball.v(190): expression size 32 truncated to fit in target size 10. VERI-1209
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/components/ball.v(191): expression size 32 truncated to fit in target size 10. VERI-1209
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/components/ball.v(195): expression size 32 truncated to fit in target size 10. VERI-1209
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/components/ball.v(196): expression size 32 truncated to fit in target size 10. VERI-1209
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/components/ball.v(200): expression size 32 truncated to fit in target size 10. VERI-1209
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/components/ball.v(201): expression size 32 truncated to fit in target size 10. VERI-1209
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/components/ball.v(220): pos_x should be on the sensitivity list. VERI-1221
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/components/ball.v(220): pos_x should be on the sensitivity list. VERI-1221
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/components/ball.v(220): pos_y should be on the sensitivity list. VERI-1221
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/components/ball.v(220): pos_y should be on the sensitivity list. VERI-1221
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/main.v(156): actual bit length 10 differs from formal bit length 8 for port size_x. VERI-1330
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/main.v(156): actual bit length 10 differs from formal bit length 8 for port size_y. VERI-1330
-INFO - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/components/paddle.v(8): compiling module Paddle(START_X_POS=20,START_Y_POS=190). VERI-1018
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/components/paddle.v(70): expression size 32 truncated to fit in target size 8. VERI-1209
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/components/paddle.v(74): expression size 32 truncated to fit in target size 10. VERI-1209
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/components/paddle.v(75): expression size 32 truncated to fit in target size 8. VERI-1209
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/components/paddle.v(78): expression size 32 truncated to fit in target size 3. VERI-1209
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/components/paddle.v(81): expression size 32 truncated to fit in target size 10. VERI-1209
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/components/paddle.v(82): expression size 32 truncated to fit in target size 8. VERI-1209
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/components/paddle.v(85): expression size 32 truncated to fit in target size 3. VERI-1209
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/components/paddle.v(103): pos_x should be on the sensitivity list. VERI-1221
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/components/paddle.v(103): pos_x should be on the sensitivity list. VERI-1221
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/components/paddle.v(104): pos_y should be on the sensitivity list. VERI-1221
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/components/paddle.v(104): pos_y should be on the sensitivity list. VERI-1221
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/main.v(160): actual bit length 10 differs from formal bit length 8 for port size_x. VERI-1330
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/main.v(160): actual bit length 10 differs from formal bit length 8 for port size_y. VERI-1330
-INFO - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/components/paddle.v(8): compiling module Paddle(START_X_POS=615,START_Y_POS=190). VERI-1018
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/components/paddle.v(70): expression size 32 truncated to fit in target size 8. VERI-1209
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/components/paddle.v(74): expression size 32 truncated to fit in target size 10. VERI-1209
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/components/paddle.v(75): expression size 32 truncated to fit in target size 8. VERI-1209
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/components/paddle.v(78): expression size 32 truncated to fit in target size 3. VERI-1209
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/components/paddle.v(81): expression size 32 truncated to fit in target size 10. VERI-1209
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/components/paddle.v(82): expression size 32 truncated to fit in target size 8. VERI-1209
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/components/paddle.v(85): expression size 32 truncated to fit in target size 3. VERI-1209
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/components/paddle.v(103): pos_x should be on the sensitivity list. VERI-1221
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/components/paddle.v(103): pos_x should be on the sensitivity list. VERI-1221
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/components/paddle.v(104): pos_y should be on the sensitivity list. VERI-1221
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/components/paddle.v(104): pos_y should be on the sensitivity list. VERI-1221
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/main.v(164): actual bit length 10 differs from formal bit length 8 for port size_x. VERI-1330
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/main.v(164): actual bit length 10 differs from formal bit length 8 for port size_y. VERI-1330
-INFO - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/trash/components/background.v(4): compiling module Background. VERI-1018
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/trash/components/background.v(38): expression size 32 truncated to fit in target size 10. VERI-1209
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/trash/components/background.v(39): expression size 32 truncated to fit in target size 10. VERI-1209
-INFO - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/menus/start_menu.v(5): compiling module StartMenu(START_POSX=225,START_POSY=214). VERI-1018
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/menus/start_menu.v(29): using initial value of posx since it is never assigned. VERI-1220
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/menus/start_menu.v(30): using initial value of posy since it is never assigned. VERI-1220
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/menus/start_menu.v(37): posx should be on the sensitivity list. VERI-1221
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/menus/start_menu.v(37): posx should be on the sensitivity list. VERI-1221
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/menus/start_menu.v(37): posy should be on the sensitivity list. VERI-1221
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/menus/start_menu.v(37): posy should be on the sensitivity list. VERI-1221
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/menus/start_menu.v(38): posx should be on the sensitivity list. VERI-1221
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/menus/start_menu.v(38): posy should be on the sensitivity list. VERI-1221
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/menus/start_menu.v(38): expression size 32 truncated to fit in target size 14. VERI-1209
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/menus/start_menu.v(39): memory should be on the sensitivity list. VERI-1221
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/menus/start_menu.v(27): net memory does not have a driver. VDB-1002
-INFO - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/menus/paused_menu.v(1): compiling module PausedMenu(START_POSX=275,START_POSY=170). VERI-1018
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/menus/paused_menu.v(38): using initial value of posx since it is never assigned. VERI-1220
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/menus/paused_menu.v(39): using initial value of posy since it is never assigned. VERI-1220
-INFO - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/menus/marker.v(1): compiling module Marker. VERI-1018
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/menus/marker.v(33): posx should be on the sensitivity list. VERI-1221
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/menus/marker.v(33): posx should be on the sensitivity list. VERI-1221
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/menus/marker.v(33): posy should be on the sensitivity list. VERI-1221
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/menus/marker.v(33): posy should be on the sensitivity list. VERI-1221
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/menus/marker.v(34): posx should be on the sensitivity list. VERI-1221
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/menus/marker.v(34): posy should be on the sensitivity list. VERI-1221
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/menus/marker.v(34): expression size 32 truncated to fit in target size 8. VERI-1209
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/menus/marker.v(35): memory should be on the sensitivity list. VERI-1221
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/menus/marker.v(26): net memory does not have a driver. VDB-1002
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/menus/paused_menu.v(81): expression size 32 truncated to fit in target size 2. VERI-1209
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/menus/paused_menu.v(84): expression size 32 truncated to fit in target size 2. VERI-1209
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/menus/paused_menu.v(100): posx should be on the sensitivity list. VERI-1221
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/menus/paused_menu.v(100): posx should be on the sensitivity list. VERI-1221
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/menus/paused_menu.v(100): posy should be on the sensitivity list. VERI-1221
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/menus/paused_menu.v(100): posy should be on the sensitivity list. VERI-1221
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/menus/paused_menu.v(101): posx should be on the sensitivity list. VERI-1221
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/menus/paused_menu.v(101): posy should be on the sensitivity list. VERI-1221
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/menus/paused_menu.v(101): expression size 32 truncated to fit in target size 16. VERI-1209
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/menus/paused_menu.v(102): memory should be on the sensitivity list. VERI-1221
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/menus/paused_menu.v(35): net memory does not have a driver. VDB-1002
-INFO - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/score.v(5): compiling module Score(POSX=240). VERI-1018
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/score.v(41): expression size 32 truncated to fit in target size 10. VERI-1209
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/score.v(42): expression size 32 truncated to fit in target size 10. VERI-1209
-INFO - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number0.v(2): compiling module Number0. VERI-1018
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number0.v(19): using initial value of height since it is never assigned. VERI-1220
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number0.v(20): using initial value of width since it is never assigned. VERI-1220
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number0.v(27): width should be on the sensitivity list. VERI-1221
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number0.v(27): height should be on the sensitivity list. VERI-1221
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number0.v(28): width should be on the sensitivity list. VERI-1221
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number0.v(28): expression size 10 truncated to fit in target size 8. VERI-1209
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number0.v(29): memory should be on the sensitivity list. VERI-1221
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number0.v(18): net memory does not have a driver. VDB-1002
-INFO - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number1.v(2): compiling module Number1. VERI-1018
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number1.v(19): using initial value of height since it is never assigned. VERI-1220
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number1.v(20): using initial value of width since it is never assigned. VERI-1220
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number1.v(27): width should be on the sensitivity list. VERI-1221
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number1.v(27): height should be on the sensitivity list. VERI-1221
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number1.v(28): width should be on the sensitivity list. VERI-1221
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number1.v(28): expression size 10 truncated to fit in target size 8. VERI-1209
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number1.v(29): memory should be on the sensitivity list. VERI-1221
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number1.v(18): net memory does not have a driver. VDB-1002
-INFO - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number2.v(2): compiling module Number2. VERI-1018
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number2.v(19): using initial value of height since it is never assigned. VERI-1220
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number2.v(20): using initial value of width since it is never assigned. VERI-1220
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number2.v(27): width should be on the sensitivity list. VERI-1221
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number2.v(27): height should be on the sensitivity list. VERI-1221
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number2.v(28): width should be on the sensitivity list. VERI-1221
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number2.v(28): expression size 10 truncated to fit in target size 8. VERI-1209
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number2.v(29): memory should be on the sensitivity list. VERI-1221
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number2.v(18): net memory does not have a driver. VDB-1002
-INFO - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number3.v(2): compiling module Number3. VERI-1018
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number3.v(19): using initial value of height since it is never assigned. VERI-1220
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number3.v(20): using initial value of width since it is never assigned. VERI-1220
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number3.v(27): width should be on the sensitivity list. VERI-1221
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number3.v(27): height should be on the sensitivity list. VERI-1221
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number3.v(28): width should be on the sensitivity list. VERI-1221
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number3.v(28): expression size 10 truncated to fit in target size 8. VERI-1209
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number3.v(29): memory should be on the sensitivity list. VERI-1221
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number3.v(18): net memory does not have a driver. VDB-1002
-INFO - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number4.v(2): compiling module Number4. VERI-1018
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number4.v(19): using initial value of height since it is never assigned. VERI-1220
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number4.v(20): using initial value of width since it is never assigned. VERI-1220
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number4.v(27): width should be on the sensitivity list. VERI-1221
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number4.v(27): height should be on the sensitivity list. VERI-1221
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number4.v(28): width should be on the sensitivity list. VERI-1221
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number4.v(28): expression size 10 truncated to fit in target size 8. VERI-1209
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number4.v(29): memory should be on the sensitivity list. VERI-1221
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number4.v(18): net memory does not have a driver. VDB-1002
-INFO - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number5.v(2): compiling module Number5. VERI-1018
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number5.v(19): using initial value of height since it is never assigned. VERI-1220
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number5.v(20): using initial value of width since it is never assigned. VERI-1220
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number5.v(27): width should be on the sensitivity list. VERI-1221
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number5.v(27): height should be on the sensitivity list. VERI-1221
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number5.v(28): width should be on the sensitivity list. VERI-1221
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number5.v(28): expression size 10 truncated to fit in target size 8. VERI-1209
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number5.v(29): memory should be on the sensitivity list. VERI-1221
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number5.v(18): net memory does not have a driver. VDB-1002
-INFO - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number6.v(2): compiling module Number6. VERI-1018
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number6.v(19): using initial value of height since it is never assigned. VERI-1220
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number6.v(20): using initial value of width since it is never assigned. VERI-1220
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number6.v(27): width should be on the sensitivity list. VERI-1221
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number6.v(27): height should be on the sensitivity list. VERI-1221
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number6.v(28): width should be on the sensitivity list. VERI-1221
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number6.v(28): expression size 10 truncated to fit in target size 8. VERI-1209
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number6.v(29): memory should be on the sensitivity list. VERI-1221
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number6.v(18): net memory does not have a driver. VDB-1002
-INFO - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number7.v(2): compiling module Number7. VERI-1018
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number7.v(19): using initial value of height since it is never assigned. VERI-1220
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number7.v(20): using initial value of width since it is never assigned. VERI-1220
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number7.v(27): width should be on the sensitivity list. VERI-1221
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number7.v(27): height should be on the sensitivity list. VERI-1221
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number7.v(28): width should be on the sensitivity list. VERI-1221
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number7.v(28): expression size 10 truncated to fit in target size 8. VERI-1209
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number7.v(29): memory should be on the sensitivity list. VERI-1221
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number7.v(18): net memory does not have a driver. VDB-1002
-INFO - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number8.v(2): compiling module Number8. VERI-1018
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number8.v(19): using initial value of height since it is never assigned. VERI-1220
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number8.v(20): using initial value of width since it is never assigned. VERI-1220
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number8.v(27): width should be on the sensitivity list. VERI-1221
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number8.v(27): height should be on the sensitivity list. VERI-1221
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number8.v(28): width should be on the sensitivity list. VERI-1221
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number8.v(28): expression size 10 truncated to fit in target size 8. VERI-1209
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number8.v(29): memory should be on the sensitivity list. VERI-1221
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number8.v(18): net memory does not have a driver. VDB-1002
-INFO - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number9.v(2): compiling module Number9. VERI-1018
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number9.v(19): using initial value of height since it is never assigned. VERI-1220
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number9.v(20): using initial value of width since it is never assigned. VERI-1220
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number9.v(27): width should be on the sensitivity list. VERI-1221
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number9.v(27): height should be on the sensitivity list. VERI-1221
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number9.v(28): width should be on the sensitivity list. VERI-1221
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number9.v(28): expression size 10 truncated to fit in target size 8. VERI-1209
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number9.v(29): memory should be on the sensitivity list. VERI-1221
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number9.v(18): net memory does not have a driver. VDB-1002
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/score.v(58): score should be on the sensitivity list. VERI-1221
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/score.v(59): number_0_rgb should be on the sensitivity list. VERI-1221
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/score.v(60): number_1_rgb should be on the sensitivity list. VERI-1221
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/score.v(61): number_2_rgb should be on the sensitivity list. VERI-1221
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/score.v(62): number_3_rgb should be on the sensitivity list. VERI-1221
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/score.v(63): number_4_rgb should be on the sensitivity list. VERI-1221
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/score.v(64): number_5_rgb should be on the sensitivity list. VERI-1221
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/score.v(65): number_6_rgb should be on the sensitivity list. VERI-1221
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/score.v(66): number_7_rgb should be on the sensitivity list. VERI-1221
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/score.v(67): number_8_rgb should be on the sensitivity list. VERI-1221
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/score.v(68): number_9_rgb should be on the sensitivity list. VERI-1221
-INFO - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/score.v(5): compiling module Score(POSX=480). VERI-1018
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/score.v(41): expression size 32 truncated to fit in target size 10. VERI-1209
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/score.v(42): expression size 32 truncated to fit in target size 10. VERI-1209
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/score.v(58): score should be on the sensitivity list. VERI-1221
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/score.v(59): number_0_rgb should be on the sensitivity list. VERI-1221
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/score.v(60): number_1_rgb should be on the sensitivity list. VERI-1221
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/score.v(61): number_2_rgb should be on the sensitivity list. VERI-1221
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/score.v(62): number_3_rgb should be on the sensitivity list. VERI-1221
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/score.v(63): number_4_rgb should be on the sensitivity list. VERI-1221
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/score.v(64): number_5_rgb should be on the sensitivity list. VERI-1221
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/score.v(65): number_6_rgb should be on the sensitivity list. VERI-1221
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/score.v(66): number_7_rgb should be on the sensitivity list. VERI-1221
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/score.v(67): number_8_rgb should be on the sensitivity list. VERI-1221
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/score.v(68): number_9_rgb should be on the sensitivity list. VERI-1221
-INFO - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/standard_modules/mux.v(1): compiling module Mux. VERI-1018
-INFO - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/logic/game_logic.v(7): compiling module GameLogic. VERI-1018
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/logic/game_logic.v(59): expression size 32 truncated to fit in target size 4. VERI-1209
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/logic/game_logic.v(63): expression size 32 truncated to fit in target size 4. VERI-1209
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/main.v(211): actual bit length 10 differs from formal bit length 8 for port ball_size_x. VERI-1330
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/main.v(211): actual bit length 10 differs from formal bit length 8 for port ball_size_y. VERI-1330
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/main.v(211): actual bit length 10 differs from formal bit length 8 for port paddle_1_size_x. VERI-1330
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/main.v(211): actual bit length 10 differs from formal bit length 8 for port paddle_1_size_y. VERI-1330
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/main.v(211): actual bit length 10 differs from formal bit length 8 for port paddle_2_size_x. VERI-1330
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/main.v(211): actual bit length 10 differs from formal bit length 8 for port paddle_2_size_y. VERI-1330
-INFO - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/logic/main_fsm.v(8): compiling module MainFsm. VERI-1018
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/clock/rtl/clock.v(16): input port sclk_i is not connected on this instance. VDB-1013
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/clock/rtl/clock.v(16): input port sdi_i is not connected on this instance. VDB-1013
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/drivers/vgadriver_v2.v(6): compiling module VGADriver. VERI-1018
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/drivers/vgadriver_v2.v(69): expression size 32 truncated to fit in target size 10. VERI-1209
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/drivers/vgadriver_v2.v(72): expression size 32 truncated to fit in target size 10. VERI-1209
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/main.v(72): expression size 32 truncated to fit in target size 15. VERI-1209
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/main.v(92): expression size 32 truncated to fit in target size 10. VERI-1209
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/main.v(109): expression size 32 truncated to fit in target size 8. VERI-1209
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/main.v(154): expression size 32 truncated to fit in target size 10. VERI-1209
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/main.v(156): expression size 32 truncated to fit in target size 10. VERI-1209
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/components/ball.v(9): compiling module Ball. VERI-1018
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/components/ball.v(75): expression size 32 truncated to fit in target size 8. VERI-1209
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/components/ball.v(83): expression size 32 truncated to fit in target size 2. VERI-1209
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/components/ball.v(132): expression size 32 truncated to fit in target size 10. VERI-1209
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/components/ball.v(133): expression size 32 truncated to fit in target size 10. VERI-1209
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/components/ball.v(137): expression size 32 truncated to fit in target size 10. VERI-1209
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/components/ball.v(138): expression size 32 truncated to fit in target size 10. VERI-1209
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/components/ball.v(142): expression size 32 truncated to fit in target size 10. VERI-1209
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/components/ball.v(143): expression size 32 truncated to fit in target size 10. VERI-1209
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/components/ball.v(147): expression size 32 truncated to fit in target size 10. VERI-1209
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/components/ball.v(148): expression size 32 truncated to fit in target size 10. VERI-1209
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/main.v(165): actual bit length 10 differs from formal bit length 8 for port size_x. VERI-1330
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/main.v(165): actual bit length 10 differs from formal bit length 8 for port size_y. VERI-1330
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/components/paddle.v(8): compiling module Paddle(START_X_POS=20,START_Y_POS=190). VERI-1018
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/components/paddle.v(73): expression size 32 truncated to fit in target size 8. VERI-1209
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/components/paddle.v(78): expression size 32 truncated to fit in target size 10. VERI-1209
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/components/paddle.v(79): expression size 32 truncated to fit in target size 8. VERI-1209
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/components/paddle.v(82): expression size 32 truncated to fit in target size 3. VERI-1209
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/components/paddle.v(89): expression size 32 truncated to fit in target size 10. VERI-1209
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/components/paddle.v(90): expression size 32 truncated to fit in target size 8. VERI-1209
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/components/paddle.v(93): expression size 32 truncated to fit in target size 3. VERI-1209
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/main.v(169): actual bit length 10 differs from formal bit length 8 for port size_x. VERI-1330
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/main.v(169): actual bit length 10 differs from formal bit length 8 for port size_y. VERI-1330
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/components/paddle.v(8): compiling module Paddle(START_X_POS=615,START_Y_POS=190). VERI-1018
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/components/paddle.v(73): expression size 32 truncated to fit in target size 8. VERI-1209
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/components/paddle.v(78): expression size 32 truncated to fit in target size 10. VERI-1209
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/components/paddle.v(79): expression size 32 truncated to fit in target size 8. VERI-1209
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/components/paddle.v(82): expression size 32 truncated to fit in target size 3. VERI-1209
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/components/paddle.v(89): expression size 32 truncated to fit in target size 10. VERI-1209
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/components/paddle.v(90): expression size 32 truncated to fit in target size 8. VERI-1209
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/components/paddle.v(93): expression size 32 truncated to fit in target size 3. VERI-1209
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/main.v(173): actual bit length 10 differs from formal bit length 8 for port size_x. VERI-1330
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/main.v(173): actual bit length 10 differs from formal bit length 8 for port size_y. VERI-1330
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/components/background.v(4): compiling module Background. VERI-1018
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/components/background.v(38): expression size 32 truncated to fit in target size 10. VERI-1209
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/components/background.v(39): expression size 32 truncated to fit in target size 10. VERI-1209
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/menus/start_menu.v(5): compiling module StartMenu(START_POSX=230,START_POSY=214). VERI-1018
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/menus/start_menu.v(29): using initial value of posx since it is never assigned. VERI-1220
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/menus/start_menu.v(30): using initial value of posy since it is never assigned. VERI-1220
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/menus/start_menu.v(27): net memory does not have a driver. VDB-1002
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/menus/paused_menu.v(1): compiling module PausedMenu(START_POSX=265,START_POSY=170). VERI-1018
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/menus/paused_menu.v(40): using initial value of posx since it is never assigned. VERI-1220
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/menus/paused_menu.v(41): using initial value of posy since it is never assigned. VERI-1220
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/menus/marker.v(1): compiling module Marker. VERI-1018
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/menus/marker.v(26): net memory does not have a driver. VDB-1002
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/menus/paused_menu.v(84): expression size 32 truncated to fit in target size 2. VERI-1209
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/menus/paused_menu.v(87): expression size 32 truncated to fit in target size 2. VERI-1209
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/menus/paused_menu.v(37): net memory does not have a driver. VDB-1002
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(5): compiling module NumericDisplay(POSX=260,POSY=50). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dotdisplay.v(6): compiling module DotDisplay(POSX=260,POSY=50). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=260,POSY=50). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=265,POSY=50). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=270,POSY=50). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=275,POSY=50). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=280,POSY=50). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=285,POSY=50). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=290,POSY=50). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=295,POSY=50). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=260,POSY=55). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=265,POSY=55). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=270,POSY=55). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=275,POSY=55). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=280,POSY=55). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=285,POSY=55). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=290,POSY=55). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=295,POSY=55). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=260,POSY=60). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=265,POSY=60). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=270,POSY=60). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=275,POSY=60). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=280,POSY=60). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=285,POSY=60). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=290,POSY=60). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=295,POSY=60). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=260,POSY=65). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=265,POSY=65). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=270,POSY=65). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=275,POSY=65). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=280,POSY=65). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=285,POSY=65). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=290,POSY=65). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=295,POSY=65). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=260,POSY=70). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=265,POSY=70). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=270,POSY=70). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=275,POSY=70). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=280,POSY=70). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=285,POSY=70). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=290,POSY=70). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=295,POSY=70). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=260,POSY=75). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=265,POSY=75). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=270,POSY=75). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=275,POSY=75). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=280,POSY=75). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=285,POSY=75). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=290,POSY=75). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=295,POSY=75). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=260,POSY=80). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=265,POSY=80). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=270,POSY=80). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=275,POSY=80). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=280,POSY=80). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=285,POSY=80). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=290,POSY=80). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=295,POSY=80). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=260,POSY=85). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=265,POSY=85). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=270,POSY=85). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=275,POSY=85). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=280,POSY=85). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=285,POSY=85). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=290,POSY=85). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=295,POSY=85). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=260,POSY=90). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=265,POSY=90). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=270,POSY=90). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=275,POSY=90). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=280,POSY=90). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=285,POSY=90). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=290,POSY=90). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=295,POSY=90). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=260,POSY=95). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=265,POSY=95). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=270,POSY=95). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=275,POSY=95). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=280,POSY=95). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=285,POSY=95). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=290,POSY=95). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=295,POSY=95). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=260,POSY=100). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=265,POSY=100). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=270,POSY=100). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=275,POSY=100). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=280,POSY=100). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=285,POSY=100). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=290,POSY=100). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=295,POSY=100). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(5): compiling module NumericDisplay(POSX=340,POSY=50). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dotdisplay.v(6): compiling module DotDisplay(POSX=340,POSY=50). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=340,POSY=50). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=345,POSY=50). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=350,POSY=50). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=355,POSY=50). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=360,POSY=50). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=365,POSY=50). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=370,POSY=50). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=375,POSY=50). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=340,POSY=55). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=345,POSY=55). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=350,POSY=55). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=355,POSY=55). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=360,POSY=55). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=365,POSY=55). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=370,POSY=55). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=375,POSY=55). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=340,POSY=60). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=345,POSY=60). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=350,POSY=60). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=355,POSY=60). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=360,POSY=60). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=365,POSY=60). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=370,POSY=60). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=375,POSY=60). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=340,POSY=65). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=345,POSY=65). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=350,POSY=65). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=355,POSY=65). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=360,POSY=65). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=365,POSY=65). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=370,POSY=65). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=375,POSY=65). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=340,POSY=70). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=345,POSY=70). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=350,POSY=70). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=355,POSY=70). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=360,POSY=70). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=365,POSY=70). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=370,POSY=70). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=375,POSY=70). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=340,POSY=75). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=345,POSY=75). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=350,POSY=75). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=355,POSY=75). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=360,POSY=75). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=365,POSY=75). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=370,POSY=75). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=375,POSY=75). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=340,POSY=80). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=345,POSY=80). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=350,POSY=80). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=355,POSY=80). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=360,POSY=80). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=365,POSY=80). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=370,POSY=80). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=375,POSY=80). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=340,POSY=85). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=345,POSY=85). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=350,POSY=85). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=355,POSY=85). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=360,POSY=85). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=365,POSY=85). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=370,POSY=85). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=375,POSY=85). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=340,POSY=90). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=345,POSY=90). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=350,POSY=90). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=355,POSY=90). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=360,POSY=90). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=365,POSY=90). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=370,POSY=90). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=375,POSY=90). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=340,POSY=95). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=345,POSY=95). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=350,POSY=95). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=355,POSY=95). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=360,POSY=95). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=365,POSY=95). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=370,POSY=95). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=375,POSY=95). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=340,POSY=100). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=345,POSY=100). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=350,POSY=100). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=355,POSY=100). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=360,POSY=100). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=365,POSY=100). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=370,POSY=100). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/dot.v(5): compiling module Dot(POSX=375,POSY=100). VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/components/looser.v(2): compiling module Looser. VERI-1018
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/components/looser.v(33): posx should be on the sensitivity list. VERI-1221
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/components/looser.v(33): posx should be on the sensitivity list. VERI-1221
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/components/looser.v(33): posy should be on the sensitivity list. VERI-1221
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/components/looser.v(33): posy should be on the sensitivity list. VERI-1221
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/components/looser.v(34): memory should be on the sensitivity list. VERI-1221
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/components/looser.v(34): posx should be on the sensitivity list. VERI-1221
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/components/looser.v(34): posy should be on the sensitivity list. VERI-1221
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/components/looser.v(25): net memory does not have a driver. VDB-1002
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/components/winner.v(2): compiling module Winner. VERI-1018
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/components/winner.v(33): posx should be on the sensitivity list. VERI-1221
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/components/winner.v(33): posx should be on the sensitivity list. VERI-1221
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/components/winner.v(33): posy should be on the sensitivity list. VERI-1221
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/components/winner.v(33): posy should be on the sensitivity list. VERI-1221
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/components/winner.v(34): memory should be on the sensitivity list. VERI-1221
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/components/winner.v(34): posx should be on the sensitivity list. VERI-1221
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/components/winner.v(34): posy should be on the sensitivity list. VERI-1221
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/components/winner.v(25): net memory does not have a driver. VDB-1002
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/standard_modules/mux.v(1): compiling module Mux. VERI-1018
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/logic/bounce_controller.v(7): compiling module BounceController. VERI-1018
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/main.v(224): actual bit length 10 differs from formal bit length 8 for port ball_size_x. VERI-1330
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/main.v(224): actual bit length 10 differs from formal bit length 8 for port ball_size_y. VERI-1330
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/main.v(224): actual bit length 10 differs from formal bit length 8 for port paddle_1_size_x. VERI-1330
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/main.v(224): actual bit length 10 differs from formal bit length 8 for port paddle_1_size_y. VERI-1330
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/main.v(224): actual bit length 10 differs from formal bit length 8 for port paddle_2_size_x. VERI-1330
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/main.v(224): actual bit length 10 differs from formal bit length 8 for port paddle_2_size_y. VERI-1330
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/logic/main_fsm.v(8): compiling module MainFsm. VERI-1018
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/logic/main_fsm.v(123): expression size 32 truncated to fit in target size 1. VERI-1209
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/logic/main_fsm.v(124): expression size 32 truncated to fit in target size 1. VERI-1209
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/logic/main_fsm.v(125): expression size 32 truncated to fit in target size 1. VERI-1209
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/logic/main_fsm.v(126): expression size 32 truncated to fit in target size 1. VERI-1209
+INFO - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/logic/score_counter.v(5): compiling module ScoreCounter. VERI-1018
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/logic/score_counter.v(32): expression size 32 truncated to fit in target size 4. VERI-1209
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/logic/score_counter.v(36): expression size 32 truncated to fit in target size 4. VERI-1209
 Loading device for application lse from file 'itpa08.nph' in environment: C:/lscc/radiant/1.1/ispfpga.
                                                          
 
@@ -422,108 +463,338 @@ WARNING - synthesis: Initial value found on net vga_hsync will be ignored due to
 WARNING - synthesis: Initial value found on net vga_vsync will be ignored due to unrecognized driver type
 WARNING - synthesis: Initial value found on net gnd_2 will be ignored due to unrecognized driver type
 WARNING - synthesis: Initial value found on net pwr_2 will be ignored due to unrecognized driver type
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/menus/start_menu.v(27): ram memory_original_ramnet has no write-port on it. VDB-1038
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/menus/start_menu.v(27): ram memory_original_ramnet has no write-port on it. VDB-1038
 WARNING - synthesis: Initial value found on net gnd_2 will be ignored due to unrecognized driver type
 WARNING - synthesis: Initial value found on net pwr_2 will be ignored due to unrecognized driver type
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/menus/paused_menu.v(35): ram memory_original_ramnet has no write-port on it. VDB-1038
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/menus/marker.v(26): ram memory_original_ramnet has no write-port on it. VDB-1038
-WARNING - synthesis: Initial value found on net gnd_2 will be ignored due to unrecognized driver type
-WARNING - synthesis: Initial value found on net pwr_2 will be ignored due to unrecognized driver type
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number0.v(18): ram memory_original_ramnet has no write-port on it. VDB-1038
-WARNING - synthesis: Initial value found on net gnd_2 will be ignored due to unrecognized driver type
-WARNING - synthesis: Initial value found on net pwr_2 will be ignored due to unrecognized driver type
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number1.v(18): ram memory_original_ramnet has no write-port on it. VDB-1038
-WARNING - synthesis: Initial value found on net gnd_2 will be ignored due to unrecognized driver type
-WARNING - synthesis: Initial value found on net pwr_2 will be ignored due to unrecognized driver type
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number2.v(18): ram memory_original_ramnet has no write-port on it. VDB-1038
-WARNING - synthesis: Initial value found on net gnd_2 will be ignored due to unrecognized driver type
-WARNING - synthesis: Initial value found on net pwr_2 will be ignored due to unrecognized driver type
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number3.v(18): ram memory_original_ramnet has no write-port on it. VDB-1038
-WARNING - synthesis: Initial value found on net gnd_2 will be ignored due to unrecognized driver type
-WARNING - synthesis: Initial value found on net pwr_2 will be ignored due to unrecognized driver type
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number4.v(18): ram memory_original_ramnet has no write-port on it. VDB-1038
-WARNING - synthesis: Initial value found on net gnd_2 will be ignored due to unrecognized driver type
-WARNING - synthesis: Initial value found on net pwr_2 will be ignored due to unrecognized driver type
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number5.v(18): ram memory_original_ramnet has no write-port on it. VDB-1038
-WARNING - synthesis: Initial value found on net gnd_2 will be ignored due to unrecognized driver type
-WARNING - synthesis: Initial value found on net pwr_2 will be ignored due to unrecognized driver type
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number6.v(18): ram memory_original_ramnet has no write-port on it. VDB-1038
-WARNING - synthesis: Initial value found on net gnd_2 will be ignored due to unrecognized driver type
-WARNING - synthesis: Initial value found on net pwr_2 will be ignored due to unrecognized driver type
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number7.v(18): ram memory_original_ramnet has no write-port on it. VDB-1038
-WARNING - synthesis: Initial value found on net gnd_2 will be ignored due to unrecognized driver type
-WARNING - synthesis: Initial value found on net pwr_2 will be ignored due to unrecognized driver type
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number8.v(18): ram memory_original_ramnet has no write-port on it. VDB-1038
-WARNING - synthesis: Initial value found on net gnd_2 will be ignored due to unrecognized driver type
-WARNING - synthesis: Initial value found on net pwr_2 will be ignored due to unrecognized driver type
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/score/number9.v(18): ram memory_original_ramnet has no write-port on it. VDB-1038
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/clock/rtl/clock.v(16): input port sclk_i is not connected on this instance. VDB-1013
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/clock/rtl/clock.v(16): input port sdi_i is not connected on this instance. VDB-1013
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/clock/rtl/clock.v(92): net \pll/lscc_pll_inst/sclk_i does not have a driver. VDB-1002
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/clock/rtl/clock.v(93): net \pll/lscc_pll_inst/sdi_i does not have a driver. VDB-1002
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/menus/paused_menu.v(37): ram memory_original_ramnet has no write-port on it. VDB-1038
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/menus/marker.v(26): ram memory_original_ramnet has no write-port on it. VDB-1038
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/components/looser.v(25): ram memory_original_ramnet has no write-port on it. VDB-1038
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/components/winner.v(25): ram memory_original_ramnet has no write-port on it. VDB-1038
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/clock/rtl/clock.v(16): input port sclk_i is not connected on this instance. VDB-1013
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/clock/rtl/clock.v(16): input port sdi_i is not connected on this instance. VDB-1013
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/clock/rtl/clock.v(92): net \pll/lscc_pll_inst/sclk_i does not have a driver. VDB-1002
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/clock/rtl/clock.v(93): net \pll/lscc_pll_inst/sdi_i does not have a driver. VDB-1002
 ######## Missing driver on net \pll/lscc_pll_inst/sclk_i. Patching with GND.
 ######## Missing driver on net \pll/lscc_pll_inst/sdi_i. Patching with GND.
-INFO - synthesis: Extracted state machine for register '\ball/current_state' with one-hot encoding
-State machine has 4 reachable states with original encodings of:
-
- 00 
-
- 01 
-
- 10 
-
- 11 
-
-original encoding -> new encoding (one-hot encoding)
-
- 00 -> 0001
-
- 01 -> 0010
-
- 10 -> 0100
-
- 11 -> 1000
-
 
 
 
 Mapped 4 multiplier(s)
 
 
+######## Missing driver on net \ball/rgb_2__N_153[10]. Patching with GND.
+######## Missing driver on net \ball/rgb_2__N_187[10]. Patching with GND.
+######## Missing driver on net \paddle_one/rgb_2__N_321[10]. Patching with GND.
+######## Missing driver on net \paddle_two/rgb_2__N_504[10]. Patching with GND.
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_two/selected_register_87__I_0_i88 input is stuck at Zero
 
-The number of registers created due to operator pipelining is -46.
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_two/selected_register_87__I_0_i87 input is stuck at Zero
 
-######## Missing driver on net \ball/rgb_2__N_156[10]. Patching with GND.
-######## Missing driver on net \ball/rgb_2__N_190[10]. Patching with GND.
-######## Missing driver on net \paddle_one/rgb_2__N_304[10]. Patching with GND.
-######## Missing driver on net \paddle_two/rgb_2__N_461[10]. Patching with GND.
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/menus/paused_menu.v(66): Latch \paused_menu/marker_x_8__I_0_i2 input is stuck at Zero
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_two/selected_register_87__I_0_i86 input is stuck at Zero
 
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/components/ball.v(215): Register \ball/size_x_i0 is stuck at Zero. VDB-5013
-WARNING - synthesis: c:/users/facun/onedrive/desktop/itba/5c electronica iii/tpf-grupo-1/pong/gui/components/paddle.v(100): Register \paddle_one/size_x_i0 is stuck at Zero. VDB-5013
-Duplicate register/latch removal. timer_clock__i14 is a one-to-one match with timer_clock__i13.
-WARNING - synthesis: Initial value found on instance \game/bounce_i0 will be ignored.
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_two/selected_register_87__I_0_i85 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_two/selected_register_87__I_0_i84 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_two/selected_register_87__I_0_i83 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_two/selected_register_87__I_0_i82 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_two/selected_register_87__I_0_i81 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_two/selected_register_87__I_0_i80 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_two/selected_register_87__I_0_i73 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_two/selected_register_87__I_0_i72 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_two/selected_register_87__I_0_i70 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_two/selected_register_87__I_0_i68 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_two/selected_register_87__I_0_i67 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_two/selected_register_87__I_0_i65 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_two/selected_register_87__I_0_i64 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_two/selected_register_87__I_0_i62 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_two/selected_register_87__I_0_i61 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_two/selected_register_87__I_0_i60 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_two/selected_register_87__I_0_i59 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_two/selected_register_87__I_0_i57 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_two/selected_register_87__I_0_i56 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_two/selected_register_87__I_0_i54 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_two/selected_register_87__I_0_i53 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_two/selected_register_87__I_0_i51 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_two/selected_register_87__I_0_i49 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_two/selected_register_87__I_0_i41 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_two/selected_register_87__I_0_i38 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_two/selected_register_87__I_0_i37 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_two/selected_register_87__I_0_i32 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_two/selected_register_87__I_0_i25 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_two/selected_register_87__I_0_i24 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_two/selected_register_87__I_0_i22 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_two/selected_register_87__I_0_i21 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_two/selected_register_87__I_0_i20 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_two/selected_register_87__I_0_i19 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_two/selected_register_87__I_0_i17 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_two/selected_register_87__I_0_i16 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_two/selected_register_87__I_0_i9 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_two/selected_register_87__I_0_i8 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_two/selected_register_87__I_0_i7 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_two/selected_register_87__I_0_i6 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_two/selected_register_87__I_0_i5 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_two/selected_register_87__I_0_i4 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_two/selected_register_87__I_0_i3 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_two/selected_register_87__I_0_i2 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_one/selected_register_87__I_0_i88 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_one/selected_register_87__I_0_i87 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_one/selected_register_87__I_0_i86 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_one/selected_register_87__I_0_i85 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_one/selected_register_87__I_0_i84 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_one/selected_register_87__I_0_i83 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_one/selected_register_87__I_0_i82 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_one/selected_register_87__I_0_i81 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_one/selected_register_87__I_0_i80 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_one/selected_register_87__I_0_i73 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_one/selected_register_87__I_0_i72 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_one/selected_register_87__I_0_i70 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_one/selected_register_87__I_0_i69 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_one/selected_register_87__I_0_i68 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_one/selected_register_87__I_0_i67 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_one/selected_register_87__I_0_i65 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_one/selected_register_87__I_0_i64 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_one/selected_register_87__I_0_i62 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_one/selected_register_87__I_0_i61 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_one/selected_register_87__I_0_i60 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_one/selected_register_87__I_0_i59 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_one/selected_register_87__I_0_i57 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_one/selected_register_87__I_0_i56 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_one/selected_register_87__I_0_i54 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_one/selected_register_87__I_0_i53 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_one/selected_register_87__I_0_i52 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_one/selected_register_87__I_0_i51 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_one/selected_register_87__I_0_i49 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_one/selected_register_87__I_0_i48 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_one/selected_register_87__I_0_i41 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_one/selected_register_87__I_0_i40 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_one/selected_register_87__I_0_i38 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_one/selected_register_87__I_0_i37 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_one/selected_register_87__I_0_i36 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_one/selected_register_87__I_0_i35 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_one/selected_register_87__I_0_i33 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_one/selected_register_87__I_0_i32 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_one/selected_register_87__I_0_i30 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_one/selected_register_87__I_0_i29 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_one/selected_register_87__I_0_i28 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_one/selected_register_87__I_0_i27 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_one/selected_register_87__I_0_i25 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_one/selected_register_87__I_0_i24 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_one/selected_register_87__I_0_i22 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_one/selected_register_87__I_0_i21 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_one/selected_register_87__I_0_i20 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_one/selected_register_87__I_0_i19 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_one/selected_register_87__I_0_i17 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_one/selected_register_87__I_0_i16 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_one/selected_register_87__I_0_i9 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_one/selected_register_87__I_0_i8 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_one/selected_register_87__I_0_i7 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_one/selected_register_87__I_0_i6 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_one/selected_register_87__I_0_i5 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_one/selected_register_87__I_0_i4 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_one/selected_register_87__I_0_i3 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_one/selected_register_87__I_0_i2 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/menus/paused_menu.v(68): Latch \paused_menu/marker_x_8__I_0_i2 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_two/selected_register_87__I_0_i1 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_one/selected_register_87__I_0_i1 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_two/selected_register_87__I_0_i27 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_two/selected_register_87__I_0_i28 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_two/selected_register_87__I_0_i29 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_two/selected_register_87__I_0_i30 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_two/selected_register_87__I_0_i33 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_two/selected_register_87__I_0_i35 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_two/selected_register_87__I_0_i36 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_two/selected_register_87__I_0_i40 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_two/selected_register_87__I_0_i52 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_two/selected_register_87__I_0_i48 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/score/numericdisplay.v(46): Latch \score_two/selected_register_87__I_0_i69 input is stuck at Zero
+
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/components/ball.v(161): Register \ball/size_x_i0 is stuck at Zero. VDB-5013
+WARNING - synthesis: c:/users/lucas/documents/actualmente usando/electronica iii/tpf-grupo-1/pong/gui/components/paddle.v(112): Register \paddle_one/size_x_i0 is stuck at Zero. VDB-5013
+WARNING - synthesis: Initial value found on instance \game/bounce_i0_i0 will be ignored.
 WARNING - synthesis: Initial value found on instance \menu/reset will be ignored.
-WARNING - synthesis: Initial value found on instance \game/bounce_i1 will be ignored.
+WARNING - synthesis: Initial value found on instance \game/bounce_i0_i1 will be ignored.
+WARNING - synthesis: Mapping latch pixel_rgb_2__I_0_i1 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
 WARNING - synthesis: Mapping latch \paused_menu/marker_y_6__I_0_i1 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
 WARNING - synthesis: Mapping latch \paused_menu/marker_x_8__I_0_i1 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
-WARNING - synthesis: Mapping latch \score_one/rgb_2__I_0_i1 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
-WARNING - synthesis: Mapping latch \score_two/rgb_2__I_0_i1 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+WARNING - synthesis: Mapping latch pixel_rgb_2__I_0_i2 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+WARNING - synthesis: Mapping latch pixel_rgb_2__I_0_i3 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
 WARNING - synthesis: Mapping latch \paused_menu/marker_y_6__I_0_i2 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
 WARNING - synthesis: Mapping latch \paused_menu/marker_y_6__I_0_i3 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
 WARNING - synthesis: Mapping latch \paused_menu/marker_y_6__I_0_i4 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
 WARNING - synthesis: Mapping latch \paused_menu/marker_y_6__I_0_i5 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
-WARNING - synthesis: Mapping latch \score_one/rgb_2__I_0_i2 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
-WARNING - synthesis: Mapping latch \score_one/rgb_2__I_0_i3 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
-WARNING - synthesis: Mapping latch \score_two/rgb_2__I_0_i2 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
-WARNING - synthesis: Mapping latch \score_two/rgb_2__I_0_i3 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
-Duplicate register/latch removal. \paddle_one/timer__i3 is a one-to-one match with \paddle_one/timer__i4.
-Duplicate register/latch removal. \paddle_one/timer__i5 is a one-to-one match with \paddle_one/timer__i3.
-Duplicate register/latch removal. \paddle_one/timer__i6 is a one-to-one match with \paddle_one/timer__i5.
-Duplicate register/latch removal. \paddle_one/timer__i7 is a one-to-one match with \paddle_one/timer__i6.
+WARNING - synthesis: Mapping latch \score_one/selected_register_87__I_0_i10 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+WARNING - synthesis: Mapping latch \score_one/selected_register_87__I_0_i11 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+WARNING - synthesis: Mapping latch \score_one/selected_register_87__I_0_i12 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+WARNING - synthesis: Mapping latch \score_one/selected_register_87__I_0_i13 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+WARNING - synthesis: Mapping latch \score_one/selected_register_87__I_0_i14 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+WARNING - synthesis: Mapping latch \score_one/selected_register_87__I_0_i15 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+WARNING - synthesis: Mapping latch \score_one/selected_register_87__I_0_i18 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+WARNING - synthesis: Mapping latch \score_one/selected_register_87__I_0_i23 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+WARNING - synthesis: Mapping latch \score_one/selected_register_87__I_0_i26 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+WARNING - synthesis: Mapping latch \score_one/selected_register_87__I_0_i31 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+WARNING - synthesis: Mapping latch \score_one/selected_register_87__I_0_i34 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+WARNING - synthesis: Mapping latch \score_one/selected_register_87__I_0_i39 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+WARNING - synthesis: Mapping latch \score_one/selected_register_87__I_0_i42 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+WARNING - synthesis: Mapping latch \score_one/selected_register_87__I_0_i43 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+WARNING - synthesis: Mapping latch \score_one/selected_register_87__I_0_i44 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+WARNING - synthesis: Mapping latch \score_one/selected_register_87__I_0_i45 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+WARNING - synthesis: Mapping latch \score_one/selected_register_87__I_0_i46 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+WARNING - synthesis: Mapping latch \score_one/selected_register_87__I_0_i47 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+WARNING - synthesis: Mapping latch \score_one/selected_register_87__I_0_i50 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+WARNING - synthesis: Mapping latch \score_one/selected_register_87__I_0_i55 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+WARNING - synthesis: Mapping latch \score_one/selected_register_87__I_0_i58 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+WARNING - synthesis: Mapping latch \score_one/selected_register_87__I_0_i63 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+WARNING - synthesis: Mapping latch \score_one/selected_register_87__I_0_i66 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+WARNING - synthesis: Mapping latch \score_one/selected_register_87__I_0_i71 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+WARNING - synthesis: Mapping latch \score_one/selected_register_87__I_0_i74 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+WARNING - synthesis: Mapping latch \score_one/selected_register_87__I_0_i75 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+WARNING - synthesis: Mapping latch \score_one/selected_register_87__I_0_i76 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+WARNING - synthesis: Mapping latch \score_one/selected_register_87__I_0_i77 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+WARNING - synthesis: Mapping latch \score_one/selected_register_87__I_0_i78 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+WARNING - synthesis: Mapping latch \score_one/selected_register_87__I_0_i79 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+WARNING - synthesis: Mapping latch \score_two/selected_register_87__I_0_i10 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+WARNING - synthesis: Mapping latch \score_two/selected_register_87__I_0_i11 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+WARNING - synthesis: Mapping latch \score_two/selected_register_87__I_0_i12 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+WARNING - synthesis: Mapping latch \score_two/selected_register_87__I_0_i13 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+WARNING - synthesis: Mapping latch \score_two/selected_register_87__I_0_i14 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+WARNING - synthesis: Mapping latch \score_two/selected_register_87__I_0_i15 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+WARNING - synthesis: Mapping latch \score_two/selected_register_87__I_0_i18 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+WARNING - synthesis: Mapping latch \score_two/selected_register_87__I_0_i23 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+WARNING - synthesis: Mapping latch \score_two/selected_register_87__I_0_i26 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+WARNING - synthesis: Mapping latch \score_two/selected_register_87__I_0_i31 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+WARNING - synthesis: Mapping latch \score_two/selected_register_87__I_0_i34 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+WARNING - synthesis: Mapping latch \score_two/selected_register_87__I_0_i39 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+WARNING - synthesis: Mapping latch \score_two/selected_register_87__I_0_i42 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+WARNING - synthesis: Mapping latch \score_two/selected_register_87__I_0_i43 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+WARNING - synthesis: Mapping latch \score_two/selected_register_87__I_0_i44 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+WARNING - synthesis: Mapping latch \score_two/selected_register_87__I_0_i45 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+WARNING - synthesis: Mapping latch \score_two/selected_register_87__I_0_i46 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+WARNING - synthesis: Mapping latch \score_two/selected_register_87__I_0_i47 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+WARNING - synthesis: Mapping latch \score_two/selected_register_87__I_0_i50 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+WARNING - synthesis: Mapping latch \score_two/selected_register_87__I_0_i55 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+WARNING - synthesis: Mapping latch \score_two/selected_register_87__I_0_i58 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+WARNING - synthesis: Mapping latch \score_two/selected_register_87__I_0_i63 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+WARNING - synthesis: Mapping latch \score_two/selected_register_87__I_0_i66 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+WARNING - synthesis: Mapping latch \score_two/selected_register_87__I_0_i71 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+WARNING - synthesis: Mapping latch \score_two/selected_register_87__I_0_i74 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+WARNING - synthesis: Mapping latch \score_two/selected_register_87__I_0_i75 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+WARNING - synthesis: Mapping latch \score_two/selected_register_87__I_0_i76 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+WARNING - synthesis: Mapping latch \score_two/selected_register_87__I_0_i77 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+WARNING - synthesis: Mapping latch \score_two/selected_register_87__I_0_i78 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+WARNING - synthesis: Mapping latch \score_two/selected_register_87__I_0_i79 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
 Starting design annotation....
-WARNING - synthesis: The preferred point for defining clocks is top level ports and driver pins. Pad delays will not be taken into consideration if clocks are defined on nets.
-WARNING - synthesis: The preferred point for defining clocks is top level ports and driver pins. Pad delays will not be taken into consideration if clocks are defined on nets.
 WARNING - synthesis: The preferred point for defining clocks is top level ports and driver pins. Pad delays will not be taken into consideration if clocks are defined on nets.
 WARNING - synthesis: The preferred point for defining clocks is top level ports and driver pins. Pad delays will not be taken into consideration if clocks are defined on nets.
 WARNING - synthesis: The preferred point for defining clocks is top level ports and driver pins. Pad delays will not be taken into consideration if clocks are defined on nets.
@@ -533,21 +804,15 @@ Starting design annotation....
 WARNING - synthesis: The preferred point for defining clocks is top level ports and driver pins. Pad delays will not be taken into consideration if clocks are defined on nets.
 WARNING - synthesis: The preferred point for defining clocks is top level ports and driver pins. Pad delays will not be taken into consideration if clocks are defined on nets.
 WARNING - synthesis: The preferred point for defining clocks is top level ports and driver pins. Pad delays will not be taken into consideration if clocks are defined on nets.
-WARNING - synthesis: The preferred point for defining clocks is top level ports and driver pins. Pad delays will not be taken into consideration if clocks are defined on nets.
-WARNING - synthesis: The preferred point for defining clocks is top level ports and driver pins. Pad delays will not be taken into consideration if clocks are defined on nets.
 
 Starting full timing analysis...
 Starting design annotation....
 WARNING - synthesis: The preferred point for defining clocks is top level ports and driver pins. Pad delays will not be taken into consideration if clocks are defined on nets.
 WARNING - synthesis: The preferred point for defining clocks is top level ports and driver pins. Pad delays will not be taken into consideration if clocks are defined on nets.
 WARNING - synthesis: The preferred point for defining clocks is top level ports and driver pins. Pad delays will not be taken into consideration if clocks are defined on nets.
-WARNING - synthesis: The preferred point for defining clocks is top level ports and driver pins. Pad delays will not be taken into consideration if clocks are defined on nets.
-WARNING - synthesis: The preferred point for defining clocks is top level ports and driver pins. Pad delays will not be taken into consideration if clocks are defined on nets.
 
 Starting full timing analysis...
 Starting design annotation....
-WARNING - synthesis: The preferred point for defining clocks is top level ports and driver pins. Pad delays will not be taken into consideration if clocks are defined on nets.
-WARNING - synthesis: The preferred point for defining clocks is top level ports and driver pins. Pad delays will not be taken into consideration if clocks are defined on nets.
 WARNING - synthesis: The preferred point for defining clocks is top level ports and driver pins. Pad delays will not be taken into consideration if clocks are defined on nets.
 WARNING - synthesis: The preferred point for defining clocks is top level ports and driver pins. Pad delays will not be taken into consideration if clocks are defined on nets.
 WARNING - synthesis: The preferred point for defining clocks is top level ports and driver pins. Pad delays will not be taken into consideration if clocks are defined on nets.
@@ -556,47 +821,46 @@ Starting full timing analysis...
 INFO - synthesis: Special Primitives IFD1P3AZ and OFD1P3AZ for ThunderPlus are synthesized using IOL_B.
 
 ################### Begin Area Report (main)######################
-Number of register bits => 177 of 5280 (3 % )
-CCU2 => 215
-FD1P3XZ => 177
-HSOSC_CORE => 1
-IB => 5
+Number of register bits => 188 of 5280 (3 % )
+CCU2 => 227
+FD1P3XZ => 188
+IB => 6
+INV => 1
 IOL_B => 1
-LUT4 => 2339
+LUT4 => 3039
 MAC16 => 4
 OB => 6
 PLL_B => 1
 ################### End Area Report ##################
-Number of odd-length carry chains : 10
-Number of even-length carry chains : 30
+Number of odd-length carry chains : 11
+Number of even-length carry chains : 28
 
 ################### Begin Clock Report ######################
 Clock Nets
-Number of Clocks: 5
-  Net : clk, loads : 1
-  Net : tick, loads : 3
-  Net : menu/tick_game, loads : 0
-  Net : pll/lscc_pll_inst/vga_clock, loads : 0
-  Net : menu/tick_menu, loads : 0
+Number of Clocks: 4
+  Net : pll/lscc_pll_inst/clk, loads : 0
+  Net : tick, loads : 1
+  Net : clk_in_c, loads : 1
+  Net : score_player_one_3__N_3087, loads : 0
 Clock Enable Nets
 Number of Clock Enables: 0
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : paused_menu/menu_rgb_2__N_749[3], loads : 315
-  Net : paused_menu/menu_rgb_2__N_749[4], loads : 260
-  Net : paused_menu/menu_rgb_2__N_749[2], loads : 237
-  Net : paused_menu/menu_rgb_2__N_749[1], loads : 213
-  Net : start_menu/rgb_2__N_713[3], loads : 208
-  Net : paused_menu/menu_rgb_2__N_749[5], loads : 183
-  Net : start_menu/rgb_2__N_713[4], loads : 169
-  Net : start_menu/rgb_2__N_713[2], loads : 163
-  Net : paused_menu/menu_rgb_2__N_749[0], loads : 139
-  Net : start_menu/rgb_2__N_713[1], loads : 134
+  Net : paused_menu/menu_rgb_2__N_818[3], loads : 315
+  Net : paused_menu/menu_rgb_2__N_818[4], loads : 254
+  Net : paused_menu/menu_rgb_2__N_818[2], loads : 232
+  Net : paused_menu/menu_rgb_2__N_818[1], loads : 208
+  Net : start_menu/rgb_2__N_782[3], loads : 199
+  Net : paused_menu/menu_rgb_2__N_818[5], loads : 180
+  Net : start_menu/rgb_2__N_782[4], loads : 166
+  Net : looser/rgb_2__N_2948[3], loads : 160
+  Net : start_menu/rgb_2__N_782[2], loads : 156
+  Net : looser/rgb_2__N_2948[2], loads : 141
 ################### End Clock Report ##################
 
-Peak Memory Usage: 680.586  MB
+Peak Memory Usage: 1118.363  MB
 
 --------------------------------------------------------------
-Total CPU time for LSE flow : 39.531  secs
-Total REAL time for LSE flow : 40.000  secs
+Total CPU time for LSE flow : 103.250  secs
+Total REAL time for LSE flow : 112.000  secs
 --------------------------------------------------------------

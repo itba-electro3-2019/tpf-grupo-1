@@ -15,16 +15,10 @@
         <Source name="logic/main_fsm.v" type="Verilog" type_short="Verilog">
             <Options/>
         </Source>
-        <Source name="logic/game_logic.v" type="Verilog" type_short="Verilog">
-            <Options/>
-        </Source>
         <Source name="gui/components/ball.v" type="Verilog" type_short="Verilog">
             <Options/>
         </Source>
         <Source name="gui/components/paddle.v" type="Verilog" type_short="Verilog">
-            <Options/>
-        </Source>
-        <Source name="gui/trash/components/background.v" type="Verilog" type_short="Verilog">
             <Options/>
         </Source>
         <Source name="gui/menus/start_menu.v" type="Verilog" type_short="Verilog">
@@ -39,37 +33,28 @@
         <Source name="standard_modules/mux.v" type="Verilog" type_short="Verilog">
             <Options/>
         </Source>
-        <Source name="gui/score/Number0.v" type="Verilog" type_short="Verilog">
+        <Source name="gui/score/dot.v" type="Verilog" type_short="Verilog">
             <Options/>
         </Source>
-        <Source name="gui/score/Number1.v" type="Verilog" type_short="Verilog">
+        <Source name="gui/score/dotdisplay.v" type="Verilog" type_short="Verilog">
             <Options/>
         </Source>
-        <Source name="gui/score/Number2.v" type="Verilog" type_short="Verilog">
+        <Source name="gui/score/numericdisplay.v" type="Verilog" type_short="Verilog">
             <Options/>
         </Source>
-        <Source name="gui/score/Number3.v" type="Verilog" type_short="Verilog">
+        <Source name="logic/bounce_controller.v" type="Verilog" type_short="Verilog">
             <Options/>
         </Source>
-        <Source name="gui/score/Number4.v" type="Verilog" type_short="Verilog">
+        <Source name="gui/components/background.v" type="Verilog" type_short="Verilog">
             <Options/>
         </Source>
-        <Source name="gui/score/Number5.v" type="Verilog" type_short="Verilog">
+        <Source name="logic/score_counter.v" type="Verilog" type_short="Verilog">
             <Options/>
         </Source>
-        <Source name="gui/score/Number6.v" type="Verilog" type_short="Verilog">
+        <Source name="gui/components/looser.v" type="Verilog" type_short="Verilog">
             <Options/>
         </Source>
-        <Source name="gui/score/Number7.v" type="Verilog" type_short="Verilog">
-            <Options/>
-        </Source>
-        <Source name="gui/score/Number8.v" type="Verilog" type_short="Verilog">
-            <Options/>
-        </Source>
-        <Source name="gui/score/Number9.v" type="Verilog" type_short="Verilog">
-            <Options/>
-        </Source>
-        <Source name="gui/score/score.v" type="Verilog" type_short="Verilog">
+        <Source name="gui/components/winner.v" type="Verilog" type_short="Verilog">
             <Options/>
         </Source>
         <Source name="impl_1/impl_1.ldc" type="LSE Design Constraints File" type_short="LDC">

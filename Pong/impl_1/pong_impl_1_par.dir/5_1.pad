@@ -6,7 +6,7 @@ Performance Grade:      High-Performance_1.2V
 PACKAGE:          SG48
 Package Status:                     Preliminary    Version 1.5
 
-Thu Nov 21 19:08:59 2019
+Fri Nov 22 05:23:03 2019
 
 Pinout by Port Name:
 +-----------------+----------+--------------+-------+--------------------+
@@ -15,6 +15,7 @@ Pinout by Port Name:
 | b               | 21/1     | LVCMOS33_OUT | PL19B | DRIVE:8mA PULL:NA  |
 | button_enter    | 2/2      | LVCMOS33_IN  | PL9A  | PULL:100K          |
 | buzzer          | 27/0     | LVCMOS33_OUT | PR19B | DRIVE:8mA PULL:NA  |
+| clk_in          | 35/0     | LVCMOS33_IN  | PR13B | PULL:100K          |
 | g               | 23/0     | LVCMOS33_OUT | PR20A | DRIVE:8mA PULL:NA  |
 | hsync           | 20/1     | LVCMOS33_OUT | PL20B | DRIVE:8mA PULL:NA  |
 | player_one_down | 9/1      | LVCMOS33_IN  | PL16A | PULL:100K          |
@@ -63,7 +64,7 @@ Pinout by Pin Number:
 | 31/0     |     unused, PULL:UP |            |              | PR17B |                  |
 | 32/0     |     unused, PULL:UP |            |              | PR17A |                  |
 | 34/0     |     unused, PULL:UP |            |              | PR14B |                  |
-| 35/0     |     unused, PULL:UP |            |              | PR13B | GPLL_IN/PCLKT0_1 |
+| 35/0     | clk_in              |            | LVCMOS33_IN  | PR13B | GPLL_IN/PCLKT0_1 |
 | 36/0     |     unused, PULL:UP |            |              | PR10B |                  |
 | 37/0     |     unused, PULL:UP |            |              | PR14A | PCLKT0_0         |
 | 38/0     |     unused, PULL:UP |            |              | PR9B  |                  |
@@ -102,6 +103,7 @@ Locate Constraints for each Pin:
 ldc_set_location -site {21} [ get_ports {b} ]
 ldc_set_location -site {2} [ get_ports {button_enter} ]
 ldc_set_location -site {27} [ get_ports {buzzer} ]
+ldc_set_location -site {35} [ get_ports {clk_in} ]
 ldc_set_location -site {23} [ get_ports {g} ]
 ldc_set_location -site {20} [ get_ports {hsync} ]
 ldc_set_location -site {9} [ get_ports {player_one_down} ]
@@ -116,5 +118,5 @@ ldc_set_location -site {26} [ get_ports {vsync} ]
 
 
 Copyright 2015 Lattice Semiconductor Corporation, All Rights Reserved
-Thu Nov 21 19:08:59 2019
+Fri Nov 22 05:23:03 2019
 

@@ -6,8 +6,9 @@
 //--------------------------------------------------------------------------------
 
 module Paddle(
-    clock,              // Clock input of the synchronous sequential design
-    row,                // Input: row of the pixel when asked if this module should draw something for that pixel
+    clock,              // Input: Clock input of the synchronous sequential design
+    enable,				// Input: Enable
+	row,                // Input: row of the pixel when asked if this module should draw something for that pixel
     col,                // Input: column of the pixel when asked if this module should draw something for that pixel
     reset,              // Input: reset active LOW
     control_up,         // Input: 1 when the joystick sends control up signal
@@ -22,6 +23,7 @@ module Paddle(
 
     //----------------- INPUT PORTS -----------------------------
     input wire clock;
+	input wire enable;
     input wire [9:0] row;
     input wire [9:0] col;
     input wire reset;
@@ -41,9 +43,9 @@ module Paddle(
     parameter SCREEN_X = 640;
     parameter SCREEN_Y = 480;
 	parameter WIDTH = 8;
-	parameter HEIGHT = 80;
+	parameter HEIGHT = 65;
     parameter PADDLE_SIZE_X = 8;
-    parameter PADDLE_SIZE_Y = 80;
+    parameter PADDLE_SIZE_Y = 65;
     parameter START_X_POS = 5;
 	parameter START_Y_POS = 100;
 	parameter LIMIT_Y_MIN = 5;
@@ -66,48 +68,58 @@ module Paddle(
     end
 
     always @(posedge clock) begin: SEQUENTIAL_CODE
-        if (reset) begin
-            timer = timer + 1;
-            if (timer >= speed) begin
-				timer = 0;
-                if (control_up == 0) begin
-					if (pos_y > LIMIT_Y_MIN) pos_y = pos_y - 1;
-                    accelerator_timer = accelerator_timer + 1;
-                    if (accelerator_timer == ACCELERATOR_STEP) begin
-                        accelerator_timer = 0;
-                        if (speed > MAX_SPEED) speed = speed - 1;
-                    end
-                end else if (control_down == 0) begin
-                    if (pos_y + HEIGHT < LIMIT_Y_MAX) pos_y = pos_y + 1;
-                    accelerator_timer = accelerator_timer + 1;
-                    if (accelerator_timer == ACCELERATOR_STEP) begin
-                        accelerator_timer = 0;
-                        if (speed > MAX_SPEED) speed = speed - 1;
-                    end
-                end else begin
-                    speed = SPEED_GROUND;
-                end
-            end
+        if (enable) begin
+			if (reset) begin
+				timer = timer + 1;
+				if (timer >= speed) begin
+					timer = 0;
+					if (control_up == 0) begin
+						if (pos_y > LIMIT_Y_MIN) begin
+							pos_y = pos_y - 1;
+							accelerator_timer = accelerator_timer + 1;
+							if (accelerator_timer == ACCELERATOR_STEP) begin
+								accelerator_timer = 0;
+								if (speed > MAX_SPEED) speed = speed - 1;
+							end
+						end else begin
+						speed = SPEED_GROUND;
+						end
+					end else if (control_down == 0) begin
+						if (pos_y + HEIGHT < LIMIT_Y_MAX) begin
+							pos_y = pos_y + 1;
+							accelerator_timer = accelerator_timer + 1;
+							if (accelerator_timer == ACCELERATOR_STEP) begin
+								accelerator_timer = 0;
+								if (speed > MAX_SPEED) speed = speed - 1;
+							end
+						end else begin
+						speed = SPEED_GROUND;
+						end
+					end else begin
+						speed = SPEED_GROUND;
+					end
+				end
 
-        end else begin
-            pos_x = START_X_POS; //TODO Change this
-            pos_y = START_Y_POS;  //TODO Change this
-            size_x = PADDLE_SIZE_X; //TODO Change this
-            size_y = PADDLE_SIZE_Y; //TODO Change this
-            speed = SPEED_GROUND;
-            timer = 0;
-        end
+			end else begin
+				pos_x = START_X_POS; //TODO Change this
+				pos_y = START_Y_POS;  //TODO Change this
+				size_x = PADDLE_SIZE_X; //TODO Change this
+				size_y = PADDLE_SIZE_Y; //TODO Change this
+				speed = SPEED_GROUND;
+				timer = 0;
+			end
+		end
     end
 	
-	always @(row or col) begin: DRAW_RECTANGLE
+	always @* begin: DRAW_RECTANGLE
 		if ( (col >= pos_x && col < (WIDTH + pos_x) ) ) begin 
 			if ( (row >= pos_y && row < (HEIGHT + pos_y)) ) begin
-				rgb = COLOR;
+				rgb <= COLOR;
 			end else begin
-				rgb = 3'b000;
+				rgb <= 3'b000;
 			end
 		end else begin
-			rgb = 3'b000;
+			rgb <= 3'b000;
 		end
 	end
 

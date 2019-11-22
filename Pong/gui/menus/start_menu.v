@@ -29,16 +29,13 @@ module StartMenu(
 	reg [9:0] posx = START_POSX;
 	reg [9:0] posy = START_POSY;
 	
-	reg [13:0] memory_address;
-	
 	// Driving the requested pixel in the output
 	// according to a valid row and column pair
-	always @(col or row) begin: READ_MEMORY
+	always @* begin: READ_MEMORY
 		if (col >= posx && col < posx + WIDTH && row >= posy && row < posy + HEIGHT) begin
-			memory_address = (col - posx) + (row - posy) * WIDTH;
-			rgb = memory[memory_address];
+			rgb <= memory[(col - posx) + (row - posy) * WIDTH];
 		end else begin
-			rgb = 3'b000;
+			rgb <= 3'b000;
 		end
 	end
 	
